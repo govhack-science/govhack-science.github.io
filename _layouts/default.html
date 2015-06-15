@@ -11,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="/resources/screen.css" type="text/css">
     <link rel="stylesheet" media="print" href="/resources/print.css" type="text/css">
-    <link rel="alternate" type="application/atom+xml" title="Rasmus Andersson" href="/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="Govhack Science" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/resources/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/apple-touch-icon-{% if page.ios_app_name %}{{page.ios_app_name}}-{% endif %}72x72-precomposed.png">
@@ -32,7 +32,7 @@
       <meta name="og:description" content="{{ content | strip_html | truncatewords: 25 }}">
       {% endif %}
     {% else %}
-      <meta name="description" content="Ramblings by Rasmus Andersson -- a Swedish designer with a passion for technology">
+      <meta name="description" content="Govhack - I will do science to it">
     {% endif %}
     {% if page.og_image_url %}
     <meta property="og:image" content="{{ page.og_image_url }}">
@@ -41,8 +41,8 @@
     <meta property="og:image" content="{{ page.photo_url }}">
     {% endif %}
     {% endif %}
-    <meta property="og:url" content="http://rsms.me{{ page.url | remove_first:'index.html' }}">
-    <meta property="og:site_name" content="rsms.me">
+    <meta property="og:url" content="http://govhack-science.github.io{{ page.url | remove_first:'index.html' }}">
+    <meta property="og:site_name" content="govhack-science.github.io">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
     {% if page.date %}
@@ -55,7 +55,7 @@
   <body{% if page.wide_layout %} class="wide"{% endif %}>
     <!--script>/*
       var s;
-      if (document.location.hostname === 'rsms.me') {
+      if (document.location.hostname === 'govhack-science.github.io') {
         s = document.createElement('script');
         s.async = true;
         s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
@@ -75,10 +75,10 @@
     <header>
       <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/resources/signature-2-2.png" width="160" height="50" alt="Govhack Science"></a></h1>
       <ul class="navigation">
-        <li><a href="/photos/"{% if page.url contains "/photos/" %}class="active"{% endif %} title="A selection of recent photography">Photography</a></li>
-        <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I am or was involved in">Projects</a></li>
-        <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
-        <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
+        <li><a href="/prizes/"{% if page.url contains "/prizes/" %}class="active"{% endif %} title="A selection of recent photography">Prizes &amp; bounties</a></li>
+        <li><a href="/ideas/"{% if page.url contains "/ideas/" %}class="active"{% endif %} title="Suggestions for hackers">Hack ideas</a></li>
+        <li><a href="/datasets/"{% if page.url contains "/datasets/" %}class="active"{% endif %} title="Available datasets">Datasets</a></li>
+        <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About us</a></li>
       </ul>
     </header>
     <!--div class="wrapper content"-->
@@ -88,7 +88,7 @@
     {% if page.fb_comments or page.comments %}
     <!--div class="content sub">
       <h2 id="comments">Comments</h2>
-      <div class="fb-comments" data-href="http://rsms.me{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
+      <div class="fb-comments" data-href="http://govhack-science.github.io{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
     </div-->
     {% endif %}
     
