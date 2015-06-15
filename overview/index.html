@@ -1,0 +1,41 @@
+---
+layout: page
+title: Overview
+---
+<script>
+  (function() {
+    var cx = '011672285138973823133:06j4ebceakm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div>
+<h4>Search site:</h4>
+<gcse:search id="cse-search-box"></gcse:search>
+</div>
+<div>
+  <h4>Datasets &amp; Portals:</h4>
+  <ul>
+  {% for post in site.tags.datasets %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.excerpt | strip_html }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+<div>
+  <h4>Ideas:</h4>
+  <ul>
+  {% for post in site.tags.ideas %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.excerpt | strip_html }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

@@ -53,44 +53,23 @@
     {% endif %}
   </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
-    <!--script>/*
-      var s;
-      if (document.location.hostname === 'govhack-science.github.io') {
-        s = document.createElement('script');
-        s.async = true;
-        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
-        document.getElementsByTagName('head')[0].appendChild(s);
-      }
-      
-      if (window.navigator.userAgent.indexOf('iPad') != -1) {
-        document.documentElement.className = 'ios ipad';
-        window.rsmsHostIsIOS = 'ipad';
-      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
-        document.documentElement.className = 'ios iphone';
-        window.rsmsHostIsIOS = 'iphone';
-      }
-    */</script>
-    <div id="fb-root"></div><script></script-->
     <iframe id="sidebar"></iframe>
     <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/resources/signature-2-2.png" width="160" height="50" alt="Govhack Science"></a></h1>
-      <ul class="navigation">
-        <li><a href="/prizes/"{% if page.url contains "/prizes/" %}class="active"{% endif %} title="A selection of recent photography">Prizes &amp; bounties</a></li>
-        <li><a href="/ideas/"{% if page.url contains "/ideas/" %}class="active"{% endif %} title="Suggestions for hackers">Hack ideas</a></li>
-        <li><a href="/datasets/"{% if page.url contains "/datasets/" %}class="active"{% endif %} title="Available datasets">Datasets</a></li>
-        <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About us</a></li>
-      </ul>
+    <h1 class="logo" onclick="document.location.href='/';">
+    <a href="/"><img src="/resources/physics.png" height="60"></a>
+    <a href="http://www.govhack.org/"><img src="/resources/gh-logo.png" height="60" alt="Govhack"></a>
+    <a href="http://www.csiro.au"><img src="/resources/csiro-logo.png" height="60" alt="CSIRO" style="vertical-align: middle"></a>
+    <a href="http://www.ga.gov.au"><img src="/resources/ga-logo.png" height="60" alt="Geoscience Australia" style="vertical-align: middle"></a>
+    </h1>
+    <ul class="navigation">
+      <li><a href="/prizes/"{% if page.url contains "/prizes/" %}class="active"{% endif %} title="Prizes up for grabs!">Prizes &amp; bounties</a></li>
+      <li><a href="/overview/"{% if page.url contains "/ideas/" %}class="active"{% endif %} title="The big list of sciency datasets and suggestions for hackers">Search ideas/datasets</a></li>
+      <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About us</a></li>
+    </ul>
     </header>
     <!--div class="wrapper content"-->
       {{ content }}
     <!--/div-->
-    
-    {% if page.fb_comments or page.comments %}
-    <!--div class="content sub">
-      <h2 id="comments">Comments</h2>
-      <div class="fb-comments" data-href="http://govhack-science.github.io{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
-    </div-->
-    {% endif %}
     
     {% if paginator.page %}
     <div id="paginator" class="content">
