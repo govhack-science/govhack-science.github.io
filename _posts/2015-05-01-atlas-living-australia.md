@@ -2,7 +2,7 @@
 layout: post
 tags: datasets portals
 title: Atlas of Living Australia
-photo_url: http://www.ala.org.au/wp-content/themes/ala-wordpress-theme/img/species-octopus-maorum.jpg
+<!-- photo_url: http://www.ala.org.au/wp-content/themes/ala-wordpress-theme/img/species-octopus-maorum.jpg -->
 ---
 
 The Atlas of Living Australia (ALA) is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it available and usable online. 

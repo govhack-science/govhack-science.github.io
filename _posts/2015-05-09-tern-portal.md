@@ -2,7 +2,7 @@
 layout: post
 tags: datasets portals
 title: Terrestrial Ecosystem Research Network
-photo_url: http://portal.tern.org.au/img/topics/freshwater_and_estuarine_processes.png
+<!-- photo_url: http://portal.tern.org.au/img/topics/freshwater_and_estuarine_processes.png -->
 ---
 
 The [Terrestrial Ecosystem Research Network (TERN)](http://www.tern.org.au/What-is-TERN-pg22570.html) connects ecosystem scientists and enables them to collect, contribute, store, share and integrate data across disciplines. Collectively this increases the capacity of the Australian ecosystem science community to advance science and contribute to effective management and sustainable use of our ecosystems. 
