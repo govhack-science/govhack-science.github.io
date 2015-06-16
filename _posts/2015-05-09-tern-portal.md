@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: datasets portals
-title: Terrestrial Ecosystem Research Network Portal
+title: Terrestrial Ecosystem Research Network
 photo_url: http://portal.tern.org.au/img/topics/freshwater_and_estuarine_processes.png
 ---
 
@@ -25,13 +25,13 @@ The TERN portal provides a wide variety of ecosystem datasets including datasets
 - [**human-nature interaction**](http://portal.tern.org.au/search#!/q=%28human*%20OR%20%22human%20impact%22%29%20OR%20survey%20OR%20boundaries%20OR%20economi*%20OR%20productio*%20OR%20behav*%20OR%20infrastructure%20OR%20%22land%20management%22%20OR%20harzard*/p=1/tab=collection/num=10), and
 - [**energy, water and gas**](http://portal.tern.org.au/search#!/q=energy%20OR%20gas%20OR%20flux*%20OR%20atmospher*%20OR%20cloud%20OR%20air%20OR%20Pheno*%20OR%20radia*%20OR%20vapo*%20OR%20wind*%20OR%20precipitation%20OR%20rain/p=1/tab=collection/num=10)
 
+You can search their [data discovery portal](http://portal.tern.org.au/) directly, and they also provide a [spatial-based search](http://portal.tern.org.au/search#!/mapSearch=1) if you're looking for ecosystem data from a particular area. 
+
 These datasets are collated from a distributed set of data facilities - you can read more about these facilities and the sorts of data they provide [on the data submission page here](http://portal.tern.org.au/home/submitdata). Some of the interesting projects contributing data include:
 
 - **Australian Supersite Network** - manages data from a number of supersites across the country. Each Supersite represents a different ecosystem type and takes long-term vegetative, faunal and biophysical measurements in a series of core experiments. Core experiment measurements cover meteorology and fluxes, faunal monitoring, soils and hydrology, vegetation, landscape and water measurements. Data from each site must be collected, formatted and indexed to create a dataset and stored in CSV, text and Excel file formats along with descriptive metadata.
 - **Soils and Landscape Facility** - developing fine resolution national grids of key soil attributes through the application of digital soil mapping techniques. This utilises available soil site and mapped soil data as inputs to attribute estimation models, as well as comparing modelled outputs to site data for validation. Submission of soil site and mapped data is to be arranged through state government agencies in cooperation with the Australian Collaborative Land Evaluation Program, which delivers and manages the Australian Soil Resource Information System (ASRIS)
 - **OzFlux** - primary data consists of time series of meteorological observations (temperature, humidity, wind speed and direction, solar and terrestrial radiation etc) and the corresponding exchanges of momentum, heat, water vapour and carbon dioxide between the surface and the lowest layer of the atmosphere. These data are collected at a number of sites around Australia. The second category is ancillary data collected to support the analysis and interpretation of the time series data. This consists of allometric and leaf-level photosynthetic data at seasonal time scales for selected sites and remotely sensed data for each site such as leaf-area index and albedo. Primary data from 23 sites are currently available from the [OzFlux Data Portal](http://ozflux.its.monash.edu.au/ecosystem/home).
-- **The Multi-scale Plot Network** - collects a range of ecological plot data covering rangelands, forests, long-term ecological monitoring programs and sub-continental transects that span from coasts to inland. These data come from a range of sub-Facilities, including Supersites.
-
-You can search their [data discovery portal](http://portal.tern.org.au/) directly, and they also provide a [spatial-based search](http://portal.tern.org.au/search#!/mapSearch=1) if you're looking for ecosystem data from a particular area. 
+- **The Multi-scale Plot Network** - collects a range of ecological plot data covering rangelands, forests, long-term ecological monitoring programs and sub-continental transects that span from coasts to inland. These data come from a range of sub-Facilities, including Supersites. Rich ecological data on plants, animals and their environments are then submitted for storage in [ÆKOS (Australian Ecological Knowledge and Observation System)](http://www.ecoinformatics.org.au/) (which also has it's own data portal [here](http://www.aekos.org.au/home)).
 
 TERN is supported by the Australian Government through the National Collaborative Research Infrastructure Strategy and the Super Science Initiative. You can contact the TERN portal team [using their contact form here](http://portal.tern.org.au/contact) or send an email to <mailto:tern.portal@tern.org.au>.
