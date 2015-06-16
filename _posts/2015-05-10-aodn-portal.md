@@ -9,7 +9,7 @@ The [AODN Ocean Data Portal](http://portal.aodn.org.au/aodn/) is the primary acc
 
 [![AODN portal homepage]({{ site.url }}/resources/aodn-portal.png)](http://portal.aodn.org.au/aodn/ "AODN portal")
 
-This portal has access to the complete IMOS metadata catalog and all available ocean data. Some of the interesting datasets include:
+This portal has access to the complete IMOS metadata catalog and all available ocean data (you can also access the [IMOS portal here](https://imos.aodn.org.au/imos123/home). Some of the interesting datasets include:
 
 - **Aerial photographs, nest cameras, protected areas and satellite imagery** from the Australian Antartic division
 - **Coral cores and oceanographic surveys** from the Australian Institude of Marine Science
