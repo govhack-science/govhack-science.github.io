@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Govhack Science</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    {% if page.title != "Archive (sidebar)" %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% endif %}
     <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="/resources/screen.css" type="text/css">
@@ -56,15 +53,15 @@
     <iframe id="sidebar"></iframe>
     <header>
     <h1 class="logo" onclick="document.location.href='/';">
-    <a href="/"><img src="/resources/physics.png" height="60"></a>
-    <a href="http://www.govhack.org/"><img src="/resources/gh-logo.png" height="60" alt="Govhack"></a>
-    <a href="http://www.csiro.au"><img src="/resources/csiro-logo.png" height="60" alt="CSIRO" style="vertical-align: middle"></a>
-    <a href="http://www.ga.gov.au"><img src="/resources/ga-logo.png" height="60" alt="Geoscience Australia" style="vertical-align: middle"></a>
+    <a href="/"><img src="/resources/physics.png" height="60" alt="Govhack | celebrating" title="Back to main page"></a>
+    <a href="http://www.govhack.org/"><img src="/resources/gh-logo.png" height="60" alt="Govhack" title="Go to Govhacks's website"></a>
+    <a href="http://www.csiro.au"><img src="/resources/csiro-logo.png" height="60" alt="CSIRO" title="Go to CSIRO's website" style="vertical-align: middle"></a>
+    <a href="http://www.ga.gov.au"><img src="/resources/ga-logo.png" height="60" alt="Geoscience Australia" title="Go to Geoscience Australia's website" style="vertical-align: middle"></a>
     </h1>
     <ul class="navigation">
-      <li><a href="/prizes/"{% if page.url contains "/prizes/" %}class="active"{% endif %} title="Prizes up for grabs!">Prizes &amp; bounties</a></li>
-      <li><a href="/overview/"{% if page.url contains "/ideas/" %}class="active"{% endif %} title="The big list of sciency datasets and suggestions for hackers">Search ideas/datasets</a></li>
-      <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About us</a></li>
+      <li><a href="/prizes/"{% if page.url contains "/prizes/" %}class="active"{% endif %} title="Prizes &amp; bounties up for grabs!">Prizes</a></li>
+      <li><a href="/overview/"{% if page.url contains "/ideas/" %}class="active"{% endif %} title="Search the big list of sciency datasets and suggestions for hackers">Search</a></li>
+      <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %} title="About the CSIRO and GA">About us</a></li>
     </ul>
     </header>
     <!--div class="wrapper content"-->

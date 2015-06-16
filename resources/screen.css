@@ -264,10 +264,10 @@ a.post-excerpt {
     }*/
     a.post-excerpt.photo div.title {
       padding:10px 40px;
-      font-size: 300%;
-      font-weight: 100;
+      font-size: 200%;
+      font-weight: 300;
       color: white;
-      /*background:rgba(255,200,0,0.1);*/
+      /*background:rgba(0,0,0,0.2);*/
       -webkit-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
       -moz-text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
       text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
