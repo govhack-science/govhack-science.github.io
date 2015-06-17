@@ -1,11 +1,13 @@
 ---
 layout: post
-tags: portals datasets
+tags: aus portals datasets
 title: AODN Ocean Data Portal
 
 ---
 
-The [AODN Ocean Data Portal](http://portal.aodn.org.au/aodn/) is the primary access point for search, discovery, access and download of data collected by the Australian marine community. Primary datasets are contributed by the Integrated Marine Observing System (IMOS) an Australian Government Research Infrastructure project, and the six Commonwealth Agencies with responsibilities in the Australian marine jurisdiction (Australian Antarctic Division, Australian Institute for Marine Science, Bureau of Meteorology, Commonwealth Science and Industrial Research Organisation, Geoscience Australia and the Royal Australian Navy).
+The [AODN Ocean Data Portal](http://portal.aodn.org.au/aodn/) is the primary access point for search, discovery, access and download of data collected by the Australian marine community. 
+
+Primary datasets are contributed by the Integrated Marine Observing System (IMOS) an Australian Government Research Infrastructure project, and the six Commonwealth Agencies with responsibilities in the Australian marine jurisdiction (Australian Antarctic Division, Australian Institute for Marine Science, Bureau of Meteorology, Commonwealth Science and Industrial Research Organisation, Geoscience Australia and the Royal Australian Navy).
 
 [![AODN portal homepage]({{ site.url }}/resources/aodn-portal.png)](http://portal.aodn.org.au/aodn/ "AODN portal")
 
