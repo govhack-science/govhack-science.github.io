@@ -2,13 +2,18 @@
 layout: post
 tags: ideas
 title: An interactive geological map in Minecraft for Raspberry Pi
+photo_url: http://www.bgs.ac.uk/discoveringGeology/geologyOfBritain/minecraft/images/image1.jpg
 ---
+
+Produce a map generator which uses geological data from Geoscience Australia's Geological Maps and topography webservices to generate playable Minecraft maps with real geology.
 
 ![BGS version](http://www.bgs.ac.uk/discoveringGeology/geologyOfBritain/minecraft/images/image1.jpg)
 
+[Here's a similar idea](http://www.bgs.ac.uk/discoveringGeology/geologyOfBritain/minecraft/home.html) produced by the British Geological Survey for the UK. 
+
 **Datasets & resources**:
 
-- **Geological maps** - these are provided for the entire Australian continent via Open Geospatial Consortium Web Feature Services from Geoscience Australia (for example, here's [the endpoint for WA's geology](http://www.ga.gov.au/geows/geologicunits/oneg_wa_1m/wfs?request=GetCapabilities&service=wfs&version=1.1.0). There's a _lot_ of data behind this service so you might just want to concentrate on a small area - you can request just the data lying within a given bounding box. This will give you an XML document which you can grep through to find the shape data, as well as a bunch of metadata (what rock type each shape refers to etc). Check out GA's list of webservices for more info.
+- **Geological maps & topography** - these are provided for the entire Australian continent via Open Geospatial Consortium Web Feature Services from Geoscience Australia (for example, here's [the endpoint for WA's geology](http://www.ga.gov.au/geows/geologicunits/oneg_wa_1m/wfs?request=GetCapabilities&service=wfs&version=1.1.0)). There's a _lot_ of data behind this service so you might just want to concentrate on a small area - you can request just the data lying within a given bounding box. This will give you an XML document which you can grep through to find the shape data, as well as a bunch of metadata (what rock type each shape refers to etc). Check out GA's list of webservices for more info.
 
 - **[Fiona](https://github.com/Toblerity/Fiona), [Shapely](https://github.com/Toblerity/Shapely) and [Rasterio](https://github.com/mapbox/rasterio)** - these libraries make it easy to handle vector and raster mapping data in Python. You'll need to get a way of transferring the XML from the feature service into a Shapely object.
 
