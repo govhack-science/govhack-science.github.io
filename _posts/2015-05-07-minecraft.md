@@ -7,7 +7,7 @@ photo_url: http://www.scienceimage.csiro.au/images/cache/detail/976_0_BU5630.jpg
 
 Produce a map generator which uses geological data from Geoscience Australia's Geological Maps and topography webservices to generate playable Minecraft maps with real geology.
 
-![BGS version](http://www.bgs.ac.uk/discoveringGeology/geologyOfBritain/minecraft/images/image1.jpg)
+[![A mining truck](http://www.scienceimage.csiro.au/images/cache/detail/976_0_BU5630.jpg)](http://www.scienceimage.csiro.au/image/5285/a-120-ton-ore-truck-at-the-new-celebration-gold-mine//large)
 
 [Here's a similar idea](http://www.bgs.ac.uk/discoveringGeology/geologyOfBritain/minecraft/home.html) produced by the British Geological Survey for the UK. 
 
