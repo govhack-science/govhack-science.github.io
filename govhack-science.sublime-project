@@ -4,24 +4,8 @@
 		{
 			"path": ".",
 			"name": "Project files",
-			"folder_exclude_patterns": ["*", ],
+			"folder_exclude_patterns": [],
 			"file_exclude_patterns": ["*.sublime-workspace"]
-		},
-		{
-			"path": ".",
-			"name": "Content",
-			"folder_exclude_patterns": ["_site", "_includes", "_layouts"],
-			"file_exclude_patterns": [".gitignore","Gemfile", "LICENSE", "README.md", "favicon.ico"]
-		},
-		{
-			"path": ".",
-			"name": "Site data",
-			"folder_exclude_patterns": ["_site", "_posts", "_drafts", "resources"],
-			"file_exclude_patterns": [".gitignore","Gemfile", "LICENSE", "README.md", "favicon.ico"]
-		},
-		{
-			"path": "_includes",
-			"name": ""
 		}
 	],
 	"settings":
