@@ -1,0 +1,30 @@
+{% if include.themes %}
+  {% assign theme_ids = include.themes | map: "id" %}
+{% else %}
+  {% assign theme_ids = include.theme_ids %}
+{% endif %}
+
+<div class="full-bleed" id="recent-posts" style="display: inline-block; width: 100%; height: 100%;">
+{% for theme in site.themes %}
+  {% if theme_ids == nil or theme_ids contains theme.id %}
+    <a href="{{ theme.url }}" class="post-excerpt{% if theme.photo_url %} photo{% endif %}">
+      <div class="padded-content">
+        <div class="title">{{ theme.name }}</div>
+      {% if theme.photo_url %}
+        <div class="image" style="background-image:url('{{ theme.photo_url }}')"></div>
+      {% else %}
+        <!-- <div class="title">{{ theme.name }}</div> -->
+        <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+          {{ theme.tags | array_to_sentence_string }}
+        </info> -->
+        {% if theme.description %}
+        <span class="body">{{ theme.description | strip_html }}</span>
+        {% else %}
+        <span class="body">{{ theme.excerpt | strip_html }}</span>
+        {% endif %}
+      {% endif %}<!-- theme.photo_url -->
+      </div>
+    </a>
+  {% endif %}
+{% endfor %}
+</div>

@@ -1,0 +1,14 @@
+<table width=95%>
+{% for organisation in site.organisations %}
+  {% if organisation.datasets %}
+    <p>
+      <table width=95%>
+        <tr>
+          <th colspan="2">Datasets from <a href="{{ organisation.url }}">{{ organisation.name }}</a></th>
+        </tr>
+        {% include dataset_cards.html dataset_ids=organisation.datasets %}
+      </table>
+    </p>
+  {% endif %}
+{% endfor %}
+</table>

@@ -1,0 +1,27 @@
+{% if include.mentors %}
+  {% assign mentor_ids = include.mentors | map: "id" %}
+{% else %}
+  {% assign mentor_ids = include.mentor_ids %}
+{% endif %}
+
+<table width=95%>
+{% for mentor in site.mentors %}
+  {% if mentor_ids == nil or mentor_ids contains mentor.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ mentor.url }}"><img src="{{ mentor.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ mentor.url }}"><em>{{ mentor.name }}</em></a><br>
+      {{ mentor.content }}
+      
+      Twitter: @{{ mentor.contact.twitter }}
+      Email: {{ mentor.contact.email }}
+      
+      <!-- Ping me on twitter <a href="http://twitter.com/jesserobertson">@jesserobertson</a>, or send me an email: <a href="mailto:jesse.robertson@csiro.au">jesse.robertson@csiro.au</a>. -->
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

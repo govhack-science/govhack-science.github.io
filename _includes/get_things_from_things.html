@@ -1,0 +1,11 @@
+{% assign item_ids = "" %}
+{% for item in include.collection %}
+  {% for organisation_id in item[include.itemtype] %}
+    {% if organisation_id == include.itemid %}
+      {% assign item_ids = item_ids | append: item.id %}
+      {% assign item_ids = item_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{{ item_ids }}

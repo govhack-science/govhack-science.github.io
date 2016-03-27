@@ -1,0 +1,22 @@
+{% if include.locations %}
+  {% assign location_ids = include.locations | map: "id" %}
+{% else %}
+  {% assign location_ids = include.location_ids %}
+{% endif %}
+
+<table width=95%>
+{% for location in site.locations %}
+  {% if location_ids == nil or location_ids contains location.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ location.url }}"><img src="{{ location.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ location.url }}"><em>{{ location.name }}</em></a><br>
+      {{ location.excerpt }}
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

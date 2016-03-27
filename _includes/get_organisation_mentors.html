@@ -1,0 +1,9 @@
+{% assign mentor_ids = "" %}
+{% for mentor in site.mentors %}
+  {% if mentor.organisation == include.organisation_id %}
+    {% assign mentor_ids = mentor_ids | append: mentor.id %}
+    {% assign mentor_ids = mentor_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{{ mentor_ids }}

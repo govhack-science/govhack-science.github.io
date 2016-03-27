@@ -1,0 +1,22 @@
+{% if include.fields %}
+  {% assign field_ids = include.fields | map: "id" %}
+{% else %}
+  {% assign field_ids = include.field_ids %}
+{% endif %}
+
+<table width=95%>
+{% for field in site.fields %}
+  {% if field_ids == nil or field_ids contains field.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ field.url }}"><img src="{{ field.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ field.url }}"><em>{{ field.name }}</em></a><br>
+      {{ field.excerpt }}
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

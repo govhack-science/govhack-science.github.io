@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <div class="body">
+      <img src="{{ page.photo_url }}">
+      
+      {{ content }}
+      
+      {% assign mentor_ids = "" %}
+      {% for mentor in site.mentors %}
+        {% for field_id in mentor.fields %}
+          {% if field_id == page.id %}
+            {% assign mentor_ids = mentor_ids | append: mentor.id %}
+            {% assign mentor_ids = mentor_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless mentor_ids == "" %}
+        <h3>Mentors</h3>
+        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+        {% include mentor_cards.html mentor_ids=mentor_ids_list %}
+      {% endunless %}
+      
+      
+      {% if page.datasets %}
+        <h3>Datasets</h3>
+        {% include dataset_cards.html dataset_ids=page.datasets %}
+      {% endif %}
+      
+      
+      {% if page.dataportals %}
+        <h3>Data Portals</h3>
+        {% include dataportal_cards.html dataportal_ids=page.dataportals %}
+      {% endif %}
+      
+      
+      {% assign organisation_ids = "" %}
+      {% for organisation in site.organisations %}
+        {% for field_id in organisation.fields %}
+          {% if field_id == page.id %}
+            {% assign organisation_ids = organisation_ids | append: organisation.id %}
+            {% assign organisation_ids = organisation_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless organisation_ids == "" %}
+        <h3>Organisations</h3>
+        {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
+        {% include organisation_cards.html organisation_ids=organisation_ids_list %}
+      {% endunless %}
+      
+      
+      {% assign theme_ids = "" %}
+      {% for theme in site.themes %}
+        {% for field_id in theme.fields %}
+          {% if field_id == page.id %}
+            {% assign theme_ids = theme_ids | append: theme.id %}
+            {% assign theme_ids = theme_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless theme_ids == "" %}
+        <h3>Themes</h3>
+        {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+        {% include theme_cards.html theme_ids=theme_ids_list %}
+      {% endunless %}
+    </div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

@@ -1,0 +1,22 @@
+{% if include.dataportals %}
+  {% assign dataportal_ids = include.dataportals | map: "id" %}
+{% else %}
+  {% assign dataportal_ids = include.dataportal_ids %}
+{% endif %}
+
+<table width=95%>
+{% for dataportal in site.dataportals %}
+  {% if dataportal_ids == nil or dataportal_ids contains dataportal.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ dataportal.url }}"><img src="{{ dataportal.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ dataportal.url }}"><em>{{ dataportal.name }}</em></a><br>
+      {{ dataportal.excerpt }}
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

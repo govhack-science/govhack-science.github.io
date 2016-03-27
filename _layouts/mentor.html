@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <div class="body">
+      <img src="{{ page.photo_url }}" />
+      {{ content }}
+      
+      <h3>Ask me about</h3>
+      {{ page.ask_me_about }}
+      
+      <h3>Contact me</h3>
+      Twitter: @{{ page.contact.twitter }}<br>
+      Email: {{ page.contact.email }}<br>
+      {% if page.contact.linkedin %}
+        LinkedIn: {{ page.contact.linkedin }}
+      {% endif %}
+      
+      {% if page.location %}
+        <h3>I'll be at: {{ page.location }} </h3>
+      {% endif %}
+      
+      <h3>Organisation</h3>
+      {% include organisation_cards.html organisation_ids=page.organisation %}
+      
+      
+      {% assign theme_ids = "" %}
+      {% for theme in site.themes %}
+        {% for mentor_id in theme.mentors %}
+          {% if mentor_id == page.id %}
+            {% assign theme_ids = theme_ids | append: theme.id %}
+            {% assign theme_ids = theme_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless theme_ids == "" %}
+        <h3>Themes</h3>
+        {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+        {% include theme_cards.html theme_ids=theme_ids_list %}
+      {% endunless %}
+      
+      
+      {% if page.fields %}
+        <h3>Field</h3>
+        {% include field_cards.html field_ids=page.fields %}
+      {% endif %}
+      
+      
+      {% if page.datasets %}
+        <h3>Datasets</h3>
+        {% include dataset_cards.html dataset_ids=page.datasets %}
+      {% endif %}
+      
+      
+      {% if page.dataportals %}
+        <h3>Data Portals</h3>
+        {% include dataportal_cards.html dataportal_ids=page.dataportals %}
+      {% endif %}
+    </div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

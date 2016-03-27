@@ -1,0 +1,22 @@
+{% if include.prizes %}
+  {% assign prize_ids = include.prizes | map: "id" %}
+{% else %}
+  {% assign prize_ids = include.prize_ids %}
+{% endif %}
+
+<table width=95%>
+{% for prize in site.prizes %}
+  {% if prize_ids == nil or prize_ids contains prize.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ prize.url }}"><img src="{{ prize.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ prize.url }}"><em>{{ prize.name }}</em></a><br>
+      {{ prize.excerpt }}
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

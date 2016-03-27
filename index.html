@@ -4,13 +4,13 @@ layout: default
 <div class="posts">
   <div class="content full-bleed" id="intro">
   <div style="padding-top: 25px; padding-left: 50px; padding-right: 50px; text-align: center">
-      <h1>GovHack | <i>celebrating science</i></h1>
+      <h1>GovHack | <i>Project Jabberwocky</i></h1>
     </div>
     <div class="breaker"></div>
     <div style="padding-left: 50px; padding-right: 50px; text-align: left">
-      <p><img src="http://www.scienceimage.csiro.au/images/cache/detail/739_0_AR1391.jpg" width=40% align="left">CSIRO and Geoscience Australia are excited to be sponsoring GovHack 2015 as data providers and as National Agency Supporters. As two of the largest producers of national-scale, open science data in Australia we're keen to see what contestants can mash out of our huge variety of datasets.</p>
-      <p>We're also very excited to be offering <a href={{ site.url }}/prizes>prizes and bounties</a> in the "Celebrating Science" category - we'll post these once the hack starts on Friday July 3 so we don't spoil the GovHack team's suprises.</p>
-      <p>Here we've put together a little collection of sciency resources and ideas to get you started. Many of our datasets are available through national science portals, most of which allow you to search for data semantically or spatially. Many of the datasets here have counterparts both in Australia and NZ, and we've also included some public data from the <a href="http://www.msi.govt.nz/get-connected/crown-research-institutes/">Crown Research Institutes</a> (the NZ equivalent of the CSIRO). You can see an overview and search through all the <a href="{{ site.url }}/overview">dataset listings here.</a></p>
+      <p><img src="http://www.scienceimage.csiro.au/images/cache/detail/739_0_AR1391.jpg" width=40% align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lorem vel orci eleifend pretium. Mauris eu leo feugiat, eleifend odio et, blandit ex. Sed eget odio iaculis, maximus purus vitae, mollis tortor. Integer at justo justo. Sed pharetra dictum dui, ut dapibus massa dignissim et. Pellentesque malesuada mi eu nibh facilisis facilisis. Nam euismod nunc id sapien hendrerit lobortis. Nam vitae bibendum lectus, semper consectetur magna. Suspendisse accumsan tristique nibh, at rhoncus nisl tempus at.</p>
+      <p>Duis ac diam eu diam ullamcorper porttitor aliquet eu elit. Aliquam maximus aliquam justo, eget ornare dolor molestie in. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Nunc vitae ultrices odio, quis interdum orci. Maecenas accumsan aliquam tortor. Cras in accumsan nunc. Aenean facilisis bibendum purus. Aliquam nec turpis diam. Etiam quam enim, vehicula vel dolor sed, porta tristique nulla. Suspendisse est mauris, iaculis sit amet condimentum eu, gravida id nisi. Quisque ac orci sit amet lorem placerat mollis. Mauris congue quam nec odio laoreet ullamcorper. Nulla sed varius dui. Nulla posuere placerat risus. Suspendisse ac felis ac mauris ultricies porttitor.</p>
     </div>
     <div class="breaker"></div>
     <div align="center">
@@ -18,101 +18,101 @@ layout: default
     </div>
     <div class="breaker"></div>
     <div style="padding-left: 50px; padding-right: 50px; text-align: left">
-      <h3 style="display: inline-block">A selection of datasets &amp; ideas</h3>
+      <h3 style="display: inline-block">A few themes to get you started</h3>
     </div>
   <div class="content full-bleed" id="recent-posts">
-  {% for post in site.posts limit:25 %}<a
-    href="{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
-      <div class="padded-content">
-        <div class="title">{{ post.title }}</div>
-      {% if post.photo_url %}
-        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-      {% else %}
-        <!-- <div class="title">{{ post.title }}</div> -->
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-          {{ post.tags | array_to_sentence_string }}
-        </info>
-        {% if post.description %}
-        <span class="body">{{ post.description | strip_html }}</span>
-        {% else %}
-        <span class="body">{{ post.excerpt | strip_html }}</span>
+    {% assign theme_ids = "" %}
+      {% for theme in site.themes %}
+        {% if theme.jurisdiction == "australia" %}
+          {% assign theme_ids = theme_ids | append: theme.id %}
+          {% assign theme_ids = theme_ids | append: "," %}
         {% endif %}
-      {% endif %}<!-- post.photo_url -->
-      </div>
-    </a>{% endfor %}
+      {% endfor %}
+      
+      {% unless theme_ids == "" %}
+        {% assign theme_ids_list = theme_ids | split: "," %}
+        {% include theme_cards.html theme_ids=theme_ids_list %}
+      {% endunless %}
     <div class="breaker"></div>
+    
     <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left">
-    <h3>Need more information?</h3>
-    <p>Are you a competitor in Govhack 2015? We'll have data mentors from GA and CSIRO available for the duration of the weekend to answer your questions, help you with project ideas and with finding any extra data you might need. The GA mentors will be at the Canberra event, and the CSIRO guys will be in Perth, but we'll also watch the GovHack Hackerspace forum for your questions, and we can all be contacted online.</p>
-    <p>
-    <table width=95%>
-      <tr>
-        <th colspan="2">Mentors from the CSIRO</th>
-      </tr>
-      <tr>
-        <td width=100px style="vertical-align: text-top">
-          <br><img src="resources/jess-150x150.png", width=90px>
-        </td>
-        <td>
-          <br><em>Jess Robertson</em><br>
-          I’m a geologist/physicist/data scientist at the CSIRO. I work on a range of science projects across the organisation, generally using geoscience and geospatial data with machine learning and data analysis to improve exploration and production strategies for the minerals and mets sector. As well as science-y things, you can ask me about webservices, maps and geospatial data. Python is my poison of choice. Ping me on twitter <a href="http://twitter.com/jesserobertson">@jesserobertson</a>, or send me an email: <a href="mailto:jesse.robertson@csiro.au">jesse.robertson@csiro.au</a>.
-        </td>
-      </tr>
-      <tr>
-        <td width=100px style="vertical-align: text-top">
-          <br><img src="resources/jens.jpg", width=90px>
-        </td>
-        <td>
-          <br><em>Jens Klump</em><br>
-          I’m the CSIRO Science Leader for Earth Science Informatics. I'm interested in data driven science, including simulation, remotely operated instruments, and high performance and cloud computing. I also work with organizations like <a href="http://www.ands.org.au/">ANDS</a> on long-term preservation of research data, and I can help you find some of the more interesting datasets in the Research Data Australia and CSIRO data archives. I'm on twitter <a href="http://twitter.com/snet_jklump">@snet_jklump</a>, or send me an email: <a href="mailto:jens.klump@csiro.au">jens.klump@csiro.au</a>.
-        </td>
-      </tr>
-    </table>
-    </p>
-    <p>
-    <table width=95%>
-      <tr>
-        <th colspan="2">Mentors from Geoscience Australia</th>
-      </tr>
-      <tr>
-        <td width=100px style="vertical-align: text-top">
-          <br><img src="resources/kristin.jpg", width=90px>
-        </td>
-        <td>
-          <br><em>Kristin Milton</em><br>
-          I can tell you how to use web mapping services in your apps and visualisations, or any general geo geekery.  I can provide advice on interacting with OGC web services, catalogue services and how to find other GA data you might want to use. I can also get you started using the GA landsat services. Contact me via Google Plus at <a href="https://plus.google.com/u/0/+KristinMilton/posts">+KristinMilton</a>.
-        </td>
-      </tr>
-      <tr>
-        <td width=100px style="vertical-align: text-top">
-          <br><img src="resources/norm-150x150.jpg", width=90px>
-        </td>
-        <td>
-          <br><em>Norman Mueller</em><br>
-          I analyse satellite imagery to understand the surface of the earth and how it is changing. My main focus is surface water (rivers, lakes) and flooding. I also do a lot of work responding to natural disasters using satellite imagery. You can talk to me about the Water Observations from Space (WOfS) dataset, what it shows, how it was made, what its limitations are and its applications. Contact me via email at <a href="mailto:nmgis@braidweb.net.au">nmgis@braidweb.net.au</a>.
-        </td>
-      </tr>
-      <tr>
-        <td width=100px style="vertical-align: text-top">
-          <br><img src="resources/frank.jpg", width=90px>
-        </td>
-        <td>
-          <br><em>Frank Fu</em><br>
-          I develop web applications which provide interfaces for Australian community to access to various geoscience datasets. You can talk to me about object-oriented software design and development, web application frameworks, Spring/JPA and AngularJS, etc. I have broad experience in programming using Java, C, Python and Shell script, etc. Contact me via email at <a href="mailto:frankfu03@hotmail.com">frankfu03@hotmail.com</a>.
-        </td>
-      </tr>
-      <tr>
-        <td width=100px>
-        </td>
-        <td>
-          <br><em>Mehra Jagdish</em><br>
-          I am GA's GovHack coordinator. Contact me via email at <a href="mailto:Jagdish.Mehra@ga.gov.au">Jagdish.Mehra@ga.gov.au</a> or via phone on 6249 9059.
-        </td>
-      </tr>
-    </table>
-    </p>
+      <p>
+        <h4><a href="datasets.html">List all datasets</a></h4>
+        <h4><a href="prizes.html">List all prizes</a></h4>
+        <h4><a href="mentors.html">List all mentors</a></h4>
+        <h4><a href="jurisdictions.html">List all jurisdictions</a></h4>
+        <h4><a href="locations.html">List all locations</a></h4>
+      </p>
+      
+      <div class="breaker"></div>
+      
+      <h3>Need more information?</h3>
+      <p>Are you a competitor in Govhack 2015? We'll have data mentors from GA and CSIRO available for the duration of the weekend to answer your questions, help you with project ideas and with finding any extra data you might need. The GA mentors will be at the Canberra event, and the CSIRO guys will be in Perth, but we'll also watch the GovHack Hackerspace forum for your questions, and we can all be contacted online.</p>
+      
+      <p>
+        <h3>Mentors</h3>
+        {% assign mentors_by_org = site.mentors | group_by:"organisation" %}
+        {% include mentor_card_by_organisation.html mentors_by_org=mentors_by_org %}
+      </p>
+        
+      <p>
+        <h3>Organisations</h3>
+        {% include organisation_cards.html %}
+      </p>
+        <!-- <tr>
+          <td width=100px style="vertical-align: text-top">
+            <br><img src="resources/jens.jpg", width=90px>
+          </td>
+          <td>
+            <br><em>Jens Klump</em><br>
+            I’m the CSIRO Science Leader for Earth Science Informatics. I'm interested in data driven science, including simulation, remotely operated instruments, and high performance and cloud computing. I also work with organizations like <a href="http://www.ands.org.au/">ANDS</a> on long-term preservation of research data, and I can help you find some of the more interesting datasets in the Research Data Australia and CSIRO data archives. I'm on twitter <a href="http://twitter.com/snet_jklump">@snet_jklump</a>, or send me an email: <a href="mailto:jens.klump@csiro.au">jens.klump@csiro.au</a>.
+          </td>
+        </tr> -->
+      
+      <!-- <p>
+      <table width=95%>
+        <tr>
+          <th colspan="2">Mentors from Geoscience Australia</th>
+        </tr>
+        <tr>
+          <td width=100px style="vertical-align: text-top">
+            <br><img src="resources/kristin.jpg", width=90px>
+          </td>
+          <td>
+            <br><em>Kristin Milton</em><br>
+            I can tell you how to use web mapping services in your apps and visualisations, or any general geo geekery.  I can provide advice on interacting with OGC web services, catalogue services and how to find other GA data you might want to use. I can also get you started using the GA landsat services. Contact me via Google Plus at <a href="https://plus.google.com/u/0/+KristinMilton/posts">+KristinMilton</a>.
+          </td>
+        </tr>
+        <tr>
+          <td width=100px style="vertical-align: text-top">
+            <br><img src="resources/norm-150x150.jpg", width=90px>
+          </td>
+          <td>
+            <br><em>Norman Mueller</em><br>
+            I analyse satellite imagery to understand the surface of the earth and how it is changing. My main focus is surface water (rivers, lakes) and flooding. I also do a lot of work responding to natural disasters using satellite imagery. You can talk to me about the Water Observations from Space (WOfS) dataset, what it shows, how it was made, what its limitations are and its applications. Contact me via email at <a href="mailto:nmgis@braidweb.net.au">nmgis@braidweb.net.au</a>.
+          </td>
+        </tr>
+        <tr>
+          <td width=100px style="vertical-align: text-top">
+            <br><img src="resources/frank.jpg", width=90px>
+          </td>
+          <td>
+            <br><em>Frank Fu</em><br>
+            I develop web applications which provide interfaces for Australian community to access to various geoscience datasets. You can talk to me about object-oriented software design and development, web application frameworks, Spring/JPA and AngularJS, etc. I have broad experience in programming using Java, C, Python and Shell script, etc. Contact me via email at <a href="mailto:frankfu03@hotmail.com">frankfu03@hotmail.com</a>.
+          </td>
+        </tr>
+        <tr>
+          <td width=100px>
+          </td>
+          <td>
+            <br><em>Mehra Jagdish</em><br>
+            I am GA's GovHack coordinator. Contact me via email at <a href="mailto:Jagdish.Mehra@ga.gov.au">Jagdish.Mehra@ga.gov.au</a> or via phone on 6249 9059.
+          </td>
+        </tr>
+      </table>
+      </p> -->
 
-    <p>Are you a data mentor for GovHack and have some stuff to contribute? Please feel free to submit a pull request to <a href="https://github.com/govhack-science/govhack-science.github.io">the github repo</a> or just flick me an email with the relevant details at jesse.robertson@csiro.au.</p>
+      <p>Are you a data mentor for GovHack and have some stuff to contribute? Please feel free to submit a pull request to <a href="https://github.com/govhack-science/govhack-science.github.io">the github repo</a> or just flick me an email with the relevant details at jesse.robertson@csiro.au.</p>
     </div>
     <div class="breaker"></div>
   </div>
