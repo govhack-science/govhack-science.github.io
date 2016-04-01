@@ -10,6 +10,12 @@ layout: default
   <div class="content full-bleed" id="recent-posts">
     <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left">
     <p>
+      Browse datasets for your state...
+    </p>
+    
+    {% include jurisdictions_bar.html section="datasets" %}
+    
+    <p>
       {% include dataset_cards_by_organisation.html %}
     </p>
     </div>

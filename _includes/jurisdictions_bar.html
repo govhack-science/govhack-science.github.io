@@ -1,0 +1,29 @@
+<style>
+ul.jurisdictions_bar {
+  list-style-type: none;
+}
+
+ul.jurisdictions_bar > li {
+  display: inline-block;
+  width: 9%;
+  height: 70px;
+  margin: 0px !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul.jurisdictions_bar > li:hover {
+  background-color: #dddddd;
+}
+
+ul.jurisdictions_bar > li > a:visited {
+  color: #316d96;
+}
+</style>
+
+<ul class="jurisdictions_bar">
+  {% for jurisdiction in site.jurisdictions %}
+    {% assign short_name = jurisdiction.id | slice: 0, 3 | upcase %}
+    <li><a href="{{ jurisdiction.url }}#{{ include.section }}">{{ short_name }}</a></li>
+  {% endfor %}
+</ul>

@@ -21,7 +21,7 @@ layout: default
       {% endfor %}
 
       {% unless location_ids == "" %}
-        <h3>Locations</h3>
+        <h3><a name="locations">Locations</a></h3>
         {% assign location_ids_list = location_ids | lstrip | split: "," %}
         {% include location_cards.html location_ids=location_ids_list %}
       {% endunless %}
@@ -36,7 +36,7 @@ layout: default
       {% endfor %}
 
       {% unless theme_ids == "" %}
-        <h3>State Themes</h3>
+        <h3><a name="themes">State Themes</a></h3>
         {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
         {% include theme_cards.html theme_ids=theme_ids_list %}
       {% endunless %}
@@ -51,7 +51,7 @@ layout: default
       {% endfor %}
 
       {% unless prize_ids == "" %}
-        <h3>State Prizes</h3>
+        <h3><a name="prizes">State Prizes</a></h3>
         {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
         {% include prize_cards.html prize_ids=prize_ids_list %}
       {% endunless %}
@@ -66,7 +66,7 @@ layout: default
       {% endfor %}
 
       {% unless dataset_ids == "" %}
-        <h3>State Datasets</h3>
+        <h3><a name="datasets">State Datasets</a></h3>
         {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
         {% include dataset_cards.html dataset_ids=dataset_ids_list %}
       {% endunless %}
@@ -81,7 +81,7 @@ layout: default
       {% endfor %}
 
       {% unless dataportal_ids == "" %}
-        <h3>State Data Portals</h3>
+        <h3><a name="dataportals">State Data Portals</a></h3>
         {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
         {% include dataportal_cards.html dataportal_ids=dataportal_ids_list %}
       {% endunless %}
@@ -96,7 +96,7 @@ layout: default
       {% endfor %}
 
       {% unless mentor_ids == "" %}
-        <h3>State Mentors</h3>
+        <h3><a name="mentors">State Mentors</a></h3>
         {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
         {% include mentor_cards.html mentor_ids=mentor_ids_list %}
       {% endunless %}
@@ -111,7 +111,7 @@ layout: default
       {% endfor %}
 
       {% unless organisation_ids == "" %}
-        <h3>State Organisations</h3>
+        <h3><a name="organisations">State Organisations</a></h3>
         {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
         {% include organisation_cards.html organisation_ids=organisation_ids_list %}
       {% endunless %}

@@ -8,7 +8,12 @@ layout: default
     </div>
     <div class="breaker"></div>
   <div class="content full-bleed" id="recent-posts">
-    <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left">
+    <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left"><p>
+      Browse prizes for your state...
+    </p>
+    
+    {% include jurisdictions_bar.html section="prizes" %}
+    
     <p>
       {% include prize_cards.html %}
     </p>

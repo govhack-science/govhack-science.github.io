@@ -8,7 +8,12 @@ layout: default
     </div>
     <div class="breaker"></div>
   <div class="content full-bleed" id="recent-posts">
-    <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left">
+    <div class="end" style="padding-left: 50px; padding-right: 50px; text-align: left"><p>
+      Browse mentors for your state...
+    </p>
+    
+    {% include jurisdictions_bar.html section="mentors" %}
+    
     <p>
       {% assign mentors_by_org = site.mentors | group_by:"organisation" %}
       {% include mentor_card_by_organisation.html mentors_by_org=mentors_by_org %}
