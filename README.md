@@ -38,3 +38,9 @@ All of the GitHub pages flavour of Jekyll, and its gem dependencies are automati
 https://jekyllrb.com/docs/usage/
 
 `jekyll serve`
+
+If you receive a message like:
+
+> Could not find gem 'github-pages (= 67)' in any of the gem sources listed in your Gemfile or available on this machine. (Bundler::GemNotFound)
+
+Then it means GitHub has upgraded their `github-pages` gem version, so just run `bundle install` from the root directory to upgrade to the latest set of deps GitHub is using.
