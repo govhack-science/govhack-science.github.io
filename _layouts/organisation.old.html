@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <img src="{{ page.logo_url }}" />
+    <a href="{{ page.website_url }}">{{ page.website_url }}</a>
+    
+    <div class="body">
+      {% for jurisdiction in site.jurisdictions %}
+        {% if jurisdiction.id == page.jurisdiction %}
+          {% assign jurisdiction = jurisdiction %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+      
+      {% if page.locations %}
+        {% capture locations %}
+          {% for location in page.locations %}
+            {{ location }} 
+          {% endfor %}
+        {% endcapture %}
+        <h4>Locations: {{ locations }} </h4>
+      {% endif %}
+      
+      <h4>Type: {{ page.type}} </h4>
+      
+      {{ content }}
+      
+      {% assign prize_ids = "" %}
+      {% for prize in site.prizes %}
+        {% for organisation_id in prize.organisations %}
+          {% if organisation_id == page.id %}
+            {% assign prize_ids = prize_ids | append: prize.id %}
+            {% assign prize_ids = prize_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless prize_ids == "" %}
+        <h3>Prizes</h3>
+        {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+        {% include prize_cards.html prize_ids=prize_ids_list %}
+      {% endunless %}
+      
+      
+      {% capture mentor_ids %}{% include get_organisation_mentors.html organisation_id=page.id %}{% endcapture %}
+      {% assign mentor_ids = mentor_ids | lstrip %}
+      {% unless mentor_ids == "" %}
+        <h3>Mentors</h3>
+        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+        {% include mentor_cards.html mentor_ids=mentor_ids_list %}
+      {% endunless %}
+      
+      
+      {% if page.datasets %}
+        <h3>Datasets</h3>
+        {% include dataset_cards.html dataset_ids=page.datasets %}
+      {% endif %}
+      
+      
+      {% if page.themes %}
+        <h3>Themes</h3>
+        {% include theme_cards.html theme_ids=page.themes %}
+      {% endif %}
+      
+      
+      {% if page.dataportals %}
+        <h3>Data Portals</h3>
+        {% include dataportal_cards.html dataportal_ids=page.dataportals %}
+      {% endif %}
+      
+      
+      {% if page.fields %}
+        <h3>Fields</h3>
+        {% include field_cards.html field_ids=page.fields %}
+      {% endif %}
+     </div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

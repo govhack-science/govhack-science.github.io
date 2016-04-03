@@ -1,0 +1,23 @@
+{% if include.locations %}
+  {% assign location_ids = include.locations | map: "id" %}
+{% else %}
+  {% assign location_ids = include.location_ids %}
+{% endif %}
+
+{% for location in site.locations %}
+  {% if location_ids == nil or location_ids contains location.id %}
+  <div class="media">
+      <div class="media-left">
+        {% if location.photo_url %}
+          <a href="{{ location.url }}"><img src="{{ location.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+        {% else %}
+          <a href="#"><img src="holder.js/105x105"></a>
+        {% endif %}
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ location.url }}">{{ location.name }}</a></h4>
+        {{ location.excerpt }}
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

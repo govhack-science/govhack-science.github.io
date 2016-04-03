@@ -1,0 +1,18 @@
+<!--
+mentors: Excepts a two dimensional array of mentors grouped by organisation.
+e.g. site.mentors | group_by:"organisation"
+-->
+
+{% for group in include.mentors_by_org %}
+  <!-- Get organisation info -->
+  {% for item in site.organisations %}
+    {% if item.id == group.name %}
+      {% assign organisation = item %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  
+  <h3>Mentors from <a href="{{ organisation.url }}">{{ organisation.name }}</a></h3>
+  {% include mentor_cards.bs.html mentors=group.items %}
+  <br>
+{% endfor %}

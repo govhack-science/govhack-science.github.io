@@ -2,6 +2,7 @@
 name: Mentor 1
 id: mentor_1
 photo_url: /resources/jess-150x150.png
+title: Science Ninja
 ask_me_about: Stuff and things.
 organisation: organisation_1
 jurisdiction: wa
@@ -10,6 +11,7 @@ contact:
   twitter: jesserobertson
   email: jesse.robertson@csiro.au
   linkedin: http://
+  facebook: http://
 fields:
   - field_3
 # themes: 

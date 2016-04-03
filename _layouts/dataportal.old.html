@@ -1,0 +1,115 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <div class="body">
+      <a href="{{ page.website_url }}"><img src="{{ page.logo_url }}"></a>
+      
+      {% for jurisdiction in site.jurisdictions %}
+        {% if jurisdiction.id == page.jurisdiction %}
+          {% assign jurisdiction = jurisdiction %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+      
+      {{ content }}
+      
+      
+      {% assign organisation_ids = "" %}
+      {% for organisation in site.organisations %}
+        {% for dataportal_id in organisation.dataportals %}
+          {% if dataportal_id == page.id %}
+            {% assign organisation_ids = organisation_ids | append: organisation.id %}
+            {% assign organisation_ids = organisation_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless organisation_ids == "" %}
+        <h3>Organisations</h3>
+        {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
+        {% include organisation_cards.html organisation_ids=organisation_ids_list %}
+      {% endunless %}
+      
+      
+      {% assign mentor_ids = "" %}
+      {% for mentor in site.mentors %}
+        {% for dataportal_id in mentor.dataportals %}
+          {% if dataportal_id == page.id %}
+            {% assign mentor_ids = mentor_ids | append: mentor.id %}
+            {% assign mentor_ids = mentor_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless mentor_ids == "" %}
+        <h3>Mentors</h3>
+        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+        {% include mentor_cards.html mentor_ids=mentor_ids_list %}
+      {% endunless %}
+      
+      
+      {% assign prize_ids = "" %}
+      {% for prize in site.prizes %}
+        {% for dataportal_id in prize.dataportals %}
+          {% if dataportal_id == page.id %}
+            {% assign prize_ids = prize_ids | append: prize.id %}
+            {% assign prize_ids = prize_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless prize_ids == "" %}
+        <h3>Prizes</h3>
+        {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+        {% include prize_cards.html prize_ids=prize_ids_list %}
+      {% endunless %}
+      
+      
+      {% assign field_ids = "" %}
+      {% for field in site.fields %}
+        {% for dataportal_id in field.dataportals %}
+          {% if dataportal_id == page.id %}
+            {% assign field_ids = field_ids | append: field.id %}
+            {% assign field_ids = field_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless field_ids == "" %}
+        <h3>Fields</h3>
+        {% assign field_ids_list = field_ids | lstrip | split: "," %}
+        {% include field_cards.html field_ids=field_ids_list %}
+      {% endunless %}
+      
+      
+      {% assign theme_ids = "" %}
+      {% for theme in site.themes %}
+        {% for dataportal_id in theme.dataportals %}
+          {% if dataportal_id == page.id %}
+            {% assign theme_ids = theme_ids | append: theme.id %}
+            {% assign theme_ids = theme_ids | append: "," %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% unless theme_ids == "" %}
+        <h3>Themes</h3>
+        {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+        {% include theme_cards.html theme_ids=theme_ids_list %}
+      {% endunless %}
+    </div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

@@ -1,0 +1,23 @@
+{% if include.jurisdictions %}
+  {% assign jurisdiction_ids = include.jurisdictions | map: "id" %}
+{% else %}
+  {% assign jurisdiction_ids = include.jurisdiction_ids %}
+{% endif %}
+
+{% for jurisdiction in site.jurisdictions %}
+  {% if jurisdiction_ids == nil or jurisdiction_ids contains jurisdiction.id %}
+  <div class="media">
+      <div class="media-left">
+        {% if jurisdiction.photo_url %}
+          <a href="{{ jurisdiction.url }}"><img src="{{ jurisdiction.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+        {% else %}
+          <a href="#"><img src="holder.js/105x105"></a>
+        {% endif %}
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+        {{ jurisdiction.excerpt }}
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

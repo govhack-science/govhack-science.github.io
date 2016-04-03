@@ -1,126 +1,227 @@
 ---
-layout: default
+layout: bootstrap
 ---
-<div class="content{% if page.photo_url %} photo-post{% endif %}">
-  <div class="post single">
-    <h1>{{ page.name }}</h1>
-    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-      {{ page.tags | array_to_sentence_string }}
-    </info> -->
-    <div class="body">
-      <img src="{{ page.photo_url }}" />
-
-      {{ content }}
-
-      {% assign location_ids = "" %}
-      {% for location in site.locations %}
-        {% if location.jurisdiction == page.id %}
-          {% assign location_ids = location_ids | append: location.id %}
-          {% assign location_ids = location_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless location_ids == "" %}
-        <h3><a name="locations">Locations</a></h3>
-        {% assign location_ids_list = location_ids | lstrip | split: "," %}
-        {% include location_cards.html location_ids=location_ids_list %}
-      {% endunless %}
-
-
-      {% assign theme_ids = "" %}
-      {% for theme in site.themes %}
-        {% if theme.jurisdiction == page.id %}
-          {% assign theme_ids = theme_ids | append: theme.id %}
-          {% assign theme_ids = theme_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless theme_ids == "" %}
-        <h3><a name="themes">State Themes</a></h3>
-        {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
-        {% include theme_cards.html theme_ids=theme_ids_list %}
-      {% endunless %}
-
-
-      {% assign prize_ids = "" %}
-      {% for prize in site.prizes %}
-        {% if prize.jurisdiction == page.id %}
-          {% assign prize_ids = prize_ids | append: prize.id %}
-          {% assign prize_ids = prize_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless prize_ids == "" %}
-        <h3><a name="prizes">State Prizes</a></h3>
-        {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
-        {% include prize_cards.html prize_ids=prize_ids_list %}
-      {% endunless %}
-
-
-      {% assign dataset_ids = "" %}
-      {% for dataset in site.datasets %}
-        {% if dataset.jurisdiction == page.id %}
-          {% assign dataset_ids = dataset_ids | append: dataset.id %}
-          {% assign dataset_ids = dataset_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless dataset_ids == "" %}
-        <h3><a name="datasets">State Datasets</a></h3>
-        {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
-        {% include dataset_cards.html dataset_ids=dataset_ids_list %}
-      {% endunless %}
-
-
-      {% assign dataportal_ids = "" %}
-      {% for dataportal in site.dataportals %}
-        {% if dataportal.jurisdiction == page.id %}
-          {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
-          {% assign dataportal_ids = dataportal_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless dataportal_ids == "" %}
-        <h3><a name="dataportals">State Data Portals</a></h3>
-        {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-        {% include dataportal_cards.html dataportal_ids=dataportal_ids_list %}
-      {% endunless %}
-
-
-      {% assign mentor_ids = "" %}
-      {% for mentor in site.mentors %}
-        {% if mentor.jurisdiction == page.id %}
-          {% assign mentor_ids = mentor_ids | append: mentor.id %}
-          {% assign mentor_ids = mentor_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless mentor_ids == "" %}
-        <h3><a name="mentors">State Mentors</a></h3>
-        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
-        {% include mentor_cards.html mentor_ids=mentor_ids_list %}
-      {% endunless %}
-
-
-      {% assign organisation_ids = "" %}
-      {% for organisation in site.organisations %}
-        {% if organisation.jurisdiction == page.id %}
-          {% assign organisation_ids = organisation_ids | append: organisation.id %}
-          {% assign organisation_ids = organisation_ids | append: "," %}
-        {% endif %}
-      {% endfor %}
-
-      {% unless organisation_ids == "" %}
-        <h3><a name="organisations">State Organisations</a></h3>
-        {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
-        {% include organisation_cards.html organisation_ids=organisation_ids_list %}
-      {% endunless %}
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    <!--<div class="row header-row">
+        <div class="col-lg-12 text-center">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </div>-->
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+            <img src="{{ page.photo_url }}" style="max-width: 200px; max-height: 200px;">
+        </div>
+        <div class="media-body">
+          <!--<h4 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h4>-->
+          {{ page.content }}
+        </div>
+        <div class="media-right jurisdictions-bar">
+          <ul class="list-inline social-buttons">
+              <li>
+                  <a href="#">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- <div class="breaker"></div> -->
-    <div class="breaker"></div>
-    <!-- <info class="after">
-<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
-    </info> -->
   </div>
-</div>
-{% include autoreload-in-debug.html %}
+</section>
+
+{% assign location_ids = "" %}
+{% for location in site.locations %}
+  {% if location.jurisdiction == page.id %}
+    {% assign location_ids = location_ids | append: location.id %}
+    {% assign location_ids = location_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless location_ids == "" %}
+<!-- Locations Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="locations">State Locations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign location_ids_list = location_ids | lstrip | split: "," %}
+          {% include location_cards.bs.html location_ids=location_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign theme_ids = "" %}
+{% for theme in site.themes %}
+  {% if theme.jurisdiction == page.id %}
+    {% assign theme_ids = theme_ids | append: theme.id %}
+    {% assign theme_ids = theme_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless theme_ids == "" %}
+<!-- Themes Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="themes">State Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign prize_ids = "" %}
+{% for prize in site.prizes %}
+  {% if prize.jurisdiction == page.id %}
+    {% assign prize_ids = prize_ids | append: prize.id %}
+    {% assign prize_ids = prize_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless prize_ids == "" %}
+<!-- Prizes Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="prizes">State Prizes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+          {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataset_ids = "" %}
+{% for dataset in site.datasets %}
+  {% if dataset.jurisdiction == page.id %}
+    {% assign dataset_ids = dataset_ids | append: dataset.id %}
+    {% assign dataset_ids = dataset_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless dataset_ids == "" %}
+<!-- Datasets Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="datasets">State Datasets</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
+          {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+  {% if dataportal.jurisdiction == page.id %}
+    {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+    {% assign dataportal_ids = dataportal_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Data Portals Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="dataportals">State Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign mentor_ids = "" %}
+{% for mentor in site.mentors %}
+  {% if mentor.jurisdiction == page.id %}
+    {% assign mentor_ids = mentor_ids | append: mentor.id %}
+    {% assign mentor_ids = mentor_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless mentor_ids == "" %}
+<!-- Mentors Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="mentors">State Mentors</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+          {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign organisation_ids = "" %}
+{% for organisation in site.organisations %}
+  {% if organisation.jurisdiction == page.id %}
+    {% assign organisation_ids = organisation_ids | append: organisation.id %}
+    {% assign organisation_ids = organisation_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless organisation_ids == "" %}
+<!-- Organisations Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="organisations">State Organisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
+          {% include organisation_cards.bs.html organisation_ids=organisation_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}

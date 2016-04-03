@@ -2,6 +2,7 @@
 name: Mentor 3
 id: mentor_3
 photo_url: https://static.pexels.com/photos/9635/suit-portrait-preparation-wedding-large.jpg
+title: Science Ninja
 ask_me_about: Stuff and things.
 organisation: organisation_1
 jurisdiction: australia

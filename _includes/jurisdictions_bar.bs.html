@@ -1,0 +1,17 @@
+<div class="row jurisdictions-bar">
+  <div class="col-lg-1"></div>
+  
+  {% for jurisdiction in site.jurisdictions %}
+    {% assign short_name = jurisdiction.id | slice: 0, 3 | upcase %}
+    <div class="col-lg-1">
+      <div class="thumbnail">
+        <a href="{{ jurisdiction.url }}#{{ include.section }}">
+          <img src="holder.js/70x70" alt="...">
+          <div class="caption">
+            <h4>{{ short_name }}</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

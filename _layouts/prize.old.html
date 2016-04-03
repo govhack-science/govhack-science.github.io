@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <div class="body">
+      {% for jurisdiction in site.jurisdictions %}
+        {% if jurisdiction.id == page.jurisdiction %}
+          {% assign jurisdiction = jurisdiction %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+      
+      {% if page.locations %}
+        {% capture locations %}
+          {% for location in page.locations %}
+            {{ location }} 
+          {% endfor %}
+        {% endcapture %}
+        <h4>Locations: {{ locations }} </h4>
+      {% endif %}
+      
+      <h4>Type: {{ page.type}} </h4>
+      
+      <img src="{{ page.photo_url }}">
+      
+      {{ content }}
+      
+      <h3>Organisations</h3>
+      {% include organisation_cards.html organisation_ids=page.organisations %}
+    
+      {% if page.datasets %}
+        <h1>Datasets</h1>
+        {% include dataset_cards.html dataset_ids=page.datasets %}
+      {% endif %}
+    
+      {% if page.themes %}
+        <h1>Themes</h1>
+        {% include theme_cards.html theme_ids=page.themes %}
+      {% endif %}
+    
+      {% if page.dataportals %}
+        <h1>Dataportals</h1>
+        {% include dataportal_cards.html dataportal_ids=page.dataportals %}
+      {% endif %}
+    </div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

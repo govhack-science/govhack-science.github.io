@@ -1,0 +1,64 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    <h1>{{ page.name }}</h1>
+    <!-- <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.tags | array_to_sentence_string }}
+    </info> -->
+    <div class="body">{{ content }}</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://govhack-science.github.io{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+    
+    {% assign prize_ids = "" %}
+    {% for prize in site.prizes %}
+      {% for theme_id in prize.themes %}
+        {% if theme_id == page.id %}
+          {% assign prize_ids = prize_ids | append: prize.id %}
+          {% assign prize_ids = prize_ids | append: "," %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    
+    {% unless prize_ids == "" %}
+      <h3>Prizes</h3>
+      {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+      {% include prize_cards.html prize_ids=prize_ids_list %}
+    {% endunless %}
+    
+    
+    {% if page.datasets %}
+      <h1>Datasets</h1>
+      {% include dataset_cards.html dataset_ids=page.datasets %}
+    {% endif %}
+    
+    
+    {% if page.dataportals %}
+      <h1>Data Portals</h1>
+      {% include dataportal_cards.html dataportal_ids=page.dataportals %}
+    {% endif %}
+    
+    
+    {% if page.mentors %}
+      <h1>Mentors</h1>
+      {% include mentor_cards.html mentor_ids=page.mentors %}
+    {% endif %}
+    
+    
+    {% if page.organisations %}
+      <h1>Organisations</h1>
+      {% include organisation_cards.html organisation_ids=page.organisations %}
+    {% endif %}
+    
+    
+    {% if page.fields %}
+      <h1>Fields</h1>
+      {% include field_cards.html field_ids=page.fields %}
+    {% endif %}
+  </div>
+</div>
+{% include autoreload-in-debug.html %}

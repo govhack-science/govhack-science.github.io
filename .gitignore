@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 *.sublime-workspace
 Gemfile.lock
+startbootstrap-*

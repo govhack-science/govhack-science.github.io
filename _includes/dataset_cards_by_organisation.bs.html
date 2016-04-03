@@ -1,0 +1,6 @@
+{% for organisation in site.organisations %}
+  {% if organisation.datasets %}
+    <h3>Datasets from <a href="{{ organisation.url }}">{{ organisation.name }}</a></h3>
+    {% include dataset_cards.bs.html dataset_ids=organisation.datasets %}
+  {% endif %}
+{% endfor %}
