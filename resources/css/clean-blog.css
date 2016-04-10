@@ -715,3 +715,9 @@ a.cc {
 .media.mentor ul.social-buttons li {
   padding-right: 0px;
 }
+
+/* Temporary hack to force page widths to obey the columns */
+/* Replace later with proper layouts on each page sans div.container */
+section > div.container {
+  width: inherit;
+}
