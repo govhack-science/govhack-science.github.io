@@ -29,55 +29,55 @@ collections:
 
 defaults:
   - scope:
-      path: "themes"
+      path: "_themes"
       type: themes
     values:
       layout: theme
       
   - scope:
-      path: "datasets"
+      path: "_datasets"
       type: datasets
     values:
       layout: dataset
       
   - scope:
-      path: "dataportals"
+      path: "_dataportals"
       type: dataportals
     values:
     
       layout: dataportal
   - scope:
-      path: "fields"
+      path: "_fields"
       type: fields
     values:
       layout: field
       
   - scope:
-      path: "mentors"
+      path: "_mentors"
       type: mentors
     values:
       layout: mentor
       
   - scope:
-      path: "organisations"
+      path: "_organisations"
       type: organisations
     values:
       layout: organisation
       
   - scope:
-      path: "prizes"
+      path: "_prizes"
       type: prizes
     values:
       layout: prize
       
   - scope:
-      path: "jurisdictions"
+      path: "_jurisdictions"
       type: jurisdictions
     values:
       layout: jurisdiction
       
   - scope:
-      path: "locations"
+      path: "_locations"
       type: locations
     values:
       layout: location
