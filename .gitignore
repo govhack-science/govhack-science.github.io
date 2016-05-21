@@ -1,6 +1,7 @@
 _site
 .sass-cache/
 .jekyll-metadata
+config-example.yaml
 *.sublime-workspace
 Gemfile.lock
 startbootstrap-*
