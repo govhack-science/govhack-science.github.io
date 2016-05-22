@@ -69,6 +69,7 @@ hr.small {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -117,18 +118,19 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    /*color: #404040;*/
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    /*color: #404040;*/
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    /*color: #0085a1;*/
+    color: #71B1DE;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -564,6 +566,23 @@ aside.clients img {
   font-weight: 800;
 }
 
+.navbar-custom {
+  background-image: url('/resources/govhack-background-home.jpg');
+  background-position: 50% 35%;
+}
+
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .navbar-toggle[aria-expanded] {
+  background-color: #404040;
+}
+
+.navbar-custom .icon-bar {
+  background-color: white !important;
+}
+
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li,
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li a {
   color: #404040;
@@ -585,6 +604,21 @@ aside.clients img {
   color: #0085a1;
 }
 
+.navbar-custom .dropdown-menu li a {
+  color: black;
+  padding: 7px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-custom .dropdown-menu li a {
+   color: white !important; 
+  }
+}
+
+.navbar-custom .dropdown-menu li a:hover {
+  background-color: #eee;
+  color: #0085a1;
+}
+
 .navbar-brand.breadcrumb li a {
   color: white;
 }
@@ -601,15 +635,6 @@ section#content {
 
 .header-row {
   padding-bottom: 20px;
-}
-
-.navbar-custom .dropdown-menu li a {
-  color: black;
-}
-
-.navbar-custom .dropdown-menu li a:hover {
-  background-color: #eee;
-  color: #0085a1;
 }
 
 
@@ -673,9 +698,16 @@ section#content {
 
 /* Bootstrap TOC */
 nav[data-toggle='toc'] {
-  top: 90px;
+  top: 70px;
   max-width: 250px;
   /*margin-top: 30px;*/
+}
+@media (max-width: 767px) {
+  nav[data-toggle='toc'] {
+    position: static;
+    width: auto;
+    margin-top: 70px;
+  }
 }
 
 nav[data-toggle='toc'] h1 {
@@ -758,4 +790,13 @@ a.cc {
 /* Replace later with proper layouts on each page sans div.container */
 section > div.container {
   width: inherit;
+}
+
+.main-container .main-content {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .main-container .main-content {
+    margin-top: 0px;
+  }
 }

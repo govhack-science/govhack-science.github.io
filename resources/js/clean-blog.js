@@ -7,6 +7,7 @@
 /* Modified from the original source to remove unused code related to the contact form and validation. */
 
 // Navigation Scripts to Show Header on Scroll-Up
+/*
 jQuery(document).ready(function($) {
     var MQL = 1170;
 
@@ -35,3 +36,4 @@ jQuery(document).ready(function($) {
             });
     }
 });
+*/
