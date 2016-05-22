@@ -6,3 +6,4 @@ config-example.yaml
 Gemfile.lock
 startbootstrap-*
 docs/
+venv/

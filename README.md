@@ -44,3 +44,23 @@ If you receive a message like:
 > Could not find gem 'github-pages (= 67)' in any of the gem sources listed in your Gemfile or available on this machine. (Bundler::GemNotFound)
 
 Then it means GitHub has upgraded their `github-pages` gem version, so just run `bundle install` from the root directory to upgrade to the latest set of deps GitHub is using.
+
+# Python Tools
+We have a few Python tools to generate JSON files to expose an "API" for govhack.org to consume our content.
+
+To install:
+```
+virtualenv venv
+. venv/bin/activate
+pip install python-frontmatter
+```
+
+These need to be run everytime we change the frontmatter of an .md file so that we always serve the latest content to govhack.org. This generates one `.json.` file for each Markdown file thanks to the magic of [python-frontmatter](https://pypi.python.org/pypi/python-frontmatter/0.2.1).
+
+At this stage it's a straight conversion from one to the other - with no magic to compose the full entity object, include links to and from it, yet. 
+
+To run:
+```
+. venv/bin/activate
+python python/frontmatter-to-json.py
+```
