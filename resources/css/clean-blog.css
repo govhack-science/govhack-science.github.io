@@ -620,6 +620,7 @@ section#content {
   top: 0;
 }*/
 
+/*
 .bs-docs-sidebar.affix {
     position: static;
 }
@@ -627,7 +628,6 @@ section#content {
 .bs-docs-sidebar.affix li {
   padding: 0px;
   margin-top: 0px;
-  /*border: 0px;*/
 }
 
 .bs-docs-sidebar.affix li a:hover {
@@ -668,6 +668,44 @@ section#content {
     .bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
         width:280px
     }
+}
+*/
+
+/* Bootstrap TOC */
+nav[data-toggle='toc'] {
+  top: 90px;
+  max-width: 250px;
+  /*margin-top: 30px;*/
+}
+
+nav[data-toggle='toc'] h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+  padding: 4px 20px;
+  border-bottom: 1px solid #bfc1c3;
+}
+
+nav[data-toggle='toc'] .nav .nav li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override the Affix plugin so that the navigation isn't sticky */
+  nav.affix[data-toggle='toc'] {
+    /*position: static;*/
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle='toc'] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }*/
 }
 
 a.cc {
