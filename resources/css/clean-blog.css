@@ -131,6 +131,7 @@ hr.small {
   .navbar-custom.is-fixed .nav li a:focus,
   .navbar-custom.is-fixed .nav li.open a.dropdown-toggle {
     color: #0085a1;
+    background-color: rgba(255, 255, 255, 0.8);
     /*color: #71B1DE;*/
     /*color: #555;*/
   }
@@ -590,11 +591,11 @@ aside.clients img {
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li,
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li a {
-  color: #404040;
+  /*color: #404040;*/
 }
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li+li:before {
-  color: black;
+  /*color: black;*/
 }
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li.active {
@@ -606,7 +607,7 @@ aside.clients img {
 }
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li.active a {
-  color: #0085a1;
+  /*color: #0085a1;*/
 }
 
 .navbar-custom .dropdown-menu li a {
