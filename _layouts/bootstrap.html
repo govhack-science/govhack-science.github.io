@@ -50,6 +50,7 @@
 
     <!-- Custom CSS -->
     <link href="/resources/css/clean-blog.css" rel="stylesheet">
+    <link href="/resources/css/megamenu.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
 
     <!-- Custom Fonts -->
@@ -96,7 +97,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
@@ -113,6 +114,43 @@
                     <li>
                         <a href="/mentors.html">Mentors</a>
                     </li>
+                    <!-- <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-3"></li>
+                            <li class="col-sm-9 row">
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Dresses</li>
+                                    <li><a href="#">Unique Features</a></li>
+                                    <li><a href="#">Image Responsive</a></li>
+                                    <li><a href="#">Auto Carousel</a></li>
+                                    <li><a href="#">Newsletter Form</a></li>
+                                    <li><a href="#">Four columns</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Tops</li>
+                                    <li><a href="#">Good Typography</a></li>
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Jackets</li>
+                                    <li><a href="#">Easy to customize</a></li>
+                                    <li><a href="#">Glyphicons</a></li>
+                                    <li><a href="#">Pull Right Elements</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Pants</li>
+                                    <li><a href="#">Coloured Headers</a></li>
+                                    <li><a href="#">Primary Buttons & Default</a></li>
+                                    <li><a href="#">Calls to action</a></li>
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Accessories</li>
+                                    <li><a href="#">Default Navbar</a></li>
+                                    <li><a href="#">Lovely Fonts</a></li>
+                                    <li><a href="#">Responsive Dropdown </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
                     <li class="dropdown">
                           <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Jurisdictions
@@ -296,6 +334,10 @@
             // Hack to insert a header at the top of the table of contents
             // $("nav[data-toggle='toc'] ul.nav").prepend("<li class=\"toc-header\"><h1>Contents</h1></li>");
         });
+        
+        jQuery(document).on('click', '.mega-dropdown', function(e) {
+            e.stopPropagation()
+        })
     </script>
 </body>
 
