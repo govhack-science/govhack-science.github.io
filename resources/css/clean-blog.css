@@ -582,7 +582,7 @@ aside.clients img {
   background-color: #404040;
 }
 .navbar-custom .dropdown-toggle[aria-expanded] {
-  color: #0085a1;
+  /*color: #0085a1;*/
 }
 
 .navbar-custom .icon-bar {
@@ -608,6 +608,11 @@ aside.clients img {
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li.active a {
   /*color: #0085a1;*/
+}
+
+.navbar-custom .dropdown-menu ul {
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 .navbar-custom .dropdown-menu li a {

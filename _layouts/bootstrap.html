@@ -151,7 +151,44 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li class="dropdown">
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Locations
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-3"></li>
+                            <li class="col-sm-9 row">
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">ACT</li>
+                                    {% include location_megamenu_item.bs.html location_ids="canberra,canberra-heritage-hack" %}
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">NSW</li>
+                                    {% include location_megamenu_item.bs.html location_ids="parramatta,manly,sydney-disability-inclusion,camperdown-games" %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">QLD</li>
+                                    {% include location_megamenu_item.bs.html location_ids="brisbane,gold-coast,toowoomba,brisbane-maker,ipswich-digital-city" %}
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">SA</li>
+                                    {% include location_megamenu_item.bs.html location_ids="mount-gambier-youth" %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">TAS</li>
+                                    {% include location_megamenu_item.bs.html location_ids="hobart,launceston" %}
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">VIC</li>
+                                    {% include location_megamenu_item.bs.html location_ids="melbourne,geelong,ballarrat,melbourne-open-raster,point-cook-wests-journey,clayton-monash" %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">WA</li>
+                                    {% include location_megamenu_item.bs.html location_ids="perth,geraldton" %}
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--<li class="dropdown">
                           <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Jurisdictions
                             <span class="caret"></span>
@@ -163,7 +200,7 @@
                               <li><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></li>
                             {% endfor %}
                           </ul>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

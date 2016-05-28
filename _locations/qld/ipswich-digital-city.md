@@ -1,8 +1,9 @@
 ---
-name: Online
-id: Online
+name: Ipswich
+id: ipswich-digital-city
 photo_url: /resources/csiro-logo.png
-jurisdiction: australia
+jurisdiction: qld
+type: Theme Node
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

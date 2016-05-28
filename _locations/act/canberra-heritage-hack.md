@@ -1,9 +1,9 @@
 ---
-name: Melbourne
-id: melbourne
+name: Canberra Heritage Hack
+id: canberra-heritage-hack
 photo_url: /resources/csiro-logo.png
-jurisdiction: vic
-type: Event
+jurisdiction: act
+type: Theme Node
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

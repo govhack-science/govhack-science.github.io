@@ -3,7 +3,7 @@ name: Perth
 id: perth
 photo_url: /resources/csiro-logo.png
 jurisdiction: wa
-type: Event
+type: Official Event
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

@@ -1,9 +1,9 @@
 ---
-name: Canberra
-id: canberra
+name: Camperdown Games for Learning
+id: camperdown-games
 photo_url: /resources/csiro-logo.png
-jurisdiction: act
-type: Event
+jurisdiction: nsw
+type: Theme Node
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
