@@ -16,18 +16,48 @@ title: Datasets
 <!-- Prizes Section -->
 <section id="portfolio">
     <div class="container">
-        <!--<div class="row header-row">
+        <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">Prizes</h2>
+              <h2 class="section-heading" id="prizes">Datasets</h2>
           </div>
-        </div>-->
+        </div>
         <div class="row">
             {% if site.datasets.size == 0 %}
-                <h3>We'll be making the official dataset list available soon.
-            Watch this space!</h3>
+                <p>We'll be making the official dataset list available soon.
+            Watch this space!</p>
             {% else %}
                 {% include dataset_cards_by_organisation.bs.html %}
             {% endif %}
         </div>
     </div>
 </section>
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "major-portal" %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% assign dataportal_ids = "datagovau,dataactgovau,datanswgovau,dataqldgovau,datasagovau,datawagovau,opencouncildata,tas" %}
+
+{% unless dataportal_ids == "" %}
+<!-- Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            <p>
+                These are a range of official competition datasets that we wanted to highlight. For the full treasure trove of government data visit our <a href="dataportals.html">Data Portals</a> page.
+            </p>
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
