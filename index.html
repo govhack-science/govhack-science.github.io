@@ -29,7 +29,16 @@ layout: bootstrap
   </div>
 </section>
 
-<!-- Portfolio Grid Section -->
+<!-- Theme Section -->
+{% assign theme_ids = "" %}
+{% for theme in site.themes %}
+    {% if theme.jurisdiction == "australia" %}
+    {% assign theme_ids = theme_ids | append: theme.id %}
+    {% assign theme_ids = theme_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% unless theme_ids == "" %}
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
@@ -39,18 +48,8 @@ layout: bootstrap
             </div>
         </div>
         <div class="row">
-            {% assign theme_ids = "" %}
-            {% for theme in site.themes %}
-              {% if theme.jurisdiction == "australia" %}
-                {% assign theme_ids = theme_ids | append: theme.id %}
-                {% assign theme_ids = theme_ids | append: "," %}
-              {% endif %}
-            {% endfor %}
-            
-            {% unless theme_ids == "" %}
-              {% assign theme_ids_list = theme_ids | split: "," %}
-              {% include theme_cards.bs.html theme_ids=theme_ids_list %}
-            {% endunless %}
+            {% assign theme_ids_list = theme_ids | split: "," %}
+            {% include theme_cards.bs.html theme_ids=theme_ids_list %}
         </div>
         <div class="row">
           <h3 class="section-subheading text-muted">We also have some state-specific themes to help you out...</h3>
@@ -59,6 +58,7 @@ layout: bootstrap
         </div>
     </div>
 </section>
+{% endunless %}
 
 <!-- Need More Info Section -->
 <section id="portfolio">
