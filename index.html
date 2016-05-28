@@ -75,6 +75,7 @@ layout: bootstrap
 </section>
 
 <!-- Mentors Section -->
+{% if site.mentors.size > 0 %}
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
@@ -88,8 +89,10 @@ layout: bootstrap
         </div>
     </div>
 </section>
+{% endif %}
 
 <!-- Organisations Section -->
+{% if site.organisations.size > 0 %}
 <section id="portfolio">
     <div class="container header-row">
         <div class="row">
@@ -102,3 +105,4 @@ layout: bootstrap
         </div>
     </div>
 </section>
+{% endif %}
