@@ -4,9 +4,7 @@
   {% assign dataportal_ids = include.dataportal_ids %}
 {% endif %}
 
->> {{ dataportal_ids }}
 {% for dataportal in site.dataportals %}
-  > {{ dataportal.id }}<br>
   {% if dataportal_ids == nil or dataportal_ids contains dataportal.id %}
   <div class="media">
       <div class="media-left">
