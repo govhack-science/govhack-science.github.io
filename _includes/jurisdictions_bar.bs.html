@@ -1,6 +1,7 @@
+{% if site.jurisdictions.size == 0 %}
 <div class="row jurisdictions-bar">
   <div class="col-lg-1"></div>
-  
+
   {% for jurisdiction in site.jurisdictions %}
     {% assign short_name = jurisdiction.id | slice: 0, 3 | upcase %}
     <div class="col-lg-1">
@@ -15,3 +16,4 @@
     </div>
   {% endfor %}
 </div>
+{% endif %}
