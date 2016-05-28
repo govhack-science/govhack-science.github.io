@@ -22,7 +22,7 @@ title: Data Portals
     {% endif %}
 {% endfor %}
 
-{% assign dataportal_ids = "datagovau,dataactgovau,datanswgovau,dataqldgovau,datasagovau,datawagovau,opencouncildata,tas" %}
+<!--{% assign dataportal_ids = "datagovau,dataactgovau,datanswgovau,dataqldgovau,datasagovau,datawagovau,opencouncildata,tas" %}-->
 
 {% unless dataportal_ids == "" %}
 <!-- Government Data Portals Section -->
@@ -35,6 +35,7 @@ title: Data Portals
         </div>
         <div class="row">
             {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {{ dataportal_ids_list }}
             {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
         </div>
     </div>
