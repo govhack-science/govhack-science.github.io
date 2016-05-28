@@ -1,0 +1,13 @@
+{% if include.organisations %}
+  {% assign organisation_ids = include.organisations | map: "id" %}
+{% else %}
+  {% assign organisation_ids = include.organisation_ids %}
+{% endif %}
+
+{% for organisation in site.organisations %}
+  {% if organisation_ids == nil or organisation_ids contains organisation.id %}
+  <a href="{{ organisation.website_url }}">
+    <img src="{{ organisation.logo_url }}" class="img-responsive img-centered" alt="" />
+  </a>
+  {% endif %}
+{% endfor %}

@@ -97,7 +97,7 @@ layout: bootstrap
 {% capture mentor_ids %}{% include get_organisation_mentors.html organisation_id=page.id %}{% endcapture %}
 {% assign mentor_ids = mentor_ids | lstrip %}
 
-{% if mentor_ids %}
+{% unless mentor_ids == "" %}
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div class="container">
@@ -130,7 +130,7 @@ layout: bootstrap
         </div>
     </div>
 </section>-->
-{% endif %}
+{% endunless %}
 
 {% if page.datasets %}
 <!-- Datasets Section -->
