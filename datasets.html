@@ -3,23 +3,18 @@ layout: bootstrap
 title: Datasets
 ---
 <!-- Main Content -->
-<section id="portfolio">
+<!--<section id="portfolio">
     <div class="container">
-        <!--<div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">Jurisdictions</h2>
-          </div>
-        </div>-->
         <div class="row">
           <h3 class="section-subheading text-muted">Browse datasets for your state...</h3>
           
           {% include jurisdictions_bar.bs.html section="datasets" %}
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- Prizes Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="portfolio">
     <div class="container">
         <!--<div class="row header-row">
           <div class="col-lg-12 text-center">
@@ -27,7 +22,12 @@ title: Datasets
           </div>
         </div>-->
         <div class="row">
-          {% include dataset_cards_by_organisation.bs.html %}
+            {% if site.datasets.size == 0 %}
+                <h3>We'll be making the official dataset list available soon.
+            Watch this space!</h3>
+            {% else %}
+                {% include dataset_cards_by_organisation.bs.html %}
+            {% endif %}
         </div>
     </div>
 </section>
