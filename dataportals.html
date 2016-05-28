@@ -35,7 +35,6 @@ title: Data Portals
         </div>
         <div class="row">
             {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-            {{ dataportal_ids_list }}
             {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
         </div>
     </div>
