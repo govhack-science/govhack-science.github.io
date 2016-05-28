@@ -3,7 +3,7 @@ name: Australian Institute of Health and Welfare
 id: aihw
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: http://www.aihw.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/AIHW_inline_black-300x118.jpg
 jurisdiction: australia

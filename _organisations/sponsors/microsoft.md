@@ -3,7 +3,7 @@ name: Microsoft
 id: microsoft
 type: Corporate
 is_sponsor: true
-sponsor_level: gold
+sponsor_level: Gold Sponsor
 website_url: https://www.microsoft.com/en-au/
 logo_url: https://www.govhack.org/wp-content/uploads/MSFT_logo_rgb_C-Gray_D-300x110.png
 jurisdiction: national

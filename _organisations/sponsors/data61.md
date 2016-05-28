@@ -3,7 +3,7 @@ name: Data61
 id: data61
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: http://www.csiro.au/en/Research/D61
 logo_url: https://www.govhack.org/wp-content/uploads/Data61-Logo_Full-Colour_On-White-300x150.jpg
 jurisdiction: australia

@@ -386,7 +386,7 @@
     <script src="/resources/js/clean-blog.js"></script>
 
     <!-- Bootstrap TOC -->
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.js"></script>
+    <script src="/resources/js/bootstrap-toc/v0.3.0/bootstrap-toc.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -421,6 +421,11 @@
         $(document).ready(function() {
             // Hack to insert a header at the top of the table of contents
             // $("nav[data-toggle='toc'] ul.nav").prepend("<li class=\"toc-header\"><h1>Contents</h1></li>");
+            
+            // Hide the TOC if there's nowt to show
+            if($("#toc ul li").length == 0) {
+                $("#toc").hide();
+            }
         });
         
         jQuery(document).on('click', '.mega-dropdown', function(e) {

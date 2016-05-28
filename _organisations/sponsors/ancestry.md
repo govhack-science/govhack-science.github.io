@@ -3,7 +3,7 @@ name: Ancestry
 id: ancestry
 type: Corporate
 is_sponsor: true
-sponsor_level: international
+sponsor_level: International Prize Sponsor
 website_url: http://www.ancestry.com.au/
 logo_url: https://www.govhack.org/wp-content/uploads/Ancestry-Logo-2014_GREEN-GREY_RGB_600-300x53.jpg
 jurisdiction: international

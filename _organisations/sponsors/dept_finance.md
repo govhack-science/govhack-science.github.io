@@ -3,7 +3,7 @@ name: Department of Finance
 id: dept_finance
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: http://www.finance.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/Finance_stacked_blk-300x204.jpg
 jurisdiction: australia

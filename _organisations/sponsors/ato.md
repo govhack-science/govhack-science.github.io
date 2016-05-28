@@ -3,7 +3,7 @@ name: Australian Taxation Office
 id: ato
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: https://www.ato.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/Black_transparent_300-300x196.png
 jurisdiction: australia

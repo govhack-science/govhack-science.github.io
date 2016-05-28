@@ -3,7 +3,7 @@ name: Australian Broadcasting Corporation
 id: abc
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: http://www.abc.net.au/
 logo_url: http://www.govhack.org/wp-content/uploads/ABC_Primary_CMYK-300x300.png
 jurisdiction: australia

@@ -3,7 +3,7 @@ name: Australian Financial Security Authority
 id: afsa
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: https://www.afsa.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/AFSA_logo_stackedstrip_blk_lrg-1.jpg
 jurisdiction: australia

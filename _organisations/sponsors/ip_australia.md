@@ -3,7 +3,7 @@ name: IP Australia
 id: ip_australia
 type: Government
 is_sponsor: true
-sponsor_level: lead_agency
+sponsor_level: Lead Agency Sponsor
 website_url: http://www.ipaustralia.gov.au/
 logo_url: https://www.govhack.org/wp-content/uploads/IP-Aust_inline_black-1024x248.jpg
 jurisdiction: australia

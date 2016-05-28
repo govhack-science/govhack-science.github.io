@@ -3,7 +3,7 @@ name: Department of Infrastructure
 id: dept_infrastructure
 type: Government
 is_sponsor: true
-sponsor_level: national_agency
+sponsor_level: National Government Agency Supporter
 website_url: https://infrastructure.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/DoIRD_Stacked_jpg-1.jpg
 jurisdiction: australia

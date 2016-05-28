@@ -3,7 +3,7 @@ name: DLA Piper
 id: dla_piper
 type: Corporate
 is_sponsor: true
-sponsor_level: silver
+sponsor_level: Silver Sponsor
 website_url: https://www.dlapiper.com/en/australia/
 logo_url: http://www.govhack.org/wp-content/uploads/DLA-Piper-200px.png
 jurisdiction: national

@@ -25,6 +25,9 @@ layout: bootstrap
             {% endif %}
           {% endfor %}
           <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+          {% if page.sponsor_level %}
+            <h4>{{ page.sponsor_level }}</h4>
+          {% endif %}
         </div>
         <div class="media-right jurisdictions-bar">
           <!--<div class="thumbnail" style="width: 75px;">
@@ -36,30 +39,36 @@ layout: bootstrap
             </a>
           </div>-->
           <ul class="list-inline social-buttons">
+              {% if page.contact.twitter %}
               <li>
-                  <a href="#">
+                  <a href="{{ page.contact.twitter }}">
                       <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                       </span>
                   </a>
               </li>
+              {% endif %}
+              {% if page.contact.email %}
               <li>
-                  <a href="#">
+                  <a href="mailto:{{ page.contact.email }}">
                       <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                       </span>
                   </a>
               </li>
+              {% endif %}
+              {% if page.website_url %}
               <li>
-                  <a href="#">
+                  <a href="{{ page.website_url }}">
                       <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                          <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
                       </span>
                   </a>
               </li>
+              {% endif %}
           </ul>
         </div>
       </div>

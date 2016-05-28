@@ -1,12 +1,7 @@
 ---
-name: Geoscience Australia
-id: ga
-type: Government
-is_sponsor: true
-sponsor_level: National Government Agency Supporter
-website_url: http://www.ga.gov.au/
-logo_url: http://www.govhack.org/wp-content/uploads/geoscience_stacked_Black-1.jpg
-jurisdiction: australia
+name: International
+id: international
+photo_url: /resources/csiro-logo.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

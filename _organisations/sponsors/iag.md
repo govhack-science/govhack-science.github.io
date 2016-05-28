@@ -3,7 +3,7 @@ name: IAG
 id: iag
 type: Corporate
 is_sponsor: true
-sponsor_level: international
+sponsor_level: International Prize Sponsor
 website_url: http://www.iag.com.au/
 logo_url: http://www.govhack.org/wp-content/uploads/IAG_Sec_RGB-Logo-150x150.png
 jurisdiction: international
