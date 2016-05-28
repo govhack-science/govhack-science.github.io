@@ -1,0 +1,10 @@
+---
+name: New Zealand
+id: datagovnz
+website_url: https://data.govt.nz
+logo_url: /resources/csiro-logo.png
+jurisdiction: new_zealand
+type: major-portal
+---
+
+The data portal for all New Zealand Government data.
