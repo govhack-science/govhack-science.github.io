@@ -9,6 +9,6 @@ logo_url: https://www.govhack.org/wp-content/uploads/Ancestry-Logo-2014_GREEN-GR
 jurisdiction: international
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
-
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+Ancestry.com.au, Australia and New Zealand's leading family history website, offers members access to one billion searchable Australian, New Zealand and UK family history records.
+ 
+Launched in 2006, Ancestry's historical record collection reflects our multicultural heritage and enables members to explore their family’s history using local and international records including the convict and free settler lists, passenger lists, Australian and New Zealand electoral rolls and military records, English, Welsh and Scottish censuses, birth, marriage and death records as well as user-contributed family trees, and by connecting to millions of other members making their own discoveries.

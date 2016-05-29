@@ -3,7 +3,7 @@ name: Western Australia
 id: datawagovau
 website_url: http://data.wa.gov.au
 logo_url: /resources/csiro-logo.png
-jurisdiction: western_australia
+jurisdiction: wa
 type: major-portal
 ---
 

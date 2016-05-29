@@ -3,7 +3,7 @@ name: Moreton Bay
 id: moreton-bay
 website_url: http://data.mbrc.opendata.arcgis.com/
 logo_url: /resources/csiro-logo.png
-jurisdiction: tasmania
+jurisdiction: tas
 type: local-portal
 ---
 

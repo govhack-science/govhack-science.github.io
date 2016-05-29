@@ -3,7 +3,7 @@ name: City of Ballarat
 id: ballarat
 website_url: http://data.gov.au/organization/city-of-ballarat
 logo_url: /resources/csiro-logo.png
-jurisdiction: victoria
+jurisdiction: vic
 type: local-portal
 ---
 

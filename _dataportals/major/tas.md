@@ -3,7 +3,7 @@ name: Tasmanian Government
 id: tas
 website_url: http://data.gov.au/dataset?jurisdiction=Tasmania&_jurisdiction_limit=0
 logo_url: /resources/csiro-logo.png
-jurisdiction: tasmania
+jurisdiction: tas
 type: major-portal
 ---
 

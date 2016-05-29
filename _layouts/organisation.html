@@ -12,66 +12,52 @@ layout: bootstrap
     <div class="row">
       <div class="media">
         <div class="media-left">
-            <a href="{{ page.website_url }}"><img src="{{ page.logo_url }}" style="max-width: 200px; max-height: 200px;"></a>
+            <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h2>
+            {% if page.sponsor_level %}
+                <h4>{{ page.sponsor_level }}</h4>
+            {% endif %}
         </div>
         <div class="media-body">
-          <!--<h4 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h4>-->
-          {{ page.content }}
-          
-          {% for jurisdiction in site.jurisdictions %}
-            {% if jurisdiction.id == page.jurisdiction %}
-              {% assign jurisdiction = jurisdiction %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-          <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
-          {% if page.sponsor_level %}
-            <h4>{{ page.sponsor_level }}</h4>
-          {% endif %}
-        </div>
-        <div class="media-right jurisdictions-bar">
-          <!--<div class="thumbnail" style="width: 75px;">
-            <a href="#">
-              <img src="holder.js/70x70" alt="...">
-              <div class="caption">
-                <h4>AUS</h4>
-              </div>
-            </a>
-          </div>-->
-          <ul class="list-inline social-buttons">
-              {% if page.contact.twitter %}
-              <li>
-                  <a href="{{ page.contact.twitter }}">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              {% endif %}
-              {% if page.contact.email %}
-              <li>
-                  <a href="mailto:{{ page.contact.email }}">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              {% endif %}
-              {% if page.website_url %}
-              <li>
-                  <a href="{{ page.website_url }}">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              {% endif %}
-          </ul>
+          <a href="{{ page.website_url }}"><img src="{{ page.logo_url }}" style="max-width: 100%;"></a>
         </div>
       </div>
+      
+      {{ content }}
+      
+      <ul class="list-inline social-buttons">
+        {% if page.contact.twitter %}
+        <li>
+            <a href="https://twitter.com/{{ page.contact.twitter }}">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                @{{ page.contact.twitter }}
+            </a>
+        </li>
+        {% endif %}
+        {% if page.contact.email %}
+        <li>
+            <a href="mailto:{{ page.contact.email }}">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        {% endif %}
+        {% if page.website_url %}
+        <li>
+            <a href="{{ page.website_url }}">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+                Website
+            </a>
+        </li>
+        {% endif %}
+      </ul>
     </div>
   </div>
 </section>

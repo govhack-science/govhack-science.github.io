@@ -3,7 +3,7 @@ name: City of Launceston
 id: launceston
 website_url: http://data.gov.au/organization/cityoflaunceston
 logo_url: /resources/csiro-logo.png
-jurisdiction: tasmania
+jurisdiction: tas
 type: local-portal
 ---
 

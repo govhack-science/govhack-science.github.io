@@ -7,8 +7,12 @@ sponsor_level: National Government Agency Supporter
 website_url: http://www.abs.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/ABS-Logo-Black.jpg
 jurisdiction: australia
+dataportals:
+  - abs
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+The ABS is Australia’s national statistical agency, providing trusted official statistics on a wide range of economic, social, population and environmental matters of importance to Australia.
 
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+We also have an important leadership role, coordinating statistical activities and collaborating with official bodies in the collection, compilation, analysis and distribution of statistics. This assists in maximising the value of government investment on these activities, and ensures outputs are fit-for-purpose.
+
+By doing these things, we aim to inform decisions on important issues. We expect this will lead to a more informed community; more efficient markets, economic growth and productivity enhancements; better policy development and evaluation; and targeted and more efficient service delivery.

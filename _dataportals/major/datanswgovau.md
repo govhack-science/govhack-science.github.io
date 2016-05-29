@@ -3,7 +3,7 @@ name: New South Wales
 id: datanswgovau
 website_url: http://data.nsw.gov.au
 logo_url: /resources/csiro-logo.png
-jurisdiction: new_south_wales
+jurisdiction: nsw
 type: major-portal
 ---
 

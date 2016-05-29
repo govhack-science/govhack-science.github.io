@@ -7,8 +7,8 @@ sponsor_level: National Government Agency Supporter
 website_url: http://www.ga.gov.au/
 logo_url: http://www.govhack.org/wp-content/uploads/geoscience_stacked_Black-1.jpg
 jurisdiction: australia
+dataportals:
+  - ga
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
-
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+Geoscience Australia is Australia's pre-eminent public sector geoscience organisation. We are the nation's trusted advisor on the geology and geography of Australia. We apply science and technology to describe and understand the Earth for the benefit of Australia.

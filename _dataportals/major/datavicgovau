@@ -3,7 +3,7 @@ name: Victoria
 id: datavicgovau
 website_url: http://data.vic.gov.au
 logo_url: /resources/csiro-logo.png
-jurisdiction: victoria
+jurisdiction: vic
 type: major-portal
 ---
 

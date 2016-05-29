@@ -3,7 +3,7 @@ name: Australian Capital Territory
 id: dataactgovau
 website_url: https://data.act.gov.au
 logo_url: /resources/csiro-logo.png
-jurisdiction: australian_capital_territory
+jurisdiction: act
 type: major-portal
 ---
 

@@ -3,7 +3,7 @@ name: Glenorchy City Council
 id: glenorchy
 website_url: https://data.gov.au/organization/gcc
 logo_url: /resources/csiro-logo.png
-jurisdiction: tasmania
+jurisdiction: tas
 type: local-portal
 ---
 

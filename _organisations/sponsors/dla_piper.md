@@ -9,6 +9,10 @@ logo_url: http://www.govhack.org/wp-content/uploads/DLA-Piper-200px.png
 jurisdiction: national
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+DLA Piper is a global law firm with lawyers located in more than 30 countries throughout the Americas, Europe, the Middle East, Africa and Asia Pacific, positioning us to help companies with their legal needs anywhere in the world.
 
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+We strive to be the leading global business law firm by delivering quality and value to our clients.
+
+We achieve this through practical and innovative legal solutions that help our clients succeed. We deliver consistent services across our platform of practices and sectors in all matters we undertake.
+
+Our clients range from multinational, Global 1000, and Fortune 500 enterprises to emerging companies developing industry-leading technologies. They include more than half of the Fortune 250 and nearly half of the FTSE 350 or their subsidiaries. We also advise governments and public sector bodies.

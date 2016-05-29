@@ -3,7 +3,7 @@ name: Mosman Municipal Council
 id: mosman
 website_url: http://data.gov.au/organization/mosmanmunicipalcouncil
 logo_url: /resources/csiro-logo.png
-jurisdiction: new_south_wales
+jurisdiction: nsw
 type: local-portal
 ---
 

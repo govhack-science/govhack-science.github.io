@@ -9,6 +9,6 @@ logo_url: http://www.govhack.org/wp-content/uploads/Finance_stacked_blk-300x204.
 jurisdiction: australia
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+As a central agency of the Australian Government, the Department of Finance (Finance) plays an important role in assisting government across a wide range of policy areas to ensure its outcomes are met.
 
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+Finance supports the government’s ongoing priorities through the Budget process and fosters leading practice through the public sector resource management, governance and accountability frameworks. Finance plays a lead role in advising the government on many of its strategic priorities, including advancing public sector reform through the Smaller Government Agenda and providing advice to the government on optimal arrangements for the management and ownership of public assets. We do this through our professional and considered approach to providing advice, developing policy, delivering services and engaging with our clients and stakeholders.

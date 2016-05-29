@@ -9,6 +9,4 @@ logo_url: https://www.govhack.org/wp-content/uploads/IP-Aust_inline_black-1024x2
 jurisdiction: australia
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
-
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+We administer IP rights and legislation relating to patents, trade marks, designs and plant breeder's rights. We contribute to the innovation system more broadly by using our skills and experience to advise government and Australian businesses to make the most of their IP.

@@ -3,7 +3,7 @@ name: Adealaide City Council
 id: adelaide
 website_url: http://data.sa.gov.au/data/organization/adelaide-city-council
 logo_url: /resources/csiro-logo.png
-jurisdiction: south_australia
+jurisdiction: sa
 type: local-portal
 ---
 

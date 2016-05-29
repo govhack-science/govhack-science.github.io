@@ -3,7 +3,7 @@ name: Queensland
 id: dataqldgovau
 website_url: https://data.qld.gov.au
 logo_url: /resources/csiro-logo.png
-jurisdiction: queensland
+jurisdiction: qld
 type: major-portal
 ---
 

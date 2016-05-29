@@ -9,6 +9,4 @@ logo_url: http://www.govhack.org/wp-content/uploads/Black_transparent_300-300x19
 jurisdiction: australia
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
-
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+The Australian Taxation Office (ATO) is an Australian government statutory agency and the principal revenue collection body for the Australian government. The ATO has responsibility for administering the Australian federal taxation system, superannuation legislation, and other associated matters. Responsibility for the operations of the ATO are within the portfolio of the federal Treasurer.

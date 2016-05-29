@@ -9,6 +9,4 @@ logo_url: http://www.govhack.org/wp-content/uploads/ABC_Primary_CMYK-300x300.png
 jurisdiction: australia
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
-
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+The Australian Broadcasting Corporation (ABC) is Australia's state-owned and funded national public broadcaster. It plays a leading role in the history of broadcasting in Australia. The corporation provides television, radio, online and mobile services throughout metropolitan and regional Australia, as well as overseas through the Australia Network and Radio Australia and is well regarded for quality and reliability as well as for offering educational and cultural programming that the commercial sector would be unlikely to supply on its own.

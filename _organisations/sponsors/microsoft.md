@@ -9,6 +9,6 @@ logo_url: https://www.govhack.org/wp-content/uploads/MSFT_logo_rgb_C-Gray_D-300x
 jurisdiction: national
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+Established in 1985, Microsoft Australia is the Australian subsidiary of Microsoft Corp., the worldwide leader in software, services, devices and solutions that help people and businesses realise their full potential.
 
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+Headquartered in Sydney, Microsoft Australia has seven regional offices across the country. Woven throughout daily life, whether it be work or play, Microsoft technologies enable millions of Australian partners and customers to innovate in new ways.

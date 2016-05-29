@@ -9,6 +9,6 @@ logo_url: http://www.govhack.org/wp-content/uploads/IAG_Sec_RGB-Logo-150x150.png
 jurisdiction: international
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+IAG is the name behind some of the most trusted and respected insurance brands in the regions in which we operate.
 
-Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+IAG's businesses underwrite over $11.4 billion of premium per annum, selling insurance under many leading brands including NRMA Insurance, CGU, SGIO, SGIC, Swann Insurance and WFI (Australia); NZI, State, AMI and Lumley Insurance (New Zealand); Safety and NZI (Thailand); AAA Assurance (Vietnam)' and Asuransi Parolamas (Indonesia). IAG also has interests in general insurance joint ventures in Malaysia and India. Standard & Poor’s has assigned a ‘Very Strong’ Insurer Financial Strength Rating of ‘AA-’ to the Group’s core operating subsidiaries.
