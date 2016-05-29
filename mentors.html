@@ -16,15 +16,15 @@ title: Mentors
 <!-- Prizes Section -->
 <section id="portfolio">
     <div class="container">
-        <!--<div class="row header-row">
+        <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">Prizes</h2>
+              <h2 class="section-heading">Mentors</h2>
           </div>
-        </div>-->
+        </div>
         <div class="row">
           {% if site.mentors.size == 0 %}
-            <h3>We'll be making information about our awesome crew of mentors available soon.
-            Watch this space!</h3>
+            <p>We'll be making information about our awesome crew of mentors available soon.
+            Watch this space!</p>
           {% else %}
             {% assign mentors_by_org = site.mentors | group_by:"organisation" %}
             {% include mentor_card_by_organisation.bs.html mentors_by_org=mentors_by_org %}
