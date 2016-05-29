@@ -65,7 +65,7 @@ layout: bootstrap
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
   {% for organisation_id in prize.organisations %}
-    {% if organisation_id == page.id %}
+    {% if organisation_id == page.gid %}
       {% assign prize_ids = prize_ids | append: prize.id %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}
@@ -89,7 +89,7 @@ layout: bootstrap
 </section>
 {% endunless %}
 
-{% capture mentor_ids %}{% include get_organisation_mentors.html organisation_id=page.id %}{% endcapture %}
+{% capture mentor_ids %}{% include get_organisation_mentors.html organisation_id=page.gid %}{% endcapture %}
 {% assign mentor_ids = mentor_ids | lstrip %}
 
 {% unless mentor_ids == "" %}

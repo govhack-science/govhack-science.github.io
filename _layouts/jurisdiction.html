@@ -100,7 +100,7 @@ layout: bootstrap
 
 {% assign theme_ids = "" %}
 {% for theme in site.themes %}
-  {% if theme.jurisdiction == page.id %}
+  {% if theme.jurisdiction == page.gid %}
     {% assign theme_ids = theme_ids | append: theme.id %}
     {% assign theme_ids = theme_ids | append: "," %}
   {% endif %}
@@ -125,7 +125,7 @@ layout: bootstrap
 
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
-  {% if prize.jurisdiction == page.id %}
+  {% if prize.jurisdiction == page.gid %}
     {% assign prize_ids = prize_ids | append: prize.id %}
     {% assign prize_ids = prize_ids | append: "," %}
   {% endif %}
@@ -150,7 +150,7 @@ layout: bootstrap
 
 {% assign dataset_ids = "" %}
 {% for dataset in site.datasets %}
-  {% if dataset.jurisdiction == page.id %}
+  {% if dataset.jurisdiction == page.gid %}
     {% assign dataset_ids = dataset_ids | append: dataset.id %}
     {% assign dataset_ids = dataset_ids | append: "," %}
   {% endif %}
@@ -175,7 +175,7 @@ layout: bootstrap
 
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
-  {% if dataportal.jurisdiction == page.id %}
+  {% if dataportal.jurisdiction == page.gid %}
     {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
     {% assign dataportal_ids = dataportal_ids | append: "," %}
   {% endif %}
@@ -200,7 +200,7 @@ layout: bootstrap
 
 {% assign mentor_ids = "" %}
 {% for mentor in site.mentors %}
-  {% if mentor.jurisdiction == page.id %}
+  {% if mentor.jurisdiction == page.gid %}
     {% assign mentor_ids = mentor_ids | append: mentor.id %}
     {% assign mentor_ids = mentor_ids | append: "," %}
   {% endif %}
@@ -225,7 +225,7 @@ layout: bootstrap
 
 {% assign organisation_ids = "" %}
 {% for organisation in site.organisations %}
-  {% if organisation.jurisdiction == page.id %}
+  {% if organisation.jurisdiction == page.gid %}
     {% assign organisation_ids = organisation_ids | append: organisation.gid %}
     {% assign organisation_ids = organisation_ids | append: "," %}
   {% endif %}
