@@ -20,10 +20,10 @@ layout: bootstrap
                 The portal is an experiment for 2016's competition to make it easier to explore and partake in GovHack. In your feedback you've told us that it should be easier to find data relevant to each prize, to your local event, and to broad themes (such as science and local government).
             </p>
             <p>
-                Through the portal you'll be able to explore the <a href="">official competition datasets</a>, find an exhaustive list of <a href="#">government data portals</a>, and see all of the data <a href="">each sponsor is providing</a>. As we get closer to the competition you'll be able to find out about the wonderful <a href="">mentors</a> who'll be available to help you out, and when the competition opens you'll be able to see all of the national and local <a href="">prizes</a>.
+                Through the portal you'll be able to explore the <a href="/datasets.html">official competition datasets</a>, find an exhaustive list of <a href="/dataportals.html">government data portals</a>, and see all of the data <a href="/organisations.html">each sponsor is providing</a>. As we get closer to the competition you'll be able to find out about the wonderful <a href="/mentors.html">mentors</a> who'll be available to help you out, and when the competition opens you'll be able to see all of the national and local <a href="/prizes.html">prizes</a>.
             </p>
             <p>
-                You'll also be able explore your <a href="">local GovHack</a> to find datasets, data portals, prizes, and mentors for your local area.<br>
+                You'll also be able explore your <a href="/locations.html">local GovHack</a> to find datasets, data portals, prizes, and mentors for your local area.<br>
                 <br>
                 We'll be continually updating with new content as the competition draws closer, so watch this space! 
             </p>
@@ -93,17 +93,17 @@ layout: bootstrap
 {% endfor %}
 
 {% unless dataportal_ids == "" %}
-<!-- Major Data Portals Section -->
+<!-- Data Portals Section -->
 <section id="portfolio">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h1 class="section-heading">Major Data Portals</h1>
+              <h1 class="section-heading">Data Portals</h1>
           </div>
         </div>
         <div class="row">
             <p>
-                Visit the <a href="dataportals.html">Data Portals</a> page for a full list of government data portals.    
+                While GovHack higlights a small number of official competition datasets, the full treasure trove of government data is available from a range of government, agency, and subject-area specific data portals. Visit our <a href="dataportals.html">Data Portals</a> page for the full list.
             </p>
             {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
             {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
