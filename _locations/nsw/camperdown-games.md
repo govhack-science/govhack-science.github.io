@@ -4,6 +4,9 @@ id: camperdown-games
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Theme Node
+location:
+  lat: -33.888587
+  lon: 151.177937
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

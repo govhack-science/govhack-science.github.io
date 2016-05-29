@@ -1,9 +1,12 @@
 ---
-name: Sydney
-id: sydney
+name: Dundein
+id: dundein
 photo_url: /resources/csiro-logo.png
-jurisdiction: nsw
-type: Theme Node
+jurisdiction: nz
+type: Official Event
+location:
+  lat: -45.878693
+  lon: 170.502580
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

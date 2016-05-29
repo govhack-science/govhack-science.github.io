@@ -1,12 +1,12 @@
 ---
-name: Ipswich
-id: ipswich-digital-city
+name: Maroochydore
+id: Maroochydore
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
-type: Theme Node
+type: Theme Event
 location:
-  lat: -27.615344
-  lon: 152.754495
+  lat: -26.652260
+  lon: 153.090479
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

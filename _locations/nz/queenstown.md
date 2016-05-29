@@ -1,12 +1,12 @@
 ---
-name: Ipswich
-id: ipswich-digital-city
+name: Queenstown
+id: queenstown
 photo_url: /resources/csiro-logo.png
-jurisdiction: qld
-type: Theme Node
+jurisdiction: nz
+type: Official Event
 location:
-  lat: -27.615344
-  lon: 152.754495
+  lat: -45.031136
+  lon: 168.662395
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

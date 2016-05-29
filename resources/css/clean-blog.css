@@ -71,6 +71,14 @@ hr.small {
   letter-spacing: 1px;
   color: white;
 }
+.navbar-custom .nav li.dropdown-header a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #0085a1;
+  padding-left: 0px;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -134,6 +142,9 @@ hr.small {
     background-color: rgba(255, 255, 255, 0.8);
     /*color: #71B1DE;*/
     /*color: #555;*/
+  }
+  .navbar-custom .nav li.dropdown-header a:hover {
+    color: black;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -709,8 +720,11 @@ section#content {
 
 /* Bootstrap TOC */
 nav[data-toggle='toc'] {
-  top: 70px;
+  top: 60px;
+  padding-top: 10px;
   max-width: 250px;
+  background-color: white;
+  z-index: 2;
   /*margin-top: 30px;*/
 }
 @media (max-width: 767px) {
@@ -810,4 +824,8 @@ section > div.container {
   .main-container .main-content {
     margin-top: 0px;
   }
+}
+
+.locations-row h2:not(:first-child) {
+  padding-top: 10px;
 }

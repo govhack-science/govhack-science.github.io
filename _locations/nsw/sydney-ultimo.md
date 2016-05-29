@@ -1,12 +1,12 @@
 ---
-name: Ipswich
-id: ipswich-digital-city
+name: Ultimo, Sydney
+id: sydney-ultimo
 photo_url: /resources/csiro-logo.png
-jurisdiction: qld
-type: Theme Node
+jurisdiction: nsw
+type: Official Event
 location:
-  lat: -27.615344
-  lon: 152.754495
+  lat: -33.880460
+  lon: 151.200292
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

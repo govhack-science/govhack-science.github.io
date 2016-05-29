@@ -10,8 +10,23 @@ title: Locations
               <h2 class="section-heading" id="prizes">Jurisdictions</h2>
           </div>
         </div>-->
-        <div class="row">
-          {% include location_cards.bs.html %}
+        <div class="row locations-row">
+        {% for jurisdiction in site.jurisdictions %}
+            {% assign location_ids = "" %}
+            {% for location in site.locations %}
+                {% if location.jurisdiction == jurisdiction.id %}
+                    {% assign location_ids = location_ids | append: location.id %}
+                    {% assign location_ids = location_ids | append: "," %}
+                {% endif %}
+            {% endfor %}
+
+            {% unless location_ids == "" %}
+                <h2><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h2>
+                
+                {% assign location_ids_list = location_ids | lstrip | split: "," %}
+                {% include location_cards.bs.html location_ids=location_ids_list %}
+            {% endunless %}
+        {% endfor %}
         </div>
     </div>
 </section>

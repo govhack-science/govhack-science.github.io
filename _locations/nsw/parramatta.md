@@ -4,6 +4,9 @@ id: parramatta
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event
+location:
+  lat: -33.813290
+  lon: 151.009482
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

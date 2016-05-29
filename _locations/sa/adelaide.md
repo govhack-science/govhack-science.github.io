@@ -1,12 +1,12 @@
 ---
-name: Ipswich
-id: ipswich-digital-city
+name: Adelaide
+id: adelaide
 photo_url: /resources/csiro-logo.png
-jurisdiction: qld
-type: Theme Node
+jurisdiction: sa
+type: Official Event
 location:
-  lat: -27.615344
-  lon: 152.754495
+  lat: -34.919812
+  lon: 138.604763
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

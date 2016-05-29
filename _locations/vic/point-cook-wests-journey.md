@@ -4,6 +4,9 @@ id: point-cook-wests-journey
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Theme Node
+location:
+  lat: -37.911050
+  lon: 144.770766
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

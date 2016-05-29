@@ -4,6 +4,9 @@ id: perth
 photo_url: /resources/csiro-logo.png
 jurisdiction: wa
 type: Official Event
+location:
+  lat: -31.953921
+  lon: 115.853156
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

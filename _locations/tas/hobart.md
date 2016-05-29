@@ -4,6 +4,9 @@ id: hobart
 photo_url: /resources/csiro-logo.png
 jurisdiction: tas
 type: Official Event
+location:
+  lat: -42.8819
+  lon: 147.3238
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

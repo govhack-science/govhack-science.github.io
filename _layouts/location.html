@@ -24,7 +24,8 @@ layout: bootstrap
               {% break %}
             {% endif %}
           {% endfor %}
-          <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+          <h4>State: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+          <h4>{{ page.type }}</h4>
         </div>
         <div class="media-right jurisdictions-bar">
           <ul class="list-inline social-buttons">

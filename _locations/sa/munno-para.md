@@ -1,9 +1,12 @@
 ---
-name: Brisbane Maker Node
-id: brisbane-maker
+name: Munno Para
+id: munno-para
 photo_url: /resources/csiro-logo.png
-jurisdiction: qld
-type: Maker Node
+jurisdiction: sa
+type: Official Event
+location:
+  lat: -34.6680
+  lon: 138.7013
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
