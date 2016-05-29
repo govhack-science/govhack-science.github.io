@@ -1,5 +1,5 @@
 ---
 name: New Zealand
-id: nz
+gid: nz
 photo_url: /resources/csiro-logo.png
 ---

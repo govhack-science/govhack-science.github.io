@@ -1,5 +1,5 @@
 ---
 name: Northern Territroy
-id: nt
+gid: nt
 photo_url: /resources/csiro-logo.png
 ---

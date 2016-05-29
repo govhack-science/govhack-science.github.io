@@ -1,5 +1,5 @@
 ---
 name: Victoria
-id: vic
+gid: vic
 photo_url: /resources/csiro-logo.png
 ---

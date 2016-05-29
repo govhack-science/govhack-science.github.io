@@ -1,5 +1,5 @@
 ---
 name: South Australia
-id: sa
+gid: sa
 photo_url: /resources/csiro-logo.png
 ---

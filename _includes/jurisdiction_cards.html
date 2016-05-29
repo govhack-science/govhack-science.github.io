@@ -6,7 +6,7 @@
 
 <table width=95%>
 {% for jurisdiction in site.jurisdictions %}
-  {% if jurisdiction_ids == nil or jurisdiction_ids contains jurisdiction.id %}
+  {% if jurisdiction_ids == nil or jurisdiction_ids contains jurisdiction.gid %}
   <tr>
     <td width=100px style="vertical-align: text-top">
       <br>

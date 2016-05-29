@@ -1,5 +1,5 @@
 ---
 name: Tasmania
-id: tas
+gid: tas
 photo_url: /resources/csiro-logo.png
 ---

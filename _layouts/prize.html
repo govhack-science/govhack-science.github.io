@@ -13,7 +13,7 @@ layout: bootstrap
       <img src="{{ page.photo_url }}" class="img-responsive">
       
       {% for jurisdiction in site.jurisdictions %}
-        {% if jurisdiction.id == page.jurisdiction %}
+        {% if jurisdiction.gid == page.jurisdiction %}
           {% assign jurisdiction = jurisdiction %}
           {% break %}
         {% endif %}

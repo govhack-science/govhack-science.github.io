@@ -1,5 +1,5 @@
 ---
 name: Australian Capital Territory
-id: act
+gid: act
 photo_url: /resources/csiro-logo.png
 ---

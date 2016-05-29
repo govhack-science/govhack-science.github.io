@@ -1,5 +1,5 @@
 ---
 name: Australia
-id: australia
+gid: australia
 photo_url: /resources/csiro-logo.png
 ---

@@ -11,7 +11,7 @@ layout: default
       <a href="{{ page.website_url }}"><img src="{{ page.logo_url }}"></a>
       
       {% for jurisdiction in site.jurisdictions %}
-        {% if jurisdiction.id == page.jurisdiction %}
+        {% if jurisdiction.gid == page.jurisdiction %}
           {% assign jurisdiction = jurisdiction %}
           {% break %}
         {% endif %}

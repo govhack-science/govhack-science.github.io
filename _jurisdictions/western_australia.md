@@ -1,5 +1,5 @@
 ---
 name: Western Australia
-id: wa
+gid: wa
 photo_url: /resources/csiro-logo.png
 ---

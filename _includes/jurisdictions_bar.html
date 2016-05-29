@@ -23,7 +23,7 @@ ul.jurisdictions_bar > li > a:visited {
 
 <ul class="jurisdictions_bar">
   {% for jurisdiction in site.jurisdictions %}
-    {% assign short_name = jurisdiction.id | slice: 0, 3 | upcase %}
+    {% assign short_name = jurisdiction.gid | slice: 0, 3 | upcase %}
     <li><a href="{{ jurisdiction.url }}#{{ include.section }}">{{ short_name }}</a></li>
   {% endfor %}
 </ul>

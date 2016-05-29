@@ -1,5 +1,5 @@
 ---
 name: Queensland
-id: qld
+gid: qld
 photo_url: /resources/csiro-logo.png
 ---

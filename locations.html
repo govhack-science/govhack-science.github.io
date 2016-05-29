@@ -14,7 +14,7 @@ title: Locations
         {% for jurisdiction in site.jurisdictions %}
             {% assign location_ids = "" %}
             {% for location in site.locations %}
-                {% if location.jurisdiction == jurisdiction.id %}
+                {% if location.jurisdiction == jurisdiction.gid %}
                     {% assign location_ids = location_ids | append: location.id %}
                     {% assign location_ids = location_ids | append: "," %}
                 {% endif %}
