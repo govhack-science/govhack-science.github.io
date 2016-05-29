@@ -5,8 +5,7 @@
 {% endif %}
 
 {% for dataportal in site.dataportals %}
-  {{ dataportal.id }}<br>
-  {% if dataportal_ids == nil or dataportal_ids contains dataportal.id %}
+  {% if dataportal_ids == nil or dataportal_ids contains dataportal.gid %}
   <div class="media">
       <div class="media-left">
         {% if dataportal.photo_url %}

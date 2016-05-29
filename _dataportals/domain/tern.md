@@ -1,6 +1,6 @@
 ---
 name: Terrestrial Ecosystem Research Network
-id: tern
+gid: tern
 website_url: http://portal.tern.org.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

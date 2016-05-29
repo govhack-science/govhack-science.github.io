@@ -1,6 +1,6 @@
 ---
 name: New Zealand
-id: datagovnz
+gid: datagovnz
 website_url: https://data.govt.nz
 logo_url: /resources/csiro-logo.png
 jurisdiction: nz

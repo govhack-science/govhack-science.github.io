@@ -1,6 +1,6 @@
 ---
 name: South Australia
-id: datasagovau
+gid: datasagovau
 website_url: https://data.sa.gov.au
 logo_url: /resources/csiro-logo.png
 jurisdiction: sa

@@ -1,6 +1,6 @@
 ---
 name: Australian Soil Resource Information System
-id: asris
+gid: asris
 website_url: http://www.asris.csiro.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

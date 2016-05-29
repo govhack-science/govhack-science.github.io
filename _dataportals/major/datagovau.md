@@ -1,6 +1,6 @@
 ---
 name: Australian Government
-id: datagovau
+gid: datagovau
 website_url: https://data.gov.au
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

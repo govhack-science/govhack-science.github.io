@@ -6,7 +6,7 @@
 
 <table width=95%>
 {% for dataportal in site.dataportals %}
-  {% if dataportal_ids == nil or dataportal_ids contains dataportal.id %}
+  {% if dataportal_ids == nil or dataportal_ids contains dataportal.gid %}
   <tr>
     <td width=100px style="vertical-align: text-top">
       <br>

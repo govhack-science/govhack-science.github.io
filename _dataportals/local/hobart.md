@@ -1,6 +1,6 @@
 ---
 name: City of Hobart
-id: hobart
+gid: hobart
 website_url: https://data.gov.au/organization/city-of-hobart
 logo_url: /resources/csiro-logo.png
 jurisdiction: tas

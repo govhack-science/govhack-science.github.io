@@ -87,7 +87,7 @@ layout: bootstrap
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "major-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
         {% assign dataportal_ids = dataportal_ids | append: "," %}
     {% endif %}
 {% endfor %}

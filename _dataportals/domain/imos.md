@@ -1,6 +1,6 @@
 ---
 name: Integrated Marine Observing System
-id: imos
+gid: imos
 website_url: https://imos.aodn.org.au/imos123/home
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

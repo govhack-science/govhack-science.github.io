@@ -17,7 +17,7 @@ title: Data Portals
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "major-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
         {% assign dataportal_ids = dataportal_ids | append: "," %}
     {% endif %}
 {% endfor %}
@@ -43,7 +43,7 @@ title: Data Portals
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "agency-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
         {% assign dataportal_ids = dataportal_ids | append: "," %}
     {% endif %}
 {% endfor %}
@@ -69,7 +69,7 @@ title: Data Portals
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "domain-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
         {% assign dataportal_ids = dataportal_ids | append: "," %}
     {% endif %}
 {% endfor %}
@@ -95,7 +95,7 @@ title: Data Portals
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "local-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
         {% assign dataportal_ids = dataportal_ids | append: "," %}
     {% endif %}
 {% endfor %}

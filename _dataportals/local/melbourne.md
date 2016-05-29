@@ -1,6 +1,6 @@
 ---
 name: City of Melbourne
-id: melbourne
+gid: melbourne
 website_url: https://data.melbourne.vic.gov.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: vic

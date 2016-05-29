@@ -1,6 +1,6 @@
 ---
 name: Atlas of Living Australia
-id: ala
+gid: ala
 website_url: https://www.ala.org.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

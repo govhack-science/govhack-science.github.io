@@ -1,6 +1,6 @@
 ---
 name: Queensland
-id: dataqldgovau
+gid: dataqldgovau
 website_url: https://data.qld.gov.au
 logo_url: /resources/csiro-logo.png
 jurisdiction: qld

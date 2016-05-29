@@ -1,6 +1,6 @@
 ---
 name: Moreton Bay
-id: moreton-bay
+gid: moreton-bay
 website_url: http://data.mbrc.opendata.arcgis.com/
 logo_url: /resources/csiro-logo.png
 jurisdiction: tas

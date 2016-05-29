@@ -1,6 +1,6 @@
 ---
 name: Western Australia
-id: datawagovau
+gid: datawagovau
 website_url: http://data.wa.gov.au
 logo_url: /resources/csiro-logo.png
 jurisdiction: wa

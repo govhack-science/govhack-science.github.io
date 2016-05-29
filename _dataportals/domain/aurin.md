@@ -1,6 +1,6 @@
 ---
 name: Australian Urban Research Infrastructure Network
-id: aurin
+gid: aurin
 website_url: http://aurin.org.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

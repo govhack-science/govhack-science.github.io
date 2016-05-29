@@ -1,6 +1,6 @@
 ---
 name: Australian Antarctic Division
-id: aad
+gid: aad
 website_url: http://data.gov.au/organization/australianantarcticdivision
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

@@ -1,6 +1,6 @@
 ---
 name: CSIRO Data Access Portal
-id: csiro
+gid: csiro
 website_url: https://data.csiro.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

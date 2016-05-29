@@ -1,6 +1,6 @@
 ---
 name: Bureau of Meteorology
-id: bom
+gid: bom
 website_url: http://reg.bom.gov.au/reguser/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

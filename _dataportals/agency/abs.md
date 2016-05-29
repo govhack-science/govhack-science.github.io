@@ -1,6 +1,6 @@
 ---
 name: Australian Bureau of Statistics
-id: abs
+gid: abs
 website_url: http://www.abs.gov.au/browse
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

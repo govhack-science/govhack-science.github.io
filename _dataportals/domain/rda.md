@@ -1,6 +1,6 @@
 ---
 name: Research Data Australia
-id: rda
+gid: rda
 website_url: https://researchdata.ands.org.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

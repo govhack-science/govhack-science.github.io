@@ -75,7 +75,7 @@ layout: default
       {% assign dataportal_ids = "" %}
       {% for dataportal in site.dataportals %}
         {% if dataportal.jurisdiction == page.id %}
-          {% assign dataportal_ids = dataportal_ids | append: dataportal.id %}
+          {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
           {% assign dataportal_ids = dataportal_ids | append: "," %}
         {% endif %}
       {% endfor %}

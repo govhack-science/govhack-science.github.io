@@ -1,6 +1,6 @@
 ---
 name: AuScope Earth Data Portal
-id: auscope
+gid: auscope
 website_url: http://portal.auscope.org
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

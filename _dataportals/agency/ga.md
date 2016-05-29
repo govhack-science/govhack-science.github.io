@@ -1,6 +1,6 @@
 ---
 name: Geoscience Australia
-id: ga
+gid: ga
 website_url: http://www.ga.gov.au/data-pubs
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia

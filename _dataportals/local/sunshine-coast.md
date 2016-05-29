@@ -1,6 +1,6 @@
 ---
 name: Sunshine Coast Council
-id: melbourne
+gid: melbourne
 website_url: https://data.sunshinecoast.qld.gov.au/
 logo_url: /resources/csiro-logo.png
 jurisdiction: qld
