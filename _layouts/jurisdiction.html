@@ -25,7 +25,7 @@ layout: bootstrap
           var locations = [];
           {% assign location_ids = "" %}
           {% for location in site.locations %}
-            {% if location.jurisdiction == page.id %}
+            {% if location.jurisdiction == page.gid %}
               locations.push([{{ location.location.lat }}, {{ location.location.lon }}]);
             {% endif %}
           {% endfor %}
@@ -75,7 +75,7 @@ layout: bootstrap
 
 {% assign location_ids = "" %}
 {% for location in site.locations %}
-  {% if location.jurisdiction == page.id %}
+  {% if location.jurisdiction == page.gid %}
     {% assign location_ids = location_ids | append: location.id %}
     {% assign location_ids = location_ids | append: "," %}
   {% endif %}
