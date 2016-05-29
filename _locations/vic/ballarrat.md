@@ -1,12 +1,12 @@
 ---
-name: Geelong
-id: geelong
+name: Ballarrat
+id: Ballarrat
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Official Event
 location:
-  lat: -38.143822
-  lon: 144.360392
+  lat: -37.815794
+  lon: 144.956918
 contact:
-  twitter: GovHackGeelong
+  twitter: GovHackBallarat
 ---

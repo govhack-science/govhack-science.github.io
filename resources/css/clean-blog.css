@@ -47,6 +47,10 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+.empty-state {
+  color: #808080;
+  font-style: italic;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
