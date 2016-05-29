@@ -1,6 +1,7 @@
 ---
 name: Australian Broadcasting Corporation
 id: abc
+gid: abc
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
