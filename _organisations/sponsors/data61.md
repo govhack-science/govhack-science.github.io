@@ -1,6 +1,6 @@
 ---
 name: Data61
-id: data61
+gid: data61
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

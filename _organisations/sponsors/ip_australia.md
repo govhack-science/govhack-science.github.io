@@ -1,6 +1,6 @@
 ---
 name: IP Australia
-id: ip_australia
+gid: ip_australia
 type: Government
 is_sponsor: true
 sponsor_level: Lead Agency Sponsor

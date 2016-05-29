@@ -1,6 +1,6 @@
 ---
 name: Australian Bureau of Statistics
-id: abs
+gid: abs
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

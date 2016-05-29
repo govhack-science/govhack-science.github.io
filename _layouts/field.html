@@ -78,7 +78,7 @@ layout: bootstrap
 {% for organisation in site.organisations %}
   {% for field_id in organisation.fields %}
     {% if field_id == page.id %}
-      {% assign organisation_ids = organisation_ids | append: organisation.id %}
+      {% assign organisation_ids = organisation_ids | append: organisation.gid %}
       {% assign organisation_ids = organisation_ids | append: "," %}
     {% endif %}
   {% endfor %}

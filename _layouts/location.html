@@ -207,7 +207,7 @@ layout: bootstrap
 {% assign organisation_ids = "" %}
 {% for organisation in site.organisations %}
   {% if organisation.jurisdiction == page.jurisdiction or organisation.location == page.id %}
-    {% assign organisation_ids = organisation_ids | append: organisation.id %}
+    {% assign organisation_ids = organisation_ids | append: organisation.gid %}
     {% assign organisation_ids = organisation_ids | append: "," %}
   {% endif %}
 {% endfor %}

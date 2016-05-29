@@ -1,6 +1,6 @@
 ---
 name: Department of Finance
-id: dept_finance
+gid: dept_finance
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

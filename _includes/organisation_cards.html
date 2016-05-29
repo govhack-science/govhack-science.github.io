@@ -6,7 +6,7 @@
 
 <table width=95%>
 {% for organisation in site.organisations %}
-  {% if organisation_ids == nil or organisation_ids contains organisation.id %}
+  {% if organisation_ids == nil or organisation_ids contains organisation.gid %}
   <tr>
     <td width=100px style="vertical-align: text-top">
       <br>

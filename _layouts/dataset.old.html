@@ -33,7 +33,7 @@ layout: default
       {% for organisation in site.organisations %}
         {% for dataset_id in organisation.datasets %}
           {% if dataset_id == page.id %}
-            {% assign organisation_ids = organisation_ids | append: organisation.id %}
+            {% assign organisation_ids = organisation_ids | append: organisation.gid %}
             {% assign organisation_ids = organisation_ids | append: "," %}
           {% endif %}
         {% endfor %}

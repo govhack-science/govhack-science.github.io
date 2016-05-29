@@ -1,6 +1,6 @@
 ---
 name: Australian Financial Security Authority
-id: afsa
+gid: afsa
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

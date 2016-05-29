@@ -5,8 +5,7 @@
 {% endif %}
 
 {% for organisation in site.organisations %}
-  {{ organisation.id }}, {{ organisation.gid }}<br>
-  {% if organisation_ids == nil or organisation_ids contains organisation.id %}
+  {% if organisation_ids == nil or organisation_ids contains organisation.gid %}
   <a href="{{ organisation.url }}">
     <img src="{{ organisation.logo_url }}" class="img-responsive img-centered" alt="" />
   </a>

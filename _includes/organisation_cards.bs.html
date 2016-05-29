@@ -5,7 +5,7 @@
 {% endif %}
 
 {% for organisation in site.organisations %}
-  {% if organisation_ids == nil or organisation_ids contains organisation.id %}
+  {% if organisation_ids == nil or organisation_ids contains organisation.gid %}
   <div class="media">
       <div class="media-left">
         {% if organisation.logo_url != "http://" %}

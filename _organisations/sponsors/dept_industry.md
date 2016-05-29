@@ -1,6 +1,6 @@
 ---
 name: Department of Industry
-id: dept_industry
+gid: dept_industry
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

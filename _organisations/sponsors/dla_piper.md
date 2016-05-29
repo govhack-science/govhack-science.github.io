@@ -1,6 +1,6 @@
 ---
 name: DLA Piper
-id: dla_piper
+gid: dla_piper
 type: Corporate
 is_sponsor: true
 sponsor_level: Silver Sponsor

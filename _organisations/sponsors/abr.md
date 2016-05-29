@@ -1,6 +1,6 @@
 ---
 name: Australian Business Register
-id: abr
+gid: abr
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

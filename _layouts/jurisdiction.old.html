@@ -105,7 +105,7 @@ layout: default
       {% assign organisation_ids = "" %}
       {% for organisation in site.organisations %}
         {% if organisation.jurisdiction == page.id %}
-          {% assign organisation_ids = organisation_ids | append: organisation.id %}
+          {% assign organisation_ids = organisation_ids | append: organisation.gid %}
           {% assign organisation_ids = organisation_ids | append: "," %}
         {% endif %}
       {% endfor %}

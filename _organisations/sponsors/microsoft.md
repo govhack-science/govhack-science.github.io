@@ -1,6 +1,6 @@
 ---
 name: Microsoft
-id: microsoft
+gid: microsoft
 type: Corporate
 is_sponsor: true
 sponsor_level: Gold Sponsor

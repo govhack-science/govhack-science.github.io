@@ -1,6 +1,6 @@
 ---
 name: Bureau of Meteorology
-id: bom
+gid: bom
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

@@ -25,7 +25,7 @@ layout: default
       {% for organisation in site.organisations %}
         {% for dataportal_id in organisation.dataportals %}
           {% if dataportal_id == page.id %}
-            {% assign organisation_ids = organisation_ids | append: organisation.id %}
+            {% assign organisation_ids = organisation_ids | append: organisation.gid %}
             {% assign organisation_ids = organisation_ids | append: "," %}
           {% endif %}
         {% endfor %}

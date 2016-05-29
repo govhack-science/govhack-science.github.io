@@ -1,6 +1,6 @@
 ---
 name: Department of Infrastructure
-id: dept_infrastructure
+gid: dept_infrastructure
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

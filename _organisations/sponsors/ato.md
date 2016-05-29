@@ -1,6 +1,6 @@
 ---
 name: Australian Taxation Office
-id: ato
+gid: ato
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter

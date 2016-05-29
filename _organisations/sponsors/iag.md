@@ -1,6 +1,6 @@
 ---
 name: IAG
-id: iag
+gid: iag
 type: Corporate
 is_sponsor: true
 sponsor_level: International Prize Sponsor

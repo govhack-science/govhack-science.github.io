@@ -1,6 +1,6 @@
 ---
 name: Ancestry
-id: ancestry
+gid: ancestry
 type: Corporate
 is_sponsor: true
 sponsor_level: International Prize Sponsor

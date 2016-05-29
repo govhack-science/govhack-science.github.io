@@ -1,6 +1,6 @@
 ---
 name: Australian Institute of Health and Welfare
-id: aihw
+gid: aihw
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
