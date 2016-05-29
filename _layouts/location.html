@@ -36,7 +36,7 @@ layout: bootstrap
           
           <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
           <script type="text/javascript">
-          location_map({{ page.location.lat }}, {{ page.location.lon }});
+          location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
           </script>
         </div>
       </div>

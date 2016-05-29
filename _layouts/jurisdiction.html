@@ -1,6 +1,9 @@
 ---
 layout: bootstrap
 ---
+
+<script src="/resources/js/location-map.js"></script>
+
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
@@ -16,6 +19,20 @@ layout: bootstrap
         </div>
         <div class="media-body">
           <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h2>
+          
+          <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 25vh;"></div>
+          <script type="text/javascript">
+          var locations = [];
+          {% assign location_ids = "" %}
+          {% for location in site.locations %}
+            {% if location.jurisdiction == page.id %}
+              locations.push([{{ location.location.lat }}, {{ location.location.lon }}]);
+            {% endif %}
+          {% endfor %}
+          
+          location_map(locations);
+          </script>
+          
           {{ page.content }}
         </div>
       </div>

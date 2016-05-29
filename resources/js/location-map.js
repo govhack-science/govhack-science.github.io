@@ -1,4 +1,4 @@
-function location_map(lat, lon) {
+function location_map(locations) {
   $(document).ready(function() {
     var map = L.map('gh-location-map', {minZoom: 4, maxBounds: new L.LatLngBounds([-1,100], [-60, 190]) }).setView([-28.42, 147.129], 3);
     var mapIcons = {
@@ -16,10 +16,16 @@ function location_map(lat, lon) {
         id: 'maxious.gdb67hbh'
     }).addTo(map);
     
-    var marker = L.marker([lat, lon], {
-        icon: mapIcons['official'] || mapIcons.node
-    }).addTo(map);
-    var group = new L.featureGroup([marker]);
-    map.fitBounds(group.getBounds()).zoomOut(5);
+    var markers = [];
+    for(var i = 0; i < locations.length; i++) {
+        markers.push(
+            L.marker(locations[i], {
+                icon: mapIcons['official'] || mapIcons.node
+            }).addTo(map)
+        );
+    }
+    
+    var group = new L.featureGroup(markers);
+    map.fitBounds(group.getBounds()).zoomOut(2);
   });
 };

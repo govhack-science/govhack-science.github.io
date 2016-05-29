@@ -12,11 +12,10 @@ layout: bootstrap
     <div class="row">
       <div class="media">
         <div class="media-left">
-            <img src="{{ page.logo_url }}" style="max-width: 200px; max-height: 200px;">
+            <!--<img src="{{ page.logo_url }}" style="max-width: 200px; max-height: 200px;">-->
         </div>
         <div class="media-body">
-          <!--<h4 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h4>-->
-          {{ page.content }}
+          <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h2>
           
           {% for jurisdiction in site.jurisdictions %}
             {% if jurisdiction.id == page.jurisdiction %}
@@ -24,37 +23,46 @@ layout: bootstrap
               {% break %}
             {% endif %}
           {% endfor %}
-          <h4>Jurisdiction: <a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
-        </div>
-        <div class="media-right jurisdictions-bar">
-          <ul class="list-inline social-buttons">
-              <li>
-                  <a href="#">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-link fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-          </ul>
+          <h4><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+          
+          {{ page.content }}
         </div>
       </div>
+      
+      <ul class="list-inline social-buttons">
+          {% if page.contact.twitter %}
+          <li>
+              <a href="https://twitter.com/{{ page.contact.twitter }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                  @{{ page.contact.twitter }}
+              </a>
+          </li>
+          {% endif %}
+          {% if page.contact.facebook %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if page.website_url %}
+          <li>
+              <a href="{{ page.website_url }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Website
+              </a>
+          </li>
+          {% endif %}
+      </ul>
     </div>
   </div>
 </section>
