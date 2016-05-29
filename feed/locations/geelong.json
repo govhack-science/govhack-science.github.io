@@ -1,1 +1,1 @@
-{"name": "Geelong", "url": "http://portal.govhack.org/locations/vic/geelong.html", "jurisdiction": "vic", "location": {"lat": -38.143822, "lon": 144.360392}, "type": "Official Event", "id": "geelong", "photo_url": "/resources/csiro-logo.png"}
+{"name": "Geelong", "url": "http://portal.govhack.org/locations/vic/geelong.html", "jurisdiction": "vic", "contact": {"twitter": "GovHackGeelong"}, "location": {"lat": -38.143822, "lon": 144.360392}, "type": "Official Event", "id": "geelong", "photo_url": "/resources/csiro-logo.png"}

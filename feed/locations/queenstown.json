@@ -1,1 +1,1 @@
-{"name": "Queenstown", "url": "http://portal.govhack.org/locations/nz/queenstown.html", "jurisdiction": "nz", "location": {"lat": -45.031136, "lon": 168.662395}, "type": "Official Event", "id": "queenstown", "photo_url": "/resources/csiro-logo.png"}
+{"name": "Queenstown", "url": "http://portal.govhack.org/locations/nz/queenstown.html", "jurisdiction": "nz", "contact": {"twitter": "GovHackNZ"}, "location": {"lat": -45.031136, "lon": 168.662395}, "type": "Official Event", "id": "queenstown", "photo_url": "/resources/csiro-logo.png"}
