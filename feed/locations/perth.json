@@ -1,1 +1,1 @@
-{"jurisdiction": "wa", "type": "Event", "id": "perth", "name": "Perth", "photo_url": "/resources/csiro-logo.png"}
+{"name": "Perth", "url": "http://portal.govhack.org/locations/wa/perth.html", "jurisdiction": "wa", "location": {"lat": -31.953921, "lon": 115.853156}, "type": "Official Event", "id": "perth", "photo_url": "/resources/csiro-logo.png"}

@@ -1,1 +1,1 @@
-{"jurisdiction": "vic", "type": "Event", "id": "melbourne", "name": "Melbourne", "photo_url": "/resources/csiro-logo.png"}
+{"name": "Melbourne", "url": "http://portal.govhack.org/locations/vic/melbourne.html", "jurisdiction": "vic", "location": {"lat": -37.81669, "lon": 144.963966}, "type": "Official Event", "id": "melbourne", "photo_url": "/resources/csiro-logo.png"}
