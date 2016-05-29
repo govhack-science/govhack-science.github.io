@@ -29,6 +29,10 @@ for dir in dirs:
           basepath, dirname = os.path.split(dirpath)
           jsonblob["url"] = "%s/%s/%s/%s" % (portalurl, "locations", dirname, f.replace(".md", ".html"))
         
+        if "gid" in jsonblob:
+          jsonblob["id"] = jsonblob["gid"]
+          del jsonblob["gid"]
+        
         with open(jsonpath, "w") as outfile:
           json.dump(jsonblob, outfile)
         
