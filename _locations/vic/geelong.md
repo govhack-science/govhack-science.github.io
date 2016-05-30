@@ -9,4 +9,5 @@ location:
   lon: 144.360392
 contact:
   twitter: GovHackGeelong
+  facebook: govhackgeelong
 ---
