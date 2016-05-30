@@ -1,0 +1,59 @@
+{% if include.mentors %}
+  {% assign mentor_ids = include.mentors | map: "id" %}
+{% else %}
+  {% assign mentor_ids = include.mentor_ids %}
+{% endif %}
+
+{% for mentor in site.mentors %}
+  {% if mentor_ids == nil or mentor_ids contains mentor.id %}
+  <div class="media mentor">
+      <div class="media-left">
+          <a href="{{ mentor.url }}"><img src="{{ mentor.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ mentor.url }}">{{ mentor.name }}</a></h4>
+        {{ mentor.content }}
+      </div>
+      <div class="media-right">
+        <ul class="list-inline social-buttons">
+            <li>
+                <a href="https://twitter.com/{{ mentor.contact.twitter }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            {% if mentor.contact.facebook %}
+            <li>
+                <a href="{{ mentor.contact.facebook }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            {% endif %}
+            {% if mentor.contact.linkedin %}
+            <li>
+                <a href="{{ mentor.contact.linkedin }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="mailto:{{ mentor.contact.email }}">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

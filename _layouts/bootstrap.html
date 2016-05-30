@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}GovHack | Competition Portal</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/resources/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/apple-touch-icon-{% if page.ios_app_name %}{{page.ios_app_name}}-{% endif %}72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/apple-touch-icon-114x114-precomposed.png">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@govhackau">
+    {% if page.ios_app_name %}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    {% endif %}
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+      {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+      <meta name="og:description" content="{{ page.description }}">
+      {% else if content %}
+      <meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
+      <meta name="og:description" content="{{ content | strip_html | truncatewords: 25 }}">
+      {% endif %}
+    {% else %}
+      <meta name="description" content="Govhack - I will do science to it">
+    {% endif %}
+    {% if page.og_image_url %}
+    <meta property="og:image" content="{{ page.og_image_url }}">
+    {% else %}
+    {% if page.photo_url %}
+    <meta property="og:image" content="{{ page.photo_url }}">
+    {% endif %}
+    {% endif %}
+    <meta property="og:url" content="http://govhack-science.github.io{{ page.url | remove_first:'index.html' }}">
+    <meta property="og:site_name" content="govhack-science.github.io">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    {% endif %}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/resources/css/clean-blog.css" rel="stylesheet">
+    <link href="/resources/css/megamenu.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
+    
+    <!-- Leaflet -->
+    <link rel='stylesheet' id='leaflet-css-css'  href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css?ver=4.5.2' type='text/css' media='all' />
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery -->
+    <script src="/resources/js/jquery.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="60">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top is-fixed is-visible">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                {% if page.name == "index.html" %}
+                  <a class="navbar-brand" href="//govhack.org">GovHack</a>
+                {% elsif page.title %}
+                  <ol class="navbar-brand breadcrumb">
+                    <li><a href="//govhack.org">GovHack</a></li>
+                    <li class="active"><a href="#" class="page-scroll">{{ page.title }}</a></li>
+                  </ol>
+                {% elsif page.name %}
+                  <ol class="navbar-brand breadcrumb">
+                    <li><a href="//govhack.org">GovHack</a></li>
+                    <!--<li><a href="/#themes">{{ page.collection }}</a></li>-->
+                    <li class="active"><a href="#" class="page-scroll">{{ page.name }}</a></li>
+                  </ol>
+                {% endif %}
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <!--<li>
+                        <a href="/#themes">Themes</a>
+                    </li>-->
+                    <li>
+                        <a href="/prizes.html">Prizes</a>
+                    </li>
+                    <li>
+                        <a href="/datasets.html">Datasets</a>
+                    </li>
+                    <li>
+                        <a href="/mentors.html">Mentors</a>
+                    </li>
+                    <!-- <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-3"></li>
+                            <li class="col-sm-9 row">
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Dresses</li>
+                                    <li><a href="#">Unique Features</a></li>
+                                    <li><a href="#">Image Responsive</a></li>
+                                    <li><a href="#">Auto Carousel</a></li>
+                                    <li><a href="#">Newsletter Form</a></li>
+                                    <li><a href="#">Four columns</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Tops</li>
+                                    <li><a href="#">Good Typography</a></li>
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Jackets</li>
+                                    <li><a href="#">Easy to customize</a></li>
+                                    <li><a href="#">Glyphicons</a></li>
+                                    <li><a href="#">Pull Right Elements</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Pants</li>
+                                    <li><a href="#">Coloured Headers</a></li>
+                                    <li><a href="#">Primary Buttons & Default</a></li>
+                                    <li><a href="#">Calls to action</a></li>
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header">Accessories</li>
+                                    <li><a href="#">Default Navbar</a></li>
+                                    <li><a href="#">Lovely Fonts</a></li>
+                                    <li><a href="#">Responsive Dropdown </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Locations
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-3"></li>
+                            <li class="col-sm-9 row">
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header"><a href="/locations.html">All Locations</a></li>
+                                    <li class="dropdown-header"><a href="/jurisdictions/australian_capital_territory.html">ACT</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="act" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                    <li class="dropdown-header"><a href="/jurisdictions/new_south_wales.html">NSW</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="nsw" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header"><a href="/jurisdictions/queensland.html">QLD</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="qld" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                    <li class="dropdown-header"><a href="/jurisdictions/south_australia.html">SA</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="sa" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header"><a href="/jurisdictions/tasmania.html">TAS</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="tas" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                    <li class="dropdown-header"><a href="/jurisdictions/victoria.html">VIC</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="vic" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                </ul>
+                                <ul class="col-sm-3">
+                                    <li class="dropdown-header"><a href="/jurisdictions/western_australia.html">WA</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="wa" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                    <li class="dropdown-header"><a href="/jurisdictions/new_zealand.html">NZ</a></li>
+                                    {% capture location_ids %}{% include get_jurisdiction_events.html jurisdiction_id="nz" %}{% endcapture %}
+                                    {% assign location_ids = location_ids | lstrip %}
+                                    {% include location_megamenu_item.bs.html location_ids=location_ids %}
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--<li class="dropdown">
+                          <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Jurisdictions
+                            <span class="caret"></span>
+                          </a>
+                          <ul id="menu1" class="dropdown-menu nav" aria-labelledby="dLabel">
+                            <li><a href="/jurisdictions.html">Home</a></li>
+                            <li role="separator" class="divider"></li>
+                            {% for jurisdiction in site.jurisdictions %}
+                              <li><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></li>
+                            {% endfor %}
+                          </ul>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <!--<header class="intro-header" style="background-image: url('/resources/govhack-background-home.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        {% if page.name == "index.html" %}
+                          <h1>Project Jabberwocky</h1>
+                          <hr class="small">
+                          <span class="subheading">Shiny shiny shiny shiny</span>
+                        {% elsif page.title %}
+                          <h1>{{ page.title }}</h1>
+                        {% elsif page.name %}
+                          <h1>{{ page.name }}</h1>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>-->
+
+    <div class="container main-container">
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+                <nav id="toc" data-spy="affix" data-toggle="toc">
+                    <h1 data-toc-skip>Contents</h1>
+                </nav>
+            </div>
+            <!-- main content area -->
+            <div class="col-sm-9 main-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsors Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr>
+                    <h3 data-toc-skip>GovHack Sponsors</h3>
+                    <h4 data-toc-skip>Lead Agency 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    {% include organisation_logos.bs.html organisation_ids="ip_australia" %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 data-toc-skip>International Prize Sponsors 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="iag" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="google" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="ancestry" %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 data-toc-skip>Platnium Sponsors 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                Announcement coming soon.
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 data-toc-skip>Gold Sponsors 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="microsoft" %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 data-toc-skip>Silver Sponsors 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="dla_piper" %}
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 data-toc-skip>National Government Agency Supporters 2016</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="ato" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="dept_finance" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="bom" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="dept_infrastructure" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="abr" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="ga" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="afsa" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="dept_industry" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="aihw" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="abc" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="abs" %}
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    {% include organisation_logos.bs.html organisation_ids="data61" %}
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    {% unless page.no_footer %}
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">
+                      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+                        <img src="/resources/cc-cc.png" class="cc">
+                        <img src="/resources/cc-by.png" class="cc">
+                      </a>
+                      
+                      This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons License</a>
+                    </p>
+                    <!--<p class="text-muted">Images taken from <a href="http://www.scienceimage.csiro.au/">CSIRO Science Image</a>, and are free to download under <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a></p>
+                    <p class="text-muted">Powered by <a href="http://jekyllrb.com/">Jekyll</a>, repo lifted from <a href="https://twitter.com/jesserobertson">@jesserobertson</a>, layout lifted from <a href="http://rsms.me/">Rasmus Andersson</a> and lightly modified</p>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endunless %}
+    
+    {% include highlight.html %}
+    {% include analytics.html %}
+    {% include autoreload-in-debug.html %}
+
+    <!-- jQuery -->
+    <!--<script src="/resources/js/jquery.min.js"></script>-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/resources/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/resources/js/clean-blog.js"></script>
+
+    <!-- Bootstrap TOC -->
+    <script src="/resources/js/bootstrap-toc/v0.3.0/bootstrap-toc.min.js"></script>
+    
+    <!-- Leaflet -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js?ver=4.5.2'></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--<script src="/resources/js/classie.js"></script>-->
+    <!--<script src="/resources/js/cbpAnimatedHeader.min.js"></script>-->
+
+    <!-- Holder.js -->
+    <script src="/resources/js/holder.min.js"></script>
+
+    <script>
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 75
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+        // Build the Nav Table of Contents
+        /*
+        // var navtoc = $(".bs-docs-sidebar");
+        var navtoc = $("#toc > ul");
+        $("section#content").find("h1[id], h2[id], h3[id]").each(function(key, item) {
+            // navtoc.append('<li class="list-group-item"><a href="#' + item.id + '" class="page-scroll"><h4>' + item.innerText + '</h4></a></li>');
+            navtoc.append('<li><a href="#' + item.id + '" class="page-scroll"><h4>' + item.innerText + '</h4></a></li>');
+        });
+        */
+        
+        $(document).ready(function() {
+            // Hack to insert a header at the top of the table of contents
+            // $("nav[data-toggle='toc'] ul.nav").prepend("<li class=\"toc-header\"><h1>Contents</h1></li>");
+            
+            // Hide the TOC if there's nowt to show
+            if($("#toc ul li").length == 0) {
+                $("#toc").hide();
+            }
+        });
+        
+        jQuery(document).on('click', '.mega-dropdown', function(e) {
+            e.stopPropagation()
+        })
+    </script>
+</body>
+
+</html>

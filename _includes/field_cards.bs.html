@@ -1,0 +1,23 @@
+{% if include.fields %}
+  {% assign field_ids = include.fields | map: "id" %}
+{% else %}
+  {% assign field_ids = include.field_ids %}
+{% endif %}
+
+{% for field in site.fields %}
+  {% if field_ids == nil or field_ids contains field.id %}
+  <div class="media">
+      <div class="media-left">
+        {% if field.photo_url %}
+          <a href="{{ field.url }}"><img src="{{ field.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+        {% else %}
+          <a href="#"><img src="holder.js/105x105"></a>
+        {% endif %}
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ field.url }}">{{ field.name }}</a></h4>
+        {{ field.excerpt }}
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

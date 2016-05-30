@@ -1,0 +1,132 @@
+---
+layout: bootstrap
+---
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    <!--<div class="row header-row">
+        <div class="col-lg-12 text-center">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </div>-->
+    <div class="row">
+      {% include mentor_cards.bs.html mentors=page %}
+    </div>
+    
+    <div class="row">
+      <h3>Ask me about</h3>
+      {{ page.ask_me_about }}
+      
+      {% if page.location %}
+        <!-- Get location info -->
+        {% for item in site.locations %}
+          {% if item.id == page.location %}
+            {% assign location = item %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        
+        <h3>I'll be at: <a href="{{ location.url }}">{{ location.name }}</a></h3>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- Organisation Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="organisation">Organisation</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include organisation_cards.bs.html organisation_ids=page.organisation %}
+        </div>
+    </div>
+</section>
+
+{% assign theme_ids = "" %}
+{% for theme in site.themes %}
+  {% for mentor_id in theme.mentors %}
+    {% if mentor_id == page.id %}
+      {% assign theme_ids = theme_ids | append: theme.id %}
+      {% assign theme_ids = theme_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% unless theme_ids == "" %}
+<!-- Themes Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="themes">Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% if page.fields %}
+<!-- Fields Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="fields">Fields</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include field_cards.bs.html field_ids=page.fields %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.datasets %}
+<!-- Datasets Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="datasets">Datasets</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataset_cards.bs.html dataset_ids=page.datasets %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.dataportals %}
+<!-- Data Portals Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="dataportals">Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign prize_ids = "" %}
+{% for prize in site.prizes %}
+  {% for organisation_id in prize.organisations %}
+    {% if organisation_id == page.id %}
+      {% assign prize_ids = prize_ids | append: prize.id %}
+      {% assign prize_ids = prize_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

@@ -1,0 +1,123 @@
+---
+layout: bootstrap
+---
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    <!--<div class="row header-row">
+        <div class="col-lg-12 text-center">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </div>-->
+    <div class="row">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+{% assign prize_ids = "" %}
+{% for prize in site.prizes %}
+  {% for theme_id in prize.themes %}
+    {% if theme_id == page.id %}
+      {% assign prize_ids = prize_ids | append: prize.id %}
+      {% assign prize_ids = prize_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% unless prize_ids == "" %}
+<!-- Prizes Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="prizes">Prizes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+          {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% if page.datasets %}
+<!-- Datasets Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="datasets">Datasets</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataset_cards.bs.html dataset_ids=page.datasets %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.dataportals %}
+<!-- Data Portals Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="dataportals">Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.mentors %}
+<!-- Mentors Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="mentors">Mentors</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include mentor_cards.bs.html mentor_ids=page.mentors %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.organisations %}
+<!-- Organisations Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="organisations">Organisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include organisation_cards.bs.html organisation_ids=page.organisations %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.fields %}
+<!-- Fields Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="fields">Fields</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include field_cards.bs.html field_ids=page.fields %}
+        </div>
+    </div>
+</section>
+{% endif %}

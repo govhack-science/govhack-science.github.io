@@ -1,0 +1,36 @@
+{% if include.themes %}
+  {% assign theme_ids = include.themes | map: "id" %}
+{% else %}
+  {% assign theme_ids = include.theme_ids %}
+{% endif %}
+
+{% for theme in site.themes %}
+  {% if theme_ids == nil or theme_ids contains theme.id %}
+    <div class="col-md-4 col-sm-6 portfolio-item{% if theme.photo_url == Nil %} no-photo{% endif %}">
+        <a href="{{ theme.url }}" class="portfolio-link" data-toggle="modal">
+            {% if theme.photo_url %}
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content text-center">
+                    {% if theme.description %}
+                      <blockquote>{{ theme.description | strip_html }}</blockquote>
+                    {% else %}
+                      <blockquote>{{ theme.excerpt | strip_html }}</blockquote>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if theme.photo_url %}
+              <img src="{{ theme.photo_url }}" class="img-responsive" alt="">
+            {% else %}
+              <!--<img src="holder.js/360x260" class="img-responsive" alt="">-->
+              <blockquote>{{ theme.excerpt | strip_html }}</blockquote>
+            {% endif %}
+        </a>
+        <div class="portfolio-caption">
+            <h4>{{ theme.name }}</h4>
+            <!--<p class="text-muted">Graphic Design</p>-->
+        </div>
+    </div>
+  {% endif %}
+{% endfor %}

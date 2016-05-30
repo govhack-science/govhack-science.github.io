@@ -1,0 +1,119 @@
+---
+layout: bootstrap
+title: Data Portals
+---
+<!-- Main Content -->
+<!--<section id="portfolio">
+    <div class="container">
+        <div class="row">
+          <h3 class="section-subheading text-muted">Browse datasets for your state...</h3>
+          
+          {% include jurisdictions_bar.bs.html section="datasets" %}
+        </div>
+    </div>
+</section>-->
+
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "major-portal" %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+        {% assign dataportal_ids = dataportal_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Government Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Government Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "agency-portal" %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+        {% assign dataportal_ids = dataportal_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Agency Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Agency Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "domain-portal" %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+        {% assign dataportal_ids = dataportal_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Domain-specific Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Domain-specific Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "local-portal" %}
+        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+        {% assign dataportal_ids = dataportal_ids | append: "," %}
+    {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Local Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Local Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            <p><a href="dataportals/major/opencouncildata.html">Open Council Data</a> is the unofficial data portal for all Local Government data in Australia.</p>
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}

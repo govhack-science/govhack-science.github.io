@@ -1,0 +1,83 @@
+collections:
+  themes:
+    output: true
+    
+  datasets:
+    output: true
+    
+  dataportals:
+    output: true
+    
+  fields:
+    output: true
+    
+  mentors:
+    output: true
+    
+  organisations:
+    output: true
+    
+  prizes:
+    output: true
+    
+  jurisdictions:
+    output: true
+    
+  locations:
+    output: true
+
+
+defaults:
+  - scope:
+      path: "_themes"
+      type: themes
+    values:
+      layout: theme
+      
+  - scope:
+      path: "_datasets"
+      type: datasets
+    values:
+      layout: dataset
+      
+  - scope:
+      path: "_dataportals"
+      type: dataportals
+    values:
+    
+      layout: dataportal
+  - scope:
+      path: "_fields"
+      type: fields
+    values:
+      layout: field
+      
+  - scope:
+      path: "_mentors"
+      type: mentors
+    values:
+      layout: mentor
+      
+  - scope:
+      path: "_organisations"
+      type: organisations
+    values:
+      layout: organisation
+      
+  - scope:
+      path: "_prizes"
+      type: prizes
+    values:
+      layout: prize
+      
+  - scope:
+      path: "_jurisdictions"
+      type: jurisdictions
+    values:
+      layout: jurisdiction
+      
+  - scope:
+      path: "_locations"
+      type: locations
+    values:
+      layout: location

@@ -1,0 +1,22 @@
+{% if include.datasets %}
+  {% assign dataset_ids = include.datasets | map: "id" %}
+{% else %}
+  {% assign dataset_ids = include.dataset_ids %}
+{% endif %}
+
+<table width=95%>
+{% for dataset in site.datasets %}
+  {% if dataset_ids == nil or dataset_ids contains dataset.id %}
+  <tr>
+    <td width=100px style="vertical-align: text-top">
+      <br>
+      <a href="{{ dataset.url }}"><img src="{{ dataset.photo_url }}" width=90px></a>
+    </td>
+    <td>
+      <br><a href="{{ dataset.url }}"><em>{{ dataset.name }}</em></a><br>
+      {{ dataset.excerpt }}
+    </td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</table>

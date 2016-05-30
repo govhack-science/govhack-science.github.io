@@ -1,0 +1,23 @@
+{% if include.prizes %}
+  {% assign prize_ids = include.prizes | map: "id" %}
+{% else %}
+  {% assign prize_ids = include.prize_ids %}
+{% endif %}
+
+{% for prize in site.prizes %}
+  {% if prize_ids == nil or prize_ids contains prize.id %}
+  <div class="media">
+      <div class="media-left">
+        {% if prize.photo_url %}
+          <a href="{{ prize.url }}"><img src="{{ prize.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+        {% else %}
+          <a href="#"><img src="holder.js/105x105"></a>
+        {% endif %}
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ prize.url }}">{{ prize.name }}</a></h4>
+        {{ prize.excerpt }}
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,230 @@
+---
+layout: bootstrap
+---
+
+<script src="/resources/js/location-map.js"></script>
+
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    <!--<div class="row header-row">
+        <div class="col-lg-12 text-center">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </div>-->
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+            <!--<img src="{{ page.photo_url }}" style="max-width: 200px; max-height: 200px;">-->
+        </div>
+        <div class="media-body">
+          {% for jurisdiction in site.jurisdictions %}
+            {% if jurisdiction.gid == page.jurisdiction %}
+              {% assign jurisdiction = jurisdiction %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          
+          <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a> (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h2>
+          <h3>{{ page.type }}</h3>
+          
+          {% unless page.content == "" %}
+            {{ page.content }}
+          {% else %}
+            <p class="empty-state"></p>
+          {% endunless %}
+          
+          <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
+          <script type="text/javascript">
+          location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
+          </script>
+        </div>
+      </div>
+      
+      <ul class="list-inline social-buttons">
+          {% if page.contact.twitter %}
+          <li>
+              <a href="https://twitter.com/{{ page.contact.twitter }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                  @{{ page.contact.twitter }}
+              </a>
+          </li>
+          {% endif %}
+          {% if page.contact.facebook %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if page.website_url %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Event Website
+              </a>
+          </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% assign theme_ids = "" %}
+{% for theme in site.themes %}
+  {% if theme.jurisdiction == page.jurisdiction or theme.location == page.id %}
+    {% assign theme_ids = theme_ids | append: theme.id %}
+    {% assign theme_ids = theme_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless theme_ids == "" %}
+<!-- Themes Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="themes">Local & State Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign prize_ids = "" %}
+{% for prize in site.prizes %}
+  {% if prize.jurisdiction == page.jurisdiction or prize.location == page.id %}
+    {% assign prize_ids = prize_ids | append: prize.id %}
+    {% assign prize_ids = prize_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless prize_ids == "" %}
+<!-- Prizes Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="prizes">Local & State Prizes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+          {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataset_ids = "" %}
+{% for dataset in site.datasets %}
+  {% if dataset.jurisdiction == page.jurisdiction or dataset.location == page.id %}
+    {% assign dataset_ids = dataset_ids | append: dataset.id %}
+    {% assign dataset_ids = dataset_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless dataset_ids == "" %}
+<!-- Datasets Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="datasets">Local & State Datasets</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
+          {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+  {% if dataportal.jurisdiction == page.jurisdiction or dataportal.location == page.id %}
+    {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+    {% assign dataportal_ids = dataportal_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless dataportal_ids == "" %}
+<!-- Data Portals Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="dataportals">Local & State Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign mentor_ids = "" %}
+{% for mentor in site.mentors %}
+  {% if mentor.jurisdiction == page.jurisdiction or mentor.location == page.id %}
+    {% assign mentor_ids = mentor_ids | append: mentor.id %}
+    {% assign mentor_ids = mentor_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless mentor_ids == "" %}
+<!-- Mentors Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="mentors">Local & State Mentors</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+          {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign organisation_ids = "" %}
+{% for organisation in site.organisations %}
+  {% if organisation.jurisdiction == page.jurisdiction or organisation.location == page.id %}
+    {% assign organisation_ids = organisation_ids | append: organisation.gid %}
+    {% assign organisation_ids = organisation_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless organisation_ids == "" %}
+<!-- Organisations Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="organisations">Local & State Organisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
+          {% include organisation_cards.bs.html organisation_ids=organisation_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
