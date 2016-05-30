@@ -50,7 +50,7 @@ We have a few Python tools to generate JSON files to expose an "API" for govhack
 
 To install:
 ```
-virtualenv venv
+virtualenv --system-site-packages venv
 . venv/bin/activate
 pip install python-frontmatter
 ```
@@ -64,3 +64,5 @@ To run:
 . venv/bin/activate
 python python/frontmatter-to-json.py
 ```
+
+> Tip: If `importError: No module named yaml`, try (this SO)[http://stackoverflow.com/questions/1909025/import-error-with-virtualenv]. Otherwise the `virtualenv --system-site-packages venv` command should have imported the usual suspects like pyyaml.
