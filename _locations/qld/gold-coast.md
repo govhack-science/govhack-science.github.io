@@ -9,4 +9,5 @@ location:
   lon: 153.384360
 contact:
   twitter: GovHackGC
+  facebook: GovHackGC
 ---

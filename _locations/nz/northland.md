@@ -1,12 +1,12 @@
 ---
-name: Whangarei
-id: whangarei
+name: Northland
+id: northland
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event
 location:
-  lat: -35.720949
-  lon: 174.317620
+  lat: -35.5795
+  lon: 173.7624
 contact:
   twitter: GovHackNZ
 ---

@@ -1,6 +1,6 @@
 ---
-name: Ballarrat
-id: Ballarrat
+name: Ballarat
+id: ballarat
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Official Event
