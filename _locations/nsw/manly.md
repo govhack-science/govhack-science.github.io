@@ -7,4 +7,6 @@ type: Official Event
 location:
   lat: -33.798
   lon: 151.288
+contact:
+  twitter: GovHackNB
 ---

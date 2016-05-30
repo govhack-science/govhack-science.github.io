@@ -9,5 +9,8 @@ location:
   lon: 115.853156
 contact:
   twitter: GovHackPerth
+  facebook: govhackperth
+  instagram: govhackperth
+  youtube: GovHackPerth
 website_url: http://perth.govhack.org
 ---
