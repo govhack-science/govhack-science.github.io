@@ -41,6 +41,8 @@ We have a number of exciting new initiatives we hope to release in the next few 
 > Detail at a high-level what goes where (www/comp portal/Hackerspace?)
 > Link to categories below
 
+> Callout what locations/regions *must* contribute even if they have their own site
+
 # Techos
 > Hey, if you're comfortable using GitHub's web interface and understanding Markdown you can do all of this yourself live on the repo.
 Just apply for access ...
