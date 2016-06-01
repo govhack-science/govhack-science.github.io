@@ -36,6 +36,7 @@ If not, we'll manage it for you via forms. Looking at
 
 ## Sponsors
 > Link to example page
+> Image via sponsor form
 > Your choice: www or portal?
 
 Use >>this form<<
