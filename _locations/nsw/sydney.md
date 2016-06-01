@@ -1,6 +1,6 @@
 ---
-name: Sydney Disability Inclusion
-id: sydney-ultimo
+name: Sydney
+id: sydney
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Theme Node
