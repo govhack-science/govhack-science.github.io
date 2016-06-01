@@ -3,6 +3,39 @@ layout: bootstrap
 title: Contributing
 ---
 
+**State/region pages**
+
+A short marketing page will be produced for each state/region. They'll be visible from the main GovHack website (www.govhack.org) like: www.govhack.org/nsw. www.govhack.org/qld, etc.
+
+Contact your region's Digital Producer who will update your marketing page for you:
+
+For NSW, QLD, ACT, NZ:  contact alan@govhack.org
+For WA, SA, VIC, TAS: contact jun@govhack.org
+
+
+**Location / individual event pages**
+
+This year we are introducing a Competition Portal which centralises all the information that competitors need to know (a one-stop shop!)
+
+Each location will have it's own page within the portal - where local event teams can provide detailed information about event specifics. 
+
+--- Making updates ---
+
+We are currently developing a form where you can go in to request new location pages, or update existing location pages etc. Stay tuned. 
+
+In the meantime, if it's imperative to add a new location or make updates, you can contact your region's digital producer (see above). Also please ensure that Alysha knows about your new location's existence before we add it to the competition portal.
+
+
+**Your existing websites or digital assets**
+
+Some states/regions/events have purchased their own domains, or have their own websites etc. That's great! let us know so that we can appropriately link to you from the main GovHack website. 
+
+
+**Further updates on the way**
+
+We have a number of exciting new initiatives we hope to release in the next few weeks, including a better-than-ever participant toolkit Stay tuned!
+
+
 > General intro to web properties, what goes where, what's new, and why we're making this change.
 
 > Detail at a high-level what goes where (www/comp portal/Hackerspace?)
