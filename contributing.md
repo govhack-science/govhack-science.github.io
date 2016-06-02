@@ -73,6 +73,7 @@ If not, we'll manage it for you via forms. Looking at
 > Link to example page
 > Image via sponsor form
 > Your choice: www or portal?
+> What do about combined sponsors like "All of these WA govt agencies"?
 
 Use >>this form<<
 > Link to example page
