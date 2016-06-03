@@ -3,9 +3,15 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
+ 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
+  font-family:  'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+  font-family:  'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 20px;
   color: #404040;
 }
@@ -22,8 +28,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'Helvetica Neue', Helvetica, 'Open Sans', Arial, sans-serif; 
+  font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Black', sans-serif;
+  font-weight: 700;
 }
 a {
   color: #404040;
@@ -64,6 +71,7 @@ hr.small {
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Black', sans-serif;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -587,10 +595,12 @@ aside.clients img {
 .navbar-custom {
   background-image: url('/resources/govhack-background-home.jpg');
   background-position: 50% 35%;
+  z-index: 2000; /* Need to beat the leaflet map's z-index of 1000  */
 }
 
 .navbar-custom .navbar-brand {
   color: white;
+  text-shadow: 0 0 3px rgba(20,20,20,0.4);
 }
 
 .navbar-custom .navbar-toggle[aria-expanded] {
@@ -780,6 +790,9 @@ a.cc {
   margin: 0px;
 }
 
+ul.social-buttons a {
+    text-decoration: none;
+}
 
 .jurisdictions-bar .thumbnail {
   font-style: normal;
@@ -814,6 +827,7 @@ a.cc {
 .media.mentor ul.social-buttons li {
   padding-right: 0px;
 }
+
 
 /* Temporary hack to force page widths to obey the columns */
 /* Replace later with proper layouts on each page sans div.container */

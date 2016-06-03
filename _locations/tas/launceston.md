@@ -7,6 +7,8 @@ type: Official Event
 location:
   lat: -41.427606
   lon: 147.142444
+is_capital_city: false
 contact:
   twitter: GovHackTas
+display_rank: 40
 ---

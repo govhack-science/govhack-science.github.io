@@ -9,4 +9,6 @@ location:
   lon: 151.288
 contact:
   twitter: GovHackNB
+is_capital_city: true
+display_weight: 30
 ---
