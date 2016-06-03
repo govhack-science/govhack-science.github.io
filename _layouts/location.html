@@ -44,7 +44,7 @@ layout: bootstrap
       <ul class="list-inline social-buttons">
           {% if page.contact.twitter %}
           <li>
-              <a href="https://twitter.com/{{ page.contact.twitter }}">
+              <a href="https://twitter.com/{{ page.contact.twitter }}" target="_blank">
                   <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -55,11 +55,23 @@ layout: bootstrap
           {% endif %}
           {% if page.contact.facebook %}
           <li>
-              <a href="#">
+              <a href="https://facebook.com/{{ page.contact.facebook }}" target="_blank">
                   <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>                  
+                  fb.me/{{ page.contact.facebook }}
+              </a>
+          </li>
+          {% endif %}
+          {% if page.website %}
+          <li>
+              <a href="{{ page.website.url }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
                   </span>
+                  {{ page.website.name }}
               </a>
           </li>
           {% endif %}
@@ -89,11 +101,11 @@ layout: bootstrap
 
 {% unless theme_ids == "" %}
 <!-- Themes Section -->
-<section id="portfolio">
+<section id="local-state-themes">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="themes">Local & State Themes</h2>
+              <h2 class="section-heading" id="themes">Local &amp; State Themes</h2>
           </div>
         </div>
         <div class="row">
@@ -114,11 +126,11 @@ layout: bootstrap
 
 {% unless prize_ids == "" %}
 <!-- Prizes Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="local-state-prizes" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">Local & State Prizes</h2>
+              <h2 class="section-heading" id="prizes">Local &amp; State Prizes</h2>
           </div>
         </div>
         <div class="row">
@@ -139,11 +151,11 @@ layout: bootstrap
 
 {% unless dataset_ids == "" %}
 <!-- Datasets Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="local-state-datasets" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">Local & State Datasets</h2>
+              <h2 class="section-heading" id="datasets">Local &amp; State Datasets</h2>
           </div>
         </div>
         <div class="row">
@@ -164,11 +176,11 @@ layout: bootstrap
 
 {% unless dataportal_ids == "" %}
 <!-- Data Portals Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="local-state-data-portals" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="dataportals">Local & State Data Portals</h2>
+              <h2 class="section-heading" id="dataportals">Local &amp; State Data Portals</h2>
           </div>
         </div>
         <div class="row">
@@ -189,11 +201,11 @@ layout: bootstrap
 
 {% unless mentor_ids == "" %}
 <!-- Mentors Section -->
-<section id="portfolio">
+<section id="local-state-mentors">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="mentors">Local & State Mentors</h2>
+              <h2 class="section-heading" id="mentors">Local &amp; State Mentors</h2>
           </div>
         </div>
         <div class="row">
@@ -214,11 +226,11 @@ layout: bootstrap
 
 {% unless organisation_ids == "" %}
 <!-- Organisations Section -->
-<section id="portfolio">
+<section id="local-state-organisations">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="organisations">Local & State Organisations</h2>
+              <h2 class="section-heading" id="organisations">Local &amp; State Organisations</h2>
           </div>
         </div>
         <div class="row">

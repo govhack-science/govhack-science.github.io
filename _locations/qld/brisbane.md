@@ -5,8 +5,8 @@ photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Official Event
 location:
-  lat: -37.816690
-  lon: 144.963966
+  lat: -27.495792
+  lon: 153.012395
 contact:
   twitter: GovHackBne
 ---

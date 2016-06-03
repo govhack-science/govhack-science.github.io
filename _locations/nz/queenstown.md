@@ -7,6 +7,9 @@ type: Official Event
 location:
   lat: -45.031136
   lon: 168.662395
+is_capital_city: false
 contact:
   twitter: GovHackNZ
+website_url: http://govhack.org.nz/2016-events-and-info/queenstown/
+display_weight: 70
 ---

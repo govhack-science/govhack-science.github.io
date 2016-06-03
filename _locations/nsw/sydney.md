@@ -9,4 +9,6 @@ location:
   lon: 151.200292
 contact:
   twitter: GovHackSydney
+is_capital_city: true
+display_weight: 20
 ---

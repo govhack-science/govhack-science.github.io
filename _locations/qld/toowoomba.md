@@ -7,4 +7,9 @@ type: Official Event
 location:
   lat: -27.567963
   lon: 151.952122
+is_capital_city: true
+display_weight: 50
+website: 
+  name: Toowoomba Region
+  url: http://tr.qld.gov.au/
 ---
