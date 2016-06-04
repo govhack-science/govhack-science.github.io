@@ -166,13 +166,12 @@ layout: bootstrap
 </section>
 {% endunless %}
 
-{% assign dataportal_ids = "" %}
-{% for dataportal in site.dataportals %}
-  {% if dataportal.jurisdiction == page.jurisdiction or dataportal.location == page.id %}
-    {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-    {% assign dataportal_ids = dataportal_ids | append: "," %}
-  {% endif %}
-{% endfor %}
+{% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.jurisdiction | map: "gid" %}
+{% unless page.dataportals == nil %}
+    {% for dataportal in page.dataportals %}
+        {% assign dataportal_ids = dataportal_ids | push: dataportal %}
+    {% endfor %}
+{% endunless %}
 
 {% unless dataportal_ids == "" %}
 <!-- Data Portals Section -->
@@ -184,8 +183,7 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
 </section>

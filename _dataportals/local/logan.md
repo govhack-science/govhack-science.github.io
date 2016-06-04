@@ -3,7 +3,7 @@ name: Logan City Council
 gid: logan
 website_url: http://data.gov.au/organization/logan-city-council
 logo_url: /resources/csiro-logo.png
-jurisdiction: tas
+jurisdiction: qld
 type: local-portal
 ---
 

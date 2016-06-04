@@ -9,4 +9,6 @@ location:
   lon: 151.009482
 is_capital_city: true
 display_weight: 30
+dataportals:
+  - mosman
 ---

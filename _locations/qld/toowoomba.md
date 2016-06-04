@@ -12,4 +12,6 @@ display_weight: 50
 website: 
   name: Toowoomba Region
   url: http://tr.qld.gov.au/
+dataportals:
+  - toowoomba
 ---

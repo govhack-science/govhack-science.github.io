@@ -12,4 +12,6 @@ contact:
   twitter: GovHackGeelong
   facebook: govhackgeelong
 display_weight: 30
+dataportals:
+  - geelong
 ---

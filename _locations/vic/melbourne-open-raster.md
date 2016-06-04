@@ -11,4 +11,6 @@ is_capital_city: true
 contact:
   twitter: GovHackMelb
 display_weight: 50
+dataportals:
+  - melbourne
 ---

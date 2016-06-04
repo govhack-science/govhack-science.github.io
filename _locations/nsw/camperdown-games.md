@@ -11,4 +11,6 @@ contact:
   twitter: GovHackCamper
 is_capital_city: true
 display_weight: 50
+dataportals:
+  - mosman
 ---

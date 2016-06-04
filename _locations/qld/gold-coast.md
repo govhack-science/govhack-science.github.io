@@ -12,4 +12,6 @@ display_weight: 50
 contact:
   twitter: GovHackGC
   facebook: GovHackGC
+dataportals:
+  - gold-coast
 ---

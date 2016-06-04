@@ -4,8 +4,13 @@
   {% assign dataportal_ids = include.dataportal_ids %}
 {% endif %}
 
-{% for dataportal in site.dataportals %}
-  {% if dataportal_ids == nil or dataportal_ids contains dataportal.gid %}
+{% if dataportal_ids == nil %}
+  {% assign dataportal_ids = site.dataportals %}
+{% endif %}
+
+{% for dataportal_id in dataportal_ids %}
+  {% assign dataportal = site.dataportals | where: "gid", dataportal_id | first %}
+  
   <div class="media">
       <div class="media-left">
         {% if dataportal.photo_url %}
@@ -19,5 +24,4 @@
         {{ dataportal.excerpt }}
       </div>
   </div>
-  {% endif %}
 {% endfor %}

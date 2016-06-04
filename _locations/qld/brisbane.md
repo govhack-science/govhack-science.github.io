@@ -11,4 +11,7 @@ is_capital_city: true
 display_weight: 20
 contact:
   twitter: GovHackBne
+dataportals:
+  - brisbane
+  - logan
 ---

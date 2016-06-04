@@ -11,4 +11,7 @@ is_capital_city: true
 contact:
   twitter: GovHackTas
 display_rank: 25
+dataportals:
+  - hobart
+  - glenorchy
 ---

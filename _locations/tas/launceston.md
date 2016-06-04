@@ -11,4 +11,6 @@ is_capital_city: false
 contact:
   twitter: GovHackTas
 display_rank: 40
+dataportals:
+  - launceston
 ---

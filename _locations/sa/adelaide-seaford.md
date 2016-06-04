@@ -7,6 +7,8 @@ type: Youth Node
 location:
   lat: -35.184789
   lon: 138.477147
+dataportals:
+  - adelaide
 is_capital_city: true
 display_weight: 30
 ---
