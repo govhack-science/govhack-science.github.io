@@ -15,7 +15,7 @@ layout: bootstrap
             <!--<img src="{{ page.logo_url }}" style="max-width: 200px; max-height: 200px;">-->
         </div>
         <div class="media-body">
-          <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a></h2>
+          <h2><a href="{{ page.url }}">{{ page.name }}</a></h2>
           
           {% for jurisdiction in site.jurisdictions %}
             {% if jurisdiction.gid == page.jurisdiction %}

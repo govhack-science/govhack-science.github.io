@@ -25,7 +25,7 @@ layout: bootstrap
             {% endif %}
           {% endfor %}
           
-          <h2 class="media-heading"><a href="{{ page.url }}">{{ page.name }}</a> (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h2>
+          <h2><a href="{{ page.url }}">{{ page.name }}</a> (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h2>
           <h3>{{ page.type }}</h3>
           
           {% unless page.content == "" %}
