@@ -1,5 +1,5 @@
 ---
-name: Western Australia
+name: data.wa.gov.au
 gid: datawagovau
 website_url: http://data.wa.gov.au
 logo_url: /resources/csiro-logo.png

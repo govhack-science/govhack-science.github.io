@@ -1,5 +1,5 @@
 ---
-name: New Zealand
+name: data.govt.nz
 gid: datagovnz
 website_url: https://data.govt.nz
 logo_url: /resources/csiro-logo.png

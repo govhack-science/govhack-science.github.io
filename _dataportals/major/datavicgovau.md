@@ -1,5 +1,5 @@
 ---
-name: Victoria
+name: data.vic.gov.au
 gid: datavicgovau
 website_url: http://data.vic.gov.au
 logo_url: /resources/csiro-logo.png

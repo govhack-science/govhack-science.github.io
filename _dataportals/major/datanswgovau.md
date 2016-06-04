@@ -1,5 +1,5 @@
 ---
-name: New South Wales
+name: data.nsw.gov.au
 gid: datanswgovau
 website_url: http://data.nsw.gov.au
 logo_url: /resources/csiro-logo.png
