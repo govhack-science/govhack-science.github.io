@@ -14,14 +14,7 @@ title: Data Portals
 </section>-->
 
 
-{% assign dataportal_ids = "" %}
-{% for dataportal in site.dataportals %}
-    {% if dataportal.type == "major-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-        {% assign dataportal_ids = dataportal_ids | append: "," %}
-    {% endif %}
-{% endfor %}
-
+{% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | map: "gid" %}
 {% unless dataportal_ids == "" %}
 <!-- Government Data Portals Section -->
 <section id="portfolio">
@@ -32,22 +25,14 @@ title: Data Portals
           </div>
         </div>
         <div class="row">
-            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
 </section>
 {% endunless %}
 
 
-{% assign dataportal_ids = "" %}
-{% for dataportal in site.dataportals %}
-    {% if dataportal.type == "agency-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-        {% assign dataportal_ids = dataportal_ids | append: "," %}
-    {% endif %}
-{% endfor %}
-
+{% assign dataportal_ids = site.dataportals | where: "type", "agency-portal" | map: "gid" %}
 {% unless dataportal_ids == "" %}
 <!-- Agency Data Portals Section -->
 <section id="portfolio">
@@ -58,22 +43,14 @@ title: Data Portals
           </div>
         </div>
         <div class="row">
-            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
 </section>
 {% endunless %}
 
 
-{% assign dataportal_ids = "" %}
-{% for dataportal in site.dataportals %}
-    {% if dataportal.type == "domain-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-        {% assign dataportal_ids = dataportal_ids | append: "," %}
-    {% endif %}
-{% endfor %}
-
+{% assign dataportal_ids = site.dataportals | where: "type", "domain-portal" | map: "gid" %}
 {% unless dataportal_ids == "" %}
 <!-- Domain-specific Data Portals Section -->
 <section id="portfolio">
@@ -84,22 +61,14 @@ title: Data Portals
           </div>
         </div>
         <div class="row">
-            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
 </section>
 {% endunless %}
 
 
-{% assign dataportal_ids = "" %}
-{% for dataportal in site.dataportals %}
-    {% if dataportal.type == "local-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-        {% assign dataportal_ids = dataportal_ids | append: "," %}
-    {% endif %}
-{% endfor %}
-
+{% assign dataportal_ids = site.dataportals | where: "type", "local-portal" | map: "gid" %}
 {% unless dataportal_ids == "" %}
 <!-- Local Data Portals Section -->
 <section id="portfolio">
@@ -110,9 +79,11 @@ title: Data Portals
           </div>
         </div>
         <div class="row">
-            <p><a href="dataportals/major/opencouncildata.html">Open Council Data</a> is the unofficial data portal for all Local Government data in Australia.</p>
-            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
-            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+            
+            <p class="text-muted">
+                Is your local government not listed? Check out <a href="https://opencouncildata.org/">Open Council Data</a> - an unofficial index of local government data portals in Australia.
+            </p>
         </div>
     </div>
 </section>
