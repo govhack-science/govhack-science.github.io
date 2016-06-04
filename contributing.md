@@ -3,99 +3,237 @@ layout: bootstrap
 title: Contributing
 ---
 
-**State/region pages**
+# State/region pages
 
-A short marketing page will be produced for each state/region. They'll be visible from the main GovHack website (www.govhack.org) like: www.govhack.org/nsw. www.govhack.org/qld, etc.
+A short marketing page will be produced for each state/region. They'll be visible from the main GovHack website at govhack.org/nsw, govhack.org/qld, et cetera.
 
-Contact your region's Digital Producer who will update your marketing page for you:
+Contact your region's **Digital Producer** to make changes to your marketing page:
 
-For NSW, QLD, ACT, NZ:  contact alan@govhack.org
-For WA, SA, VIC, TAS: contact jun@govhack.org
+For NSW, QLD, ACT, and NZ: [alan@govhack.org](mailto:alan@govhack.org?Subject=GovHack%20Marketing%20Page%20Update)
 
-
-**Location / individual event pages**
-
-This year we are introducing a Competition Portal which centralises all the information that competitors need to know (a one-stop shop!)
-
-Each location will have it's own page within the portal - where local event teams can provide detailed information about event specifics. 
-
---- Making updates ---
-
-We are currently developing a form where you can go in to request new location pages, or update existing location pages etc. Stay tuned. 
-
-In the meantime, if it's imperative to add a new location or make updates, you can contact your region's digital producer (see above). Also please ensure that Alysha knows about your new location's existence before we add it to the competition portal.
+For WA, SA, VIC, and TAS: [jun@govhack.org](mailto:jun@govhack.org?Subject=GovHack%20Marketing%20Page%20Update)
 
 
-**Your existing websites or digital assets**
+# Individual event pages
 
-Some states/regions/events have purchased their own domains, or have their own websites etc. That's great! let us know so that we can appropriately link to you from the main GovHack website. 
+This year we are introducing a Competition Portal ([portal.govhack.org](http://portal.govhack.org)) which will centralise all the competition information that competitors need to know (a one-stop shop!).
+
+Each event will have it's own page within the portal - where local event teams will provide detailed information about their events.
+
+## Updating event pages
+
+We are currently developing a set of forms for you to use to have changes made to your part of the competition portal. Stay tuned. 
+
+In the meantime, if it's imperative to add a new location or make updates, you can contact your region's digital producer (see above).
 
 
-**Further updates on the way**
+# Your existing websites or digital assets
+
+Some states/regions/events have purchased their own domains, or have their own websites etc. That's great! Let us know so that we can appropriately link to you from the main GovHack website.
+
+But remember, we'll still need you to list all of the key information about your event (where it is, prizes, datasets, mentors, et cetera) on the main GovHack website and the competition portal.
+
+
+# Further updates on the way
 
 We have a number of exciting new initiatives we hope to release in the next few weeks, including a better-than-ever participant toolkit Stay tuned!
 
 
-> General intro to web properties, what goes where, what's new, and why we're making this change.
+# I want to update information about my...
 
-> Detail at a high-level what goes where (www/comp portal/Hackerspace?)
-> Link to categories below
+## State/Region
+[Example page](http://portal.govhack.org/regions/western_australia.html)
 
-> Callout what locations/regions *must* contribute even if they have their own site
+**Attributes**
 
-# Techos
-> Hey, if you're comfortable using GitHub's web interface and understanding Markdown you can do all of this yourself live on the repo.
-Just apply for access ...
+- Name
+- Photo/Logo URL
 
-If not, we'll manage it for you via forms. Looking at 
+**Can be linked to**
 
-# I want to...
+- [Events](#events)
+- [Data Portals](#data-portals)
+- [Datasets](#datasets)
+- [Prizes](#prizes)
+- [Sponsors](#sponsors)
+- [Mentors](#mentors)
+- [Themes](#themes)
 
-## State/Region Information
-> Link to example page
 
-## Event Information
-> Define what this includes
-> Define where it lives (www and comp portal)
-> Link to example page
+## Events
+[Example page](http://localhost:4000/locations/wa/perth.html)
 
-### Add a new event
-> Create a Basecamp TODO under >>category<< w/ the info:
+**Attributes**
 
-### Update details about my event
-> If it's on www, you'll have access to customise your page to your heart's content, but please don't dupe content captured elsewhere!
-> If it's on portal, jaCreate a Basecamp TODO under >>category<<
+- Name
+- Description
+- Type (Official Event or Youth Node or Theme Node)
+- State/Region
+- Location (Coordinates)
+- Photo URL
+- Website URL
+- Twitter
+- Facebook
+- Instagram
+- YouTube
+- Email
 
-### Remove an event
-> Create a Basecamp TODO under >>category<<
+**Can be linked to**
+
+- [Mentors](#mentors)
+- [Sponsors](#sponsors)
+- [Prizes](#prizes)
+- [Data Portals](#data-portals)
+- [Datasets](#datasets)
+- [Themes](#themes)
+
+Use >>this form<<
+
 
 ## Sponsors
-> Link to example page
-> Image via sponsor form
-> Your choice: www or portal?
-> What do about combined sponsors like "All of these WA govt agencies"?
+[Example page](http://portal.govhack.org/sponsors/ip_australia.html)
+
+**Attributes**
+
+- Name
+- Description
+- Type (Government or Corporate)
+- Sponsor Level
+- Website URL
+- Logo
+
+**Can be linked to**
+
+- [Events](#events)
+- [Themes](#themes)
+- [Datasets](#datasets)
+- [Prizes](#prizes)
+- [Mentors](#mentors)
 
 Use >>this form<<
-> Link to example page
-> Detail fields
-> Detail what can be linked to/from it
+
 
 ## Prizes
-> Link to example page
+**Attributes**
+
+- Name
+- Description
+- Type (Prize or Bounty)
+- State/Region
+- Sponsor
+- Image URL
+
+**Can be linked to**
+
+- [Events](#events)
+- [Themes](#themes)
+- [Datasets](#datasets)
+- [Mentors](#mentors)
+- [Data Portals](#data-portals)
+  
 Use >>this form<<
+
 
 ## Datasets
-> Link to example page
+**Attributes**
+
+- Name
+- Description
+- State/Region
+- Sponsor
+- Data Portal
+- Dataset URL
+
+**Can be linked to**
+
+- [Events](#events)
+- [Themes](#themes)
+- [Prizes](#prizes)
+- [Mentors](#mentors)
+
 Use >>this form<<
+
 
 ## Data Portals
-> Link to example page
+[Example page](http://portal.govhack.org/dataportals.html)
+
+**Attributes**
+
+- Name
+- Description
+- Type (Major, Local, Domain, Agency)
+- State/Region
+- Website URL
+- Logo URL
+
+**Can be linked to**
+
+- [Events](#events)
+- [Sponsors](#sponsors)
+- [Themes](#themes)
+- [Prizes](#prizes)
+- [Mentors](#mentors)
+- [Datasets](#datasets)
+
 Use >>this form<<
+
 
 ## Mentors
-> Link to example page
+**Attributes**
+
+- Name
+- Description
+- State/Region
+- Sponsor
+- Photo URL
+- Position Title
+- Ask Me About
+- Twitter
+- Facebook
+- LinkedIn
+- Email
+
+**Can be linked to**
+
+- [Events](#events)
+- [Themes](#themes)
+- [Prizes](#prizes)
+- [Data Portals](#data-portals)
+- [Datasets](#datasets)
+
 Use >>this form<<
 
+
 ## Themes
-> Link to example page
+**Attributes**
+
+- Name
+- Description
+- State/Region
+- Photo URL
+- Position Title
+- Ask Me About
+- Twitter
+- Facebook
+- LinkedIn
+- Email
+
+**Can be linked to**
+
+- [Events](#events)
+- [Mentors](#mentors)
+- [Sponsors](#sponsors)
+- [Prizes](#prizes)
+- [Data Portals](#data-portals)
+- [Datasets](#datasets)
+
 Use >>this form<<
+
+
+# @TODO
+- General intro to web properties, what goes where, what's new, and why we're making this change.
+- Detail at a high-level what goes where (www/comp portal/Hackerspace?)
+- Callout what locations/regions *must* contribute even if they have their own site
+- Quick links to categories below (TOC...)
+- Call out the important stuff to include in the description
+- "Hey, if you're comfortable using GitHub's web interface and understanding Markdown you can do all of this yourself live on the repo. Just apply for access ..."
