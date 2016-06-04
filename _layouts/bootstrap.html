@@ -434,6 +434,11 @@
     {% include highlight.html %}
     {% include analytics.html %}
     {% include autoreload-in-debug.html %}
+    
+    <script>
+        // var GH = {};
+        // GH.opts = { useDashicons: false, useFontAwesome: true };
+    </script>
 
     <!-- jQuery -->
     <!--<script src="/resources/js/jquery.min.js"></script>-->
@@ -446,6 +451,9 @@
 
     <!-- Bootstrap TOC -->
     <script src="/resources/js/bootstrap-toc/v0.3.0/bootstrap-toc.min.js"></script>
+    
+    <!-- GovHack Site Switcher -->
+    <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
     
     <!-- Leaflet -->
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js?ver=4.5.2'></script>
@@ -488,6 +496,13 @@
             if($("#toc ul li").length == 0) {
                 $("#toc").hide();
             }
+            
+            var intervalId = window.setInterval(function() {
+                if($(".gh-ss").length > 0) {
+                    $(".gh-ss").addClass("is-fixed").addClass("is-visible").addClass("navbar-fixed-top");
+                    window.clearTimeout(intervalId);
+                }
+            }, 250);
         });
         
         jQuery(document).on('click', '.mega-dropdown', function(e) {

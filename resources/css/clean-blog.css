@@ -165,7 +165,8 @@ hr.small {
     -ms-transform: translate3d(0, 100%, 0);
     -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-    top: -61px; /* Moved from .navbar-custom.is-fixed */
+    /*top: -61px;*/ /* Moved from .navbar-custom.is-fixed */
+    top: -22px; /* Moved from .navbar-custom.is-fixed */
   }
 }
 .intro-header {
@@ -734,7 +735,7 @@ section#content {
 
 /* Bootstrap TOC */
 nav[data-toggle='toc'] {
-  top: 60px;
+  top: 100px;
   padding-top: 10px;
   max-width: 250px;
   background-color: white;
@@ -836,7 +837,7 @@ section > div.container {
 }
 
 .main-container .main-content {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 @media (max-width: 767px) {
   .main-container .main-content {
@@ -846,4 +847,9 @@ section > div.container {
 
 .locations-row h2:not(:first-child) {
   padding-top: 10px;
+}
+
+.gh-ss a {
+  font-size: 16px;
+  font-weight: bold;
 }
