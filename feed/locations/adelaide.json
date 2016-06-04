@@ -1,1 +1,1 @@
-{"name": "Adelaide", "url": "http://portal.govhack.org/locations/sa/adelaide.html", "jurisdiction": "sa", "location": {"lat": -34.919812, "lon": 138.604763}, "type": "Official Event", "id": "adelaide", "photo_url": "/resources/csiro-logo.png"}
+{"display_weight": 20, "name": "Adelaide", "url": "http://portal.govhack.org/locations/sa/adelaide.html", "jurisdiction": "sa", "location": {"lat": -34.919812, "lon": 138.604763}, "type": "Official Event", "id": "adelaide", "is_capital_city": true, "photo_url": "/resources/csiro-logo.png"}

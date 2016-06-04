@@ -7,4 +7,6 @@ type: Youth Node
 location:
   lat: -37.8279
   lon: 140.7753
+is_capital_city: false
+display_weight: 40
 ---

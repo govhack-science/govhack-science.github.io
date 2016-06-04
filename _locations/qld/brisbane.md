@@ -7,6 +7,8 @@ type: Official Event
 location:
   lat: -27.495792
   lon: 153.012395
+is_capital_city: true
+display_weight: 20
 contact:
   twitter: GovHackBne
 ---

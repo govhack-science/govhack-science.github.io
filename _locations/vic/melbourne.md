@@ -9,4 +9,6 @@ location:
   lon: 144.963966
 contact:
   twitter: GovHackMelb
+is_capital_city: true
+display_weight: 20
 ---

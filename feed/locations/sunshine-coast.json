@@ -1,1 +1,1 @@
-{"name": "Sunshine Coast", "url": "http://portal.govhack.org/locations/qld/sunshine-coast.html", "jurisdiction": "qld", "location": {"lat": -26.700621, "lon": 153.126314}, "type": "Theme Node", "id": "sunshine-coast", "photo_url": "/resources/csiro-logo.png"}
+{"display_weight": 40, "name": "Sunshine Coast", "url": "http://portal.govhack.org/locations/qld/sunshine-coast.html", "jurisdiction": "qld", "location": {"lat": -26.700621, "lon": 153.126314}, "type": "Theme Node", "id": "sunshine-coast", "is_capital_city": false, "photo_url": "/resources/csiro-logo.png"}

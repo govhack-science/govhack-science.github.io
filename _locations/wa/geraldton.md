@@ -10,5 +10,5 @@ location:
 is_capital_city: false
 contact:
   twitter: pollinatorsinc
-display_rank: 50
+display_rank: 40
 ---
