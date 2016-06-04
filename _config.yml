@@ -1,3 +1,12 @@
+cfg:
+  current_event: gh16
+  events:
+    - gh16
+    - gh15
+    - gh14
+    - gh13
+
+
 collections:
   themes:
     output: true
@@ -33,19 +42,21 @@ defaults:
       type: themes
     values:
       layout: theme
+      permalink: /themes/:title.html
       
   - scope:
       path: "_datasets"
       type: datasets
     values:
       layout: dataset
+      permalink: /datasets/:title.html
       
   - scope:
       path: "_dataportals"
       type: dataportals
     values:
-    
       layout: dataportal
+      
   - scope:
       path: "_fields"
       type: fields
@@ -57,12 +68,14 @@ defaults:
       type: mentors
     values:
       layout: mentor
+      permalink: /mentors/:title.html
       
   - scope:
       path: "_organisations"
       type: organisations
     values:
       layout: organisation
+      permalink: /sponsors/:title.html
       
   - scope:
       path: "_prizes"
@@ -75,6 +88,7 @@ defaults:
       type: jurisdictions
     values:
       layout: jurisdiction
+      permalink: /regions/:title.html
       
   - scope:
       path: "_locations"
