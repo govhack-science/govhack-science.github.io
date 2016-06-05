@@ -1,5 +1,5 @@
 ---
-name: data.sa.gov.au
+name: Data.SA
 gid: datasagovau
 website_url: https://data.sa.gov.au
 logo_url: /resources/csiro-logo.png
