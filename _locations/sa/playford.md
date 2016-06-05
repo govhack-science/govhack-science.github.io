@@ -8,7 +8,7 @@ location:
   lat: -34.6689999
   lon: 138.6782796
 dataportals:
-  - adelaide
+  - playford
 is_capital_city: false
 display_weight: 50
 ---

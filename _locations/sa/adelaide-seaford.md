@@ -8,7 +8,7 @@ location:
   lat: -35.1864896
   lon: 138.4789362
 dataportals:
-  - adelaide
+  - onkaparinga
 is_capital_city: true
 display_weight: 30
 ---
