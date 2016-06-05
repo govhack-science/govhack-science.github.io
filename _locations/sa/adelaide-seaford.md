@@ -1,12 +1,12 @@
 ---
-name: Seaford, Adelaide
+name: Onkaparinga, Adelaide
 id: adelaide-seaford
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
-type: Youth Node
+type: SA Official Event & Youth Node
 location:
-  lat: -35.184789
-  lon: 138.477147
+  lat: -35.1864896
+  lon: 138.4789362
 dataportals:
   - adelaide
 is_capital_city: true

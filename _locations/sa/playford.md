@@ -3,10 +3,10 @@ name: Playford
 id: playford
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
-type: Official Event
+type: SA Official Event & Youth Node
 location:
-  lat: -34.7007
-  lon: 138.6687
+  lat: -34.6689999
+  lon: 138.6782796
 dataportals:
   - adelaide
 is_capital_city: false

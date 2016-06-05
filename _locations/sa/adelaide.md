@@ -3,10 +3,10 @@ name: Adelaide
 id: adelaide
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
-type: Official Event
+type: SA Official Event & Maker space
 location:
-  lat: -34.919812
-  lon: 138.604763
+  lat: -34.92208
+  lon: 138.5942468
 dataportals:
   - adelaide
 is_capital_city: true
