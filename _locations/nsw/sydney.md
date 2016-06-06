@@ -3,7 +3,7 @@ name: Sydney
 id: sydney
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
-type: Theme Node
+type: Official Event
 location:
   lat: -33.880460
   lon: 151.200292
