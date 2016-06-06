@@ -79,7 +79,7 @@ For NSW, QLD, ACT, and NZ: [alan@govhack.org](mailto:alan@govhack.org?Subject=Go
 For WA, SA, VIC, and TAS: [jun@govhack.org](mailto:jun@govhack.org?Subject=GovHack%20Marketing%20Page%20Update)
 
 
-# I want to update information about my:
+# I want to update information about my...
 
 ## State/Region
 
