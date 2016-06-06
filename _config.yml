@@ -71,11 +71,18 @@ defaults:
       permalink: /mentors/:title.html
       
   - scope:
-      path: "_organisations"
+      path: "_organisations/sponsors"
       type: organisations
     values:
       layout: organisation
       permalink: /sponsors/:title.html
+      
+  - scope:
+      path: "_organisations/supporters"
+      type: organisations
+    values:
+      layout: organisation
+      permalink: /supporters/:title.html
       
   - scope:
       path: "_prizes"
