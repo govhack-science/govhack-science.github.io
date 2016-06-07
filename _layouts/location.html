@@ -33,11 +33,19 @@ layout: bootstrap
           {% else %}
             <p class="empty-state"></p>
           {% endunless %}
-          
+         
           <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
           <script type="text/javascript">
           location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
           </script>
+
+          {% if page.location.name %}
+          <p class="location-name"><strong>{{ page.location.name }}</strong></p>
+          {% endif %}      
+          {% if page.location.address %}
+          <p class="location-address">{{ page.location.address }}</p>
+          {% endif %}      
+
         </div>
       </div>
       
