@@ -1,5 +1,5 @@
 ---
-name: Onkaparinga, Adelaide
+name: Onkaparinga
 id: adelaide-seaford
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
