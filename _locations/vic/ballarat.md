@@ -1,6 +1,6 @@
 ---
 name: Ballarat
-id: ballarat
+gid: ballarat
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Official Event

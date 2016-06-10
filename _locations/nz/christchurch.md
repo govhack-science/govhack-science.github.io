@@ -1,6 +1,6 @@
 ---
 name: Christchurch
-id: christchurch
+gid: christchurch
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

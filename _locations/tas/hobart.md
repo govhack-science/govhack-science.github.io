@@ -1,6 +1,6 @@
 ---
 name: Hobart
-id: hobart
+gid: hobart
 photo_url: /resources/csiro-logo.png
 jurisdiction: tas
 type: Official Event

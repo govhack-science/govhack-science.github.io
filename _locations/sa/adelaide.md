@@ -1,6 +1,6 @@
 ---
 name: Adelaide
-id: adelaide
+gid: adelaide
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: SA Official Event & Maker space

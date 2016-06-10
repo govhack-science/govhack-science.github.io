@@ -1,6 +1,6 @@
 ---
 name: Canberra Heritage Hack
-id: canberra-heritage-hack
+gid: canberra-heritage-hack
 photo_url: /resources/csiro-logo.png
 jurisdiction: act
 type: Theme Node

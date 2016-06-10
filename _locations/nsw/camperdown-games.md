@@ -1,6 +1,6 @@
 ---
 name: Camperdown Games for Learning
-id: camperdown-games
+gid: camperdown-games
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Theme Node

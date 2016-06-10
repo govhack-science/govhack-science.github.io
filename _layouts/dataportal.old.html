@@ -42,7 +42,7 @@ layout: default
       {% for mentor in site.mentors %}
         {% for dataportal_id in mentor.dataportals %}
           {% if dataportal_id == page.id %}
-            {% assign mentor_ids = mentor_ids | append: mentor.id %}
+            {% assign mentor_ids = mentor_ids | append: mentor.gid %}
             {% assign mentor_ids = mentor_ids | append: "," %}
           {% endif %}
         {% endfor %}

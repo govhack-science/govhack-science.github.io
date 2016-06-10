@@ -1,6 +1,6 @@
 ---
 name: Napier, Hawkes Bay
-id: napie-hawkes-bay
+gid: napie-hawkes-bay
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

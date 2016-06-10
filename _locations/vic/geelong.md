@@ -1,6 +1,6 @@
 ---
 name: Geelong
-id: geelong
+gid: geelong
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Official Event

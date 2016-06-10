@@ -16,7 +16,7 @@ layout: default
       {% for mentor in site.mentors %}
         {% for field_id in mentor.fields %}
           {% if field_id == page.id %}
-            {% assign mentor_ids = mentor_ids | append: mentor.id %}
+            {% assign mentor_ids = mentor_ids | append: mentor.gid %}
             {% assign mentor_ids = mentor_ids | append: "," %}
           {% endif %}
         {% endfor %}

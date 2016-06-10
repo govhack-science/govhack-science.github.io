@@ -1,6 +1,6 @@
 ---
 name: Brisbane Maker
-id: brisbane-maker
+gid: brisbane-maker
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Maker Node

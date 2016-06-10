@@ -1,6 +1,6 @@
 ---
 name: Queenstown
-id: queenstown
+gid: queenstown
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

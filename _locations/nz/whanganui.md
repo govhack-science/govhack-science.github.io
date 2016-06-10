@@ -1,6 +1,6 @@
 ---
 name: Whanganui
-id: whanganui
+gid: whanganui
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

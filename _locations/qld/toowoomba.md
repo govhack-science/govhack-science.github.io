@@ -1,6 +1,6 @@
 ---
 name: Toowoomba
-id: Toowoomba
+gid: Toowoomba
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Official Event

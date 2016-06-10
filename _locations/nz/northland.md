@@ -1,6 +1,6 @@
 ---
 name: Northland
-id: northland
+gid: northland
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

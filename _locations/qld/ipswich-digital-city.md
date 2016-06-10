@@ -1,6 +1,6 @@
 ---
 name: Ipswich
-id: ipswich-digital-city
+gid: ipswich-digital-city
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Theme Node

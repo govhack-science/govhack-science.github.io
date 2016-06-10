@@ -1,6 +1,6 @@
 ---
 name: Launceston
-id: launceston
+gid: launceston
 photo_url: /resources/csiro-logo.png
 jurisdiction: tas
 type: Official Event

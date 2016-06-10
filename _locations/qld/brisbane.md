@@ -1,6 +1,6 @@
 ---
 name: Brisbane
-id: brisbane
+gid: brisbane
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Official Event

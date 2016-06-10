@@ -1,6 +1,6 @@
 ---
 name: Gold Coast
-id: Gold Coast
+gid: Gold Coast
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Official Event

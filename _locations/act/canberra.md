@@ -1,6 +1,6 @@
 ---
 name: Canberra
-id: canberra
+gid: canberra
 photo_url: /resources/csiro-logo.png
 jurisdiction: act
 type: Official Event

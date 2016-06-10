@@ -1,6 +1,6 @@
 ---
 name: Perth
-id: perth
+gid: perth
 photo_url: /resources/csiro-logo.png
 jurisdiction: wa
 type: Official Event

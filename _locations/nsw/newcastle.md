@@ -1,6 +1,6 @@
 ---
 name: Newcastle
-id: newcastle
+gid: newcastle
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event

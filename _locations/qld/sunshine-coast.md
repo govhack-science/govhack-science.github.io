@@ -1,6 +1,6 @@
 ---
 name: Sunshine Coast
-id: sunshine-coast
+gid: sunshine-coast
 photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Theme Node

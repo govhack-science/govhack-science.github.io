@@ -1,6 +1,6 @@
 ---
 name: Dunedin
-id: dunedin
+gid: dunedin
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

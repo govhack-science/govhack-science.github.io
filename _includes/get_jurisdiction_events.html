@@ -1,7 +1,7 @@
 {% assign location_ids = "" %}
 {% for location in site.locations %}
     {% if location.jurisdiction == include.jurisdiction_id %}
-        {% assign location_ids = location_ids | append: location.id %}
+        {% assign location_ids = location_ids | append: location.gid %}
         {% assign location_ids = location_ids | append: "," %}
     {% endif %}
 {% endfor %}

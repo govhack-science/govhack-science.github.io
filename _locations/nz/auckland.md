@@ -1,6 +1,6 @@
 ---
 name: Auckland
-id: auckland
+gid: auckland
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

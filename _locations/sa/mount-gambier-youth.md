@@ -1,6 +1,6 @@
 ---
 name: Mount Gambier
-id: mount-gambier-youth
+gid: mount-gambier-youth
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: SA Official Event & Youth Node

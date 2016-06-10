@@ -1,6 +1,6 @@
 ---
 name: Melbourne Open Raster Data
-id: melbourne-open-raster
+gid: melbourne-open-raster
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Theme Node

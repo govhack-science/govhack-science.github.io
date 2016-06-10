@@ -1,6 +1,6 @@
 ---
 name: Playford
-id: playford
+gid: playford
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: SA Official Event & Youth Node

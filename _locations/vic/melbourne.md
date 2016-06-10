@@ -1,6 +1,6 @@
 ---
 name: Melbourne
-id: melbourne
+gid: melbourne
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Official Event

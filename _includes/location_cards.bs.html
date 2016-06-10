@@ -1,11 +1,11 @@
 {% if include.locations %}
-  {% assign location_ids = include.locations | map: "id" %}
+  {% assign location_ids = include.locations | map: "gid" %}
 {% else %}
   {% assign location_ids = include.location_ids %}
 {% endif %}
 
 {% for location in site.locations %}
-  {% if location_ids == nil or location_ids contains location.id %}
+  {% if location_ids == nil or location_ids contains location.gid %}
   <div class="media">
       <div class="media-left">
         {% if location.photo_url %}

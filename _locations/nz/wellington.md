@@ -1,6 +1,6 @@
 ---
 name: Wellington
-id: wellington
+gid: wellington
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

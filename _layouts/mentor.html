@@ -10,7 +10,7 @@ layout: bootstrap
         </div>
     </div>-->
     <div class="row">
-      {% include mentor_cards.bs.html mentors=page %}
+      {% include mentor_cards.bs.html mentor_ids=page.gid %}
     </div>
     
     <div class="row">
@@ -18,14 +18,8 @@ layout: bootstrap
       {{ page.ask_me_about }}
       
       {% if page.location %}
-        <!-- Get location info -->
-        {% for item in site.locations %}
-          {% if item.id == page.location %}
-            {% assign location = item %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        
+        {% assign location = site.locations | where: "gid", page.location | first %}
+        {% assign locs = location | join: ", " %}
         <h3>I'll be at: <a href="{{ location.url }}">{{ location.name }}</a></h3>
       {% endif %}
     </div>
@@ -49,7 +43,7 @@ layout: bootstrap
 {% assign theme_ids = "" %}
 {% for theme in site.themes %}
   {% for mentor_id in theme.mentors %}
-    {% if mentor_id == page.id %}
+    {% if mentor_id == page.gid %}
       {% assign theme_ids = theme_ids | append: theme.id %}
       {% assign theme_ids = theme_ids | append: "," %}
     {% endif %}
@@ -124,7 +118,7 @@ layout: bootstrap
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
   {% for organisation_id in prize.organisations %}
-    {% if organisation_id == page.id %}
+    {% if organisation_id == page.gid %}
       {% assign prize_ids = prize_ids | append: prize.id %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}

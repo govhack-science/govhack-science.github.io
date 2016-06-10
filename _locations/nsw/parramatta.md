@@ -1,6 +1,6 @@
 ---
 name: Parramatta
-id: parramatta
+gid: parramatta
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event

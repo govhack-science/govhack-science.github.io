@@ -1,6 +1,6 @@
 ---
 name: Sydney
-id: sydney
+gid: sydney
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event

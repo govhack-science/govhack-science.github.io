@@ -1,12 +1,12 @@
 {% if include.locations %}
-  {% assign location_ids = include.locations | map: "id" %}
+  {% assign location_ids = include.locations | map: "gid" %}
 {% else %}
   {% assign location_ids = include.location_ids %}
 {% endif %}
 
 <table width=95%>
 {% for location in site.locations %}
-  {% if location_ids == nil or location_ids contains location.id %}
+  {% if location_ids == nil or location_ids contains location.gid %}
   <tr>
     <td width=100px style="vertical-align: text-top">
       <br>

@@ -1,6 +1,6 @@
 ---
 name: Manly Northern Beaches
-id: manly
+gid: manly
 photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event

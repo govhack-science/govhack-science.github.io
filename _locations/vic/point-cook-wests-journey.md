@@ -1,6 +1,6 @@
 ---
 name: Point Cook
-id: point-cook-wests-journey
+gid: point-cook-wests-journey
 photo_url: /resources/csiro-logo.png
 jurisdiction: vic
 type: Theme Node

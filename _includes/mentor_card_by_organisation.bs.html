@@ -5,14 +5,9 @@ e.g. site.mentors | group_by:"organisation"
 
 {% for group in include.mentors_by_org %}
   <!-- Get organisation info -->
-  {% for item in site.organisations %}
-    {% if item.id == group.name %}
-      {% assign organisation = item %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+  {% assign organisation = site.organisations | where: "gid", group.name | first %}
   
-  <h3>Mentors from <a href="{{ organisation.url }}">{{ organisation.name }}</a></h3>
+  <h2><a href="{{ organisation.url }}">{{ organisation.name }}</a></h2>
   {% include mentor_cards.bs.html mentors=group.items %}
   <br>
 {% endfor %}

@@ -84,7 +84,7 @@ layout: default
       {% assign mentor_ids = "" %}
       {% for mentor in site.mentors %}
         {% if mentor.jurisdiction == page.jurisdiction or mentor.location == page.id %}
-          {% assign mentor_ids = mentor_ids | append: mentor.id %}
+          {% assign mentor_ids = mentor_ids | append: mentor.gid %}
           {% assign mentor_ids = mentor_ids | append: "," %}
         {% endif %}
       {% endfor %}

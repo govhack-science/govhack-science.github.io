@@ -1,6 +1,6 @@
 ---
 name: Hamilton
-id: hamilton
+gid: hamilton
 photo_url: /resources/csiro-logo.png
 jurisdiction: nz
 type: Official Event

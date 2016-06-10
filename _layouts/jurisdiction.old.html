@@ -15,7 +15,7 @@ layout: default
       {% assign location_ids = "" %}
       {% for location in site.locations %}
         {% if location.jurisdiction == page.id %}
-          {% assign location_ids = location_ids | append: location.id %}
+          {% assign location_ids = location_ids | append: location.gid %}
           {% assign location_ids = location_ids | append: "," %}
         {% endif %}
       {% endfor %}
@@ -90,7 +90,7 @@ layout: default
       {% assign mentor_ids = "" %}
       {% for mentor in site.mentors %}
         {% if mentor.jurisdiction == page.id %}
-          {% assign mentor_ids = mentor_ids | append: mentor.id %}
+          {% assign mentor_ids = mentor_ids | append: mentor.gid %}
           {% assign mentor_ids = mentor_ids | append: "," %}
         {% endif %}
       {% endfor %}

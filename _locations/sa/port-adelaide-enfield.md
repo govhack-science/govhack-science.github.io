@@ -1,6 +1,6 @@
 ---
 name: Port Adelaide Enfield
-id: port-adelaide-enfield
+gid: port-adelaide-enfield
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: Youth Node

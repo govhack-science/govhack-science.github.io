@@ -1,6 +1,6 @@
 ---
 name: Geraldton
-id: geraldton
+gid: geraldton
 photo_url: /resources/csiro-logo.png
 jurisdiction: wa
 type: Official Event
