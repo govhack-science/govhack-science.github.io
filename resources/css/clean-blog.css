@@ -795,6 +795,10 @@ ul.social-buttons a {
     text-decoration: none;
 }
 
+.jurisdictions-bar > div {
+  padding: 0px;
+}
+
 .jurisdictions-bar .thumbnail {
   font-style: normal;
   margin-top: 0px;
