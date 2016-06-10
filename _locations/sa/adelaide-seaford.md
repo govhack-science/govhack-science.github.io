@@ -1,6 +1,6 @@
 ---
 name: Onkaparinga
-id: adelaide-seaford
+gid: adelaide-seaford
 photo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: SA Official Event & Youth Node
