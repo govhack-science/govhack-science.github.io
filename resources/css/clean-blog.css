@@ -853,7 +853,29 @@ section > div.container {
   padding-top: 10px;
 }
 
+
+
+/** Stuff to repair the broken gh-ss vs navbar **/
+
+/* Hide on mobile */
+.gh-ss {
+    display: none;
+}
 .gh-ss a {
   font-size: 16px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+    body.with-gh-ss .navbar-custom {
+        top: 40px;
+    }
+    .gh-ss {
+        display: block;
+    }
+}
+@media screen and (min-width: 1170px){
+    body.with-gh-ss .navbar-custom {
+        top: -22px; /* Navbar default */
+    }
 }

@@ -7,4 +7,4 @@ jurisdiction: sa
 type: local-portal
 ---
 
-The data portal for all Adealaide City Council data.
+The data portal for all Adelaide City Council data.
