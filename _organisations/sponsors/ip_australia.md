@@ -1,4 +1,5 @@
 ---
+title: IP Australia
 name: IP Australia
 gid: ip_australia
 type: Government

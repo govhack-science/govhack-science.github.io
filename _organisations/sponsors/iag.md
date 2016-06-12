@@ -1,4 +1,5 @@
 ---
+title: IAG
 name: IAG
 gid: iag
 type: Corporate

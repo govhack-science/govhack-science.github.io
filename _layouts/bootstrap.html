@@ -50,6 +50,7 @@
 
     <!-- Custom CSS -->
     <link href="/resources/css/clean-blog.css" rel="stylesheet">
+    <link href="/resources/css/layout.css" rel="stylesheet">
     <link href="/resources/css/megamenu.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
     
@@ -263,125 +264,12 @@
             <!-- main content area -->
             <div class="col-sm-9 main-content">
                 {{ content }}
+                
+                {% include sponsors_national.html %}
+                
             </div>
         </div>
     </div>
-
-    <!-- Sponsors Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <hr>
-                    <h3 data-toc-skip>GovHack Sponsors</h3>
-                    <h4 data-toc-skip>Lead Agency 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    {% include organisation_logos.bs.html organisation_ids="ip_australia" %}
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 data-toc-skip>International Prize Sponsors 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="iag" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="google" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="ancestry" %}
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 data-toc-skip>Platnium Sponsors 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                Announcement coming soon.
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 data-toc-skip>Gold Sponsors 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="microsoft" %}
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 data-toc-skip>Silver Sponsors 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="dla_piper" %}
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4 data-toc-skip>National Government Agency Supporters 2016</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="ato" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="dept_finance" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="bom" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="dept_infrastructure" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="abr" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="ga" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="afsa" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="dept_industry" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="aihw" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="abc" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="abs" %}
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    {% include organisation_logos.bs.html organisation_ids="data61" %}
-                </div>
-            </div>
-        </div>
-    </aside>
 
     <!-- Footer -->
     {% unless page.no_footer %}
@@ -425,8 +313,7 @@
                     </p>
                     <!--<p class="text-muted">Images taken from <a href="http://www.scienceimage.csiro.au/">CSIRO Science Image</a>, and are free to download under <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a></p>
                     <p class="text-muted">Powered by <a href="http://jekyllrb.com/">Jekyll</a>, repo lifted from <a href="https://twitter.com/jesserobertson">@jesserobertson</a>, layout lifted from <a href="http://rsms.me/">Rasmus Andersson</a> and lightly modified</p>-->
-                </div>
-            </div>
+                </div> 
         </div>
     </footer>
     {% endunless %}
