@@ -791,6 +791,20 @@ a.cc {
   margin: 0px;
 }
 
+.page-organisation .media-body, 
+.page-organisation .media-left, 
+.page-organisation .media-right {
+    vertical-align: middle;
+    min-width: 64px;
+}
+.page-organisation .media-left {
+    padding-right: 20px; 
+}
+
+.page-organisation .media .media-left img {
+    max-height: 64px; 
+}
+
 ul.social-buttons a {
     text-decoration: none;
 }
