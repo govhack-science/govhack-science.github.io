@@ -1,11 +1,12 @@
 ---
+title: Bureau of Meteorology
 name: Bureau of Meteorology
 gid: bom
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
 website_url: http://www.bom.gov.au/
-logo_url: http://www.govhack.org/wp-content/uploads/BOM_stacked_black_large-300x204.png
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/BOM.jpg
 jurisdiction: australia
 dataportals:
   - bom

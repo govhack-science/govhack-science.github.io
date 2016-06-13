@@ -1,4 +1,5 @@
 ---
+title: Google
 name: Google
 gid: google
 type: Corporate

@@ -1,4 +1,5 @@
 ---
+title: Department of Infrastructure
 name: Department of Infrastructure
 gid: dept_infrastructure
 type: Government

@@ -1,4 +1,5 @@
 ---
+title: Australian Bureau of Statistics
 name: Australian Bureau of Statistics
 gid: abs
 type: Government

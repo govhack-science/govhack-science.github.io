@@ -1,11 +1,12 @@
 ---
+title: Department of Industry
 name: Department of Industry
 gid: dept_industry
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
 website_url: http://www.industry.gov.au/
-logo_url: http://www.govhack.org/wp-content/uploads/DIIS-stacked-300x234.png
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/DeptOfIndustryInnovationScience.jpg
 jurisdiction: australia
 ---
 

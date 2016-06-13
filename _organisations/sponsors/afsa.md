@@ -1,4 +1,5 @@
 ---
+title: Australian Financial Security Authority
 name: Australian Financial Security Authority
 gid: afsa
 type: Government

@@ -1,11 +1,12 @@
 ---
+title: Geoscience Australia
 name: Geoscience Australia
 gid: ga
 type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
 website_url: http://www.ga.gov.au/
-logo_url: http://www.govhack.org/wp-content/uploads/geoscience_stacked_Black-1.jpg
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/Geoscience-Australia.jpg
 jurisdiction: australia
 dataportals:
   - ga
