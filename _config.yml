@@ -68,7 +68,7 @@ defaults:
       type: mentors
     values:
       layout: mentor
-      rermalink: /mentors/:title.html
+      permalink: /mentors/:title.html
       
   - scope:
       path: "_organisations/sponsors"
