@@ -68,7 +68,7 @@ defaults:
       type: mentors
     values:
       layout: mentor
-      permalink: /mentors/:title.html
+      rermalink: /mentors/:title.html
       
   - scope:
       path: "_organisations/sponsors"
@@ -95,7 +95,7 @@ defaults:
       type: jurisdictions
     values:
       layout: jurisdiction
-      permalink: /regions/:title.html
+      permalink: /regions/:gid.html
       
   - scope:
       path: "_locations"

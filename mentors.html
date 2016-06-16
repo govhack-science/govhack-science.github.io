@@ -1,19 +1,14 @@
 ---
 layout: bootstrap
 title: Mentors
+sections: 
+  cta: 
+    label: Register as a mentor
+    href: https://govhack.formstack.com/forms/mentors
+    target: _blank
 ---
-<!-- Main Content -->
-<!--<section id="portfolio">
-    <div class="container">
-        <div class="row">
-          <h3 class="section-subheading text-muted">Browse mentors for your state...</h3>
-          
-          {% include jurisdictions_bar.bs.html section="mentors" %}
-        </div>
-    </div>
-</section>-->
 
-<!-- Prizes Section -->
+<!-- Mentors Rollup -->
 <section id="portfolio">
     <div class="container">
         <div class="row header-row">
@@ -22,16 +17,13 @@ title: Mentors
           </div>
         </div>
         <div class="row">
-          <a class="btn btn-primary btn-lg" href="https://govhack.formstack.com/forms/mentors" role="button">
-            Register as a mentor
-          </a>
           
           {% if site.mentors.size == 0 %}
             <p>We'll be making information about our awesome crew of mentors available soon.
             Watch this space!</p>
           {% else %}
-            {% assign mentors_by_org = site.mentors | group_by:"organisation" %}
-            {% include mentor_card_by_organisation.bs.html mentors_by_org=mentors_by_org %}
+            {% assign mentors_by_jurisdn = site.mentors | group_by:"jurisdiction" %}
+            {% include mentor_card_by_jurisdiction.bs.html mentors_by_jurisdn=mentors_by_jurisdn %}
           {% endif %}
         </div>
     </div>
