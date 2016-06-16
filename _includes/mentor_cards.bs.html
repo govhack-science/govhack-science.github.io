@@ -11,12 +11,19 @@
 {% for mentor_id in mentor_ids %}
     {% assign mentor = site.mentors | where: "gid", mentor_id | first %}
     {% if mentor %}
+        {% assign mentor_org = site.organisations | where: "gid", mentor.organisation | first %}
         <div class="media mentor">
             <div class="media-left">
                 <a href="{{ mentor.url }}"><img src="{{ mentor.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
             </div>
             <div class="media-body">
-                <h4 class="media-heading"><a href="{{ mentor.url }}">{{ mentor.name }}, {{ mentor.position_title }}</a></h4>
+                <h4 class="media-heading">
+                    <a href="{{ mentor.url }}">{{ mentor.name }}</a><br/> 
+                    <small class="text-muted">
+                        {{ mentor.position_title }}, {{ mentor_org.name | default: mentor.organisation }}
+                    </small>
+                </h4>
+                
                 {{ mentor.excerpt }}
             </div>
             <div class="media-right">
