@@ -6,7 +6,7 @@ type: Corporate
 is_sponsor: true
 sponsor_level: International Prize Sponsor
 website_url: http://www.iag.com.au/
-logo_url: http://www.govhack.org/wp-content/uploads/IAG_Sec_RGB-Logo-150x150.png
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/IAG.png
 jurisdiction: international
 ---
 

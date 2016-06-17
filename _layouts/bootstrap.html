@@ -5,12 +5,32 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}GovHack | Competition Portal</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}GovHack | Competition Portal</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/resources/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/apple-touch-icon-{% if page.ios_app_name %}{{page.ios_app_name}}-{% endif %}72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/apple-touch-icon-114x114-precomposed.png">
+    
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/resources/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/resources/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/resources/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/resources/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/resources/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/resources/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="/resources/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#CA1553">
+    <meta name="msapplication-TileImage" content="/resources/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#CA1553">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@govhackau">
@@ -37,10 +57,10 @@
     <meta property="og:image" content="{{ page.photo_url }}">
     {% endif %}
     {% endif %}
-    <meta property="og:url" content="http://govhack-science.github.io{{ page.url | remove_first:'index.html' }}">
-    <meta property="og:site_name" content="govhack-science.github.io">
+    <meta property="og:url" content="http://portal.govhack.org{{ page.url | remove_first:'index.html' }}">
+    <meta property="og:site_name" content="GovHack Competition Portal">
     <meta property="og:type" content="article">
-    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale" content="en_AU" />
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
     {% endif %}
@@ -91,7 +111,7 @@
                   <a class="navbar-brand" href="//portal.govhack.org">GovHack</a>
                 {% elsif page.title %}
                   <ol class="navbar-brand breadcrumb">
-                    <li><a href="//govhack.org">GovHack</a></li>
+                    <li><a href="//portal.govhack.org">GovHack</a></li>
                     <li class="active"><a href="#" class="page-scroll">{{ page.title }}</a></li>
                   </ol>
                 {% elsif page.name %}
@@ -260,7 +280,7 @@
                 <nav id="toc" data-spy="affix" data-toggle="toc">
                     {% if page.sections.cta %}
                     <div class="sidebar-cta">
-                        <a class="btn btn-primary btn-lg" href="{{ page.mentors.cta.href }}" role="button" {% if page.sections.cta.target %}target="{{ page.sections.cta.target }}"{% endif %}>
+                        <a class="btn btn-primary" href="{{ page.mentors.cta.href }}" role="button" {% if page.sections.cta.target %}target="{{ page.sections.cta.target }}"{% endif %}>
                             {{ page.sections.cta.label }}
                         </a>
                     </div>
@@ -272,6 +292,7 @@
             <div class="col-sm-9 main-content">
                 {{ content }}
                 
+                <hr>
                 {% include sponsors_national.html %}
                 
             </div>

@@ -6,7 +6,7 @@ type: Corporate
 is_sponsor: true
 sponsor_level: International Prize Sponsor
 website_url: https://www.google.com/about/company/facts/locations/
-logo_url: https://www.govhack.org/wp-content/uploads/Logo_Google_2013_Official.svg_-300x103.png
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/Google.png
 jurisdiction: international
 ---
 

@@ -6,7 +6,7 @@ type: Government
 is_sponsor: true
 sponsor_level: National Government Agency Supporter
 website_url: https://www.afsa.gov.au/
-logo_url: http://www.govhack.org/wp-content/uploads/AFSA_logo_stackedstrip_blk_lrg-1.jpg
+logo_url: https://www.govhack.org/wp-content/uploads/2016/06/AFSA-1024x754.jpg
 jurisdiction: australia
 ---
 
