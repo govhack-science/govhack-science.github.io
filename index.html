@@ -122,8 +122,8 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign mentors_by_org = site.mentors | group_by:"organisation" %}
-          {% include mentor_card_by_organisation.bs.html mentors_by_org=mentors_by_org %}
+          {% assign mentors_by_jurisdn = site.mentors | group_by:"jurisdiction" %}
+          {% include mentor_card_by_jurisdiction.bs.html mentors_by_jurisdn=mentors_by_jurisdn %}
         </div>
     </div>
 </section>
