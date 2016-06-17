@@ -7,7 +7,7 @@ position_title: Data Scientist
 ask_me_about: Anything data science related
 organisation: CBIG Consulting
 jurisdiction: nsw
-location: Sydney Official event
+location: sydney
 contact:
   twitter: '@atockar'
   email: aatockar@gmail.com

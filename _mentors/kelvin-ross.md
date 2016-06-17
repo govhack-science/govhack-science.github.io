@@ -7,7 +7,7 @@ position_title: Director
 ask_me_about: Commercialisation of technology
 organisation: KJR
 jurisdiction: qld
-location: Gold Coast
+location: gold-coast
 contact:
   twitter: '@kelvinjross'
   email: kelvin.ross@kjr.com.au

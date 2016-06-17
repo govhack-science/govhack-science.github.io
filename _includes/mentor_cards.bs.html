@@ -17,12 +17,12 @@
                 <a href="{{ mentor.url }}"><img src="{{ mentor.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
             </div>
             <div class="media-body">
-                <h4 class="media-heading">
+                <h3 class="media-heading" data-toc-skip>
                     <a href="{{ mentor.url }}">{{ mentor.name }}</a><br/> 
-                    <small class="text-muted">
-                        {{ mentor.position_title }}, {{ mentor_org.name | default: mentor.organisation }}
-                    </small>
-                </h4>
+                </h3>
+                <div class="media-subheading"><small class="text-muted">
+                    {{ mentor.position_title }}, {{ mentor_org.name | default: mentor.organisation }}
+                </small></div>
                 
                 {{ mentor.excerpt }}
             </div>
@@ -30,7 +30,7 @@
                 <ul class="list-inline social-buttons">
                     {% if mentor.contact.twitter %}
                     <li>
-                        <a href="https://twitter.com/{{ mentor.contact.twitter }}">
+                        <a href="https://twitter.com/{{ mentor.contact.twitter }}" target="_blank">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -40,7 +40,7 @@
                     {% endif %}
                     {% if mentor.contact.facebook %}
                     <li>
-                        <a href="{{ mentor.contact.facebook }}">
+                        <a href="{{ mentor.contact.facebook }}" target="_blank">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -50,7 +50,7 @@
                     {% endif %}
                     {% if mentor.contact.linkedin %}
                     <li>
-                        <a href="{{ mentor.contact.linkedin }}">
+                        <a href="{{ mentor.contact.linkedin }}" target="_blank">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>

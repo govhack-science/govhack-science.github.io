@@ -7,7 +7,7 @@ position_title: Innovation Portfolio Manager - Data Science
 ask_me_about: Strategic analytics, finding value and driving change with data
 organisation: Pepper Group Limited
 jurisdiction: nsw
-location: Sydney Official Event
+location: sydney
 contact:
   twitter: '@blairhudson'
   email: bhudson@pepper.com.au

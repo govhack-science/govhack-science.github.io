@@ -6,7 +6,7 @@ position_title: Data Governance
 ask_me_about: I can help you find if the data exists and is open
 organisation: Department of Communities, Child Safety and Disability Services
 jurisdiction: qld
-location: Sunshine Coast
+location: sunshine-coast
 contact:
   twitter: '@earlbutterworth'
   email: earl.butterworth@qld.gov.au

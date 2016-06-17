@@ -5,7 +5,7 @@ type: Business Mentor
 position_title: An awesome developer
 ask_me_about: SDMX, sdmx-sax(Java), sdmx-js(JavaScript), ABS data
 jurisdiction: wa
-location: Perth
+location: perth
 contact:
   twitter: '@jsgardner76'
   email: jsg@internode.on.net
