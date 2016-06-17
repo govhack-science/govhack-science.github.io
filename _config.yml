@@ -95,7 +95,7 @@ defaults:
       type: jurisdictions
     values:
       layout: jurisdiction
-      permalink: /regions/:gid.html
+      permalink: /regions/:title.html
       
   - scope:
       path: "_locations"
