@@ -7,47 +7,95 @@ layout: bootstrap
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
-    <!--<div class="row header-row">
-        <div class="col-lg-12 text-center">
-            <h1>{{ page.name }}</h1>
+    <div class="row header-row">
+        <div class="media">
+            <!--
+            <div class="media-left">
+                <img src="{{ }}" style="max-width: 200px; max-height: 200px;">
+            </div>
+            -->
+            <div class="media-body">
+                {% for jurisdiction in site.jurisdictions %}
+                    {% if jurisdiction.gid == page.jurisdiction %}
+                      {% assign jurisdiction = jurisdiction %}
+                      {% break %}
+                    {% endif %}
+                {% endfor %}
+              
+                {% if page.type contains 'Official' or page.type contains 'official' %}
+                    {% assign page_type_class = 'icon-event-type-official' %}
+                {% elsif page.type contains 'Node' or page.type contains 'node' %}
+                    {% assign page_type_class = 'icon-event-type-node' %}
+                {% endif %}
+              
+                {% comment %}
+                =======================================
+                `prefix` is the event type that is prefixed to the location title
+                `name` should be purely the name of the location
+                > E.g. "Unleashed Adelaide" or "GovHack Hunter Valley"
+                page_type_class determines the colour of the icon box
+                =======================================
+                {% endcomment %}
+              
+                <h1><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h1>
+                
+                <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h3>
+            </div>
         </div>
-    </div>-->
-    <div class="row">
-      <div class="media">
-        <div class="media-left">
-            <!--<img src="{{ page.photo_url }}" style="max-width: 200px; max-height: 200px;">-->
-        </div>
-        <div class="media-body">
-          {% for jurisdiction in site.jurisdictions %}
-            {% if jurisdiction.gid == page.jurisdiction %}
-              {% assign jurisdiction = jurisdiction %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-          
-          <h2><a href="{{ page.url }}">{{ page.name }}</a> (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h2>
-          <h3>{{ page.type }}</h3>
-         
-          <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
-          <script type="text/javascript">
-          location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
-          </script>
+    </div>
+    
 
-          {% if page.venue.name %}
-          <p class="location-name"><strong>{{ page.venue.name }}</strong></p>
-          {% elsif page.location.name %}
-          <p class="location-name"><strong>{{ page.location.name }}</strong></p>
-          {% endif %}
-          {% if page.venue.address %}
-          <p class="location-address">{{ page.venue.address }}</p>
-          {% elsif page.venue.address %}
-          <p class="location-address">{{ page.location.address }}</p>
-          {% endif %}  
+      {% comment %}
+      =======================================
+      Venue photos will appear at the top. This will captivate!
+      Location contains the lat/long needed to drive the leaflet map.
+      It will also attempt to pull the venue name and address as well.
+      =======================================
+      {% endcomment %}
+      {% unless page.location == nil %}
+      <hr>
+      <h3>Location</h3>
+      <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
+      <script type="text/javascript">
+      location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
+      </script>
+      {% endunless %}
+      {% unless page.venue.name == nil and page.location.name == nil %}
+      <div class="location-name"><strong>{{ page.venue.name | default: page.location.name }}</strong></div>
+      {% endunless %}  
+      {% unless page.venue.address == nil and page.location.address == nil %}
+      <div class="location-address">{{ page.venue.address | default: page.location.address }}</div>
+      {% endunless %}  
+      {% unless page.images == nil %}
+      <hr>
+      <div class="row">
+        {% for image_url in page.images %}
+        <div class="col-md-4 col-xs-12">
+            <img class="img-responsive venue-image" src="{{ image_url }}" alt="{{ page.name }}">
         </div>
+        {% endfor %}
       </div>
+      {% endunless %}  
+
       
+      {% comment %}
+      =======================================
+      The Follow section reads from `contact` in frontmatter and
+      can accept:
+      + Twitter (with or without leading '@')
+      + Facebook
+      + Website (as `website_url`)
+      + Instagram
+      Additionally it searches for a standalone `website` field in 
+      frontmatter and treats that as an object
+      =======================================
+      {% endcomment %}
+      
+      {% unless page.contact == nil %}
+      <hr>
+      <h3>Follow</h3>
       <ul class="list-inline social-buttons">
-          {% unless page.contact.twitter == blank %}
+          {% unless page.contact.twitter == nil %}
           <li>
               <a href="https://twitter.com/{{ page.contact.twitter }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -58,7 +106,7 @@ layout: bootstrap
               </a>
           </li>
           {% endunless %}
-          {% unless page.contact.facebook == blank %}
+          {% unless page.contact.facebook == nil %}
           <li>
               <a href="https://facebook.com/{{ page.contact.facebook }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -69,7 +117,18 @@ layout: bootstrap
               </a>
           </li>
           {% endunless %}
-          {% unless page.website == blank %}
+          {% unless page.contact.instagram == nil %}
+          <li>
+              <a href="https://instagram.com/{{ page.contact.instagram }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>                  
+                  @{{ page.contact.instagram }}
+              </a>
+          </li>
+          {% endunless %}
+          {% unless page.website == nil %}
           <li>
               <a href="{{ page.website.url }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -80,9 +139,9 @@ layout: bootstrap
               </a>
           </li>
           {% endunless %}
-          {% unless page.website_url == blank %}
+          {% unless page.contact.website_url == nil %}
           <li>
-              <a href="{{ page.website_url }}">
+              <a href="{{ page.contact.website_url }}">
                   <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-link fa-stack-1x fa-inverse"></i>
@@ -92,17 +151,98 @@ layout: bootstrap
           </li>
           {% endunless %}
       </ul>
+      {% endunless %}
 
+        {% comment %}
+        =======================================
+        Render page's markdown content here. Markdown accepted.
+        =======================================
+        {% endcomment %}
 
-      {% unless page.content == "" %}
+        {% unless page.content == "" %}
         <hr>
-        {{ page.content }}
-      {% else %}
+        {{ page.content | markdownify }}
+        {% else %}
         <div class="empty-state"></div>
-      {% endunless %}    
+        {% endunless %}    
 
 
-    </div>
+        {% comment %}
+        =======================================
+        Venue contains information for:
+        + Host name and possibly host email
+        + Name of venue
+        + Street address
+        + Accessibility
+        + Under 18 supervision
+        + Capacity
+        + Parking and Public Transport
+        =======================================
+        {% endcomment %}
+
+        {% unless page.venue == nil %}
+        <hr/>
+        <div class="row">
+            <h3>Venue Details</h3>
+            <div class="col-md-6 col-xs-12">
+                <dl>
+                    <dt>Event Host</dt>
+                    <dd>
+                        {{ page.venue.host }}
+                        {% unless (page.contact.email == nil) %}
+                            (<a href="mailto:{{ page.contact.email }}">contact</a>)
+                        {% endunless %}
+                    </dd>
+                </dl>
+                <h4 class="text-muted">Open/Close times</h4>
+                <dl>
+                    <dt>Friday 29th July</dt>
+                    <dd>{{ page.times.friday.open }} &ndash; {{ page.times.friday.close }}</dd>
+                    <dt>Saturday 30th July</dt>
+                    <dd>{{ page.times.saturday.open }} &ndash; {{ page.times.saturday.close }}</dd>
+                    <dt>Sunday 31st July</dt>
+                    <dd>{{ page.times.sunday.open }} &ndash; {{ page.times.sunday.close }}</dd>
+                </dl>
+                <dl>
+                    <dt>Catering</dt>
+                    <dd>{{ page.catering | markdownify }}</dd>
+                </dl>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <!-- <h4 data-skip-toc>
+                    {{ page.venue.name }} <br> 
+                    <small class="text-muted">{{ page.venue.address }}</small>
+                </h4> -->
+                <dl>
+                    <dt>Address</dt>
+                    <dd>{{ page.venue.address }}</dd>
+                </dl>
+                <dl>
+                    <dt>Seating capacity</dt>
+                    <dd>{{ page.venue.capacity }}</dd>
+                </dl>
+                <dl>
+                    <dt>Building accessibility</dt>
+                    <dd>{{ page.venue.accessibility }}</dd>
+                </dl>
+                <dl>
+                    <dt>Under-18 participants</dt>
+                    <dd>{{ page.venue.under_18 }}</dd>
+                </dl>
+                <dl>
+                    <dt>Public Transport</dt>
+                    <dd>{{ page.venue.public_transport }}</dd>
+                    <dt>Last call for public transport</dt>
+                    <dd>{{ page.venue.public_transport_last }}</dd>
+                </dl>
+                <dl>
+                    <dt>Parking</dt>
+                    <dd>{{ page.venue.parking }}</dd>
+                </dl>
+            </div>
+        </div>
+        {% endunless %}
+    
   </div>
 </section>
 
