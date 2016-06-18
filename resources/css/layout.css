@@ -20,8 +20,13 @@ img.gh-sponsor-logo {
     margin: 20px 0;
 }
 
-.location-venue-image {
-    
+.location-image-tile {
+    max-height: 300px;
+    margin: 0 10px;
+}
+.location-image-tile img {
+    min-height: 300px;
+    height: 300px;
 }
 .location-venue-details p {
     margin: 0;

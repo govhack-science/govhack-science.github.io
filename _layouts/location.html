@@ -2,7 +2,28 @@
 layout: bootstrap
 ---
 
+{% comment %}
+========================
+Location-map is the bootstrap js file that loads leaflet etc
+Slick is the carousel plugin for location page images
+========================
+{% endcomment %}
+
 <script src="/resources/js/location-map.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+<script>
+$(function(){
+    // Carousel go
+    $('.location-images').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true
+    });
+});
+</script>
 
 <!-- Main Content -->
 <section id="intro">
@@ -68,11 +89,9 @@ layout: bootstrap
       </div>
       {% unless page.images == nil %}
       <hr>
-      <div class="row">
+      <div class="location-images">
         {% for image_url in page.images %}
-        <div class="col-md-4 col-xs-12">
-            <img class="img-responsive venue-image" src="{{ image_url }}" alt="{{ page.name }}">
-        </div>
+            <div class="location-image-tile"><img class="img-responsive" src="{{ image_url }}" alt="{{ page.name }}"></div>
         {% endfor %}
       </div>
       {% endunless %}  

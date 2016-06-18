@@ -83,6 +83,16 @@
     
     <!-- jQuery -->
     <script src="/resources/js/jquery.min.js"></script>
+    
+    <!-- GovHack Site Switcher -->
+    {% comment %}
+    =======================
+    Q: Ermagerd why is this JS included here and not at bottom of body
+    A: Given slow page load time, it looks really bad because we have a
+        hole in the top of our webpage until the GH-SS is loaded.
+    =======================
+    {% endcomment %}
+    <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -351,7 +361,7 @@
     
 
     <!-- jQuery -->
-    <!--<script src="/resources/js/jquery.min.js"></script>-->
+    <!-- Yup, put jQuery up there, just due to the sheer amount of stuff that uses it -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/resources/js/bootstrap.min.js"></script>
@@ -361,10 +371,7 @@
 
     <!-- Bootstrap TOC -->
     <script src="/resources/js/bootstrap-toc/v0.3.0/bootstrap-toc.min.js"></script>
-    
-    <!-- GovHack Site Switcher -->
-    <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
-    
+
     <!-- Leaflet -->
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js?ver=4.5.2'></script>
 
