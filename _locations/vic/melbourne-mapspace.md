@@ -1,9 +1,10 @@
 ---
-name: Melbourne Open Raster Data
 gid: melbourne-open-raster
-photo_url: /resources/csiro-logo.png
+name: Melbourne
+prefix: MapSpace
 jurisdiction: vic
 type: Theme Node
+theme: Spatial Data
 location:
   lat: -37.815794
   lon: 144.956918
