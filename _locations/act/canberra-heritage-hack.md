@@ -11,7 +11,7 @@ location:
 venue:
   name: 'Teaching Commons University of Canberra' 
   address: 'Building 1, Level C (above the refectory), University of Canberra, Bruce, ACT'
-  host: 	Tim Sherratt 
+  host: Tim Sherratt 
   accessibility: |
     See the [campus map for disablity access](http://www.canberra.edu.au/maps/campus-map-for-people-with-disabilities)
   under_18: At this Venue you must be accompanied by a Guardian at all times
