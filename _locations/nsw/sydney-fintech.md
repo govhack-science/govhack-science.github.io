@@ -4,7 +4,7 @@ name: Sydney Fintech
 prefix: GovHack
 jurisdiction: nsw
 type: Theme Node
-theme: Blockchain
+theme: Blockchain, Data, Security, Finance
 location:
   lat: -33.868010
   lon: 151.205002

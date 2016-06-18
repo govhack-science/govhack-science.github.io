@@ -1,7 +1,7 @@
 ---
+gid: newcastle
 name: Hunter Valley
 prefix: GovHack
-gid: newcastle
 jurisdiction: nsw
 type: Official Event
 location:

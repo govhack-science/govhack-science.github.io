@@ -26,6 +26,16 @@ images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/SC-qld/qld-sc+(4).JPG
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/SC-qld/qld-sc+(5).jpg
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/SC-qld/qld-sc+(6).jpg
+times:
+  friday:
+    open: 05:30 PM
+    close: 10:00 PM
+  saturday:
+    open: 08:30 AM
+    close: 10:00 PM
+  sunday:
+    open: 08:30 AM
+    close: 10:00 PM
 contact:
   email: 'sunshinecoast@govhack.org'
 is_capital_city: false
