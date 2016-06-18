@@ -16,9 +16,21 @@ img.gh-sponsor-logo {
     
 }
 
+.location-byline {
+    margin: 20px 0;
+}
 
-.venue-image {
+.location-venue-image {
     
+}
+.location-venue-details p {
+    margin: 0;
+}
+
+.location-theme::before {
+    content: ' – ';
+    display: inline;
+    color: #bbb;
 }
 
 

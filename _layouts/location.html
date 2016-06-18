@@ -9,11 +9,9 @@ layout: bootstrap
   <div class="container">
     <div class="row header-row">
         <div class="media">
-            <!--
-            <div class="media-left">
+            <!-- <div class="media-left">
                 <img src="{{ }}" style="max-width: 200px; max-height: 200px;">
-            </div>
-            -->
+            </div> -->
             <div class="media-body">
                 {% for jurisdiction in site.jurisdictions %}
                     {% if jurisdiction.gid == page.jurisdiction %}
@@ -37,9 +35,9 @@ layout: bootstrap
                 =======================================
                 {% endcomment %}
               
-                <h1><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h1>
+                <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h2>
+                <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>) {% unless page.theme == nil %} <span class="location-theme">{{ page.theme }}</span> {% endunless %}</h3>
                 
-                <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>)</h3>
             </div>
         </div>
     </div>
@@ -60,12 +58,14 @@ layout: bootstrap
       location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
       </script>
       {% endunless %}
-      {% unless page.venue.name == nil and page.location.name == nil %}
-      <div class="location-name"><strong>{{ page.venue.name | default: page.location.name }}</strong></div>
-      {% endunless %}  
-      {% unless page.venue.address == nil and page.location.address == nil %}
-      <div class="location-address">{{ page.venue.address | default: page.location.address }}</div>
-      {% endunless %}  
+      <div class="location-byline">
+          {% unless page.venue.name == nil and page.location.name == nil %}
+          <div class="location-name"><strong>{{ page.venue.name | default: page.location.name }}</strong></div>
+          {% endunless %}  
+          {% unless page.venue.address == nil and page.location.address == nil %}
+          <div class="location-address">{{ page.venue.address | default: page.location.address }}</div>
+          {% endunless %}  
+      </div>
       {% unless page.images == nil %}
       <hr>
       <div class="row">
@@ -95,7 +95,7 @@ layout: bootstrap
       <hr>
       <h3>Follow</h3>
       <ul class="list-inline social-buttons">
-          {% unless page.contact.twitter == nil %}
+          {% if page.contact.twitter %}
           <li>
               <a href="https://twitter.com/{{ page.contact.twitter }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -105,8 +105,8 @@ layout: bootstrap
                   @{{ page.contact.twitter }}
               </a>
           </li>
-          {% endunless %}
-          {% unless page.contact.facebook == nil %}
+          {% endif %}
+          {% if page.contact.facebook %}
           <li>
               <a href="https://facebook.com/{{ page.contact.facebook }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -116,8 +116,8 @@ layout: bootstrap
                   fb.me/{{ page.contact.facebook }}
               </a>
           </li>
-          {% endunless %}
-          {% unless page.contact.instagram == nil %}
+          {% endif %}
+          {% if page.contact.instagram %}
           <li>
               <a href="https://instagram.com/{{ page.contact.instagram }}" target="_blank">
                   <span class="fa-stack fa-lg">
@@ -127,29 +127,18 @@ layout: bootstrap
                   @{{ page.contact.instagram }}
               </a>
           </li>
-          {% endunless %}
-          {% unless page.website == nil %}
+          {% endif %}
+          {% if page.website or page.contact.website_url %}
           <li>
-              <a href="{{ page.website.url }}" target="_blank">
+              <a href="{{ page.website.url | default: page.contact.website_url }}" target="_blank">
                   <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
                   </span>
-                  {{ page.website.name }}
+                  {{ page.website.name | default: 'Event Website' }}
               </a>
           </li>
-          {% endunless %}
-          {% unless page.contact.website_url == nil %}
-          <li>
-              <a href="{{ page.contact.website_url }}">
-                  <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-link fa-stack-1x fa-inverse"></i>
-                  </span>
-                  Event Website
-              </a>
-          </li>
-          {% endunless %}
+          {% endif %}
       </ul>
       {% endunless %}
 
@@ -181,19 +170,14 @@ layout: bootstrap
         {% endcomment %}
 
         {% unless page.venue == nil %}
+        {% capture host_value %}{{ page.venue.host }}{% if page.contact.email %} (<a href="mailto:{{ page.contact.email }}">contact</a>){% endif %} {% endcapture %}
+        
         <hr/>
-        <div class="row">
+        <div class="row location-venue-details">
             <h3>Venue Details</h3>
             <div class="col-md-6 col-xs-12">
-                <dl>
-                    <dt>Event Host</dt>
-                    <dd>
-                        {{ page.venue.host }}
-                        {% unless (page.contact.email == nil) %}
-                            (<a href="mailto:{{ page.contact.email }}">contact</a>)
-                        {% endunless %}
-                    </dd>
-                </dl>
+                {% include list_item_snippet.html item_name="Event Host" item_value=host_value %}
+                {% include list_item_snippet.html item_name="Address" item_value=page.venue.address as_markdown=true %}
                 <h4 class="text-muted">Open/Close times</h4>
                 <dl>
                     <dt>Friday 29th July</dt>
@@ -203,42 +187,20 @@ layout: bootstrap
                     <dt>Sunday 31st July</dt>
                     <dd>{{ page.times.sunday.open }} &ndash; {{ page.times.sunday.close }}</dd>
                 </dl>
-                <dl>
-                    <dt>Catering</dt>
-                    <dd>{{ page.catering | markdownify }}</dd>
-                </dl>
+                {% include list_item_snippet.html item_name="Catering" item_value=page.catering as_markdown=true %}
             </div>
             <div class="col-md-6 col-xs-12">
                 <!-- <h4 data-skip-toc>
                     {{ page.venue.name }} <br> 
                     <small class="text-muted">{{ page.venue.address }}</small>
                 </h4> -->
-                <dl>
-                    <dt>Address</dt>
-                    <dd>{{ page.venue.address }}</dd>
-                </dl>
-                <dl>
-                    <dt>Seating capacity</dt>
-                    <dd>{{ page.venue.capacity }}</dd>
-                </dl>
-                <dl>
-                    <dt>Building accessibility</dt>
-                    <dd>{{ page.venue.accessibility }}</dd>
-                </dl>
-                <dl>
-                    <dt>Under-18 participants</dt>
-                    <dd>{{ page.venue.under_18 }}</dd>
-                </dl>
-                <dl>
-                    <dt>Public Transport</dt>
-                    <dd>{{ page.venue.public_transport }}</dd>
-                    <dt>Last call for public transport</dt>
-                    <dd>{{ page.venue.public_transport_last }}</dd>
-                </dl>
-                <dl>
-                    <dt>Parking</dt>
-                    <dd>{{ page.venue.parking }}</dd>
-                </dl>
+                {% include list_item_snippet.html item_name="Seating capacity" item_value=page.venue.capacity %}
+                {% include list_item_snippet.html item_name="Building accessibility" item_value=page.venue.accessibility %}
+                {% include list_item_snippet.html item_name="Childcare" item_value=page.venue.childcare %}
+                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 %}
+                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 %}
+                {% include list_item_snippet.html item_name="Last call for public transport" item_value=page.venue.public_transport_last %}
+                {% include list_item_snippet.html item_name="Parking" item_value=page.venue.parking %}
             </div>
         </div>
         {% endunless %}
@@ -249,8 +211,7 @@ layout: bootstrap
 {% assign theme_ids = "" %}
 {% for theme in site.themes %}
   {% if theme.jurisdiction == page.jurisdiction or theme.location == page.gid %}
-    {% assign theme_ids = theme_ids | append: theme.id %}
-    {% assign theme_ids = theme_ids | append: "," %}
+    {% assign theme_ids = theme_ids | append: theme.id | append: "," %}
   {% endif %}
 {% endfor %}
 

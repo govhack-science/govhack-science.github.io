@@ -2,7 +2,6 @@
 name: Hunter Valley
 prefix: GovHack
 gid: newcastle
-photo_url: /resources/csiro-logo.png
 jurisdiction: nsw
 type: Official Event
 location:

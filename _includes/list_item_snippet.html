@@ -1,0 +1,10 @@
+{% if include.item_value %}
+<dl>
+    <dt>{{ include.item_name }}</dt>
+    {% if include.as_md or include.as_markdown %}
+    <dd>{{ include.item_value | markdownify }}</dd>
+    {% else %}
+    <dd>{{ include.item_value }}</dd>
+    {% endif %}
+</dl>
+{% endif %}
