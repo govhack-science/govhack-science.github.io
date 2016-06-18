@@ -29,6 +29,12 @@ times:
     open: 08:00 AM
     close: 09:00 PM
 catering: Breakfast, Lunch and Dinner, with snack, tea & coffee will be provided.
+images:
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Toowoomba-qld/Previous+Event+1.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Toowoomba-qld/Previous+Event+2.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Toowoomba-qld/Venue+1.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Toowoomba-qld/Venue+2.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Toowoomba-qld/Venue+3.jpg
 contact:
   email: toowoomba@govhack.org
   twitter: GovHackQld
