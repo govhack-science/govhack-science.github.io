@@ -4,6 +4,7 @@ name: Sunshine Coast
 prefix: GovHack
 jurisdiction: qld
 type: Theme Node
+theme: Youth Node
 location:
   lat: -26.700621
   lon: 153.126314

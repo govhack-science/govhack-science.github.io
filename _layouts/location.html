@@ -15,10 +15,10 @@ Slick is the carousel plugin for location page images
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
 <script>
 $(function(){
-    // Carousel go
+    // Carousel leggo
     $('.location-images').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         variableWidth: true
     });
@@ -213,7 +213,6 @@ $(function(){
                     {{ page.venue.name }} <br> 
                     <small class="text-muted">{{ page.venue.address }}</small>
                 </h4> -->
-                {% include list_item_snippet.html item_name="Seating capacity" item_value=page.venue.capacity %}
                 {% include list_item_snippet.html item_name="Building accessibility" item_value=page.venue.accessibility %}
                 {% include list_item_snippet.html item_name="Childcare" item_value=page.venue.childcare %}
                 {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 %}

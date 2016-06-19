@@ -1,14 +1,16 @@
 ---
-name: Camperdown Games for Learning
 gid: camperdown-games
-photo_url: /resources/csiro-logo.png
+name: Camperdown Games for Learning
+prefix: GovHack
 jurisdiction: nsw
 type: Theme Node
 location:
   lat: -33.889348
   lon: 151.174600
+venue:
+  host: Vivid Savitri
+  name: Boomworks Studios
   address: 34 Denison St, Camperdown
-  name: Boomworks
 contact:
   twitter: GovHackCamper
 is_capital_city: true
