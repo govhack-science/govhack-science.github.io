@@ -189,7 +189,10 @@ $(function(){
         {% endcomment %}
 
         {% unless page.venue == nil %}
-        {% capture host_value %}{{ page.venue.host }}{% if page.contact.email %} (<a href="mailto:{{ page.contact.email }}">contact</a>){% endif %} {% endcapture %}
+        {% capture host_value %}{{ page.venue.host }} 
+        {% if page.contact.email %} - <small><a href="mailto:{{ page.contact.email }}">email</a></small>{% endif %}
+        {% if page.contact.phone %} - <small><a href="tel:{{ page.contact.phone }}">phone</a></small>{% endif %}
+        {% endcapture %}
         
         <hr/>
         <div class="row location-venue-details">
@@ -197,6 +200,7 @@ $(function(){
             <div class="col-md-6 col-xs-12">
                 {% include list_item_snippet.html item_name="Event Host" item_value=host_value %}
                 {% include list_item_snippet.html item_name="Address" item_value=page.venue.address as_markdown=true %}
+                {% include list_item_snippet.html item_name="Phone" item_value=page.contact.phone %}
                 <h4 class="text-muted">Open/Close times</h4>
                 <dl>
                     <dt>Friday 29th July</dt>

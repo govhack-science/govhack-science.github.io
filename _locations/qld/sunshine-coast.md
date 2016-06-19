@@ -4,10 +4,9 @@ name: Sunshine Coast
 prefix: GovHack
 jurisdiction: qld
 type: Theme Node
-theme: Youth Node
 location:
-  lat: -26.700621
-  lon: 153.126314
+  lat: -26.652129
+  lon: 153.090542
 venue:
   name: Spark Bureau
   address: 17 Ocean Street, Maroochydore 4558
@@ -39,6 +38,8 @@ times:
     close: 10:00 PM
 contact:
   email: 'sunshinecoast@govhack.org'
+  twitter: GovHackSC
+  phone: '0481 451 636'
 is_capital_city: false
 display_weight: 40
 dataportals:
@@ -49,4 +50,4 @@ Welcome to GovHack Sunshine Coast 2016! We are calling on the strength of the mi
 
 This year our focus is on community, commercialisation and collaboration. We have strong support from our local sponsors Noosa Council, Sunshine Coast Council, Unity Water and Regional Development Australia and we are pleased to be able to offer multiple local prize categories each with $1000 cash for the winning participants.
 
-In addition, our sponsors are committed to working with participants after the weekend to ensure that all innovative ideas get what they need to get off the ground. Look forward to seeing you at Spark Bureau on Ocean Street for a great event!
+In addition, our sponsors are committed to working with participants after the weekend to ensure that all innovative ideas get what they need to get off the ground. Look forward to seeing you at Spark Bureau on Ocean Street for a great event! Until then, keep in touch and reach out using our hashtag #GovHackSC.
