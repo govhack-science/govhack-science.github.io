@@ -1,7 +1,6 @@
 ---
 gid: melbourne-open-raster
-name: Melbourne
-prefix: MapSpace
+name: Melbourne MapSpace
 jurisdiction: vic
 type: Theme Node
 theme: Spatial Data

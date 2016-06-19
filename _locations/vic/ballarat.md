@@ -1,12 +1,12 @@
 ---
-name: Ballarat
 gid: ballarat
-photo_url: /resources/csiro-logo.png
+name: Ballarat
+prefix: GovHack
 jurisdiction: vic
 type: Official Event
 location:
-  lat: -37.815794
-  lon: 144.956918
+  lat: -37.565453
+  lon: 143.856837
 is_capital_city: false
 dataportals:
   - ballarat
