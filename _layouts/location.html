@@ -59,6 +59,17 @@ $(function(){
                 <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h2>
                 <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>) {% unless page.theme == nil %} <span class="location-theme">{{ page.theme }}</span> {% endunless %}</h3>
                 
+                {% comment %}
+                =======================================
+                If a location page looks like it hasn't been populated yet, show 
+                a little friendly tag.
+                =======================================
+                {% endcomment %}
+                
+                {% if page.venue == nil %}
+                <div class="location-wip">This location hasn't been finalised yet – please check again shortly!</div>
+                {% endif %}
+                
             </div>
         </div>
     </div>

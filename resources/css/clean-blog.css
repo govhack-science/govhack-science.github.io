@@ -847,6 +847,10 @@ ul.social-buttons a {
   padding-right: 0px;
 }
 
+.media.mentor .media-left {
+    width: 105px;
+}
+
 
 /* Temporary hack to force page widths to obey the columns */
 /* Replace later with proper layouts on each page sans div.container */
@@ -867,6 +871,15 @@ section > div.container {
   padding-top: 10px;
 }
 
+.location-wip {
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 14px;
+    border-radius: 2px;
+    background: #CA1553;
+    color: white;
+    font-weight: bold;
+}
 
 
 /** Stuff to repair the broken gh-ss vs navbar **/
