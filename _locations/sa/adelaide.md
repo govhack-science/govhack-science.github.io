@@ -55,4 +55,4 @@ In 2016, we are also encouraging more makers and artists to participate by provi
 
 Over 46 hours, teams create a proof of concept and a video that tells the story of how the data can be reused. Many of the concepts are innovative community apps. There are also many entries that mash up data and display it in an informative visualisation, prototype electronic gadget, stories or a creative artistic display. 
 
-For more information about Unleashed, please visit <a href="http://uladl.com" target=_blank>http://uladl.com</a>. 
+For more information about Unleashed, please visit http://uladl.com. 
