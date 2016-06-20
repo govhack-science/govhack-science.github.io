@@ -1,6 +1,6 @@
 ---
 gid: brisbane
-name: Brisbane
+name: Brisbane Official
 prefix: GovHack
 jurisdiction: qld
 type: Official Event
