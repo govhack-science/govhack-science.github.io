@@ -1,6 +1,7 @@
 ---
 gid: brisbane-maker
 name: Brisbane Maker
+prefix: GovHack
 jurisdiction: qld
 type: Maker Node
 location:
