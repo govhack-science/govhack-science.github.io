@@ -199,6 +199,7 @@ $(function(){
             <h3>Venue Details</h3>
             <div class="col-md-6 col-xs-12">
                 {% include list_item_snippet.html item_name="Event Host" item_value=host_value %}
+                {% include list_item_snippet.html item_name="Event Team" item_value=page.venue.team %}
                 {% include list_item_snippet.html item_name="Address" item_value=page.venue.address as_markdown=true %}
                 {% include list_item_snippet.html item_name="Phone" item_value=page.contact.phone %}
                 <h4 class="text-muted">Open/Close times</h4>
@@ -217,12 +218,12 @@ $(function(){
                     {{ page.venue.name }} <br> 
                     <small class="text-muted">{{ page.venue.address }}</small>
                 </h4> -->
-                {% include list_item_snippet.html item_name="Building accessibility" item_value=page.venue.accessibility %}
-                {% include list_item_snippet.html item_name="Childcare" item_value=page.venue.childcare %}
-                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 %}
-                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 %}
-                {% include list_item_snippet.html item_name="Last call for public transport" item_value=page.venue.public_transport_last %}
-                {% include list_item_snippet.html item_name="Parking" item_value=page.venue.parking %}
+                {% include list_item_snippet.html item_name="Building accessibility" item_value=page.venue.accessibility as_markdown=true %}
+                {% include list_item_snippet.html item_name="Childcare" item_value=page.venue.childcare as_markdown=true %}
+                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18 as_markdown=true %}
+                {% include list_item_snippet.html item_name="Public transport" item_value=page.venue.public_transport as_markdown=true %}
+                {% include list_item_snippet.html item_name="Last call for public transport" item_value=page.venue.public_transport_last as_markdown=true %}
+                {% include list_item_snippet.html item_name="Parking" item_value=page.venue.parking as_markdown=true %}
             </div>
         </div>
         {% endunless %}

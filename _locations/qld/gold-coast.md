@@ -1,17 +1,69 @@
 ---
-name: Gold Coast
 gid: gold-coast
-photo_url: /resources/csiro-logo.png
+name: Gold Coast
+prefix: GovHack
 jurisdiction: qld
 type: Official Event
 location:
   lat: -27.963322
   lon: 153.384360
-is_capital_city: false
-display_weight: 50
+venue:
+  name: Red Zone, Griffith University Gold Coast Campus
+  address: G40, Griffith University Gold Coast Campus, Parklands Drive, Southport 4215
+  host: Joshua Holmes @JoshDHolmes
+  team: 'Tanya Lipus @tanyalipus, Jolon Faichney @jolon'
+  accessibility: Lifts available for access to upper levels of G40
+  under_18: At this Venue you must be accompanied by a Guardian at all times
+  capacity: 150
+  parking: Free parking will be available to participants in the general parking zones of Griffith University.
+  public_transport: |
+    The best way of getting to and from GovHack Gold Coast from the southern Gold Coast is riding the G: in conjunction with a regular bus service.
+    The Gold Coast University Hospital Station is closest and runs 24 hours between Friday and Sunday night. The G: departs every 10 to 30 minutes towards Broadbeach South.
+    From Broadbeach South, bus route 700 will take you all the way to the Tweed 24 hours, every 7 to 15 minutes.
+
+    From the northern Gold Coast, buses are available along various routes, including 709 towards Helensvale where you can transfer to the train.
+
+    Western Gold Coast regions can be accessed via the G and bus routes 740 and 750 towards Nerang and Robina respectively.
+
+    Plan your journey at the [Translink website](http://jp.translink.com.au/).
+
+    Uber is also available on the Gold Coast for a reasonable price. [Estimate the costs here](https://www.uber.com/fare-estimate/).
+  public_transport_last: |
+    The G and bus route 700 runs 24 hours on weekends.
+    Bus route 709 finishes at 11.14pm, route 750 finishes at 12.27am from Broadbeach South and route 740 finishes at 11.16pm from Surfers Paradise.
+images:
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoastLocation+(1).png
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoast+(1).jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoastLocation+(2).jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoast+(2).jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoastLocation+(3).jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoast+(3).jpg
 contact:
   twitter: GovHackGC
   facebook: GovHackGC
+  email: 'gc@govhack.org'
+website:
+  name: GovHack GC
+  url: http://govhackgc.co
+catering: |
+  The following meals will be available from reputable local caterers:
+
+  Friday- Dinner and networking drinks.
+  Saturday- Breakfast, lunch and dinner.
+  Sunday- Breakfast, lunch and dinner and drinks.
+
+  There will also be plenty of snacks and drinks available all day Saturday and Sunday.
+
+  We are also supplying free barista made coffee on Saturday and Sunday morning.
 dataportals:
   - gold-coast
+is_capital_city: false
+display_weight: 50
 ---
+
+There is surely not a more beautiful location than the Gold Coast to bring together people from all walks of life to hack something amazing. 
+For a number of years, the official Gold Coast event has brought teams together to create something cool, useful and awesome with open government data to better their local community.
+
+The Gold Coast is a hugely diverse and growing regional centre, with tens of thousands of students, millions of tourists and thousands businesses taking advantage of the area. With beaches next to high density business and living areas stretching back to the hinterland, there is opportunity to improve any number of areas. Over the next couple of years, the Gold Coast will play host to millions of people and disruptions in the economy with the 2018 Commonwealth Games and growing infrastructure. All of these people, whether business owners, employees, tourists, students, athletes or academics, can have their lives improved through disruptive and innovative open government data hacks.
+
+With both the City of Gold Coast and Queensland Government committed to open data, innovation, entrepreneurship and digital economies, there is no better time or place to begin the journey into digital disruption and open data hacking. We can't wait to see you here.
