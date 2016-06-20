@@ -11,10 +11,11 @@ contact:
   email: jag.atrie@health.wa.gov.au
 ---
 
-I manage all WA Health data used by the Epidemiology Branch for its business, including but not limited to birth, ED, hospitalisation, immunisation, cancer, cervical cancer screening and death (some of the datasets are linked).
+I manage all WA Health data used by the Epidemiology Branch for its business, including but not limited to 
 
-Population ERP and projection data provided by ABS and Department of Planning respectively.
++ birth, ED, hospitalisation, immunisation, cancer, cervical cancer screening and death (some of the datasets are linked).
++ Population ERP and projection data provided by ABS and Department of Planning respectively.
++ WA specific Australian Early Development Index (AEDI) data from DEEWR.
++ MBS and PBS data pertaining to Western Australia.
 
-WA specific Australian Early Development Index (AEDI) data from DEEWR.
-
-MBS and PBS data pertaining to Western Australia.
+_I'm available at the GovHack Connections Event, Saturday Morning (9am - 1pm) and Sunday (9am - 2pm)_
