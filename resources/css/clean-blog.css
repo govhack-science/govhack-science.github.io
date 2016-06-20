@@ -882,6 +882,29 @@ section > div.container {
 }
 
 
+
+a.location-rego-link {
+    display: inline-block;
+    padding: 5px 15px;
+    padding-left: 50px;
+    border: 1px solid #BEBFBF;
+    border-radius: 4px;
+    color: #848283;
+    text-decoration: none;
+    background: url('https://assets.govhack.org/img/inline-logo.png') 15px center/20px 20px no-repeat scroll transparent;
+}
+a.location-rego-link:hover,
+a.location-rego-link:focus,
+a.location-rego-link:active {
+    border-color: #848283;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #BEBFBF;
+}
+a.location-rego-link.snap-right {
+    float: right;
+}
+
+
 /** Stuff to repair the broken gh-ss vs navbar **/
 
 /* Hide on mobile */

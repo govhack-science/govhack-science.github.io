@@ -25,10 +25,29 @@ $(function(){
 });
 </script>
 
+{% comment %}
+========================
+Attempt to locate the signup link and if it exists, bind the rego_link 
+variable to this URL. Here I attempt to cater for all the strange ways
+that our authors (or indeed myself) might indicate a signup link.
+========================
+{% endcomment %}
+{% if page.rego_link %}
+    {% assign rego_link = page.rego_link %}
+{% elsif page.signup %}
+    {% assign rego_link = page.signup %}
+{% elsif page.signup_link %}
+    {% assign rego_link = page.signup_link %}
+{% elsif page.registration %}
+    {% assign rego_link = page.registration %}
+{% elsif page.eventbrite %}
+    {% assign rego_link = page.eventbrite %}
+{% endif %}
+
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
-    <div class="row header-row">
+    <div class="header-row">
         <div class="media">
             <!-- <div class="media-left">
                 <img src="{{ }}" style="max-width: 200px; max-height: 200px;">
@@ -47,6 +66,7 @@ $(function(){
                     {% assign page_type_class = 'icon-event-type-node' %}
                 {% endif %}
               
+                
                 {% comment %}
                 =======================================
                 `prefix` is the event type that is prefixed to the location title
@@ -55,8 +75,7 @@ $(function(){
                 page_type_class determines the colour of the icon box
                 =======================================
                 {% endcomment %}
-              
-                <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h2>
+                <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a> </h2>
                 <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>) {% unless page.theme == nil %} <span class="location-theme">{{ page.theme }}</span> {% endunless %}</h3>
                 
                 {% comment %}
@@ -65,7 +84,6 @@ $(function(){
                 a little friendly tag.
                 =======================================
                 {% endcomment %}
-                
                 {% if page.venue == nil %}
                 <div class="location-wip">This location hasn't been finalised yet – please check again shortly!</div>
                 {% endif %}
@@ -74,6 +92,19 @@ $(function(){
         </div>
     </div>
     
+    {% comment %}
+    =======================================
+    Show registration link if necessary
+    =======================================
+    {% endcomment %}
+    {% unless rego_link == nil %}
+    <div>
+        <a class="location-rego-link" href="{{ rego_link }}">Register for {{ page.prefix }} {{ page.name }}</a>
+        {% if page.eventbrite %}
+        &nbsp;<em class="text-muted">on EventBrite</em>
+      {% endif %}
+    </div>
+    {% endunless %}
 
       {% comment %}
       =======================================
