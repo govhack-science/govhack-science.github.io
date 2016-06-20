@@ -1,6 +1,6 @@
 ---
 gid: melbourne
-name: GovHack Melbourne
+name: Melbourne Official
 prefix: GovHack
 jurisdiction: vic
 type: Official Event

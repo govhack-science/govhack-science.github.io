@@ -1,6 +1,6 @@
 ---
 gid: perth
-name: GovHack Perth
+name: Perth
 prefix: GovHack
 jurisdiction: wa
 type: Official Event

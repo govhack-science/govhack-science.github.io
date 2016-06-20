@@ -1,6 +1,6 @@
 ---
 gid: geraldton
-name: Geraldton GovHack
+name: Geraldton
 prefix: GovHack
 jurisdiction: wa
 type: Official Event

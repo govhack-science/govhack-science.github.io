@@ -1,6 +1,6 @@
 ---
 gid: geelong
-name: GovHack Geelong
+name: Geelong
 prefix: GovHack
 jurisdiction: vic
 type: Official Event
