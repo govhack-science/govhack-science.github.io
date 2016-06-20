@@ -38,10 +38,6 @@ display_weight: 20
 
 We are encouraging and celebrating our technical and creative capacity, connecting citizens with government for great outcomes, and building upon the social and economic value of open data published by government.
 
-Come to:
-
-+ connect with like minded people
-+ make a different to the community
-+ create useful solutions
+Come to connect with like minded people, make a difference to the community and create useful solutions!
 
 There'll be delicious food (did someone mention Messina..?), incredible cash prizes, and amazing mentors to help you along the way. 

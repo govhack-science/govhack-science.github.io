@@ -52,8 +52,7 @@ If you have digital skills, we want you! If you have a community/commercial prob
 
 Registration is Free! WiFi is Fast and Free! Food is Free! Come and explore the opportunities for new products and services based on open data sets – combine data - and create cool stuff! We have many passionate, creative and talented people on the Sunshine Coast and we are looking forward to seeing you all!
 
-GovHack is an annual, national competition with local, state, national and 
-international prize monies to be won. This year, our focus is on community, commercialisation and collaboration. GovHack Sunshine Coast is not just a competition, it’s a vision for a more effective democracy and public service in Australia.
+GovHack is an annual, national competition with local, state, national and international prize monies to be won. This year, our focus is on community, commercialisation and collaboration. GovHack Sunshine Coast is not just a competition, it’s a vision for a more effective democracy and public service in Australia.
 
 Special thanks to our local sponsors Noosa Council, Sunshine Coast Council, Regional Development Australia, Unity Water and University of the Sunshine Coast. As a result of their generous support, we are pleased to be able to offer multiple local prize categories each with $1000 cash for the winning participants.
 

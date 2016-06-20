@@ -59,10 +59,7 @@ Youth focused mentors will be available throughout the event to discuss ideas an
 
 The Youth Node runs within Offical GovHack Brisbane event however for shorter opening hours. Youth are welcome at the event during these shorter opening hours and will have adequate supervision and assistance from organisers, volunteers and mentors. Outside of the shorter opening hours youth are able to remain however a guardian is required to be present at all times.
 
-The hours of the Youth Node are:
-Friday 5.30pm to 9pm
-Saturday 9am to 6pm
-Sunday 9am to 6pm
+See the _Open/Close Times_ section for the Youth Node times, which are different to our official event times.
 
 Upon arriving at and departing the event, youth participants will need to be registered with their guardians by the event organiser or volunteers. Contact information needs to be left with the event organisers.
 
