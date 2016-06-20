@@ -1,7 +1,7 @@
 ---
 gid: adelaide
-name: Unleashed Adelaide Open Data Competition
-prefix: GovHack
+name: Adelaide Open Data Competition
+prefix: Unleashed 
 jurisdiction: sa
 type: Official Event
 location:

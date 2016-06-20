@@ -1,7 +1,7 @@
 ---
 gid: mount-gambier-youth
-name: Unleashed Mount Gambier Open Data Competition
-prefix: GovHack
+name: Mount Gambier Open Data Competition
+prefix: Unleashed
 jurisdiction: sa
 type: Official Event
 location:

@@ -1,7 +1,7 @@
 ---
 gid: playford
-name: Unleashed Playford Open Data Competition
-prefix: GovHack
+name: Playford Open Data Competition
+prefix: Unleashed
 jurisdiction: sa
 type: Official Event
 location:

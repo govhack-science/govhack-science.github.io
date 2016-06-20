@@ -1,7 +1,7 @@
 ---
 gid: port-adelaide-enfield
-name: Unleashed Port Adelaide Enfield Open Data Competition
-prefix: GovHack
+name: Port Adelaide Enfield Open Data Competition
+prefix: Unleashed
 jurisdiction: sa
 type: Theme Node
 location:

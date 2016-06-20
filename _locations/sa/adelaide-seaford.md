@@ -1,7 +1,7 @@
 ---
 gid: adelaide-seaford
-name: Unleashed Onkaparinga Open Data Competition
-prefix: GovHack
+name: Onkaparinga Open Data Competition
+prefix: Unleashed
 jurisdiction: sa
 type: Official Event
 location:
