@@ -31,6 +31,16 @@ venue:
   public_transport_last: |
     The G and bus route 700 runs 24 hours on weekends.
     Bus route 709 finishes at 11.14pm, route 750 finishes at 12.27am from Broadbeach South and route 740 finishes at 11.16pm from Surfers Paradise.
+times:
+  friday:
+    open: 05:00 PM
+    close: 11:00 PM
+  saturday:
+    open: 08:00 AM
+    close: 11:00 PM
+  sunday:
+    open: 08:00 AM
+    close: 09:00 PM
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoastLocation+(1).png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoast+(1).jpg

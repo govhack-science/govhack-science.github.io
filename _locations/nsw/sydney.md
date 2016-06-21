@@ -12,7 +12,9 @@ venue:
   address: Level 2, 50 Bridge Street, Sydney 2000
   host: Angela Bee
   under_18: At this Venue you must be accompanied by a Guardian at all times
-  capacity: 0
+  capacity: 150
+  parking: Not recommended, Circular Quay station is 2 mins walk away
+  public_transport: Circular Quay railway station is 2 mins walk away
 times:
   friday:
     open: 05:30 PM
@@ -28,6 +30,7 @@ images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/Stone+and+CHalk.png
 contact:
   twitter: GovHackSydney
+  email: sydney@govhack.org
 dataportals:
   - mosman
 is_capital_city: true
