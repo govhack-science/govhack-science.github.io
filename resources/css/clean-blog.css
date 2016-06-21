@@ -881,8 +881,6 @@ section > div.container {
     font-weight: bold;
 }
 
-
-
 a.location-rego-link {
     display: inline-block;
     padding: 5px 15px;
@@ -902,6 +900,15 @@ a.location-rego-link:active {
 }
 a.location-rego-link.snap-right {
     float: right;
+}
+    
+.gh-sponsor-logo {
+  max-width: 200px;
+  max-height: 120px;
+}
+.gh-lead-agency .gh-sponsor-logo {
+  max-height: 200px;
+  max-width: 100%;
 }
 
 
