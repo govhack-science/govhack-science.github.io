@@ -299,11 +299,17 @@
             </div>
             <!-- main content area -->
             <div class="col-sm-9 main-content">
+                
                 {{ content }}
-                
-                <hr>
-                {% include sponsors_national.html %}
-                
+
+                {% comment %}
+                ======================================================
+                WARNING.
+                Sponsors should be rendered individually per template. 
+                ======================================================
+                  {% include sponsors_national.html %}
+                {% endcomment %}
+
             </div>
         </div>
     </div>
@@ -341,7 +347,7 @@
                         </li>
                     </ul>
                     <p class="copyright text-muted">
-                      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+                      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc" target="_blank">
                         <img src="/resources/cc-cc.png" class="cc">
                         <img src="/resources/cc-by.png" class="cc">
                       </a>

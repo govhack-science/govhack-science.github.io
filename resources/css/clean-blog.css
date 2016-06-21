@@ -867,6 +867,14 @@ section > div.container {
   padding-top: 10px;
 }
 
+.gh-sponsor-logo {
+  max-width: 200px;
+  max-height: 120px;
+}
+.gh-lead-agency .gh-sponsor-logo {
+  max-height: 200px;
+  max-width: 100%;
+}
 
 
 /** Stuff to repair the broken gh-ss vs navbar **/
