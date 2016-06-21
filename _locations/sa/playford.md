@@ -1,6 +1,6 @@
 ---
 gid: playford
-name: Playford Open Data Competition
+name: Playford
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event

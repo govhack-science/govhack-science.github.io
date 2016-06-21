@@ -1,6 +1,6 @@
 ---
 gid: adelaide
-name: Adelaide Open Data Competition
+name: Adelaide
 prefix: Unleashed 
 jurisdiction: sa
 type: Official Event

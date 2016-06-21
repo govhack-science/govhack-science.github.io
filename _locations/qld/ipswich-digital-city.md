@@ -31,6 +31,10 @@ times:
     close: 11:00 PM
 catering:
   Lunch will be provided for Saturday and Sunday. Coffee available on-site.
+images:
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Ipswich-qld/FS101+workspace+with+members.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Ipswich-qld/IMG_7993-1024x768.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Ipswich-qld/IMG_8018-1024x768.jpg
 is_capital_city: false
 display_weight: 50
 ---

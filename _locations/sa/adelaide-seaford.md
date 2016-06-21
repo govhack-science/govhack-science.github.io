@@ -1,6 +1,6 @@
 ---
 gid: adelaide-seaford
-name: Onkaparinga Open Data Competition
+name: Onkaparinga
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event

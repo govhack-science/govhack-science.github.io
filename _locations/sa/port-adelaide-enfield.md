@@ -1,6 +1,6 @@
 ---
 gid: port-adelaide-enfield
-name: Port Adelaide Enfield Open Data Competition
+name: Port Adelaide Enfield
 prefix: Unleashed
 jurisdiction: sa
 type: Theme Node

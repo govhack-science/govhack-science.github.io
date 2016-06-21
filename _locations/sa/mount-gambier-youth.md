@@ -1,6 +1,6 @@
 ---
 gid: mount-gambier-youth
-name: Mount Gambier Open Data Competition
+name: Mount Gambier
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event
