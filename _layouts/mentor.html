@@ -4,19 +4,34 @@ layout: bootstrap
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
-    <div class="row">
-      {% include mentor_cards.bs.html mentor_ids=page.gid %}
-    </div>
     
-    <div class="row">
-      <h3>Ask me about</h3>
-      {{ page.ask_me_about }}
-      
-      {% if page.location %}
-        {% assign location = site.locations | where: "gid", page.location | first %}
-        {% assign locs = location | join: ", " %}
-        <h3>I'll be at: <a href="{{ location.url }}">{{ location.name }}</a></h3>
-      {% endif %}
+    {% include mentor_cards.bs.html mentor_ids=page.gid display_full=true %}
+    
+    <h3>About me</h3>
+    <article class="mentor-bio">
+        {{ mentor.content }}    
+    </article>
+    
+    <hr>
+    
+    <h3>How I can help</h3>
+    <div class="row mentor-description">
+        <div class="col-md-6 col-xs-12">
+            <dl>
+                <dt>Ask me about</dt>
+                <dd>{{ page.ask_me_about }}</dd>
+            </dl>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            {% if page.location %}
+              {% assign location = site.locations | where: "gid", page.location | first %}
+              {% assign locs = location | join: ", " %}
+            {% endif %}
+            <dl>
+                <dt>I'll be at</dt>
+                <dd><a class="location-rego-link" href="{{ location.url }}">{{ location.name }}</a></dd>
+            </dl>
+        </div>
     </div>
   </div>
 </section>

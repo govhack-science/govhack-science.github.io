@@ -8,13 +8,17 @@
     {% assign mentor_ids = site.mentors | map: "gid" %}
 {% endif %}
 
+{% assign secret_squirrel = 'https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/secret-squirrel.jpg' %}
+
 {% for mentor_id in mentor_ids %}
     {% assign mentor = site.mentors | where: "gid", mentor_id | first %}
     {% if mentor %}
         {% assign mentor_org = site.organisations | where: "gid", mentor.organisation | first %}
         <div class="media mentor">
             <div class="media-left">
-                <a href="{{ mentor.url }}"><img src="{{ mentor.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+                <a href="{{ mentor.url }}">
+                    <img src="{{ mentor.photo_url | default: secret_squirrel }}" style="max-width: 105px; max-height: 105px;">
+                </a>
             </div>
             <div class="media-body">
                 <h3 class="media-heading" data-toc-skip>
@@ -23,11 +27,21 @@
                 <div class="media-subheading"><small class="text-muted">
                     {{ mentor.position_title }}, {{ mentor_org.name | default: mentor.organisation }}
                 </small></div>
+
+                {% comment %}
+                ==============================================================
+                The display_excerpt shows the ask_me_about, useful if the card
+                is part of a list.
+                ==============================================================
+                {% endcomment %}
                 
-                {{ mentor.excerpt }}
-            </div>
-            <div class="media-right">
-                <ul class="list-inline social-buttons">
+                {% if include.display_excerpt %}
+                
+                  <p>Ask me about: {{ mentor.ask_me_about }}</p>
+                  
+                {% else %}
+                
+                  <ul class="list-inline social-buttons">
                     {% if mentor.contact.twitter %}
                     <li>
                         <a href="https://twitter.com/{{ mentor.contact.twitter }}" target="_blank">
@@ -66,7 +80,10 @@
                             </span>
                         </a>
                     </li>
-                </ul>
+                  </ul>
+                  
+                {% endif %}
+
             </div>
         </div>
     {% endif %}

@@ -18,7 +18,7 @@ e.g. site.mentors | group_by:"organisation"
       <tr>
         <th colspan="2">Mentors from <a href="{{ organisation.url }}">{{ organisation.name }}</a></th>
       </tr>
-      {% include mentor_cards.html mentors=group.items %}
+      {% include mentor_cards.html mentors=group.items display_excerpt=true %}
     </table>
   </p>
 {% endfor %}

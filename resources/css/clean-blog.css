@@ -17,7 +17,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 1em 0;
 }
 p a {
   text-decoration: underline;
@@ -37,14 +37,16 @@ a {
 }
 section#content a,
 section#content a:hover span {
-  color: #0085a1;
+  color: #CA1553;
+  color: #4C9AD2;
 }
 section#content a span {
   color: #404040;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #CA1553;
+  color: #4C9AD2;
 }
 a img:hover,
 a img:focus {
@@ -88,7 +90,7 @@ hr.small {
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #0085a1;
+  color: #CA1553;
   padding-left: 0px;
 }
 @media only screen and (min-width: 768px) {
@@ -142,7 +144,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #CA1553;
   }
   .navbar-custom.is-fixed .nav li a {
     /*color: #404040;*/
@@ -150,7 +152,7 @@ hr.small {
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus,
   .navbar-custom.is-fixed .nav li.open a.dropdown-toggle {
-    color: #0085a1;
+    color: #CA1553;
     background-color: rgba(255, 255, 255, 0.8);
     /*color: #71B1DE;*/
     /*color: #555;*/
@@ -253,7 +255,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #CA1553;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -277,7 +279,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #CA1553;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -357,7 +359,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #CA1553;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -377,8 +379,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #CA1553;
+  border: 1px solid #CA1553;
   color: white;
 }
 .pager {
@@ -398,8 +400,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #CA1553;
+  border: 1px solid #CA1553;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -412,12 +414,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #CA1553;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #CA1553;
 }
 img::selection {
   color: white;
@@ -428,7 +430,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #CA1553;
 }
 
 
@@ -608,7 +610,7 @@ aside.clients img {
   background-color: #404040;
 }
 .navbar-custom .dropdown-toggle[aria-expanded] {
-  /*color: #0085a1;*/
+  /*color: #CA1553;*/
 }
 
 .navbar-custom .icon-bar {
@@ -625,7 +627,7 @@ aside.clients img {
 }
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li.active {
-  color: #0085a1;
+  color: #CA1553;
 }
 
 .navbar-custom .navbar-brand.breadcrumb li a {
@@ -633,7 +635,7 @@ aside.clients img {
 }
 
 .navbar-custom.is-fixed .navbar-brand.breadcrumb li.active a {
-  /*color: #0085a1;*/
+  /*color: #CA1553;*/
 }
 
 .navbar-custom .dropdown-menu ul {
@@ -653,7 +655,7 @@ aside.clients img {
 
 .navbar-custom .dropdown-menu li a:hover {
   background-color: #eee;
-  color: #0085a1;
+  color: #CA1553;
 }
 
 .navbar-brand.breadcrumb li a {
@@ -840,7 +842,7 @@ ul.social-buttons a {
 }
 
 .media.mentor ul.social-buttons {
-  width: 135px;
+  font-size: 14px;
 }
 
 .media.mentor ul.social-buttons li {
@@ -848,7 +850,11 @@ ul.social-buttons a {
 }
 
 .media.mentor .media-left {
-    width: 105px;
+    min-width: 120px;
+}
+
+.mentor-description dl {
+    margin: 1em 0;
 }
 
 
@@ -909,6 +915,10 @@ a.location-rego-link.snap-right {
 .gh-lead-agency .gh-sponsor-logo {
   max-height: 200px;
   max-width: 100%;
+}
+
+.prepend-govhack-icon {
+    
 }
 
 

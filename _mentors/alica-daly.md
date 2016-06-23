@@ -1,7 +1,7 @@
 ---
 name: Alica Daly
 gid: alica-daly
-photo_url: /resources/images/mentors/alica-daly.jpg
+photo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/alica-daly.jpg
 type: Data Mentor
 position_title: Head of Patent Analytics
 ask_me_about: IP data - IPGOD, IPNOVA

@@ -1,7 +1,7 @@
 ---
 name: Tom Park
 gid: tom-park
-photo_url: /resources/images/mentors/tom-park.jpg
+photo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/tom-park.jpg
 type: Data Mentor
 position_title: Director
 ask_me_about: Data Visualisation and Datamining

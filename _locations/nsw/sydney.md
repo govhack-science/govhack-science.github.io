@@ -26,8 +26,8 @@ times:
     open: 12:00 AM
     close: 05:00 PM
 images:
-  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/HA%23hackaus.png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/Stone+and+CHalk.png
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/HA%23hackaus.png
 contact:
   twitter: GovHackSydney
   email: sydney@govhack.org
@@ -44,3 +44,8 @@ We are encouraging and celebrating our technical and creative capacity, connecti
 Come to connect with like minded people, make a difference to the community and create useful solutions!
 
 There'll be delicious food (did someone mention Messina..?), incredible cash prizes, and amazing mentors to help you along the way. 
+
+### Sponsored by
+<div class="row">
+  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="committee-for-sydney" %}</div>
+</div>

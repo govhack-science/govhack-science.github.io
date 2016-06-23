@@ -1,7 +1,7 @@
 ---
 name: Steve Jones
 gid: steve-jones
-photo_url: /resources/images/mentors/steve-jones.jpg
+photo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/steve-jones.jpg
 type: Data Mentor
 position_title: Director, Science Information Services
 ask_me_about: Science data for Natural Resource and Environmental Condition and Management.

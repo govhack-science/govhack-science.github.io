@@ -8,6 +8,6 @@ e.g. site.mentors | group_by:"organisation"
   {% assign organisation = site.organisations | where: "gid", group.name | first %}
   
   <h2><a href="{{ organisation.url }}">{{ organisation.name }}</a></h2>
-  {% include mentor_cards.bs.html mentors=group.items %}
+  {% include mentor_cards.bs.html mentors=group.items display_excerpt=true %}
   <br>
 {% endfor %}
