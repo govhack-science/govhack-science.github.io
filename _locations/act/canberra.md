@@ -11,7 +11,7 @@ venue:
   host: Matthew Purcell
   name: Canberra Grammar School - The Snow Centre
   address: 40 Monaro Crescent, Red Hill, ACT, 2603
-  accessibility: Venue is accessible from the main school carpark via footpaths without any need gutter mounting. The Snow Centre has a lift which provides access to all levels of the building.
+  accessibility: Venue is accessible from the main school carpark via footpaths. The Snow Centre has a lift which provides access to all levels of the building.
   childcare: There will be no childcare arrangements at this event.
   under_18: At this Venue you must be accompanied by a Guardian at all times
   parking: Parking is available in the main school carparks off Monaro Crescent. Note, there will be a large number of sporting matches taking place on the school ovals on Saturday morning so it is advisable to arrive early to GovHack otherwise parking could be difficult.
@@ -29,6 +29,10 @@ times:
     close: 07:00 PM
 contact:
   email: canberra@govhack.org
+images:
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/CanberraOfficial-act/20150206_DX_1155.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/CanberraOfficial-act/20150206_DX_1222.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/CanberraOfficial-act/20150206_DX_1636.jpg
 catering: |
   Friday 29 July 2016: Dinner, Snacks
   Saturday 30 July 2016: Lunch, Dinner, Snacks
