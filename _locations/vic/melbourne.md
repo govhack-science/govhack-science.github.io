@@ -4,6 +4,7 @@ name: Melbourne Official
 prefix: GovHack
 jurisdiction: vic
 type: Official Event
+event: https://govhack_vic_competitor.eventbrite.com.au/
 location:
   lat: -37.816690
   lon: 144.963966

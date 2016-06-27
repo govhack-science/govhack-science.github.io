@@ -4,6 +4,7 @@ name: Adelaide
 prefix: Unleashed 
 jurisdiction: sa
 type: Official Event
+eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
   lat: -34.9227541
   lon: 138.5911609

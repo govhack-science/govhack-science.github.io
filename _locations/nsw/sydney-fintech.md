@@ -5,6 +5,7 @@ prefix: GovHack
 jurisdiction: nsw
 type: Theme Node
 theme: Blockchain, Data, Security, Finance
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -33.868010
   lon: 151.205002

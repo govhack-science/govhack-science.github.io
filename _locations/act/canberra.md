@@ -4,6 +4,7 @@ name: Canberra
 prefix: GovHack
 jurisdiction: act
 type: Official Event
+eventbrite: https://actgovhack2016competitor.eventbrite.com.au/
 location:
   lat: -35.330529
   lon: 149.125984

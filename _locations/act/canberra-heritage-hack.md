@@ -5,6 +5,7 @@ prefix: Canberra
 jurisdiction: act
 type: Theme Node
 theme: Heritage data
+eventbrite: https://actgovhack2016competitor.eventbrite.com.au/
 location:
   lat: -35.238244
   lon: 149.084480

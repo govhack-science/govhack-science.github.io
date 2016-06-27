@@ -4,6 +4,7 @@ name: Sydney Official
 prefix: GovHack
 jurisdiction: nsw
 type: Official Event
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -33.862788
   lon: 151.211507

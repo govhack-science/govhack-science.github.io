@@ -4,6 +4,7 @@ name: Camperdown Games for Learning
 prefix: GovHack
 jurisdiction: nsw
 type: Theme Node
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -33.889348
   lon: 151.174600

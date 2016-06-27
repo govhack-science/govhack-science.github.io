@@ -4,6 +4,7 @@ name: Onkaparinga
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event
+eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
   lat: -35.1864896
   lon: 138.4789362

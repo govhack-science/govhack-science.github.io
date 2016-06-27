@@ -16,7 +16,7 @@ Slick is the carousel plugin for location page images
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
 <script>
 $(function(){
-    // Carousel leggo
+    // Carousel
     $('.location-images').slick({
         infinite: true,
         slidesToShow: 2,
@@ -102,7 +102,7 @@ that our authors (or indeed myself) might indicate a signup link.
     <div>
         <a class="location-rego-link" href="{{ rego_link }}">Register for {{ page.prefix }} {{ page.name }}</a>
         {% if page.eventbrite %}
-        &nbsp;<em class="text-muted">on EventBrite</em>
+        <!-- &nbsp;<em class="text-muted">on EventBrite</em> -->
       {% endif %}
     </div>
     {% endunless %}

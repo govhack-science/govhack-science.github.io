@@ -4,6 +4,7 @@ name: Manly Northern Beaches
 prefix: GovHack
 jurisdiction: nsw
 type: Official Event
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -33.790856
   lon: 151.287341

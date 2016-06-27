@@ -4,6 +4,7 @@ name: Brisbane Youth Node
 prefix: GovHack
 jurisdiction: qld
 type: Youth Node
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -27.495792
   lon: 153.012395

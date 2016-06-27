@@ -4,6 +4,7 @@ name: Hunter Valley
 prefix: GovHack
 jurisdiction: nsw
 type: Official Event
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -32.961978
   lon: 151.695119
