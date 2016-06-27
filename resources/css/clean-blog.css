@@ -865,13 +865,17 @@ section > div.container {
 }
 
 .main-container {
+  margin-top: 70px;
+}
+/*
+.main-container {
   margin-top: 0px;
 }
 @media (min-width: 767px) {
   .main-container {
     margin-top: 70px;
   }
-}
+}*/
 
 .locations-row h2:not(:first-child) {
   padding-top: 10px;
