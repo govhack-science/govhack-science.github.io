@@ -10,13 +10,18 @@ location:
 venue:
   name: Telstra Gurrowa Innovation Lab
   address: 242-284 Exhibition St, Melbourne VIC 3000   
-  host: Govhack Ballarat
+  host: Alena Moison
   accessibility:  This site is wheelchair accessible.
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 100
   parking:  Paid parking is available throughout the Melbourne CBD.
-  public_transport: See www.ptv.vic.gov.au for details of public transport available.
-  public_transport_last:  Throughout 2016, the Victorian Government is undertaking a trial of all-night public transport on weekends./ Metro trains: Trains will depart hourly from Flinders Street Station on all lines (except Stony Point and Flemington Racecourse). Many stations will benefit from multiple trains each hour, where they are serviced by two or more train lines. / Trams: Trams will operate every 30 minutes on routes 19, 67, 75, 86, 96 and 109. This will provide wide coverage across Melbourne as well as servicing key night-time precincts and the major streets in the CBD grid. / Night bus network: Night buses will provide a revamped and improved bus service with around 20 overnight routes. The night bus network will have a mix of routes operating from the city, and others providing suburban connections from train stations and suburban night-time hubs. / V/Line: V/Line coaches will depart from Southern Cross Station around 2am, bound for Bendigo, Ballarat, Traralgon and Geelong.
+  public_transport: See [www.ptv.vic.gov.au](http://www.ptv.vic.gov.au) for details of public transport available.
+  public_transport_last: |
+    Throughout 2016, the Victorian Government is undertaking a trial of all-night public transport on weekends. 
+    Metro trains: Trains will depart hourly from Flinders Street Station on all lines (except Stony Point and Flemington Racecourse). Many stations will benefit from multiple trains each hour, where they are serviced by two or more train lines. 
+    Trams: Trams will operate every 30 minutes on routes 19, 67, 75, 86, 96 and 109. This will provide wide coverage across Melbourne as well as servicing key night-time precincts and the major streets in the CBD grid. 
+    Night bus network: Night buses will provide a revamped and improved bus service with around 20 overnight routes. The night bus network will have a mix of routes operating from the city, and others providing suburban connections from train stations and suburban night-time hubs. 
+    V/Line: V/Line coaches will depart from Southern Cross Station around 2am, bound for Bendigo, Ballarat, Traralgon and Geelong.
   catering:  TBA closer to the event date.   
 times:
   friday:

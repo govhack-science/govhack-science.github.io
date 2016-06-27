@@ -15,8 +15,8 @@ venue:
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 20
   parking:  TBC.
-  public_transport:  http://bit.ly/28Kxtx5   
-  public_transport_last:  12.22AM 
+  public_transport: [bit.ly/28Kxtx5](http://bit.ly/28Kxtx5)
+  public_transport_last: 12.22AM 
 catering: TBC
 times:
   friday:
