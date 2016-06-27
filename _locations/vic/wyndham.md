@@ -3,19 +3,22 @@ gid: wyndham
 name: Hack for Wyndham
 prefix: GovHack
 jurisdiction: vic
-type:  Theme Node
+type: Theme Node
+theme: Transport
+eventbrite: https://govhack_vic_competitor.eventbrite.com.au/
 location:
   lat: -37.9029207
   lon: 144.6580415
 venue:
-  name: Werribee Learning Centre
-  address: 9 Bridge Street, Werribee   
+  name: Werribee Learning Centre 
+  address: 9 Bridge Street, Werribee
   host: Vijai Mani
   accessibility: To be confirmed.
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 20
-  parking:  TBC.
-  public_transport: [bit.ly/28Kxtx5](http://bit.ly/28Kxtx5)
+  parking: TBC.
+  public_transport: |
+    [bit.ly/28Kxtx5](http://bit.ly/28Kxtx5)
   public_transport_last: 12.22AM 
 catering: TBC
 times:
