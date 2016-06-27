@@ -39,6 +39,7 @@ times:
 contact:
   email: 'sunshinecoast@govhack.org'
   twitter: GovHackSC
+  facebook: GovHackSC
   phone: '0481 451 636'
 is_capital_city: false
 display_weight: 40

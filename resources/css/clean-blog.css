@@ -90,7 +90,7 @@ hr.small {
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #CA1553;
+  color: #4C9AD2;
   padding-left: 0px;
 }
 @media only screen and (min-width: 768px) {
@@ -144,7 +144,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #CA1553;
+    color: #4C9AD2;
   }
   .navbar-custom.is-fixed .nav li a {
     /*color: #404040;*/
@@ -152,7 +152,7 @@ hr.small {
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus,
   .navbar-custom.is-fixed .nav li.open a.dropdown-toggle {
-    color: #CA1553;
+    color: #4C9AD2;
     background-color: rgba(255, 255, 255, 0.8);
     /*color: #71B1DE;*/
     /*color: #555;*/
@@ -255,7 +255,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #CA1553;
+  color: #4C9AD2;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -279,7 +279,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #CA1553;
+  color: #4C9AD2;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -359,7 +359,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #CA1553;
+  color: #4C9AD2;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -379,8 +379,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #CA1553;
-  border: 1px solid #CA1553;
+  background-color: #4C9AD2;
+  border: 1px solid #4C9AD2;
   color: white;
 }
 .pager {
@@ -400,8 +400,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #CA1553;
-  border: 1px solid #CA1553;
+  background-color: #4C9AD2;
+  border: 1px solid #4C9AD2;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -414,12 +414,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #CA1553;
+  background: #4C9AD2;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #CA1553;
+  background: #4C9AD2;
 }
 img::selection {
   color: white;
@@ -864,12 +864,12 @@ section > div.container {
   width: inherit;
 }
 
-.main-container .main-content {
-  margin-top: 70px;
+.main-container {
+  margin-top: 0px;
 }
-@media (max-width: 767px) {
-  .main-container .main-content {
-    margin-top: 0px;
+@media (min-width: 767px) {
+  .main-container {
+    margin-top: 70px;
   }
 }
 

@@ -10,27 +10,23 @@ location:
 venue:
   name: Red Zone, Griffith University Gold Coast Campus
   address: G40, Griffith University Gold Coast Campus, Parklands Drive, Southport 4215
-  host: Joshua Holmes @JoshDHolmes
-  team: 'Tanya Lipus @tanyalipus, Jolon Faichney @jolon'
+  host: Joshua Holmes
+  team: Tanya Lipus, Jolon Faichney
   accessibility: Lifts available for access to upper levels of G40
   under_18: At this Venue you must be accompanied by a Guardian at all times
   capacity: 150
   parking: Free parking will be available to participants in the general parking zones of Griffith University.
   public_transport: |
     The best way of getting to and from GovHack Gold Coast from the southern Gold Coast is riding the G: in conjunction with a regular bus service.
-    The Gold Coast University Hospital Station is closest and runs 24 hours between Friday and Sunday night. The G: departs every 10 to 30 minutes towards Broadbeach South.
-    From Broadbeach South, bus route 700 will take you all the way to the Tweed 24 hours, every 7 to 15 minutes.
-
-    From the northern Gold Coast, buses are available along various routes, including 709 towards Helensvale where you can transfer to the train.
-
-    Western Gold Coast regions can be accessed via the G and bus routes 740 and 750 towards Nerang and Robina respectively.
-
-    Plan your journey at the [Translink website](http://jp.translink.com.au/).
-
-    Uber is also available on the Gold Coast for a reasonable price. [Estimate the costs here](https://www.uber.com/fare-estimate/).
+    + The Gold Coast University Hospital Station is closest and runs 24 hours between Friday and Sunday night. The G: departs every 10 to 30 minutes towards Broadbeach South.  
+    + From Broadbeach South, bus route 700 will take you all the way to the Tweed 24 hours, every 7 to 15 minutes.  
+    + From the northern Gold Coast, buses are available along various routes, including 709 towards Helensvale where you can transfer to the train.  
+    + Western Gold Coast regions can be accessed via the G and bus routes 740 and 750 towards Nerang and Robina respectively.
+    + Plan your journey at the [Translink website](http://jp.translink.com.au/).  
+    + Uber is also available on the Gold Coast for a reasonable price. [Estimate the costs here](https://www.uber.com/fare-estimate/).  
   public_transport_last: |
-    The G and bus route 700 runs 24 hours on weekends.
-    Bus route 709 finishes at 11.14pm, route 750 finishes at 12.27am from Broadbeach South and route 740 finishes at 11.16pm from Surfers Paradise.
+    + The G and bus route 700 runs 24 hours on weekends.
+    + Bus route 709 finishes at 11.14pm, route 750 finishes at 12.27am from Broadbeach South and route 740 finishes at 11.16pm from Surfers Paradise.
 times:
   friday:
     open: 05:00 PM

@@ -190,6 +190,17 @@ that our authors (or indeed myself) might indicate a signup link.
               </a>
           </li>
           {% endif %}
+          {% if page.contact.youtube %}
+          <li>
+              <a href="https://youtube.com/{{ page.contact.youtube }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>                  
+                  @{{ page.contact.youtube }}
+              </a>
+          </li>
+          {% endif %}
           {% if page.website or page.contact.website_url %}
           <li>
               <a href="{{ page.website.url | default: page.contact.website_url }}" target="_blank">

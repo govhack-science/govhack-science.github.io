@@ -10,7 +10,7 @@ location:
 venue:
   name: Stretton Centre
   address: 307 Peachey Road, Munno Para SA 5115
-  host: Jasmine Pugh
+  host: City of Playford
   accessibility: Detailed information to be provided soon.
   childcare: N/A
   under_18: We are a Youth Node and will provide a child Safe environment - Guardians must ensure safety to and from events.
