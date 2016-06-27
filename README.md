@@ -65,4 +65,4 @@ To run:
 python python/frontmatter-to-json.py
 ```
 
-> Tip: If `importError: No module named yaml`, try (this SO)[http://stackoverflow.com/questions/1909025/import-error-with-virtualenv]. Otherwise the `virtualenv --system-site-packages venv` command should have imported the usual suspects like pyyaml.
+> Tip: If `importError: No module named yaml`, try [this SO](http://stackoverflow.com/questions/1909025/import-error-with-virtualenv). Otherwise the `virtualenv --system-site-packages venv` command should have imported the usual suspects like pyyaml.
