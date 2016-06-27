@@ -2,7 +2,7 @@
 gid: hobart
 name: Hobart
 prefix: GovHack
-jurisdiction: wa
+jurisdiction: tas
 type: Official Event
 location:
   lat: -42.8819
