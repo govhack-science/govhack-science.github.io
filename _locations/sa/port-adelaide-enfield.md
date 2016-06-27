@@ -3,15 +3,15 @@ gid: port-adelaide-enfield
 name: Port Adelaide Enfield
 prefix: Unleashed
 jurisdiction: sa
-type: Theme Node
+type: Youth Node
 eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
-  lat: -34.8474986
-  lon: 138.5012198
+  lat: -34.847472
+  lon: 138.5013009
 venue:
   name: Port Adelaide Library
   address: 2 Church Street, Port Adelaide SA 5015
-  host: Josh Hammond
+  host: City of Port Adelaide Enfield
   accessibility: Venue has wheelchair access via main entrance.
   childcare: N/A
   under_18: We are a Youth Node and will provide a child Safe environment - Guardians must ensure safety to and from events.
