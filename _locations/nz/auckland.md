@@ -1,3 +1,6 @@
+<script>
+	window.location = "http://govhack.org.nz/2016-events-and-info/auckland/";
+</script>
 ---
 name: Auckland
 gid: auckland
@@ -13,6 +16,3 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/auckland/
 display_weight: 50
 ---
-<script>
-	window.location = "http://govhack.org.nz/2016-events-and-info/auckland/";
-</script>
