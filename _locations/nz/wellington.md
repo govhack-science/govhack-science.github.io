@@ -13,3 +13,6 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/wellington/
 display_weight: 30
 ---
+<script>
+	window.location = "http://govhack.org.nz/2016-events-and-info/wellington/";
+</script>

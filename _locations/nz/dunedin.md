@@ -13,3 +13,6 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/dunedin/
 display_weight: 70
 ---
+<script>
+	window.location = "http://govhack.org.nz/2016-events-and-info/dunedin/";
+</script>

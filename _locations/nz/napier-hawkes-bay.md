@@ -13,3 +13,6 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/hawkes-bay/
 display_weight: 80
 ---
+<script>
+	window.location = "http://govhack.org.nz/2016-events-and-info/hawkes-bay/";
+</script>

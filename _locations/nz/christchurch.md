@@ -13,3 +13,6 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/christchurch/
 display_weight: 50
 ---
+<script>
+	window.location = "http://govhack.org.nz/2016-events-and-info/christchurch/";
+</script>
