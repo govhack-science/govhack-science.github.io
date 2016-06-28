@@ -1,7 +1,3 @@
-Options +FollowSymLinks -MultiViews
-# Turn mod_rewrite on
-RewriteEngine On
-RewriteBase /
-
-RewriteCond %{HTTP_HOST} ^portal\.govhack\.org$ [NC]
-RewriteRule ^locations/nz/queenstown\.html$ http://govhack.org.nz/2016-events-and-info/queenstown [L,R=301,NC]
+Options +FollowSymlinks
+RewriteEngine on
+rewriterule ^locations/nz/queenstown.html(.*)$ http://govhack.org.nz/2016-events-and-info/queenstown$1 [r=301,nc]
