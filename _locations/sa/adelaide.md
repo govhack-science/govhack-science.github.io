@@ -38,7 +38,6 @@ times:
 contact:
   email: 'sa@govhack.org'
   twitter: ICCUnisa
-  phone: 'xxxx xxx xxx'
 is_capital_city: true
 display_weight: 20
 dataportals:
