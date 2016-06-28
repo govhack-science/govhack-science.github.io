@@ -4,6 +4,7 @@ name: Brisbane Maker
 prefix: GovHack
 jurisdiction: qld
 type: Maker Node
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -27.443391
   lon: 153.079033

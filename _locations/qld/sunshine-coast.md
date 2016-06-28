@@ -4,6 +4,7 @@ name: Sunshine Coast
 prefix: GovHack
 jurisdiction: qld
 type: Theme Node
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -26.652129
   lon: 153.090542

@@ -4,6 +4,7 @@ name: Playford
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event
+eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
   lat: -34.6689999
   lon: 138.6782796

@@ -4,6 +4,7 @@ name: Rockhampton
 prefix: GovHack
 jurisdiction: qld
 type: Maker Node
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -23.378562
   lon: 150.514809

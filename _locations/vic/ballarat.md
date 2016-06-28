@@ -4,6 +4,7 @@ name: Ballarat
 prefix: GovHack
 jurisdiction: vic
 type: Official Event
+eventbrite: https://govhack_vic_competitor.eventbrite.com.au/
 location:
   lat: -37.565453
   lon: 143.856837

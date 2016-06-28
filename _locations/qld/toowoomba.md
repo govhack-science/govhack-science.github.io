@@ -4,6 +4,7 @@ name: Toowoomba
 prefix: GovHack
 jurisdiction: qld
 type: Official Event
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -27.567963
   lon: 151.952122

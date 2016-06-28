@@ -4,6 +4,7 @@ name: Parramatta
 prefix: GovHack
 jurisdiction: nsw
 type: Official Event
+eventbrite: https://nswgovhack2016ct.eventbrite.com.au/
 location:
   lat: -33.813472
   lon: 151.009487

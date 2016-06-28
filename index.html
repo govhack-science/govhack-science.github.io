@@ -3,6 +3,27 @@ layout: bootstrap
 ---
 <!-- La la la just some text so we trigger a rebuild of GHP -->
 <!-- Main Content -->
+<section id="registrations">
+  <div class="alert alert-success">
+    <p><strong>Registrations now open:</strong> Click through to your state to register, and don't forget to <a href="locations.html">read up on your chosen event</a>.</p>
+    <br>
+    <div class="container">
+        <div class="row">
+        {% for jurisdiction in site.jurisdictions %}
+            {% assign jurisdictions = "" %}
+            {% unless jurisdiction.eventbrite == nil %}
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <strong>🎫 <a href="{{ jurisdiction.eventbrite }}">{{ jurisdiction.title }} tickets</a></strong>
+                </div>
+            {% endunless %}
+        {% endfor %}
+        </div>
+    </div>
+    <br>
+  </div>
+</section>
+
+
 <section id="intro">
   <div class="container">
       <!--<div class="row header-row">
@@ -10,24 +31,20 @@ layout: bootstrap
               <h1 id="jabberwocky">GovHack | <i>Project Jabberwocky</i></h1>
           </div>
       </div>-->
-      <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-            <p>
-                <!--<img src="http://www.scienceimage.csiro.au/images/cache/detail/739_0_AR1391.jpg" width="40%" align="left" style="padding: 15px;">-->
-                
-                <h2 data-toc-text="Welcome">Welcome to the GovHack 2016 competition portal!</h2>
-                <br>
-                The portal is an experiment for 2016's competition to make it easier to explore and partake in GovHack. In your feedback you've told us that it should be easier to find data relevant to each prize, to your local event, and to broad themes (such as science and local government).
-            </p>
-            <p>
-                Through the portal you'll be able to explore the <a href="/datasets.html">official competition datasets</a>, find an exhaustive list of <a href="/dataportals.html">government data portals</a>, and see all of the data <a href="/organisations.html">each sponsor is providing</a>. As we get closer to the competition you'll be able to find out about the wonderful <a href="/mentors.html">mentors</a> who'll be available to help you out, and when the competition opens you'll be able to see all of the national and local <a href="/prizes.html">prizes</a>.
-            </p>
-            <p>
-                You'll also be able explore your <a href="/locations.html">local GovHack</a> to find datasets, data portals, prizes, and mentors for your local area.<br>
-                <br>
-                We'll be continually updating with new content as the competition draws closer, so watch this space! 
-            </p>
-          </div>
+      <div>
+        <p>
+            <h2 data-toc-text="Welcome">Welcome to the GovHack 2016 competition portal!</h2>
+            <br>
+            The portal is an experiment for 2016's competition to make it easier to explore and partake in GovHack. In your feedback you've told us that it should be easier to find data relevant to each prize, to your local event, and to broad themes (such as science and local government).
+        </p>
+        <p>
+            Through the portal you'll be able to explore the <a href="/datasets.html">official competition datasets</a>, find an exhaustive list of <a href="/dataportals.html">government data portals</a>, and see all of the data <a href="/organisations.html">each sponsor is providing</a>. As we get closer to the competition you'll be able to find out about the wonderful <a href="/mentors.html">mentors</a> who'll be available to help you out, and when the competition opens you'll be able to see all of the national and local <a href="/prizes.html">prizes</a>.
+        </p>
+        <p>
+            You'll also be able explore your <a href="/locations.html">local GovHack</a> to find datasets, data portals, prizes, and mentors for your local area.<br>
+            <br>
+            We'll be continually updating with new content as the competition draws closer, so watch this space! 
+        </p>
       </div>
       <!--<div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

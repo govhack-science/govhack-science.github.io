@@ -4,6 +4,7 @@ name: Geelong
 prefix: GovHack
 jurisdiction: vic
 type: Official Event
+eventbrite: https://govhack_vic_competitor.eventbrite.com.au/
 location:
   lat: -38.143822
   lon: 144.360392

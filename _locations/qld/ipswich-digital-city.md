@@ -6,6 +6,7 @@ photo_url: /resources/csiro-logo.png
 jurisdiction: qld
 type: Theme Node
 theme: Digital City
+eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -27.615344
   lon: 152.754495

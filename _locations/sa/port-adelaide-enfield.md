@@ -4,6 +4,7 @@ name: Port Adelaide Enfield
 prefix: Unleashed
 jurisdiction: sa
 type: Youth Node
+eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
   lat: -34.847472
   lon: 138.5013009

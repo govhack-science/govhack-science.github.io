@@ -4,6 +4,7 @@ name: Perth
 prefix: GovHack
 jurisdiction: wa
 type: Official Event
+eventbrite: https://wagovhack2016competitor.eventbrite.com.au/
 location:
   lat: -31.953921
   lon: 115.853156

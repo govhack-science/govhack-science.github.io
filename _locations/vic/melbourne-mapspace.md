@@ -4,6 +4,8 @@ name: Melbourne MapSpace
 prefix: GovHack
 jurisdiction: vic
 type: Theme Node
+theme: Spatial Data
+event: https://govhack_vic_competitor.eventbrite.com.au/
 location:
   lat: -37.815794
   lon: 144.956918

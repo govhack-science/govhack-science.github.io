@@ -4,6 +4,7 @@ name: Mount Gambier
 prefix: Unleashed
 jurisdiction: sa
 type: Official Event
+eventbrite: https://sagovhackunleashed2016competitor.eventbrite.com.au/
 location:
   lat: -37.829274
   lon: 140.7794058

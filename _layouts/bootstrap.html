@@ -284,8 +284,12 @@
 
     <div class="container main-container">
         <div class="row">
+            {% if page.name == "index.html" %}
+            <!-- main content area -->
+            <div class="main-content">
+            {% else %}
             <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
+            <div class="col-sm-3 hidden-xs">
                 <nav id="toc" data-spy="affix" data-toggle="toc">
                     {% if page.sections.cta %}
                     <div class="sidebar-cta">
@@ -299,7 +303,8 @@
             </div>
             <!-- main content area -->
             <div class="col-sm-9 main-content">
-                
+            {% endif %}
+            
                 {{ content }}
 
                 {% comment %}

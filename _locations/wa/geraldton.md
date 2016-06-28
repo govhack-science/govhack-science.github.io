@@ -4,6 +4,7 @@ name: Geraldton
 prefix: GovHack
 jurisdiction: wa
 type: Official Event
+eventbrite: https://wagovhack2016competitor.eventbrite.com.au/
 location:
   lat: -28.7732
   lon: 114.6096

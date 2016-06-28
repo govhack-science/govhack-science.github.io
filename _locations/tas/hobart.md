@@ -4,6 +4,7 @@ name: Hobart
 prefix: GovHack
 jurisdiction: tas
 type: Official Event
+eventbrite: http://tasgovhack2016compete.eventbrite.com.au/
 location:
   lat: -42.8819
   lon: 147.3238
