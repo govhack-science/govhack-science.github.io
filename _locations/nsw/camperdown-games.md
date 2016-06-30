@@ -38,7 +38,7 @@ website:
   name: GovHack Camperdown
   url: https://govhack-camperdown.boomworks.com.au
 images:
-  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Boomworks_Govhack_2016.jpg
+  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Boomworks_Govhack_2016.png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Camperdown+(1).jpg
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/CamperdownOffice+(1).jpg
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Camperdown+(2).jpg
