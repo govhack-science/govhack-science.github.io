@@ -1,9 +1,8 @@
 ---
-gid: abc
-title: ABC
-name: ABC
-website_url: 'http://about.abc.net.au/'
-logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/05/ABC_Primary_CMYK-300x3001.png'
+gid: australian-business-register
+title: Australian Business Register
+name: Australian Business Register
+logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/05/ABR.jpg'
 sponsor_level: Government Agency Supporters
 sponsor_level_id: govt-agency-supporters
 sponsor_level_desc: 'Thanks to our National Government Agency supporters:'

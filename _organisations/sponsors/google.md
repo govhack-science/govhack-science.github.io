@@ -1,13 +1,11 @@
 ---
+gid: google
 title: Google
 name: Google
-gid: google
-type: Corporate
+website_url: 'https://www.google.com/intl/en/about/'
+logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/05/Google.png'
+sponsor_level: International Prize Sponsors
+sponsor_level_id: international-prize-sponsors
+sponsor_level_desc: 'Thanks to our International Prize sponsors:'
 is_sponsor: true
-sponsor_level: International Prize Sponsor
-website_url: https://www.google.com/about/company/facts/locations/
-logo_url: https://www.govhack.org/wp-content/uploads/2016/05/Google.png
-jurisdiction: international
 ---
-
-Google’s mission is to organize the world’s information and make it universally accessible and useful.

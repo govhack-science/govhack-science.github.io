@@ -1,9 +1,8 @@
 ---
-gid: abc
-title: ABC
-name: ABC
-website_url: 'http://about.abc.net.au/'
-logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/05/ABC_Primary_CMYK-300x3001.png'
+gid: data-61
+title: Data 61
+name: Data 61
+logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/05/Data61-Logo_Full-Colour_On-White-300x1501.jpg'
 sponsor_level: Government Agency Supporters
 sponsor_level_id: govt-agency-supporters
 sponsor_level_desc: 'Thanks to our National Government Agency supporters:'
