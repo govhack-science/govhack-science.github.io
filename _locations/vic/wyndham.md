@@ -32,7 +32,7 @@ times:
     open: 09:30 AM
     close: 07:00 PM
 contact:
-	phone: '0402 524 182'
+phone: '0402 524 182'
 is_capital_city: false
 display_weight: 30
 ---
