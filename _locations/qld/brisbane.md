@@ -11,7 +11,7 @@ location:
 venue:
   name: Advanced Engineering Building, The University of Queensland, St Lucia
   address: Building 49, The University of Queensland, Staff House Road, St Lucia QLD 4072
-  host: 'Jason Weigel @jnweigel'
+  host: Jason Weigel
   team: Marie Boden, Edge Pereira, Siddeswara Guru, Nicolette Venn
   accessibility: The venue has lifts between levels and ramps at each entrance.
   under_18: At this Venue you must be accompanied by a Guardian at all times
