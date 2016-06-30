@@ -17,8 +17,7 @@ venue:
   capacity: 60
   parking: N/A.
   public_transport: N/A.
-  public_transport_last: The trains go until 2AM on Friday and Saturday (Though you may be joined by some revelers from the City). Sunday, trains are a bit more unreliable.
-catering: All main meals will be fully catered.
+  public_transport_last: N/A.
 times:
   friday:
     open: 05:00 PM

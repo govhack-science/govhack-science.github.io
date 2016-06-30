@@ -1,6 +1,6 @@
 ---
 gid: adelaide
-name: Unleashed Adelaide Maker
+name: Adelaide Maker
 prefix: Unleashed 
 jurisdiction: sa
 type: Maker Node
