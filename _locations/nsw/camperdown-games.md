@@ -12,11 +12,11 @@ venue:
   host: Vivid Savitri
   name: Boomworks Studios
   address: 34 Denison St, Camperdown
-  accessibility: All facilities are accessible for wheelchairs via our garage. We have a disabled toilet and allotter amenities and some work spaces are located on the ground level.
-  under_18: At this Venue you must be accompanied by a Guardian at all bbbbbtimes
+  accessibility: All facilities are accessible for wheelchairs via our garage. We have a disabled toilet and all other amenities, and some work spaces are located on the ground level.
+  under_18: At this Venue you must be accompanied by a Guardian at all times
   capacity: 40
   parking: All day parking is available on the Boomworks side of Denison St.
-  public_transport: Buses are available on Parramatta Rd an the nearest train station is Newtown Station.
+  public_transport: Buses are available on Parramatta Rd, and the nearest train station is Newtown Station.
   public_transport_last: Please use TripView to access all relevant public transport options closer to the date.
 times:
   friday:
