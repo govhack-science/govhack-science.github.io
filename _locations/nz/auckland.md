@@ -1,4 +1,3 @@
-<META http-equiv="refresh" content="5;URL=http://govhack.org.nz/2016-events-and-info/auckland/"> 
 ---
 name: Auckland
 gid: auckland
@@ -14,3 +13,4 @@ contact:
 website_url: http://govhack.org.nz/2016-events-and-info/auckland/
 display_weight: 50
 ---
+<META http-equiv="refresh" content="5;URL=http://govhack.org.nz/2016-events-and-info/auckland/"> 
