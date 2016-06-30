@@ -899,7 +899,7 @@ a.location-rego-link {
     border-radius: 4px;
     color: #848283;
     text-decoration: none;
-    background: url('https://assets.govhack.org/img/inline-logo.png') 15px center/20px 20px no-repeat scroll transparent;
+    background: url('https://assets.govhack.org/img/logo/inline-logo.png') 15px center/20px 20px no-repeat scroll transparent;
 }
 a.location-rego-link:hover,
 a.location-rego-link:focus,
