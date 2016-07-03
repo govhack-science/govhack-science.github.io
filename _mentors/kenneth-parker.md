@@ -1,5 +1,5 @@
 ---
-gid: ken-parker
+gid: kenneth-parker
 name: Ken Parker
 type: Data Mentor
 position_title: A/Manager, Capacity Building
