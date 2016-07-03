@@ -25,6 +25,15 @@ title: Data Portals
           </div>
         </div>
         <div class="row">
+            {% comment %}
+            ==============================================================
+            Hack to make data.gov.au appear first in the list.
+            ==============================================================
+            {% endcomment %}
+            {% assign dataportal_ids_str = dataportal_ids | join: "," %}
+            {% assign dataportal_ids_str = dataportal_ids_str | replace_first: "dataactgovau,datagovau,", "datagovau,dataactgovau," %}
+
+            {% assign dataportal_ids = dataportal_ids_str | split: "," %}
             {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
