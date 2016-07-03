@@ -11,3 +11,4 @@ venv/
 resources/HorizontalDropDownMenu/
 resources/mega-dropdown
 _layouts/bootstrap-horizontalmegamenu.html
+python/data/
