@@ -40,10 +40,13 @@ sections:
 {% assign dataportal_ids = "" %}
 {% for dataportal in site.dataportals %}
     {% if dataportal.type == "major-portal" %}
-        {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
-        {% assign dataportal_ids = dataportal_ids | append: "," %}
+        {% if dataportal.gid != "datagovau" %}
+            {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+            {% assign dataportal_ids = dataportal_ids | append: "," %}
+        {% endif %}
     {% endif %}
 {% endfor %}
+<br>
 
 {% unless dataportal_ids == "" %}
 <!-- Data Portals Section -->
@@ -58,6 +61,13 @@ sections:
             <p>
                 While GovHack higlights a small number of official competition datasets, the full treasure trove of government data is available from a range of government, agency, and subject-area specific data portals. Visit our <a href="dataportals.html">Data Portals</a> page for the full list.
             </p>
+            {% comment %}
+            ==============================================================
+            Hack to make data.gov.au appear first in the list.
+            ==============================================================
+            {% endcomment %}
+
+            {% assign dataportal_ids = "datagovau," | append: dataportal_ids %}
             {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
             {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
         </div>
