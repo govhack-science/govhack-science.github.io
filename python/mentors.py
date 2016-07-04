@@ -10,7 +10,7 @@ import yaml
 import io
 
 # Config
-csvfile = "python/data/mentors_20160703_formstack.csv"
+csvfile = "python/data/mentors_formstack.csv"
 mentorsdir = "_mentors/"
 organisationsdir = "_organisations/"
 eventsdir = "_locations/"
@@ -53,8 +53,8 @@ for row in data.dict:
         continue
 
     # Assign our mentor a globally unique id
-    name = "%s %s" % (row["Name (First)"], row["Name (Last)"])
-    gid = name.lower().replace(" ", "-")
+    name = "%s %s" % (row["Name (First)"].strip(), row["Name (Last)"].strip())
+    gid = name.lower().replace(" ", "-").replace("'", "")
 
     # if gid != "claire-sainsbury":
     #     continue
@@ -67,17 +67,17 @@ for row in data.dict:
         mentor = {
             "name": name,
             "gid": gid,
-            "type": row["What type of mentor are you?"],
-            "position_title": row["Job title"],
-            "ask_me_about": row["What can people ask you about? (in a sentence)"],
-            "organisation": row["Agency/Organisation"],
+            "type": row["What type of mentor are you?"].strip(),
+            "position_title": row["Job title"].strip(),
+            "ask_me_about": row["What can people ask you about? (in a sentence)"].strip(),
+            "organisation": row["Agency/Organisation"].strip(),
             "jurisdiction": row["What state or territory do you reside in?"].lower(),
             "contact": {
                 "email": row["Email"]
             }
         }
 
-        organisation_gid = row["Agency/Organisation"].lower().replace(" ", "-").replace(",", "")
+        organisation_gid = row["Agency/Organisation"].lower().replace(" ", "-").replace(",", "").strip()
         if organisation_gid in organisation_names:
             mentor["organisation"] = organisation_gid
         else:
@@ -86,23 +86,26 @@ for row in data.dict:
 
         if len(row["Photograph URL"]) > 0:
             # Download and stash the mentor image locally
-            r = requests.get(row["Photograph URL"], stream=True)
-            if r.status_code == 200:
-                # Hacky, should use actual mimetype
-                path = urlparse.urlparse(row["Photograph URL"]).path
-                fileext = os.path.splitext(path)[1]
+            try:
+                r = requests.get(row["Photograph URL"], stream=True)
+                if r.status_code == 200:
+                    # Hacky, should use actual mimetype
+                    path = urlparse.urlparse(row["Photograph URL"]).path
+                    fileext = os.path.splitext(path)[1]
 
-                mentor_image_path = mentorimagesdir + "%s%s" % (gid, fileext)
-                with open(mentor_image_path, 'wb') as f:
-                    r.raw.decode_content = True
-                    shutil.copyfileobj(r.raw, f) 
-                    mentor["photo_url"] = "/" + mentor_image_path
+                    mentor_image_path = mentorimagesdir + "%s%s" % (gid, fileext)
+                    with open(mentor_image_path, 'wb') as f:
+                        r.raw.decode_content = True
+                        shutil.copyfileobj(r.raw, f) 
+                        mentor["photo_url"] = "/" + mentor_image_path
+            except requests.exceptions.MissingSchema, e:
+                print "WARNING: %s" % (e)
 
         if len(row["Twitter Handle"]) > 0:
-            mentor["contact"]["twitter"] = row["Twitter Handle"]
+            mentor["contact"]["twitter"] = row["Twitter Handle"].strip()
 
         if len(row["Who are you on LinkedIn?"]) > 0:
-            mentor["contact"]["linkedin"] = row["Who are you on LinkedIn?"]
+            mentor["contact"]["linkedin"] = row["Who are you on LinkedIn?"].strip()
         
         events = ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
         found_event = False
@@ -136,7 +139,7 @@ for row in data.dict:
             f.write(unicode(yaml.safe_dump(mentor, width=200, default_flow_style=False, encoding="utf-8", allow_unicode=True), "utf-8"))
             f.write(u'---\n')
             f.write(u'\n')
-            f.write(row["Tell us a bit about yourself"])
+            f.write(row["Tell us a bit about yourself"].replace("|", "\n").rstrip())
 
 if new_mentors_count == 0:
     print "No new mentors were found!"
