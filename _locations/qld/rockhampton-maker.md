@@ -3,7 +3,8 @@ gid: rockhampton-maker
 name: Rockhampton
 prefix: GovHack
 jurisdiction: qld
-type: Maker Node
+type: Theme Node
+theme: ROCKYing the regions
 eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -23.378562
