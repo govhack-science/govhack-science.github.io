@@ -6,8 +6,8 @@ jurisdiction: qld
 type: Theme Node
 eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
-  lat: -27.960257
-  lon: 153.379248
+  lat: -27.664164
+  lon: 153.151720
 venue:
   name: Griffith University Logan Campus (Meadowbrook Room 4.07)
   address: University Dr, Meadowbrook QLD 4131
