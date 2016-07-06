@@ -35,7 +35,7 @@ contact:
   email: camperdown@govhack.org
   flickr: https://www.flickr.com/photos/120617262@N04/
 website:
-  name: Info Website
+  name: Visit GovHack Camperdown Site
   url: https://govhack-camperdown.boomworks.com.au
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Boomworks_Govhack_2016.png
