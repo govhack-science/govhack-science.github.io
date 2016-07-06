@@ -8,7 +8,7 @@ gid: jens-klump
 jurisdiction: wa
 location: perth
 name: Jens Klump
-organisation: csiro
+organisation: CSIRO
 photo_url: /resources/images/mentors/jens-klump.ashx
 position_title: Science Leader Earth Science Informatics
 type: Data Mentor

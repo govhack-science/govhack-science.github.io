@@ -124,7 +124,7 @@ for row in data.dict:
                     if post.metadata["gid"] != event_gid:
                         print "WARNING: Event .md file does not match event gid. %s, %s" % (event_gid, post.metadata["gid"])
                 else:
-                    print "WARNING: Could not find region '%s' in list of regions." % (event_gid)
+                    print "WARNING: Could not find event '%s' in list of events." % (event_gid)
         
         if found_event == False:
             print "WARNING: Mentor did not say which event they're attending."
