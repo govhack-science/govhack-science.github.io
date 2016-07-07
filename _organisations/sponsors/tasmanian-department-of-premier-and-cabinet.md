@@ -1,9 +1,9 @@
 ---
 gid: tasmanian-department-of-premier-and-cabinet
-title: Tasmanian Department of Premier and Cabinet
-name: Tasmanian Department of Premier and Cabinet
+title: Tasmanian Government
+name: Tasmanian Government
 website_url: 'http://www.dpac.tas.gov.au'
-logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/tas_govt_department_of_premier_and_cabinet.png'
+logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/tas_govt.png'
 sponsor_level: Platinum Sponsor
 sponsor_level_id: platinum
 sponsor_level_desc: Platinum Sponsors
