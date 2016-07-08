@@ -9,7 +9,7 @@ jurisdiction: sa
 location: mount-gambier-youth
 name: Jason Plunkett
 organisation: Penola High School
-photo_url: /resources/images/mentors/jason-plunkett
+photo_url: /resources/images/mentors/jason-plunkett.jpg
 position_title: Deputy Principal
 type: Media Mentor
 ---

@@ -9,7 +9,7 @@ jurisdiction: nsw
 location: sydney
 name: Vinod Ralh
 organisation: irel8
-photo_url: /resources/images/mentors/vinod-ralh
+photo_url: /resources/images/mentors/vinod-ralh.jpg
 position_title: Strategic Advisor, Architect, Mentor.
 type: Business Mentor
 ---

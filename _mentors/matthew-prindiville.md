@@ -6,7 +6,7 @@ gid: matthew-prindiville
 jurisdiction: wa
 location: perth
 name: Matthew Prindiville
-organisation: Main Roads WA
+organisation: main-roads-western-australia
 position_title: Traffic Congestion Program Officer
 type: Business Mentor
 ---
