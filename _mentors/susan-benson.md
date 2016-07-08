@@ -7,7 +7,7 @@ contact:
 gid: susan-benson
 jurisdiction: wa
 location: perth
-name: susan benson
+name: Susan Benson
 organisation: wa_dept_health
 position_title: Deputy Director (Clinical Inovation, Safety and Quality Informatics Division) Armadale Hospital & PathWest Laboratory Medicine
 type: Data Mentor
