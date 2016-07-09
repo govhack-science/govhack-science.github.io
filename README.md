@@ -46,16 +46,28 @@ If you receive a message like:
 Then it means GitHub has upgraded their `github-pages` gem version, so just run `bundle install` from the root directory to upgrade to the latest set of deps GitHub is using.
 
 # Python Tools
-We have a few Python tools to generate JSON files to expose an "API" for govhack.org to consume our content.
+We have a few Python tools to help us manage the ingest of data, and generating a static JSON API.
 
-To install:
+To setup a virtual environment run (from the root directory):
 ```
 virtualenv --system-site-packages venv
 . venv/bin/activate
-pip install python-frontmatter
+pip install -r python/requirements.txt
 ```
 
-These need to be run everytime we change the frontmatter of an .md file so that we always serve the latest content to govhack.org. This generates one `.json.` file for each Markdown file thanks to the magic of [python-frontmatter](https://pypi.python.org/pypi/python-frontmatter/0.2.1).
+## Mentors Ingest
+This script takes a `.csv` file exported from FormStack and generates a set of new .md files.
+
+To run:
+```
+. venv/bin/activate
+python python/mentors.py
+```
+
+The script tries its best to auto-populate the mentor files based on what exists in Jabberwocky (events, organisations, et cetera), but you should *still read the output of the script* to check for any `WARNINGS` you might need to fix up.
+
+## Static API
+This script *need to be run everytime we change the frontmatter of an .md* file so that we always serve the latest content to govhack.org. This generates one `.json.` file for each Markdown file thanks to the magic of [python-frontmatter](https://pypi.python.org/pypi/python-frontmatter/0.2.1).
 
 At this stage it's a straight conversion from one to the other - with no magic to compose the full entity object, include links to and from it, yet. 
 

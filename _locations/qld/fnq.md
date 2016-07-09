@@ -35,7 +35,7 @@ contact:
   email: team@govhackfnq.org
 website:
   name: GovHack FNQ
-  url: http://govhackfnq.com
+  url: http://govhackfnq.org
 is_capital_city: false
 display_weight: 40
 ---

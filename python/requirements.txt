@@ -1,0 +1,6 @@
+PyYAML==3.11
+python-frontmatter==0.2.1
+requests==2.10.0
+six==1.10.0
+tablib==0.11.2
+wsgiref==0.1.2

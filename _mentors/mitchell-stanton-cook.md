@@ -1,6 +1,6 @@
 ---
 name: Mitchell Stanton-Cook
-gid: mitchell-stantoncook
+gid: mitchell-stanton-cook
 photo_url: https://pbs.twimg.com/profile_images/572354625777319936/OAPbPOMH.jpeg
 type: Technical mentor
 position_title: An open data focused developer/DevOPs Engineer/Open Knowledge Australia (BNE)

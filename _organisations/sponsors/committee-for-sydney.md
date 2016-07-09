@@ -1,13 +1,13 @@
 ---
 gid: committee-for-sydney
-title: The Committee for Sydney
-name: The Committee for Sydney
-type: Community
-is_sponsor: true
-website_url: http://www.sydney.org.au/
-logo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhacksponsors/nsw/Committee-for-Sydney.png
-sponsor_level: Bronze
+title: Committee for Sydney
+name: Committee for Sydney
+logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/Committee-for-Sydney.png'
+sponsor_level: Bronze Sponsor
+sponsor_level_id: bronze-sponsor
+sponsor_level_desc: Bronze Event Sponsor
 jurisdiction: nsw
 events:
   - sydney
+is_sponsor: true
 ---

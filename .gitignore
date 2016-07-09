@@ -1,6 +1,7 @@
 _site
 .sass-cache/
 .jekyll-metadata
+.vscode
 config-example.yaml
 *.sublime-workspace
 Gemfile.lock
@@ -10,3 +11,6 @@ venv/
 resources/HorizontalDropDownMenu/
 resources/mega-dropdown
 _layouts/bootstrap-horizontalmegamenu.html
+python/data/
+python/tmp/
+sponsor-engine/

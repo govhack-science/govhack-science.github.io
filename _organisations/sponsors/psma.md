@@ -3,9 +3,10 @@ gid: psma
 title: PSMA
 name: PSMA
 website_url: 'https://www.psma.com.au/'
-logo_url: 'https://gh16.alan.id.au/wp-content/uploads/2016/06/PSMA-Logo-400x4001.jpg'
-sponsor_level: National Gold Sponsors
-sponsor_level_id: national-gold-sponsors
-sponsor_level_desc: 'Thanks to our Gold sponsors:'
+logo_url: 'https://www.govhack.org/wp-content/uploads/2016/06/psma.png'
+sponsor_level: National Gold Sponsor
+sponsor_level_id: gold-sponsor
+sponsor_level_desc: Gold Sponsors
+jurisdiction: australia
 is_sponsor: true
 ---

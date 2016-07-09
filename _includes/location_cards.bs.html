@@ -16,7 +16,9 @@
       </div>
       <div class="media-body">
         <h3 class="media-heading"><a href="{{ location.url }}">{{ location.name }} ({{ location.type }})</a></h3>
-        {{ location.excerpt }}
+        {% unless location.excerpt contains 'window.location' %}
+          {{ location.excerpt }}
+        {% endunless %}
       </div>
   </div>
   {% endif %}

@@ -6,8 +6,8 @@ jurisdiction: qld
 type: Official Event
 eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
-  lat: -27.963322
-  lon: 153.384360
+  lat: -27.960257
+  lon: 153.379248
 venue:
   name: Red Zone, Griffith University Gold Coast Campus
   address: G40, Griffith University Gold Coast Campus, Parklands Drive, Southport 4215
@@ -16,7 +16,7 @@ venue:
   accessibility: Lifts available for access to upper levels of G40
   under_18: At this Venue you must be accompanied by a Guardian at all times
   capacity: 150
-  parking: Free parking will be available to participants in the general parking zones of Griffith University.
+  parking: Limited free parking will be available to participants in the general parking zones of Griffith University using the supplied parking permit.
   public_transport: |
     The best way of getting to and from GovHack Gold Coast from the southern Gold Coast is riding the G: in conjunction with a regular bus service.
     + The Gold Coast University Hospital Station is closest and runs 24 hours between Friday and Sunday night. The G: departs every 10 to 30 minutes towards Broadbeach South.  
