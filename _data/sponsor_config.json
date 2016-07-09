@@ -43,7 +43,7 @@
             "slug": "naming-rights", 
             "columns": 1.5
         }, {
-            "slug": "premier", 
+            "slug": "premier-sponsor", 
             "columns": 3
         }, {
             "slug": "platinum", 
@@ -52,13 +52,13 @@
             "slug": "gold", 
             "columns": 3
         }, {
-            "slug": "silver", 
+            "slug": "silver-sponsor", 
             "columns": 3
         }, {
             "slug": "bronze", 
             "columns": 3
         }, {
-            "slug": "in-kind", 
+            "slug": "in-kind-sponsor", 
             "columns": 4
         }]    
     }
