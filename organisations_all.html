@@ -1,0 +1,11 @@
+---
+layout: bootstrap
+title: All Organisations
+---
+
+{% if site.organisations.size > 0 %}
+    {% for sponsor in site.organisations %}
+        <h3>{{ sponsor.name }}</h3>
+        <img src="{{ sponsor.logo_url }}" style="max-width: 50%;">
+    {% endfor %}
+{% endif %}
