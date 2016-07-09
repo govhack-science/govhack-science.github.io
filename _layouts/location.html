@@ -281,6 +281,35 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
         </div>
         {% endunless %}
+
+    {% comment %}
+    =======================================
+    Render data portals.
+    =======================================
+    {% endcomment %}
+    
+    {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.jurisdiction | map: "gid" %}
+    {% unless page.dataportals == nil %}
+        {% for dataportal in page.dataportals %}
+            {% assign dataportal_ids = dataportal_ids | push: dataportal %}
+        {% endfor %}
+    {% endunless %}
+
+    {% unless dataportal_ids == "" %}
+    <!-- Data Portals Section -->
+    <section id="local-state-data-portals" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" id="dataportals">Local &amp; State Data Portals</h2>
+            </div>
+            </div>
+            <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
     
   </div>
 </section>
