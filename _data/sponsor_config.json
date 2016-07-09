@@ -1,0 +1,65 @@
+{
+    "national": {
+        "defaultColumns": 3,
+        "classes": [{
+            "slug": "lead-agency", 
+            "columns": 1.5
+        }, {
+            "slug": "lead-sponsor",
+            "columns": 1.5
+        }, {
+            "slug": "international-prize-sponsor", 
+            "columns": 3
+        }, {
+            "slug": "platinum-sponsor", 
+            "columns": 3
+        }, {
+            "slug": "gold-sponsor", 
+            "columns": 3
+        }, {
+            "slug": "silver-sponsor", 
+            "columns": 3
+        }, {
+            "slug": "govt-agency-supporter", 
+            "columns": 3
+        }, {
+            "slug": "supporter", 
+            "columns": 3
+        }, {
+            "slug": "foundation-sponsor", 
+            "columns": 3
+        }]    
+    },
+    "state": {
+        "defaultColumns": 3,
+        "classes": [{
+            "slug": "gold-state-gov-wa", 
+            "columns": 2,
+            "classNames": "unbound"
+        }, {
+            "slug": "platinum-state-qld", 
+            "columns": 3
+        }, {
+            "slug": "naming-rights", 
+            "columns": 2
+        }, {
+            "slug": "premier", 
+            "columns": 4
+        }, {
+            "slug": "platinum", 
+            "columns": 4
+        }, {
+            "slug": "gold", 
+            "columns": 4
+        }, {
+            "slug": "silver", 
+            "columns": 4
+        }, {
+            "slug": "bronze", 
+            "columns": 4
+        }, {
+            "slug": "in-kind", 
+            "columns": 4
+        }]    
+    }
+}

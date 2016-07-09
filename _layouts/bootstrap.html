@@ -145,6 +145,9 @@
                         <a href="/prizes.html">Prizes</a>
                     </li>
                     <li>
+                        <a href="/organisations.html">Sponsors</a>
+                    </li>
+                    <li>
                         <a href="/datasets.html">Datasets</a>
                     </li>
                     <li>
@@ -289,7 +292,7 @@
             <div class="main-content">
             {% else %}
             <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3 hidden-xs">
+            <div class="col-sm-4 hidden-xs">
                 <nav id="toc" data-spy="affix" data-toggle="toc">
                     {% if page.sections.cta %}
                     <div class="sidebar-cta">
@@ -302,7 +305,7 @@
                 </nav>
             </div>
             <!-- main content area -->
-            <div class="col-sm-9 main-content">
+            <div class="col-xs-12 col-sm-8 main-content">
             {% endif %}
             
                 {{ content }}
@@ -312,7 +315,7 @@
                 WARNING.
                 Sponsors should be rendered individually per template. 
                 ======================================================
-                  {% include sponsors_national.html %}
+                {% include sponsors_national.html %}
                 {% endcomment %}
 
             </div>
