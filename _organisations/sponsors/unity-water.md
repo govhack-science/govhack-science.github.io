@@ -1,13 +1,15 @@
 ---
 gid: unity-water
-title: Unitywater
-name: Unitywater
-type: Corporate
-is_sponsor: true
-website_url: http://www.unitywater.com.au/
-logo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhacksponsors/qld/unitywater.png
-sponsor_level: Bronze
+title: Unity Water
+name: Unity Water
+type: corporate
+website_url: 'http://unitywater.com'
+logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/unity_water.png'
+sponsor_level: Bronze Sponsor
+sponsor_level_id: bronze-sponsor
+sponsor_level_desc: Bronze Event Sponsor
 jurisdiction: qld
 events:
   - sunshine-coast
+is_sponsor: true
 ---
