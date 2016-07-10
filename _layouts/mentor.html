@@ -22,6 +22,7 @@ layout: bootstrap
                 <dd>{{ page.ask_me_about }}</dd>
             </dl>
         </div>
+        {% if page.location != Nil %}
         <div class="col-md-6 col-xs-12">
           <dl>
             {% if page.location == "virtual" %}
@@ -37,6 +38,7 @@ layout: bootstrap
             {% endif %}
           </dl>
         </div>
+        {% endif %}
     </div>
   </div>
 </section>
