@@ -3,6 +3,7 @@ name: Dataset 3
 id: dataset_3
 dataset_homepage: http://
 jurisdiction: act
+type: highlighted
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.

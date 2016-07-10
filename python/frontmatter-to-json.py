@@ -2,7 +2,7 @@ import frontmatter
 import json
 import os
 
-dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_prizes", "_themes"]
+dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_themes"]
 basepath, pythondir = os.path.split(os.path.dirname(os.path.realpath(__file__)))
 portalurl = "http://portal.govhack.org"
 

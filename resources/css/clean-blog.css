@@ -576,7 +576,7 @@ aside.clients img {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7
+    /*background-color: #f7f7f7*/
 }
 
 .bg-darkest-gray {
@@ -926,6 +926,10 @@ a.location-rego-link.snap-right {
     
 }
 
+small.notice a {
+  text-decoration: underline;
+}
+
 
 /** Stuff to repair the broken gh-ss vs navbar **/
 
@@ -966,7 +970,7 @@ a.location-rego-link.snap-right {
     }
 }
 
-.govhack-sponsors h2 {
+.govhack-sponsors h3 {
     margin-bottom: 15px;
     margin-top: 50px;
     font-size: 1.125em;

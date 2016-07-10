@@ -22,16 +22,23 @@ layout: bootstrap
                 <dd>{{ page.ask_me_about }}</dd>
             </dl>
         </div>
+        {% if page.location != Nil %}
         <div class="col-md-6 col-xs-12">
-            {% if page.location %}
-              {% assign location = site.locations | where: "gid", page.location | first %}
-              {% assign locs = location | join: ", " %}
+          <dl>
+            {% if page.location == "virtual" %}
+              <dt>I'll be available online</dt>
+            {% else %}
+              {% if page.location %}
+                {% assign location = site.locations | where: "gid", page.location | first %}
+                {% assign locs = location | join: ", " %}
+              {% endif %}
+
+              <dt>I'll be at</dt>
+              <dd><a class="location-rego-link" href="{{ location.url }}">{{ location.name }}</a></dd>  
             {% endif %}
-            <dl>
-                <dt>I'll be at</dt>
-                <dd><a class="location-rego-link" href="{{ location.url }}">{{ location.name }}</a></dd>
-            </dl>
+          </dl>
         </div>
+        {% endif %}
     </div>
   </div>
 </section>

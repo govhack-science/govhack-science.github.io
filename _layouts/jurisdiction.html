@@ -162,7 +162,8 @@ layout: bootstrap
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">State Datasets</h2>
+              <h2 class="section-heading" id="datasets">Official State Datasets</h2>
+              <small class="notice">These are just some of your state datasets - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
           </div>
         </div>
         <div class="row">
@@ -189,6 +190,7 @@ layout: bootstrap
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h2 class="section-heading" id="dataportals">State Data Portals</h2>
+              <small class="notice">These are just some of your state data portals - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
           </div>
         </div>
         <div class="row">
@@ -249,3 +251,5 @@ layout: bootstrap
 </section>
 {% endunless %}
 {% endcomment %}
+
+{% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=page.gid jurisdiction_name="State" %}

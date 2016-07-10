@@ -1,10 +1,10 @@
 ---
-ask_me_about: Anything about spatila dat and where to find it for download.
+ask_me_about: Anything about spatial data and where to find it for download.
 contact:
   email: george.mansour@delwp.vic.gov.au
   linkedin: George Mansour
 gid: george-mansour
-jurisdiction: sa
+jurisdiction: vic
 name: George Mansour
 organisation: DELWP
 position_title: Spatial Data Distribution

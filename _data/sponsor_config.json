@@ -34,31 +34,31 @@
         "defaultColumns": 3,
         "classes": [{
             "slug": "gold-state-gov-wa", 
-            "columns": 2,
+            "columns": 1,
             "classNames": "unbound"
         }, {
             "slug": "platinum-state-qld", 
-            "columns": 3
+            "columns": 1.5
         }, {
             "slug": "naming-rights", 
-            "columns": 2
+            "columns": 1.5
         }, {
-            "slug": "premier", 
-            "columns": 4
+            "slug": "premier-sponsor", 
+            "columns": 3
         }, {
             "slug": "platinum", 
-            "columns": 4
+            "columns": 3
         }, {
             "slug": "gold", 
-            "columns": 4
+            "columns": 3
         }, {
-            "slug": "silver", 
-            "columns": 4
+            "slug": "silver-sponsor", 
+            "columns": 3
         }, {
             "slug": "bronze", 
-            "columns": 4
+            "columns": 3
         }, {
-            "slug": "in-kind", 
+            "slug": "in-kind-sponsor", 
             "columns": 4
         }]    
     }

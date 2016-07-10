@@ -16,9 +16,13 @@ venue:
   childcare: Childcare is not provided at GovHack Geelong this year.
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 120
-  parking: http://www.deakin.edu.au/life-at-deakin/get-to-deakin/parking
-  public_transport: Train - Deakin University is a 10 minute walk from Geelong central station, Geelong's main train station (https://ptv.vic.gov.au/route/view/1745 / https://www.vline.com.au/getattachment/892e2d02-e62c-463f-834f-b3bae129b47c/Geelong-Melbourne-(2) ) / Bus - Buses run on Saturdays and Sunday from most Geelong suburbs (https://ptv.vic.gov.au/getting-around/local-areas/view/19).
-  public_transport_last: Train - the last train back from Geelong to Melbourne on Saturdays is 22:50hrs from Geelong Station. The last train back on Sundays is the 22:50hrs from Geelong Station. The last train back on Fridays is the 22:53hrs from Geelong Station. / Bus - the last buses are generally much earlier (8pm or arounds). Please check your individual bus timetable.
+  parking: [Parking at Deakin](http://www.deakin.edu.au/life-at-deakin/get-to-deakin/parking), or [nearby parking in Geelong](http://au.parkopedia.com/parking/carpark/western_beach/3220/geelong/)
+  public_transport: | 
+    + **Train** Deakin University is a 10 minute walk from Geelong central station, [Geelong's main](https://www.vline.com.au/getattachment/892e2d02-e62c-463f-834f-b3bae129b47c/Geelong-Melbourne-%282%29) [train station](https://ptv.vic.gov.au/route/view/1745)
+    + **Bus** Buses run on Saturdays and Sunday from [most Geelong suburbs](https://ptv.vic.gov.au/getting-around/local-areas/view/19).
+  public_transport_last: 
+    + **Train** The last train back from Geelong to Melbourne on Saturdays is 22:50hrs from Geelong Station. The last train back on Sundays is the 22:50hrs from Geelong Station. The last train back on Fridays is the 22:53hrs from Geelong Station. 
+    + **Bus** The last buses are generally much earlier (8pm or arounds). Please check your individual bus timetable.
 catering: Catering TBA closer to the event. Some light meals will be provided, but participants may need to bring some of their own snacks.
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Geelong/19210582349_5022205f2d_o-portrait.jpg
@@ -38,7 +42,7 @@ times:
     open: 8:30 AM
     close: 05:00 PM
 contact:
-  email: 'geelong@govhack.org'
+  email: geelong@govhack.org
   twitter: GovHackGeelong
   facebook: govhackgeelong
 is_capital_city: false

@@ -5,7 +5,7 @@ photo_url: https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/alica-daly
 type: Data Mentor
 position_title: Head of Patent Analytics
 ask_me_about: IP data - IPGOD, IPNOVA
-organisation: ip_australia
+organisation: ip-australia
 jurisdiction: vic
 location: melbourne
 contact:

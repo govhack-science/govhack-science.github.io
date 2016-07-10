@@ -16,13 +16,7 @@ Slick is the carousel plugin for location page images
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
 <script>
 $(function(){
-    // Carousel
-    $('.location-images').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        variableWidth: true
-    });
+    $('.location-images').slick({ infinite: true, slidesToShow: 2, slidesToScroll: 1, variableWidth: true });       // Slick Carousel
 });
 </script>
 
@@ -282,6 +276,57 @@ that our authors (or indeed myself) might indicate a signup link.
         </div>
         {% endunless %}
 
+    {% assign prize_ids = "" %}
+    {% for prize in site.prizes %}
+    {% if prize.jurisdiction == page.jurisdiction or prize.location == page.gid %}
+        {% assign prize_ids = prize_ids | append: prize.id %}
+        {% assign prize_ids = prize_ids | append: "," %}
+    {% endif %}
+    {% endfor %}
+
+    {% unless prize_ids == "" %}
+    <!-- Prizes Section -->
+    <section id="local-state-prizes" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" id="prizes">Local &amp; State Prizes</h2>
+            </div>
+            </div>
+            <div class="row">
+            {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+            {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
+
+    {% assign dataset_ids = "" %}
+    {% for dataset in site.datasets %}
+    {% if dataset.jurisdiction == page.jurisdiction or dataset.location == page.gid %}
+        {% assign dataset_ids = dataset_ids | append: dataset.id %}
+        {% assign dataset_ids = dataset_ids | append: "," %}
+    {% endif %}
+    {% endfor %}
+
+    {% unless dataset_ids == "" %}
+    <!-- Datasets Section -->
+    <section id="local-state-datasets" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" id="datasets">Official Local &amp; State Datasets</h2>
+                <small class="notice">These are just some of your local datasets - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
+            </div>
+            </div>
+            <div class="row">
+            {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
+            {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
+
     {% comment %}
     =======================================
     Render data portals.
@@ -302,6 +347,7 @@ that our authors (or indeed myself) might indicate a signup link.
             <div class="row header-row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading" id="dataportals">Local &amp; State Data Portals</h2>
+                <small class="notice">These are just some of your local data portals - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
             </div>
             </div>
             <div class="row">
@@ -310,6 +356,65 @@ that our authors (or indeed myself) might indicate a signup link.
         </div>
     </section>
     {% endunless %}
+
+    {% comment %}
+    =======================================
+    Render mentors.
+    =======================================
+    {% endcomment %}
+    
+    {% assign mentor_ids = "" %}
+    {% for mentor in site.mentors %}
+    {% if mentor.jurisdiction == page.jurisdiction and mentor.location == page.gid %}
+        {% assign mentor_ids = mentor_ids | append: mentor.gid %}
+        {% assign mentor_ids = mentor_ids | append: "," %}
+    {% endif %}
+    {% endfor %}
+
+    {% unless mentor_ids == "" %}
+    <!-- Local Event Mentors Section -->
+    <section id="local-state-mentors">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" id="mentors">Local Event Mentors</h2>
+            </div>
+            </div>
+            <div class="row">
+            {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+            {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
+    
+    {% assign mentor_ids = "" %}
+    {% for mentor in site.mentors %}
+    {% if mentor.jurisdiction == page.jurisdiction and mentor.location != page.gid %}
+        {% assign mentor_ids = mentor_ids | append: mentor.gid %}
+        {% assign mentor_ids = mentor_ids | append: "," %}
+    {% endif %}
+    {% endfor %}
+
+    {% unless mentor_ids == "" %}
+    <!-- State Mentors Section -->
+    <section id="local-state-mentors">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" id="mentors">State Mentors</h2>
+            </div>
+            </div>
+            <div class="row">
+            {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+            {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
     
   </div>
 </section>
+
+{% include sponsor_block.bs.html sponsor_level="local" jurisdiction_gid=page.jurisdiction jurisdiction_name="Local" location_gid=page.gid %}
+{% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=page.jurisdiction jurisdiction_name="State" %}
