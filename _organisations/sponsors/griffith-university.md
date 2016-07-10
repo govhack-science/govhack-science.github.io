@@ -9,5 +9,6 @@ sponsor_level_id: in-kind-sponsor
 jurisdiction: qld
 events:
   - brisbane
+  - gold-coast
 is_sponsor: true
 ---
