@@ -15,9 +15,13 @@
     {% if mentor %}
         {% assign mentor_org = site.organisations | where: "gid", mentor.organisation | first %}
         <div class="media mentor">
-            <div class="media-left">
+            <div class="media-left text-center">
                 <a href="{{ mentor.url }}">
-                    <img src="{{ mentor.photo_url | default: secret_squirrel }}" style="max-width: 105px; max-height: 105px;">
+                    {% if mentor.photo_url %}
+                        <img src="{{ mentor.photo_url | default: secret_squirrel }}" style="max-width: 105px; max-height: 105px;">
+                    {% else %}
+                        <i class="fa fa-user fa-5x"></i>
+                    {% endif %}
                 </a>
             </div>
             <div class="media-body">
