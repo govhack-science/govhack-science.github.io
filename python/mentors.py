@@ -10,7 +10,7 @@ import yaml
 import io
 
 # Config
-csvfile = "python/data/mentors_formstack.csv"
+csvfile = "python/data/mentors/mentors_formstack.csv"
 mentorsdir = "_mentors/"
 organisationsdir = "_organisations/"
 eventsdir = "_locations/"
