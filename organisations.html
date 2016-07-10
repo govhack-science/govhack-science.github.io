@@ -18,5 +18,11 @@ title: Sponsors
 {% for jurisdiction in site.jurisdictions %}
     {% unless jurisdiction.gid == "australia" %}
         {% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=jurisdiction.gid jurisdiction_name=jurisdiction.name %}
+
+        {% for location in site.locations %}
+            {% if location.jurisdiction == jurisdiction.gid %}
+                {% include sponsor_block.bs.html sponsor_level="local" jurisdiction_gid=jurisdiction.gid jurisdiction_name=location.name location_gid=location.gid %}
+            {% endif %}
+        {% endfor %}
     {% endunless %}
 {% endfor %}

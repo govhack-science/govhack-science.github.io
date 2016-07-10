@@ -17,16 +17,51 @@
             {% assign sponsor_cat = "state" %}
         {% endif %}
 
-        {% if sponsors.size > 0 %}
+
+        {% comment %}
+        =======================================
+        Determine if we have ANY sponsors to display.
+        =======================================
+        {% endcomment %}
+
+        {% assign sponsors_by_level = sponsors | group_by: "sponsor_level_id" %}
+
+        {% assign has_sponsors = false %}
+        {% if include.sponsor_level == "local" %}
+            {% assign local_sponsors = false %}
+
+            {% for sponsor_level in site.data.sponsor_config[sponsor_cat].classes %}
+                {% for sponsor_cat in sponsors_by_level %}
+                    {% if sponsor_cat.name == sponsor_level.slug %}
+                        {% for sponsor in sponsor_cat.items %}
+                            {% if sponsor.events contains include.location_gid %}
+                                {% assign local_sponsors = true %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            {% if local_sponsors == true %}
+                {% assign has_sponsors = true %}
+            {% endif %}
+        {% elsif sponsors.size > 0 %}
+            {% assign has_sponsors = true %}
+        {% endif %}
+
+        {% if has_sponsors %}
             <!-- {{ include.jurisdiction_name }} Sponsors -->
             <div class="row header-row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</h2>
+                {% if include.sponsor_level == "local" %}
+                    <h3 class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</h3>
+                {% else %}
+                    <h2 class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</h2>
+                {% endif %}
             </div>
             </div>
             <div class="row">
-            {% assign sponsors_by_level = sponsors | group_by: "sponsor_level_id" %}
-
                 <div class="container-fluid govhack-sponsors">
                 {% for sponsor_level in site.data.sponsor_config[sponsor_cat].classes %}
                     {% assign col_width = 12 | divided_by: sponsor_level.columns | round: 0 %}
