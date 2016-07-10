@@ -926,6 +926,10 @@ a.location-rego-link.snap-right {
     
 }
 
+small.notice a {
+  text-decoration: underline;
+}
+
 
 /** Stuff to repair the broken gh-ss vs navbar **/
 
