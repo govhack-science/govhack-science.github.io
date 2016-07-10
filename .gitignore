@@ -15,3 +15,5 @@ python/data/
 python/tmp/
 sponsor-engine/
 _prizes/
+
+nohup.out
