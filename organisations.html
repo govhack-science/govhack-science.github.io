@@ -14,3 +14,9 @@ title: Sponsors
 </section>-->
 
 {% include sponsor_block.bs.html sponsor_level="national" jurisdiction_gid="australia" jurisdiction_name="National" %}
+
+{% for jurisdiction in site.jurisdictions %}
+    {% unless jurisdiction.gid == "australia" %}
+        {% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=jurisdiction.gid jurisdiction_name=jurisdiction.name %}
+    {% endunless %}
+{% endfor %}
