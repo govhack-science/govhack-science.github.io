@@ -4,7 +4,7 @@ gid: andrew-mcdermott
 type: Data Mentor
 position_title: Assistant Director - Data Integrity
 ask_me_about: ABR data holdings
-organisation: abr
+organisation: australian-business-register
 jurisdiction: qld
 location: brisbane
 contact:

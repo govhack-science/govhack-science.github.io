@@ -5,7 +5,7 @@ photo_url: https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdmAAAA
 type: Data Mentor
 position_title: Business Analyst
 ask_me_about: ABN lookup data
-organisation: abr
+organisation: australian-business-register
 jurisdiction: act
 location: canberra
 contact:
