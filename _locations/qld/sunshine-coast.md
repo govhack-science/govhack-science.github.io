@@ -61,20 +61,3 @@ Special thanks to our local sponsors Noosa Council, Sunshine Coast Council, Regi
 Also, special thanks to our venue sponsor Spark Bureau for providing us with a place to call home for the weekend!
 
 In addition, our sponsors are committed to working with participants after the weekend to ensure that all innovative ideas get what they need to get off the ground. Look forward to seeing you at Spark Bureau on Ocean Street for a great event! Until then, keep in touch and tweet us @GovHackSC or get our attention by using our hashtag #GovHackSC
-
-
-## Silver Sponsors
-
-<div class="row">
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="sc-council" %}</div>
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="noosa-council" %}</div>
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="rda-sunshine-coast" %}</div>
-</div>
-
-## Bronze Sponsors
-
-<div class="row">
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="uni-sc" %}</div>
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="unity-water" %}</div>
-  <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="spark-bureau" %}</div>
-</div>
