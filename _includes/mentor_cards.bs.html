@@ -29,7 +29,7 @@
                     <a href="{{ mentor.url }}">{{ mentor.name }}</a><br/> 
                 </h3>
                 <div class="media-subheading"><small class="text-muted">
-                    {{ mentor.position_title }}, {{ mentor_org.name | default: mentor.organisation }}
+                    {{ mentor.position_title }} &ndash; {{ mentor_org.name | default: mentor.organisation }}
                 </small></div>
 
                 {% comment %}
