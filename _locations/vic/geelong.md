@@ -12,10 +12,18 @@ venue:
   name: Deakin University Geelong Waterfront Campus, Room D3.211, Building D Hay Building, Level 3, Room 211
   address: 1 Gheringhap Street
   host: Kathy Reid
-  accessibility: Mobility accessibility has been confirmed via by walking the route to the room without using stairs (http://www.deakin.edu.au/life-at-deakin/health-wellbeing-safety/disability-support/access). From the Gheringhap Street entrance, wheel straight ahead to security. At the elevators to the right of security, go to Level 3 (ground level is level 2). Exit the elevator, and go right. Enter the door to the right of the vending maching. Take the first right to the end of the passageway and you are at room D3.211.
+  accessibility: Mobility accessibility has been confirmed via by [walking the route to the room without using stairs](http://www.deakin.edu.au/life-at-deakin/health-wellbeing-safety/disability-support/access). From the Gheringhap Street entrance, wheel straight ahead to security. At the elevators to the right of security, go to Level 3 (ground level is level 2). Exit the elevator, and go right. Enter the door to the right of the vending maching. Take the first right to the end of the passageway and you are at room D3.211.
   childcare: Childcare is not provided at GovHack Geelong this year.
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 120
+  parking: |
+    [Parking at Deakin](http://www.deakin.edu.au/life-at-deakin/get-to-deakin/parking), or [nearby parking in Geelong](http://au.parkopedia.com/parking/carpark/western_beach/3220/geelong/)
+  public_transport: | 
+    + **Train** Deakin University is a 10 minute walk from Geelong central station, [Geelong's main](https://www.vline.com.au/getattachment/892e2d02-e62c-463f-834f-b3bae129b47c/Geelong-Melbourne-%282%29) [train station](https://ptv.vic.gov.au/route/view/1745)
+    + **Bus** Buses run on Saturdays and Sunday from [most Geelong suburbs](https://ptv.vic.gov.au/getting-around/local-areas/view/19).
+  public_transport_last: |
+    + **Train** The last train back from Geelong to Melbourne on Saturdays is 2250hrs from Geelong Station. The last train back on Sundays is the 2250hrs from Geelong Station. The last train back on Fridays is the 2253hrs from Geelong Station. 
+    + **Bus** The last buses are generally much earlier (8pm or arounds). Please check your individual bus timetable.
 catering: Catering TBA closer to the event. Some light meals will be provided, but participants may need to bring some of their own snacks.
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Geelong/19210582349_5022205f2d_o-portrait.jpg
