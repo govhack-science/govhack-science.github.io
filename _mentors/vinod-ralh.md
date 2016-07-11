@@ -10,7 +10,7 @@ location: sydney
 name: Vinod Ralh
 organisation: irel8
 photo_url: /resources/images/mentors/vinod-ralh.jpg
-position_title: Strategic Advisor, Architect, Mentor.
+position_title: Strategic Advisor, Founder
 type: Business Mentor
 ---
 
