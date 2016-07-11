@@ -21,7 +21,7 @@ venue:
     + **Train** Deakin University is a 10 minute walk from Geelong central station, [Geelong's main](https://www.vline.com.au/getattachment/892e2d02-e62c-463f-834f-b3bae129b47c/Geelong-Melbourne-%282%29) [train station](https://ptv.vic.gov.au/route/view/1745)
     + **Bus** Buses run on Saturdays and Sunday from [most Geelong suburbs](https://ptv.vic.gov.au/getting-around/local-areas/view/19).
   public_transport_last: |
-    + **Train** The last train back from Geelong to Melbourne on Saturdays is 22:50hrs from Geelong Station. The last train back on Sundays is the 22:50hrs from Geelong Station. The last train back on Fridays is the 22:53hrs from Geelong Station. 
+    + **Train** The last train back from Geelong to Melbourne on Saturdays is 2250hrs from Geelong Station. The last train back on Sundays is the 2250hrs from Geelong Station. The last train back on Fridays is the 2253hrs from Geelong Station. 
     + **Bus** The last buses are generally much earlier (8pm or arounds). Please check your individual bus timetable.
 catering: Catering TBA closer to the event. Some light meals will be provided, but participants may need to bring some of their own snacks.
 images:
