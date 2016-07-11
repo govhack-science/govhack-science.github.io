@@ -42,7 +42,7 @@ times:
     open: 8:30 AM
     close: 05:00 PM
 contact:
-  email: geelong@govhack.org
+  email: 'geelong@govhack.org'
   twitter: GovHackGeelong
   facebook: govhackgeelong
 is_capital_city: false
