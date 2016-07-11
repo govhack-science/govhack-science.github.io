@@ -16,7 +16,6 @@ venue:
   childcare: Childcare is not provided at GovHack Geelong this year.
   under_18: At this Venue you must be accompanied by a Guardian at all times.
   capacity: 120
-  parking: [Parking at Deakin](http://www.deakin.edu.au/life-at-deakin/get-to-deakin/parking), or [nearby parking in Geelong](http://au.parkopedia.com/parking/carpark/western_beach/3220/geelong/)
 catering: Catering TBA closer to the event. Some light meals will be provided, but participants may need to bring some of their own snacks.
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Geelong/19210582349_5022205f2d_o-portrait.jpg
