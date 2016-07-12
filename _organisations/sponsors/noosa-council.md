@@ -11,7 +11,5 @@ sponsor_level_desc: Silver Sponsors
 jurisdiction: qld
 events:
   - sunshine-coast
-dataportals:
-  - noosa
 is_sponsor: true
 ---

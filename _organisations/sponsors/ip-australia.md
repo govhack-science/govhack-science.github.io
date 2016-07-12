@@ -9,6 +9,4 @@ sponsor_level_id: lead-agency
 sponsor_level_desc: Lead Agency
 jurisdiction: australia
 is_sponsor: true
-contact:
-  twitter: ipaustralia_OCE
 ---
