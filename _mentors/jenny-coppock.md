@@ -2,12 +2,12 @@
 name: Jenny Coppock
 gid: jenny-coppock
 photo_url: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAWBAAAAJDI3YjQ2N2I3LTU1NjItNGJkYS05MGE4LWVjYTAxZjgxMzMzOQ.jpg
-type: Data mentor
+type: Data Mentor
 position_title: Business Development Officer
 ask_me_about: ABR Explorer, ABR data and systems, National data sets & maps, economic modelling and the value of Government data.
 organisation: ATO
-jurisdiction: act
-location: canberra
+jurisdiction: nsw
+location: sydney
 availability:
   connections: true
   friday: 6pm onwards
