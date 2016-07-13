@@ -11,6 +11,8 @@ name: Damian Shepherd
 organisation: Spur@Landgate
 position_title: Spur team member
 type: Data Mentor
+dataportals:
+  - datawagovau
 ---
 
 Spur team member

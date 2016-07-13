@@ -110,7 +110,7 @@ for row in data.dict:
         events = ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
         found_event = False
         for event in events:
-            col_name = "GovHack %s Events" % (event)
+            col_name = "%s Events" % (event)
             if len(row[col_name]) > 0:
                 found_event = True
                 event_gid = row[col_name].lower().replace(" ", "-").replace("-official-event", "")
