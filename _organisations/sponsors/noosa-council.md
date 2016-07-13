@@ -12,4 +12,6 @@ jurisdiction: qld
 events:
   - sunshine-coast
 is_sponsor: true
+dataportals:
+  - noosa
 ---

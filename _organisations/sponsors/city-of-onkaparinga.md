@@ -12,4 +12,6 @@ jurisdiction: sa
 events:
   - adelaide-seaford
 is_sponsor: true
+dataportals:
+  - onkaparinga
 ---
