@@ -2,7 +2,7 @@
 name: Geoffrey Huntley
 gid: geoffrey-huntley
 photo_url:  https://pbs.twimg.com/profile_images/378800000618501748/d64afcc1e67c486cfd53bede43faf870.jpeg
-type: Technical mentor
+type: Technical Mentor
 position_title: Software Engineer
 ask_me_about: .NET Open Source
 jurisdiction: nsw

@@ -5,7 +5,7 @@ photo_url: https://pbs.twimg.com/profile_images/572354625777319936/OAPbPOMH.jpeg
 type: Technical mentor
 position_title: An open data focused developer/DevOPs Engineer/Open Knowledge Australia (BNE)
 ask_me_about: Python, CKAN, Socrata, Cloud Computing, Docker, CI-CD, LEAN, Big Data
-organisation: XVT Solutions
+organisation: xvt-solutions
 jurisdiction: qld
 location: brisbane
 availability:

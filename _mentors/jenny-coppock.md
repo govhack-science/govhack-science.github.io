@@ -5,7 +5,7 @@ photo_url: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAWBAAAA
 type: Data Mentor
 position_title: Business Development Officer
 ask_me_about: ABR Explorer, ABR data and systems, National data sets & maps, economic modelling and the value of Government data.
-organisation: ATO
+organisation: ato
 jurisdiction: nsw
 location: sydney
 availability:
