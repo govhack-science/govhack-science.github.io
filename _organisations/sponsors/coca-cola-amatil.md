@@ -11,6 +11,5 @@ sponsor_level_desc: In-Kind Sponsors
 jurisdiction: sa
 events:
   - adelaide
-  - adelaide
 is_sponsor: true
 ---
