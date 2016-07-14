@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>GovHack 2016 Ticket Sale Billboard</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+
+<script src="custom.js"></script>
+
+<style>
+	*{
+		font-family: 'Roboto', sans-serif;
+		margin: 0px auto;
+		font-size: 14px;
+	}
+	
+	h2{
+		text-align: center;
+	}
+	
+	table .header-fixed {
+		position: fixed;
+		top: 40px;
+		z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+		border-bottom: 1px solid #d5d5d5;
+		-webkit-border-radius: 0;
+		 -moz-border-radius: 0;
+		      border-radius: 0;
+		-webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+		 -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+		      box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+}
+	
+</style>
+<script language="javascript" type="text/javascript" >
+    $(document).ready(function(){
+    
+      // make the header fixed on scroll
+      //$('.table-fixed-header').fixedHeader();
+    
+    });
+  </script>
+</head>
+<body>
+	<h2>GovHack 2016 Ticket Sale Billboard</h2>
+	<table class="table table-bordered table-hover table-fixed-header">
+		<thead class="header">
+			<tr>
+				<th>State</th>
+				<th>Ticket Name</th>
+				<th>Ticket Sold</th>
+				<th>Ticket Availability</th>
+				<th>Ticket Total</th>
+				<th>On Sale Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">Australian Capital Territory</td></tr>
+			<tr class="act"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">New South Wales</td></tr>
+			<tr class="nsw"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">Queensland</td></tr>
+			<tr class="qld"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">South Australia</td></tr>
+			<tr class="sa"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">Tasmania</td></tr>
+			<tr class="tas"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">Victoria</td></tr>
+			<tr class="vic"></tr>
+			<tr><td colspan="6" style="text-align: center; font-weight: 500;">Western Australia</td></tr>
+			<tr class="wa"></tr>
+		</tbody>
+	</table>
+</body>
+</html>
+
