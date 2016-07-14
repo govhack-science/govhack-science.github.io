@@ -77,7 +77,7 @@ for row in data.dict:
             }
         }
 
-        organisation_gid = row["Agency/Organisation"].lower().replace(" ", "-").replace(",", "").strip()
+        organisation_gid = row["Agency/Organisation"].lower().strip().replace(" ", "-").replace(",", "")
         if organisation_gid in organisation_names:
             mentor["organisation"] = organisation_gid
         else:
