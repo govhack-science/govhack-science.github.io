@@ -8,6 +8,7 @@ jurisdiction: qld
 location: brisbane
 name: Jacinta Holloway
 organisation: australian-bureau-of-statistics
+photo_url: /resources/images/mentors/jacinta-holloway.jpg
 position_title: Senior Project Officer
 type: Data Mentor
 ---
