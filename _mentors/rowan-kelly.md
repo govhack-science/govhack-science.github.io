@@ -9,7 +9,7 @@ location: adelaide
 name: Rowan Kelly
 organisation: australian-bureau-of-statistics
 photo_url: /resources/images/mentors/rowan-kelly.jpg
-position_title: Data and Metadata project officer
+position_title: Data and Metadata Project Officer
 type: Data Mentor
 ---
 

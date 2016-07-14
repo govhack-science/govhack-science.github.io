@@ -8,7 +8,7 @@ jurisdiction: vic
 location: melbourne
 name: Seema Srivastava
 organisation: australian-bureau-of-statistics
-position_title: Vic Census team
+position_title: Vic Census Team
 type: Data Mentor
 ---
 
