@@ -7,7 +7,7 @@ gid: suzanne-slegers
 jurisdiction: vic
 location: melbourne
 name: Suzanne Slegers
-organisation: bureau-of-meterology
+organisation: bureau-of-meteorology
 position_title: Data Services Architect
 type: Data Mentor
 ---

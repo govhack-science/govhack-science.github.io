@@ -1,5 +1,5 @@
 ---
-gid: bureau-of-meterology
+gid: bureau-of-meteorology
 title: Bureau of Meterology
 name: Bureau of Meterology
 website_url: 'http://www.bom.gov.au'
