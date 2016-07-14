@@ -45,12 +45,3 @@ dataportals:
 ---
 
 GovHack Canberra will be held at the state-of-the-art Snow Centre at Canberra Grammar School. With many rooms for hacking, 80-inch 4K interactive TVs for demonstrating, open break-out spaces for collaborating, a high speed 1Gbps fibre internet link, all hosted within the nation's capital it should be a super awesome event for all GovHackers!
-
----
-
-### In-kind sponsors
-<div class="row">
-    <div class="col-md-4 col-xs-12">{% include organisation_logos.bs.html organisation_ids="cgs" %}</div>
-</div>
-
-
