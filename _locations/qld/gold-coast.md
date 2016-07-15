@@ -55,15 +55,14 @@ website:
   name: GovHack GC
   url: http://govhackgc.co
 catering: |
-  The following meals will be available from reputable local caterers:
-
-  Friday- Dinner and networking drinks.
-  Saturday- Breakfast, lunch and dinner.
-  Sunday- Breakfast, lunch and dinner and drinks.
-
-  There will also be plenty of snacks and drinks available all day Saturday and Sunday.
-
-  We are also supplying free barista made coffee on Saturday and Sunday morning.
+  We will be supplying the following meals from onsite caterers, including Providore University and Burger Urge:
+  + Friday evening- Gourmet mini pizzas, sliders and networking drinks. 
+  + Saturday & Sunday breakfast- Barista coffee, fruit platter, croissants and danishes. 
+  + Saturday lunch- Gourmet sausages and salad.
+  + Saturday dinner- Three Kings Pizza.
+  + Sunday lunch- Lunch bags with wraps and snacks.
+  + Sunday evening- Selection of Burger Urge burgers and networking drinks.
+  There will also be plenty of snacks and drinks available throughout the weekend.
 dataportals:
   - gold-coast
 is_capital_city: false
