@@ -1,7 +1,8 @@
 ---
-gid: griffith-university
+gid: griffith-university-2
 title: Griffith University
 name: Griffith University
+type: University
 website_url: 'https://www.griffith.edu.au'
 logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/griffith_university.png'
 sponsor_level: In Kind Sponsor

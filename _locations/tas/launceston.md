@@ -1,6 +1,6 @@
 ---
 gid: Launceston
-name: launceston
+name: Launceston
 prefix: GovHack
 jurisdiction: tas
 type: Official Event
