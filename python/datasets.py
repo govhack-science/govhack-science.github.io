@@ -70,6 +70,7 @@ datasetsdir = "_datasets/2016/"
 organisationsdir = "_organisations/"
 eventsdir = "_locations/"
 tmpdir = "python/tmp/"
+excerpt_separator = "<!--more-->"
 
 # Init
 if not os.path.exists(tmpdir):
@@ -135,7 +136,7 @@ for row in data:
     if row[0] == "":
         continue
 
-    dataset_stub = {}
+    dataset_stub = {"excerpt_separator": excerpt_separator}
     event_locations = []
     found_event = False
     
@@ -243,6 +244,15 @@ for row in data:
                 print "WARNING: Doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
                 continue
+
+        # Description to excerpt
+        # (For some reason automatic excerpt generation failed.)
+        dataset_description = dataset_description.strip()
+        idx = dataset_description.find("\n")
+        if idx != -1:
+            dataset_excerpt = dataset_description[0:idx].strip()
+            dataset_description_remain = dataset_description[idx:].strip()
+            dataset_description = dataset_excerpt + "\n\n" + excerpt_separator + "\n\n" + dataset_description_remain
 
         # Assign our dataset a globally unique id
         dataset_gid = dataset_name.lower().replace(" ", "-").replace("'", "")

@@ -4,6 +4,7 @@ events:
 - sydney
 - parramatta
 - camperdown-games
+excerpt_separator: <!--more-->
 gid: public-transport-and-roads-data-sets-including-real-time-data
 jurisdiction: nsw
 name: Public Transport and Roads data sets including Real time data
