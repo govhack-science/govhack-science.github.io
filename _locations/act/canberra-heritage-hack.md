@@ -36,6 +36,8 @@ contact:
   twitter: UCHeritageHack
 is_capital_city: true
 display_weight: 50
+dataportals:
+  - trove
 ---
 
 Heritage Hack is a theme node focusing on the use of cultural heritage data. We'll be bringing together hackers and content specialists to explore new ways of working with digital collections. What could you make with 200 million newspaper articles, or millions of historical photographs? We're keen to find out!
