@@ -126,7 +126,7 @@ layout: bootstrap
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
   {% if prize.jurisdiction == page.gid %}
-    {% assign prize_ids = prize_ids | append: prize.id %}
+    {% assign prize_ids = prize_ids | append: prize.gid %}
     {% assign prize_ids = prize_ids | append: "," %}
   {% endif %}
 {% endfor %}
@@ -148,15 +148,10 @@ layout: bootstrap
 </section>
 {% endunless %}
 
-{% assign dataset_ids = "" %}
-{% for dataset in site.datasets %}
-  {% if dataset.jurisdiction == page.gid %}
-    {% assign dataset_ids = dataset_ids | append: dataset.id %}
-    {% assign dataset_ids = dataset_ids | append: "," %}
-  {% endif %}
-{% endfor %}
+{% assign jurisdiction_organisations = site.organisations | where: "jurisdiction", page.gid %}
+{% assign jurisdiction_organisations_len = jurisdiction_organisations | size %}
 
-{% unless dataset_ids == "" %}
+{% if jurisdiction_organisations_len > 0 %}
 <!-- Datasets Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
@@ -167,12 +162,11 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
-          {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+          {% include dataset_cards_by_organisation.bs.html organisations=jurisdiction_organisations org_heading_lvl="h3" %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
 {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" %}
 {% unless site.dataportals == nil %}

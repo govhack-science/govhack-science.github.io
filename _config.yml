@@ -49,7 +49,6 @@ defaults:
       type: datasets
     values:
       layout: dataset
-      permalink: /datasets/:title.html
       
   - scope:
       path: "_dataportals"

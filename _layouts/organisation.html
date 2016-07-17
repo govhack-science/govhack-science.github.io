@@ -63,7 +63,7 @@ layout: bootstrap
 {% for prize in site.prizes %}
   {% for organisation_id in prize.organisations %}
     {% if organisation_id == page.gid %}
-      {% assign prize_ids = prize_ids | append: prize.id %}
+      {% assign prize_ids = prize_ids | append: prize.gid %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}
   {% endfor %}
@@ -124,21 +124,44 @@ layout: bootstrap
 </section>-->
 {% endunless %}
 
-{% if page.datasets %}
+{% assign org_datasets = site.datasets | where: "organisation", page.gid %}
+
+{% if org_datasets %}
 <!-- Datasets Section -->
 <section id="portfolio">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">Datasets</h2>
+              <h2 class="section-heading">Our Datasets</h2>
           </div>
         </div>
         <div class="row">
-          {% include dataset_cards.bs.html dataset_ids=page.datasets %}
+          {% include dataset_cards.bs.html datasets=org_datasets %}
         </div>
     </div>
 </section>
 {% endif %}
+
+{% if page.dataportals %}
+<!-- Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% comment %}
+==============================================================
+We're not doing these this year.
+==============================================================
 
 {% if page.themes %}
 <!-- Themes Section -->
@@ -151,22 +174,6 @@ layout: bootstrap
         </div>
         <div class="row">
           {% include theme_cards.bs.html theme_ids=page.themes %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-{% if page.dataportals %}
-<!-- Data Portals Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="dataportals">Data Portals</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
         </div>
     </div>
 </section>
@@ -187,3 +194,4 @@ layout: bootstrap
     </div>
 </section>
 {% endif %}
+{% endcomment %}

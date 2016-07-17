@@ -15,8 +15,8 @@ layout: default
       {% assign prize_ids = "" %}
       {% for prize in site.prizes %}
         {% for dataset_id in prize.datasets %}
-          {% if dataset_id == page.id %}
-            {% assign prize_ids = prize_ids | append: prize.id %}
+          {% if dataset_id == page.gid %}
+            {% assign prize_ids = prize_ids | append: prize.gid %}
             {% assign prize_ids = prize_ids | append: "," %}
           {% endif %}
         {% endfor %}

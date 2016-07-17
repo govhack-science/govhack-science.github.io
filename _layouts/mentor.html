@@ -141,7 +141,7 @@ layout: bootstrap
 {% for prize in site.prizes %}
   {% for organisation_id in prize.organisations %}
     {% if organisation_id == page.gid %}
-      {% assign prize_ids = prize_ids | append: prize.id %}
+      {% assign prize_ids = prize_ids | append: prize.gid %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}
   {% endfor %}

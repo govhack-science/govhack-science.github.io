@@ -19,7 +19,7 @@ layout: bootstrap
 {% for prize in site.prizes %}
   {% for theme_id in prize.themes %}
     {% if theme_id == page.id %}
-      {% assign prize_ids = prize_ids | append: prize.id %}
+      {% assign prize_ids = prize_ids | append: prize.gid %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}
   {% endfor %}

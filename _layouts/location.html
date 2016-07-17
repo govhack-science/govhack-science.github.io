@@ -278,10 +278,10 @@ that our authors (or indeed myself) might indicate a signup link.
 
     {% assign prize_ids = "" %}
     {% for prize in site.prizes %}
-    {% if prize.jurisdiction == page.jurisdiction or prize.location == page.gid %}
-        {% assign prize_ids = prize_ids | append: prize.id %}
-        {% assign prize_ids = prize_ids | append: "," %}
-    {% endif %}
+        {% if prize.jurisdiction == page.jurisdiction or prize.location == page.gid %}
+            {% assign prize_ids = prize_ids | append: prize.gid %}
+            {% assign prize_ids = prize_ids | append: "," %}
+        {% endif %}
     {% endfor %}
 
     {% unless prize_ids == "" %}
@@ -301,15 +301,21 @@ that our authors (or indeed myself) might indicate a signup link.
     </section>
     {% endunless %}
 
-    {% assign dataset_ids = "" %}
+    {% assign local_org_ids = "" %}
+    {% assign state_org_ids = "" %}
     {% for dataset in site.datasets %}
-    {% if dataset.jurisdiction == page.jurisdiction or dataset.location == page.gid %}
-        {% assign dataset_ids = dataset_ids | append: dataset.id %}
-        {% assign dataset_ids = dataset_ids | append: "," %}
-    {% endif %}
+        {% if dataset.jurisdiction == page.jurisdiction and dataset.events contains page.gid %}
+            {% if dataset.events contains page.gid %}
+                {% assign local_org_ids = local_org_ids | append: dataset.organisation %}
+                {% assign local_org_ids = local_org_ids | append: "," %}
+            {% else %}
+                {% assign state_org_ids = state_org_ids | append: dataset.organisation %}
+                {% assign state_org_ids = state_org_ids | append: "," %}
+            {% endif %}
+        {% endif %}
     {% endfor %}
 
-    {% unless dataset_ids == "" %}
+    {% unless local_org_ids == "" AND state_org_ids == "" %}
     <!-- Datasets Section -->
     <section id="local-state-datasets" class="bg-light-gray">
         <div class="container">
@@ -320,8 +326,11 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
             </div>
             <div class="row">
-            {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
-            {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+                {% assign local_org_ids_list = local_org_ids | lstrip | split: "," %}
+                {% include dataset_cards_by_organisation.bs.html organisation_ids=local_org_ids_list org_heading_lvl="h3" %}
+
+                {% assign state_org_ids_list = state_org_ids | lstrip | split: "," %}
+                {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
             </div>
         </div>
     </section>

@@ -1,6 +1,24 @@
-{% for organisation in site.organisations %}
-  {% if organisation.datasets %}
-    <h3>Datasets from <a href="{{ organisation.url }}">{{ organisation.name }}</a></h3>
-    {% include dataset_cards.bs.html dataset_ids=organisation.datasets %}
+{% if include.organisations %}
+  {% assign organisation_ids = include.organisations | map: "gid" %}
+{% else %}
+  {% assign organisation_ids = include.organisation_ids %}
+{% endif %}
+
+{% assign org_heading_lvl = "h4" %}
+{% if include.org_heading_lvl %}
+  {% assign org_heading_lvl = include.org_heading_lvl %}
+{% endif %}
+
+{% for organisation_id in organisation_ids %}
+  {% assign organisation = site.organisations | where: "gid", organisation_id | first %}
+
+  {% if organisation %}
+    {% assign datasets = site.datasets | where: "organisation", organisation.gid %}
+    {% assign dataset_len = datasets | size %}
+
+    {% if dataset_len > 0 %}
+      <{{ org_heading_lvl }}><a href="{{ organisation.url }}">{{ organisation.name }}</a></{{ org_heading_lvl }}>
+      {% include dataset_cards.bs.html datasets=datasets %}
+    {% endif %}
   {% endif %}
 {% endfor %}

@@ -4,21 +4,23 @@ layout: bootstrap
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
-    <!--<div class="row header-row">
-        <div class="col-lg-12 text-center">
-            <h1>{{ page.name }}</h1>
-        </div>
-    </div>-->
     <div class="row">
-        <a href="{{ page.dataset_homepage }}">
-            <h3 style="display: inline-block;">Get The Data</h3>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
-            </span>
-        </a>
-        
-        {{ content }}
+      <h3 data-toc-skip>{{ page.name }}</h3>
+
+      <a href="{{ page.dataset_url }}">
+          <h3 data-toc-skip style="display: inline-block;">Dataset Link</h3>
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+
+      {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
+      {% if dataset_org %}
+        {% include organisation_cards.bs.html organisation_ids=dataset_org.gid %}
+      {% endif %}
+      
+      {{ page.content }}
     </div>
   </div>
 </section>
@@ -26,8 +28,8 @@ layout: bootstrap
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
   {% for dataset_id in prize.datasets %}
-    {% if dataset_id == page.id %}
-      {% assign prize_ids = prize_ids | append: prize.id %}
+    {% if dataset_id == page.gid %}
+      {% assign prize_ids = prize_ids | append: prize.gid %}
       {% assign prize_ids = prize_ids | append: "," %}
     {% endif %}
   {% endfor %}
@@ -45,60 +47,6 @@ layout: bootstrap
         <div class="row">
           {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
           {% include prize_cards.bs.html prize_ids=prize_ids_list %}
-        </div>
-    </div>
-</section>
-{% endunless %}
-
-{% assign organisation_ids = "" %}
-{% for organisation in site.organisations %}
-  {% for dataset_id in organisation.datasets %}
-    {% if dataset_id == page.id %}
-      {% assign organisation_ids = organisation_ids | append: organisation.gid %}
-      {% assign organisation_ids = organisation_ids | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% unless organisation_ids == "" %}
-<!-- Organisations Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="organisations">Organisations</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
-          {% include organisation_cards.bs.html organisation_ids=organisation_ids_list %}
-        </div>
-    </div>
-</section>
-{% endunless %}
-
-{% assign theme_ids = "" %}
-{% for theme in site.themes %}
-  {% for dataset_id in theme.datasets %}
-    {% if dataset_id == page.id %}
-      {% assign theme_ids = theme_ids | append: theme.id %}
-      {% assign theme_ids = theme_ids | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% unless theme_ids == "" %}
-<!-- Themes Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="themes">Themes</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
-          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
         </div>
     </div>
 </section>
@@ -131,6 +79,38 @@ layout: bootstrap
 </section>
 {% endunless %}
 
+{% comment %}
+==============================================================
+We're not doing these this year.
+==============================================================
+
+{% assign theme_ids = "" %}
+{% for theme in site.themes %}
+  {% for dataset_id in theme.datasets %}
+    {% if dataset_id == page.id %}
+      {% assign theme_ids = theme_ids | append: theme.id %}
+      {% assign theme_ids = theme_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% unless theme_ids == "" %}
+<!-- Themes Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="themes">Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
+          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
 {% assign field_ids = "" %}
 {% for field in site.fields %}
   {% for dataset_id in field.datasets %}
@@ -157,5 +137,4 @@ layout: bootstrap
     </div>
 </section>
 {% endunless %}
-
-{% include national_sponsors.html %}
+{% endcomment %}
