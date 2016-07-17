@@ -148,10 +148,15 @@ layout: bootstrap
 </section>
 {% endunless %}
 
-{% assign jurisdiction_organisations = site.organisations | where: "jurisdiction", page.gid %}
-{% assign jurisdiction_organisations_len = jurisdiction_organisations | size %}
+{% assign state_org_ids = "" %}
+{% for dataset in site.datasets %}
+    {% if dataset.jurisdiction == page.gid %}
+        {% assign state_org_ids = state_org_ids | append: dataset.organisation %}
+        {% assign state_org_ids = state_org_ids | append: "," %}
+    {% endif %}
+{% endfor %}
 
-{% if jurisdiction_organisations_len > 0 %}
+{% unless state_org_ids == "" %}
 <!-- Datasets Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
@@ -162,11 +167,12 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% include dataset_cards_by_organisation.bs.html organisations=jurisdiction_organisations org_heading_lvl="h3" %}
+          {% assign state_org_ids_list = state_org_ids | lstrip | split: "," %}
+          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
         </div>
     </div>
 </section>
-{% endif %}
+{% endunless %}
 
 {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" %}
 {% unless site.dataportals == nil %}

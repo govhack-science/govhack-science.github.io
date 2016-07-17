@@ -10,6 +10,8 @@ jurisdiction: nsw
 name: Public Transport and Roads data sets including Real time data
 organisation: transport-for-nsw
 title: Public Transport and Roads data sets including Real time data
+mentors:
+  - david-phillips
 ---
 
 There are a number of data sets and feeds available including roads realtime, public transport realtime, scheduled data, live traffic data, loading zones and more!

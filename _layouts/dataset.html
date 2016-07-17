@@ -52,17 +52,7 @@ layout: bootstrap
 </section>
 {% endunless %}
 
-{% assign mentor_ids = "" %}
-{% for mentor in site.mentors %}
-  {% for dataset_id in mentor.datasets %}
-    {% if dataset_id == page.id %}
-      {% assign mentor_ids = mentor_ids | append: mentor.gid %}
-      {% assign mentor_ids = mentor_ids | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% unless mentor_ids == "" %}
+{% if page.mentors %}
 <!-- Mentors Section -->
 <section id="portfolio">
     <div class="container">
@@ -72,12 +62,11 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
-          {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+          {% include mentor_cards.bs.html mentor_ids=page.mentors %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
 {% comment %}
 ==============================================================

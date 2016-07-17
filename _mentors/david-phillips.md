@@ -6,7 +6,7 @@ gid: david-phillips
 jurisdiction: nsw
 location: sydney
 name: David Phillips
-organisation: Transport for NSW
+organisation: transport-for-nsw
 position_title: Spatial Data Analyst
 type: Data Mentor
 ---

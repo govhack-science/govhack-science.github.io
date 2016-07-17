@@ -304,7 +304,7 @@ that our authors (or indeed myself) might indicate a signup link.
     {% assign local_org_ids = "" %}
     {% assign state_org_ids = "" %}
     {% for dataset in site.datasets %}
-        {% if dataset.jurisdiction == page.jurisdiction and dataset.events contains page.gid %}
+        {% if dataset.jurisdiction == page.jurisdiction %}
             {% if dataset.events contains page.gid %}
                 {% assign local_org_ids = local_org_ids | append: dataset.organisation %}
                 {% assign local_org_ids = local_org_ids | append: "," %}

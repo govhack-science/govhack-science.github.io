@@ -232,6 +232,7 @@ for row in data:
         dataset_url = item[0]
         dataset_name = item[1].strip()
         dataset_description = item[2].replace("|", "\n").strip()
+        dataset_mentors = item[3].strip()
 
         # Let's use the CKAN API to pull extra info about the dataset
         if dataset_name == "":
@@ -304,5 +305,6 @@ else:
     print
     print "NEXT STEPS:"
     print "  1. Review the log for any WARNINGS you can resolve."
-    print "  2. Load datasets.html on your local version of Jekyll and validate that the dataset profiles look OK."
-    print "  3. Commit!"
+    print "  2. Assign mentors to each dataset."
+    print "  3. Load datasets.html on your local version of Jekyll and validate that the dataset profiles look OK."
+    print "  4. Commit!"
