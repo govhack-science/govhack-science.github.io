@@ -66,6 +66,31 @@ python python/mentors.py
 
 The script tries its best to auto-populate the mentor files based on what exists in Jabberwocky (events, organisations, et cetera), but you should *still read the output of the script* to check for any `WARNINGS` you might need to fix up.
 
+
+## Prizes Ingest
+This script takes a directroy of `.csv` file downloaded from Google Drive and generates a set of new .md files.
+
+To run:
+```
+. venv/bin/activate
+python python/prizes.py
+```
+
+The script tries its best to auto-populate the prize files based on what exists in Jabberwocky (events, organisations, et cetera), but you should *still read the output of the script* to check for any `WARNINGS` you might need to fix up.
+
+
+## Datasets Ingest
+This script takes a `.csv` file exported from FormStack and generates a set of new .md files.
+
+To run:
+```
+. venv/bin/activate
+python python/datasets.py
+```
+
+The script tries its best to auto-populate the dataset files based on what exists in Jabberwocky (events, organisations, et cetera), but you should *still read the output of the script* to check for any `WARNINGS` you might need to fix up.
+
+
 ## Static API
 This script *need to be run everytime we change the frontmatter of an .md* file so that we always serve the latest content to govhack.org. This generates one `.json.` file for each Markdown file thanks to the magic of [python-frontmatter](https://pypi.python.org/pypi/python-frontmatter/0.2.1).
 
