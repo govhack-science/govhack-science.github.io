@@ -39,7 +39,7 @@ times:
     close: 11:00 PM
   sunday:
     open: 08:00 AM
-    close: 09:00 PM
+    close: 06:00 PM
 images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoastLocation+(1).png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/GC-qld/GoldCoast+(1).jpg
@@ -55,14 +55,9 @@ website:
   name: GovHack GC
   url: http://govhackgc.co
 catering: |
-  We will be supplying the following meals from onsite caterers, including Providore University and Burger Urge:
-  + Friday evening- Gourmet mini pizzas, sliders and networking drinks. 
-  + Saturday & Sunday breakfast- Barista coffee, fruit platter, croissants and danishes. 
-  + Saturday lunch- Gourmet sausages and salad.
-  + Saturday dinner- Three Kings Pizza.
-  + Sunday lunch- Lunch bags with wraps and snacks.
-  + Sunday evening- Selection of Burger Urge burgers and networking drinks.
-  There will also be plenty of snacks and drinks available throughout the weekend.
+  + Friday - Supper
+  + Saturday - Breakfast Lunch and Dinner
+  + Sunday - Breakfast lunch and dinner
 dataportals:
   - gold-coast
 is_capital_city: false
