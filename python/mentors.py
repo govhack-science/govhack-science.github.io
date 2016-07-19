@@ -8,6 +8,7 @@ import shutil
 import frontmatter
 import yaml
 import io
+import validators
 
 # Config
 csvfile = "python/data/mentors/mentors_formstack.csv"
@@ -87,17 +88,20 @@ for row in data.dict:
         if len(row["Photograph URL"]) > 0:
             # Download and stash the mentor image locally
             try:
-                r = requests.get(row["Photograph URL"], stream=True)
-                if r.status_code == 200:
-                    # Hacky, should use actual mimetype
-                    path = urlparse.urlparse(row["Photograph URL"]).path
-                    fileext = os.path.splitext(path)[1]
+                if validators.url(row["Photograph URL"]) == True:
+                    r = requests.get(row["Photograph URL"], stream=True)
+                    if r.status_code == 200:
+                        # Hacky, should use actual mimetype
+                        path = urlparse.urlparse(row["Photograph URL"]).path
+                        fileext = os.path.splitext(path)[1]
 
-                    mentor_image_path = mentorimagesdir + "%s%s" % (gid, fileext)
-                    with open(mentor_image_path, 'wb') as f:
-                        r.raw.decode_content = True
-                        shutil.copyfileobj(r.raw, f) 
-                        mentor["photo_url"] = "/" + mentor_image_path
+                        mentor_image_path = mentorimagesdir + "%s%s" % (gid, fileext)
+                        with open(mentor_image_path, 'wb') as f:
+                            r.raw.decode_content = True
+                            shutil.copyfileobj(r.raw, f) 
+                            mentor["photo_url"] = "/" + mentor_image_path
+                else:
+                    print "WARNING: Photo URL path does not look like a URL. '%s'" % (row["Photograph URL"])    
             except requests.exceptions.MissingSchema, e:
                 print "WARNING: %s" % (e)
 
