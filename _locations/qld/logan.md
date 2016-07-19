@@ -4,6 +4,7 @@ name: Logan
 prefix: GovHack
 jurisdiction: qld
 type: Theme Node
+theme: Future Logan in Integrated SEQ
 eventbrite: https://qldgovhack2016compete.eventbrite.com.au/
 location:
   lat: -27.664164
