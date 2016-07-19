@@ -1,5 +1,5 @@
 ---
-gid: adelaide
+gid: adelaide-maker
 name: Adelaide Maker
 prefix: Unleashed 
 jurisdiction: sa
