@@ -7,7 +7,7 @@ gid: shannon-gernyi
 jurisdiction: nsw
 location: sydney
 name: Shannon Gernyi
-organisation: Amazon Web Services
+organisation: amazon-web-services
 position_title: Cloud Support Engineer (Networking)
 type: Technical Mentor
 ---

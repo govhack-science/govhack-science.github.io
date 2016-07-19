@@ -6,7 +6,7 @@ gid: aun-iftikhar
 jurisdiction: nsw
 location: sydney
 name: Aun Iftikhar
-organisation: AWS
+organisation: amazon-web-services
 position_title: Cloud Support Engineer
 type: Technical Mentor
 ---

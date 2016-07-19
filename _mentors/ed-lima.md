@@ -7,7 +7,7 @@ gid: ed-lima
 jurisdiction: nsw
 location: sydney
 name: Ed Lima
-organisation: Amazon Web Services
+organisation: amazon-web-services
 position_title: Cloud Engineer
 type: Technical Mentor
 ---

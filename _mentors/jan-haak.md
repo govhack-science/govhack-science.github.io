@@ -8,7 +8,7 @@ gid: jan-haak
 jurisdiction: wa
 location: perth
 name: Jan Haak
-organisation: Amazon Web Services
+organisation: amazon-web-services
 photo_url: /resources/images/mentors/jan-haak.jpg
 position_title: Solutions Architect
 type: Technical Mentor

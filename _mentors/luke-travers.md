@@ -7,7 +7,7 @@ gid: luke-travers
 jurisdiction: nsw
 location: sydney
 name: Luke Travers
-organisation: Amazon Web Services
+organisation: amazon-web-services
 photo_url: /resources/images/mentors/luke-travers.jpg
 position_title: Cloud Support Engineer
 type: Technical Mentor

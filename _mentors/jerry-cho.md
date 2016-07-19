@@ -7,7 +7,7 @@ gid: jerry-cho
 jurisdiction: nsw
 location: sydney
 name: Jerry Cho
-organisation: Amazon Web Services
+organisation: amazon-web-services
 position_title: Cloud Support Engineer
 type: Technical Mentor
 ---

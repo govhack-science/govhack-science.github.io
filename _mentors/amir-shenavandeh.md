@@ -7,7 +7,7 @@ gid: amir-shenavandeh
 jurisdiction: nsw
 location: sydney
 name: Amir Shenavandeh
-organisation: Amazon Web Services
+organisation: amazon-web-services
 position_title: AWS Support Engineer (Big Data)
 type: Technical Mentor
 ---
