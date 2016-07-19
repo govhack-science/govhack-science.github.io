@@ -1,5 +1,6 @@
 {% if site.organisations.size > 0 %}
     {% assign sponsors = site.organisations | where: "is_sponsor", true | where: "jurisdiction", include.jurisdiction_gid %}
+    {% assign heading_level = include.heading_level | default: "h2" %}
     
     {% comment %}
     =======================================
@@ -54,11 +55,7 @@
         <!-- {{ include.jurisdiction_name }} Sponsors -->
         <div class="row header-row">
         <div class="col-lg-12 text-center">
-            {% if include.sponsor_level == "local" %}
-                <h3 class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</h3>
-            {% else %}
-                <h2 class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</h2>
-            {% endif %}
+            <{{ heading_level }} class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</{{ heading_level }}>
         </div>
         </div>
         <div class="row">
