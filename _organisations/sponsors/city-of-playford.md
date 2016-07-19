@@ -12,6 +12,4 @@ jurisdiction: sa
 events:
   - playford
 is_sponsor: true
-dataportals:
-  - playford
 ---
