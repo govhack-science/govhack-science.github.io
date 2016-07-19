@@ -8,6 +8,9 @@
             "slug": "lead-sponsor",
             "columns": 1.5
         }, {
+            "slug": "red-carpet-awards",
+            "columns": 1.5
+        }, {
             "slug": "international-prize", 
             "columns": 3
         }, {
@@ -42,6 +45,9 @@
         }, {
             "slug": "naming-rights", 
             "columns": 1.5
+        }, {
+            "slug": "nz-national",
+            "columns": 3
         }, {
             "slug": "premier", 
             "columns": 3
