@@ -9,6 +9,4 @@ sponsor_level_id: silver
 sponsor_level_desc: Silver Sponsors
 jurisdiction: tas
 is_sponsor: true
-dataportals:
-  - hobart
 ---

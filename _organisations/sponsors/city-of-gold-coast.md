@@ -12,6 +12,4 @@ jurisdiction: qld
 events:
   - gold-coast
 is_sponsor: true
-dataportals:
-  - gold-coast
 ---
