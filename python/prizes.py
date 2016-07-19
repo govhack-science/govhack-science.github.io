@@ -19,23 +19,32 @@ class PrizeSpreadsheets(object):
     def get_spreadsheets(self):
         sheets = []
         for file in os.listdir(self.dir_path):
-            if file.endswith(".xlsx") and file.startswith("~") == False and file != "Region Prize worksheet 2016.xlsx":
+            if file.endswith(".xlsx") and file.startswith("~") == False:
+                new_filename = "%s.xlsx" % (self.get_region(file))
+                os.rename(os.path.join(self.dir_path, file), os.path.join(self.dir_path, new_filename))
+                # print new_filename
+
                 sheets.append({
-                    "filename": file,
+                    "filename": new_filename,
                     "region": self.get_region(file),
-                    "sheet": PrizeSpreadsheet(os.path.join(self.dir_path, file))
+                    "sheet": PrizeSpreadsheet(os.path.join(self.dir_path, new_filename))
                 })
         return sheets
     
     def get_region(self, file):
         regions = ["NATIONAL", "ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
-        region = file.split(" ")[0].upper()
+
+        if " " not in file:
+            region = os.path.splitext(file)[0]
+        else:
+            region = file.split(" ")[0].upper()
 
         if region not in regions:
             raise ValueError("Region '%s' is not valid." % (region))
         
         if region == "NATIONAL":
             return "AUSTRALIA"
+
         return region
 
 class PrizeSpreadsheet(object):
@@ -48,6 +57,7 @@ class PrizeSpreadsheet(object):
     
     def read_file(self):
         from openpyxl import load_workbook
+        # print "file_path: %s" % (self.file_path)
         self.wb = load_workbook(self.file_path)
     
     def get_prize_sheet(self, index=0):
@@ -62,7 +72,10 @@ class PrizeSpreadsheet(object):
                 if cell.value == None:
                     break
                 else:
-                    headers.append("".join(cell.value.split()).lower())
+                    col_name = "".join(cell.value.split()).lower()
+                    if "eligibilitycriteria" in col_name or "eligiblitycriteria" in col_name:
+                        col_name = "eligibilitycriteria"
+                    headers.append(col_name)
         return headers
 
     def is_row_empty(self, row):
@@ -74,15 +87,21 @@ class PrizeSpreadsheet(object):
     def sheet_to_dict(self, ws):
         rows = []
         headers = self.get_headers()
+        print headers
+        # print
         
         for row in ws.iter_rows(row_offset=1):
+            # print row
+
             # Consider a single empty row to be the end of the available data
             if self.is_row_empty(row) == True:
+                # print "Row is empty"
                 break
 
             tmp = {}
             for idx, cell in enumerate(row):
-                if cell.value == None:
+                # print "%s: %s" % (idx, cell.value)
+                if idx >= len(headers):
                     break
                 else:
                     if type(cell.value) is unicode:
@@ -90,6 +109,7 @@ class PrizeSpreadsheet(object):
                     else:
                         tmp[headers[idx]] = cell.value
             rows.append(tmp)
+            # print
         return rows
 
 
@@ -124,7 +144,7 @@ for file in sheets:
     print "Spreadsheet: %s" % (file["filename"])
     print "Region: %s" % (file["region"])
 
-    ws = file["sheet"].get_prize_sheet(1)
+    ws = file["sheet"].get_prize_sheet(0)
     rows = file["sheet"].sheet_to_dict(ws)
 
     print "Prize Count: %s" % (len(rows))
@@ -132,9 +152,21 @@ for file in sheets:
     print "Processing prizes..."
     print
 
-    for row in rows:
+    for idx, row in enumerate(rows):
         # Assign our prize a globally unique id
-        gid = file["region"].lower() + "-" + row["prizename"].lower().replace(" ", "-").replace("'", "")
+        # if "prizename" not in row:
+        #     print row
+        #     exit()
+        if row["prizename"] is None:
+            # @TODO
+            # raise ValueError("Prize #'%s' has no name" % (idx))
+            print "Prize #'%s' has no name" % (idx)
+            continue
+        
+        gid = file["region"].lower() + "-" + row["prizename"].lower().replace("/", " or ").replace(" ", "-").replace("'", "")
+        if gid in gids: # Hacky
+            gid = gid + "-2"
+
         if gid in gids:
             raise ValueError("GID '%s' is already in use." % (gid))
         else:
@@ -166,9 +198,17 @@ for file in sheets:
                 if "eventspecificlocation" not in row:
                     raise ValueError("Event-only prize nominated without any accompanying event specified.")
 
+                if row["eventspecificlocation"] is None:
+                    # @TODO
+                    # raise ValueError("Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"]))
+                    print "Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"])
+                    continue
+
                 event_gid = row["eventspecificlocation"].replace(" ", "-").replace(",", "").lower()
                 if event_gid not in event_names:
-                    raise ValueError("Event GID '%s' does not exist." % (event_gid))
+                    # @TODO
+                    # raise ValueError("Event GID '%s' does not exist." % (event_gid))
+                    print "Event GID '%s' does not exist." % (event_gid)
                 else:
                     print "For Event: %s" % (event_gid)
 
@@ -197,10 +237,20 @@ for file in sheets:
             prize = existing_prize.metadata
 
         # Convert prize $$$ value to an integer
-        if type(row["estimateprizevalue$"]) is unicode:
-            estimatedprizevalue = int(row["estimateprizevalue$"].replace("$", ""))
-        else:
+        if type(row["estimateprizevalue$"]) is unicode and row["estimateprizevalue$"].strip().replace("$", "").isdigit():
+            estimatedprizevalue = int(row["estimateprizevalue$"].strip().replace("$", ""))
+        elif type(row["estimateprizevalue$"]) is float or type(row["estimateprizevalue$"]) is long:
             estimatedprizevalue = int(row["estimateprizevalue$"])
+        else:
+            estimatedprizevalue = row["estimateprizevalue$"].strip()
+        
+        # Fixing up minor stuff
+        if row["prizecategorydescription"] is None:
+            row["prizecategorydescription"] = unicode("")
+        if row["prizereward"] is None:
+            row["prizereward"] = unicode("")
+        if row["eligibilitycriteria"] is None:
+            row["eligibilitycriteria"] = unicode("")
         
         # print prize
         # print row
@@ -208,7 +258,7 @@ for file in sheets:
         print "---"
         print
 
-        continue
+        # continue
         if not os.path.exists(prize_md_dir):
             os.makedirs(prize_md_dir)
 
@@ -226,7 +276,7 @@ for file in sheets:
             f.write(unicode("$%s" % (estimatedprizevalue)))
             f.write(u'\n\n')
             f.write(u'# Eligibility Criteria\n')
-            f.write(row["eligiblitycriteria"].replace("|", "\n").rstrip())
+            f.write(row["eligibilitycriteria"].replace("|", "\n").rstrip())
     
     # print "\n"
     print "############################################################"
