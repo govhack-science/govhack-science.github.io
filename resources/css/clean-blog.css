@@ -882,12 +882,14 @@ section > div.container {
   padding-top: 10px;
 }
 
-.location-wip {
+.location-wip,
+.location-cancelled {
     display: inline-block;
-    padding: 3px 6px;
+    padding: 4px 12px;
     font-size: 14px;
     border-radius: 2px;
     background: #CA1553;
+    background: #4C9AD2;
     color: white;
     font-weight: bold;
 }

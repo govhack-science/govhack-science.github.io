@@ -71,86 +71,92 @@ that our authors (or indeed myself) might indicate a signup link.
                 =======================================
                 {% endcomment %}
                 <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a> </h2>
+                {% unless page.cancelled == true %}
                 <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>) {% unless page.theme == nil %} <span class="location-theme">{{ page.theme }}</span> {% endunless %}</h3>
+                {% endunless %}
                 
                 {% comment %}
                 =======================================
                 If a location page looks like it hasn't been populated yet, show 
-                a little friendly tag.
+                a little friendly tag. Or if it's disabled, also show a message.
                 =======================================
                 {% endcomment %}
                 {% if page.venue == nil %}
                 <div class="location-wip">This location hasn't been finalised yet – please check again shortly!</div>
                 {% endif %}
-                
+                {% if page.cancelled == true %}
+                <div class="location-cancelled">This event is not proceeding this year. Please check out other events in the region.</div>
+                {% endif %}
             </div>
         </div>
     </div>
     
-    {% comment %}
-    =======================================
-    Show registration link if necessary
-    =======================================
-    {% endcomment %}
-    {% unless rego_link == nil %}
-    <div>
-        <a class="location-rego-link" href="{{ rego_link }}">Register for {{ page.prefix }} {{ page.name }}</a>
-        {% if page.eventbrite %}
-        <!-- &nbsp;<em class="text-muted">on EventBrite</em> -->
-      {% endif %}
-    </div>
-    {% endunless %}
+    {% unless page.cancelled == true %}
+    
+        {% comment %}
+        =======================================
+        Show registration link if necessary
+        =======================================
+        {% endcomment %}
+        {% unless rego_link == nil or page.cancelled == true %}
+        <div>
+            <a class="location-rego-link" href="{{ rego_link }}">Register for {{ page.prefix }} {{ page.name }}</a>
+            {% if page.eventbrite %}
+            <!-- &nbsp;<em class="text-muted">on EventBrite</em> -->
+          {% endif %}
+        </div>
+        {% endunless %}
 
-      {% comment %}
-      =======================================
-      Venue photos will appear at the top. This will captivate!
-      Location contains the lat/long needed to drive the leaflet map.
-      It will also attempt to pull the venue name and address as well.
-      =======================================
-      {% endcomment %}
-      {% unless page.location == nil %}
-      <hr>
-      <h3>Location</h3>
-      <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
-      <script type="text/javascript">
-      location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
-      </script>
-      {% endunless %}
-      <div class="location-byline">
+        {% comment %}
+        =======================================
+        Venue photos will appear at the top. This will captivate!
+        Location contains the lat/long needed to drive the leaflet map.
+        It will also attempt to pull the venue name and address as well.
+        =======================================
+        {% endcomment %}
+        {% unless page.location == nil %}
+        <hr>
+        <h3>Location</h3>
+        <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
+        <script type="text/javascript">
+        location_map([[{{ page.location.lat }}, {{ page.location.lon }}]]);
+        </script>
+        {% endunless %}
+        <div class="location-byline">
           {% unless page.venue.name == nil and page.location.name == nil %}
           <div class="location-name"><strong>{{ page.venue.name | default: page.location.name }}</strong></div>
           {% endunless %}  
           {% unless page.venue.address == nil and page.location.address == nil %}
           <div class="location-address">{{ page.venue.address | default: page.location.address }}</div>
           {% endunless %}  
-      </div>
-      {% unless page.images == nil %}
-      <hr>
-      <div class="location-images">
+        </div>
+        {% unless page.images == nil %}
+        <hr>
+        <div class="location-images">
         {% for image_url in page.images %}
             <div class="location-image-tile"><img class="img-responsive" src="{{ image_url }}" alt="{{ page.name }}"></div>
         {% endfor %}
-      </div>
-      {% endunless %}  
+        </div>
+        {% endunless %}  
 
+
+        {% comment %}
+        =======================================
+        The Follow section reads from `contact` in frontmatter and
+        can accept:
+        + Twitter (with or without leading '@')
+        + Facebook
+        + Website (as `website_url`)
+        + Instagram
+        Additionally it searches for a standalone `website` field in 
+        frontmatter and treats that as an object
+        =======================================
+        {% endcomment %}
       
-      {% comment %}
-      =======================================
-      The Follow section reads from `contact` in frontmatter and
-      can accept:
-      + Twitter (with or without leading '@')
-      + Facebook
-      + Website (as `website_url`)
-      + Instagram
-      Additionally it searches for a standalone `website` field in 
-      frontmatter and treats that as an object
-      =======================================
-      {% endcomment %}
-      
-      {% unless page.contact == nil %}
-      <hr>
-      <h3>Follow</h3>
-      <ul class="list-inline social-buttons">
+        {% unless page.contact == nil %}
+        <hr>
+        <h3>Follow</h3>
+        <ul class="list-inline social-buttons">
           {% if page.contact.twitter %}
           <li>
               <a href="https://twitter.com/{{ page.contact.twitter }}" target="_blank">
@@ -206,8 +212,8 @@ that our authors (or indeed myself) might indicate a signup link.
               </a>
           </li>
           {% endif %}
-      </ul>
-      {% endunless %}
+        </ul>
+        {% endunless %}
 
         {% comment %}
         =======================================
@@ -275,6 +281,8 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
         </div>
         {% endunless %}
+        
+    {% endunless %}
 
     {% assign prize_ids = "" %}
     {% for prize in site.prizes %}

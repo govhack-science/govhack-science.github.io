@@ -44,6 +44,7 @@ contact:
   instagram: dashcowork
 is_capital_city: false
 display_weight: 40
+cancelled: true
 ---
 
 GovHack Hunter Valley will bring together the brightest minds in the region, and produce exciting ideas from the union of community engagement and open data!
