@@ -8,16 +8,16 @@
             "slug": "lead-sponsor",
             "columns": 1.5
         }, {
-            "slug": "international-prize-sponsor", 
+            "slug": "international-prize", 
             "columns": 3
         }, {
-            "slug": "platinum-sponsor", 
+            "slug": "platinum", 
             "columns": 3
         }, {
-            "slug": "gold-sponsor", 
+            "slug": "gold", 
             "columns": 3
         }, {
-            "slug": "silver-sponsor", 
+            "slug": "silver", 
             "columns": 3
         }, {
             "slug": "govt-agency-supporter", 
@@ -26,7 +26,7 @@
             "slug": "supporter", 
             "columns": 3
         }, {
-            "slug": "foundation-sponsor", 
+            "slug": "foundation", 
             "columns": 3
         }]    
     },
@@ -46,7 +46,7 @@
             "slug": "premier", 
             "columns": 3
         }, {
-            "slug": "platinum-sponsor", 
+            "slug": "platinum", 
             "columns": 3
         }, {
             "slug": "gold", 
@@ -55,7 +55,7 @@
             "slug": "silver", 
             "columns": 3
         }, {
-            "slug": "bronze-sponsor", 
+            "slug": "bronze", 
             "columns": 3
         }, {
             "slug": "in-kind", 
