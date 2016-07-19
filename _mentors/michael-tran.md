@@ -4,7 +4,7 @@ contact:
   email: mictran@outlook.com
   linkedin: http://www.linkedin.com/in/mictran
 gid: michael-tran
-jurisdiction: tas
+jurisdiction: victoria
 location: melbourne-open-raster
 name: Michael Tran
 organisation: australian-taxation-office
