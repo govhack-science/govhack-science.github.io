@@ -1,5 +1,5 @@
 ---
-gid: nsw-department-of-finance-services-and-innovation
+gid: nsw-government
 title: NSW Government
 name: NSW Government
 website_url: 'https://www.nsw.gov.au/'

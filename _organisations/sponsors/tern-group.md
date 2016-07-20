@@ -1,5 +1,5 @@
 ---
-gid: _test-mashup
+gid: tern-group
 title: TERN Group
 name: TERN Group
 logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/tern_group.png'
