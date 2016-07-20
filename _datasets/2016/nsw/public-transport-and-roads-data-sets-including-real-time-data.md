@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 gid: public-transport-and-roads-data-sets-including-real-time-data
 jurisdiction: nsw
 name: Public Transport and Roads data sets including Real time data
-organisation: transport-for-nsw
+organisation: nsw-government
 title: Public Transport and Roads data sets including Real time data
 mentors:
   - david-phillips
