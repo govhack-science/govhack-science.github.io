@@ -350,7 +350,7 @@ that our authors (or indeed myself) might indicate a signup link.
     =======================================
     {% endcomment %}
     
-    {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.jurisdiction | map: "gid" %}
+    {% assign dataportal_ids = site.dataportals | where: "jurisdiction", page.jurisdiction | map: "gid" %}
     {% unless page.dataportals == nil %}
         {% for dataportal in page.dataportals %}
             {% assign dataportal_ids = dataportal_ids | push: dataportal %}
