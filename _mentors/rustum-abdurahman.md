@@ -8,7 +8,7 @@ gid: rustum-abdurahman
 jurisdiction: nsw
 location: sydney
 name: Rustum Abdurahman
-organisation: cese-department-of-education
+organisation: nsw-government
 position_title: Manager, Online Services
 type: Data Mentor
 ---
