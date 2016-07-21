@@ -125,7 +125,8 @@ layout: bootstrap
 {% endunless %}
 
 {% assign dataset_ids = site.datasets | where: "organisation", page.gid | map: "gid" %}
-{% unless dataset_ids == "" %}
+{% assign dataset_ids_len = dataset_ids | size %}
+{% if dataset_ids_len > 0 %}
 <!-- Datasets Section -->
 <section id="portfolio">
     <div class="container">
@@ -139,10 +140,11 @@ layout: bootstrap
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
 {% assign dataportal_ids = site.dataportals | where: "organisation", page.gid | map: "gid" %}
-{% unless dataportal_ids == "" %}
+{% assign dataportal_ids_len = dataportal_ids | size %}
+{% if dataportal_ids_len > 0 %}
 <!-- Data Portals Section -->
 <section id="portfolio">
     <div class="container">
@@ -156,7 +158,7 @@ layout: bootstrap
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
 {% comment %}
 ==============================================================
