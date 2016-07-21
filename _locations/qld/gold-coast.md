@@ -33,10 +33,10 @@ venue:
 times:
   friday:
     open: 05:00 PM
-    close: 11:00 PM
+    close: 10:00 PM
   saturday:
     open: 08:00 AM
-    close: 11:00 PM
+    close: 10:00 PM
   sunday:
     open: 08:00 AM
     close: 06:00 PM
