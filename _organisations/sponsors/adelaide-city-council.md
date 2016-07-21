@@ -9,4 +9,6 @@ sponsor_level_id: gold
 sponsor_level_desc: Gold Sponsors
 jurisdiction: sa
 is_sponsor: true
+dataportals:
+  - adelaide
 ---
