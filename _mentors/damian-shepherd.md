@@ -8,11 +8,11 @@ gid: damian-shepherd
 jurisdiction: wa
 location: perth
 name: Damian Shepherd
-organisation: Spur@Landgate
+organisation: landgate
 position_title: Spur team member
 type: Data Mentor
 dataportals:
   - datawagovau
 ---
 
-Spur team member
+SPUR team member - spur.wa.gov.au
