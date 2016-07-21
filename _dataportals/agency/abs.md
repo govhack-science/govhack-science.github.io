@@ -5,6 +5,7 @@ website_url: http://www.abs.gov.au/browse
 logo_url: /resources/csiro-logo.png
 jurisdiction: australia
 type: agency-portal
+organisation: australian-bureau-of-statistics
 ---
 
 The data portal for all Australian Bureau of Statistics data.

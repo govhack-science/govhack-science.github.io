@@ -67,6 +67,12 @@ layout: bootstrap
   </div>
 </section>
 
+{% comment %}
+====================================
+Because we've moved the dataportal element from organisations
+to the data portals themselves. Fix it later if we care.
+====================================
+
 {% assign organisation_ids = "" %}
 {% for organisation in site.organisations %}
   {% for dataportal_id in organisation.dataportals %}
@@ -93,6 +99,7 @@ layout: bootstrap
     </div>
 </section>
 {% endunless %}
+{% endcomment %}
 
 {% assign mentor_ids = "" %}
 {% for mentor in site.mentors %}

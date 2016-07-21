@@ -124,9 +124,8 @@ layout: bootstrap
 </section>-->
 {% endunless %}
 
-{% assign org_datasets = site.datasets | where: "organisation", page.gid %}
-
-{% if org_datasets %}
+{% assign dataset_ids = site.datasets | where: "organisation", page.gid | map: "gid" %}
+{% unless dataset_ids == "" %}
 <!-- Datasets Section -->
 <section id="portfolio">
     <div class="container">
@@ -136,13 +135,14 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% include dataset_cards.bs.html datasets=org_datasets %}
+          {% include dataset_cards.bs.html dataset_ids=dataset_ids %}
         </div>
     </div>
 </section>
-{% endif %}
+{% endunless %}
 
-{% if page.dataportals %}
+{% assign dataportal_ids = site.dataportals | where: "organisation", page.gid | map: "gid" %}
+{% unless dataportal_ids == "" %}
 <!-- Data Portals Section -->
 <section id="portfolio">
     <div class="container">
@@ -152,11 +152,11 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
         </div>
     </div>
 </section>
-{% endif %}
+{% endunless %}
 
 {% comment %}
 ==============================================================

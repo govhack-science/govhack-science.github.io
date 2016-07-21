@@ -5,6 +5,7 @@ website_url: http://data.sa.gov.au/data/organization/city-of-playford
 logo_url: /resources/csiro-logo.png
 jurisdiction: sa
 type: local-portal
+organisation: city-of-playford
 ---
 
 The data portal for all City of Playford’s data.
