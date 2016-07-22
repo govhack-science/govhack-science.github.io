@@ -15,7 +15,11 @@ class CKANLookup(object):
     """
     """
 
-    def __init__(self, dataset_url):
+    def __init__(self, dataset_url=""):
+        self.dataset_url = dataset_url
+        self.cache = {}
+    
+    def set_url(self, dataset_url):
         self.dataset_url = dataset_url
 
     def get_ckan_url(self):
@@ -27,15 +31,39 @@ class CKANLookup(object):
         
         if api_root_url.endswith("/") == True:
             api_root_url = api_root_url[:-1]
+        
+        if api_root_url.startswith("http") == False:
+            # print "Prepend"
+            api_root_url = "http://" + api_root_url
+
         return api_root_url
 
     def is_ckan_url(self):
+        # print "'%s'" % (self.dataset_url)
+        if self.dataset_url == "":
+            return False
+
+        if self.dataset_url in self.cache:
+            return self.cache[self.dataset_url]
+        
+        if self.dataset_url.find("/dataset/") == -1:
+            self.cache[self.dataset_url] = False
+            return False
+
         api_root_url = self.get_ckan_url() + "/api/3"
+        # print "'%s'" % (api_root_url)
         r = requests.get(api_root_url)
         if r.status_code == 200:
+            self.cache[self.dataset_url] = True
             return True
         else:
+            self.cache[self.dataset_url] = False
             return False
+
+    def is_ckan_dataset_url(self):
+        if self.is_ckan_url():
+            parse_object = urlparse.urlsplit(self.dataset_url)
+            return True if parse_object.path.find("/dataset/") != -1 else False
 
     def get_endpoint(self):
         api_root_url = self.get_ckan_url()
@@ -107,7 +135,7 @@ org_lookup.csv = csv
 
 org_lookup_table = {}
 for row in org_lookup:
-    org_lookup_table.update({row[0]: row[1]})
+    org_lookup_table.update({row[0].lower(): row[1]})
 
 # For event lookup to workaround submissions using non-standard event names
 with codecs.open(event_lookup, "rb", encoding="iso-8859-1") as f:
@@ -130,6 +158,7 @@ with codecs.open(csvfile, "rb", encoding="iso-8859-1") as f:
 data = tablib.Dataset()
 data.csv = csv
 new_datasets_count = 0
+ckan = CKANLookup()
 
 for row in data:
     # Skip empty rows populated by the export process
@@ -165,10 +194,11 @@ for row in data:
     # Requirement: Find a valid organisation to link this dataset to
     organisation_gid = submission["Agency/Organisation"].lower().strip().replace(" ", "-").replace(",", "")
     if organisation_gid in organisation_names:
-        print "FOUND %s" % (organisation_gid)
-    elif submission["Agency/Organisation"] in org_lookup_table:
-        organisation_gid = org_lookup_table[submission["Agency/Organisation"]]
-        print "FOUND %s" % (organisation_gid)
+        # print "FOUND %s" % (organisation_gid)
+        pass
+    elif submission["Agency/Organisation"].lower() in org_lookup_table:
+        organisation_gid = org_lookup_table[submission["Agency/Organisation"].lower()]
+        # print "FOUND %s" % (organisation_gid)
     else:
         print "WARNING: Could not resolve organisation: %s" % (submission["Agency/Organisation"])
         print organisation_gid
@@ -176,7 +206,8 @@ for row in data:
         continue
 
     # Process the events to link these datasets to
-    if submission["Jurisdiction"] == "Australian Government":
+    # if submission["Jurisdiction"] == "Australian Government":
+    if submission["Region"] == "National":
         dataset_stub["jurisdiction"] = "australia"
     else:
         dataset_stub["jurisdiction"] = submission["Region"].lower()
@@ -226,6 +257,7 @@ for row in data:
     print
 
     for key, item in enumerate(chunks(row[17:-5], 4)):
+        # print "Key: %s" % (key)
         if key >= num_datasets:
             break
 
@@ -236,12 +268,13 @@ for row in data:
 
         # Let's use the CKAN API to pull extra info about the dataset
         if dataset_name == "":
-            ckan = CKANLookup(dataset_url)
-            if ckan.is_ckan_url():
+            ckan.set_url(dataset_url)
+            if ckan.is_ckan_url() and ckan.is_ckan_dataset_url():
                 package = ckan.get_package()
                 dataset_name = package["title"].strip()
                 dataset_description = package["notes"].strip()
-            else:  
+            else:
+                print dataset_name
                 print "WARNING: Doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
                 continue
@@ -262,6 +295,7 @@ for row in data:
         dataset_md_file = os.path.join(dataset_md_dir, "%s.md" % (dataset_gid))
 
         # Create records for datasets who haven't been processed yet
+        # print dataset_md_file
         if not os.path.exists(dataset_md_file):
             if dataset_gid in dataset_gids:
                 raise ValueError("WARNING: GID '%s' is already in use elsewhere." % (dataset_gid))
