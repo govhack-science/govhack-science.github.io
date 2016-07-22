@@ -115,7 +115,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -944,7 +944,7 @@ small.notice a {
   font-weight: bold;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 768px){
     body.with-gh-ss .navbar-custom {
         top: 40px;
     }
