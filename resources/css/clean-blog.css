@@ -749,7 +749,7 @@ nav[data-toggle='toc'] {
   nav[data-toggle='toc'] {
     position: static;
     width: auto;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
   }
 }
 
