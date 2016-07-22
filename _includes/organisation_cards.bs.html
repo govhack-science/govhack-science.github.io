@@ -6,18 +6,22 @@
 
 {% for organisation in site.organisations %}
   {% if organisation_ids == nil or organisation_ids contains organisation.gid %}
-  <div class="media">
-      <div class="media-left">
-        {% if organisation.logo_url != "http://" %}
-          <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 105px; max-height: 105px;"></a>
-        {% else %}
-          <a href="#"><img src="holder.js/105x105"></a>
-        {% endif %}
+    {% if include.logo_only == true %}
+      <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 100%;"></a>
+    {% else %}
+      <div class="media">
+          <div class="media-left">
+            {% if organisation.logo_url != "http://" %}
+              <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+            {% else %}
+              <a href="#"><img src="holder.js/105x105"></a>
+            {% endif %}
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading"><a href="{{ organisation.url }}">{{ organisation.name }}</a></h4>
+            {{ organisation.excerpt }}
+          </div>
       </div>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="{{ organisation.url }}">{{ organisation.name }}</a></h4>
-        {{ organisation.excerpt }}
-      </div>
-  </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
