@@ -8,10 +8,12 @@ gid: kristy-van-putten
 jurisdiction: act
 location: canberra
 name: Kristy Van Putten
-organisation: ACT Government
+organisation: act-government-environment-and-planning
 photo_url: /resources/images/mentors/kristy-van-putten.jpg
 position_title: Spatial Information Manager
 type: Data Mentor
+dataportals:
+  - actmapi
 ---
 
 Kristy Van Putten has been working as the Spatial Information manager within the Office of the Surveyor-General and Land Information since June 2014. Within her role she has been a key advocate for open government spatial data that is accessible, timely, reusable, trusted and sustainable. 

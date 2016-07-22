@@ -985,7 +985,8 @@ small.notice a {
     padding: 10px;
 }
 
-.govhack-sponsors > .row a img {
+/*.govhack-sponsors > .row a img*/
+a > img {
     cursor: pointer;
 }
 

@@ -7,7 +7,7 @@ gid: roger-rooney
 jurisdiction: act
 location: canberra
 name: Roger Rooney
-organisation: Chief Minister's Directorate
+organisation: act-chief-minister-treasury-and-economic-development-directorate
 photo_url: /resources/images/mentors/roger-rooney.jpg
 position_title: Principal Project Manager Smart Parking Manuka
 type: Data Mentor
