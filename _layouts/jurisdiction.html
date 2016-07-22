@@ -73,15 +73,9 @@ layout: bootstrap
   </div>
 </section>
 
-{% assign location_ids = "" %}
-{% for location in site.locations %}
-  {% if location.jurisdiction == page.gid %}
-    {% assign location_ids = location_ids | append: location.gid %}
-    {% assign location_ids = location_ids | append: "," %}
-  {% endif %}
-{% endfor %}
-
-{% unless location_ids == "" %}
+{% assign location_ids = site.locations | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign location_ids_len = location_ids | size %}
+{% if location_ids_len > 0 %}
 <!-- Locations Section -->
 <section id="portfolio">
     <div class="container">
@@ -91,22 +85,15 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign location_ids_list = location_ids | lstrip | split: "," %}
-          {% include location_cards.bs.html location_ids=location_ids_list %}
+          {% include location_cards.bs.html location_ids=location_ids %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
-{% assign theme_ids = "" %}
-{% for theme in site.themes %}
-  {% if theme.jurisdiction == page.gid %}
-    {% assign theme_ids = theme_ids | append: theme.id %}
-    {% assign theme_ids = theme_ids | append: "," %}
-  {% endif %}
-{% endfor %}
-
-{% unless theme_ids == "" %}
+{% assign theme_ids = site.themes | where: "jurisdiction", page.gid | map: "id" %}
+{% assign theme_ids_len = theme_ids | size %}
+{% if theme_ids_len > 0 %}
 <!-- Themes Section -->
 <section id="portfolio">
     <div class="container">
@@ -116,22 +103,15 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign theme_ids_list = theme_ids | lstrip | split: "," %}
-          {% include theme_cards.bs.html theme_ids=theme_ids_list %}
+          {% include theme_cards.bs.html theme_ids=theme_ids %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
-{% assign prize_ids = "" %}
-{% for prize in site.prizes %}
-  {% if prize.jurisdiction == page.gid %}
-    {% assign prize_ids = prize_ids | append: prize.gid %}
-    {% assign prize_ids = prize_ids | append: "," %}
-  {% endif %}
-{% endfor %}
-
-{% unless prize_ids == "" %}
+{% assign prize_ids = site.prizes | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign prize_ids_len = prize_ids | size %}
+{% if prize_ids_len > 0 %}
 <!-- Prizes Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
@@ -141,22 +121,15 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
-          {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+          {% include prize_cards.bs.html prize_ids=prize_ids %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
-{% assign state_org_ids = "" %}
-{% for dataset in site.datasets %}
-    {% if dataset.jurisdiction == page.gid %}
-        {% assign state_org_ids = state_org_ids | append: dataset.organisation %}
-        {% assign state_org_ids = state_org_ids | append: "," %}
-    {% endif %}
-{% endfor %}
-
-{% unless state_org_ids == "" %}
+{% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
+{% assign state_org_ids_len = state_org_ids | size %}
+{% if state_org_ids_len > 0 %}
 <!-- Datasets Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
@@ -167,23 +140,15 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign state_org_ids_list = state_org_ids | lstrip | split: "," %}
-          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
+          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
 {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" %}
-{% unless site.dataportals == nil %}
-    {% for dataportal in site.dataportals %}
-      {% if dataportal.jurisdiction == page.gid and dataportal.type != "major-portal" %}
-        {% assign dataportal_ids = dataportal_ids | push: dataportal.gid %}
-      {% endif %}
-    {% endfor %}
-{% endunless %}
-
-{% unless dataportal_ids == "" %}
+{% assign dataportal_ids_len = dataportal_ids | size %}
+{% if dataportal_ids_len > 0 %}
 <!-- Data Portals Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
@@ -198,17 +163,11 @@ layout: bootstrap
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
-{% assign mentor_ids = "" %}
-{% for mentor in site.mentors %}
-  {% if mentor.jurisdiction == page.gid %}
-    {% assign mentor_ids = mentor_ids | append: mentor.gid %}
-    {% assign mentor_ids = mentor_ids | append: "," %}
-  {% endif %}
-{% endfor %}
-
-{% unless mentor_ids == "" %}
+{% assign mentor_ids = site.mentors | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign mentor_ids_len = mentor_ids | size %}
+{% if mentor_ids_len > 0 %}
 <!-- Mentors Section -->
 <section id="portfolio">
     <div class="container">
@@ -218,13 +177,14 @@ layout: bootstrap
           </div>
         </div>
         <div class="row">
-          {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
-          {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+          {% include mentor_cards.bs.html mentor_ids=mentor_ids %}
         </div>
     </div>
 </section>
-{% endunless %}
+{% endif %}
 
+
+{% comment %}
 {% assign organisation_ids = "" %}
 {% for organisation in site.organisations %}
   {% if organisation.jurisdiction == page.gid %}
@@ -233,7 +193,6 @@ layout: bootstrap
   {% endif %}
 {% endfor %}
 
-{% comment %}
 {% unless organisation_ids == "" %}
 <!-- Organisations Section -->
 <section id="portfolio">
