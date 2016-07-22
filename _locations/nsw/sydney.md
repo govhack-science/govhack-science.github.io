@@ -32,8 +32,6 @@ images:
 contact:
   twitter: GovHackSydney
   email: sydney@govhack.org
-dataportals:
-  - mosman
 is_capital_city: true
 display_weight: 20
 ---

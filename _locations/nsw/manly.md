@@ -36,8 +36,6 @@ website:
   url: http://govhacknb.io
 is_capital_city: true
 display_weight: 30
-dataportals: 
-  - mosman
 ---
 
 46 HOURS TO TAKE GOVERNMENT DATA, HACK ON IT, MASH IT UP WITH AWESOME PEOPLE AND TAKE HOME SOME PRIZES!

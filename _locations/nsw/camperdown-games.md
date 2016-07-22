@@ -49,8 +49,6 @@ images:
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Camperdown-nsw/Camperdown+(5).jpg
 is_capital_city: true
 display_weight: 50
-dataportals:
-  - mosman
 ---
 
 Hackathon n00bie? Welcome! Here’s what you can expect.

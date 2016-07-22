@@ -34,8 +34,6 @@ contact:
 catering: Snacks, Drinks, Tea and Coffee will all be provided. Main meals will be able to be purchased from local cafes etc.
 is_capital_city: true
 display_weight: 30
-dataportals:
-  - mosman
 ---
 
 Do you like designing? Working with data? 
