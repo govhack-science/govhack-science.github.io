@@ -163,7 +163,7 @@ for file in sheets:
             print "Prize #'%s' has no name" % (idx)
             continue
         
-        gid = file["region"].lower() + "-" + row["prizename"].lower().replace("/", " or ").replace(" ", "-").replace("'", "")
+        gid = file["region"].lower() + "-" + row["prizename"].lower().strip().replace("/", " or ").replace(" ", "-").replace("'", "")
         if gid in gids: # Hacky
             gid = gid + "-2"
 
@@ -178,6 +178,7 @@ for file in sheets:
 
         prize = {
             "name": row["prizename"],
+            "title": row["prizename"],
             "gid": gid,
             "jurisdiction": file["region"].lower(),
             "type": row["prizetype"]
@@ -201,7 +202,7 @@ for file in sheets:
                 if row["eventspecificlocation"] is None:
                     # @TODO
                     # raise ValueError("Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"]))
-                    print "Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"])
+                    print "WARNING: Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"])
                     continue
 
                 event_gid = row["eventspecificlocation"].replace(" ", "-").replace(",", "").lower()
@@ -213,11 +214,16 @@ for file in sheets:
                     print "For Event: %s" % (event_gid)
 
                     post = frontmatter.load(event_md_files[event_gid])
+                    prize["category"] = "local"
                     prize["events"] = [post.metadata["gid"]]
                     
                     if post.metadata["gid"] != event_gid:
                         print "WARNING: Event .md file does not match event gid. %s, %s" % (event_gid, post.metadata["gid"])
-        
+            else:
+                prize["category"] = "state"
+        else:
+            prize["category"] = "australia"
+            
         # Attach sponsoring organisations
         organisation_gid = row["sponsoredby"].lower().replace(" ", "-").replace(",", "").strip()
         if organisation_gid in organisation_names:
@@ -230,18 +236,18 @@ for file in sheets:
         prize_md_file = os.path.join(prize_md_dir, "%s.md" % (gid))
 
         if os.path.exists(prize_md_file):
-            print "NOTICE: Found an existing prize. Merging new data."
-
+            # print "NOTICE: Found an existing prize. Merging new data."
             existing_prize = frontmatter.load(prize_md_file)
             existing_prize.metadata.update(prize)
             prize = existing_prize.metadata
 
         # Convert prize $$$ value to an integer
+        estimatedprizevalue = ""
         if type(row["estimateprizevalue$"]) is unicode and row["estimateprizevalue$"].strip().replace("$", "").isdigit():
             estimatedprizevalue = int(row["estimateprizevalue$"].strip().replace("$", ""))
         elif type(row["estimateprizevalue$"]) is float or type(row["estimateprizevalue$"]) is long:
             estimatedprizevalue = int(row["estimateprizevalue$"])
-        else:
+        elif row["estimateprizevalue$"] is not None:
             estimatedprizevalue = row["estimateprizevalue$"].strip()
         
         # Fixing up minor stuff
@@ -267,16 +273,16 @@ for file in sheets:
             f.write(unicode(yaml.safe_dump(prize, width=200, default_flow_style=False, encoding="utf-8", allow_unicode=True), "utf-8"))
             f.write(u'---\n')
             f.write(u'\n')
-            f.write(row["prizecategorydescription"].replace("|", "\n").rstrip())
+            f.write(unicode(row["prizecategorydescription"].replace("|", "\n").rstrip()))
             f.write(u'\n\n')
             f.write(u'# Prize\n')
-            f.write(row["prizereward"].replace("|", "\n").rstrip())
+            f.write(unicode(row["prizereward"].replace("|", "\n").rstrip())
             f.write(u'\n\n')
             f.write(u'## Estimated Prize Value\n')
             f.write(unicode("$%s" % (estimatedprizevalue)))
             f.write(u'\n\n')
             f.write(u'# Eligibility Criteria\n')
-            f.write(row["eligibilitycriteria"].replace("|", "\n").rstrip())
+            f.write(unicode(row["eligibilitycriteria"].replace("|", "\n").rstrip()))
     
     # print "\n"
     print "############################################################"
