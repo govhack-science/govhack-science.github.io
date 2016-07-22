@@ -2,7 +2,8 @@ import frontmatter
 import json
 import os
 
-dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_themes"]
+# dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_themes", "_prizes"]
+dirs = ["_jurisdictions", "_locations", "_prizes"]
 basepath, pythondir = os.path.split(os.path.dirname(os.path.realpath(__file__)))
 portalurl = "http://portal.govhack.org"
 
@@ -10,7 +11,10 @@ for dir in dirs:
   print "# Processing %s" % (dir[1:])
   path = os.path.join(basepath, dir)
   jsonbasepath = os.path.join(basepath, "feed", dir[1:]) # Trim the leading underscore
-  jsonall = []
+  jsonall = {
+    "_locations": [],
+    "_prizes": []
+  }
   
   if not os.path.exists(jsonbasepath):
     print "Initialising directory %s" % (jsonbasepath)
@@ -26,8 +30,12 @@ for dir in dirs:
         
         # Generate a URL for locations for www to use
         if dir == "_locations":
-          basepath, dirname = os.path.split(dirpath)
+          junk, dirname = os.path.split(dirpath)
           jsonblob["url"] = "%s/%s/%s/%s" % (portalurl, "locations", dirname, f.replace(".md", ".html"))
+        
+        # Include Markdown body
+        if dir == "_prizes":
+          jsonblob["body"] = post.content
         
         if "gid" in jsonblob:
           jsonblob["id"] = jsonblob["gid"]
@@ -36,14 +44,15 @@ for dir in dirs:
         with open(jsonpath, "w") as outfile:
           json.dump(jsonblob, outfile)
         
-        jsonall.append(jsonblob)
+        if dir in jsonall:
+          jsonall[dir].append(jsonblob)
     
-  if dir == "_locations":
+  if dir in jsonall:
     print
     print "Creating all.json"
     
     jsonallpath = os.path.join(jsonbasepath, "all.json")
     with open(jsonallpath, "w") as outfile:
-        json.dump(jsonall, outfile)
+        json.dump(jsonall[dir], outfile)
   
   print
