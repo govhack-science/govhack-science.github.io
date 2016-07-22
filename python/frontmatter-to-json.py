@@ -4,7 +4,7 @@ import os
 import markdown2
 
 # dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_themes", "_prizes"]
-dirs = ["_jurisdictions", "_locations", "_prizes"]
+dirs = ["_jurisdictions", "_locations", "_organisations", "_prizes"]
 basepath, pythondir = os.path.split(os.path.dirname(os.path.realpath(__file__)))
 portalurl = "http://portal.govhack.org"
 
