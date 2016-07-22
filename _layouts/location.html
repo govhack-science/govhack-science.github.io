@@ -286,19 +286,19 @@ that our authors (or indeed myself) might indicate a signup link.
 
     {% assign prize_ids = "" %}
     {% for prize in site.prizes %}
-        {% if prize.jurisdiction == page.jurisdiction or prize.location == page.gid %}
+        {% if prize.jurisdiction == page.jurisdiction and prize.category == "local" and prize.events contains page.gid %}
             {% assign prize_ids = prize_ids | append: prize.gid %}
             {% assign prize_ids = prize_ids | append: "," %}
         {% endif %}
     {% endfor %}
 
     {% unless prize_ids == "" %}
-    <!-- Prizes Section -->
+    <!-- Local Prizes Section -->
     <section id="local-state-prizes" class="bg-light-gray">
         <div class="container">
             <div class="row header-row">
             <div class="col-lg-12 text-center">
-                <h2>Local &amp; State Prizes</h2>
+                <h2>Local Prizes</h2>
             </div>
             </div>
             <div class="row">
@@ -308,6 +308,24 @@ that our authors (or indeed myself) might indicate a signup link.
         </div>
     </section>
     {% endunless %}
+
+    {% assign prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.jurisdiction | map: "gid" %}
+    {% assign prize_ids_len = prize_ids | size %}
+    {% if prize_ids_len > 0 %}
+    <!-- State Prizes Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2>State Prizes</h2>
+            </div>
+            </div>
+            <div class="row">
+            {% include prize_cards.bs.html prize_ids=prize_ids %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     {% assign local_org_ids = "" %}
     {% assign state_org_ids = "" %}
@@ -389,12 +407,12 @@ that our authors (or indeed myself) might indicate a signup link.
     {% endfor %}
 
     {% unless mentor_ids == "" %}
-    <!-- Local Event Mentors Section -->
-    <section id="local-state-mentors">
+    <!-- Local Mentors Section -->
+    <section id="local-mentors">
         <div class="container">
             <div class="row header-row">
             <div class="col-lg-12 text-center">
-                <h2>Local Event Mentors</h2>
+                <h2>Local Mentors</h2>
             </div>
             </div>
             <div class="row">

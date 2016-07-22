@@ -109,7 +109,7 @@ layout: bootstrap
 </section>
 {% endif %}
 
-{% assign prize_ids = site.prizes | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
 {% assign prize_ids_len = prize_ids | size %}
 {% if prize_ids_len > 0 %}
 <!-- Prizes Section -->

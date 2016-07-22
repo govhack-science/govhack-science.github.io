@@ -6,7 +6,15 @@ cfg:
     - gh14
     - gh13
 
+exclude:
+  - 2015
+  - docs
+  - python
+  - startbootstrap-agency-1.0.6
+  - startbootstrap-clean-blog-1.0.4
   - startbootstrap-clean-blog-1.0.4-original
+  - startbootstrap-grayscale-1.0.6
+  - venv
 
 collections:
   themes:
