@@ -1,4 +1,5 @@
 cfg:
+  prizes_active: false
   current_event: gh16
   events:
     - gh16

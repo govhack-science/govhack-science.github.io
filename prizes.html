@@ -22,14 +22,14 @@ title: Prizes
           </div>
         </div>
         <div class="row">
-            {% if site.prizes == nil %}
+            {% if site.cfg.prizes_active == false %}
                 <p>Prizes aren't released until GovHack begins at <strong>7pm, Friday the 29th July 2016</strong>, at your local event.</p>
             {% endif %}
         </div>
     </div>
 </section>
 
-{% if site.prizes != nil %}
+{% if site.cfg.prizes_active == true %}
 <!-- International Prizes Section -->
 <section>
     <div class="container">
