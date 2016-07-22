@@ -6,6 +6,7 @@ cfg:
     - gh14
     - gh13
 
+  - startbootstrap-clean-blog-1.0.4-original
 
 collections:
   themes:
