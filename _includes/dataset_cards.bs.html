@@ -9,7 +9,7 @@
   <div class="media">
       <div class="media-body">
         <h4 class="media-heading"><a href="{{ dataset.url }}">{{ dataset.name }}</a></h4>
-        {{ dataset.excerpt }}
+        {{ dataset.excerpt | truncate: 300 }}
       </div>
   </div>
   {% endif %}

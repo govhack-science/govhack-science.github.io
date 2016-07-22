@@ -17,8 +17,10 @@
     {% assign dataset_len = datasets | size %}
 
     {% if dataset_len > 0 %}
-      <{{ org_heading_lvl }}><a href="{{ organisation.url }}">{{ organisation.name }}</a></{{ org_heading_lvl }}>
-      {% include dataset_cards.bs.html datasets=datasets %}
+      <div class="row dataset-org">
+        <{{ org_heading_lvl }}><a href="{{ organisation.url }}">{{ organisation.name }}</a></{{ org_heading_lvl }}>
+        {% include dataset_cards.bs.html datasets=datasets %}
+      </div>
     {% endif %}
   {% endif %}
 {% endfor %}
