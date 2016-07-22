@@ -179,6 +179,13 @@ for file in sheets:
         print gid
         print
 
+        if row["prizetype"] is None:
+            errmsg = "%s: Prize '%s' has no type set." % (file["region"].lower(), row["prizename"])
+            # raise ValueError(errmsg)
+            validation_errors.append(errmsg)
+            print errmsg
+            continue
+
         prize = {
             "name": row["prizename"],
             "title": row["prizename"],

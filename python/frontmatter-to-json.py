@@ -36,6 +36,9 @@ for dir in dirs:
         
         # Include Markdown body
         if dir == "_prizes":
+          if post.metadata["type"] is not None and post.metadata["type"].lower() == "spirit":
+            continue
+
           jsonblob["body"] = markdown2.markdown(post.content)
           jsonblob["portal_url"] = "%s/%s/%s/%s" % (portalurl, "prizes/2016", post.metadata["jurisdiction"], f.replace(".md", ".html"))
         
