@@ -27,7 +27,7 @@ times:
     open: 12:00 AM
     close: 05:00 PM
 images:
-  - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/Stone+and+CHalk.png
+  - https://www.govhack.org/wp-content/uploads/2016/07/stonechalk.png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/HA%23hackaus.png
 contact:
   twitter: GovHackSydney
