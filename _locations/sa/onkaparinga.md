@@ -1,5 +1,5 @@
 ---
-gid: adelaide-seaford
+gid: onkaparinga
 name: Onkaparinga
 prefix: Unleashed
 jurisdiction: sa
