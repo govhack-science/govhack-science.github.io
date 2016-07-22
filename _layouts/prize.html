@@ -7,6 +7,8 @@ layout: bootstrap
     {% if page.photo_url != "" %}
       <img src="{{ page.photo_url }}" class="img-responsive">
     {% endif %}
+
+    <h2>{{ page.name }}</h2>
     
     {% for jurisdiction in site.jurisdictions %}
       {% if jurisdiction.gid == page.jurisdiction %}

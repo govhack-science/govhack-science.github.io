@@ -1,6 +1,7 @@
 import frontmatter
 import json
 import os
+import markdown2
 
 # dirs = ["_dataportals", "_datasets", "_fields", "_jurisdictions", "_locations", "_mentors", "_organisations", "_themes", "_prizes"]
 dirs = ["_jurisdictions", "_locations", "_prizes"]
@@ -35,7 +36,8 @@ for dir in dirs:
         
         # Include Markdown body
         if dir == "_prizes":
-          jsonblob["body"] = post.content
+          jsonblob["body"] = markdown2.markdown(post.content)
+          jsonblob["portal_url"] = "%s/%s/%s/%s" % (portalurl, "prizes/2016", post.metadata["jurisdiction"], f.replace(".md", ".html"))
         
         if "gid" in jsonblob:
           jsonblob["id"] = jsonblob["gid"]

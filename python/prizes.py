@@ -138,6 +138,7 @@ for root, dirnames, filenames in os.walk(eventsdir):
 
 # Ingest available prize sheets for UPSERTing
 gids = [] # GIDs used so far for sanity checking
+validation_errors = []
 
 sheets = PrizeSpreadsheets(datadir).get_spreadsheets()
 for file in sheets:
@@ -159,8 +160,10 @@ for file in sheets:
         #     exit()
         if row["prizename"] is None:
             # @TODO
-            # raise ValueError("Prize #'%s' has no name" % (idx))
-            print "Prize #'%s' has no name" % (idx)
+            errmsg = "%s: Prize #'%s' has no name" % (file["region"].lower(), idx)
+            # raise ValueError(errmsg)
+            validation_errors.append(errmsg)
+            print errmsg
             continue
         
         gid = file["region"].lower() + "-" + row["prizename"].lower().strip().replace("/", " or ").replace(" ", "-").replace("'", "")
@@ -193,7 +196,6 @@ for file in sheets:
         }
 
         # Attach non-national prizes to their events
-        # @TODO Make sure the inputs are valid
         if file["region"] != "AUSTRALIA":
             if row["prizelevelregionwideoreventspecific"] == "Event only":
                 if "eventspecificlocation" not in row:
@@ -201,21 +203,37 @@ for file in sheets:
 
                 if row["eventspecificlocation"] is None:
                     # @TODO
-                    # raise ValueError("Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"]))
-                    print "WARNING: Prize '%s' is an Event prize, but no event locations provided." % (row["prizename"])
+                    errmsg = "%s: Prize '%s' is an Event prize, but no event locations provided." % (file["region"].lower(), row["prizename"])
+                    # raise ValueError(errmsg)
+                    validation_errors.append(errmsg)
+                    print errmsg
                     continue
 
                 event_gid = row["eventspecificlocation"].replace(" ", "-").replace(",", "").lower()
+                event_gid_original = event_gid
+
+                # Hacky fix
+                if event_gid == "mount-gambier":
+                    event_gid = "mount-gambier-youth"
+                elif event_gid == "all-brisbane-events":
+                    event_gid = "brisbane"
+
                 if event_gid not in event_names:
-                    # @TODO
-                    # raise ValueError("Event GID '%s' does not exist." % (event_gid))
-                    print "Event GID '%s' does not exist." % (event_gid)
+                    errmsg = "%s: Event GID '%s' does not exist." % (file["region"].lower(), event_gid)
+                    raise ValueError(errmsg)
+                    validation_errors.append(errmsg)
+                    # print errmsg
                 else:
                     print "For Event: %s" % (event_gid)
 
                     post = frontmatter.load(event_md_files[event_gid])
                     prize["category"] = "local"
                     prize["events"] = [post.metadata["gid"]]
+
+                    # Hacky fix
+                    if event_gid_original == "all-brisbane-events":
+                        prize["events"].append("brisbane-youth")
+                        prize["events"].append("brisbane-maker")
                     
                     if post.metadata["gid"] != event_gid:
                         print "WARNING: Event .md file does not match event gid. %s, %s" % (event_gid, post.metadata["gid"])
@@ -276,7 +294,7 @@ for file in sheets:
             f.write(unicode(row["prizecategorydescription"].replace("|", "\n").rstrip()))
             f.write(u'\n\n')
             f.write(u'# Prize\n')
-            f.write(unicode(row["prizereward"].replace("|", "\n").rstrip())
+            f.write(unicode(row["prizereward"].replace("|", "\n").rstrip()))
             f.write(u'\n\n')
             f.write(u'## Estimated Prize Value\n')
             f.write(unicode("$%s" % (estimatedprizevalue)))
@@ -288,6 +306,9 @@ for file in sheets:
     print "############################################################"
     # print "\n\n"
 
+if len(validation_errors) > 0:
+    for i in validation_errors:
+        print i
 # ---
 # name: Prize 1
 # id: prize_1
