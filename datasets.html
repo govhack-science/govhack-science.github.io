@@ -43,7 +43,7 @@ sections:
                 <h2>Federal Government Agency Datasets</h2>
 
                 {% assign organisations = site.organisations | where: "jurisdiction", "australia" %}
-                {% include dataset_cards_by_organisation.bs.html organisations=organisations %}
+                {% include dataset_cards_by_organisation.bs.html organisations=organisations org_heading_lvl="h3" %}
 
                 <br>
 
