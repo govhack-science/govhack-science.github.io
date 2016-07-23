@@ -1060,9 +1060,64 @@ img.gh-sponsor-logo {
     background-color: #4C9AD2;
 }
 
-.gh-tiles {
-    
+.gh-tiles .tile {
+    display: block;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    min-height: 80px;
+    text-align: left;
+    color: white;
+    font-weight: normal;
+    background-color: #444;
+    background-size: 100% auto;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom: 12px solid #b7b5b6;
+    background-size: cover;
+    transition: transform 0.1s linear;
+    margin-bottom: 15px;
 }
-.gh-tile {
-    
+.gh-tiles .tile h1,
+.gh-tiles .tile h2,
+.gh-tiles .tile h3,
+.gh-tiles .tile h4 {
+    margin: 0 0 .25em;
 }
+.gh-tiles .tile p {
+    font-size: .65em;
+    margin: 0;
+    line-height: 1.15;
+}
+.gh-tiles .tile p + p {
+    margin-top: .25em;
+}
+
+.gh-tiles a.tile {
+    text-decoration: none;
+    transition: transform .2s ease;
+}
+.gh-tiles a.tile:hover, 
+.gh-tiles a.tile:active, 
+.gh-tiles a.tile:focus {
+    transform: scale(1.05);
+}
+
+.gh-tiles .tile.pink {
+    background-color: #ca1553;
+    border-color: #e9296b;
+}
+.gh-tiles .tile.blue {
+    background-color: #4c9ad2;
+    border-color: #75b1dc;
+}
+.gh-tiles .tile.lightgrey {
+    background-color: #ecf0f1;
+    border-color: #dde1e2;
+    color: #444;
+}
+.gh-tiles .tile .tile-caption {
+    margin: 0 15px;
+}
+

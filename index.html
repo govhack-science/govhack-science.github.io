@@ -1,27 +1,76 @@
 ---
 layout: bootstrap
 ---
-<!-- Main Content -->
-<section id="registrations">
-  <div class="alert alert-success">
-    <p><strong>Registrations now open:</strong> Click through to your state to register, and don't forget to <a href="locations.html">read up on your chosen event</a>.</p>
-    <br>
-    <div class="container">
+<!-- Registration, tiles etc -->
+<section id="preamble">
+    <div class="container gh-tiles">
         <div class="row">
-        {% for jurisdiction in site.jurisdictions %}
-            {% assign jurisdictions = "" %}
-            {% unless jurisdiction.eventbrite == nil %}
-                <div class="col-md-2 col-sm-3 col-xs-6">
-                    <strong>🎫 <a href="{{ jurisdiction.eventbrite }}">{{ jurisdiction.title }} tickets</a></strong>
+            <div class="col-xs-12">
+                <div class="panel-group" id="regoAccordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="regoHeading">
+                      <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#regoAccordion" href="#regoCollapse" aria-expanded="false" aria-controls="regoCollapse">
+                          <strong>Registrations are still open! Click here.</strong>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="regoCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="regoHeading">
+                      <div class="panel-body">
+                        <p> Choose your home state to register, and don't forget to <a href="locations.html">read up on your chosen event</a>.</p>
+                        {% for jurisdiction in site.jurisdictions %}
+                            {% assign jurisdictions = "" %}
+                            {% unless jurisdiction.eventbrite == nil %}
+                                <div class="col-md-2 col-sm-3 col-xs-6">
+                                    <strong>🎫 <a href="{{ jurisdiction.eventbrite }}">{{ jurisdiction.title }} tickets</a></strong>
+                                </div>
+                            {% endunless %}
+                        {% endfor %}      
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            {% endunless %}
-        {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <a href="/prizes.html" class="tile blue">
+                    <div class="tile-caption">
+                        <h3>Prizes *</h3>
+                        <p>* Will be released at 7:00pm on Friday</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="/handbook" class="tile pink">
+                    <div class="tile-caption">
+                        <h3>Handbook</h3>
+                        <p>Information for competitors and developers</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="#its-not-available-until-friday!" class="tile blue">
+                    <div class="tile-caption">
+                        <h3>Hackerspace *</h3>
+                        <p>Official team registration and submissions</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="/datasets.html" class="tile pink">
+                    <div class="tile-caption">
+                        <h3>Datasets</h3>
+                        <p>Use official datasets to compete for prizes</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-    <br>
-  </div>
+    
 </section>
 
+<!-- Main Content -->
 <section id="intro">
   <div class="container">
       <!--<div class="row header-row">
@@ -52,6 +101,28 @@ layout: bootstrap
         </div>
       </div>-->
   </div>
+  
+  <!-- 
+  <div class="container gh-tiles">
+    <div class="row">
+        <div class="col-md-3 col-xs-6">
+            <div class="tile lightgrey">
+                <div class="tile-caption">
+                    <h3>Slack while you hack</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="tile lightgrey">
+                <div class="tile-caption">
+                    <h3>Twitter</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  -->
+
 </section>
 
 <!-- Theme Section -->

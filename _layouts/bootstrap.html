@@ -76,17 +76,9 @@
     <link href="/resources/css/megamenu.css" rel="stylesheet">
     <link href="/resources/css/portal.css" rel="stylesheet">
     
-    <!-- jQuery -->
+    <!-- jQuery, then other ext libs, then custom libs, then custom JS -->
     <script src="/resources/js/jquery.min.js"></script>
-    
-    <!-- GovHack Site Switcher -->
-    {% comment %}
-    =======================
-    Q: Ermagerd why is this JS included here and not at bottom of body
-    A: Given slow page load time, it looks really bad because we have a
-        hole in the top of our webpage until the GH-SS is loaded.
-    =======================
-    {% endcomment %}
+    <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
     <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -97,7 +89,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#toc" data-offset="60">
+<body data-spy="scroll" data-target="#toc" data-offset="60" class="ghss-fixed ghss-hidden-mobile">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top is-fixed is-visible">
