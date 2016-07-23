@@ -12,7 +12,6 @@ chapters_dir = "handbook/_chapters"
 def save_markdown_file( doc ):
     with io.open("%s/%s.md" % ( chapters_dir, doc["fileName"] ), "w", encoding="utf-8") as f:
         f.write(u'---\n')
-        # f.write(unicode(yaml.safe_dump(mentor, width=200, default_flow_style=False, encoding="utf-8", allow_unicode=True), "utf-8"))
         f.write(unicode("title: '%s'" % ( doc["title"] )))
         f.write(u'\n')
         f.write(unicode("last_updated: '%s'" % ( doc["lastUpdated"] )))
@@ -20,10 +19,8 @@ def save_markdown_file( doc ):
         f.write(u'---\n')
         f.write(u'\n')
         
-        # Le markdown
         f.write(unicode(doc["content"]))
         f.write(u'\n')
-    
 
 # Endpoint for dumping comp stuff. Unauthenticated. Thank you based google docs script webapp.
 # https://script.google.com/macros/s/AKfycbxU0RI14fAzSK5pHC6ibx9gVfX96mxnA8KbujmQDmi5tjPn_n5F/exec
