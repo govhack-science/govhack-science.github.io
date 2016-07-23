@@ -1000,3 +1000,69 @@ h1[id], h2[id], h3[id], h4[id]/*, a[name]*/ {
 .dataset-org {
   margin-top: 25px;
 }
+
+
+/** Extra layout rules by AY **/
+ 
+.national-sponsors-lockup .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.media-subheading {
+    margin-top: -0.4em;
+    margin-bottom: 0.6em;
+}
+
+img.gh-sponsor-logo {
+    
+}
+
+.location-byline {
+    margin: 20px 0;
+}
+
+.location-image-tile {
+    max-height: 300px;
+    margin: 0 10px;
+}
+.location-image-tile img {
+    min-height: 300px;
+    height: 300px;
+}
+.location-venue-details p {
+    margin: 0;
+}
+
+.location-theme::before {
+    content: ' – ';
+    display: inline;
+    color: #bbb;
+}
+
+
+/** Not layout but cute stylistic stuff **/
+.icon-event-type::before {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 0.6em;
+    border-radius: 2px;
+    color: white;
+}
+.icon-event-type-official::before {
+    background-color: #CA1553;
+}
+.icon-event-type-node::before {
+    background-color: #4C9AD2;
+}
+
+.gh-tiles {
+    
+}
+.gh-tile {
+    
+}
