@@ -1,10 +1,8 @@
 ---
 dataset_url: https://data.gov.au/dataset/sa3-region-innovation-data
-events:
-- canberra
 excerpt_separator: <!--more-->
 gid: sa3-region-innovation-data-2009-15
-jurisdiction: act
+jurisdiction: australia
 name: SA3 Region Innovation Data 2009-15
 organisation: department-of-industry-innovation-and-science
 title: SA3 Region Innovation Data 2009-15

@@ -1,10 +1,8 @@
 ---
 dataset_url: http://ecat.ga.gov.au/geonetwork/srv/eng/search#!98f93235-e053-4dd5-b7df-8c1a2c0be461
-events:
-- canberra
 excerpt_separator: <!--more-->
 gid: marine-connectivity-database-subset
-jurisdiction: act
+jurisdiction: australia
 name: Marine Connectivity Database Subset
 organisation: geoscience-australia
 title: Marine Connectivity Database Subset
