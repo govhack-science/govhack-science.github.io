@@ -35,6 +35,8 @@ contact:
 phone: '0402 524 182'
 is_capital_city: false
 display_weight: 30
+dataportals:
+  - wyndham
 ---
 
 Welcome to "Hack for Wyndham", a hackathon to use open data and build some thing useful for the people of Wyndham and Victoria.   
