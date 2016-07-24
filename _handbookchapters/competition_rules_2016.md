@@ -1,17 +1,16 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-24T07:30:16.229Z'
-category: comp
+last_updated: '2016-07-24T16:21:43.973Z'
+categories:
+  - comp
 tags:
   - preparing
 ---
 
-@[toc]
+## What can I submit as a hack?
 
-## What’s  can i submit as a Hack
-
-## A Hack is when you take something and make it better! This is an open data competition so you need to reuse official open data in a clever and creative way.  
+A Hack is when you take something and make it better! This is an open data competition so you need to reuse official open data in a clever and creative way.  
 
 Entries could include, art, jewellery, a digital sign, a board game,  historic film pieces, a virtual reality game, internet of things (IOT), a digital sensor display, a 3D model, a visualisation of data, an informed article and of course some amazing web apps! We only limit you to your imagination.
 
@@ -123,7 +122,7 @@ You agree to only include code, data, or other materials in a submission for the
 
 All code and APIs must be available under an appropriately open license that allows reuse, commercial use, remixing and redistribution. As the owner of the code you can of course fork that code and commercialise if you want, but to be eligible for the competition, the codebase and demonstration submitted must be open sourced. All other content submitted must be Creative Commons BY licensed. For instance you may choose to submit an incredible dynamic or static data visualisation as your team contribution.
 
-The reason for the open licensing of code and content is because GovHack is about awesome outcomes that anyone can use and build on. Great innovation comes from building on the greatness of those who came before ![image alt text](image_0.png)
+The reason for the open licensing of code and content is because GovHack is about awesome outcomes that anyone can use and build on. Great innovation comes from building on the greatness of those who came before.
 
 Entrants consent to GovHack representatives using their name, likeness, image and/or voice in any media for an unlimited period of time, without remuneration, for any publicity and marketing purposes.
 

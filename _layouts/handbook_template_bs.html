@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,9 +73,11 @@
     <link href="/resources/css/handbook.css" rel="stylesheet">
     
     <!-- jQuery, then other ext libs, then custom libs, then custom JS -->
+    <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
     <script src="/resources/js/jquery.min.js"></script>
     <script src="/resources/js/bootstrap.min.js"></script>
-    <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
+    <script src="/resources/js/jquery-collapse/src/jquery.collapse.js"></script>
+    <script src="/resources/js/jquery-collapse/src/jquery.collapse_storage.js"></script>
     <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -86,25 +87,111 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="ghss-fixed ghss-hidden-mobile">
+
+    {% comment %}
+    ========================================
+    No hate FB comment pls
+    ========================================
+    {% endcomment %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=132806437156077";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     
     <main class="viewport">
-        <nav class="side-nav">
+        <aside class="side-nav">
             <header class="header">
-                <h2 style="text-align: center;">
-                    <a href="/">Handbook</a>                
-                </h2>
+                <a id="handbook-logo" class="handbook-logo" href="/handbook" data-target="#home">
+                    <span class="sr-only">Handbook</span>
+                </a>
             </header>
-            {% include_relative _includes/side_nav.html %}
-        </nav>
+
+            <nav>
+                <ul id="hb-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
+                    <li role="presentation">
+                        <h4>Rollup</h4>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/competitors" data-target="#competitors" aria-controls="competitors" role="tab">
+                            Competitor Handbook chapters
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/hackers" data-target="#hackers" aria-controls="hackers" role="tab">
+                            Hacker Toolkit guides
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <h4>Timeline</h4>
+                    </li>
+                    <li role="presentation">
+                        <a class="alt" href="/handbook#/preparing" data-target="#preparing" aria-controls="preparing" role="tab">
+                            Prepare <small>&rarr; before the competition</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a class="alt" href="/handbook#/competing" data-target="#competing" aria-controls="competing" role="tab">
+                            Compete <small>&rarr; in the event</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a class="alt" href="/handbook#/creating" data-target="#creating" aria-controls="creating" role="tab">
+                            Create <small>&rarr; your awesome hack</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a class="alt" href="/handbook#/submitting" data-target="#submitting" aria-controls="submitting" role="tab">
+                            Submit <small>&rarr; your project for judging</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <h4>Hotline</h4>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook/help.html">
+                            Help and contacts
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook/feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div style="display: none">
+                <!-- This is the functionally ordered menu -->
+                <h4>By function</h4>
+                <ul id="functional-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
+                    <li role="presentation">
+                        <a href="/handbook#/competitors" data-target="#competitors" aria-controls="preparing" role="tab">Competitor information</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/venues" data-target="#venues" aria-controls="competing" role="tab">Venue</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/hackers" data-target="#hackers" aria-controls="building" role="tab">Hacker Toolkit</a>
+                    </li>
+                </ul>
+            </div> 
+
+            <footer class="footer-sticky">
+                GovHack – Empower, Enable, Connect. Licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+            </footer>
+        </aside>
         
         <div class="main">
             {{ content }}
-        </div>    
+        </div>
     </main>
     
     {% include autoreload-in-debug.html %}
-</body>
 
+</body>
 </html>

@@ -1,30 +1,157 @@
 ---
-layout: bs-handbook
+layout: handbook_template_bs
+chrono_sections:
+  - category_verb: preparing
+    heading: Preparing before the event
+  - category_verb: competing
+    heading: Competing for glory
+  - category_verb: creating
+    heading: Creating your hack
+  - category_verb: submitting
+    heading: Submitting your project
 ---
 
-<header class="header">
-    <h1>Welcome to the handbook</h1>
-</header>
+<div class="tab-content">
 
+    {% comment %}
+    ==================================================
+    Is this the first visit? If so, display a form and
+    capture some preferences from them e.g.
+    + First hackathon?
+    + Which venue?
+    + Menu display fashion (chrono or functional?)
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane active" id="home">
+        <header class="header">
+            <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
+        </header>
 
-{% comment %}
-==================================================
-Is this the first visit? If so, display a form and
-capture some preferences from them e.g.
-+ First hackathon?
-+ Which venue?
-+ Menu display fashion (chrono or functional?)
-==================================================
-{% endcomment %}
+        <div class="alert alert-warning">This is a preview for VIPs (such as yourself!)</div>
 
-<form id="firstrun-prefs">
-    <div>
-        <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
-        <label><input type="checkbox" /> No it's not</label>                
-    </div>
-    
-    <div class="form-group">
-        <label></label>
-    </div>
-    
-</form>
+        <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
+
+        <div style="display: none;">
+        {% include_relative _includes/firstrun.html %}
+        {% include_relative _includes/preferences.html %}
+        </div>
+    </section>
+
+    {% comment %}
+    ==================================================
+    Print out all the sections that correspond to the 
+    chronological menu
+    ==================================================
+    {% endcomment %}
+    {% for section in page.chrono_sections %}
+    <section role="tabpanel" class="tab-pane" id="{{ section.category_verb }}">
+        <header class="header">
+            <h2>{{ section.heading }}</h2>
+        </header>
+        <div><!-- ex .container-fluid -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For all competitors</h3>
+                      </div>
+                      <div class="panel-body">
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'comp' and article.tags contains section.category_verb %}
+                        <article>
+                            <h4><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                            {{ article.content | strip_html | truncatewords: 22 }}
+                        </article>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For hackers</h3>
+                      </div>
+                      <div class="panel-body">
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'toolkit' and article.tags contains section.category_verb %}
+                        <article>
+                            <h4><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                            {{ article.content | strip_html | truncatewords: 22 }}
+                        </article>
+                        {% endif %}
+                        {% endfor %} 
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+    {% comment %}
+    ==================================================
+    A list of all competitor handbook pages
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="competitors">
+        <header class="header">
+            <h2>Competitor Handbook chapters</h2>
+        </header>
+        <ul>
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'comp' %}
+            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% endif %}
+        {% endfor %} 
+        </ul>
+    </section>
+
+    {% comment %}
+    ==================================================
+    A list of all hacker toolkit pages
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="hackers">
+        <header class="header">
+            <h2>Hacker Toolkit guides</h2>
+        </header>
+        <ul>
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'toolkit' %}
+            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% endif %}
+        {% endfor %} 
+        </ul>
+    </section>    
+
+</div>
+
+<script>
+$(function(){
+    // Hash frag detection
+    if (window.location.hash && window.location.hash.length > 2){
+        var elem = $("[aria-controls='"+window.location.hash.substring(2)+"']");
+        if (elem.length){
+            elem.tab('show');
+        }
+    }
+
+    // Over-bind sidebar menu to JS, for this index page
+    $('#handbook-logo, #hb-nav a[data-target]').on('click', function(e){
+        e.preventDefault();
+        $(this).tab('show');
+
+        if ($(this).attr('aria-controls')){
+            window.location.hash = $(this).attr('aria-controls');
+        }
+        else {
+            window.location.hash = '';
+            $('#hb-nav li').removeClass('active');
+        }
+
+        return false;
+    });
+});
+</script>
