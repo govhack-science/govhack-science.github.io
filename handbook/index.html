@@ -1,5 +1,14 @@
 ---
-layout: bs-handbook
+layout: handbook_template_bs
+chrono_sections:
+  - category_verb: preparing
+    heading: Preparing before the event
+  - category_verb: competing
+    heading: Competing for glory
+  - category_verb: creating
+    heading: Creating your hack
+  - category_verb: submitting
+    heading: Submitting your project
 ---
 
 <div class="tab-content">
@@ -13,99 +22,64 @@ layout: bs-handbook
     + Menu display fashion (chrono or functional?)
     ==================================================
     {% endcomment %}
-    <div role="tabpanel" class="tab-pane active" id="home">
+    <section role="tabpanel" class="tab-pane active" id="home">
         <header class="header">
             <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
         </header>
 
         <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
-        <form id="firstrun-prefs">
-            <div>
-                <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
-                <label><input type="checkbox"> No it's not</label>                
-            </div>
-            
-            <div class="form-group">
-                <label></label>
-            </div>
-            
-        </form>
-    </div>
-
+        {% include_relative _includes/firstrun.html %}
+        {% include_relative _includes/preferences.html %}
+    </section>
 
     {% comment %}
     ==================================================
-    Preparing
+    Print out all the sections that correspond to the 
+    chronological menu
     ==================================================
     {% endcomment %}
-    <div role="tabpanel" class="tab-pane" id="preparing">
-        <header class="header">
-            <h1>Welcome to the handbook</h1>
-        </header> 
-        <ul>
-        {% for article in site.handbookchapters %}
-        {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
-            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
-    </div>
-
-    {% comment %}
-    ==================================================
-    Competing
-    ==================================================
-    {% endcomment %}
-    <div role="tabpanel" class="tab-pane" id="competing">
-        <h2>Competing in GovHack</h2>
-        <ul>
-        {% for article in site.handbookchapters %}
-        {% if article.categories contains 'comp' and article.tags contains 'competing' %}
-            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
-    </div>
-
-    {% comment %}
-    ==================================================
-    Creating
-    ==================================================
-    {% endcomment %}
-    <div role="tabpanel" class="tab-pane" id="creating">
-        <h2>Creating your hack</h2>
-        <ul>
-        {% for article in site.handbookchapters %}
-        {% if article.categories contains 'comp' and article.tags contains 'creating' %}
-            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %}   
-        </ul>
-    </div>
-
-    {% comment %}
-    ==================================================
-    Submitting
-    ==================================================
-    {% endcomment %}
-    <div role="tabpanel" class="tab-pane" id="submitting">
-        <h2>Creating your hack</h2>
-        <div class="container">
-            <div class="row">
+    {% for section in page.chrono_sections %}
+    <section role="tabpanel" class="tab-pane" id="{{ section.category_verb }}">
+        <h2>{{ section.heading }}</h2>
+        <div class="row">
                 <div class="col-sm-6">
-                    <ul>
-                    {% for article in site.handbookchapters %}
-                    {% if article.categories contains 'comp' and article.tags contains 'submitting' %}
-                        <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-                    {% endif %}
-                    {% endfor %}   
-                    </ul>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For all competitors</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'comp' and article.tags contains section.category_verb %}
+                            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For hackers</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'toolkit' and article.tags contains section.category_verb %}
+                            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                      </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
+        <ul>  
+        </ul>
+    </section>
+    {% endfor %}
 </div>
 
 <script>

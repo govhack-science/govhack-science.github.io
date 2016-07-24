@@ -73,9 +73,10 @@
     <link href="/resources/css/handbook.css" rel="stylesheet">
     
     <!-- jQuery, then other ext libs, then custom libs, then custom JS -->
+    <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
     <script src="/resources/js/jquery.min.js"></script>
     <script src="/resources/js/bootstrap.min.js"></script>
-    <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
+    <script src="/resources/js/jquery-collapse/src/jquery.collapse.js"></script>
     <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -94,7 +95,51 @@
                     <a id="handbook-logo" href="/handbook" data-target="#home">Handbook</a>                
                 </h2>
             </header>
-            {% include handbook_side_nav.html %}
+
+            <!-- This is the chronologically ordered menu. TBA: Functionally ordered menu -->
+            <h4>By timeline</h4>
+            <ul id="handbook-chrono-nav" class="nav nav-pills nav-stacked" role="tablist">
+                <li role="presentation">
+                    <a href="/handbook#/preparing" data-target="#preparing" aria-controls="preparing" role="tab">
+                        Preparing<br>
+                        <small>Before the competition</small>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="/handbook#/competing" data-target="#competing" aria-controls="competing" role="tab">
+                        Competing<br>
+                        <small>Throughout the event</small>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="/handbook#/creating" data-target="#creating" aria-controls="creating" role="tab">
+                        Creating<br>
+                        <small>Designing and building your hack</small>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="/handbook#/submitting" data-target="#submitting" aria-controls="submitting" role="tab">
+                        Submitting<br>
+                        <small>Your completed project for judging</small>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="display: none">
+                <!-- This is the functionally ordered menu -->
+                <h4>By function</h4>
+                <ul id="handbook-functional-nav" class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation">
+                        <a href="/handbook#/competitors" data-target="#competitors" aria-controls="preparing" role="tab">Competitor information</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/venues" data-target="#venues" aria-controls="competing" role="tab">Venue</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/hackers" data-target="#hackers" aria-controls="building" role="tab">Hacker Toolkit</a>
+                    </li>
+                </ul>
+            </div>        
         </nav>
         
         <div class="main">
@@ -103,6 +148,6 @@
     </main>
     
     {% include autoreload-in-debug.html %}
-    
+
 </body>
 </html>
