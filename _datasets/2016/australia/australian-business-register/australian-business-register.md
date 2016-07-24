@@ -1,5 +1,5 @@
 ---
-dataset_url: 'https://data.gov.au/dataset/abn-bulk-extract '
+dataset_url: 'https://data.gov.au/dataset/abn-bulk-extract'
 excerpt_separator: <!--more-->
 gid: australian-business-register
 jurisdiction: australia
