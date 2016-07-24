@@ -5,7 +5,6 @@ last_updated: '2016-07-24T07:13:22.053Z'
 categories:
   - comp
 tags:
-  - [u'preparation']
   - preparation
 ---
 

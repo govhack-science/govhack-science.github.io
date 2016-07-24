@@ -1,11 +1,10 @@
 ---
 slug: 'code_of_conduct'
-title: ' Code of Conduct'
+title: 'Code of Conduct'
 last_updated: '2016-07-24T07:11:21.342Z'
-categories:
+categories: 
   - comp
 tags:
-  - [u'preparation']
   - preparation
 ---
 

@@ -5,7 +5,6 @@ last_updated: '2016-07-24T07:19:44.518Z'
 categories:
   - comp
 tags:
-  - [u'during']
   - during
 ---
 

@@ -7,7 +7,7 @@ import frontmatter
 import yaml
 
 # consts
-chapters_dir = "handbook/_chapters"
+chapters_dir = "_handbookchapters"
 
 def save_markdown_file( doc ):
     with io.open("%s/%s.md" % ( chapters_dir, doc["fileName"] ), "w", encoding="utf-8") as f:
