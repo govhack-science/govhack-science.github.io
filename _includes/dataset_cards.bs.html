@@ -4,11 +4,16 @@
   {% assign dataset_ids = include.dataset_ids %}
 {% endif %}
 
+{% assign dataset_org_heading_lvl = "h4" %}
+{% if include.dataset_org_heading_lvl AND include.dataset_org_heading_lvl != "" %}
+  {% assign dataset_org_heading_lvl = include.dataset_org_heading_lvl %}
+{% endif %}
+
 {% for dataset in site.datasets %}
   {% if dataset_ids == nil or dataset_ids contains dataset.gid %}
   <div class="media">
       <div class="media-body">
-        <h4 class="media-heading"><a href="{{ dataset.url }}">{{ dataset.name }}</a></h4>
+        <{{ dataset_org_heading_lvl }} class="media-heading"><a href="{{ dataset.url }}">{{ dataset.name }}</a></{{ dataset_org_heading_lvl }}>
         {{ dataset.excerpt | truncate: 300 }}
       </div>
   </div>

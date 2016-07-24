@@ -42,7 +42,7 @@ sections:
 
                 <h2>Federal Government Agency Datasets</h2>
 
-                {% assign organisations = site.organisations | where: "jurisdiction", "australia" | where: "is_sponsor", true %}
+                {% assign organisations = site.organisations | where: "jurisdiction", "australia" %}
                 {% include dataset_cards_by_organisation.bs.html organisations=organisations org_heading_lvl="h3" %}
 
                 <br>
@@ -53,12 +53,16 @@ sections:
                     {% unless jurisdiction.gid == "australia" %}
                         {% assign organisations = site.organisations | where: "jurisdiction", jurisdiction.gid %}
 
-                        {% capture jurisdiction_datasets %}{% include dataset_cards_by_organisation.bs.html organisations=organisations %}{% endcapture %}
+                        {% capture jurisdiction_datasets %}{% include dataset_cards_by_organisation.bs.html organisations=organisations dataset_org_heading_lvl="h5" %}{% endcapture %}
                         {% assign jurisdiction_datasets = jurisdiction_datasets | strip %}
 
                         {% if jurisdiction_datasets != "" %}
-                            <h3>{{ jurisdiction.name }}</h3>
-                            {{ jurisdiction_datasets }}
+                            <div class="row">
+                                <h3 class="dataset-jurisdiction">{{ jurisdiction.name }}</h3>
+                                {{ jurisdiction_datasets }}
+                                <br>
+                                <br>
+                            </div>
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
