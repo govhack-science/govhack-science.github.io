@@ -7,6 +7,11 @@ layout: bootstrap
     <div class="row">
       <h3 data-toc-skip>{{ page.name }}</h3>
 
+      {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
+      {% if dataset_org %}
+        <a href="{{ dataset_org.url }}">{{ dataset_org.name }}</a><br>
+      {% endif %}
+
       <a href="{{ page.dataset_url }}">
           <h3 data-toc-skip style="display: inline-block;">Dataset Link</h3>
           <span class="fa-stack fa-lg">
@@ -14,11 +19,6 @@ layout: bootstrap
               <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
           </span>
       </a>
-
-      {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
-      {% if dataset_org %}
-        {% include organisation_cards.bs.html organisation_ids=dataset_org.gid %}
-      {% endif %}
       
       {{ page.content }}
     </div>

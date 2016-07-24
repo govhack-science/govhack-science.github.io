@@ -7,7 +7,7 @@
 {% for organisation in site.organisations %}
   {% if organisation_ids == nil or organisation_ids contains organisation.gid %}
     {% if include.logo_only == true %}
-      <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 100%;"></a>
+      <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 70%;"></a>
     {% else %}
       <div class="media">
           <div class="media-left">
