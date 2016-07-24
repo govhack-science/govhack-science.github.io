@@ -41,7 +41,7 @@ body {
     right: 0;
     left: 300px;
     min-height: 100%;
-    padding: 15px 30px 60px;
+    padding: 15px 30px;
     overflow: auto;
 }
 .header {
@@ -59,7 +59,7 @@ body {
     border-top: 1px solid #BEBFBF;
     z-index: 99;
     color: #BEBFBF;
-    font-size: .65em;
+    font-size: .75em;
 }
 
 
@@ -84,4 +84,11 @@ body {
 
 .hb-chapter-footer {
     
+}
+
+/* Theme */
+.nav-pills>li.active>a.alt, 
+.nav-pills>li.active>a.alt:focus, 
+.nav-pills>li.active>a.alt:hover {
+    background-color: #CA1553;
 }

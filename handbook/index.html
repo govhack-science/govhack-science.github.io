@@ -56,10 +56,12 @@ chrono_sections:
                         <h3 class="panel-title">For all competitors</h3>
                       </div>
                       <div class="panel-body">
-                        <ul>
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains 'comp' and article.tags contains section.category_verb %}
-                            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                            <article>
+                                <h4><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                                {{ article.excerpt }}
+                            </article>
                         {% endif %}
                         {% endfor %} 
                         </ul>
@@ -112,7 +114,7 @@ chrono_sections:
     {% endcomment %}
     <section role="tabpanel" class="tab-pane" id="hackers">
         <header class="header">
-            <h2>Hacker Toolkit chapters</h2>
+            <h2>Hacker Toolkit guides</h2>
         </header>
         <ul>
         {% for article in site.handbookchapters %}

@@ -52,7 +52,7 @@ And finally, a most honourary mention to the [NationalMap](http://nationalmap.ni
 
 Ta-da! Instant map :)
 
-![A screenshot of NICTA's National Map web mapping app](../imgs/national-map-overlay.jpg)
+![A screenshot of NICTA's National Map web mapping app](/resources/toolkit-imgs/national-map-overlay.jpg)
 
 There's also some work going on to turn NationalMap into a standalone single page JS library called [TerriaJS](https://github.com/TerriaJS/TerriaJS) - so watch this space for GovHack 2016!
 
@@ -74,7 +74,7 @@ If you're looking at maps as more of a data visualisation tool then the subcateg
 
 Well we couldn't not mention [D3.js](http://d3js.org/) in talking about data visualisation. Michael Bowman's [Designing Beautiful Maps with D3.js](http://bowmanmc.github.io/designing_maps/) talk is worth a look to familiarise yourself with the topic, and then head on over to this [truly exhaustive list](http://bl.ocksplorer.org/#/search/d3.geo) of examples of using D3 for maps on [bl.ocksplorer.org](http://bl.ocksplorer.org).
 
-![A screenshot of the D3.js homepage](../imgs/d3js.jpg)
+![A screenshot of the D3.js homepage](/resources/toolkit-imgs/d3js.jpg)
 
 The team behind the graphing library Highcharts have a separate [Highmaps](http://www.highcharts.com/maps/demo) library that makes creating mapping data visualisations a breeze.
 
