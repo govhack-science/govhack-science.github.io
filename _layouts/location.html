@@ -341,7 +341,9 @@ that our authors (or indeed myself) might indicate a signup link.
         {% endif %}
     {% endfor %}
 
-    {% unless local_org_ids == "" AND state_org_ids == "" %}
+    {% capture org_ids %}{{ local_org_ids }},{{ state_org_ids }}{% endcapture %}
+
+    {% unless org_ids == "" %}
     <!-- Datasets Section -->
     <section id="local-state-datasets" class="bg-light-gray">
         <div class="container">
@@ -352,11 +354,8 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
             </div>
             <div class="row">
-                {% assign local_org_ids_list = local_org_ids | lstrip | split: "," | uniq %}
-                {% include dataset_cards_by_organisation.bs.html organisation_ids=local_org_ids_list org_heading_lvl="h3" %}
-                
-                {% assign state_org_ids_list = state_org_ids | lstrip | split: ","| uniq %}
-                {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
+                {% assign org_ids_list = org_ids | lstrip | split: "," | uniq %}
+                {% include dataset_cards_by_organisation.bs.html organisation_ids=org_ids_list org_heading_lvl="h3" %}
             </div>
         </div>
     </section>
@@ -368,14 +367,12 @@ that our authors (or indeed myself) might indicate a signup link.
     =======================================
     {% endcomment %}
     
-    {% assign dataportal_ids = site.dataportals | where: "jurisdiction", page.jurisdiction | map: "gid" %}
-    {% unless page.dataportals == nil %}
-        {% for dataportal in page.dataportals %}
-            {% assign dataportal_ids = dataportal_ids | push: dataportal %}
-        {% endfor %}
-    {% endunless %}
+    {% assign local_dp_ids = page.dataportals | join: "," %}
+    {% assign state_dp_ids = site.dataportals | where: "jurisdiction", page.jurisdiction | map: "gid" | join: "," %}
 
-    {% unless dataportal_ids == "" %}
+    {% capture dp_ids %}{{ local_dp_ids }},{{ state_dp_ids }}{% endcapture %}
+
+    {% unless dp_ids == "" %}
     <!-- Data Portals Section -->
     <section id="local-state-data-portals" class="bg-light-gray">
         <div class="container">
@@ -386,7 +383,8 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
             </div>
             <div class="row">
-            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+                {% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
+                {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list %}
             </div>
         </div>
     </section>

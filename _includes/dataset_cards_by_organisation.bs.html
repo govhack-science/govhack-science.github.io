@@ -1,7 +1,7 @@
 {% if include.organisations %}
-  {% assign organisation_ids = include.organisations | map: "gid" %}
+  {% assign organisation_ids = include.organisations | map: "gid" | uniq %}
 {% else %}
-  {% assign organisation_ids = include.organisation_ids %}
+  {% assign organisation_ids = include.organisation_ids | uniq %}
 {% endif %}
 
 {% assign org_heading_lvl = "h4" %}
