@@ -4,6 +4,7 @@ events:
 - sydney
 - parramatta
 - camperdown-games
+- manly
 excerpt_separator: <!--more-->
 gid: public-transport-and-roads-data-sets-including-real-time-data
 jurisdiction: nsw

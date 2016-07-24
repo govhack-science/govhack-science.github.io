@@ -2,6 +2,9 @@
 dataset_url: https://www.dropbox.com/sh/faaa0tiwpkp8ben/AAChdVtGZ4WvQFhIxSdeZTEUa?dl=0
 events:
 - sydney
+- parramatta
+- camperdown-games
+- manly
 excerpt_separator: <!--more-->
 gid: access-features-and-barriers-in-sydney-city
 jurisdiction: nsw
@@ -10,7 +13,7 @@ organisation: city-of-sydney
 title: Access Features and Barriers in Sydney City
 ---
 
-This data includes the locations of barriers to access in public spaces in the Central Sydney CBD area .
+This data includes the locations of barriers to access in public spaces in the Central Sydney CBD area.
 
 <!--more-->
 

@@ -2,6 +2,9 @@
 dataset_url: https://opendata.transport.nsw.gov.au/app/api-catalog.html
 events:
 - sydney
+- parramatta
+- camperdown-games
+- manly
 excerpt_separator: <!--more-->
 gid: roads---static---parking---off-street
 jurisdiction: nsw

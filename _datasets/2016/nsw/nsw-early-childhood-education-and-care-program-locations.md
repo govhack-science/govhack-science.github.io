@@ -4,6 +4,7 @@ events:
 - sydney
 - parramatta
 - camperdown-games
+- manly
 excerpt_separator: <!--more-->
 gid: nsw-early-childhood-education-and-care-program-locations
 jurisdiction: nsw

@@ -4,6 +4,7 @@ events:
 - sydney
 - parramatta
 - camperdown-games
+- manly
 excerpt_separator: <!--more-->
 gid: nsw-government-schools-by-bushfire-category
 jurisdiction: nsw
