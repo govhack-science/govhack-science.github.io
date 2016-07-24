@@ -202,7 +202,8 @@ for row in data:
     else:
         print "WARNING: Could not resolve organisation: %s" % (submission["Agency/Organisation"])
         print organisation_gid
-        print "SKIPPING!"
+        organisation_gid = submission["Agency/Organisation"].strip()
+        # print "SKIPPING!"
         continue
 
     # Process the events to link these datasets to
@@ -275,7 +276,7 @@ for row in data:
                 dataset_description = package["notes"].strip()
             else:
                 print dataset_name
-                print "WARNING: Doesn't look like CKAN. Is this a dataset?"
+                print "WARNING: There's no dataset name and this doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
                 continue
 
