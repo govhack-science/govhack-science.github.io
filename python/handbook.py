@@ -22,7 +22,17 @@ def save_markdown_file( doc ):
         f.write(unicode("last_updated: '%s'" % ( doc["lastUpdated"] )))
         f.write(u'\n')
         
-        f.write(u'category: comp\n')
+        if 'categories' in doc:
+            f.write(u'categories: comp\n')
+            for category in doc["categories"]
+                f.write(unicode("  - %s" % ( category )))
+                f.write(u'\n')
+        
+        if 'tags' in doc:
+            f.write(u'tags: comp\n')
+            for tag in doc["tags"]
+                f.write(unicode("  - %s" % ( tag )))
+                f.write(u'\n')
         
         f.write(u'---\n')
         f.write(u'\n')
