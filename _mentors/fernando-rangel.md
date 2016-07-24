@@ -7,9 +7,11 @@ gid: fernando-rangel
 jurisdiction: qld
 location: gold-coast
 name: Fernando Rangel
-organisation: City of Gold Coast
+organisation: city-of-gold-coast
 position_title: Senior Digital Delivery Officer
 type: Data Mentor
+dataportals:
+  - gold-coast
 ---
 
 I am a GIS enthusiast with experience in developing, managing and supporting geospatial applications. 

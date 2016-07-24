@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Personal insolvency statistics
 organisation: australian-financial-security-authority
 title: Personal insolvency statistics
+mentors:
+  - ed-noveras
 ---
 
 AFSA publish provisional quarterly and annual personal insolvency statistics on bankruptcies, debt agreements and personal insolvency agreements for all states and territories.

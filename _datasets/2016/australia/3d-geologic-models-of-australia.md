@@ -6,6 +6,8 @@ jurisdiction: australia
 name: 3D Geologic Models of Australia
 organisation: geoscience-australia
 title: 3D Geologic Models of Australia
+mentors:
+  - david-lescinsky
 ---
 
 Geoscience Australia (GA) has created a unique collection of 3D structural and geological models and model inputs for Australia and its near shore regions.

@@ -6,9 +6,11 @@ jurisdiction: australia
 name: Advanced Ecological Knowledge Observation System data (Australian plant and animal data)
 organisation: ncris-research-data-and-infrastructure-group
 title: Advanced Ecological Knowledge Observation System data (Australian plant and animal data)
+mentors:
+  - tom-saleeba
 ---
 
-The Ì KOS system is primarily focused on systematically collected terrestrial ecosystem data using plot-based collection methods. These data are useful for reliable testing of fundamental ecosystem hypotheses. Ì KOS stores the plot-based data and Information that describes the data and its collection context. This information can be obtained from field manuals, notebooks, scientific papers, and reports.
+The ÆKOS system is primarily focused on systematically collected terrestrial ecosystem data using plot-based collection methods. These data are useful for reliable testing of fundamental ecosystem hypotheses. Ì KOS stores the plot-based data and Information that describes the data and its collection context. This information can be obtained from field manuals, notebooks, scientific papers, and reports.
 
 <!--more-->
 

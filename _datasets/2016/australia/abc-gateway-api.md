@@ -6,13 +6,13 @@ jurisdiction: australia
 name: ABC Gateway API
 organisation: abc
 title: ABC Gateway API
+mentors:
+  - sarah-bolt
 ---
 
-Description
+This API provides access to retrieve individual pieces of ABC News Content and some associated metadata.  It provides users with, amongst other things, detailed information about ABC News articles including their body text.  This portal to a substantial body of written News content allows significant opportunity to explore many analysis approaches including natural language processing techniques.  
 
 <!--more-->
-
-This API provides access to retrieve individual pieces of ABC News Content and some associated metadata.  It provides users with, amongst other things, detailed information about ABC News articles including their body text.  This portal to a substantial body of written News content allows significant opportunity to explore many analysis approaches including natural language processing techniques.  
 
 It can be also be used in conjunction with the other data extract highlighted by the ABC, 'Views of ABC News Digital Content (May 2016)' provided on data.gov.au.  The latter provides hourly traffic to ABC News content on some of the ABC's digital properties.  In combination these sources provide data on what news Australians are reading about in what quantities, when and on what platforms. 
 

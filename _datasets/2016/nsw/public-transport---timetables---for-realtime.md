@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Public Transport - Timetables - For Realtime
 organisation: nsw-government
 title: Public Transport - Timetables - For Realtime
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Static timetables, stop locations, and route shape information in GTFS format for operators that support realtime

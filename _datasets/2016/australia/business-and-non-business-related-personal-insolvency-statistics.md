@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Business and non-business related personal insolvency statistics
 organisation: australian-financial-security-authority
 title: Business and non-business related personal insolvency statistics
+mentors:
+  - ed-noveras
 ---
 
 AFSA publish a breakdown of business and non-business personal insolvency statistics quarterly for bankrupts, debt agreement debtors and personal insolvency agreement debtors. The time series started in March 2003

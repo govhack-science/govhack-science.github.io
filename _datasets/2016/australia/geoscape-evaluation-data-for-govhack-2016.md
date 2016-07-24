@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Geoscape Evaluation Data for GovHack 2016
 organisation: psma
 title: Geoscape Evaluation Data for GovHack 2016
+mentors:
+  - michael-dixon
 ---
 
 Geoscape is PSMA's award-winning new initiative to capture Australia's built environment and anchor it in a reliable geospatial base. The dataset will include 3D building attributes, land cover and tree heights. Geoscape also captures features such as roof materials, swimming pools and solar panels.

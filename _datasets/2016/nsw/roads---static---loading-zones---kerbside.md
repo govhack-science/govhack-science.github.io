@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Roads - Static - Loading Zones - Kerbside
 organisation: nsw-government
 title: Roads - Static - Loading Zones - Kerbside
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Location of Sydney CBD kerbside loading zones (for use by delivery vehicles when loading or unloading goods) by street and time of day (hourly) in JSON and XLS (MS Excel) formats

@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 gid: news-corp-content-api-(capi)
 jurisdiction: australia
 name: News Corp Content API (CAPI)
-organisation: newscorp-sa
+organisation: newscorp
 title: News Corp Content API (CAPI)
 ---
 

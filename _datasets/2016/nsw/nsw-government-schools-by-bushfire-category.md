@@ -11,6 +11,8 @@ jurisdiction: nsw
 name: NSW Government Schools by Bushfire Category
 organisation: nsw-government
 title: NSW Government Schools by Bushfire Category
+mentors:
+  - rustum-abdurahman
 ---
 
 NSW Government Schools by Bushfire Category

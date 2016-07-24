@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Regional statistics
 organisation: australian-financial-security-authority
 title: Regional statistics
+mentors:
+  - ed-noveras
 ---
 
 AFSA publish State, Greater Capital Cities Statistical Area (GCCSA) and Statistical Area Level 3 (SA3) breakdown of the number of debtors with business and non-business related personal insolvencies on a quarterly basis, using the Australian Bureau of Statistics (ABS) Australian Statistical Geography Standard (ASGS): Correspondences, July 2011, cat. no. 1270.0.55.006.

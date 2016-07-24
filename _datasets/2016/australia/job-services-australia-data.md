@@ -6,6 +6,9 @@ jurisdiction: australia
 name: Job Services Australia Data
 organisation: department-of-employment
 title: Job Services Australia Data
+mentors:
+  - sean-mullins
+  - malcolm-cook
 ---
 
 Employment Services is the Australian Government’s way of helping get more Australians into work. Job Services Australia was the employment services model between 1 July 2009- 30 June 2015.  These datasets are the aggregated Job Services Australia youth caseload (job seekers aged 15-24) for labour market regions across Australia, broken down by various demographics including stream classification. The caseload datasets contain information on the number of people being assisted by Job Services Australia for each month of the programme.

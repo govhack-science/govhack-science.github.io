@@ -9,6 +9,8 @@ jurisdiction: wa
 name: Beach photo monitoring
 organisation: nacc
 title: Beach photo monitoring
+mentors:
+  - emma-jackson
 ---
 
 Dataset includes metadata and URLs of thousands of photos taken at over 90 coastal photo monitoring sites between Guilderton and Kalbarri, in Western Australia.

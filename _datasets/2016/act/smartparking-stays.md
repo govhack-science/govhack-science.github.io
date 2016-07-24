@@ -8,6 +8,10 @@ jurisdiction: act
 name: SmartParking Stays
 organisation: act-chief-minister-treasury-and-economic-development-directorate
 title: SmartParking Stays
+mentors:
+  - roger-rooney
+  - greg-tankard
+  - jean-allsop
 ---
 
 The Stay dataset shows the utilisation of an area down to a single bay.

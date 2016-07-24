@@ -6,6 +6,8 @@ jurisdiction: australia
 name: iag flood data
 organisation: iag
 title: iag flood data
+mentors:
+  - nick-bartzis
 ---
 
 IAG are pleased to announce the release of a national dataset containing a view of flood risk across Australia. The released data is available at an address and an aggregated level. The address level data provides granular flood risk information via an api and is based on the GNAF February 2016 release.  The second level of released data is aggregated at an administrative boundary level and available as bulk data, providing users with an overview of flood risk at a regional/national level.

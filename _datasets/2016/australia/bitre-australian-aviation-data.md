@@ -6,6 +6,8 @@ jurisdiction: australia
 name: BITRE Australian Aviation Data
 organisation: department-of-infrastructure-and-regional-development
 title: BITRE Australian Aviation Data
+mentors:
+  - gangadharan-(mano)-manoranjan
 ---
 
 BITRE publishes several domestic and international aviation statistics in csv format.

@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Public Transport - Realtime - Vehicle Positions
 organisation: nsw-government
 title: Public Transport - Realtime - Vehicle Positions
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Current vehicle positions in GTFS-realtime format for Buses, Ferries, Light Rail and Trains

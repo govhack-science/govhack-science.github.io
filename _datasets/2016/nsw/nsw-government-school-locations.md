@@ -11,6 +11,8 @@ jurisdiction: nsw
 name: NSW government school locations
 organisation: nsw-government
 title: NSW government school locations
+mentors:
+  - rustum-abdurahman
 ---
 
 Location information for NSW government schools, including lat/longs.  Dataset changes as required

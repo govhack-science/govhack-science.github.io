@@ -11,6 +11,8 @@ jurisdiction: nsw
 name: NSW University Locations
 organisation: nsw-government
 title: NSW University Locations
+mentors:
+  - rustum-abdurahman
 ---
 
 NSW University Locations by campus

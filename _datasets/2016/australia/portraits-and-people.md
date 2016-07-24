@@ -8,4 +8,4 @@ organisation: national-portrait-gallery
 title: Portraits and people
 ---
 
-This data describes around 3000 portraits in the National Portrait Collection and the people associated with them – the subjects depicted and the artist creators.
+This data describes around 3000 portraits in the National Portrait Collection and the people associated with them – the subjects depicted and the artist creators. Mentor - Catherine Styles.

@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Causes of personal insolvency
 organisation: australian-financial-security-authority
 title: Causes of personal insolvency
+mentors:
+  - ed-noveras
 ---
 
 AFSA collect information about the reason persons become insolvent based on data from the statement of affairs. The statement of affairs requires the debtor to select a single cause of insolvency from a given list. The causes of insolvency are debtors’ opinions of what best describes the main reason for becoming insolvent.

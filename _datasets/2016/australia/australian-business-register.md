@@ -6,6 +6,11 @@ jurisdiction: australia
 name: Australian Business Register
 organisation: australian-business-register
 title: Australian Business Register
+mentors:
+  - jenny-coppock
+  - jared-cane
+  - andrew-mcdermott
+  - theresa-macgregor
 ---
 
 ABN Lookup Bulk Data - Australian Business Register.

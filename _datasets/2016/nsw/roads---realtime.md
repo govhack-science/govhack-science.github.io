@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Roads - Realtime
 organisation: nsw-government
 title: Roads - Realtime
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Travel times and acceleration events across NSW roads in JSON format

@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Public Transport - Facilities and Operators
 organisation: nsw-government
 title: Public Transport - Facilities and Operators
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Operator contact details and location facilities for train stations, ferry wharves and bus interchanges in CSV format

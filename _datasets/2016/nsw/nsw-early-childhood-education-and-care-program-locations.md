@@ -11,6 +11,8 @@ jurisdiction: nsw
 name: NSW Early Childhood Education and Care program locations
 organisation: nsw-government
 title: NSW Early Childhood Education and Care program locations
+mentors:
+  - rustum-abdurahman
 ---
 
 NSW Early Childhood Education and Care program locations

@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Public Transport - Timetables - Complete - TransXChange
 organisation: nsw-government
 title: Public Transport - Timetables - Complete - TransXChange
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Static timetables and stop locations in TransXChange (TXC) format for all operators, including regional and private operators and routes not currently available in realtime feeds. Note: Identifiers do not match the realtime APIs

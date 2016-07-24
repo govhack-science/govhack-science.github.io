@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Views of ABC News Digital Content (May 2016)
 organisation: abc
 title: Views of ABC News Digital Content (May 2016)
+mentors:
+  - sarah-bolt
 ---
 
 The Views of ABC News Digital Content dataset provides both the number of page/screen views per hour for individual pieces of ABC News content and metadata related to each piece of content.  The data is taken from across different ABC digital platforms during the month of May 2016.  These platforms include the ABC News desktop and mobile websites and the ABC app (both iOS and Android versions).

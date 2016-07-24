@@ -11,6 +11,8 @@ organisation: ncris-research-data-and-infrastructure-group
 photo_url: /resources/images/mentors/siddeswara-guru.jpg
 position_title: TERN Data Integration and Synthesis Coordinator
 type: Data Mentor
+dataportals:
+  - tern
 ---
 
 Siddeswara Guru is a Data Integration and Synthesis Coordinator in TERN overseeing data management practices across TERN.

@@ -10,3 +10,5 @@ sponsor_level_desc: Gold Sponsors
 jurisdiction: vic
 is_sponsor: true
 ---
+
+See <a href="/sponsors/newscorp.html">here</a> for NewsCorp datasets.

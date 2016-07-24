@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Marine Connectivity Database Subset
 organisation: geoscience-australia
 title: Marine Connectivity Database Subset
+mentors:
+  - johnathan-kool
 ---
 
 A new fully four-dimensional biophysical dispersal model has been developed by Geoscience Australia, that uses the parallel processing ability of the National Computational Infrastructure Facility supercomputer (http://nci.org.au/), to handle large numbers of simulated larvae, and that can also save supplementary positional information as points within a database management system.

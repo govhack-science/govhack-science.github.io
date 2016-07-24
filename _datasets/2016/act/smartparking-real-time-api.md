@@ -8,6 +8,8 @@ jurisdiction: act
 name: SmartParking real time API
 organisation: act-chief-minister-treasury-and-economic-development-directorate
 title: SmartParking real time API
+mentors:
+  - roger-rooney
 ---
 
 The SmartLot API v1 lets you query for most locations and returns:

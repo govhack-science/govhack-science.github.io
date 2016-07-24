@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Australian Road Deaths Database
 organisation: department-of-infrastructure-and-regional-development
 title: Australian Road Deaths Database
+mentors:
+  - peter-johnston
 ---
 
 The Australian Road Deaths Database provides basic details of road transport crash fatalities in Australia as reported by the police each month to the State and Territory road safety authorities.

@@ -8,6 +8,10 @@ jurisdiction: act
 name: SmartParking Lots
 organisation: act-chief-minister-treasury-and-economic-development-directorate
 title: SmartParking Lots
+mentors:
+  - roger-rooney
+  - greg-tankard
+  - jean-allsop
 ---
 
 The Lots dataset provides locations of the parking bay, the number of lots in the bay, the type of parking and the period of parking allowed.

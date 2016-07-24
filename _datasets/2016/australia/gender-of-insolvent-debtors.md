@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Gender of insolvent debtors
 organisation: australian-financial-security-authority
 title: Gender of insolvent debtors
+mentors:
+  - ed-noveras
 ---
 
 Gender of insolvent debtors is an annual publication. AFSA use the data on gender provided by debtors on the Statement of Affairs.

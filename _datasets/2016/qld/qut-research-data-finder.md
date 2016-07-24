@@ -20,3 +20,5 @@ Research Data Finder is QUT's discovery service for research data created or col
 <!--more-->
 
 Interlinked web pages explicitly connect descriptive information about data collections, researchers or research groups, publications and projects. Users can link from a dataset description to a profile of one of its owners; from there, research projects that the data owner is a participant in can also be found.
+
+Mentor: "Katherina Drinkuth (Qld GovHack State Manager)

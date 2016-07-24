@@ -11,6 +11,9 @@ jurisdiction: nsw
 name: Roads - Realtime - Hazards
 organisation: nsw-government
 title: Roads - Realtime - Hazards
+mentors:
+  - david-phillips
+  - yvonne-lee
 ---
 
 Incidents, Fires, Floods, Alpine Conditions, Major Events and Roadworks information including GPS coordinates in GeoJSON format

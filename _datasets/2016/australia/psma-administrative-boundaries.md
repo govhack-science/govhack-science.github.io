@@ -6,6 +6,9 @@ jurisdiction: australia
 name: PSMA Administrative Boundaries
 organisation: psma
 title: PSMA Administrative Boundaries
+mentors:
+  - michael-dixon
+  - toby-bellwood
 ---
 
 The Administrative Boundaries datasets are Australia's most comprehensive national collection of boundaries including government, statistical and electoral boundaries.

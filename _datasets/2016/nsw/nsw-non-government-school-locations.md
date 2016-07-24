@@ -11,6 +11,8 @@ jurisdiction: nsw
 name: NSW Non-Government School Locations
 organisation: nsw-government
 title: NSW Non-Government School Locations
+mentors:
+  - rustum-abdurahman
 ---
 
 NSW Non-Government School Locations

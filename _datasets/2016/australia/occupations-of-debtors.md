@@ -6,6 +6,8 @@ jurisdiction: australia
 name: Occupations of debtors
 organisation: australian-financial-security-authority
 title: Occupations of debtors
+mentors:
+  - ed-noveras
 ---
 
 AFSA asked insolvent debtors to nominate their usual trade or profession. The responses are classified using the Australian and New Zealand Standard Classification of Occupations (ANZSCO).
