@@ -3,8 +3,6 @@ import io
 import requests
 # import json
 #import urllib2
-import frontmatter
-import yaml
 
 # consts
 chapters_dir = "_handbookchapters"

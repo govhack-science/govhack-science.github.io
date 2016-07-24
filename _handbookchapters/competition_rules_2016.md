@@ -1,17 +1,18 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-24T07:30:16.229Z'
-category: comp
+last_updated: '2016-07-24T13:35:46.059Z'
+categories:
+  - comp
 tags:
   - preparing
 ---
 
-@[toc]
+[[TOC]]
 
-## What’s  can i submit as a Hack
+## What can I submit as a hack?
 
-## A Hack is when you take something and make it better! This is an open data competition so you need to reuse official open data in a clever and creative way.  
+A Hack is when you take something and make it better! This is an open data competition so you need to reuse official open data in a clever and creative way.  
 
 Entries could include, art, jewellery, a digital sign, a board game,  historic film pieces, a virtual reality game, internet of things (IOT), a digital sensor display, a 3D model, a visualisation of data, an informed article and of course some amazing web apps! We only limit you to your imagination.
 

@@ -5,10 +5,9 @@ last_updated: '2016-07-23T10:41:35.218Z'
 categories:
   - comp
 tags:
-  - competing
 ---
 
-@[toc]
+[[TOC]]
 
 Hackerspace is the Official GovHack competition submission site for GovHack 2016.
 

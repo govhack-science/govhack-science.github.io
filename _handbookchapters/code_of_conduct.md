@@ -1,8 +1,9 @@
 ---
 slug: 'code_of_conduct'
 title: 'Code of Conduct'
-last_updated: '2016-07-24T07:11:21.342Z'
-category: comp
+last_updated: '2016-07-24T13:59:50.954Z'
+categories:
+  - comp
 tags:
   - preparing
 ---

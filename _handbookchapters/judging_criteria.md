@@ -1,6 +1,6 @@
 ---
 slug: 'judging_criteria'
-title: 'Judging Criteria '
+title: 'Judging Criteria'
 last_updated: '2016-07-24T07:20:34.118Z'
 categories:
   - comp

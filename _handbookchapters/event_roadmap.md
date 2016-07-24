@@ -1,28 +1,28 @@
 ---
 slug: 'event_roadmap'
 title: 'Event roadmap'
-last_updated: '2016-07-24T07:11:48.836Z'
+last_updated: '2016-07-24T13:59:41.347Z'
 categories:
   - comp
 tags:
-  - preparing
+  - competing
 ---
 
 ## **Event roadmap**
 
 You MUST have all parts of your competition entry submitted by 5:00pm Local time.  
 
-* A descriptive project page  
+    * A descriptive project page  
 
-* Prize categories nominated 
+    * Prize categories nominated 
 
-* Official Open Data reused - URLs  
+    * Official Open Data reused - URLs  
 
-* Evidence Repository URL  
+    * Evidence Repository URL  
 
-* Video URL 
+    * Video URL 
 
-* Demo URL** **(Optional)
+    * Demo URL** **(Optional)
 
 You have only approximately 46 hours to get your entry completed, so here is a guide as to how you might want to allocate your time. This is only a guide, and you can do whatever you want to create and submit your entry.
 
@@ -38,11 +38,11 @@ At 7pm on the Friday night the competition categories are launched and your team
 
 * Spend some time  
 
-* reviewing prizes to identify some common themes of prize categories
+    * reviewing prizes to identify some common themes of prize categories
 
-* reviewing the [Official data](http://portal.govhack.org/datasets.html) list which includes featured data from sponsors and open government data portals
+    * reviewing the [Official data](http://portal.govhack.org/datasets.html) list which includes featured data from sponsors and open government data portals
 
-* Identify the focus of your investigation and project 
+    * Identify the focus of your investigation and project 
 
 * Choose  similar prize categories to focus your energy on 
 
