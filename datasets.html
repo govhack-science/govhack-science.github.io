@@ -39,15 +39,17 @@ sections:
                 <p>
                     PLEASE NOTE: This list will be updated over the weeks leading up to GovHack and will only be finalised a few days before GovHack, so please keep checking back here for up to date information.
                 </p>
+                
+                <hr>
 
-                <h2>Federal Government Agency Datasets</h2>
+                <h2 class="dataset-category">Federal Government Agency Datasets</h2>
 
                 {% assign organisations = site.organisations | where: "jurisdiction", "australia" %}
                 {% include dataset_cards_by_organisation.bs.html organisations=organisations org_heading_lvl="h3" %}
 
-                <br>
+                <hr>
 
-                <h2>State & Local Government Agency Datasets</h2>
+                <h2 class="dataset-category">State & Local Government Agency Datasets</h2>
 
                 {% for jurisdiction in site.jurisdictions %}
                     {% unless jurisdiction.gid == "australia" %}
