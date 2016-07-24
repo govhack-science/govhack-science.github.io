@@ -30,7 +30,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    min-height: 100%;
     padding: 15px;
 }
 .main {
@@ -40,14 +40,26 @@ body {
     bottom: 0;
     right: 0;
     left: 300px;
-    height: 100vh;
-    padding: 15px 30px;
+    min-height: 100%;
+    padding: 15px 30px 60px;
     overflow: auto;
 }
 .header {
     height: 80px;
     padding: 5px 0;
     overflow: hidden;
+}
+.footer-sticky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    padding: 5px 10px;
+    border-top: 1px solid #BEBFBF;
+    z-index: 99;
+    color: #BEBFBF;
+    font-size: .65em;
 }
 
 

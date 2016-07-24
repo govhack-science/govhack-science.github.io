@@ -89,46 +89,62 @@
 <body class="ghss-fixed ghss-hidden-mobile">
     
     <main class="viewport">
-        <nav class="side-nav">
+        <aside class="side-nav">
             <header class="header">
                 <a id="handbook-logo" class="handbook-logo" href="/handbook" data-target="#home">
                     <span class="sr-only">Handbook</span>
                 </a>
             </header>
 
-            <!-- This is the chronologically ordered menu. TBA: Functionally ordered menu -->
-            <h4>By timeline</h4>
-            <ul id="handbook-chrono-nav" class="nav nav-pills nav-stacked" role="tablist">
-                <li role="presentation">
-                    <a href="/handbook#/preparing" data-target="#preparing" aria-controls="preparing" role="tab">
-                        Preparing<br>
-                        <small>Before the competition</small>
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="/handbook#/competing" data-target="#competing" aria-controls="competing" role="tab">
-                        Competing<br>
-                        <small>Throughout the event</small>
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="/handbook#/creating" data-target="#creating" aria-controls="creating" role="tab">
-                        Creating<br>
-                        <small>Designing and building your hack</small>
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="/handbook#/submitting" data-target="#submitting" aria-controls="submitting" role="tab">
-                        Submitting<br>
-                        <small>Your completed project for judging</small>
-                    </a>
-                </li>
-            </ul>
+            <nav>
+                <ul id="hb-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
+                    <li role="presentation">
+                        <h4>By audience</h4>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/competitors" data-target="#competitors" aria-controls="competitors" role="tab">
+                            Competitor Handbook chapters
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/hackers" data-target="#hackers" aria-controls="hackers" role="tab">
+                            Hacker Toolkit guides
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <h4>By timeline</h4>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/preparing" data-target="#preparing" aria-controls="preparing" role="tab">
+                            Prepare<br>
+                            <small>Before the competition</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/competing" data-target="#competing" aria-controls="competing" role="tab">
+                            Compete<br>
+                            <small>Throughout the event</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/creating" data-target="#creating" aria-controls="creating" role="tab">
+                            Create<br>
+                            <small>Designing and building your hack</small>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook#/submitting" data-target="#submitting" aria-controls="submitting" role="tab">
+                            Submit<br>
+                            <small>Your completed project for judging</small>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
             <div style="display: none">
                 <!-- This is the functionally ordered menu -->
                 <h4>By function</h4>
-                <ul id="handbook-functional-nav" class="nav nav-pills nav-stacked" role="tablist">
+                <ul id="functional-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
                     <li role="presentation">
                         <a href="/handbook#/competitors" data-target="#competitors" aria-controls="preparing" role="tab">Competitor information</a>
                     </li>
@@ -139,12 +155,17 @@
                         <a href="/handbook#/hackers" data-target="#hackers" aria-controls="building" role="tab">Hacker Toolkit</a>
                     </li>
                 </ul>
-            </div>        
-        </nav>
+            </div> 
+
+            <footer class="footer-sticky">
+                GovHack – Empower, Enable, Connect. <br>
+                Licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+            </footer>
+        </aside>
         
         <div class="main">
             {{ content }}
-        </div>    
+        </div>
     </main>
     
     {% include autoreload-in-debug.html %}

@@ -27,7 +27,7 @@ chrono_sections:
             <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
         </header>
 
-        <div class="alert alert-warning">Under Construction!</div>
+        <div class="alert alert-warning">I suppose you could call this an alpha release</div>
 
         <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
@@ -48,7 +48,8 @@ chrono_sections:
         <header class="header">
             <h2>{{ section.heading }}</h2>
         </header>
-        <div class="row">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                       <div class="panel-heading">
@@ -82,10 +83,46 @@ chrono_sections:
                     </div>
                 </div>
             </div>
-        <ul>  
-        </ul>
+        </div>
     </section>
     {% endfor %}
+
+    {% comment %}
+    ==================================================
+    A list of all competitor handbook pages
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="competitors">
+        <header class="header">
+            <h2>Competitor Handbook chapters</h2>
+        </header>
+        <ul>
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'comp' %}
+            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% endif %}
+        {% endfor %} 
+        </ul>
+    </section>
+
+    {% comment %}
+    ==================================================
+    A list of all hacker toolkit pages
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="hackers">
+        <header class="header">
+            <h2>Hacker Toolkit chapters</h2>
+        </header>
+        <ul>
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'toolkit' %}
+            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% endif %}
+        {% endfor %} 
+        </ul>
+    </section>    
+
 </div>
 
 <script>
@@ -99,10 +136,18 @@ $(function(){
     }
 
     // Over-bind sidebar menu to JS, for this index page
-    $('#handbook-logo, #handbook-chrono-nav a, #handbook-functional-nav a').on('click', function(e){
+    $('#handbook-logo, #hb-nav a').on('click', function(e){
         e.preventDefault();
         $(this).tab('show');
-        window.location.hash = '#/' + $(this).attr('aria-controls');
+
+        if ($(this).attr('aria-controls')){
+            window.location.hash = $(this).attr('aria-controls');
+        }
+        else {
+            window.location.hash = '';
+            $('#hb-nav li').removeClass('active');
+        }
+
         return false;
     });
 });
