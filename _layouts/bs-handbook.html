@@ -70,11 +70,12 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     
     <!-- Bootstrap Core CSS, then libs, then custom CSS -->
-    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/bootstrap-govhacktheme.min.css" rel="stylesheet">
     <link href="/resources/css/handbook.css" rel="stylesheet">
     
     <!-- jQuery, then other ext libs, then custom libs, then custom JS -->
     <script src="/resources/js/jquery.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
     <script>var GH = {}; GH.opts = { useDashicons: false, useFontAwesome: true };</script>
     <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
 
@@ -89,12 +90,17 @@
 <body class="ghss-fixed ghss-hidden-mobile">
     
     <main class="viewport">
-        <nav class="nav">
-        {% include_relative _includes/nav.html %}
+        <nav class="side-nav">
+            <header class="header">
+                <h2 style="text-align: center;">
+                    <a href="/">Handbook</a>                
+                </h2>
+            </header>
+            {% include_relative _includes/side_nav.html %}
         </nav>
         
         <div class="main">
-            {{ content }}    
+            {{ content }}
         </div>    
     </main>
     

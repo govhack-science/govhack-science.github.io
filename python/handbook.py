@@ -22,6 +22,8 @@ def save_markdown_file( doc ):
         f.write(unicode("last_updated: '%s'" % ( doc["lastUpdated"] )))
         f.write(u'\n')
         
+        f.write(u'category: comp\n')
+        
         f.write(u'---\n')
         f.write(u'\n')
         

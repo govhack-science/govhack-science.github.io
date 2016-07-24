@@ -2,6 +2,7 @@
 slug: 'judging_criteria'
 title: 'Judging Criteria '
 last_updated: '2016-07-23T04:19:03.668Z'
+category: comp
 ---
 
 Judging Criteria

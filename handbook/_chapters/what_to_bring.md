@@ -2,6 +2,7 @@
 slug: 'what_to_bring'
 title: 'What to Bring'
 last_updated: '2016-07-23T07:55:21.522Z'
+category: comp
 ---
 
 ## **What to bring**

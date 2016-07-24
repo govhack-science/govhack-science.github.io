@@ -2,6 +2,7 @@
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
 last_updated: '2016-07-23T10:17:27.927Z'
+category: comp
 ---
 
 @[toc]

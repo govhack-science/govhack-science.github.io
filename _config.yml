@@ -117,4 +117,4 @@ defaults:
       type: handbook_chapters
     values:
       layout: handbook_chapter
-      permalink: /handbook/:fileName.html
+      permalink: /handbook/:categories/:title.html
