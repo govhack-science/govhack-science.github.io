@@ -27,7 +27,7 @@ chrono_sections:
             <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
         </header>
 
-        <div class="alert alert-warning">I suppose you could call this an alpha release</div>
+        <div class="alert alert-warning">This is a preview for VIPs (such as yourself!)</div>
 
         <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
@@ -48,7 +48,7 @@ chrono_sections:
         <header class="header">
             <h2>{{ section.heading }}</h2>
         </header>
-        <div class="container-fluid">
+        <div><!-- ex .container-fluid -->
             <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
@@ -58,10 +58,10 @@ chrono_sections:
                       <div class="panel-body">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains 'comp' and article.tags contains section.category_verb %}
-                            <article>
-                                <h4><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></h4>
-                                {{ article.excerpt }}
-                            </article>
+                        <article>
+                            <h4><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                            {{ article.content | strip_html | truncatewords: 22 }}
+                        </article>
                         {% endif %}
                         {% endfor %} 
                         </ul>
@@ -74,13 +74,14 @@ chrono_sections:
                         <h3 class="panel-title">For hackers</h3>
                       </div>
                       <div class="panel-body">
-                        <ul>
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains 'toolkit' and article.tags contains section.category_verb %}
-                            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        <article>
+                            <h4><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                            {{ article.content | strip_html | truncatewords: 22 }}
+                        </article>
                         {% endif %}
                         {% endfor %} 
-                        </ul>
                       </div>
                     </div>
                 </div>
@@ -138,7 +139,7 @@ $(function(){
     }
 
     // Over-bind sidebar menu to JS, for this index page
-    $('#handbook-logo, #hb-nav a').on('click', function(e){
+    $('#handbook-logo, #hb-nav a[data-target]').on('click', function(e){
         e.preventDefault();
         $(this).tab('show');
 

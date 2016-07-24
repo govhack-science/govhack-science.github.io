@@ -68,8 +68,11 @@ body {
     display: block;
     height: 80px;
     background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
+    opacity: .8;
 }
-
+.handbook-logo:hover {
+    opacity: 1;
+}
 
 
 /* Chapter */

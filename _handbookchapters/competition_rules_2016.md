@@ -8,8 +8,6 @@ tags:
   - preparing
 ---
 
-[[TOC]]
-
 ## What can I submit as a hack?
 
 A Hack is when you take something and make it better! This is an open data competition so you need to reuse official open data in a clever and creative way.  

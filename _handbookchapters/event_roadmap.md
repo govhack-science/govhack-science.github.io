@@ -1,7 +1,7 @@
 ---
 slug: 'event_roadmap'
 title: 'Event roadmap'
-last_updated: '2016-07-24T16:22:36.461Z'
+last_updated: '2016-07-24T16:23:28.418Z'
 categories:
   - comp
 tags:

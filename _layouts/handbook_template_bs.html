@@ -88,6 +88,20 @@
     <![endif]-->
 </head>
 <body class="ghss-fixed ghss-hidden-mobile">
+
+    {% comment %}
+    ========================================
+    No hate FB comment pls
+    ========================================
+    {% endcomment %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=132806437156077";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     
     <main class="viewport">
         <aside class="side-nav">
@@ -139,12 +153,12 @@
                         <h4>Hotline</h4>
                     </li>
                     <li role="presentation">
-                        <a href="/handbook#/help" data-target="#help" aria-controls="help" role="tab">
+                        <a href="/handbook/help.html">
                             Help and contacts
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="/handbook#/feedback" data-target="#feedback" aria-controls="feedback" role="tab">
+                        <a href="/handbook/feedback.html">
                             Feedback
                         </a>
                     </li>

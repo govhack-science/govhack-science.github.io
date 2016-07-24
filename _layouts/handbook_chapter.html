@@ -9,6 +9,9 @@ layout: handbook_template_bs
 </article>
 
 <hr>
+<div class="fb-comments" data-width="600px" data-numposts="5"></div>
+
+<hr>
 <footer class="hb-chapter-footer">
     Last updated: {{ page.last_updated }}
 </footer>
@@ -18,22 +21,27 @@ $(function(){
 
     var $collapseTargetParent = $('#hb-content-{{ page.slug }}');
     var validHeadingTags = ['h1', 'h2', 'h3'];
+    var headingThreshold = 3;
+    
+    if ($collapseTargetParent.find(validHeadingTags.join(', ')).length >= headingThreshold){
 
-    // Groupify everything into heading+content pairs then
-    // Run el collapso https://github.com/danielstocks/jQuery-Collapse
+        // Groupify everything into heading+content pairs then
+        // run el collapso https://github.com/danielstocks/jQuery-Collapse
 
-    insanityGrouping($collapseTargetParent, validHeadingTags);
+        insanityGrouping($collapseTargetParent, validHeadingTags);
 
-    $collapseTargetParent.collapse({
-        query: validheadingTags.join(', '),
-        persist: true,
-        open: function(){
-            this.slideDown(100);
-        },
-        close: function(){
-            this.slideUp(100);
-        }
-    });
+        $collapseTargetParent.collapse({
+            query: validHeadingTags.join(', '),
+            persist: true,
+            open: function(){
+                this.slideDown(100);
+            },
+            close: function(){
+                this.slideUp(100);
+            }
+        });
+
+    }
 
     //====================
 
