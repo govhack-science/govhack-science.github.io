@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 gid: atlas-of-living-australia
 jurisdiction: australia
 name: Atlas of Living Australia
-organisation: tern-group
+organisation: ncris-research-data-and-infrastructure-group
 title: Atlas of Living Australia
 ---
 

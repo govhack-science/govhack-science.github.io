@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 gid: monthly-daily-incident-solar-radiation:-anuclimate-1.0,-0.01-degree,-australian-coverage,-1970-2012
 jurisdiction: australia
 name: 'Monthly daily incident solar radiation: ANUClimate 1.0, 0.01 degree, Australian Coverage, 1970-2012'
-organisation: tern-group
+organisation: ncris-research-data-and-infrastructure-group
 title: 'Monthly daily incident solar radiation: ANUClimate 1.0, 0.01 degree, Australian Coverage, 1970-2012'
 ---
 

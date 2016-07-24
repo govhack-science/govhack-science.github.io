@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 gid: desert-ecology-plot-network:-mammal-abundance-plot-data,-simpson-desert,-western-queensland,-1990-2011
 jurisdiction: australia
 name: 'Desert Ecology Plot Network: Mammal Abundance Plot-data, Simpson Desert, Western Queensland, 1990-2011'
-organisation: tern-group
+organisation: ncris-research-data-and-infrastructure-group
 title: 'Desert Ecology Plot Network: Mammal Abundance Plot-data, Simpson Desert, Western Queensland, 1990-2011'
 ---
 
