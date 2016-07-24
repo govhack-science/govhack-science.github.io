@@ -1,8 +1,30 @@
 ---
-layout: bootstrap
+layout: bs-handbook
 ---
 
-<div style="text-align: center;">
-    <img src="/resources/govhack-go-footprints-handbook.jpg" style="height: 300px;" alt="A wild handbook hasn't appeared">
-    <h4>The handbook is being hacked together as we speak...</h4>
-</div>
+<header class="header">
+    <h1>Welcome to the handbook</h1>
+</header>
+
+
+{% comment %}
+==================================================
+Is this the first visit? If so, display a form and
+capture some preferences from them e.g.
++ First hackathon?
++ Which venue?
++ Menu display fashion (chrono or functional?)
+==================================================
+{% endcomment %}
+
+<form id="firstrun-prefs">
+    <div>
+        <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
+        <label><input type="checkbox" /> No it's not</label>                
+    </div>
+    
+    <div class="form-group">
+        <label></label>
+    </div>
+    
+</form>

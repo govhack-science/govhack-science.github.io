@@ -1,0 +1,64 @@
+/** Handbook CSS **/
+
+/* 
+Dark Grey #848283 
+Light Grey #BEBFBF
+*/
+
+
+/* Color customisation */
+
+
+
+/* Structural and layout */
+
+.viewport {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.side-nav {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    padding: 15px;
+}
+.main {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 300px;
+    height: 100vh;
+    padding: 15px 30px;
+    overflow: auto;
+}
+.header {
+    height: 80px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+
+/* Navigation */
+
+
+
+/* Chapter */
+
+.hb-chapter-title {
+    
+}
+
+.hb-chapter-body {
+    
+}
+
+.hb-chapter-footer {
+    
+}
