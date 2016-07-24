@@ -159,8 +159,9 @@ data = tablib.Dataset()
 data.csv = csv
 new_datasets_count = 0
 ckan = CKANLookup()
+start_row = 51
 
-for row in data:
+for row in data[start_row:]:
     # Skip empty rows populated by the export process
     if row[0] == "":
         continue
@@ -252,7 +253,7 @@ for row in data:
     print
     # print dataset_stub
 
-    # Magic - The dataset info starts at position, and the last 5 fields are irrelevant
+    # Magic - The dataset info starts at position 16, and the last 5 fields are irrelevant
     num_datasets = int(1 if submission["Number of datasets"] == "" else int(submission["Number of datasets"]))
     print "# Number of Datasets: %s" % (num_datasets)
     print
