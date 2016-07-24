@@ -1,32 +1,32 @@
 ---
 slug: 'event_roadmap'
 title: 'Event roadmap'
-last_updated: '2016-07-24T13:59:41.347Z'
+last_updated: '2016-07-24T16:22:36.461Z'
 categories:
   - comp
 tags:
   - competing
 ---
 
-## **Event roadmap**
+## Deadline
 
 You MUST have all parts of your competition entry submitted by 5:00pm Local time.  
 
-    * A descriptive project page  
+* A descriptive project page  
 
-    * Prize categories nominated 
+* Prize categories nominated 
 
-    * Official Open Data reused - URLs  
+* Official Open Data reused - URLs  
 
-    * Evidence Repository URL  
+* Evidence Repository URL  
 
-    * Video URL 
+* Video URL 
 
-    * Demo URL** **(Optional)
+* Demo URL (Optional)
 
 You have only approximately 46 hours to get your entry completed, so here is a guide as to how you might want to allocate your time. This is only a guide, and you can do whatever you want to create and submit your entry.
 
-#### **Friday**
+## Friday
 
 At 7pm on the Friday night the competition categories are launched and your team can start creating. The first night is all about working together in your team to create an idea. 
 
@@ -70,7 +70,7 @@ At 7pm on the Friday night the competition categories are launched and your team
 
 * Ask for help :) 
 
-**Saturday**
+## Saturday
 
 Aim to lock down your concept by midday Saturday. 
 
@@ -102,7 +102,7 @@ Mentors arrive at 9am to midday.
 
 * Run your storyboard past some Govhack crew - 
 
-**Sunday**
+## Sunday
 
 Last years competitors will all tell you the same… "it took me all arvo to create my Vid and then we had loading problems… Aggghh Panic!" On average it takes about an hour to load vids on YouTube and new technology when you're stressed takes twice as long as you want… so factor these elements into your days plans.
 
@@ -142,7 +142,7 @@ In order to get some sleep and quality coding time, you may want to consider org
 
 Don’t forget to look after yourself: take breaks, eat, drink and go for an occasional walk. Allow some time to get away and freshen up. Showers clear the mind!
 
-**Top Tips:**
+## Top Tips
 
 * Check the Eligibility criteria on each prize category - some prizes require you to use data from a specific data portal or dataset.
 

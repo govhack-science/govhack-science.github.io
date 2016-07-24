@@ -1,13 +1,13 @@
 ---
 slug: 'hackerspace_intro_2016'
 title: 'Hackerspace intro  2016'
-last_updated: '2016-07-23T10:41:35.218Z'
+last_updated: '2016-07-24T16:24:03.948Z'
 categories:
   - comp
 tags:
 ---
 
-[[TOC]]
+## Welcome
 
 Hackerspace is the Official GovHack competition submission site for GovHack 2016.
 
@@ -21,7 +21,7 @@ Hackerspace is used in the competition to :
 
 * Webportal to showcase and share GovHack 2016 Project entries
 
-**Competition Portal. **
+## Competition Portal
 
 All information relating to the competition is available from GovHack website portal available at [2016.govhack.org](http://2016.govhack.org) including
 
@@ -34,6 +34,8 @@ All information relating to the competition is available from GovHack website po
 * Official Datasets that must be used
 
 * Data mentors
+
+## Before submitting
 
 Prior to submitting an entry in Hackerspace it is  requirement that you read the GovHack Competition Rules which sets out:
 
@@ -83,11 +85,11 @@ You MUST have all parts of your competition entry submitted by 5:00pm Local time
 
     * Nominate for Team awards available this year.
 
-**Record data used  ** 
+## **Record data used  ** 
 
 Fill in the Dataset URL  for each and explain how this data was used  in your entry. Only records of datasets predominantly used is required.  For each prize category you nominate make sure you check for any specific data reuse eligibility requirements.  This field will be used to validate the eligibility of your entry.
 
-**Evidence Repository URL  **
+## Evidence Repository URL  
 
 This is your proof of concept.**  **You must provide evidence of your work over the weekend  any code, graphics,plans, drawings, mashups, applications, website URLs, models, photos of each  stage to create your artistic representations. Submit a link to a digital repository such as  a google folder or a Source code URL such as GITHUB **(Mandatory)**
 
@@ -97,7 +99,7 @@ This is your proof of concept.**  **You must provide evidence of your work over 
 
 * **Demo URL **( Optional) If judges are able to see and play with it that is useful, but this is a minor component of the judging. 
 
-#### **Timeframes to register and submit:**
+## Timeframes to register and submit:
 
 * **7pm Friday Local time** – Hackerspace opens and prize categories are announced for your region
 

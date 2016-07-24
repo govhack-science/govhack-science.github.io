@@ -1,7 +1,7 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-24T13:35:46.059Z'
+last_updated: '2016-07-24T16:21:43.973Z'
 categories:
   - comp
 tags:
@@ -124,7 +124,7 @@ You agree to only include code, data, or other materials in a submission for the
 
 All code and APIs must be available under an appropriately open license that allows reuse, commercial use, remixing and redistribution. As the owner of the code you can of course fork that code and commercialise if you want, but to be eligible for the competition, the codebase and demonstration submitted must be open sourced. All other content submitted must be Creative Commons BY licensed. For instance you may choose to submit an incredible dynamic or static data visualisation as your team contribution.
 
-The reason for the open licensing of code and content is because GovHack is about awesome outcomes that anyone can use and build on. Great innovation comes from building on the greatness of those who came before ![image alt text](image_0.png)
+The reason for the open licensing of code and content is because GovHack is about awesome outcomes that anyone can use and build on. Great innovation comes from building on the greatness of those who came before.
 
 Entrants consent to GovHack representatives using their name, likeness, image and/or voice in any media for an unlimited period of time, without remuneration, for any publicity and marketing purposes.
 
