@@ -202,7 +202,7 @@ for row in data:
     else:
         print "WARNING: Could not resolve organisation: %s" % (submission["Agency/Organisation"])
         print organisation_gid
-        organisation_gid = submission["Agency/Organisation"].strip()
+        organisation_gid = submission["Agency/Organisation"].lower().strip().replace(" ", "-").replace(",", "")
         # print "SKIPPING!"
         # continue
 
@@ -293,7 +293,7 @@ for row in data:
         # Assign our dataset a globally unique id
         dataset_gid = dataset_name.lower().replace(" ", "-").replace("'", "")
 
-        dataset_md_dir = os.path.join(datasetsdir, dataset_stub["jurisdiction"])
+        dataset_md_dir = os.path.join(datasetsdir, dataset_stub["jurisdiction"], organisation_gid)
         dataset_md_file = os.path.join(dataset_md_dir, "%s.md" % (dataset_gid))
 
         # Create records for datasets who haven't been processed yet

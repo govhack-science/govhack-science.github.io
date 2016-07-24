@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: employment-by-sector---greater-geelong
 jurisdiction: vic
 name: Employment by Sector - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Employment by Sector - Greater Geelong
 ---
 

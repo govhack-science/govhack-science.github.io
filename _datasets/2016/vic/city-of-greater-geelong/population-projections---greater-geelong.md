@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: population-projections---greater-geelong
 jurisdiction: vic
 name: Population Projections - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Population Projections - Greater Geelong
 ---
 

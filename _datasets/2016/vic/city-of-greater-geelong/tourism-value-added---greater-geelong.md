@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: tourism-value-added---greater-geelong
 jurisdiction: vic
 name: Tourism Value Added - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Tourism Value Added - Greater Geelong
 ---
 
