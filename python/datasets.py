@@ -204,7 +204,7 @@ for row in data:
         print organisation_gid
         organisation_gid = submission["Agency/Organisation"].strip()
         # print "SKIPPING!"
-        continue
+        # continue
 
     # Process the events to link these datasets to
     # if submission["Jurisdiction"] == "Australian Government":
@@ -279,6 +279,7 @@ for row in data:
                 print "WARNING: There's no dataset name and this doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
                 continue
+                print "SKIPPING"
 
         # Description to excerpt
         # (For some reason automatic excerpt generation failed.)

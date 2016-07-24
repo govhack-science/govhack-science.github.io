@@ -352,10 +352,10 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
             </div>
             <div class="row">
-                {% assign local_org_ids_list = local_org_ids | lstrip | split: "," %}
+                {% assign local_org_ids_list = local_org_ids | lstrip | split: "," | uniq %}
                 {% include dataset_cards_by_organisation.bs.html organisation_ids=local_org_ids_list org_heading_lvl="h3" %}
-
-                {% assign state_org_ids_list = state_org_ids | lstrip | split: "," %}
+                
+                {% assign state_org_ids_list = state_org_ids | lstrip | split: ","| uniq %}
                 {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
             </div>
         </div>
