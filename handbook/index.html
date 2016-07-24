@@ -27,10 +27,14 @@ chrono_sections:
             <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
         </header>
 
+        <div class="alert alert-warning">Under Construction!</div>
+
         <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
+        <div style="display: none;">
         {% include_relative _includes/firstrun.html %}
         {% include_relative _includes/preferences.html %}
+        </div>
     </section>
 
     {% comment %}
@@ -41,7 +45,9 @@ chrono_sections:
     {% endcomment %}
     {% for section in page.chrono_sections %}
     <section role="tabpanel" class="tab-pane" id="{{ section.category_verb }}">
-        <h2>{{ section.heading }}</h2>
+        <header class="header">
+            <h2>{{ section.heading }}</h2>
+        </header>
         <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
@@ -96,6 +102,7 @@ $(function(){
     $('#handbook-logo, #handbook-chrono-nav a, #handbook-functional-nav a').on('click', function(e){
         e.preventDefault();
         $(this).tab('show');
+        window.location.hash = '#/' + $(this).attr('aria-controls');
         return false;
     });
 });

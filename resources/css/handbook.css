@@ -52,6 +52,11 @@ body {
 
 
 /* Navigation */
+.handbook-logo {
+    display: block;
+    height: 80px;
+    background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
+}
 
 
 
