@@ -7,10 +7,13 @@ gid: steve-knight
 jurisdiction: qld
 location: rockhampton-maker
 name: Steve Knight
-organisation: Department of Science, Information Technology and Innovation
+organisation: queensland-government
 position_title: Principal Digital Economy Officer
 type: Data Mentor
 ---
 
 Based in Rockhampton.
+
 Working with councils, business, communities and the digital industry support greater participation in the digital economy and greater use of digital productivity tools.
+
+Department of Science, Information Technology and Innovation.
