@@ -1,3 +1,13 @@
+---
+slug: data_science
+title: Data Science
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - preparing
+---
+
 Whilst you're not allowed to actually work on your project until the weekend of GovHack itself, that doesn't mean you can't be preparing and learning new skills and tools beforehand.
 
 ## Become a data scientist in an hour

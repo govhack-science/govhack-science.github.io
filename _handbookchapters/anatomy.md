@@ -1,6 +1,18 @@
+---
+slug: 'anatomy'
+title: 'Anatomy of a project'
+last_updated: '2016-07-24T07:11:21.342Z'
+categories: 
+  - toolkit
+tags:
+  - submitting
+---
+
+> Todo: rebuild this page to fit chronologically
+
 There are three simple requirements for your GovHack project:
 
-* That you register your team and fill our your project information on the [HackerSpace](http://hackerspace.govhack.org/),
+* That you register your team and fill our your project information on the [HackerSpace](https://2016.hackerspace.govhack.org/),
 * that you submit a 3 minute video by the end of the competition, and
 * that you make your project source code and assets available online under an open source software license.
 
@@ -9,7 +21,7 @@ It's useful to bear in mind that the competition judges will be focused on the t
 
 ## Register your project and team
 
-Firstly, get one of your team to sign up and register your team on the [HackerSpace](http://hackerspace.govhack.org). You **need to have registered** your team and created your project by midday Saturday (local time), but you're free to continue editing and improving it until the competition closes.
+Firstly, get one of your team to sign up and register your team on the [HackerSpace](https://2016.hackerspace.govhack.org). You **need to have registered** your team and created your project by midday Saturday (local time), but you're free to continue editing and improving it until the competition closes.
 
 If you experience any issues with registering your team, or have any questions about what is required of you, seek out one of your friendly local GovHack organisers and they'll give you a hand.
 

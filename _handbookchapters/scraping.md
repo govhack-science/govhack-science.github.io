@@ -1,3 +1,13 @@
+---
+slug: scraping
+title: Scraping
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - tookit
+tags:
+  - creating
+---
+
 # Scraping data from PDFs and the web
 
 So, somebody gave you a scanned photocopy of the document as PDF? Or a website has some great data, but it's hidden behind an awful JavaScript-heavy interface? No fear - there's some great tools at your disposal to scrape that data and get it into a nicely machine-readable format.

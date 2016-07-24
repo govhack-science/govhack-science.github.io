@@ -5,7 +5,7 @@ last_updated: '2016-07-24T07:13:22.053Z'
 categories:
   - comp
 tags:
-  - preparation
+  - preparing
 ---
 
 ## **What to bring**
@@ -14,7 +14,7 @@ tags:
 
 ### **What to bring: tech and equipment**
 
-Most participants form teams and work together and allocate different tasks to different team members.  For instance you may be great a ideating and creating a marketing pitch through a storyboard.  Another team member may mine data for the concepts so needs a computer and someone else could focus their energy on elements of a winning video.   So not everyone needs a laptop :) Here are some of the things we’ve seen people using at GovHack.
+Most participants form teams and work together and allocate different tasks to different team members.  For instance you may be great a ideating and creating a marketing pitch through a storyboard. Another team member may mine data for the concepts so needs a computer and someone else could focus their energy on elements of a winning video. So not everyone needs a laptop :) Here are some of the things we’ve seen people using at GovHack.
 
 * Laptop
 

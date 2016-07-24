@@ -1,3 +1,13 @@
+---
+slug: mobile_dev
+title: Mobile Development
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - comp
+tags:
+  - preparation
+---
+
 # Device agnostic mobile web development
 
 If your project involves development for mobile devices you've got a choice to make: take a web-based approach or pick a platform and develop a native app. The former will likely be the quicker approach (unless you're a gun Android/iOS developer already) and give you a chance of getting something workable hacked together in time.

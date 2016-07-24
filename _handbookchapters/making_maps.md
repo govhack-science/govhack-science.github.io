@@ -1,3 +1,13 @@
+---
+slug: making_maps
+title: Making Maps
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - creating
+---
+
 # In which we play at being cartographers
 
 Righto, so you've got some data and need to provide a map for your users to view and interact with all of your lovely new data. Good news, you're spoilt for choice! (Are you detecting a theme here?)

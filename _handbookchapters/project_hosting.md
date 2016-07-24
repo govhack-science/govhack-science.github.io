@@ -1,3 +1,13 @@
+---
+slug: project_hosting
+title: Project Hosting
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - submitting
+---
+
 We've already spoken about how you can submit your project source materials, but you'll more than likely also need a place to host your application on the web.
 
 ## Cloud servers

@@ -1,3 +1,13 @@
+---
+slug: 'geographic_data'
+title: 'Geographic Data'
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - creating
+---
+
 # Intro to geographic data
 
 Geographic data is any dataset that has a location element to it - usually provided as latitude and longitude coordinates - that describes a set of points, lines, or polygons, or a picture (raster) with other non-geographic attributes attached to them. A lot of datasets fall under the category of geographic data (aka spatial data) - from bus stops, postcodes, and cycle paths to polling places, satellite or aerial photography, and mineral deposits.

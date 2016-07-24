@@ -1,6 +1,15 @@
+---
+slug: tabular_data
+title: Tabular data
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - preparing
+---
 # Working with tabular data
 
-At its simplest tabular data is data that is stored in rows and columns, either in a flat file or a database, and is usually comprised of simple alphanumeric values. CSV/TSV, JSON, XLS(X), and XML are some of the more common formats you'll find tabular data in, though unfortunately it does still often appear in non machine-readable formats like PDF and DOC and most first be extracted and cleaned before being used.
+At its simplest, tabular data is data that is stored in rows and columns (hence the name "tabular" i.e. in tables), either in a flat file or a database, and is usually comprised of simple alphanumeric values. CSV/TSV, JSON, XLS(X), and XML are some of the more common formats you'll find tabular data in, though unfortunately it does still often appear in non machine-readable formats like PDF and DOC and most first be extracted and cleaned before being used.
 
 ## Converting between data formats
 

@@ -4,6 +4,8 @@ title: 'Hackerspace intro  2016'
 last_updated: '2016-07-23T10:41:35.218Z'
 categories:
   - comp
+tags:
+  - competing
 ---
 
 @[toc]

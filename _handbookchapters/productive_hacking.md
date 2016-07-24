@@ -1,3 +1,13 @@
+---
+slug: data_science
+title: Data Science
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - competing
+---
+
 # Making your hacking more productive
 
 So by now you've got your project idea taking shape, and have probably thought a little about your hosting infrastructure, but how do you turn this idea into reality and what tools do you need?

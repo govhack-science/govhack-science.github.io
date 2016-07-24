@@ -1,3 +1,13 @@
+---
+slug: 'graph_dbs'
+title: 'Graph Databases'
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - creating
+---
+
 # Intro to graph databases
 
 Graph databases were conceived of as a means to make the task of exploring the connections and networks between entities much easier. Whereas in more traditional databases we would have used a from of link table to represent the relationships between entities, that relationship is implicit in a graph database with every entity containing direct pointers to its adjacent entities without the need to expensively compute indexes.

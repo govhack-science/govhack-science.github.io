@@ -1,3 +1,13 @@
+---
+slug: 'kids_who_code'
+title: 'Kids Who Code'
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - toolkit
+tags:
+  - competing
+---
+
 We think it's awesome that kids are wanting to learn how to code - so if that's you we've collected together a few online tutorials to guide you through some practical example of coding. There are many levels of difficulties amongst tutorials that you can explore and have fun with!
 
 # Coding for Kids

@@ -1,3 +1,13 @@
+---
+slug: data_viz
+title: 'Data Visualisation'
+last_updated: '2016-07-24T07:11:21.342Z'
+categories:
+  - toolkit
+tags:
+  - creating
+---
+
 # Data viz 101
 
 Data visualisation encompasses a broad range of fields, techniques, and tools for creating visual representation of data for human consumption. The geographic and tabular data fields have rich toolsets for visualising their particular types of data, so keep on scrolling if you're after some specific tools.
