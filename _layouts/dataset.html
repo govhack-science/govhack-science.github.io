@@ -7,18 +7,18 @@ layout: bootstrap
     <div class="row">
       <h3 data-toc-skip>{{ page.name }}</h3>
 
-      <a href="{{ page.dataset_url }}">
-          <h3 data-toc-skip style="display: inline-block;">Dataset Link</h3>
+      {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
+      {% if dataset_org %}
+        <h4><a href="{{ dataset_org.url }}">{{ dataset_org.name }}</a></h4>
+      {% endif %}
+
+      <h3 data-toc-skip style="display: inline-block;"><a href="{{ page.dataset_url }}">
+          Dataset Link
           <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
           </span>
-      </a>
-
-      {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
-      {% if dataset_org %}
-        {% include organisation_cards.bs.html organisation_ids=dataset_org.gid %}
-      {% endif %}
+      </a></h3>
       
       {{ page.content }}
     </div>

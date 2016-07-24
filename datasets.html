@@ -39,26 +39,32 @@ sections:
                 <p>
                     PLEASE NOTE: This list will be updated over the weeks leading up to GovHack and will only be finalised a few days before GovHack, so please keep checking back here for up to date information.
                 </p>
+                
+                <hr>
 
-                <h2>Federal Government Agency Datasets</h2>
+                <h2 class="dataset-category">Federal Government Agency Datasets</h2>
 
                 {% assign organisations = site.organisations | where: "jurisdiction", "australia" %}
                 {% include dataset_cards_by_organisation.bs.html organisations=organisations org_heading_lvl="h3" %}
 
-                <br>
+                <hr>
 
-                <h2>State & Local Government Agency Datasets</h2>
+                <h2 class="dataset-category">State & Local Government Agency Datasets</h2>
 
                 {% for jurisdiction in site.jurisdictions %}
                     {% unless jurisdiction.gid == "australia" %}
                         {% assign organisations = site.organisations | where: "jurisdiction", jurisdiction.gid %}
 
-                        {% capture jurisdiction_datasets %}{% include dataset_cards_by_organisation.bs.html organisations=organisations %}{% endcapture %}
+                        {% capture jurisdiction_datasets %}{% include dataset_cards_by_organisation.bs.html organisations=organisations dataset_org_heading_lvl="h5" %}{% endcapture %}
                         {% assign jurisdiction_datasets = jurisdiction_datasets | strip %}
 
                         {% if jurisdiction_datasets != "" %}
-                            <h3>{{ jurisdiction.name }}</h3>
-                            {{ jurisdiction_datasets }}
+                            <div class="row">
+                                <h3 class="dataset-jurisdiction">{{ jurisdiction.name }}</h3>
+                                {{ jurisdiction_datasets }}
+                                <br>
+                                <br>
+                            </div>
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
@@ -114,7 +120,7 @@ sections:
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2>Government Data Portals</h2>
+              <h2>Major Government Data Portals</h2>
           </div>
         </div>
         <div class="row">

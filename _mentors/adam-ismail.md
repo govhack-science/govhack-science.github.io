@@ -6,7 +6,7 @@ gid: adam-ismail
 jurisdiction: qld
 location: brisbane
 name: Adam Ismail
-organisation: Department of Science, Information Technology and Innovation
+organisation: queensland-government
 position_title: Senior Project Officer
 type: Data Mentor
 ---

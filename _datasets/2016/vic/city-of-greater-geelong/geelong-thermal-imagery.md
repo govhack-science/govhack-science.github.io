@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: geelong-thermal-imagery
 jurisdiction: vic
 name: Geelong Thermal Imagery
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Geelong Thermal Imagery
 ---
 

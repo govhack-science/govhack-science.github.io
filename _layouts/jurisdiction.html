@@ -136,7 +136,7 @@ layout: bootstrap
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h2 class="section-heading" id="datasets">Official State Datasets</h2>
-              <small class="notice">These are just some of your state datasets - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
+              <small class="notice">These are just some of the datasets in your state - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
           </div>
         </div>
         <div class="row">
@@ -146,8 +146,12 @@ layout: bootstrap
 </section>
 {% endif %}
 
-{% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" %}
-{% assign dataportal_ids_len = dataportal_ids | size %}
+{% assign state_dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
+{% assign local_dataportal_ids = site.dataportals | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
+{% capture dp_ids %}{{ state_dataportal_ids }},{{ local_dataportal_ids }}{% endcapture %}
+{% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
+
+{% assign dataportal_ids_len = dp_ids_list | size %}
 {% if dataportal_ids_len > 0 %}
 <!-- Data Portals Section -->
 <section id="portfolio" class="bg-light-gray">
@@ -155,11 +159,11 @@ layout: bootstrap
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h2 class="section-heading" id="dataportals">State Data Portals</h2>
-              <small class="notice">These are just some of your state data portals - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
+              <small class="notice">These are just some of the data portals in your state - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
           </div>
         </div>
         <div class="row">
-          {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+          {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
         </div>
     </div>
 </section>

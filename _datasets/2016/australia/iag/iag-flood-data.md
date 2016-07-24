@@ -3,9 +3,9 @@ dataset_url: https://github.com/iag-edge-labs/flood-data
 excerpt_separator: <!--more-->
 gid: iag-flood-data
 jurisdiction: australia
-name: iag flood data
+name: IAG Flood Data
 organisation: iag
-title: iag flood data
+title: IAG Flood Data
 mentors:
   - nick-bartzis
 ---

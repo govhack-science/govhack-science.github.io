@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: built-environment-inventory---greater-geelong
 jurisdiction: vic
 name: Built Environment Inventory - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Built Environment Inventory - Greater Geelong
 ---
 

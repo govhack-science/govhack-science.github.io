@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: flood-extent---city-of-greater-geelong
 jurisdiction: vic
 name: Flood Extent - City of Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Flood Extent - City of Greater Geelong
 ---
 

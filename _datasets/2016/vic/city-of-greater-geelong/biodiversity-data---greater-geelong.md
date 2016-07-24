@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: biodiversity-data---greater-geelong
 jurisdiction: vic
 name: Biodiversity Data - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Biodiversity Data - Greater Geelong
 ---
 

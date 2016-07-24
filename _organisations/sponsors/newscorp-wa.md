@@ -10,5 +10,3 @@ sponsor_level_desc: Gold Sponsors
 jurisdiction: wa
 is_sponsor: true
 ---
-
-See <a href="/sponsors/newscorp.html">here</a> for NewsCorp datasets.

@@ -384,7 +384,7 @@ that our authors (or indeed myself) might indicate a signup link.
             </div>
             <div class="row">
                 {% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
-                {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list %}
+                {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
             </div>
         </div>
     </section>

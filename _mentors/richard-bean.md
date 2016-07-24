@@ -6,7 +6,7 @@ gid: richard-bean
 jurisdiction: wa
 location: perth
 name: Richard Bean
-organisation: Department of Local Government and Communities
+organisation: wa-department-of-local-government-and-communities
 position_title: Manager Business Systems
 type: Data Mentor
 ---

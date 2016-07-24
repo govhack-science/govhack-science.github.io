@@ -7,7 +7,7 @@ gid: julie-considine
 jurisdiction: wa
 location: perth
 name: Julie Considine
-organisation: WA Housing Authority
+organisation: wa-housing-authority
 position_title: Manager Forecasting and Modelling
 type: Data Mentor
 ---

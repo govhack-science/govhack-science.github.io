@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: trees---greater-geelong
 jurisdiction: vic
 name: Trees - Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Trees - Greater Geelong
 ---
 

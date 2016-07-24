@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 gid: powercor-public-lights---city-of-greater-geelong
 jurisdiction: vic
 name: Powercor Public Lights - City of Greater Geelong
-organisation: geelong-regional-libraries
+organisation: city-of-greater-geelong
 title: Powercor Public Lights - City of Greater Geelong
 ---
 

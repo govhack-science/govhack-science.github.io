@@ -1,10 +1,10 @@
 ---
 dataset_url: http://cdn.newsapi.com.au
 excerpt_separator: <!--more-->
-gid: news-corp-content-api-(capi)
-jurisdiction: australia
+gid: news-corp-content-api-(capi)-vic
+jurisdiction: vic
 name: News Corp Content API (CAPI)
-organisation: newscorp
+organisation: newscorp-vic
 title: News Corp Content API (CAPI)
 ---
 

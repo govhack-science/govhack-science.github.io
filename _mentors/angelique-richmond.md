@@ -7,9 +7,11 @@ gid: angelique-richmond
 jurisdiction: qld
 location: gold-coast
 name: Angelique Richmond
-organisation: Department of Science, Information Technology and Innovation
+organisation: queensland-government
 position_title: Principal Project Officer
 type: Data Mentor
 ---
 
 I am part of the Engagement and Insights team within Queensland Government providing support to business, industry and startups on a wide range of local, state and federal, grant programs and many other initiatives to assist growth.
+
+Department of Science, Information Technology and Innovation.
