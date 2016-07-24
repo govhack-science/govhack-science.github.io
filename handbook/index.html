@@ -17,14 +17,72 @@ capture some preferences from them e.g.
 ==================================================
 {% endcomment %}
 
-<form id="firstrun-prefs">
-    <div>
-        <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
-        <label><input type="checkbox" /> No it's not</label>                
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        <form id="firstrun-prefs">
+            <div>
+                <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
+                <label><input type="checkbox"> No it's not</label>                
+            </div>
+            
+            <div class="form-group">
+                <label></label>
+            </div>
+            
+        </form>
     </div>
-    
-    <div class="form-group">
-        <label></label>
+    <div role="tabpanel" class="tab-pane" id="preparing">
+        <h2>Preparing for GovHack</h2>
+        <ul>
+            {% for article in site.handbookchapters %}
+            {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
+            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
+
     
-</form>
+    <div role="tabpanel" class="tab-pane" id="competing">
+        <h2>Competing in GovHack</h2>
+        <ul>
+            {% for article in site.handbookchapters %}
+            {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
+            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    
+    <div role="tabpanel" class="tab-pane" id="creating">
+        <h2>Creating your hack</h2>
+        <ul>
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
+        <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% endif %}
+        {% endfor %}   
+        </ul>
+    </div>
+
+</div>
+
+<script>
+$(function(){
+    // Hash frag detection
+    if (window.location.hash && window.location.hash.length > 2){
+        var elem = $("[aria-controls=['#"+window.location.hash.substring(2)+"']");
+        if (elem.length){
+            elem.tab('show');
+        }
+    }
+
+    // Over-bind sidebar menu to JS, for this index page
+    $('#handbook-logo, handbook-chrono-nav a, #handbook-functional-nav a').on('click', function(e){
+        e.preventDefault();
+        $(this).tab('show');
+        return false;
+    });
+});
+</script>
