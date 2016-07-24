@@ -1,8 +1,12 @@
 ---
 slug: 'event_roadmap'
 title: 'Event roadmap'
-last_updated: '2016-07-23T10:40:32.339Z'
-category: comp
+last_updated: '2016-07-24T07:11:48.836Z'
+categories:
+  - comp
+tags:
+  - [u'preparation']
+  - preparation
 ---
 
 ## **Event roadmap**

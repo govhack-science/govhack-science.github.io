@@ -1,8 +1,12 @@
 ---
 slug: 'what_to_bring'
 title: 'What to Bring'
-last_updated: '2016-07-23T07:55:21.522Z'
-category: comp
+last_updated: '2016-07-24T07:13:22.053Z'
+categories:
+  - comp
+tags:
+  - [u'preparation']
+  - preparation
 ---
 
 ## **What to bring**

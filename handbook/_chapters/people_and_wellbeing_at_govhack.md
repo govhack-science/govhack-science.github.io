@@ -1,8 +1,12 @@
 ---
 slug: 'people_and_wellbeing_at_govhack'
 title: 'People and Wellbeing at GovHack'
-last_updated: '2016-07-23T04:35:19.087Z'
-category: comp
+last_updated: '2016-07-24T07:19:44.518Z'
+categories:
+  - comp
+tags:
+  - [u'during']
+  - during
 ---
 
 ## **People**

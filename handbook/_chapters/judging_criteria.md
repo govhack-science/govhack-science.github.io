@@ -1,8 +1,12 @@
 ---
 slug: 'judging_criteria'
 title: 'Judging Criteria '
-last_updated: '2016-07-23T04:19:03.668Z'
-category: comp
+last_updated: '2016-07-24T07:20:34.118Z'
+categories:
+  - comp
+tags:
+  - [u'submitting']
+  - submitting
 ---
 
 Judging Criteria
