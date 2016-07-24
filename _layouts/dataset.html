@@ -9,16 +9,16 @@ layout: bootstrap
 
       {% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
       {% if dataset_org %}
-        <a href="{{ dataset_org.url }}">{{ dataset_org.name }}</a><br>
+        <h4><a href="{{ dataset_org.url }}">{{ dataset_org.name }}</a></h4>
       {% endif %}
 
-      <a href="{{ page.dataset_url }}">
-          <h3 data-toc-skip style="display: inline-block;">Dataset Link</h3>
+      <h3 data-toc-skip style="display: inline-block;"><a href="{{ page.dataset_url }}">
+          Dataset Link
           <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
           </span>
-      </a>
+      </a></h3>
       
       {{ page.content }}
     </div>
