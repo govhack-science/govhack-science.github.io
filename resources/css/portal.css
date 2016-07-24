@@ -1134,3 +1134,12 @@ hr {
   height: 3px;
   margin-bottom: 24px;
 }
+
+div.card {
+  color: #404040;
+  padding: 5px;
+}
+div.bg-primary.card,
+div.bg-primary.card a {
+  color: #fff;
+}
