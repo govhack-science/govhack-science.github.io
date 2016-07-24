@@ -111,3 +111,10 @@ defaults:
       type: locations
     values:
       layout: location
+      
+  - scope:
+      path: "_handbook/_chapters"
+      type: handbook_chapters
+    values:
+      layout: handbook_chapter
+      permalink: /handbook/:fileName.html

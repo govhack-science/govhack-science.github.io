@@ -1,4 +1,5 @@
 ---
+slug: 'code_of_conduct'
 title: ' Code of Conduct'
 last_updated: '2016-07-23T16:41:18.297Z'
 ---

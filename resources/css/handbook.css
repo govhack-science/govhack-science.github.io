@@ -1,0 +1,56 @@
+/** Handbook CSS **/
+
+/* 
+Dark Grey #848283 
+Light Grey #BEBFBF
+*/
+
+/* Structural and layout */
+
+.viewport {
+    position: relative;
+}
+.nav {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    padding: 15px;
+}
+
+.main {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 200px;
+    height: 100vh;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+/* Navigation */
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Chapter */
+
+.hb-chapter-title {
+    
+}
+
+.hb-chapter-body {
+    
+}
+
+.hb-chapter-footer {
+    
+}

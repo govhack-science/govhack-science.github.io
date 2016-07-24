@@ -12,10 +12,16 @@ chapters_dir = "handbook/_chapters"
 def save_markdown_file( doc ):
     with io.open("%s/%s.md" % ( chapters_dir, doc["fileName"] ), "w", encoding="utf-8") as f:
         f.write(u'---\n')
+        
+        f.write(unicode("slug: '%s'" % ( doc["fileName"] )))
+        f.write(u'\n')
+        
         f.write(unicode("title: '%s'" % ( doc["title"] )))
         f.write(u'\n')
+        
         f.write(unicode("last_updated: '%s'" % ( doc["lastUpdated"] )))
         f.write(u'\n')
+        
         f.write(u'---\n')
         f.write(u'\n')
         
@@ -30,6 +36,7 @@ def save_markdown_file( doc ):
 # Then parse through and save each doc as an em-dee
 
 try:
+    print "Retrieving handbook content..."
     resp = requests.post("https://script.google.com/macros/s/AKfycbxU0RI14fAzSK5pHC6ibx9gVfX96mxnA8KbujmQDmi5tjPn_n5F/exec")
     docs = resp.json()
 except:
@@ -41,3 +48,5 @@ except:
 for doc in docs: 
     print "Saving %s/%s.md" % ( chapters_dir, doc["fileName"] )
     save_markdown_file( doc )
+    
+print "Done."

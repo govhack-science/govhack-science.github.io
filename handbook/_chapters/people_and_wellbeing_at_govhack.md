@@ -1,4 +1,5 @@
 ---
+slug: 'people_and_wellbeing_at_govhack'
 title: 'People and Wellbeing at GovHack'
 last_updated: '2016-07-23T04:35:19.087Z'
 ---

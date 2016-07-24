@@ -1,4 +1,5 @@
 ---
+slug: 'event_roadmap'
 title: 'Event roadmap'
 last_updated: '2016-07-23T10:40:32.339Z'
 ---
