@@ -2,23 +2,24 @@
 layout: bs-handbook
 ---
 
-<header class="header">
-    <h1>Welcome to the handbook</h1>
-</header>
-
-
-{% comment %}
-==================================================
-Is this the first visit? If so, display a form and
-capture some preferences from them e.g.
-+ First hackathon?
-+ Which venue?
-+ Menu display fashion (chrono or functional?)
-==================================================
-{% endcomment %}
-
 <div class="tab-content">
+
+    {% comment %}
+    ==================================================
+    Is this the first visit? If so, display a form and
+    capture some preferences from them e.g.
+    + First hackathon?
+    + Which venue?
+    + Menu display fashion (chrono or functional?)
+    ==================================================
+    {% endcomment %}
     <div role="tabpanel" class="tab-pane active" id="home">
+        <header class="header">
+            <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
+        </header>
+
+        <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
+
         <form id="firstrun-prefs">
             <div>
                 <h4>Welcome to the Handbook, it looks like this is your first run!</h4>
@@ -31,39 +32,78 @@ capture some preferences from them e.g.
             
         </form>
     </div>
+
+
+    {% comment %}
+    ==================================================
+    Preparing
+    ==================================================
+    {% endcomment %}
     <div role="tabpanel" class="tab-pane" id="preparing">
-        <h2>Preparing for GovHack</h2>
+        <header class="header">
+            <h1>Welcome to the handbook</h1>
+        </header> 
         <ul>
-            {% for article in site.handbookchapters %}
-            {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
             <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-            {% endif %}
-            {% endfor %}
+        {% endif %}
+        {% endfor %}
         </ul>
     </div>
 
-    
+    {% comment %}
+    ==================================================
+    Competing
+    ==================================================
+    {% endcomment %}
     <div role="tabpanel" class="tab-pane" id="competing">
         <h2>Competing in GovHack</h2>
         <ul>
-            {% for article in site.handbookchapters %}
-            {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
+        {% for article in site.handbookchapters %}
+        {% if article.categories contains 'comp' and article.tags contains 'competing' %}
             <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-            {% endif %}
-            {% endfor %}
+        {% endif %}
+        {% endfor %}
         </ul>
     </div>
 
-    
+    {% comment %}
+    ==================================================
+    Creating
+    ==================================================
+    {% endcomment %}
     <div role="tabpanel" class="tab-pane" id="creating">
         <h2>Creating your hack</h2>
         <ul>
         {% for article in site.handbookchapters %}
-        {% if article.categories contains 'comp' and article.tags contains 'preparing' %}
-        <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+        {% if article.categories contains 'comp' and article.tags contains 'creating' %}
+            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
         {% endif %}
         {% endfor %}   
         </ul>
+    </div>
+
+    {% comment %}
+    ==================================================
+    Submitting
+    ==================================================
+    {% endcomment %}
+    <div role="tabpanel" class="tab-pane" id="submitting">
+        <h2>Creating your hack</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul>
+                    {% for article in site.handbookchapters %}
+                    {% if article.categories contains 'comp' and article.tags contains 'submitting' %}
+                        <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}   
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -72,14 +112,14 @@ capture some preferences from them e.g.
 $(function(){
     // Hash frag detection
     if (window.location.hash && window.location.hash.length > 2){
-        var elem = $("[aria-controls=['#"+window.location.hash.substring(2)+"']");
+        var elem = $("[aria-controls='"+window.location.hash.substring(2)+"']");
         if (elem.length){
             elem.tab('show');
         }
     }
 
     // Over-bind sidebar menu to JS, for this index page
-    $('#handbook-logo, handbook-chrono-nav a, #handbook-functional-nav a').on('click', function(e){
+    $('#handbook-logo, #handbook-chrono-nav a, #handbook-functional-nav a').on('click', function(e){
         e.preventDefault();
         $(this).tab('show');
         return false;

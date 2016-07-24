@@ -11,11 +11,17 @@ Light Grey #BEBFBF
 
 
 /* Structural and layout */
-
-.viewport {
-    position: relative;
-    overflow: hidden;
+body {
     height: 100vh;
+    position: relative;
+}
+.viewport {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
 }
 .side-nav {
     position: absolute;
