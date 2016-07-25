@@ -4,7 +4,7 @@ name: Ken Parker
 type: Data Mentor
 position_title: A/Manager, Capacity Building
 ask_me_about: MyCouncil, Local Government
-organisation: Department of Local Government and Communities
+organisation: wa-department-of-local-government-and-communities
 jurisdiction: wa
 location: perth
 contact:

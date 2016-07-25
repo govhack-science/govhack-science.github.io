@@ -159,8 +159,9 @@ data = tablib.Dataset()
 data.csv = csv
 new_datasets_count = 0
 ckan = CKANLookup()
+start_row = 51
 
-for row in data:
+for row in data[start_row:]:
     # Skip empty rows populated by the export process
     if row[0] == "":
         continue
@@ -202,8 +203,9 @@ for row in data:
     else:
         print "WARNING: Could not resolve organisation: %s" % (submission["Agency/Organisation"])
         print organisation_gid
-        print "SKIPPING!"
-        continue
+        organisation_gid = submission["Agency/Organisation"].lower().strip().replace(" ", "-").replace(",", "")
+        # print "SKIPPING!"
+        # continue
 
     # Process the events to link these datasets to
     # if submission["Jurisdiction"] == "Australian Government":
@@ -251,7 +253,7 @@ for row in data:
     print
     # print dataset_stub
 
-    # Magic - The dataset info starts at position, and the last 5 fields are irrelevant
+    # Magic - The dataset info starts at position 16, and the last 5 fields are irrelevant
     num_datasets = int(1 if submission["Number of datasets"] == "" else int(submission["Number of datasets"]))
     print "# Number of Datasets: %s" % (num_datasets)
     print
@@ -275,9 +277,10 @@ for row in data:
                 dataset_description = package["notes"].strip()
             else:
                 print dataset_name
-                print "WARNING: Doesn't look like CKAN. Is this a dataset?"
+                print "WARNING: There's no dataset name and this doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
                 continue
+                print "SKIPPING"
 
         # Description to excerpt
         # (For some reason automatic excerpt generation failed.)
@@ -291,7 +294,7 @@ for row in data:
         # Assign our dataset a globally unique id
         dataset_gid = dataset_name.lower().replace(" ", "-").replace("'", "")
 
-        dataset_md_dir = os.path.join(datasetsdir, dataset_stub["jurisdiction"])
+        dataset_md_dir = os.path.join(datasetsdir, dataset_stub["jurisdiction"], organisation_gid)
         dataset_md_file = os.path.join(dataset_md_dir, "%s.md" % (dataset_gid))
 
         # Create records for datasets who haven't been processed yet

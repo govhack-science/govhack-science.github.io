@@ -1,0 +1,97 @@
+/** Handbook CSS **/
+
+/* 
+Dark Grey #848283 
+Light Grey #BEBFBF
+*/
+
+
+/* Color customisation */
+
+
+
+/* Structural and layout */
+body {
+    height: 100vh;
+    position: relative;
+}
+.viewport {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.side-nav {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    padding: 15px;
+}
+.main {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 300px;
+    min-height: 100%;
+    padding: 15px 30px;
+    overflow: auto;
+}
+.header {
+    height: 80px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.footer-sticky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    padding: 5px 10px;
+    border-top: 1px solid #BEBFBF;
+    z-index: 99;
+    color: #BEBFBF;
+    font-size: .75em;
+}
+
+
+/* Navigation */
+.handbook-logo {
+    display: block;
+    height: 80px;
+    background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
+    opacity: .8;
+}
+.handbook-logo:hover {
+    opacity: 1;
+}
+
+
+/* Chapter */
+
+.hb-chapter-title {
+    
+}
+
+.hb-chapter-body {
+    
+}
+
+.hb-chapter-footer {
+    
+}
+
+/* Theme */
+.nav-pills>li.active>a.alt, 
+.nav-pills>li.active>a.alt:focus, 
+.nav-pills>li.active>a.alt:hover {
+    background-color: #CA1553;
+}

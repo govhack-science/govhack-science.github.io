@@ -8,9 +8,11 @@ gid: mike-shapland
 jurisdiction: qld
 location: brisbane
 name: Mike Shapland
-organisation: Office of the Inspector-General Emergency Management
+organisation: queensland-government
 position_title: Director Interoperability and Innovation
 type: Data Mentor
 ---
 
 Experienced in managing the effects of disasters; passionate about sharing data so that communities benefit from the knowledge that's around us; excited about the way that digital disruption is affecting society.
+
+Office of the Inspector-General Emergency Management.

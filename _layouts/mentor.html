@@ -62,6 +62,64 @@ layout: bootstrap
 </section>
 {% endif %}
 
+{% assign dataset_ids = "" %}
+{% for dataset in site.datasets %}
+  {% for mentor_id in dataset.mentors %}
+    {% if mentor_id == page.gid %}
+      {% assign dataset_ids = dataset_ids | append: dataset.gid %}
+      {% assign dataset_ids = dataset_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% unless dataset_ids == "" %}
+<!-- Datasets Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h3>Datasets</h3>
+          </div>
+        </div>
+        <div class="row">
+          {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
+          {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% if page.dataportals %}
+<!-- Data Portals Section -->
+<section id="mentor-dataportals" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h3>Data Portals</h3>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign prize_ids = "" %}
+{% for prize in site.prizes %}
+  {% for organisation_id in prize.organisations %}
+    {% if organisation_id == page.gid %}
+      {% assign prize_ids = prize_ids | append: prize.gid %}
+      {% assign prize_ids = prize_ids | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %}
+==============================================================
+We're not doing these this year.
+==============================================================
+
 {% assign theme_ids = "" %}
 {% for theme in site.themes %}
   {% for mentor_id in theme.mentors %}
@@ -104,56 +162,4 @@ layout: bootstrap
     </div>
 </section>
 {% endif %}
-
-{% assign dataset_ids = "" %}
-{% for dataset in site.datasets %}
-  {% for mentor_id in dataset.mentors %}
-    {% if mentor_id == page.gid %}
-      {% assign dataset_ids = dataset_ids | append: dataset.gid %}
-      {% assign dataset_ids = dataset_ids | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% unless dataset_ids == "" %}
-<!-- Datasets Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">Datasets</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% assign dataset_ids_list = dataset_ids | lstrip | split: "," %}
-          {% include dataset_cards.bs.html dataset_ids=dataset_ids_list %}
-        </div>
-    </div>
-</section>
-{% endunless %}
-
-{% if page.dataportals %}
-<!-- Data Portals Section -->
-<section id="mentor-dataportals" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="dataportals">Data Portals</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-{% assign prize_ids = "" %}
-{% for prize in site.prizes %}
-  {% for organisation_id in prize.organisations %}
-    {% if organisation_id == page.gid %}
-      {% assign prize_ids = prize_ids | append: prize.gid %}
-      {% assign prize_ids = prize_ids | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+{% endcomment %}

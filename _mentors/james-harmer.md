@@ -6,7 +6,7 @@ gid: james-harmer
 jurisdiction: wa
 location: perth
 name: James Harmer
-organisation: Department of Local Government and Communities
+organisation: wa-department-of-local-government-and-communities
 position_title: A/Manager Sector Monitoring
 type: Business Mentor
 ---

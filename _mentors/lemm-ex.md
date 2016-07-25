@@ -7,7 +7,7 @@ gid: lemm-ex
 jurisdiction: qld
 location: brisbane
 name: Lemm Ex
-organisation: Office of the Information Commissioner
+organisation: queensland-government
 position_title: Principal Privacy Officer
 type: Data Mentor
 ---

@@ -20,31 +20,33 @@ exclude:
 collections:
   themes:
     output: true
-    
+
   datasets:
     output: true
-    
+
   dataportals:
     output: true
-    
+
   fields:
     output: true
-    
+
   mentors:
     output: true
-    
+
   organisations:
     output: true
-    
+
   prizes:
     output: true
-    
+
   jurisdictions:
     output: true
-    
+
   locations:
     output: true
 
+  handbookchapters:
+    output: true
 
 defaults:
   - scope:
@@ -53,61 +55,68 @@ defaults:
     values:
       layout: theme
       permalink: /themes/:title.html
-      
+
   - scope:
       path: "_datasets"
       type: datasets
     values:
       layout: dataset
-      
+
   - scope:
       path: "_dataportals"
       type: dataportals
     values:
       layout: dataportal
-      
+
   - scope:
       path: "_fields"
       type: fields
     values:
       layout: field
-      
+
   - scope:
       path: "_mentors"
       type: mentors
     values:
       layout: mentor
       permalink: /mentors/:title.html
-      
+
   - scope:
       path: "_organisations/sponsors"
       type: organisations
     values:
       layout: organisation
       permalink: /sponsors/:title.html
-      
+
   - scope:
       path: "_organisations/supporters"
       type: organisations
     values:
       layout: organisation
       permalink: /supporters/:title.html
-      
+
   - scope:
       path: "_prizes"
       type: prizes
     values:
       layout: prize
-      
+
   - scope:
       path: "_jurisdictions"
       type: jurisdictions
     values:
       layout: jurisdiction
       permalink: /regions/:title.html
-      
+
   - scope:
       path: "_locations"
       type: locations
     values:
       layout: location
+
+  - scope:
+      path: "_handbookchapters"
+      type: handbookchapters
+    values:
+      layout: handbook_chapter
+      permalink: /handbook/:categories/:title.html

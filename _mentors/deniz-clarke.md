@@ -7,9 +7,11 @@ gid: deniz-clarke
 jurisdiction: qld
 location: brisbane
 name: Deniz Clarke
-organisation: Department of State Development
+organisation: queensland-government
 position_title: Principal Property Officer
 type: Data Mentor
 ---
 
 Significant experience in strategically managing Queensland government's property portfolio including systems which relate to government land such as Government Land Register, Google Earth and SmartMap.
+
+Department of State Development.
