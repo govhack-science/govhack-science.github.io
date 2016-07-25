@@ -48,6 +48,9 @@ target_audiences:
                 <div class="panel panel-default">
                   <div class="panel-body">
                     Using IBM Bluemix
+                    
+                    {% assign ibm_bluemix = site.handbookchapters | where: 'slug', 'ibm_bluemix' | first %}
+                    <a class="btn btn-default" href="{{ ibm_bluemix.url }}">{{ ibm_bluemix.url }}</a>
                   </div>
                 </div>
             </div>
@@ -89,17 +92,17 @@ target_audiences:
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
                       <div class="panel-body">
-                        <ul class="list-group">
+                      </div>
+                      <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
-                        <li>
-                            <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
-                            {{ article.content | strip_html | truncatewords: 22 }}
+                        <li class="list-group-item">
+                          <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                          {{ article.content | strip_html | truncatewords: 22 }}
                         </li>
                         {% endif %}
                         {% endfor %} 
-                        </ul>
-                      </div>
+                      </ul>
                     </div>
                 </div>
                 {% endunless %}
@@ -133,18 +136,17 @@ target_audiences:
                       <div class="panel-heading">
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
-                      <div class="panel-body">
-                        <ul class="list-group">
+                      <div class="panel-body">{{ counter }} available</div>
+                      <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name %}
-                        <li>
-                            <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
-                            {{ article.content | strip_html | truncatewords: 22 }}
+                        <li class="list-group-item">
+                          <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                          {{ article.content | strip_html | truncatewords: 22 }}
                         </li>
                         {% endif %}
                         {% endfor %} 
                         </ul>
-                      </div>
                     </div>
                 </div>
                 {% endunless %}

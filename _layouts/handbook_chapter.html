@@ -21,29 +21,8 @@ layout: handbook_template_bs
 <script>
 $(function(){
 
-    var $collapseTargetParent = $('#hb-content-{{ page.slug }}');
-    var validHeadingTags = ['h1', 'h2', 'h3'];
-    var headingThreshold = 3;
-    
-    if ($collapseTargetParent.find(validHeadingTags.join(', ')).length >= headingThreshold){
-
-        // Groupify everything into heading+content pairs then
-        // run el collapso https://github.com/danielstocks/jQuery-Collapse
-
-        HB.groupHeadings($collapseTargetParent, validHeadingTags);
-
-        $collapseTargetParent.collapse({
-            query: validHeadingTags.join(', '),
-            persist: true,
-            open: function(){
-                this.slideDown(100);
-            },
-            close: function(){
-                this.slideUp(100);
-            }
-        });
-
-    }
+    var $parent = $('#hb-content-{{ page.slug }}');
+    HB.collapsePageContent($parent);
 
 });
 </script>

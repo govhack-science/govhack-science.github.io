@@ -5,6 +5,7 @@ var HB = (function(){
     return {
         enableSidebarDrag: enableSidebarDrag,
         groupHeadings: groupHeadings,
+        collapsePageContent: collapsePageContent,
         storage: new handbookStorage(),
     };
     
@@ -152,5 +153,39 @@ var HB = (function(){
         
     }
     
+    /**
+     * A standardised collapser function
+     *
+     * @param jQuery  A jQuerified element
+     * @param Object  See the $.extend for the default opts
+     */
+    function collapsePageContent($collapseTargetParent, opts){
+        if (!$collapseTargetParent) throw 'Must provide parent element as argument 1';
+        opts = $.extend({
+            validHeadingTags: ['h1', 'h2', 'h3'],
+            headingThreshold: 3
+        }, opts || {});
+        
+        if ($collapseTargetParent.find(opts.validHeadingTags.join(', ')).length >= opts.headingThreshold){
+
+            // Groupify everything into heading+content pairs then
+            // run el collapso https://github.com/danielstocks/jQuery-Collapse
+
+            groupHeadings($collapseTargetParent, opts.validHeadingTags);
+
+            $collapseTargetParent.collapse({
+                query: opts.validHeadingTags.join(', '),
+                persist: true,
+                open: function(){
+                    this.slideDown(100);
+                },
+                close: function(){
+                    this.slideUp(100);
+                }
+            });
+
+        }
+        
+    }
     
 }());
