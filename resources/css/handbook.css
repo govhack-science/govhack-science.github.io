@@ -100,18 +100,18 @@ body {
     
 }
 
-.hb-chapter-body .heading-toggle a {
+.heading-toggle a {
     color: #BEBFBF;
     transition: color .2s ease;
 }
-.hb-chapter-body .heading-toggle.open a,
-.hb-chapter-body .heading-toggle a:hover,
-.hb-chapter-body .heading-toggle a:active,
-.hb-chapter-body .heading-toggle a:focus {
+.heading-toggle.open a,
+.heading-toggle a:hover,
+.heading-toggle a:active,
+.heading-toggle a:focus {
     color: #848283;
     text-decoration: none;
 }
-.hb-chapter-body .heading-toggle::after {
+.heading-toggle::after {
     display: inline-block;
     padding: 0 8px;
     content: '\25E2';
@@ -120,7 +120,7 @@ body {
     transform-origin: 60% 50%;
     transition: transform .2s ease;
 }
-.hb-chapter-body .heading-toggle.open::after {
+.heading-toggle.open::after {
     transform: rotate(225deg);
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .fb-comments {
-    min-height: 400px;
+    min-height: 200px;
 }
 
 

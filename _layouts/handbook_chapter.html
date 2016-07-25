@@ -6,7 +6,7 @@ layout: handbook_template_bs
     <h1 class="hb-chapter-title">{{ page.title }}</h1>
 </header>
 
-<article id="hb-content-{{ page.slug }}" class="hb-chapter-body">
+<article id="content-{{ page.slug }}" class="hb-chapter-body">
     {{ page.content }}
 </article>
 
@@ -20,9 +20,7 @@ layout: handbook_template_bs
 
 <script>
 $(function(){
-
-    var $parent = $('#hb-content-{{ page.slug }}');
+    var $parent = $('#content-{{ page.slug }}');
     HB.collapsePageContent($parent);
-
 });
 </script>

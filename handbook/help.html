@@ -3,45 +3,44 @@ layout: handbook_template_bs
 ---
 
 <header class="header">
-    <h1>Help and Contacts</h1>
+    <h1>Help and Support</h1>
 </header>
 
 
 <div class="row">
     <div class="col-sm-6">
-        {% assign glossary = site.handbookchapters | where: 'slug', 'glossary' | first %}
-        <a href="{{ glossary.url }}">{{ glossary.url }}</a>
+        {% include_relative _includes/featured_tile.html chapter_slug='glossary' %}
     </div>
-    <div class="col-sm-6">
-        
-    </div>
-
 </div>
 
 <div class="alert alert-info">Got a question? Need some help? Let's see what we can do for you.</div>
 
-<h2>Your venue</h2>
-<div>
-    <p>The friendly event hosts are here to help! If you can find them, they are:</p>
-</div>
+<div id="content-help-page">
+    <h2>Your venue</h2>
+    <div>
+        <p>The friendly event hosts are here to help! If you can find them, they are:</p>
+    </div>
 
-<h2>Slack Channel</h2>
-<div>
-    <p>There's a link in the top-right of this site. Not only do you get access to the hosts and organisers, but also to the other members of the fantastic GovHack community.</p>    
-</div>
+    <h2>Slack Channel</h2>
+    <div>
+        <p>There's a link in the top-right of this site. Not only do you get access to the hosts and organisers, but also to the other members of the fantastic GovHack community.</p>    
+    </div>
 
-<h2>Hackerspace and IT support</h2>
-<div>
-    <p>Firstly, have you asked your hosts yet? It's possible that another competitor already had the same problem resolved for them!</p>
-    Hackerspace support can be found in the following places:
-    <pre>TBC</pre>
-    <ul>
-        <li>The slack channel</li>
-    </ul>
+    <h2>Hackerspace and IT support</h2>
+    <div>
+        <p>Firstly, have you asked your hosts yet? It's possible that another competitor already had the same problem resolved for them!</p>
+        Hackerspace support can be found in the following places:
+        <pre>TBC</pre>
+        <ul>
+            <li>The slack channel</li>
+        </ul>
+    </div>
+
 </div>
 
 <script>
 $(function(){
-
+    var $parent = $('#content-help-page');
+    HB.collapsePageContent($parent);
 });
 </script>

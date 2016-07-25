@@ -1,9 +1,12 @@
 ---
 slug: ibm_bluemix
 title: IBM Bluemix
+tile:
+  image: https://www.govhack.org/wp-content/uploads/2016/07/Bluemix-logo-right.png
+  button_label: Check out Bluemix
 last_updated: '2016-07-25T07:11:48.836Z'
 categories:
-  - comp
+  - toolkit
 tags:
   - creating
 ---

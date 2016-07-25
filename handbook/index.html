@@ -29,32 +29,23 @@ target_audiences:
     {% endcomment %}
     <section role="tabpanel" class="tab-pane active" id="home">
         <header class="header">
-            <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
+            <h1>GovHack Participant Handbook and Hacker Toolkit</h1>
         </header>
 
-        <div class="alert alert-warning">This is a site preview!!</div>
-        <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
+        <div class="alert alert-warning">This is a site preview!! Please consider the Handbook as an Alpha build. You can start exploring our content, though, by navigating the left-hand sidebar.</div>
+        <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our participant handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
-        <h4>Featured content</h4>
+        <hr>
+        
+        <h3>Featured content</h3>
         <div class="row">
-            <div class="col-sm-6">
-            
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    Competition Rules
-                  </div>
-                </div>
-            
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    Using IBM Bluemix
-                    
-                    {% assign ibm_bluemix = site.handbookchapters | where: 'slug', 'ibm_bluemix' | first %}
-                    <a class="btn btn-default" href="{{ ibm_bluemix.url }}">{{ ibm_bluemix.url }}</a>
-                  </div>
-                </div>
+            <div class="col-sm-6"> 
+                {% include_relative _includes/featured_tile.html chapter_slug='competition_rules_2016' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='judging_criteria' %}
             </div>
-            
+            <div class="col-sm-6">
+                {% include_relative _includes/featured_tile.html chapter_slug='ibm_bluemix' %}
+            </div>
         </div>
         
         <div style="display: none;">
@@ -74,7 +65,7 @@ target_audiences:
     {% for section in page.chrono_sections %}
     <section role="tabpanel" class="tab-pane" id="{{ section.category_verb }}">
         <header class="header">
-            <h2>{{ section.heading }}</h2>
+            <h1>{{ section.heading }}</h1>
         </header>
         <div><!-- ex .container-fluid -->
             <div class="row">
@@ -91,14 +82,13 @@ target_audiences:
                       <div class="panel-heading">
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
-                      <div class="panel-body">
-                      </div>
+                      <!-- <div class="panel-body"></div> -->
                       <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
                         <li class="list-group-item">
                           <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
-                          {{ article.content | strip_html | truncatewords: 22 }}
+                          {{ article.content | markdownify | strip_html | truncatewords: 22 }}
                         </li>
                         {% endif %}
                         {% endfor %} 
@@ -119,7 +109,7 @@ target_audiences:
     {% endcomment %}
     <section role="tabpanel" class="tab-pane" id="all">
         <header class="header">
-            <h2>Competitor Handbook chapters and Toolkit Guides</h2>
+            <h1>Participant Handbook Chapters and Toolkit Guides</h1>
         </header>
         <div><!-- ex .container-fluid -->
             <div class="row">
@@ -130,13 +120,13 @@ target_audiences:
                         {% assign counter = counter | plus:1 %}
                     {% endif %}
                 {% endfor %} 
-                {% unless counter == 0 %}        
+                {% unless counter == 0 %}
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
-                      <div class="panel-body">{{ counter }} available</div>
+                      <!-- <div class="panel-body"></div> -->
                       <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name %}
