@@ -28,14 +28,14 @@ For metadata regarding the Census data items displayed in this dataset, see the 
 Data items available are State/Territory, Statistical Area Level 2, Age Group, Sex, Country of Birth, Industry, Occupation, Income and Highest Educational Attainment.
 
 **Data Explorers**
-* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au) under GovHack
+* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_COTSM) under GovHack
 
 **Explanatory Notes**
 * [2011 Census Dictionary](http://www.abs.gov.au/ausstats/abs@.nsf/mf/2901.0)
 
 **API Endpoints**
-* SOAP: [http://stat.abs.gov.au/sdmxws/sdmx.asmx]
-* ReST (XML): stat.abs.gov.au/restsdmx/sdmx.ashx
+* SOAP: [http://govhack.abs.gov.au/sdmxws/sdmx.asmx]
+* ReST (XML): govhack.abs.gov.au/restsdmx/sdmx.ashx
 
 **Dataset Codes**
 
@@ -44,7 +44,7 @@ Data items available are State/Territory, Statistical Area Level 2, Age Group, S
 **ReST Call pattern**
 
 ```
-stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_COTSM/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
+govhack.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_COTSM/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
 ```
 
 **Example call (ReST (XML) via CORS proxy**
@@ -52,6 +52,6 @@ stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_COTSM/[DIMENSIONS]/ABS(?startTim
 *Question*
 
 ```
-http://cors.io/?u="http://stat.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_COTSM/[DIMS]/ABS?startTime=2014&endTime=2014"
+http://cors.io/?u="http://govhack.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_COTSM/[DIMS]/ABS?startTime=2014&endTime=2014"
 ```
 (Note the use of quotes so that the ```&endTime=2014``` isn't passed as part of the cors.io argument but as part of the target URI.)
