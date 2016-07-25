@@ -2,7 +2,7 @@
 name: Australian Bureau of Statistics
 gid: abs
 website_url: http://www.abs.gov.au/browse
-logo_url: /resources/csiro-logo.png
+logo_url: https://www.govhack.org/wp-content/uploads/2016/05/australian_bureau_of_statistics.png
 jurisdiction: australia
 type: agency-portal
 organisation: australian-bureau-of-statistics
