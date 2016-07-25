@@ -6,19 +6,86 @@ layout: handbook_template_bs
     <h1>Your preferences</h1>
 </header>
 
-<section>
-    <h2>Your venue</h2>
-    <div><span id="current-venue-name">AAAAA</span></div>
-</section>
-<section>
-    <form>
-        <div class="form-group">
-            <select></select>        
+<div id="current-event" class="panel panel-default">
+    <div class="panel-heading">Selected GovHack event</div>
+    <div class="panel-body">
+        <div>
+            <span id="current-event-name" class="current-event-name"></span>
+            <small style="margin-left: 1em;"><a href="#" id="change-event">Change my event</a></small>
         </div>
-    </form>
-</section>
+        
+        <form id="choose-event-form" class="form-inline" style="display: none;">
+            <hr/>
+            <div class="form-group">
+                <select class="form-control" name="chosen_location">
+                    <option value="">-- Not selected --</option>
+                    {% for loc in site.locations %}
+                    <option value="{{ loc.gid }}">{{ loc.name }}</option>
+                    {% endfor %}
+                </select>        
+                <button type="button" class="btn btn-default">Change my event</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="current-event" class="panel panel-default">
+    <div class="panel-heading">Viewing preferences</div>
+    <div class="panel-body">
+        <form class="form-horizontal">
+            <div class="col-sm-12">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Show sections collapsed
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 
 <script>
-// Todo: grab their venue from localStorage
+$(function(){
+
+    var $chooseEventForm = $('#choose-event-form');
+
+    $('#change-event').on('click', function(){
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')){
+            $chooseEventForm.slideDown('fast');
+        }
+        return false;
+    });
+    
+    $chooseEventForm.submit(function(){
+        try {
+            HB.storage.setEvent({
+                gid: $(this).find('[name=chosen_location]').val(),
+                name: $(this).find('[name=chosen_location] option:selected').text()
+            });
+            $(this).slideUp('fast', function(){
+                onPreferencePageLoad();
+            });
+        }
+        catch (err){
+            console.log(err);
+        }
+        return false;
+    });
+    
+    // Grab their venue from localStorage
+    onPreferencePageLoad();
+    
+    
+    //===================================
+    
+    function onPreferencePageLoad(){
+        var currentEvent = HB.storage.getEvent();
+        $('#current-event-name').html(currentEvent.name || 'No event selected');
+        if (!currentEvent){
+            $('#change-my-event').click();
+        }
+    }
+    
+});
 </script>

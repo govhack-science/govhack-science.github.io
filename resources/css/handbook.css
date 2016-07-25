@@ -34,7 +34,7 @@ body {
     left: 0;
     min-height: 100%;
     padding: 15px;
-    box-shadow: inset 5px 3px 20px #ddd;
+    box-shadow: inset 5px 5px 15px #dfdfdf;
 }
 .main {
     position: absolute;
@@ -103,6 +103,7 @@ body {
     color: #BEBFBF;
     transition: color .2s ease;
 }
+.hb-chapter-body .heading-toggle.open a,
 .hb-chapter-body .heading-toggle a:hover,
 .hb-chapter-body .heading-toggle a:active,
 .hb-chapter-body .heading-toggle a:focus {
@@ -124,6 +125,17 @@ body {
 
 .hb-chapter-footer {
     
+}
+
+.fb-comments {
+    min-height: 400px;
+}
+
+
+/* Prefs */
+.current-event-name {
+    font-size: 1.6em;
+    color: #848283;
 }
 
 /* Theme */

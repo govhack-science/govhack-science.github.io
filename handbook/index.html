@@ -9,6 +9,11 @@ chrono_sections:
     heading: Creating your hack
   - category_verb: submitting
     heading: Submitting your project
+target_audiences:
+  - category_name: comp
+    title: For all competitors
+  - category_name: toolkit
+    title: For hackers
 ---
 
 <div class="tab-content">
@@ -27,10 +32,28 @@ chrono_sections:
             <h1>GovHack Competitor Handbook and Hacker Toolkit</h1>
         </header>
 
-        <div class="alert alert-warning">This is a preview for VIPs (such as yourself!)</div>
-
+        <div class="alert alert-warning">This is a site preview!!</div>
         <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our competitor handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
 
+        <h4>Featured content</h4>
+        <div class="row">
+            <div class="col-sm-6">
+            
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    Competition Rules
+                  </div>
+                </div>
+            
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    Using IBM Bluemix
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+        
         <div style="display: none;">
         {% include_relative _includes/firstrun.html %}
         {% include_relative _includes/preferences.html %}
@@ -41,6 +64,8 @@ chrono_sections:
     ==================================================
     Print out all the sections that correspond to the 
     chronological menu
+    Do a lookahead first, check that there are indeed
+    articles for that chapter otherwise don't bother
     ==================================================
     {% endcomment %}
     {% for section in page.chrono_sections %}
@@ -50,40 +75,35 @@ chrono_sections:
         </header>
         <div><!-- ex .container-fluid -->
             <div class="row">
+            {% for aud in page.target_audiences %}
+                {% assign counter = 0 %}
+                {% for article in site.handbookchapters %}
+                    {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
+                        {% assign counter = counter | plus:1 %}
+                    {% endif %}
+                {% endfor %}
+                {% unless counter == 0 %}        
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3 class="panel-title">For all competitors</h3>
+                        <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
                       <div class="panel-body">
+                        <ul class="list-group">
                         {% for article in site.handbookchapters %}
-                        {% if article.categories contains 'comp' and article.tags contains section.category_verb %}
-                        <article>
-                            <h4><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                        {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
+                        <li>
+                            <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
                             {{ article.content | strip_html | truncatewords: 22 }}
-                        </article>
+                        </li>
                         {% endif %}
                         {% endfor %} 
+                        </ul>
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">For hackers</h3>
-                      </div>
-                      <div class="panel-body">
-                        {% for article in site.handbookchapters %}
-                        {% if article.categories contains 'toolkit' and article.tags contains section.category_verb %}
-                        <article>
-                            <h4><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></h4>
-                            {{ article.content | strip_html | truncatewords: 22 }}
-                        </article>
-                        {% endif %}
-                        {% endfor %} 
-                      </div>
-                    </div>
-                </div>
+                {% endunless %}
+            {% endfor %}
             </div>
         </div>
     </section>
@@ -100,38 +120,35 @@ chrono_sections:
         </header>
         <div><!-- ex .container-fluid -->
             <div class="row">
+            {% for aud in page.target_audiences %}
+                {% assign counter = 0 %}
+                {% for article in site.handbookchapters %} 
+                    {% if article.categories contains aud.category_name %}
+                        {% assign counter = counter | plus:1 %}
+                    {% endif %}
+                {% endfor %} 
+                {% unless counter == 0 %}        
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3 class="panel-title">For all competitors</h3>
+                        <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
                       <div class="panel-body">
-                        <ul>
+                        <ul class="list-group">
                         {% for article in site.handbookchapters %}
-                        {% if article.categories contains 'comp' %}
-                            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        {% if article.categories contains aud.category_name %}
+                        <li>
+                            <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                            {{ article.content | strip_html | truncatewords: 22 }}
+                        </li>
                         {% endif %}
                         {% endfor %} 
                         </ul>
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">For hackers</h3>
-                      </div>
-                      <div class="panel-body">
-                        <ul>
-                        {% for article in site.handbookchapters %}
-                        {% if article.categories contains 'toolkit' %}
-                            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
-                        {% endif %}
-                        {% endfor %} 
-                        </ul>
-                      </div>
-                    </div>
-                </div>
+                {% endunless %}
+            {% endfor %}
             </div>
         </div>
         

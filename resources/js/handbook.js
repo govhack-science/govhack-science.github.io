@@ -29,23 +29,26 @@ var HB = (function(){
             resizer.addEventListener('mousedown', initDrag, false);
         }, false);
 
-        var startX, sidebarStartWidth, mainStartLeft;
+        var startX, sidebarStartWidth, sidebarMinWidth, mainStartLeft;
         // var startY, startHeight;
 
         function initDrag(e) {
-           startX = e.clientX;
-           // startY = e.clientY;
-           sidebarStartWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).width, 10);
-           mainStartLeft = parseInt(document.defaultView.getComputedStyle(elemMain).left, 10);
-           // startHeight = parseInt(document.defaultView.getComputedStyle(elemSidebar).height, 10);
-           document.documentElement.addEventListener('mousemove', doDrag, false);
-           document.documentElement.addEventListener('mouseup', stopDrag, false);
+            startX = e.clientX;
+            // startY = e.clientY;
+            sidebarStartWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).width, 10);
+            sidebarMinWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).minWidth, 10);
+            mainStartLeft = parseInt(document.defaultView.getComputedStyle(elemMain).left, 10);
+            // startHeight = parseInt(document.defaultView.getComputedStyle(elemSidebar).height, 10);
+            document.documentElement.addEventListener('mousemove', doDrag, false);
+            document.documentElement.addEventListener('mouseup', stopDrag, false);
         }
 
         function doDrag(e) {
-           elemSidebar.style.width = (sidebarStartWidth + e.clientX - startX) + 'px';
-           elemMain.style.left = (mainStartLeft + e.clientX - startX) + 'px';
-           // elemSidebar.style.height = (startHeight + e.clientY - startY) + 'px';
+            if (sidebarStartWidth + e.clientX - startX > sidebarMinWidth){
+                elemSidebar.style.width = (sidebarStartWidth + e.clientX - startX) + 'px';
+                elemMain.style.left = (mainStartLeft + e.clientX - startX) + 'px';                
+            }
+            // elemSidebar.style.height = (startHeight + e.clientY - startY) + 'px';
         }
 
         function stopDrag(e) {
@@ -95,33 +98,58 @@ var HB = (function(){
      * a adapter, later down the track)
      */
     function handbookStorage(){
+        
         if (!window.localStorage){
             console.warn('No localstorage');
             return;
         }
-        var localStorageKey = 'govhackhandbook';
         this.get = function(key){
-            window.localStorage.getItem(localStorageKey(key));
+            window.localStorage.getItem(lsk(key));
         }
         this.set = function(key, value){
-            window.localStorage.setItem(localStorageKey(key), value);
+            window.localStorage.setItem(lsk(key), value);
         }
         
-        var eventKey = 'event_gid';
+        //========================
+        
+        var eventIDKey = 'event_gid';
+        var eventNameKey = 'event_name';
         this.hasEvent = function(){
-            return !!window.localStorage.getItem(localStorageKey(eventKey));
+            return !!window.localStorage.getItem(lsk(eventIDKey));
         }
-        this.hasVenue = this.hasEvent;
         this.getEvent = function(){
-            return window.localStorage.getItem(localStorageKey(eventKey));
+            return {
+                id: window.localStorage.getItem(lsk(eventIDKey)),
+                name: window.localStorage.getItem(lsk(eventNameKey))
+            };
         }
-        this.setEvent = function(value){
-            return window.localStorage.setItem(localStorageKey(eventKey), value);
+        this.setEvent = function(values){
+            if (typeof values === 'string'){
+                var gid = values;
+                values = { gid: gid };
+            }
+            // if (!values.gid) throw 'Argument 1 must be an object that contains field `gid`';
+            // values = $.extend({ 
+                // gid: 'sydney',
+                // name: 'sydney'
+            // }, values || {});
+            window.localStorage.setItem(lsk(eventIDKey), values.gid);
+            window.localStorage.setItem(lsk(eventNameKey), values.name);
         }
         
-        function lsKey(key){
-            return [localStorageKey, key],join('_');
+        // Alias
+        this.hasVenue = this.hasEvent;
+        this.getVenue = this.getEvent;
+        this.setVenue = this.setEvent;
+        
+        
+        //========================
+        
+        function lsk(key){
+            var localStorageKey = 'govhackhandbook';
+            return [localStorageKey, key].join('_');
         }
+        
     }
     
     
