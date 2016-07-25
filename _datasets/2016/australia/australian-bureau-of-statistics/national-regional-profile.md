@@ -25,8 +25,8 @@ The NRP presents data for 2010-14 for Local Government Areas, Australian Statist
 * [Glossary](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1379.0.55.001Glossary12010-14?opendocument&tabname=Notes&prodno=1379.0.55.001&issue=2010-14&num=&view=)
 
 **API Endpoints**
-* SOAP: [http://stat.abs.gov.au/sdmxws/sdmx.asmx]
-* ReST (XML): stat.abs.gov.au/restsdmx/sdmx.ashx
+* SOAP: [http://govhack.abs.gov.au/sdmxws/sdmx.asmx]
+* ReST (XML): govhack.abs.gov.au/restsdmx/sdmx.ashx
 
 **Dataset Codes**
 
@@ -37,7 +37,7 @@ The NRP presents data for 2010-14 for Local Government Areas, Australian Statist
 **ReST Call pattern**
 
 ```
-stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_REGIONAL_ASGS/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
+govhack.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_REGIONAL_ASGS/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
 ```
 
 **Example call (ReST (XML) via CORS proxy**
@@ -45,6 +45,6 @@ stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_REGIONAL_ASGS/[DIMENSIONS]/ABS(?
 *What was the total value (in $AU millions) of construction for the City of Newcastle in 2014?*
 
 ```
-http://cors.io/?u="http://stat.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_REGIONAL_LGA/BUILDING_10.LGA2014.15900.A/ABS?startTime=2014&endTime=2014"
+http://govhack.io/?u="http://stat.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_REGIONAL_LGA/BUILDING_10.LGA2014.15900.A/ABS?startTime=2014&endTime=2014"
 ```
 (Note the use of quotes so that the ```&endTime=2014``` isn't passed as part of the cors.io argument but as part of the target URI.)
