@@ -80,6 +80,24 @@ body {
 .nav-menu-section {
     border-bottom: 2px solid whitesmoke;
 }
+.nav-menu-header-link,
+.nav>li>a.nav-menu-header-link {
+    float: right !important;
+    font-size: .8em;
+    padding: 2px;
+}
+.nav-pills>li.active>a.nav-menu-header-link {
+    color: #4C9AD2;
+    background: transparent;
+}
+.nav-menu-header-link:hover,
+.nav>li>a.nav-menu-header-link:hover,
+.nav-pills>li.active>a.nav-menu-header-link:focus, 
+.nav-pills>li.active>a.nav-menu-header-link:hover {
+    color: #23527C;
+    background: transparent;
+}
+
 .resizer-handle {
     display: block;
     width: 6px;
