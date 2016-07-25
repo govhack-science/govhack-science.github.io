@@ -6,7 +6,7 @@ position_title: Assistant Director - Data Integrity
 ask_me_about: ABR data holdings
 organisation: australian-business-register
 jurisdiction: qld
-location: brisbane
+location: sunshine-coast
 contact:
   email: 	Andrew.McDermott@abr.gov.au
 ---
