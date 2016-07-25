@@ -27,11 +27,14 @@ body {
     position: absolute;
     border-right: 1px solid #BEBFBF;
     width: 300px;
+    min-width: 200px;
+    max-width: 50%;
     top: 0;
     bottom: 0;
     left: 0;
     min-height: 100%;
     padding: 15px;
+    box-shadow: inset 5px 3px 20px #ddd;
 }
 .main {
     position: absolute;
@@ -45,8 +48,8 @@ body {
     overflow: auto;
 }
 .header {
-    height: 80px;
-    padding: 5px 0;
+    min-height: 80px;
+    padding: 5px 0 25px;
     overflow: hidden;
 }
 .footer-sticky {
@@ -63,7 +66,7 @@ body {
 }
 
 
-/* Navigation */
+/* Navigation and sidebar */
 .handbook-logo {
     display: block;
     height: 80px;
@@ -73,16 +76,50 @@ body {
 .handbook-logo:hover {
     opacity: 1;
 }
-
+.nav-menu-section {
+    border-bottom: 2px solid whitesmoke;
+}
+.resizer-handle {
+    display: block;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background: rgba(240,240,240,.6);
+    cursor: ew-resize;
+}
 
 /* Chapter */
-
 .hb-chapter-title {
     
 }
 
 .hb-chapter-body {
     
+}
+
+.hb-chapter-body .heading-toggle a {
+    color: #BEBFBF;
+    transition: color .2s ease;
+}
+.hb-chapter-body .heading-toggle a:hover,
+.hb-chapter-body .heading-toggle a:active,
+.hb-chapter-body .heading-toggle a:focus {
+    color: #848283;
+    text-decoration: none;
+}
+.hb-chapter-body .heading-toggle::after {
+    display: inline-block;
+    padding: 0 8px;
+    content: '\25E2';
+    color: #BEBFBF;
+    transform: rotate(45deg);
+    transform-origin: 60% 50%;
+    transition: transform .2s ease;
+}
+.hb-chapter-body .heading-toggle.open::after {
+    transform: rotate(225deg);
 }
 
 .hb-chapter-footer {

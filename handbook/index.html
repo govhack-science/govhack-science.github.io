@@ -64,7 +64,6 @@ chrono_sections:
                         </article>
                         {% endif %}
                         {% endfor %} 
-                        </ul>
                       </div>
                     </div>
                 </div>
@@ -92,39 +91,52 @@ chrono_sections:
 
     {% comment %}
     ==================================================
-    A list of all competitor handbook pages
+    A list of all handbook + toolkit pages
     ==================================================
     {% endcomment %}
-    <section role="tabpanel" class="tab-pane" id="competitors">
+    <section role="tabpanel" class="tab-pane" id="all">
         <header class="header">
-            <h2>Competitor Handbook chapters</h2>
+            <h2>Competitor Handbook chapters and Toolkit Guides</h2>
         </header>
-        <ul>
-        {% for article in site.handbookchapters %}
-        {% if article.categories contains 'comp' %}
-            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %} 
-        </ul>
-    </section>
+        <div><!-- ex .container-fluid -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For all competitors</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'comp' %}
+                            <li><a href="/handbook/comp/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">For hackers</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul>
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains 'toolkit' %}
+                            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
-    {% comment %}
-    ==================================================
-    A list of all hacker toolkit pages
-    ==================================================
-    {% endcomment %}
-    <section role="tabpanel" class="tab-pane" id="hackers">
-        <header class="header">
-            <h2>Hacker Toolkit guides</h2>
-        </header>
-        <ul>
-        {% for article in site.handbookchapters %}
-        {% if article.categories contains 'toolkit' %}
-            <li><a href="/handbook/toolkit/{{ article.slug }}.html" >{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %} 
-        </ul>
-    </section>    
+    </section>
 
 </div>
 
