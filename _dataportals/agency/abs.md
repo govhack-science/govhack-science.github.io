@@ -8,6 +8,12 @@ type: agency-portal
 organisation: australian-bureau-of-statistics
 ---
 
-The data portal for all Australian Bureau of Statistics data.
+**EXPLORE**
 
-Use their [Data By Region](http://stat.abs.gov.au/itt/r.jsp?databyregion) page to explore data by for your state or local area.
+[abs.gov.au](http://abs.gov.au/browse) is the main website of Australia’s national statistical agency, providing access to downloads of trusted official statistics on a wide range of economic, social, population and environmental matters of importance to Australia.
+
+[Data By Region](http://abs.gov.au/databyregion) provides you ease of access to ABS statistics on a particular geographical region. Use the tools to browse, search or explore by map to find statistics about different regions in Australia.
+
+**APIs**
+
+You can find both a SOAP and a ReSTful API outputting easily parseable XML at our GovHack 2016 site -  [govhack.abs.gov.au](http://govhack.abs.gov.au) - a copy of our data warehouse which provides you access to dozens of high demand, major statistics including our special GovHack competition datasets!
