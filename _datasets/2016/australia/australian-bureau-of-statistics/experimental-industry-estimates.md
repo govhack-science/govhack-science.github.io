@@ -1,5 +1,5 @@
 ---
-dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EABLD
+dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE
 excerpt_separator: <!--more-->
 gid: experimental-industry-estimates
 jurisdiction: australia
@@ -25,14 +25,14 @@ Limited quality assurance has been undertaken on these estimates. Some data have
 Please refer to the [quality statement](#) which resides with the data for more information or contact the data mentors for further inquiries.
 
 **Data Explorers**
-* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au) under GovHack
+* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE)
 
 **Explanatory Notes**
-* 
+* TBC
 
 **API Endpoints**
-* SOAP: [http://stat.abs.gov.au/sdmxws/sdmx.asmx]
-* ReST (XML): stat.abs.gov.au/restsdmx/sdmx.ashx
+* SOAP: [http://govhack.abs.gov.au/sdmxws/sdmx.asmx]
+* ReST (XML): govhack.abs.gov.au/restsdmx/sdmx.ashx
 
 **Dataset Code**
 
@@ -41,7 +41,7 @@ Please refer to the [quality statement](#) which resides with the data for more 
 **ReST Call pattern**
 
 ```
-stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/[DATASET_CODE]/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
+govhack.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_EIE/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
 ```
 
 **Example call (ReST (XML) via CORS proxy**
@@ -49,6 +49,6 @@ stat.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/[DATASET_CODE]/[DIMENSIONS]/ABS(?sta
 *Question*
 
 ```
-http://cors.io/?u="http://stat.abs.gov.au/restsdmx/sdmx.ashx/GetData/DATASET_CODE/DIMENSIONS/ABS?startTime=2014&endTime=2014"
+http://cors.io/?u="http://govhack.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_EIE/DIMENSIONS/ABS?startTime=2014&endTime=2014"
 ```
 (Note the use of quotes so that the ```&endTime=2014``` isn't passed as part of the cors.io argument but as part of the target URI.)
