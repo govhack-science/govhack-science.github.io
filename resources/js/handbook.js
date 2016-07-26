@@ -30,7 +30,8 @@ var HB = (function(){
             resizer.addEventListener('mousedown', initDrag, false);
         }, false);
 
-        var startX, sidebarStartWidth, sidebarMinWidth, mainStartLeft;
+        var startX, sidebarStartWidth, mainStartLeft;
+        var sidebarMinWidth, sidebarMaxWidth;
         // var startY, startHeight;
 
         function initDrag(e) {
@@ -38,6 +39,7 @@ var HB = (function(){
             // startY = e.clientY;
             sidebarStartWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).width, 10);
             sidebarMinWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).minWidth, 10);
+            sidebarMaxWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).maxWidth, 10);
             mainStartLeft = parseInt(document.defaultView.getComputedStyle(elemMain).left, 10);
             // startHeight = parseInt(document.defaultView.getComputedStyle(elemSidebar).height, 10);
             document.documentElement.addEventListener('mousemove', doDrag, false);
@@ -45,7 +47,9 @@ var HB = (function(){
         }
 
         function doDrag(e) {
-            if (sidebarStartWidth + e.clientX - startX > sidebarMinWidth){
+            var isAboveMin = sidebarStartWidth + e.clientX - startX > sidebarMinWidth;
+            var isBelowMax = sidebarStartWidth + e.clientX - startX < sidebarMaxWidth;
+            if (isAboveMin && isBelowMax){
                 elemSidebar.style.width = (sidebarStartWidth + e.clientX - startX) + 'px';
                 elemMain.style.left = (mainStartLeft + e.clientX - startX) + 'px';                
             }
@@ -113,35 +117,43 @@ var HB = (function(){
         
         //========================
         
-        var eventIDKey = 'event_gid';
-        var eventNameKey = 'event_name';
-        this.hasEvent = function(){
-            return !!window.localStorage.getItem(lsk(eventIDKey));
+        var locationIdKey = 'event_gid';
+        var locationNameKey = 'event_name';
+        this.hasLocation = function(){
+            return !!window.localStorage.getItem(lsk(locationIdKey));
         }
-        this.getEvent = function(){
-            return {
-                id: window.localStorage.getItem(lsk(eventIDKey)),
-                name: window.localStorage.getItem(lsk(eventNameKey))
+        this.getLocation = function(locationLoadedCallback){
+            var id = window.localStorage.getItem(lsk(locationIdKey));
+            var name = window.localStorage.getItem(lsk(locationNameKey));
+            console.log('ID is %s', id);
+            var location = {
+                id: id,
+                name: name
             };
+            retrieveLocationApi(id).done(function(data){
+                $.extend(location, data || {});
+                (locationLoadedCallback || $.noop)(location);
+            });
+            return location;
         }
-        this.setEvent = function(values){
+        this.setLocation = function(values){
             if (typeof values === 'string'){
-                var gid = values;
-                values = { gid: gid };
+                var id = values;
+                values = { id: id };
             }
             // if (!values.gid) throw 'Argument 1 must be an object that contains field `gid`';
             // values = $.extend({ 
                 // gid: 'sydney',
                 // name: 'sydney'
             // }, values || {});
-            window.localStorage.setItem(lsk(eventIDKey), values.gid);
-            window.localStorage.setItem(lsk(eventNameKey), values.name);
+            window.localStorage.setItem(lsk(locationIdKey), values.id);
+            window.localStorage.setItem(lsk(locationNameKey), values.name);
         }
         
         // Alias
-        this.hasVenue = this.hasEvent;
-        this.getVenue = this.getEvent;
-        this.setVenue = this.setEvent;
+        this.hasVenue = this.hasLocation;
+        this.getVenue = this.getLocation;
+        this.setVenue = this.setLocation;
         
         
         //========================
@@ -151,6 +163,22 @@ var HB = (function(){
             return [localStorageKey, key].join('_');
         }
         
+        function retrieveLocationApi(locationId){
+            // returns a promise with .done(), .fail() and .always()
+            var $prom = $.get('/feed/locations/all.json');
+            if (locationId){
+                return $prom.then(function(data){
+                    if ($.isArray(data)){
+                        return data.find(function(location){
+                            return location.id === locationId;
+                        });
+                    }
+                    return data;
+                });
+            }
+            return $prom;
+        }
+
     }
     
     /**

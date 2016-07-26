@@ -3,7 +3,7 @@ slug: mobile_dev
 title: Mobile Development
 last_updated: '2016-07-24T07:11:48.836Z'
 categories:
-  - comp
+  - toolkit
 tags:
   - creating
 ---

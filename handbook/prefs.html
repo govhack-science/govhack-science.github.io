@@ -6,6 +6,8 @@ layout: handbook_template_bs
     <h1>Your preferences</h1>
 </header>
 
+<div class="alert alert-warning">Preferences don't 100% work yet. In about a day's time, by selecting the venue you'll receive customised location information :) Stay tuned <br>– Alan</div>
+
 <div id="current-event" class="panel panel-default">
     <div class="panel-heading">Selected GovHack event</div>
     <div class="panel-body">
@@ -23,7 +25,7 @@ layout: handbook_template_bs
                     <option value="{{ loc.gid }}">{{ loc.name }}</option>
                     {% endfor %}
                 </select>        
-                <button type="button" class="btn btn-default">Change my event</button>
+                <button type="submit" class="btn btn-default">Change my event</button>
             </div>
         </form>
     </div>
@@ -31,11 +33,11 @@ layout: handbook_template_bs
 <div id="current-event" class="panel panel-default">
     <div class="panel-heading">Viewing preferences</div>
     <div class="panel-body">
-        <form class="form-horizontal">
+        <form id="viewing-prefs-form" class="form-horizontal">
             <div class="col-sm-12">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Show sections collapsed
+                        <input name="show_sections_collapsed" type="checkbox"> Show sections collapsed
                     </label>
                 </div>
             </div>
@@ -48,6 +50,7 @@ layout: handbook_template_bs
 $(function(){
 
     var $chooseEventForm = $('#choose-event-form');
+    var $viewingPrefsForm = $('#choose-event-form');
 
     $('#change-event').on('click', function(){
         $(this).toggleClass('active');
@@ -59,9 +62,10 @@ $(function(){
     
     $chooseEventForm.submit(function(){
         try {
-            HB.storage.setEvent({
-                gid: $(this).find('[name=chosen_location]').val(),
-                name: $(this).find('[name=chosen_location] option:selected').text()
+            var id = $(this).find('[name=chosen_location]').val();
+            HB.storage.setLocation({
+                id: id,
+                name: id ? $(this).find('[name=chosen_location] option:selected').text() : ''
             });
             $(this).slideUp('fast', function(){
                 onPreferencePageLoad();
@@ -80,8 +84,11 @@ $(function(){
     //===================================
     
     function onPreferencePageLoad(){
-        var currentEvent = HB.storage.getEvent();
-        $('#current-event-name').html(currentEvent.name || 'No event selected');
+        var currentEvent = HB.storage.getLocation(function(){
+            console.log(currentEvent);
+            $('#current-event-name').html(currentEvent.name || 'No event selected');
+            $chooseEventForm.find('[name=chosen_location] option[value='+currentEvent.id+']').prop('selected', true);
+        });
         if (!currentEvent){
             $('#change-my-event').click();
         }
