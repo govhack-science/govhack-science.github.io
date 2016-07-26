@@ -20,9 +20,28 @@ __Please note that the purpose of this dataset is to allow GovHack participants 
 
 These estimates have been compiled using Business Activity Statement (BAS) and Pay As You Go (PAYG) data supplied to the ABS by the Australian Taxation Office. Industry data are based on the ABS's Business Register. Location data are based on the postcode of a business as reported to the ATO, which may represent the address of a Tax Agent, or, for businesses with multiple locations, the head office of that business. No attempt has been made to model business data for multiple locations, or to confirm actual location data. This may misrepresent the true location of a business. 
 
+**Quality Statement - IMPORTANT!**
 Limited quality assurance has been undertaken on these estimates. Some data have been suppressed to maintain statutory confidentiality requirements, others have been suppressed where estimates are likely to misrepresent true values. 
 
-Please refer to the [quality statement](#) which resides with the data for more information or contact the data mentors for further inquiries.
+Location data are based on the postcode of a business as reported to the ATO, which may represent the address of a Tax Agent, or, for businesses with multiple locations, the head office of that business. No attempt has been made to model business data for multiple locations, or to confirm actual location data. This may misrepresent the true location of a business. 
+
+Further, postcode data have been concorded to SA2s where possible. Where a postcode maps to multiple SA2s, data have been distributed based on population estimates. This methodology has NOT been endorsed or adopted by the ABS and should NOT be treated as a reliable indicator of business location. 
+
+These estimates have been compiled using Business Activity Statement (BAS) and Pay As You Go (PAYG) data supplied to the ABS by the ATO. 
+
+Complex business structures where a Type of activity unit (TAU) is created for business entities within an enterprise group may not be accurately represented in this data. Some TAUs have multiple ABNs and at the individual ABN level, the ANZSIC classes may be different to the TAU. This is not accounted for in these data. Please note that the ANZSIC classes in the BAS and PAYG data are based on self coding. The estimates should therefore be treated as experimental. 
+
+In some cases, BAS data may be partially missing for an individual business (for example, data may be available for three out of four quarters). In other instances BAS data may be complete but PAYG data are missing (and vice versa). No imputation is applied for missing data. 
+
+Users should take into consideration that any discussion of the data limitations or weaknesses is in the context of using the data for statistical purposes, and is not related to the ability of the data to support the ATO's core operational requirements.
+
+Refer to the ATO website ([www.ato.gov.au]) for more information about BAS and PAYG reporting requirements.
+
+Limited quality assurance has been undertaken on these estimates. Some data have been suppressed to maintain statutory confidentiality requirements, others have been suppressed where estimates are likely to misrepresent true values. 
+
+The purpose of this dataset is to allow GovHack participants to develop applications and other proof of concept products, with the understanding that any output is not suitable for analytical purposes
+
+Please contact the data mentors for further inquiries.
 
 **Data Explorers**
 * [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE)
