@@ -1,0 +1,32 @@
+{% if include.chapter_slug %}
+
+    {% assign chapter = site.handbookchapters | where: 'slug', include.chapter_slug | first %}
+    
+    <div class="panel panel-default">
+        <div class="panel-body">
+            
+            {% unless chapter.tile.image == nil %}
+            <div><img class="img-responsive" src="{{ chapter.tile.image }}"/></div>
+            {% endunless %}
+            
+            <h4>{{ chapter.title }}</h4>
+            
+            {% comment %}
+            ====================================================================
+            The auto-gen chapter.excerpt's are pretty bad here, they include the 
+            titles and not much else. So we've implemented either a custom 
+            frontmatter tile excerpt, or else trim the content down to shape
+            ====================================================================
+            {% endcomment %}
+            {% if chapter.tile.excerpt != nil %}
+            <p>{{ chapter.tile.excerpt }}</p>
+            {% else %}
+            <p>{{ chapter.content | markdownify | strip_html | truncatewords: 22 }}</p>
+            {% endif %}
+            
+            <a class="btn btn-default" href="{{ chapter.url }}">{{ chapter.tile.button_label | default: 'Go to page' }}</a>
+            
+        </div>
+    </div> 
+    
+{% endif %} 

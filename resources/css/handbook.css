@@ -27,11 +27,14 @@ body {
     position: absolute;
     border-right: 1px solid #BEBFBF;
     width: 300px;
+    min-width: 200px;
+    max-width: 50%;
     top: 0;
     bottom: 0;
     left: 0;
     min-height: 100%;
     padding: 15px;
+    box-shadow: inset 5px 5px 15px #dfdfdf;
 }
 .main {
     position: absolute;
@@ -45,8 +48,8 @@ body {
     overflow: auto;
 }
 .header {
-    height: 80px;
-    padding: 5px 0;
+    min-height: 80px;
+    padding: 5px 0 25px;
     overflow: hidden;
 }
 .footer-sticky {
@@ -63,20 +66,50 @@ body {
 }
 
 
-/* Navigation */
+/* Navigation and sidebar */
 .handbook-logo {
     display: block;
     height: 80px;
+    max-width: 280px;
     background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
     opacity: .8;
 }
 .handbook-logo:hover {
     opacity: 1;
 }
+.nav-menu-section {
+    border-bottom: 2px solid whitesmoke;
+}
+.nav-menu-header-link,
+.nav>li>a.nav-menu-header-link {
+    float: right !important;
+    font-size: .8em;
+    padding: 2px;
+}
+.nav-pills>li.active>a.nav-menu-header-link {
+    color: #4C9AD2;
+    background: transparent;
+}
+.nav-menu-header-link:hover,
+.nav>li>a.nav-menu-header-link:hover,
+.nav-pills>li.active>a.nav-menu-header-link:focus, 
+.nav-pills>li.active>a.nav-menu-header-link:hover {
+    color: #23527C;
+    background: transparent;
+}
 
+.resizer-handle {
+    display: block;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background: rgba(240,240,240,.6);
+    cursor: ew-resize;
+}
 
 /* Chapter */
-
 .hb-chapter-title {
     
 }
@@ -85,8 +118,43 @@ body {
     
 }
 
+.heading-toggle a {
+    color: #BEBFBF;
+    transition: color .2s ease;
+}
+.heading-toggle.open a,
+.heading-toggle a:hover,
+.heading-toggle a:active,
+.heading-toggle a:focus {
+    color: #848283;
+    text-decoration: none;
+}
+.heading-toggle::after {
+    display: inline-block;
+    padding: 0 8px;
+    content: '\25E2';
+    color: #BEBFBF;
+    transform: rotate(45deg);
+    transform-origin: 60% 50%;
+    transition: transform .2s ease;
+}
+.heading-toggle.open::after {
+    transform: rotate(225deg);
+}
+
 .hb-chapter-footer {
     
+}
+
+.fb-comments {
+    min-height: 200px;
+}
+
+
+/* Prefs */
+.current-event-name {
+    font-size: 1.6em;
+    color: #848283;
 }
 
 /* Theme */

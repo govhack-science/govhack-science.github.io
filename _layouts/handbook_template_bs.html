@@ -79,6 +79,7 @@
     <script src="/resources/js/jquery-collapse/src/jquery.collapse.js"></script>
     <script src="/resources/js/jquery-collapse/src/jquery.collapse_storage.js"></script>
     <script src="//assets.govhack.org/js/site-switcher.min.js"></script>
+    <script src="/resources/js/handbook.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,28 +107,24 @@
     <main class="viewport">
         <aside class="side-nav">
             <header class="header">
-                <a id="handbook-logo" class="handbook-logo" href="/handbook" data-target="#home">
-                    <span class="sr-only">Handbook</span>
+                <a id="handbook-logo" class="handbook-logo text-hide" href="/handbook" data-target="#home">
+                    Handbook
                 </a>
             </header>
 
             <nav>
                 <ul id="hb-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
                     <li role="presentation">
-                        <h4>Rollup</h4>
+                        <h4 class="nav-menu-section">General</h4>
                     </li>
                     <li role="presentation">
-                        <a href="/handbook#/competitors" data-target="#competitors" aria-controls="competitors" role="tab">
-                            Competitor Handbook chapters
+                        <a href="/handbook" data-target="#home" aria-controls="home" role="tab">
+                            Dashboard
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="/handbook#/hackers" data-target="#hackers" aria-controls="hackers" role="tab">
-                            Hacker Toolkit guides
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <h4>Timeline</h4>
+                        <a class="nav-menu-header-link" href="/handbook#/all" data-target="#all" aria-controls="all" role="tab">Chapter summary</a>
+                        <h4 class="nav-menu-section">Timeline</h4>
                     </li>
                     <li role="presentation">
                         <a class="alt" href="/handbook#/preparing" data-target="#preparing" aria-controls="preparing" role="tab">
@@ -150,16 +147,24 @@
                         </a>
                     </li>
                     <li role="presentation">
-                        <h4>Hotline</h4>
+                        <h4 class="nav-menu-section">Hotline</h4>
                     </li>
                     <li role="presentation">
                         <a href="/handbook/help.html">
-                            Help and contacts
+                            Help and support
                         </a>
-                    </li>
+                    </li> 
                     <li role="presentation">
                         <a href="/handbook/feedback.html">
                             Feedback
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <h4 class="nav-menu-section">Settings</h4>
+                    </li>
+                    <li role="presentation">
+                        <a href="/handbook/prefs.html">
+                            My handbook preferences
                         </a>
                     </li>
                 </ul>
@@ -192,6 +197,24 @@
     </main>
     
     {% include autoreload-in-debug.html %}
+    
+    <script>
+    $(function(){
+        // Sidebar resizer kickstart
+        HB.enableSidebarDrag('.side-nav', '.main');
+    });
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45822127-6', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
 </body>
 </html>
