@@ -1,5 +1,6 @@
 ---
 gid: manly
+cancelled: true
 name: Manly Northern Beaches
 prefix: GovHack
 jurisdiction: nsw
