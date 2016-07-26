@@ -48,6 +48,18 @@
         {% assign has_sponsors = true %}
     {% endif %}
 
+    {% comment %}
+    =======================================
+    Filtering to only display certain classes of sponsor.
+    e.g. Lead sponsors
+    =======================================
+    {% endcomment %}
+
+    {% if include.sponsor_level_ids != "" %}
+        {% assign sponsor_level_ids = include.sponsor_level_ids | split: "," %}
+        {% assign sponsor_level_ids_len = sponsor_level_ids | size %}
+    {% endif %}
+
     {% if has_sponsors %}
     <!-- Sponsors Section -->
     <section id="portfolio">
@@ -61,6 +73,12 @@
         <div class="row">
             <div class="container-fluid govhack-sponsors">
             {% for sponsor_level in site.data.sponsor_config[sponsor_cat].classes %}
+                {% if sponsor_level_ids_len > 0 %}
+                    {% unless sponsor_level_ids contains sponsor_level.slug %}
+                        {% continue %}
+                    {% endunless %}
+                {% endif %}
+
                 {% assign col_width = 12 | divided_by: sponsor_level.columns | round: 0 %}
 
                 {% for sponsor_cat in sponsors_by_level %}

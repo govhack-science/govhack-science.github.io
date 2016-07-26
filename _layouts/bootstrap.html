@@ -303,6 +303,9 @@
                 {% include sponsors_national.html %}
                 {% endcomment %}
 
+                {% if page.no_major_sponsors != true %}
+                    {% include sponsor_block.bs.html sponsor_level="national" jurisdiction_gid="australia" jurisdiction_name="Major" sponsor_level_ids="lead-agency,lead-sponsor" %}
+                {% endif %}
             </div>
         </div>
     </div>
