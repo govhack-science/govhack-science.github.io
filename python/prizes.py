@@ -255,6 +255,7 @@ for file in sheets:
             prize["organisation"] = organisation_gid
         else:
             print "WARNING: Could not resolve organisation: %s (%s)" % (row["sponsoredby"], organisation_gid)
+            prize["organisation"] = row["sponsoredby"].strip()
 
         # If a prize already exists, merge the latest info over the top
         prize_md_dir = os.path.join(prizesdir, file["region"].lower())
@@ -302,9 +303,6 @@ for file in sheets:
             f.write(u'\n\n')
             f.write(u'# Prize\n')
             f.write(unicode(row["prizereward"].replace("|", "\n").rstrip()))
-            f.write(u'\n\n')
-            f.write(u'## Estimated Prize Value\n')
-            f.write(unicode("$%s" % (estimatedprizevalue)))
             f.write(u'\n\n')
             f.write(u'# Eligibility Criteria\n')
             f.write(unicode(row["eligibilitycriteria"].replace("|", "\n").rstrip()))
