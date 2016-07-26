@@ -1,7 +1,7 @@
 ---
 ask_me_about: Higher Education Data
 contact:
-  email: barbara.sidwell@education.gov.au
+  twitter: EDUGovHack2016
 gid: barbara-sidwell
 jurisdiction: act
 location: virtual

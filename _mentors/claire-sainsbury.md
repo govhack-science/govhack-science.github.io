@@ -1,7 +1,7 @@
 ---
 ask_me_about: All Higher Education data, including attrition rates
 contact:
-  email: claire.sainsbury@education.gov.au
+  twitter: EDUGovHack2016
 gid: claire-sainsbury
 jurisdiction: act
 location: canberra

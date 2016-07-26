@@ -1,8 +1,8 @@
 ---
 ask_me_about: higher education data
 contact:
-  email: zhengfeng.li@education.gov.au
   linkedin: http://au.linkedin.com/in/
+  twitter: EDUGovHack2016
 gid: zhengfeng-li
 jurisdiction: act
 location: canberra
