@@ -28,13 +28,14 @@ body {
     border-right: 1px solid #BEBFBF;
     width: 300px;
     min-width: 200px;
-    max-width: 50%;
+    max-width: 600px;
     top: 0;
     bottom: 0;
     left: 0;
     min-height: 100%;
     padding: 15px;
     box-shadow: inset 5px 5px 15px #dfdfdf;
+    overflow: auto;
 }
 .main {
     position: absolute;
@@ -57,12 +58,13 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40px;
+    height: 20px;
     padding: 5px 10px;
     border-top: 1px solid #BEBFBF;
     z-index: 99;
     color: #BEBFBF;
     font-size: .75em;
+    background: white;
 }
 
 
@@ -76,6 +78,16 @@ body {
 }
 .handbook-logo:hover {
     opacity: 1;
+}
+.handbook-logo::before {
+    content: '2016';
+    display: block;
+    color: #848283;
+}
+.handbook-logo::after {
+    content: 'Empower. Enable. Connect.';
+    display: block;
+    color: #848283;
 }
 .nav-menu-section {
     border-bottom: 2px solid whitesmoke;
@@ -134,6 +146,7 @@ body {
     padding: 0 8px;
     content: '\25E2';
     color: #BEBFBF;
+    font-size: 11px;
     transform: rotate(45deg);
     transform-origin: 60% 50%;
     transition: transform .2s ease;

@@ -30,7 +30,8 @@ var HB = (function(){
             resizer.addEventListener('mousedown', initDrag, false);
         }, false);
 
-        var startX, sidebarStartWidth, sidebarMinWidth, mainStartLeft;
+        var startX, sidebarStartWidth, mainStartLeft;
+        var sidebarMinWidth, sidebarMaxWidth;
         // var startY, startHeight;
 
         function initDrag(e) {
@@ -38,6 +39,7 @@ var HB = (function(){
             // startY = e.clientY;
             sidebarStartWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).width, 10);
             sidebarMinWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).minWidth, 10);
+            sidebarMaxWidth = parseInt(document.defaultView.getComputedStyle(elemSidebar).maxWidth, 10);
             mainStartLeft = parseInt(document.defaultView.getComputedStyle(elemMain).left, 10);
             // startHeight = parseInt(document.defaultView.getComputedStyle(elemSidebar).height, 10);
             document.documentElement.addEventListener('mousemove', doDrag, false);
@@ -45,7 +47,9 @@ var HB = (function(){
         }
 
         function doDrag(e) {
-            if (sidebarStartWidth + e.clientX - startX > sidebarMinWidth){
+            var isAboveMin = sidebarStartWidth + e.clientX - startX > sidebarMinWidth;
+            var isBelowMax = sidebarStartWidth + e.clientX - startX < sidebarMaxWidth;
+            if (isAboveMin && isBelowMax){
                 elemSidebar.style.width = (sidebarStartWidth + e.clientX - startX) + 'px';
                 elemMain.style.left = (mainStartLeft + e.clientX - startX) + 'px';                
             }
