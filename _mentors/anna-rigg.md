@@ -8,6 +8,7 @@ jurisdiction: nsw
 location: sydney
 name: Anna Rigg
 organisation: city-of-sydney
+photo_url: /resources/images/mentors/anna-rigg.jpg
 position_title: Social Policy Officer
 type: Data Mentor
 ---

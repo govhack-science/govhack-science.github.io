@@ -9,6 +9,7 @@ jurisdiction: qld
 location: gold-coast
 name: David Ives
 organisation: queensland-government
+photo_url: /resources/images/mentors/david-ives.png
 position_title: Director, Digital Economy Development
 type: Business Mentor
 ---
