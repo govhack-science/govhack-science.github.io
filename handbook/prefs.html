@@ -6,6 +6,8 @@ layout: handbook_template_bs
     <h1>Your preferences</h1>
 </header>
 
+<div class="alert alert-warning">Preferences don't 100% work yet. In about a day's time, by selecting the venue you'll receive customised location information :) Stay tuned <br>– Alan</div>
+
 <div id="current-event" class="panel panel-default">
     <div class="panel-heading">Selected GovHack event</div>
     <div class="panel-body">
@@ -63,7 +65,7 @@ $(function(){
             var id = $(this).find('[name=chosen_location]').val();
             HB.storage.setLocation({
                 id: id,
-                name: id ? $(this).find('[name=chosen_location] option:selected').text() : null
+                name: id ? $(this).find('[name=chosen_location] option:selected').text() : ''
             });
             $(this).slideUp('fast', function(){
                 onPreferencePageLoad();
