@@ -15,3 +15,5 @@ A new fully four-dimensional biophysical dispersal model has been developed by G
 <!--more-->
 
 Information gained from the model can be used to inform priorities for monitoring the performance of marine reserves and studying changes in connectivity structure. Other potential applications include the ability to investigate transport patterns of sediment, pollutants or debris; predict the potential spread of invasive species; and quantify how upstream management efforts can generate downstream benefits.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kiBQ1doZ_6g" frameborder="0" allowfullscreen></iframe>
