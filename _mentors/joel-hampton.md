@@ -6,6 +6,7 @@ contact:
   twitter: '@contact411'
 gid: joel-hampton
 jurisdiction: nsw
+location: camperdown-games
 name: Joel Hampton
 organisation: Digivizer
 photo_url: /resources/images/mentors/joel-hampton.jpeg

@@ -6,6 +6,7 @@ contact:
   twitter: '@jenni_masters'
 gid: jennifer-masters
 jurisdiction: vic
+location: melbourne-open-raster
 name: Jennifer Masters
 organisation: ibm
 position_title: Associate Partner, Vic Gov and Health Accounts

@@ -6,6 +6,7 @@ contact:
   twitter: '@AshishQldAu'
 gid: ashish-shah
 jurisdiction: qld
+location: logan
 name: Ashish Shah
 organisation: logan-city-council
 photo_url: /resources/images/mentors/ashish-shah.jpg

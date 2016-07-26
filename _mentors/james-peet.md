@@ -6,6 +6,7 @@ contact:
   twitter: '@jjpeet'
 gid: james-peet
 jurisdiction: qld
+location: sunshine-coast
 name: James Peet
 organisation: Moreton Bay Regional Council
 position_title: Chief Digital Officer

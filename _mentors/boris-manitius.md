@@ -6,6 +6,7 @@ contact:
   twitter: Boris_Manitius
 gid: boris-manitius
 jurisdiction: nsw
+location: sydney-fintech
 name: Boris Manitius
 organisation: ibm
 position_title: Cloud Platform Specialist
