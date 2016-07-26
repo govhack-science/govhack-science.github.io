@@ -34,7 +34,16 @@ body {
     left: 0;
     min-height: 100%;
     padding: 15px;
-    box-shadow: inset 5px 5px 15px #dfdfdf;
+    box-shadow: inset -3px 8px 15px #fcfcfc;
+    overflow: hidden;
+}
+.side-nav-inner {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    padding: 15px;
     overflow: auto;
 }
 .main {
@@ -58,8 +67,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 20px;
-    padding: 5px 10px;
+    height: 40px;
+    padding: 5px 15px;
     border-top: 1px solid #BEBFBF;
     z-index: 99;
     color: #BEBFBF;
