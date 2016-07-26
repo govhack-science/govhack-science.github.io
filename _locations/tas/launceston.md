@@ -1,5 +1,5 @@
 ---
-gid: Launceston
+gid: launceston
 name: Launceston
 prefix: GovHack
 jurisdiction: tas
