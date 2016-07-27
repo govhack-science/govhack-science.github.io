@@ -109,7 +109,7 @@ var HB = (function(){
             return;
         }
         this.get = function(key){
-            window.localStorage.getItem(lsk(key));
+            return window.localStorage.getItem(lsk(key));
         }
         this.set = function(key, value){
             window.localStorage.setItem(lsk(key), value);
@@ -244,20 +244,20 @@ var HB = (function(){
                         $trHost.append('<td>Host</td>');
                         $trHost.append('<td>'+event.venue.host+'&nbsp;&nbsp;</td>');
 // <small><a href="'++'">'+email+'</a></small>
-                        $trHost.appendTo($customLocationHelpTable);
+                        $trHost.appendTo($customLocationHelpTable.find('tbody'));
                     }
                     if (event.venue.team){
                         var $trTeam = $('<tr>');
                         $trTeam.append('<td>Team</td>');
                         $trTeam.append('<td>'+event.venue.team+'&nbsp;&nbsp;</td>');
-                        $trTeam.appendTo($customLocationHelpTable);
+                        $trTeam.appendTo($customLocationHelpTable.find('tbody'));
                     }
 
                     ['friday', 'saturday', 'sunday'].forEach(function(dayName){
                         var $trDay = $('<tr>');
                         $trDay.append('<td>'+dayName.charAt(0).toUpperCase()+dayName.slice(1)+' times</td>');
                         $trDay.append('<td>'+event.times[dayName].open+' to '+event.times[dayName].close+'</td>');
-                        $trDay.appendTo($customLocationHelpTable);
+                        $trDay.appendTo($customLocationHelpTable.find('tbody'));
                     });
 
                     // if (event.times.friday){
