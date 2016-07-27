@@ -1,5 +1,5 @@
 ---
-dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE
+dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE_SA2
 excerpt_separator: <!--more-->
 gid: experimental-industry-estimates
 jurisdiction: australia
@@ -41,11 +41,10 @@ Limited quality assurance has been undertaken on these estimates. Some data have
 
 The purpose of this dataset is to allow GovHack participants to develop applications and other proof of concept products, with the understanding that any output is not suitable for analytical purposes
 
-**Related Datasets**
+**Related or Complimentary Datasets**
 
-The following GovHack Datasets may compliment this dataset:
-
-* [SA3 Region Innovation Data 2009-15](../australia/department-of-industry-innovation-and-science/sa3-region-innovation-data-2009-15.md)
+* [SA3 Region Innovation Data 2009-15](../australia/department-of-industry-innovation-and-science/sa3-region-innovation-data-2009-15.html)
+* [Characteristics of Temporary Skilled Migrants](../characteristics-of-temporary-skilled-migrants.html)
 
 Please contact the data mentors for further inquiries.
 
