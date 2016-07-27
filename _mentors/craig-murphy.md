@@ -11,6 +11,9 @@ name: Craig Murphy
 organisation: ibm
 position_title: Cloud Specialist
 type: Technical Mentor
+photo_url: /cmurphy.jpg
 ---
+
+I can help with IBM Cloud Computing, SoftLayer, Bluemix also advice on using Watson Analytics, and the internet of things.
 
 Thinker-Maker-Ideas man, Photographer, Motorsport Fan, Family guy. Cloud Specialist @IBM

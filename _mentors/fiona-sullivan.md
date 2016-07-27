@@ -7,7 +7,7 @@ jurisdiction: vic
 location: geelong
 name: Fiona Sullivan
 organisation: The Future - Sustainable Business Models, Us and earth....
-position_title: Futures Consultant - Innovation, Commercialization, Sustainability, Creative Leadership.
+position_title: Consultant - Future Innovation and Creativity
 type: Business Mentor
 ---
 
