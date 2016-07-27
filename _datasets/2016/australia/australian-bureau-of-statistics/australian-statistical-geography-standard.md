@@ -16,7 +16,7 @@ The ABS provides geospatial web services for the Australian Statistical Geograph
 
 This includes the ABS Structures, areas defined by the ABS, and Non-ABS Structures, areas not designed by the ABS but approximated using areas from the ASGS Main Structure.
 
-You can find a complete listing of all available services in the [ABS Geospatial Web Services User Guide, 2015](http://www.abs.gov.au/ausstats/abs@.nsf/Lookup/1470.0main+features22015).
+You can find a complete listing of all available services in the [ABS Geospatial Web Services User Guide, 2015](http://www.abs.gov.au/ausstats/abs@.nsf/Lookup/1470.0main+features22015). Supporting documentation is available at the [ABS Geography](http://www.abs.gov.au/geography) page.
 
 It should be noted that areas in the ASGS (and other boundaries) help us group statistical data into understandable areas without compromising privacy and confidentiality.
 
