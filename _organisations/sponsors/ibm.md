@@ -3,7 +3,7 @@ gid: ibm
 title: IBM
 name: IBM
 website_url: 'http://www.ibm.com/cloud-computing/bluemix/'
-logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/Bluemix-logo-right.png'
+logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/ibm.png'
 sponsor_level: Lead Sponsor
 sponsor_level_id: lead-sponsor
 sponsor_level_desc: Lead Sponsor
