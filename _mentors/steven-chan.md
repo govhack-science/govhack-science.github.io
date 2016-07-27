@@ -8,6 +8,7 @@ jurisdiction: nsw
 location: sydney
 name: Steven Chan
 organisation: ibm
+photo_url: /resources/images/mentors/steven-chan.jpg
 position_title: Digital Sales Graduate
 type: Business Mentor
 ---

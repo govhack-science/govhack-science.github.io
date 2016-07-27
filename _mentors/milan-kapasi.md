@@ -6,6 +6,7 @@ contact:
   twitter: '@milanjk'
 gid: milan-kapasi
 jurisdiction: vic
+location: wyndham
 name: Milan Kapasi
 organisation: DeakinDigital
 photo_url: /resources/images/mentors/milan-kapasi.jpg
