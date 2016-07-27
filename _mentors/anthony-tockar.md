@@ -15,5 +15,4 @@ contact:
 ---
 
 I am a data scientist here in Sydney. I am formally trained as an actuary but have spent the last few years working in analytics and becoming an expert in machine learning, data visualisation and working with big data.
-I currently work at CBIG Consulting as a decision science consultant.
-I also co-founded and run the Data Science Breakfast Meetup.
+I currently work at CBIG Consulting as a decision science consultant. I also co-founded and run the Data Science Breakfast Meetup.

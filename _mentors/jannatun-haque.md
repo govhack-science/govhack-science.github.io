@@ -1,5 +1,5 @@
 ---
-ask_me_about: Transport Analytics, - Traffic Volume, Travel Time, Transport Network Performance, Crash Data, Incidents. Network Performance KPI's
+ask_me_about: Transport Analytics, Traffic Volume, Travel Time, Transport Network Performance, Crash Data, Incidents. Network Performance KPI's
 contact:
   email: jannatun.haque@rms.nsw.gov.au
   linkedin: http://au.linkedin.com/in/jannatun-haque
@@ -9,7 +9,7 @@ location: sydney
 name: Jannatun Haque
 organisation: Roads and Maritime Services
 photo_url: /resources/images/mentors/jannatun-haque.jpg
-position_title: General Manager, Jounrey Information & Digital
+position_title: General Manager, Journey Information & Digital
 type: Data Mentor
 ---
 

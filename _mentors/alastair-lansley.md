@@ -1,5 +1,5 @@
 ---
-ask_me_about: 'Can help with: Coding, Android, Graphics/Multimedia & DBMS shenanigans!'
+ask_me_about: 'Coding, Android, Graphics/Multimedia & DBMS shenanigans!'
 contact:
   email: a.lansley@federation.edu.au
   linkedin: https://www.linkedin.com/in/alastair-lansley-b1708b2b

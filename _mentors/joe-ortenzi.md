@@ -1,5 +1,6 @@
 ---
 ask_me_about: UX design, service design, interaction design
+photo_url: /resources/images/mentors/joe-ortenzi.jpg
 contact:
   email: joe@ortenzi.com
   linkedin: http://www.linkedin.com/in/jortenzi
