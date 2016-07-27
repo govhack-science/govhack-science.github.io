@@ -5,7 +5,7 @@ Content served by [Jekyll](http://jekyllrb.com/docs/), with layout and nice bits
 
 
 # Planning
-[GovHack Data Model](https://www.lucidchart.com/documents/edit/d36186be-0c77-4e89-a735-6022a716566a)
+[GovHack Data Model](https://www.lucidchart.com/documents/view/d36186be-0c77-4e89-a735-6022a716566a)
 
 
 # Documentation
