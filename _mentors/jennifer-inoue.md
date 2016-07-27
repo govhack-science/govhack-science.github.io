@@ -7,7 +7,7 @@ gid: jennifer-inoue
 jurisdiction: qld
 location: brisbane
 name: Jennifer Inoue
-organisation: queesland-government
+organisation: queensland-government
 position_title: Director, Innovation and Transformation
 type: Data Mentor
 ---
