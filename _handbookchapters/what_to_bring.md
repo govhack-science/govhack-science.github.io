@@ -1,11 +1,11 @@
 ---
 slug: 'what_to_bring'
-title: 'What to Bring'
-last_updated: '2016-07-24T16:20:51.515Z'
+title: 'What to bring'
+last_updated: '2016-07-27T12:21:17.222Z'
 categories:
   - comp
 tags:
-  - preparation
+  - preparing
 ---
 
 The most important thing is to bring your GovHack Spirit of fun, friendship and helping others!  GovHack is a friendly creative environment.  
