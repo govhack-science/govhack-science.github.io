@@ -125,7 +125,6 @@ var HB = (function(){
         this.getLocation = function(locationLoadedCallback){
             var id = window.localStorage.getItem(lsk(locationIdKey));
             var name = window.localStorage.getItem(lsk(locationNameKey));
-            console.log('ID is %s', id);
             var location = {
                 id: id,
                 name: name
@@ -189,6 +188,12 @@ var HB = (function(){
      */
     function collapsePageContent($collapseTargetParent, opts){
         if (!$collapseTargetParent) throw 'Must provide parent element as argument 1';
+
+        if (HB.storage.get('show_sections_expanded') === 'yes'){
+            console.warn('User has opted out of accordions');
+            return;
+        }
+
         opts = $.extend({
             validHeadingTags: ['h1', 'h2', 'h3'],
             headingThreshold: 3

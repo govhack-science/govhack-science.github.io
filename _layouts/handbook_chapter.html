@@ -20,9 +20,7 @@ layout: handbook_template_bs
 
 <script>
 $(function(){
-    if (HB.storage.get('show_sections_expanded') === 'no'){
-        var $parent = $('#content-{{ page.slug }}');
-        HB.collapsePageContent($parent);
-    }
+    var $parent = $('#content-{{ page.slug }}');
+    HB.collapsePageContent($parent);
 });
 </script>

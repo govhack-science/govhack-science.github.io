@@ -74,9 +74,11 @@ target_audiences:
                 <hr>
                 <div class="row">
                     {% for loc in site.locations %}
+                    {% unless loc.jurisdiction == 'nz' %}
                     <div class="col-md-3 col-sm-4">
-                        <h4><a href="{{ loc.url }}">{{ loc.name }}</a></h4>
+                        <h4><a href="{{ loc.url }}">{{ loc.prefix }} {{ loc.name }}: {{ loc.type }}</a></h4>
                     </div>
+                    {% endunless %}
                     {% endfor %}
                 </div>
             </div>
