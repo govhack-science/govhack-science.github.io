@@ -7,7 +7,7 @@ name: EarthSci - Data Visualisation Tool
 organisation: geoscience-australia
 title: EarthSci - Data Visualisation Tool
 mentors:
-  - jonathan-tremethick
+  - david-lescinsky
 ---
 
 EarthSci is an Eclipse RCP platform for creating applications for the visualisation of earth science data. It is an evolution of the existing [GA World Wind Suite](https://github.com/ga-m3dv/ga-worldwind-suite) built on the [NASA World Wind Java SDK](http://worldwind.arc.nasa.gov/java/).
