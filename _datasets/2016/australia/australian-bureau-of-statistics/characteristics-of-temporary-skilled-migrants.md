@@ -11,7 +11,7 @@ mentors:
 ---
 __WARNING - GOVHACK QUALITY ONLY - NOT FOR PRODUCTION USE__
 
-The Characteristics of Temporary Skilled Migrants test dataset is based on an experimental linked dataset. The test dataset mimics the structure of the real dataset (with the same data items and allowed values), however, all data in the test dataset is false, created through a randomisation process.
+The Characteristics of Temporary Skilled Migrants test dataset is based on an experimental linked dataset. The test dataset mimics the structure of the real dataset (with the same data items and allowed values), however, all data in the test dataset is false, created through a randomisation process. Proportions of values within data items in the test dataset are similar to those in the real data, however, relationships between data items have not (intentionally) been maintained.
 
 __As such, the dataset should NOT be used for analytical, decision or policy making purposes.__
 
