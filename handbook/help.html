@@ -6,8 +6,6 @@ layout: handbook_template_bs
     <h1>Help and Support</h1>
 </header>
 
-<div class="alert alert-info">Got a question? Need some help? Let's see what we can do for you.</div>
-
 <div class="row" style="display: none;">
     <div class="col-sm-6 col-lg-4">
         {% include_relative _includes/featured_tile.html chapter_slug='glossary' %}
@@ -17,12 +15,16 @@ layout: handbook_template_bs
     </div>
 </div>
 
-<hr>
-
 <div id="content-help-page">
-    <h2>Your venue</h2>
+    <h2>At your venue</h2>
     <div>
-        <p>The friendly event hosts are here to help! If you can find them, they are:</p>
+        <p>Your first point of contact should be your event host and their event team.</p>
+        <div id="custom-location-help-table" style="display: none">
+            <p>At <span id="custom-location-name-help">your venue</span>, here are the people who can help you out:</p>
+            <table id="custom-location-table-help">
+                
+            </table>
+        </div>
     </div>
 
     <h2>Slack Channel</h2>

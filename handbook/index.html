@@ -34,7 +34,7 @@ target_audiences:
 
         <div class="alert alert-info">The Handbook is now in beta. Please report any bugs to web@govhack.org</div>
 
-        <p><strong>A note to returning GovHackers:</strong> In previous years you've probably read our participant handbook (a PDF) and perhaps used our Hacker Toolkit (a ReadTheDocs site). Well, this handbook is the successor to both of those. The competition portal is the one portal to rule them all!</p>
+        <p>Welcome to our <strong>fresh new</strong> Handbook experience. We hope you enjoy your hack!</p>
 
         <hr>
         
@@ -54,6 +54,39 @@ target_audiences:
         {% include_relative _includes/firstrun.html %}
         {% include_relative _includes/preferences.html %}
         </div>
+    </section>
+    
+    {% comment %}
+    ==================================================
+    Event info section!
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="event">
+        <div id="custom-location-selected" class="custom-event">
+            <div id="custom-location-selected-no">
+                <header class="header">
+                    <h1 class="">Select your event</h1>
+                </header>
+                <div id="current-event" class="panel panel-default">
+                    <a href="prefs.html" class="btn btn-primary pull-right">Set your event</a>
+                    <div class="alert alert-info">You can select your current GovHack event location. Otherwise, here's a list of all our venues.</div>
+                </div>
+                <hr>
+                <div class="row">
+                    {% for loc in site.locations %}
+                    <div class="col-md-3 col-sm-4">
+                        <h4><a href="{{ loc.url }}">{{ loc.name }}</a></h4>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="custom-location-selected-yes">
+                <header class="header">
+                    <h1 class="">Your local event</h1>
+                </header>
+            </div>
+        </div>
+        
     </section>
 
     {% comment %}
@@ -154,8 +187,9 @@ target_audiences:
 <script>
 $(function(){
     // Hash frag detection
-    if (window.location.hash && window.location.hash.length > 2){
-        var elem = $("[aria-controls='"+window.location.hash.substring(2)+"']");
+    if (window.location.hash && window.location.hash.length > 1){
+        var trimFront = window.location.hash.indexOf('#/') === 0 ? 2 : 1;
+        var elem = $("[aria-controls='"+window.location.hash.substring(trimFront)+"']");
         if (elem.length){
             elem.tab('show');
         }
@@ -176,5 +210,6 @@ $(function(){
 
         return false;
     });
+    
 });
 </script>

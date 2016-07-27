@@ -107,11 +107,10 @@
     <main class="viewport">
         <aside class="side-nav">
             <header class="header">
-                <a id="handbook-logo" class="handbook-logo text-hide" href="/handbook" data-target="#home">
-                    Handbook
-                </a>
+                <a id="handbook-logo" class="handbook-logo text-hide" href="/">Handbook</a>
             </header>
             <div class="side-nav-inner">
+                <div id="custom-location-sidebar-label" class="text-muted side-nav-event-label"></div>
                 <nav>
                     <ul id="hb-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
                         <li role="presentation">
@@ -122,9 +121,9 @@
                                 Dashboard
                             </a>
                         </li>
-                        <li role="presentation">
-                            <a href="/handbook" data-target="#home" aria-controls="home" role="tab">
-                                <span id="sidebar-event-label">My Event</span>
+                        <li role="presentation" style="display: none">
+                            <a href="/handbook/#/event" data-target="#event" aria-controls="event" role="tab">
+                                <span id="custom-location-sidebar-button-label" data-original-label="My Event">My Event</span>
                             </a>
                         </li>
                         <li role="presentation">
@@ -159,7 +158,7 @@
                                 Help and support
                             </a>
                         </li> 
-                        <li role="presentation">
+                        <li role="presentation" style="display: none">
                             <a href="/handbook/feedback.html">
                                 Feedback
                             </a>
@@ -209,20 +208,29 @@
     {% include autoreload-in-debug.html %}
     
     <script>
+
     $(function(){
+    
+        // Preloaded shenanigans;
+        var img1 = new Image(); img1.src = '/resources/handbook-logo-return.png';
+
         // Sidebar resizer kickstart
         HB.enableSidebarDrag('.side-nav', '.main');
+        
+        // Show customised events etc
+        HB.updateSelectedLocation();
+        
     });
-    </script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-45822127-6', 'auto');
-      ga('send', 'pageview');
+
+    // GA
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45822127-6', 'auto');
+    ga('send', 'pageview');
 
     </script>
 

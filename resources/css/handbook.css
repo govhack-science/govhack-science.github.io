@@ -83,10 +83,11 @@ body {
     height: 80px;
     max-width: 280px;
     background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
-    opacity: .8;
+    opacity: .85;
 }
 .handbook-logo:hover {
-    opacity: 1;
+    opacity: .85;
+    background: url('/resources/handbook-logo-return.png') center center/contain no-repeat scroll transparent;
 }
 .handbook-logo::before {
     content: '2016';
@@ -130,6 +131,34 @@ body {
     cursor: ew-resize;
 }
 
+.side-nav .nav-pills a small {
+    display: none;
+}
+.side-nav .nav-pills li.active a small,
+.side-nav .nav-pills li a:hover small {
+    display: inline;
+}
+
+.side-nav-event-label {
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.custom-event #custom-location-selected-no {
+    display: block;
+}
+.custom-event #custom-location-selected-yes {
+    display: none;
+}
+.custom-event.custom-event-selected #custom-location-selected-no {
+    display: none;
+}
+.custom-event.custom-event-selected #custom-location-selected-yes {
+    display: block;
+}
+
+
 /* Chapter */
 .hb-chapter-title {
     
@@ -155,7 +184,7 @@ body {
     padding: 0 8px;
     content: '\25E2';
     color: #BEBFBF;
-    font-size: 11px;
+    font-size: 16px;
     transform: rotate(45deg);
     transform-origin: 60% 50%;
     transition: transform .2s ease;

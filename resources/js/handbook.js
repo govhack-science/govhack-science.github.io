@@ -2,13 +2,13 @@
 var HB = (function(){
     'use strict';
     
-    return {
-        enableSidebarDrag: enableSidebarDrag,
-        groupHeadings: groupHeadings,
-        collapsePageContent: collapsePageContent,
-        storage: new handbookStorage(),
-    };
-    
+    var self = {};
+    self.enableSidebarDrag = enableSidebarDrag;
+    self.groupHeadings = groupHeadings;
+    self.collapsePageContent = collapsePageContent;
+    self.updateSelectedLocation = updateSelectedLocation;
+    self.storage = new handbookStorage();
+    return self;
     
     /** 
      * Specifically, make the sidebar variable in width
@@ -214,6 +214,72 @@ var HB = (function(){
 
         }
         
+    }
+    
+    
+    function updateSelectedLocation(labelPrefix){
+        labelPrefix = labelPrefix || '#custom-location';
+        // Show customised event name
+        var $customLocationNames = $(labelPrefix + '-name-help');
+        $customLocationNames = $customLocationNames.add(labelPrefix + '-sidebar-label');
+        $customLocationNames = $customLocationNames.add(labelPrefix + '-sidebar-button-label');
+        var $customLocationSection = $(labelPrefix + '-selected');
+        var $customLocationHelpTable = $(labelPrefix + '-help-table');
+        var $customLocationTableHelp = $(labelPrefix + '-table-help');
+        if (HB.storage.getLocation().id){
+            var event = HB.storage.getLocation(function(){
+                if (event.name){
+                    $customLocationNames.text(event.name);
+                }
+                $customLocationSection.addClass('custom-event-selected');
+                if (event.venue){
+                    $customLocationHelpTable.show();
+                    if (event.venue.host){
+                        var $trHost = $('<tr>');
+                        $trHost.append('<td>Host</td>');
+                        $trHost.append('<td>'+event.venue.host+'&nbsp;&nbsp;</td>');
+// <small><a href="'++'">'+email+'</a></small>
+                        $trHost.appendTo($customLocationHelpTable);
+                    }
+                    if (event.venue.team){
+                        var $trTeam = $('<tr>');
+                        $trTeam.append('<td>Team</td>');
+                        $trTeam.append('<td>'+event.venue.team+'&nbsp;&nbsp;</td>');
+                        $trTeam.appendTo($customLocationHelpTable);
+                    }
+
+                    ['friday', 'saturday', 'sunday'].forEach(function(dayName){
+                        var $trDay = $('<tr>');
+                        $trDay.append('<td>'+dayName.charAt(0).toUpperCase()+dayName.slice(1)+' times</td>');
+                        $trDay.append('<td>'+event.times[dayName].open+' to '+event.times[dayName].close+'</td>');
+                        $trDay.appendTo($customLocationHelpTable);
+                    });
+
+                    // if (event.times.friday){
+                        // var $trFriday = $('<tr>');
+                        // $trFriday.append('<td>Friday times</td>');
+                        // $trFriday.append('<td>'+event.times.friday.open+' to '+event.times.friday.close+'</td>');
+                        // $trFriday.appendTo($customLocationHelpTable);
+                    // }
+                    // if (event.times.saturday){
+                        // var $trSaturday = $('<tr>');
+                        // $trSaturday.append('<td>Saturday times</td>');
+                        // $trSaturday.append('<td>'+event.times.saturday.open+' to '+event.times.saturday.close+'</td>');
+                        // $trSaturday.appendTo($customLocationHelpTable);
+                    // }
+                    // if (event.times.sunday){
+                        // var $trSunday = $('<tr>');
+                        // $trSunday.append('<td>Sunday times</td>');
+                        // $trSunday.append('<td>'+event.times.sunday.open+' to '+event.times.sunday.close+'</td>');
+                        // $trSunday.appendTo($customLocationHelpTable);
+                    // }
+                }
+            });
+        }
+        else {
+            $sidebarLocationLabel.text($sidebarLocationLabel.data('originalLabel'));
+            $customLocationSection.removeClass('custom-event-selected');
+        }
     }
     
 }());

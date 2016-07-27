@@ -6,8 +6,6 @@ layout: handbook_template_bs
     <h1>Your preferences</h1>
 </header>
 
-<div class="alert alert-warning">Preferences don't 100% work yet. In about a day's time, by selecting the venue you'll receive customised location information :) Stay tuned <br>– Alan</div>
-
 <div id="current-event" class="panel panel-default">
     <div class="panel-heading">Selected GovHack event</div>
     <div class="panel-body">
@@ -37,7 +35,7 @@ layout: handbook_template_bs
             <div class="col-sm-12">
                 <div class="checkbox">
                     <label>
-                        <input name="show_sections_collapsed" type="checkbox"> Show sections collapsed
+                        <input name="show_sections_expanded" type="checkbox"> Don't auto-collapse chapter sections
                     </label>
                 </div>
             </div>
@@ -50,9 +48,9 @@ layout: handbook_template_bs
 $(function(){
 
     var $chooseEventForm = $('#choose-event-form');
-    var $viewingPrefsForm = $('#choose-event-form');
+    var $viewingPrefsForm = $('#viewing-prefs-form');
 
-    $('#change-event').on('click', function(){
+    $('#change-event').click(function(){
         $(this).toggleClass('active');
         if ($(this).hasClass('active')){
             $chooseEventForm.slideDown('fast');
@@ -68,6 +66,7 @@ $(function(){
                 name: id ? $(this).find('[name=chosen_location] option:selected').text() : ''
             });
             $(this).slideUp('fast', function(){
+                HB.updateSelectedLocation();
                 onPreferencePageLoad();
             });
         }
@@ -75,6 +74,11 @@ $(function(){
             console.log(err);
         }
         return false;
+    });
+    
+    $viewingPrefsForm.find('[name=show_sections_expanded]').change(function(){
+        HB.storage.set('show_sections_expanded', $(this).is(':checked') ? 'no' : 'yes');
+        connsole.log($(this).is(':checked') ? 'no' : 'yes');
     });
     
     // Grab their venue from localStorage
@@ -85,12 +89,15 @@ $(function(){
     
     function onPreferencePageLoad(){
         var currentEvent = HB.storage.getLocation(function(){
-            console.log(currentEvent);
             $('#current-event-name').html(currentEvent.name || 'No event selected');
-            $chooseEventForm.find('[name=chosen_location] option[value='+currentEvent.id+']').prop('selected', true);
+            $chooseEventForm.find('[name=chosen_location] option[value=\''+currentEvent.id+'\']').prop('selected', true);
         });
         if (!currentEvent){
             $('#change-my-event').click();
+        }
+        var currentShowSectionsExpanded = HB.storage.get('show_sections_expanded');
+        if (currentShowSectionsExpanded === 'yes'){
+            $viewingPrefsForm.find('[name=show_sections_expanded]').prop('checked', true);
         }
     }
     
