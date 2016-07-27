@@ -35,27 +35,36 @@ In some cases, BAS data may be partially missing for an individual business (for
 
 Users should take into consideration that any discussion of the data limitations or weaknesses is in the context of using the data for statistical purposes, and is not related to the ability of the data to support the ATO's core operational requirements.
 
-Refer to the ATO website ([www.ato.gov.au]) for more information about BAS and PAYG reporting requirements.
+Refer to the [ATO website](http://www.ato.gov.au) for more information about BAS and PAYG reporting requirements.
 
 Limited quality assurance has been undertaken on these estimates. Some data have been suppressed to maintain statutory confidentiality requirements, others have been suppressed where estimates are likely to misrepresent true values. 
 
 The purpose of this dataset is to allow GovHack participants to develop applications and other proof of concept products, with the understanding that any output is not suitable for analytical purposes
 
+**Related Datasets**
+
+The following GovHack Datasets may compliment this dataset:
+
+* [SA3 Region Innovation Data 2009-15](../../department-of-industry-innovation-and-science/sa3-region-innovation-data-2009-15.md)
+
 Please contact the data mentors for further inquiries.
 
 **Data Explorers**
-* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE)
+
+* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE_SA2)
 
 **Explanatory Notes**
+
 * TBC
 
 **API Endpoints**
+
 * SOAP: [http://govhack.abs.gov.au/sdmxws/sdmx.asmx]
 * ReST (XML): govhack.abs.gov.au/restsdmx/sdmx.ashx
 
 **Dataset Code**
 
-* __TBC__
+* __ABS_EIE_SA2__
 
 **ReST Call pattern**
 
