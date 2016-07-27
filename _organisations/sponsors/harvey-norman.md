@@ -10,6 +10,6 @@ sponsor_level_id: in-kind
 sponsor_level_desc: In-Kind Sponsors
 jurisdiction: sa
 events:
-  - playford
+  - mount-gambier-youth
 is_sponsor: true
 ---

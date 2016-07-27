@@ -5,9 +5,9 @@ name: Jemsoft
 type: corporate
 website_url: 'http://jemsoft.co'
 logo_url: 'https://www.govhack.org/wp-content/uploads/2016/07/jemsoft.png'
-sponsor_level: In Kind Sponsor
-sponsor_level_id: in-kind
-sponsor_level_desc: In-Kind Sponsors
+sponsor_level: Silver Sponsor
+sponsor_level_id: silver
+sponsor_level_desc: Silver Sponsors
 jurisdiction: sa
 events:
   - adelaide
