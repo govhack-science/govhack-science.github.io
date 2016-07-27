@@ -7,8 +7,8 @@ type: Theme Node
 theme: Spatial Data
 eventbrite: https://govhack_vic_competitor.eventbrite.com.au/
 location:
-  lat: -37.815794
-  lon: 144.956918
+  lat: -37.8095156
+  lon: 144.9695373
 venue:
   name: Telstra Gurrowa Innovation Lab
   address: 242-284 Exhibition St, Melbourne VIC 3000   
