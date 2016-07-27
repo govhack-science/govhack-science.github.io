@@ -4,8 +4,8 @@ contact:
   email: oliverjberry@gmail.com
   twitter: oliverjberry
 gid: oliver-berry
-jurisdiction: wa
-location: perth
+jurisdiction: act
+location: canberra
 name: Oliver Berry
 organisation: australian-bureau-of-statistics
 position_title: Data Analyst
