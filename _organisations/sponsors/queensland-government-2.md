@@ -10,3 +10,7 @@ sponsor_level_desc: National Government Agency Supporters
 jurisdiction: australia
 is_sponsor: true
 ---
+
+[Advance Queensland](https://www.youtube.com/channel/UCkx_i9gowesXMvxgUmXtXRw)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wWFgp-TNVvg" frameborder="0" allowfullscreen></iframe>
