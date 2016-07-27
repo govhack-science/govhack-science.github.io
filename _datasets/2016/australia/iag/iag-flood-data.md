@@ -7,6 +7,7 @@ name: IAG Flood Data
 organisation: iag
 title: IAG Flood Data
 mentors:
+  - hugh-saalmans
   - nick-bartzis
 ---
 
