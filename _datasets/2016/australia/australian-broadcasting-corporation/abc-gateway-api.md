@@ -16,13 +16,13 @@ This API provides access to retrieve individual pieces of ABC News Content and s
 
 It can be also be used in conjunction with the other data extract highlighted by the ABC, ‘Views of ABC News Digital Content (May 2016)’ provided on data.gov.au.  The latter provides hourly traffic to ABC News content on some of the ABC’s digital properties.  In combination these sources provide data on what news Australians are reading about in what quantities, when and on what platforms.
 
-# Details
+### Details
 
 The Content Gateway API is an API to retrieve content and metadata by content ID.  With each call, it returns a document or collection using that document’s numeric id.  There are various different document types, the most common being an article.  For example for article 7647654 (http://www.abc.net.au/news/2016-07-21/most-accurate-map-yet-of-human-brain-released-by-scientists/7647654) the content is retrieved by calling:
 https://content-api-govhack.abc-prod.net.au/v1/7647654
 
 
-# Output
+### Output
 
 Output is JSON.  The following fields are provided for article documents when available:
 
