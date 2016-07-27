@@ -5,7 +5,7 @@ photo_url: /resources/images/mentors/steve-jones.jpg
 type: Data Mentor
 position_title: Director, Science Information Services
 ask_me_about: Science data for Natural Resource and Environmental Condition and Management.
-organisation: qld_dept_science_ict_inno
+organisation: queensland-government
 jurisdiction: qld
 location: brisbane
 contact:
