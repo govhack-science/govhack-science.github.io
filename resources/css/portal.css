@@ -996,6 +996,7 @@ a > img {
 h1[id], h2[id], h3[id], h4[id]/*, a[name]*/ {
   padding-top: 110px;
   margin-top: -110px;
+  pointer-events: none;
 }
 
 .dataset-category {
