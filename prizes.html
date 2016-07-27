@@ -87,8 +87,35 @@ title: Prizes
         <div class="row">
             {% for jurisdiction in site.jurisdictions %}
                 {% unless jurisdiction.gid == "international" or jurisdiction.gid == "australia" or jurisdiction.gid == "nz" or jurisdiction.gid == "nt" %}
+                    {% comment %}
                     <a href="{{ jurisdiction.url }}#prizes">{{ jurisdiction.name }}</a>
                     <br>
+                    {% endcomment %}
+
+                    <div class="row dataset-org">
+                        <h3 class="dataset-category"><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h3>
+
+                        {% assign events = site.locations | where: "jurisdiction", jurisdiction.gid %}
+                        {% assign jurisdiction_prizes = site.prizes | where: "jurisdiction", jurisdiction.gid %}
+                        {% for event in events %}
+                            {% assign local_prize_ids = "" %}
+                            {% for prize in jurisdiction_prizes %}
+                                {% if prize.events contains event.gid %}
+                                    {% assign local_prize_ids = local_prize_ids | append: prize.gid %}
+                                    {% assign local_prize_ids = local_prize_ids | append: "," %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if local_prize_ids != "" %}
+                                <div class="row dataset-org">
+                                    <h4><a href="{{ event.url }}">{{ event.name }}</a></h4>
+
+                                    {% assign local_prize_ids_list = local_prize_ids | lstrip | split: "," %}
+                                    {% include prize_cards.bs.html prize_ids=local_prize_ids_list %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
                 {% endunless %}
             {% endfor %}
         </div>
