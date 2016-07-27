@@ -12,9 +12,9 @@ tags:
 
 **There are just 50 up for grabs so be quick and have your team claim a pass**
 
-50 participating GovHack teams can register to receive their Free three month pass worth $300 US. Once you receive your passcode please visit [www.microsoftazurepass.com](http://www.microsoftazurepass.com/) to set up your Azure account. 
+50 participating GovHack teams can register to receive their free pass worth $300 US (expires Sep 14th). Once you receive your passcode please visit [www.microsoftazurepass.com](http://www.microsoftazurepass.com/) to set up your Azure account. 
 
-**Please contact GovHack at [web@govhack.org](web@govhack.org) (include 'Azure pass' in your email subject) to receive your free GovHack Azure pass.**
+**Please [fill in this form](https://govhack.formstack.com/forms/azure_request) to get your Azure pass.**
 
 ## What is Microsoft Azure
 

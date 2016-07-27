@@ -1,7 +1,7 @@
 ---
 slug: 'hackerspace_intro_2016'
 title: 'Hackerspace intro  2016'
-last_updated: '2016-07-24T16:24:54.713Z'
+last_updated: '2016-07-24T17:54:27.623Z'
 categories:
   - comp
 tags:
@@ -85,7 +85,7 @@ You MUST have all parts of your competition entry submitted by 5:00pm Local time
 
     * Nominate for Team awards available this year.
 
-## **Record data used  ** 
+## Record data used   
 
 Fill in the Dataset URL  for each and explain how this data was used  in your entry. Only records of datasets predominantly used is required.  For each prize category you nominate make sure you check for any specific data reuse eligibility requirements.  This field will be used to validate the eligibility of your entry.
 

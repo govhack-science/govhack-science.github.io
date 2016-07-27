@@ -1,7 +1,7 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-24T16:21:43.973Z'
+last_updated: '2016-07-26T09:03:20.219Z'
 categories:
   - comp
 tags:
@@ -148,7 +148,7 @@ All prizes you can compete for will be announced on 29 July at your registered O
 
 * Bounty Prize categories
 
-* Regional/Statewide prizes
+* Statewide prizes
 
 * Location prizes 
 
@@ -164,10 +164,14 @@ There are a few prizes for particular categories of participants. Teams must sel
 
 * A youth is anyone 18 years or younger. 
 
-* To be eligible for the Best Higher Education award please provide relevant organisation details.
+* To be eligible for the Best Higher Education award please provide relevant email/organisation details.
 
 ### Spirit Prizes
 
 Each GovHack event crew will nominate  the Spirit of GovHack Award nomination from their event.  Spirit Prizes are not nominated by competitors in Hackerspace  This recognises an individual that displays the greatest spirit of GovHack, aka the best "hacker" ethos. This means the person who best helped others, shared, learned or applied their skills creatively or cleverly. Local Spirit award Nominations are in the running to win the GovHack State Spirit Award.  This award is a Golden Ticket to the GovHack Red Carpet Awards with flights and accommodation included!  Some Local event will also have some other spirit prizes to issue at the closing ceremony on Sunday.
+
+### Administration of Prize Awards
+
+Each Prize Category includes details of the award that you are nominating.  Sponsors generously support the event with contribution to event running costs, awards nights and  prizes. The value of cash awards has been determined based on expected costs of the event as at 26 July 2016 and we are confident they are correct.  As Govhack is a not-for-profit community event GovHack Global Operations Team (GOT) reserves the right to  amend the value of the prize if the GovHack event has outstanding expenses that have not been covered by sponsorship.   Cash awards will be administered through GovHack GOT following the relevant awards nights and reconciliation of all  event related expenses.  If prize values are changed you will be notified accordingly. Development prizes are  administered  by the sponsor who has contributed the prize. GovHack event coordinators will facilitate an introduction following the relevant awards. GovHack GOT accepts no liability if benefits of development prizes are not delivered.
 
 

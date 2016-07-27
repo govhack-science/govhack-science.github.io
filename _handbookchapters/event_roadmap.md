@@ -1,7 +1,7 @@
 ---
 slug: 'event_roadmap'
 title: 'Event roadmap'
-last_updated: '2016-07-24T16:23:28.418Z'
+last_updated: '2016-07-27T12:21:11.917Z'
 categories:
   - comp
 tags:
@@ -12,7 +12,11 @@ tags:
 
 You MUST have all parts of your competition entry submitted by 5:00pm Local time.  
 
+* Every team member registered in hackerspace
+
 * A descriptive project page  
+
+* A Team Captain
 
 * Prize categories nominated 
 
@@ -32,15 +36,15 @@ At 7pm on the Friday night the competition categories are launched and your team
 
 * Find a spot to set up and make your own for the weekend.
 
-* Talk to mentors! They know the data and will have great ideas to get your started. 
+* Talk to mentors before they head home! They know the data and will have great ideas to get your started. 
 
-* Head to the [hackerspace](http://2016.govhack.org) and register as a user and create a team page.This will unlock all the prize categories you can enter at your location including international, national, state and local prize.
+* Head to the [hackerspace](http://2016.govhack.org) and register as a user.  One person from the team creates a team page.  This will unlock all the prize categories you can enter at your location including International, National, State and Local prizes.
 
 * Spend some time  
 
     * reviewing prizes to identify some common themes of prize categories
 
-    * reviewing the [Official data](http://portal.govhack.org/datasets.html) list which includes featured data from sponsors and open government data portals
+    * reviewing the [Official Data](http://portal.govhack.org/datasets.html) list which includes featured data from sponsors and open government data portals
 
     * Identify the focus of your investigation and project 
 
@@ -54,7 +58,7 @@ At 7pm on the Friday night the competition categories are launched and your team
 
     * Think outside the box - entries can be anything a game, an art installation,  a visual display, a story, a gadget,a board game, analytical models, a data vis and of course some great apps   Is there new technology you want to try.  Judges reward originality and ideas that make data accessible to understand.
 
-    *  Who are the users at the centre of your design
+    * Who are the users at the centre of your design
 
     * what pain points you could resolve
 
@@ -100,11 +104,11 @@ Mentors arrive at 9am to midday.
 
 * Keep building
 
-* Run your storyboard past some Govhack crew - 
+* Run your storyboard past some Govhack crew  
 
 ## Sunday
 
-Last years competitors will all tell you the same… "it took me all arvo to create my Vid and then we had loading problems… Aggghh Panic!" On average it takes about an hour to load vids on YouTube and new technology when you're stressed takes twice as long as you want… so factor these elements into your days plans.
+Last years competitors will all tell you the same… "it took me all arvo to create my Vid and then we had loading problems… Aggghh Panic!" On average it takes about an hour to load videos on YouTube and new technology when you're stressed takes twice as long as you want… so factor these elements into your days plans.
 
 * Set tasks and activities for the day
 
