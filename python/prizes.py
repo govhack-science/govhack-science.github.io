@@ -252,12 +252,13 @@ for file in sheets:
             prize["category"] = "australia"
             
         # Attach sponsoring organisations
+        prize["organisation_title"] = row["sponsoredby"].strip().replace(" Prize", "")
         organisation_gid = row["sponsoredby"].lower().replace(" ", "-").replace(",", "").strip()
         if organisation_gid in organisation_names:
             prize["organisation"] = organisation_gid
         else:
             # print "WARNING: Could not resolve organisation: %s (%s)" % (row["sponsoredby"], organisation_gid)
-            prize["organisation"] = row["sponsoredby"].strip().replace(" Prize", "")
+            pass
 
         # If a prize already exists, merge the latest info over the top
         prize_md_dir = os.path.join(prizesdir, file["region"].lower())
