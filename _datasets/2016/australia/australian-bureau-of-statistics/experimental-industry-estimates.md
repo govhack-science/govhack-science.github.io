@@ -45,7 +45,7 @@ The purpose of this dataset is to allow GovHack participants to develop applicat
 
 The following GovHack Datasets may compliment this dataset:
 
-* [SA3 Region Innovation Data 2009-15](../../department-of-industry-innovation-and-science/sa3-region-innovation-data-2009-15.md)
+* [SA3 Region Innovation Data 2009-15](../department-of-industry-innovation-and-science/sa3-region-innovation-data-2009-15.md)
 
 Please contact the data mentors for further inquiries.
 
