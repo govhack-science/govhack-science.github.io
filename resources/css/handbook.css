@@ -6,10 +6,21 @@ Light Grey #BEBFBF
 Pink #CA1553
 */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* Color customisation */
+
+/* Color and font customisation */
 .label-primary {
     background-color: #CA1553;
+}
+body {
+    font-family:  'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Black', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -205,6 +216,8 @@ body {
     text-transform: capitalize;
     padding-right: 36px;
     position: relative;
+    font-size: 14px;
+    min-height: 36px;
 }
 a.side-nav-event-link {
     position: absolute;
@@ -213,8 +226,8 @@ a.side-nav-event-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     border: 2px solid #dedede;
     border-radius: 3px;
     font-size: 22px;
@@ -223,6 +236,9 @@ a.side-nav-event-link:hover,
 a.side-nav-event-link:active,
 a.side-nav-event-link:focus {
     text-decoration: none;
+}
+a.side-nav-event-link .glyphicon {
+    top: 0;
 }
 
 .custom-event #custom-location-selected-no {
@@ -240,7 +256,20 @@ a.side-nav-event-link:focus {
 
 /* Dash pages */
 .hb-dashboard-heading {
-    padding-right: 40px;
+    padding-right: 60px;
+    position: relative;
+}
+.hb-dashboard-heading::after {
+    display: block;
+    content: '2016';
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    color: #ccc;
+    font-size: 2.2em;
+    transform: rotate(-12deg);
+    opacity: .25;
+    z-index: -1;
 }
 .filter-state .glyphicon {
     display: none;
