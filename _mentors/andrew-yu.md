@@ -8,6 +8,7 @@ jurisdiction: vic
 location: melbourne
 name: Andrew Yu
 organisation: ibm
+photo_url: /resources/images/mentors/andrew-yu.png
 position_title: Senior Client Technical Specialist
 type: Technical Mentor
 ---
