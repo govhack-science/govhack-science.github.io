@@ -170,25 +170,6 @@ layout: bootstrap
 </section>
 {% endif %}
 
-{% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
-{% assign state_org_ids_len = state_org_ids | size %}
-{% if state_org_ids_len > 0 %}
-<!-- Datasets Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">Official State Datasets</h2>
-              <p class="text-primary">Datasets from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
-          </div>
-        </div>
-        <div class="row">
-          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
 {% assign state_dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
 {% assign local_dataportal_ids = site.dataportals | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
 {% capture dp_ids %}{{ state_dataportal_ids }},{{ local_dataportal_ids }}{% endcapture %}
@@ -207,6 +188,25 @@ layout: bootstrap
         </div>
         <div class="row">
           {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
+{% assign state_org_ids_len = state_org_ids | size %}
+{% if state_org_ids_len > 0 %}
+<!-- Datasets Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="datasets">Official State Datasets</h2>
+              <p class="text-primary">Datasets from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
         </div>
     </div>
 </section>
