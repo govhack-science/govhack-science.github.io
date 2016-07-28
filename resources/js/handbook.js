@@ -229,9 +229,11 @@ var HB = (function(){
         var $customLocationFullNames = $(labelPrefix + '-sidebar-label');
         var $customLocationSidebarLabel = $(labelPrefix + '-sidebar-label');
         var $customLocationSidebarLink = $(labelPrefix + '-sidebar-link');
+        var $customLocationHelpLink = $(labelPrefix + '-help-link');
         var $customLocationSection = $(labelPrefix + '-selected');
-        var $customLocationHelpTable = $(labelPrefix + '-help-table');
-        var $customLocationTableHelp = $(labelPrefix + '-table-help');
+        var $customLocationTableHostInfo = $(labelPrefix + '-table-host-info');
+        var $customLocationTableVenueInfo = $(labelPrefix + '-table-venue-info');
+        var $customLocationHelpSections = $(labelPrefix + '-help-section-venue');
         if (HB.storage.getLocation().id){
             var event = HB.storage.getLocation(function(){
                 if (event.name){
@@ -240,51 +242,51 @@ var HB = (function(){
                 }
                 if (event.url){
                     $customLocationSidebarLink.attr('href', event.url);
+                    $customLocationHelpLink.attr('href', event.url);
                 }
                 else {
+                    $customLocationHelpLink.attr('href', '#/no-page-found');
                     $customLocationSidebarLink.attr('href', '#/no-page-found');
                 }
                 if (event.venue){
-                    $customLocationHelpTable.show();
+                    $customLocationHelpSections.show();
+                    $customLocationTableHostInfo.append('<tbody>');
+                    $customLocationTableVenueInfo.append('<tbody>');
                     if (event.venue.host){
                         var $trHost = $('<tr>');
+                        var $trHostText = $('<td>');
                         $trHost.append('<td>Host</td>');
-                        $trHost.append('<td>'+event.venue.host+'&nbsp;&nbsp;</td>');
-// <small><a href="'++'">'+email+'</a></small>
-                        $trHost.appendTo($customLocationHelpTable.find('tbody'));
+                        $trHostText.append(event.venue.host);
+                        if (event.contact && event.contact.email){
+                            $trHostText.append('&nbsp;&nbsp;<small><a href="mailto:'+event.contact.email+'">send email</a></small>');
+                        }
+                        $trHost.append($trHostText);
+                        $trHost.appendTo($customLocationTableHostInfo.find('tbody'));
                     }
                     if (event.venue.team){
                         var $trTeam = $('<tr>');
                         $trTeam.append('<td>Team</td>');
                         $trTeam.append('<td>'+event.venue.team+'&nbsp;&nbsp;</td>');
-                        $trTeam.appendTo($customLocationHelpTable.find('tbody'));
+                        $trTeam.appendTo($customLocationTableHostInfo.find('tbody'));
+                    }
+                    
+                    if (event.venue.name){
+                        var $trVenue = $('<tr>');
+                        $trVenue.append('<td>Venue name</td>');
+                        $trVenue.append('<td>'+event.venue.name+'</td>');
+                        $trVenue.appendTo($customLocationTableVenueInfo.find('tbody'));                            
                     }
 
                     ['friday', 'saturday', 'sunday'].forEach(function(dayName){
-                        var $trDay = $('<tr>');
-                        $trDay.append('<td>'+dayName.charAt(0).toUpperCase()+dayName.slice(1)+' times</td>');
-                        $trDay.append('<td>'+event.times[dayName].open+' to '+event.times[dayName].close+'</td>');
-                        $trDay.appendTo($customLocationHelpTable.find('tbody'));
+                        if (event.times && event.times.hasOwnProperty(dayName)){
+                            var $trDay = $('<tr>');
+                            $trDay.append('<td>'+dayName.charAt(0).toUpperCase()+dayName.slice(1)+' times</td>');
+                            $trDay.append('<td>'+event.times[dayName].open+' to '+event.times[dayName].close+'</td>');
+                            $trDay.appendTo($customLocationTableVenueInfo.find('tbody'));                            
+                        }
                     });
+                    
 
-                    // if (event.times.friday){
-                        // var $trFriday = $('<tr>');
-                        // $trFriday.append('<td>Friday times</td>');
-                        // $trFriday.append('<td>'+event.times.friday.open+' to '+event.times.friday.close+'</td>');
-                        // $trFriday.appendTo($customLocationHelpTable);
-                    // }
-                    // if (event.times.saturday){
-                        // var $trSaturday = $('<tr>');
-                        // $trSaturday.append('<td>Saturday times</td>');
-                        // $trSaturday.append('<td>'+event.times.saturday.open+' to '+event.times.saturday.close+'</td>');
-                        // $trSaturday.appendTo($customLocationHelpTable);
-                    // }
-                    // if (event.times.sunday){
-                        // var $trSunday = $('<tr>');
-                        // $trSunday.append('<td>Sunday times</td>');
-                        // $trSunday.append('<td>'+event.times.sunday.open+' to '+event.times.sunday.close+'</td>');
-                        // $trSunday.appendTo($customLocationHelpTable);
-                    // }
                 }
                 $customLocationSection.addClass('custom-event-selected');
                 $customLocationSidebarLabel.add($customLocationSidebarLink).show();
@@ -296,6 +298,7 @@ var HB = (function(){
             });
             $customLocationSection.removeClass('custom-event-selected');
             $customLocationSidebarLabel.add($customLocationSidebarLink).hide();
+            $customLocationHelpSections.hide();
         }
     }
     

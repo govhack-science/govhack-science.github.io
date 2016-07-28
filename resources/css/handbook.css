@@ -260,11 +260,13 @@ a.side-nav-event-link:focus {
     display: block;
     content: '2016';
     position: absolute;
-    bottom: 20px;
+    bottom: -20px;
     right: 30px;
     color: #ccc;
-    font-size: 1.8em;
+    font-size: 2.2em;
     transform: rotate(-12deg);
+    opacity: .25;
+    z-index: -1;
 }
 .filter-state .glyphicon {
     display: none;
