@@ -103,7 +103,11 @@ title: Prizes
 
                     <div class="row dataset-org">
                         <h1 class="dataset-category"><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h1>
-                        <p class="text-primary">Prizes that all participants in {{ jurisdiction.name }} can compete for!</p>
+                        {% if jurisdiction.gid == "act" %}
+                            <p class="text-primary">Prizes that all participants in the {{ jurisdiction.name }} can compete for!</p>
+                        {% else %}
+                            <p class="text-primary">Prizes that all participants in {{ jurisdiction.name }} can compete for!</p>
+                        {% endif %}
 
                         {% assign events = site.locations | where: "jurisdiction", jurisdiction.gid %}
                         {% assign jurisdiction_prizes = site.prizes | where: "jurisdiction", jurisdiction.gid %}
