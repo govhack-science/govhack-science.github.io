@@ -3,7 +3,7 @@ dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE_SA2
 excerpt_separator: <!--more-->
 gid: experimental-industry-estimates
 jurisdiction: australia
-name: Experimental Industry Estimates by Geographic Area for 2004-05 to 2013-14 - Govhack
+name: Experimental Industry Estimates by Geographic Area
 organisation: australian-bureau-of-statistics
 title: Experimental Industry Estimates by Geographic Area for 2004-05 to 2013-14 - Govhack
 mentors:
@@ -12,15 +12,18 @@ mentors:
   - melissa-eaton
 ---
 
-This experimental dataset is a collaboration between the [Australian Bureau of Statistics (ABS)](http://portal.govhack.org/sponsors/australian-bureau-of-statistics.html) and the [Department of Industry, Innovation and Science (DIIS)](http://portal.govhack.org/sponsors/department-of-industry-innovation-and-science.html). It contains estimates of annual business turnover, value added and full time equivalent for the financial years 2004-05 to 2013-14, classified by industry (ANZSIC 2006 - Division and Subdivision) and geographic region (ASGS 2011 - SA2).
+This experimental dataset is a collaboration between the [Australian Bureau of Statistics (ABS)](http://portal.govhack.org/sponsors/australian-bureau-of-statistics.html) and the [Department of Industry, Innovation and Science (DIIS)](http://portal.govhack.org/sponsors/department-of-industry-innovation-and-science.html).
 
 <!--more-->
+
+It contains estimates of annual business turnover, value added and full time equivalent for the financial years 2004-05 to 2013-14, classified by industry (ANZSIC 2006 - Division and Subdivision) and geographic region (ASGS 2011 - SA2).
 
 __Please note that the purpose of this dataset is to allow GovHack participants to develop applications and other proof of concept products, with the understanding that any output is not suitable for analytical purposes. Due to the experimental nature and limitations of these data, the dataset should NOT be used for analytical, decision or policy making purposes.__
 
 These estimates have been compiled using Business Activity Statement (BAS) and Pay As You Go (PAYG) data supplied to the ABS by the Australian Taxation Office. Industry data are based on the ABS's Business Register. Location data are based on the postcode of a business as reported to the ATO, which may represent the address of a Tax Agent, or, for businesses with multiple locations, the head office of that business. No attempt has been made to model business data for multiple locations, or to confirm actual location data. This may misrepresent the true location of a business. 
 
 **Quality Statement - IMPORTANT!**
+
 Limited quality assurance has been undertaken on these estimates. Some data have been suppressed to maintain statutory confidentiality requirements, others have been suppressed where estimates are likely to misrepresent true values. 
 
 Location data are based on the postcode of a business as reported to the ATO, which may represent the address of a Tax Agent, or, for businesses with multiple locations, the head office of that business. No attempt has been made to model business data for multiple locations, or to confirm actual location data. This may misrepresent the true location of a business. 
