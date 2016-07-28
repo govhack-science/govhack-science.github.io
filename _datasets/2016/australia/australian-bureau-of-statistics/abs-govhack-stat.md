@@ -14,7 +14,7 @@ mentors:
   - clare-henry
 ---
 
-[~~ABS~~GovHack.Stat](govhack.abs.gov.au) is our dedicated GovHack instance of our public facing data warehouse [ABS.Stat](http://stat.abs.gov.au). If you're after ABS data via API, start here.
+[~~ABS~~GovHack.Stat](govhack.abs.gov.au) is our dedicated GovHack instance of our public facing data warehouse - ABS.Stat. If you're after ABS data via API, start here.
 
 <!--more-->
 
