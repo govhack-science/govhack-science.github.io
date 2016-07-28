@@ -28,9 +28,11 @@ target_audiences:
     ==================================================
     {% endcomment %}
     <section role="tabpanel" class="tab-pane active" id="home">
-        <a href="https://github.com/govhackaustralia/govhackaustralia.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+    
+        <a class="hidden-xs" href="https://github.com/govhackaustralia/govhackaustralia.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        
         <header class="header">
-            <h1 style="padding-right: 40px;">GovHack Participant Handbook and Hacker Toolkit</h1>
+            <h1 class="hb-dashboard-heading">GovHack Participant Handbook and Hacker Toolkit</h1>
         </header>
 
         <div class="alert alert-info">The Handbook is now in beta. Please report any bugs to web@govhack.org</div>
@@ -41,13 +43,14 @@ target_audiences:
         
         <h3>Featured content</h3>
         <div class="row">
-            <div class="col-sm-6 col-lg-4"> 
+            <div class="col-md-6"> 
                 {% include_relative _includes/featured_tile.html chapter_slug='competition_rules_2016' %}
                 {% include_relative _includes/featured_tile.html chapter_slug='judging_criteria' %}
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-md-6">
                 {% include_relative _includes/featured_tile.html chapter_slug='ibm_bluemix' %}
                 {% include_relative _includes/featured_tile.html chapter_slug='microsoft_azure_free_passes' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='aws_credits' %}
             </div>
         </div>
         
@@ -118,7 +121,7 @@ target_audiences:
                     {% endif %}
                 {% endfor %}
                 {% unless counter == 0 %}        
-                <div class="col-sm-6">
+                <div class="col-md-12">
                     <div class="panel panel-default">
                       <div class="panel-heading filter-state">
                         <span class="glyphicon glyphicon-filter pull-right"></span>
@@ -153,6 +156,9 @@ target_audiences:
         <header class="header">
             <h1>Participant Handbook Chapters and Toolkit Guides</h1>
         </header>
+        <form class="hb-search">
+            <input type="search" class="form-control input-lg" placeholder="Filter by title or tags...">
+        </form>
         <div><!-- ex .container-fluid -->
             <div class="row">
             {% for aud in page.target_audiences %}
@@ -163,16 +169,16 @@ target_audiences:
                     {% endif %}
                 {% endfor %} 
                 {% unless counter == 0 %}
-                <div class="col-sm-6">
+                <div class="col-md-12">
                     <div class="panel panel-default">
-                      <div class="panel-heading">
+                      <div class="panel-heading filter-state">
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
                       <!-- <div class="panel-body"></div> -->
                       <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name %}
-                        <li class="list-group-item">
+                        <li class="list-group-item hb-article-preview" data-tags="{{ article.tags | join: ',' }}" data-title="{{ article.title }}">
                           <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
                           {{ article.content | strip_html | truncatewords: 22 }}
                         </li>
@@ -224,11 +230,12 @@ $(function(){
         return false;
     });
     $('.hb-search input').keyup(function(){
-        if ($(this).closest('.tab-pane').hasClass('active')){
+        var $tabPane = $(this).closest('.tab-pane');
+        if ($tabPane.hasClass('active')){
             var searchTerm = $.trim($(this).val()).toLowerCase();
-            $('.filter-state').parent().toggleClass('panel-primary', !!searchTerm);
-            $('.filter-state').toggleClass('filter-active', !!searchTerm);
-            var $articles = $(this).closest('.tab-pane').find('.hb-article-preview');
+            $tabPane.find('.filter-state').parent().toggleClass('panel-primary', !!searchTerm);
+            $tabPane.find('.filter-state').toggleClass('filter-active', !!searchTerm);
+            var $articles = $tabPane.find('.hb-article-preview');
             if (searchTerm){
                 $articles.each(function(){
                     var tags = $(this).data('tags').split(',');

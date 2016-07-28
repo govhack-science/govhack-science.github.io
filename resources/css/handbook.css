@@ -66,6 +66,9 @@ body {
     padding: 5px 0 25px;
     overflow: hidden;
 }
+.mobile-header {
+    display: none;
+}
 .footer-sticky {
     position: absolute;
     bottom: 0;
@@ -78,6 +81,58 @@ body {
     color: #BEBFBF;
     font-size: 10px;
     background: white;
+}
+
+@media screen and (max-width: 769px){
+    .side-nav {
+        width: 240px;
+    }
+    .main {
+        left: 240px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .viewport {
+        top: 45px;
+    }
+    .mobile-header {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 45px;
+        padding: 8px 20px 0;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: left; */
+        background: url('/resources/govhack-background-home.jpg');
+    }
+    a.mobile-menu-toggle {
+        color: white;
+        font-size: 24px;
+    }
+    .side-nav {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all .2s ease;
+    }
+    .main {
+        left: 0;
+        opacity: 1;
+        transform: translateX(0);
+        transition: all .2s ease;
+    }
+    .viewport.shifted .side-nav {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .viewport.shifted .main {
+        opacity: 0;
+        transform: translateX(100%);
+    }
 }
 
 
@@ -146,9 +201,28 @@ body {
 .side-nav-event-label {
     margin-top: -24px;
     margin-bottom: 8px;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
-    font-style: italic;
+    padding-right: 36px;
+    position: relative;
+}
+a.side-nav-event-link {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #dedede;
+    border-radius: 3px;
+    font-size: 22px;
+}
+a.side-nav-event-link:hover,
+a.side-nav-event-link:active,
+a.side-nav-event-link:focus {
+    text-decoration: none;
 }
 
 .custom-event #custom-location-selected-no {
@@ -165,6 +239,9 @@ body {
 }
 
 /* Dash pages */
+.hb-dashboard-heading {
+    padding-right: 40px;
+}
 .filter-state .glyphicon {
     display: none;
 }
@@ -177,6 +254,33 @@ body {
 .hb-article-preview.search-hidden {
     display: none;
 }
+
+/* Mobile dash layout */
+@media screen and (max-width: 768px){
+    .hb-dashboard-heading {
+        padding-right: 0;
+    }
+    .mobile-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .handbook-logo,
+    .side-nav-event-label {
+        margin: 0 auto;
+    }
+    .resizer-handle {
+        display: none !important;
+    }
+    .side-nav-event-label {
+        font-size: .8em;
+    }
+    .h1, h1 {
+        font-size: 24px;
+    }
+}
+
 
 /* Chapter */
 .hb-chapter-title-inline {
