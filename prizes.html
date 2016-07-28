@@ -27,7 +27,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>International Prizes</h1>
-              <p class="text-info">Prizes that everyone across Australia and New Zealand can compete for!</p>
+              <p class="text-primary">Prizes that everyone across Australia and New Zealand can compete for!</p>
           </div>
         </div>
         <div class="row">
@@ -43,7 +43,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>Major Category Prizes</h1>
-              <p class="text-info">Prizes that everyone in Australia can compete for!</p>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
           </div>
         </div>
         <div class="row">
@@ -59,7 +59,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>Bounty Prizes</h1>
-              <p class="text-info">Prizes that everyone in Australia can compete for!</p>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
           </div>
         </div>
         <div class="row">
@@ -75,7 +75,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>Team Prizes</h1>
-              <p class="text-info">Prizes that everyone in Australia can compete for!</p>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
           </div>
         </div>
         <div class="row">
@@ -103,7 +103,7 @@ title: Prizes
 
                     <div class="row dataset-org">
                         <h1 class="dataset-category"><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h1>
-                        <p class="text-info">Prizes that all participants in {{ jurisdiction.name }} can compete for!</p>
+                        <p class="text-primary">Prizes that all participants in {{ jurisdiction.name }} can compete for!</p>
 
                         {% assign events = site.locations | where: "jurisdiction", jurisdiction.gid %}
                         {% assign jurisdiction_prizes = site.prizes | where: "jurisdiction", jurisdiction.gid %}
@@ -129,7 +129,7 @@ title: Prizes
                             {% if local_prize_ids != "" %}
                                 <div class="row dataset-org">
                                     <h2><a href="{{ event.url }}">{{ event.name }}</a></h2>
-                                    <p class="text-info">Prizes that only participants at {{ event.name }} can compete for!</p>
+                                    <p class="text-primary">Prizes that only participants at {{ event.name }} can compete for!</p>
 
                                     {% assign local_prize_ids_list = local_prize_ids | lstrip | split: "," %}
                                     {% include prize_cards.bs.html prize_ids=local_prize_ids_list %}
@@ -149,7 +149,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>New Zealand Major Prizes</h1>
-              <p class="text-info">Prizes that everyone in New Zealand can compete for!</p>
+              <p class="text-primary">Prizes that everyone in New Zealand can compete for!</p>
           </div>
         </div>
         <div class="row">
@@ -165,7 +165,7 @@ title: Prizes
         <div class="row header-row">
           <div class="col-lg-12 text-center">
               <h1>New Zealand Bounty Prizes</h1>
-              <p class="text-info">Prizes that everyone in New Zealand can compete for!</p>
+              <p class="text-primary">Prizes that everyone in New Zealand can compete for!</p>
           </div>
         </div>
         <div class="row">

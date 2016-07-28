@@ -341,21 +341,37 @@ that our authors (or indeed myself) might indicate a signup link.
         {% endif %}
     {% endfor %}
 
-    {% capture org_ids %}{{ local_org_ids }},{{ state_org_ids }}{% endcapture %}
-
-    {% unless org_ids == "" %}
-    <!-- Datasets Section -->
+    {% unless local_org_ids == "" %}
+    <!-- Local Datasets Section -->
     <section id="local-state-datasets" class="bg-light-gray">
         <div class="container">
             <div class="row header-row">
             <div class="col-lg-12 text-center">
-                <h2>Official Local &amp; State Datasets</h2>
-                <small class="notice">These are just some of your local datasets - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
+                <h2>Official Local Datasets</h2>
+                <p class="text-primary">Datasets from your local governments and sponsors. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
             </div>
             </div>
             <div class="row">
-                {% assign org_ids_list = org_ids | lstrip | split: "," | uniq %}
-                {% include dataset_cards_by_organisation.bs.html organisation_ids=org_ids_list org_heading_lvl="h3" %}
+                {% assign local_org_ids_list = local_org_ids | lstrip | split: "," | uniq %}
+                {% include dataset_cards_by_organisation.bs.html organisation_ids=local_org_ids_list org_heading_lvl="h3" %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
+
+    {% unless state_org_ids == "" %}
+    <!-- State Datasets Section -->
+    <section id="local-state-datasets" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2>Official State Datasets</h2>
+                <p class="text-primary">Datasets from all over {{ jurisdiction.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+            </div>
+            </div>
+            <div class="row">
+                {% assign state_org_ids_list = state_org_ids | lstrip | split: "," | uniq %}
+                {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list org_heading_lvl="h3" %}
             </div>
         </div>
     </section>
@@ -370,21 +386,37 @@ that our authors (or indeed myself) might indicate a signup link.
     {% assign local_dp_ids = page.dataportals | join: "," %}
     {% assign state_dp_ids = site.dataportals | where: "jurisdiction", page.jurisdiction | map: "gid" | join: "," %}
 
-    {% capture dp_ids %}{{ local_dp_ids }},{{ state_dp_ids }}{% endcapture %}
-
-    {% unless dp_ids == "" %}
-    <!-- Data Portals Section -->
+    {% unless local_dp_ids == "" %}
+    <!-- Local Data Portals Section -->
     <section id="local-state-data-portals" class="bg-light-gray">
         <div class="container">
             <div class="row header-row">
             <div class="col-lg-12 text-center">
-                <h2>Local &amp; State Data Portals</h2>
-                <small class="notice">These are just some of your local data portals - check out the <a href="/datasets.html">official datasets list</a> for much more!</small>
+                <h2>Local Data Portals</h2>
+                <p class="text-primary">Major government data portals run by your local governments and sponsors. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
             </div>
             </div>
             <div class="row">
-                {% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
-                {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
+                {% assign local_dp_ids_list = local_dp_ids | lstrip | split: "," | uniq %}
+                {% include dataportal_cards.bs.html dataportal_ids=local_dp_ids_list cards=true %}
+            </div>
+        </div>
+    </section>
+    {% endunless %}
+
+    {% unless state_dp_ids == "" %}
+    <!-- State Data Portals Section -->
+    <section id="local-state-data-portals" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+            <div class="col-lg-12 text-center">
+                <h2>State Data Portals</h2>
+                <p class="text-primary">Major government data portals from all over {{ jurisdiction.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+            </div>
+            </div>
+            <div class="row">
+                {% assign state_dp_ids_list = state_dp_ids | lstrip | split: "," | uniq %}
+                {% include dataportal_cards.bs.html dataportal_ids=state_dp_ids_list cards=true %}
             </div>
         </div>
     </section>
