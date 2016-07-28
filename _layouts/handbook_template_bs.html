@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}GovHack Competitor Handbook</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}GovHack Participant Handbook</title>
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/resources/apple-touch-icon-57x57-precomposed.png">
@@ -53,6 +53,8 @@
     {% elsif page.photo_url %}
     <meta property="og:image" content="{{ page.photo_url }}">
     {% else %}
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
     <meta property="og:image" content="/resources/images/handbook/sm-handbook-cover.jpg">
     {% endif %}
     <meta property="og:url" content="http://portal.govhack.org{{ page.url | remove_first:'index.html' }}">
@@ -231,7 +233,7 @@
             $('.viewport').toggleClass('shifted');
             return false;
         });
-        $('.side-nav a').on('click', function(){
+        $('.hb-nav-menu a').on('click', function(){
             $('.viewport').removeClass('shifted');
         });
         
