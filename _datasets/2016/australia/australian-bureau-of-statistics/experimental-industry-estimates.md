@@ -12,7 +12,7 @@ mentors:
   - melissa-eaton
 ---
 
-This experimental dataset is a collaboration between the [Australian Bureau of Statistics (ABS)](http://portal.govhack.org/sponsors/australian-bureau-of-statistics.html) and the [Department of Industry, Innovation and Science (DIIS)](http://portal.govhack.org/sponsors/department-of-industry-innovation-and-science.html).
+An collaborative experimental dataset by the [ABS](http://portal.govhack.org/sponsors/australian-bureau-of-statistics.html) and the [Department of Industry, Innovation and Science (DIIS)](http://portal.govhack.org/sponsors/department-of-industry-innovation-and-science.html).
 
 <!--more-->
 
