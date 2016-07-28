@@ -221,13 +221,18 @@ var HB = (function(){
         
     }
     
-    
+    /**
+     * This is a fucking monstrosity
+     *
+     * @param string  A common selector prefix-namespace for the tags we'll target
+     */
     function updateSelectedLocation(labelPrefix){
         labelPrefix = labelPrefix || '#custom-location';
         // Show customised event name
         var $customLocationNames = $(labelPrefix + '-name-help').add(labelPrefix + '-sidebar-button-label');
         var $customLocationFullNames = $(labelPrefix + '-sidebar-label');
         var $customLocationSidebarLabel = $(labelPrefix + '-sidebar-label');
+        var $customLocationSidebarPlaceholderLabel = $(labelPrefix + '-sidebar-placeholder-label');
         var $customLocationSidebarLink = $(labelPrefix + '-sidebar-link');
         var $customLocationHelpLink = $(labelPrefix + '-help-link');
         var $customLocationSection = $(labelPrefix + '-selected');
@@ -289,6 +294,7 @@ var HB = (function(){
 
                 }
                 $customLocationSection.addClass('custom-event-selected');
+                $customLocationSidebarPlaceholderLabel.hide();
                 $customLocationSidebarLabel.add($customLocationSidebarLink).show();
             });
         }
@@ -298,6 +304,7 @@ var HB = (function(){
             });
             $customLocationSection.removeClass('custom-event-selected');
             $customLocationSidebarLabel.add($customLocationSidebarLink).hide();
+            $customLocationSidebarPlaceholderLabel.show();
             $customLocationHelpSections.hide();
         }
     }
