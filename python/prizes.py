@@ -32,7 +32,7 @@ class PrizeSpreadsheets(object):
         return sheets
     
     def get_region(self, file):
-        regions = ["NATIONAL", "ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
+        regions = ["AUSTRALIA", "ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA", "NZ"]
 
         if " " not in file:
             region = os.path.splitext(file)[0]
@@ -188,20 +188,16 @@ for file in sheets:
             print errmsg
             continue
 
+        jurisdiction = file["region"].lower()
+        if row["prizetype"].lower() == "international":
+            jurisdiction = "international"
+
         prize = {
             "name": row["prizename"],
             "title": row["prizename"],
             "gid": gid,
-            "jurisdiction": file["region"].lower(),
-            "type": row["prizetype"]
-            # "type": row["What type of mentor are you?"].strip(),
-            # "position_title": row["Job title"].strip(),
-            # "ask_me_about": row["What can people ask you about? (in a sentence)"].strip(),
-            # "organisation": row["Agency/Organisation"].strip(),
-            # "jurisdiction": row["What state or territory do you reside in?"].lower(),
-            # "contact": {
-            #     "email": row["Email"]
-            # }
+            "jurisdiction": jurisdiction,
+            "type": row["prizetype"].title()
         }
 
         # Attach non-national prizes to their events
@@ -305,7 +301,7 @@ for file in sheets:
             f.write(unicode(row["prizecategorydescription"].replace("|", "\n").rstrip()))
             f.write(u'\n\n')
             f.write(u'# Prize\n')
-            f.write(unicode(row["prizereward"].replace("|", "\n").rstrip()))
+            f.write(unicode(str(row["prizereward"]).replace("|", "\n").replace(".0", "").rstrip()))
             f.write(u'\n\n')
             f.write(u'# Eligibility Criteria\n')
             f.write(unicode(row["eligibilitycriteria"].replace("|", "\n").rstrip()))
