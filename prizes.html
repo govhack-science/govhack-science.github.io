@@ -111,6 +111,12 @@ title: Prizes
 
                         {% assign events = site.locations | where: "jurisdiction", jurisdiction.gid %}
                         {% assign jurisdiction_prizes = site.prizes | where: "jurisdiction", jurisdiction.gid %}
+                        {% assign jurisdiction_prize_ids = jurisdiction_prizes | where: "category", "state" | map: "gid" %}
+
+                        <div class="row dataset-org">
+                            {% include prize_cards.bs.html prize_ids=jurisdiction_prize_ids %}
+                        </div>
+                        
                         {% for event in events %}
                             {% assign local_prize_ids = "" %}
                             {% assign jurisdiction_prize_ids = "" %}
@@ -119,16 +125,8 @@ title: Prizes
                                 {% if prize.events contains event.gid %}
                                     {% assign local_prize_ids = local_prize_ids | append: prize.gid %}
                                     {% assign local_prize_ids = local_prize_ids | append: "," %}
-                                {% elsif prize.category == "state" %}
-                                    {% assign jurisdiction_prize_ids = jurisdiction_prize_ids | append: prize.gid %}
-                                    {% assign jurisdiction_prize_ids = jurisdiction_prize_ids | append: "," %}
                                 {% endif %}
                             {% endfor %}
-
-                            <div class="row dataset-org">
-                                {% assign jurisdiction_prize_ids_list = jurisdiction_prize_ids | lstrip | split: "," %}
-                                {% include prize_cards.bs.html prize_ids=jurisdiction_prize_ids_list %}
-                            </div>
 
                             {% if local_prize_ids != "" %}
                                 <div class="row dataset-org">
