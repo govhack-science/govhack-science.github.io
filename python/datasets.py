@@ -67,6 +67,7 @@ class CKANLookup(object):
 
     def get_endpoint(self):
         api_root_url = self.get_ckan_url()
+        # print "api_root_url: %s" % (api_root_url)
         return ckanapi.RemoteCKAN(api_root_url, user_agent="GovHackCKANService/1.0")
 
     def get_package_name(self):
@@ -80,6 +81,7 @@ class CKANLookup(object):
     def get_package(self):
         endpoint = self.get_endpoint()
         package_name = self.get_package_name()
+        # print package_name
         package = endpoint.action.package_show(id=package_name)
         return package
         
@@ -159,7 +161,7 @@ data = tablib.Dataset()
 data.csv = csv
 new_datasets_count = 0
 ckan = CKANLookup()
-start_row = 69
+start_row = 70
 
 for row in data[start_row:]:
     # Skip empty rows populated by the export process
@@ -279,8 +281,8 @@ for row in data[start_row:]:
                 print dataset_name
                 print "WARNING: There's no dataset name and this doesn't look like CKAN. Is this a dataset?"
                 print dataset_url
-                continue
                 print "SKIPPING"
+                continue
 
         # Description to excerpt
         # (For some reason automatic excerpt generation failed.)
