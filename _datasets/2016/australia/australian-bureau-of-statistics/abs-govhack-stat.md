@@ -1,6 +1,24 @@
+---
+dataset_url: http://govhack.abs.gov.au
+excerpt_separator: <!--more-->
+gid: abs-govhack-stat
+jurisdiction: australia
+name: ABS.Stat - GovHack instance
+organisation: australian-bureau-of-statistics
+title: ABS.Stat - GovHack instance
+mentors:
+  - chris-beer
+  - hugh-stehlik
+  - liam-byrne
+  - jim-dentrinos
+  - clare-henry
+---
+
 [~~ABS~~GovHack.Stat](govhack.abs.gov.au) is our dedicated GovHack instance of our public facing data warehouse [ABS.Stat](http://stat.abs.gov.au). If you're after ABS data via API, start here.
 
 <!--more-->
+
+The site will be live Friday afternoon.
 
 Use the web interface to view, query and download data; or either the SOAP or ReST (XML) APIs to grab the data you need.
 
