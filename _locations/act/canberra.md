@@ -40,8 +40,6 @@ catering: |
   Sunday 31 July 2016: Lunch, Snacks
 is_capital_city: true
 display_weight: 20
-dataportals: 
-  - act
 ---
 
 GovHack Canberra will be held at the state-of-the-art Snow Centre at Canberra Grammar School. With many rooms for hacking, 80-inch 4K interactive TVs for demonstrating, open break-out spaces for collaborating, a high speed 1Gbps fibre internet link, all hosted within the nation's capital it should be a super awesome event for all GovHackers!
