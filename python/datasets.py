@@ -159,7 +159,7 @@ data = tablib.Dataset()
 data.csv = csv
 new_datasets_count = 0
 ckan = CKANLookup()
-start_row = 58
+start_row = 69
 
 for row in data[start_row:]:
     # Skip empty rows populated by the export process
