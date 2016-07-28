@@ -239,6 +239,7 @@ a.side-nav-event-link:focus {
 }
 a.side-nav-event-link .glyphicon {
     top: 0;
+    left: -1px;
 }
 
 .custom-event #custom-location-selected-no {
