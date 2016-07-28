@@ -225,9 +225,8 @@ var HB = (function(){
     function updateSelectedLocation(labelPrefix){
         labelPrefix = labelPrefix || '#custom-location';
         // Show customised event name
-        var $customLocationNames = $(labelPrefix + '-name-help');
-        $customLocationNames = $customLocationNames.add(labelPrefix + '-sidebar-label');
-        $customLocationNames = $customLocationNames.add(labelPrefix + '-sidebar-button-label');
+        var $customLocationNames = $(labelPrefix + '-name-help').add(labelPrefix + '-sidebar-button-label');
+        var $customLocationFullNames = $(labelPrefix + '-sidebar-label');
         var $customLocationSection = $(labelPrefix + '-selected');
         var $customLocationHelpTable = $(labelPrefix + '-help-table');
         var $customLocationTableHelp = $(labelPrefix + '-table-help');
@@ -235,6 +234,7 @@ var HB = (function(){
             var event = HB.storage.getLocation(function(){
                 if (event.name){
                     $customLocationNames.text(event.name);
+                    $customLocationFullNames.text([(event.prefix || ''), event.name, (event.type ? '('+event.type+')' : '')].join(' '));
                 }
                 $customLocationSection.addClass('custom-event-selected');
                 if (event.venue){

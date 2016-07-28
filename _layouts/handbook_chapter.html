@@ -6,6 +6,13 @@ layout: handbook_template_bs
     <h1 class="hb-chapter-title">{{ page.title }}</h1>
 </header>
 
+<div class="hb-chapter-tags">
+    <span class="glyphicon glyphicon-tag"></span>
+    {% for tag in page.tags %}
+    <span class="label label-primary">{{ tag }}</span>
+    {% endfor %}
+</div>
+
 <article id="content-{{ page.slug }}" class="hb-chapter-body">
     {{ page.content }}
 </article>

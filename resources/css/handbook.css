@@ -3,11 +3,14 @@
 /* 
 Dark Grey #848283 
 Light Grey #BEBFBF
+Pink #CA1553
 */
 
 
 /* Color customisation */
-
+.label-primary {
+    background-color: #CA1553;
+}
 
 
 /* Structural and layout */
@@ -39,7 +42,8 @@ body {
 }
 .side-nav-inner {
     position: absolute;
-    top: 80px;
+    /* top: 80px; */
+    top: 0;
     left: 0;
     right: 0;
     bottom: 40px;
@@ -140,6 +144,8 @@ body {
 }
 
 .side-nav-event-label {
+    margin-top: -24px;
+    margin-bottom: 8px;
     text-align: center;
     text-transform: capitalize;
     font-style: italic;
@@ -164,8 +170,9 @@ body {
     
 }
 
-.hb-chapter-body {
-    
+.hb-chapter-body,
+.hb-chapter-tags {
+    margin-bottom: 20px;
 }
 
 .heading-toggle a {
