@@ -105,6 +105,9 @@ target_audiences:
         <header class="header">
             <h1>{{ section.heading }}</h1>
         </header>
+        <form class="hb-search">
+            <input type="search" class="form-control input-lg" placeholder="Filter by title or tags...">
+        </form>
         <div><!-- ex .container-fluid -->
             <div class="row">
             {% for aud in page.target_audiences %}
@@ -117,14 +120,15 @@ target_audiences:
                 {% unless counter == 0 %}        
                 <div class="col-sm-6">
                     <div class="panel panel-default">
-                      <div class="panel-heading">
+                      <div class="panel-heading filter-state">
+                        <span class="glyphicon glyphicon-filter pull-right"></span>
                         <h3 class="panel-title">{{ aud.title }}</h3>
                       </div>
                       <!-- <div class="panel-body"></div> -->
                       <ul class="list-group">
                         {% for article in site.handbookchapters %}
                         {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
-                        <li class="list-group-item">
+                        <li class="list-group-item hb-article-preview" data-tags="{{ article.tags | join: ',' }}" data-title="{{ article.title }}">
                           <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
                           {{ article.content | markdownify | strip_html | truncatewords: 22 }}
                         </li>
@@ -189,6 +193,7 @@ target_audiences:
 
 <script>
 $(function(){
+
     // Hash frag detection
     if (window.location.hash && window.location.hash.length > 1){
         var trimFront = window.location.hash.indexOf('#/') === 0 ? 2 : 1;
@@ -212,6 +217,37 @@ $(function(){
         }
 
         return false;
+    });
+    
+    // Search bar 
+    $('.hb-search').submit(function(){
+        return false;
+    });
+    $('.hb-search input').keyup(function(){
+        if ($(this).closest('.tab-pane').hasClass('active')){
+            var searchTerm = $.trim($(this).val()).toLowerCase();
+            $('.filter-state').parent().toggleClass('panel-primary', !!searchTerm);
+            $('.filter-state').toggleClass('filter-active', !!searchTerm);
+            var $articles = $(this).closest('.tab-pane').find('.hb-article-preview');
+            if (searchTerm){
+                $articles.each(function(){
+                    var tags = $(this).data('tags').split(',');
+                    var title = $(this).data('title');
+                    var matchedTag = tags.find(function(tag){
+                        console.log('%s/%s', tag.toLowerCase(), searchTerm);
+                        return !!~tag.toLowerCase().indexOf(searchTerm);
+                    }) || false;
+                    var matchedTitle = !!~title.toLowerCase().indexOf(searchTerm);
+                    console.log('%s/%s', title.toLowerCase(), searchTerm);
+                    $(this).toggleClass('search-hidden', !(matchedTag || matchedTitle));
+                });
+            }
+            else {
+                $articles.each(function(){
+                    $(this).removeClass('search-hidden');
+                });
+            }
+        }
     });
     
 });

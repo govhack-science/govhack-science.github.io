@@ -164,10 +164,25 @@ body {
     display: block;
 }
 
+/* Dash pages */
+.filter-state .glyphicon {
+    display: none;
+}
+.filter-state.filter-active .glyphicon {
+    display: inline;
+}
+.hb-search {
+    margin-bottom: 20px;
+}
+.hb-article-preview.search-hidden {
+    display: none;
+}
 
 /* Chapter */
-.hb-chapter-title {
-    
+.hb-chapter-title-inline {
+    display: inline-block;
+    height: 1.2em;
+    vertical-align: -.2em;
 }
 
 .hb-chapter-body,
@@ -199,6 +214,7 @@ body {
 .heading-toggle.open::after {
     transform: rotate(225deg);
 }
+
 
 .hb-chapter-footer {
     
