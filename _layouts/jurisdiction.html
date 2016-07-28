@@ -109,20 +109,62 @@ layout: bootstrap
 </section>
 {% endif %}
 
-{% assign prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
-{% assign prize_ids_len = prize_ids | size %}
-{% if prize_ids_len > 0 %}
-<!-- Prizes Section -->
+{% assign state_prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign state_prize_ids_len = state_prize_ids | size %}
+{% if state_prize_ids_len > 0 %}
+<!-- State Prizes Section -->
 <section id="portfolio" class="bg-light-gray">
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">State Prizes</h2>
+              <h2>State Prizes</h2>
               <p class="text-primary">Prizes that all participants in {{ page.name }} can compete for!</p>
           </div>
         </div>
         <div class="row">
-          {% include prize_cards.bs.html prize_ids=prize_ids %}
+          {% include prize_cards.bs.html prize_ids=state_prize_ids %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign local_prize_ids = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign local_prize_ids_len = local_prize_ids | size %}
+{% if local_prize_ids_len > 0 %}
+<!-- Local Prizes Sectionf -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Local Prizes</h2>
+              <p class="text-primary">Prizes that only participants at specific events can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+          {% for event in site.locations %}
+            {% if event.jurisdiction == page.gid %}
+                {% assign event_prizes = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid %}
+                {% assign event_prize_ids_len = event_prizes | size %}
+
+                {% if event_prize_ids_len > 0 %}
+                    {% assign event_prize_ids = "" %}
+                    {% for prize in event_prizes %}
+                        {% if prize.events contains event.gid %}
+                            {% assign event_prize_ids = event_prize_ids | append: prize.gid %}
+                            {% assign event_prize_ids = event_prize_ids | append: "," %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% unless event_prize_ids == "" %}
+                        <div class="row dataset-org">
+                            <h3><a href="{{ event.url }}">{{ event.name }}</a></h3>
+                            {% assign event_prize_ids_list = event_prize_ids | lstrip | split: "," %}
+                            {% include prize_cards.bs.html prize_ids=event_prize_ids_list %}
+                        </div>
+                    {% endunless %}
+                {% endif %}
+            {% endif %}
+          {% endfor %}
         </div>
     </div>
 </section>
