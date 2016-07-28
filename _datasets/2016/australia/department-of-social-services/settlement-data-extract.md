@@ -4,15 +4,13 @@ excerpt_separator: <!--more-->
 gid: settlement-data-extract
 jurisdiction: australia
 name: Settlement Data Extract
-organisation: Department of Social Services
+organisation: department-of-social-services
 title: Settlement Data Extract
 ---
 
-About Settlement Data
+The Settlement Data Extract supplied for GovHack 2016, was extracted from the Settlement Database (SDB) and allows the production of statistical reports about migrants settling in Australia. 
 
 <!--more-->
-
-The Settlement Data Extract supplied for GovHack 2016, was extracted from the Settlement Database (SDB) and allows the production of statistical reports about migrants settling in Australia. 
 
 The SDB has been developed to provide statistical data for government and community agencies involved in the planning and provision of settlement services. It brings together data from various Department of Immigration and Border Protection (DIBP) systems and a number of other sources including Medicare Australia. The SDB is a repository of information on permanent, and some temporary, migrants who have arrived in Australia since 1 January 1991. 
 
