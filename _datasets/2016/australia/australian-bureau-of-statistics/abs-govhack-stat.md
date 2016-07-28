@@ -22,7 +22,10 @@ The site will be live Friday afternoon.
 
 Use the web interface to view, query and download data; or either the SOAP or ReST (XML) APIs to grab the data you need.
 
-This is currently an open beta product and we recognise that there may be some issues. If you do spot a problem, please let us know at abs.stat@abs.gov.au or drop us a note in [#talk-tech](https://govhackhq.slack.com/messages/talk-tech/details/)|[Slack App](//slack://channel?id=C070GDDEC&team=7016354066). And of course, if you need data help, hit us up on [#talk-stats](https://govhackhq.slack.com/messages/talk-stats/details/)|[Slack App](//slack://channel?id=C1VERC03U&team=7016354066).
+This is currently an open beta product and we recognise that there may be some issues. If you do spot a problem, please let us know at abs.stat@abs.gov.au or drop us a note in [#talk-tech](https://govhackhq.slack.com/messages/talk-tech/details/) [slack-tech][]. And of course, if you need data help, hit us up on [#talk-stats](https://govhackhq.slack.com/messages/talk-stats/details/) [slack-stat][].
+
+[slack-tech]: slack://channel?id=C070GDDEC&team=7016354066  "(or open in Slack)"
+[slack-stat]: slack://channel?id=C1VERC03U&team=7016354066  "(or open in Slack)"
 
 **Social Statistics**
 
