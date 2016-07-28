@@ -5,10 +5,8 @@ last_updated: '2016-07-24T07:11:21.342Z'
 categories: 
   - toolkit
 tags:
-  - submitting
+  - preparing
 ---
-
-> Todo: rebuild this page to fit chronologically
 
 There are three simple requirements for your GovHack project:
 

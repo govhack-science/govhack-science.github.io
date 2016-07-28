@@ -1,6 +1,10 @@
 ---
 slug: microsoft_azure_free_passes
 title: Microsoft Azure free passes
+tile:
+  image: https://assets.govhack.org/img/handbook/ms-azure-600.png
+  image_max_width: 300px
+  button_label: Get Azure passes
 last_updated: 26 Jul 2016
 categories: 
   - toolkit

@@ -285,6 +285,10 @@ a.side-nav-event-link .glyphicon {
     display: none;
 }
 
+.featured-tile-image {
+    margin: 0 0 20px;
+}
+
 /* Mobile dash layout */
 @media screen and (max-width: 768px){
     .hb-dashboard-heading {
@@ -348,7 +352,6 @@ a.side-nav-event-link .glyphicon {
 .heading-toggle.open::after {
     transform: rotate(225deg);
 }
-
 
 .hb-chapter-footer {
     

@@ -6,7 +6,9 @@
         <div class="panel-body">
             
             {% unless chapter.tile.image == nil %}
-            <div><img class="img-responsive" src="{{ chapter.tile.image }}"/></div>
+            <div class="featured-tile-image" {% if chapter.tile.image_max_width %}style="max-width: {{ chapter.tile.image_max_width }};"{% endif %}>
+                <img class="img-responsive" src="{{ chapter.tile.image }}" alt="{{ chapter.title }}">
+            </div>
             {% endunless %}
             
             <h4>{{ chapter.title }}</h4>
