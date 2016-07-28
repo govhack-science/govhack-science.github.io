@@ -104,13 +104,20 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     
+    <header class="mobile-header">
+        <a id="mobile-menu-toggle" class="mobile-menu-toggle" role="button" aria-pressed="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+    </header>
+    
     <main class="viewport">
         <aside class="side-nav">
             <div class="side-nav-inner">
                 <header class="header">
                     <a id="handbook-logo" class="handbook-logo text-hide" href="/">Handbook</a>
                 </header>
-                <div id="custom-location-sidebar-label" class="text-muted side-nav-event-label"></div>
+                <div class="text-muted side-nav-event-label">
+                    <span id="custom-location-sidebar-label" style="display: none;"></span>
+                    <a role="button" id="custom-location-sidebar-link" class="side-nav-event-link" href="#" style="display: none;"><span class="glyphicon glyphicon-map-marker"></span></a>
+                </div>
                 <nav>
                     <ul id="hb-nav" class="nav nav-pills nav-stacked hb-nav-menu" role="tablist">
                         <li role="presentation">
@@ -191,7 +198,7 @@
                 </div> 
             </div>
             <footer class="footer-sticky">
-                GH Participant Handbook. Licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.<br>
+                GH Participant Handbook. Licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. 
                 <strong>
                     Empower<span style="color: #4C9AD2;">.</span> 
                     Enable<span style="color: #CA1553;">.</span> 
@@ -214,11 +221,19 @@
         // Preloaded shenanigans;
         var img1 = new Image(); img1.src = '/resources/handbook-logo-return.png';
 
-        // Sidebar resizer kickstart
+        // Sidebar resizer kickstart; show custom locations
         HB.enableSidebarDrag('.side-nav', '.main');
-        
-        // Show customised events etc
         HB.updateSelectedLocation();
+        
+        // Mobile menu
+        $('#mobile-menu-toggle').on('click', function(){
+            // $(this).attr('aria-pressed') === 'true';
+            $('.viewport').toggleClass('shifted');
+            return false;
+        });
+        $('.side-nav a').on('click', function(){
+            $('.viewport').removeClass('shifted');
+        });
         
     });
 

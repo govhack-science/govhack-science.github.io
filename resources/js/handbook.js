@@ -227,6 +227,8 @@ var HB = (function(){
         // Show customised event name
         var $customLocationNames = $(labelPrefix + '-name-help').add(labelPrefix + '-sidebar-button-label');
         var $customLocationFullNames = $(labelPrefix + '-sidebar-label');
+        var $customLocationSidebarLabel = $(labelPrefix + '-sidebar-label');
+        var $customLocationSidebarLink = $(labelPrefix + '-sidebar-link');
         var $customLocationSection = $(labelPrefix + '-selected');
         var $customLocationHelpTable = $(labelPrefix + '-help-table');
         var $customLocationTableHelp = $(labelPrefix + '-table-help');
@@ -236,7 +238,12 @@ var HB = (function(){
                     $customLocationNames.text(event.name);
                     $customLocationFullNames.text([(event.prefix || ''), event.name, (event.type ? '('+event.type+')' : '')].join(' '));
                 }
-                $customLocationSection.addClass('custom-event-selected');
+                if (event.url){
+                    $customLocationSidebarLink.attr('href', event.url);
+                }
+                else {
+                    $customLocationSidebarLink.attr('href', '#/no-page-found');
+                }
                 if (event.venue){
                     $customLocationHelpTable.show();
                     if (event.venue.host){
@@ -279,11 +286,16 @@ var HB = (function(){
                         // $trSunday.appendTo($customLocationHelpTable);
                     // }
                 }
+                $customLocationSection.addClass('custom-event-selected');
+                $customLocationSidebarLabel.add($customLocationSidebarLink).show();
             });
         }
         else {
-            $sidebarLocationLabel.text($sidebarLocationLabel.data('originalLabel'));
+            $customLocationNames.add($customLocationFullNames).each(function(){
+                $(this).text($(this).data('originalLabel'));
+            });
             $customLocationSection.removeClass('custom-event-selected');
+            $customLocationSidebarLabel.add($customLocationSidebarLink).hide();
         }
     }
     
