@@ -241,11 +241,9 @@ $(function(){
                     var tags = $(this).data('tags').split(',');
                     var title = $(this).data('title');
                     var matchedTag = tags.find(function(tag){
-                        console.log('%s/%s', tag.toLowerCase(), searchTerm);
                         return !!~tag.toLowerCase().indexOf(searchTerm);
                     }) || false;
                     var matchedTitle = !!~title.toLowerCase().indexOf(searchTerm);
-                    console.log('%s/%s', title.toLowerCase(), searchTerm);
                     $(this).toggleClass('search-hidden', !(matchedTag || matchedTitle));
                 });
             }

@@ -50,9 +50,10 @@
     {% endif %}
     {% if page.og_image_url %}
     <meta property="og:image" content="{{ page.og_image_url }}">
-    {% else %}
-    {% if page.photo_url %}
+    {% elsif page.photo_url %}
     <meta property="og:image" content="{{ page.photo_url }}">
+    {% else %}
+    <meta property="og:image" content="/resources/images/handbook/sm-handbook-cover.jpg">
     {% endif %}
     {% endif %}
     <meta property="og:url" content="http://portal.govhack.org{{ page.url | remove_first:'index.html' }}">

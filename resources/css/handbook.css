@@ -237,6 +237,9 @@ a.side-nav-event-link:active,
 a.side-nav-event-link:focus {
     text-decoration: none;
 }
+a.side-nav-event-link .glyphicon {
+    top: 0;
+}
 
 .custom-event #custom-location-selected-no {
     display: block;
