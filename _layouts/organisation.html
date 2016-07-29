@@ -96,12 +96,12 @@ layout: bootstrap
     <div class="container">
         <div class="row header-row">
           <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="prizes">Prizes</h2>
+              <h2 class="section-heading" id="prizes">Our Prizes</h2>
           </div>
         </div>
         <div class="row">
           {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
-          {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+          {% include prize_cards.bs.html prize_ids=prize_ids_list show_org_name=false show_prize_type=true %}
         </div>
     </div>
 </section>

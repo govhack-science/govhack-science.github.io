@@ -67,7 +67,7 @@
         <!-- {{ include.jurisdiction_name }} Sponsors -->
         <div class="row header-row">
         <div class="col-lg-12 text-center">
-            <{{ heading_level }} class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors">{{ include.jurisdiction_name }} Sponsors</{{ heading_level }}>
+            <{{ heading_level }} class="section-heading" data-toc-text="{{ include.jurisdiction_name }} Sponsors"{% if include.hide_category_heading_from_toc == true %} data-toc-skip{% endif %}>{{ include.jurisdiction_name }} Sponsors</{{ heading_level }}>
         </div>
         </div>
         <div class="row">
