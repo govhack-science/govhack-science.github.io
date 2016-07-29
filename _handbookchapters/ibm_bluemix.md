@@ -13,7 +13,7 @@ tags:
   - cloud
   - hosting
 ---
-## About IBM Bluemix
+## IBM are offering a free 90-day trial of Bluemix for GovHack participants 
 
 IBM Bluemix is a cloud platform-as-a-service for building innovative applications at speed.  GovHack participants can spin up building blocks in the Bluemix catalog, such as data cleansing, analytics, and cognitive capabilities, to compose sophisticated applications in a short time.  For example, Bluemix enables you to create a database instance and a PHP runtime in minutes without having to install any server, and you can start leveraging weather information, Twitter, and cognitive capabilities such as text analytics to enrich your application.  You can either use Bluemix to build the entire app, or mix and match this platform with IaaS and other tools to speed up your project.
 
