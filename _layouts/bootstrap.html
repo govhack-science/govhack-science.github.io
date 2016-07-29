@@ -294,17 +294,11 @@
             {% endif %}
             
                 {{ content }}
-
-                {% comment %}
-                ======================================================
-                WARNING.
-                Sponsors should be rendered individually per template. 
-                ======================================================
-                {% include sponsors_national.html %}
-                {% endcomment %}
+                
+                <hr>
 
                 {% if page.no_major_sponsors != true %}
-                    {% include sponsor_block.bs.html sponsor_level="national" jurisdiction_gid="australia" jurisdiction_name="Major" sponsor_level_ids="lead-agency,lead-sponsor" %}
+                    {% include sponsor_block.bs.html sponsor_level="national" jurisdiction_gid="australia" jurisdiction_name="Major National" sponsor_level_ids="lead-agency,lead-sponsor" %}
                 {% endif %}
             </div>
         </div>
