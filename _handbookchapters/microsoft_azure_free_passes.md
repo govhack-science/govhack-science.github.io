@@ -10,6 +10,8 @@ categories:
   - toolkit
 tags:
   - creating
+  - hosting
+  - cloud
 ---
 
 ## Microsoft are offering Free $300 Azure passes

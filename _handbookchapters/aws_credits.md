@@ -10,6 +10,8 @@ categories:
   - toolkit
 tags:
   - creating
+  - hosting
+  - cloud
 ---
 
 AWS is pleased to offer all participants of GovHack 2016 $100.00 in promotional credit.

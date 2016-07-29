@@ -6,6 +6,8 @@ categories:
   - toolkit
 tags:
   - submitting
+  - hosting
+  - cloud
 ---
 
 We've already spoken about how you can submit your project source materials, but you'll more than likely also need a place to host your application on the web.

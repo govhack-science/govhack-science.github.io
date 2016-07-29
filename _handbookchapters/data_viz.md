@@ -6,6 +6,7 @@ categories:
   - toolkit
 tags:
   - creating
+  - dataviz
 ---
 
 # Data viz 101

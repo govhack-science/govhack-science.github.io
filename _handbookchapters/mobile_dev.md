@@ -6,6 +6,7 @@ categories:
   - toolkit
 tags:
   - creating
+  - app
 ---
 
 # Device agnostic mobile web development

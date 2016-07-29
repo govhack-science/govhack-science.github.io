@@ -6,6 +6,7 @@ categories:
   - toolkit
 tags:
   - competing
+  - dev
 ---
 
 # Making your hacking more productive
