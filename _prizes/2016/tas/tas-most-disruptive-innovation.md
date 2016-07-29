@@ -11,7 +11,7 @@ type: Theme
 Most Disruptive Innovation
 
 # Prize
-Award of  $500 to the winning team
+Cash prize(s) up to the value of $500
 
 # Eligibility Criteria
 The project that seems to have the most disruptive potential.
