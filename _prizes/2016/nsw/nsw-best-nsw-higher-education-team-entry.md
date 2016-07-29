@@ -14,7 +14,7 @@ type: Best In
 Best entry submitted by a  higher education team
 
 # Prize
-Cash award  $500
+Cash prize up to the value of $500
 
 # Eligibility Criteria
 75% of Team members must be a  higher education student. Higher education includes Tafe and University
