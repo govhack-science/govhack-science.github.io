@@ -14,7 +14,7 @@ Best Data Visualisation
 The project that best visualises a data set.  This might go to a pure data visualisation project, or a project that includes data visualisation as part of a larger idea.
 
 # Prize
-Award of  $1,000 to the winning team
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Must use at least one Tasmanian Government open datasets.
