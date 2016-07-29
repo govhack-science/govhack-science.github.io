@@ -1,19 +1,21 @@
 ---
 slug: 'submitting_your_entry'
 title: 'Submitting your entry'
-last_updated: '2016-07-29T04:29:07.378Z'
+last_updated: '2016-07-29T07:03:51.955Z'
 categories:
   - comp
 tags:
   - submitting
   - hackerspace
+  - video
+  - repo
 ---
 
 ## Submitting your entry
 
 Hackerspace (opened on the Friday of the competition at 7pm) is the Official GovHack competition submission site and allows you to submit all components required for your team’s Govhack entry.
 
-*Note: submission elements and times are system controlled so not extensions are available! *Teams are required to submit the following as part of their competition entry on Hackerspace:
+*Note: submission elements and times are system controlled so not extensions are available!* Teams are required to submit the following as part of their competition entry on Hackerspace:
 
 * **Register** **all Team members** in Hackerspace 
 
@@ -31,15 +33,15 @@ All team members must be registered as a user with their email.  This ensures yo
 
     * Nominate for Team awards available this year
 
-* **Record data used - **   For each significant  dataset you use record  the  URL  and explain how this data was used  in your entry. For each prize category you nominate make sure you check for any specific data reuse eligibility requirements and record the data.  This field will be used to validate the eligibility of your entry.
+* **Record data used -** For each significant  dataset you use record  the  URL  and explain how this data was used  in your entry. For each prize category you nominate make sure you check for any specific data reuse eligibility requirements and record the data.  This field will be used to validate the eligibility of your entry.
 
-*  **Evidence Repository URL  - **This is your proof of concept.**  **You must provide evidence of your work over the weekend  any code, graphics,plans, drawings, data analysis and cleansing, mashups, applications, website URLs, models, photos of each  stage to create your artistic representations. Submit a link to a digital repository such as  a google folder or a Source code URL such as GITHUB **(Mandatory)**
+*  **Evidence Repository URL (Mandatory)** This is your proof of concept.**  **You must provide evidence of your work over the weekend  any code, graphics,plans, drawings, data analysis and cleansing, mashups, applications, website URLs, models, photos of each  stage to create your artistic representations. Submit a link to a digital repository such as a Google Drive or Dropbox shared folder (public) or a Git repository such as public GitHub or public BitBucket
 
-* ** A maximum 3 minute Video entry - (Must submit actual Video URL not link to another website) **This a video pitch of your entry that tells a story of how you have reused data. The video should demonstrate your hack concept, the benefits or value the concept could achieve and where possible introduce your team. The most common method is to use a screencast, with a voice-over narration.
+* ** A maximum 3 minute Video entry - (Mandatory, must submit actual Video URL not link to another website)** This a video pitch of your entry that tells a story of how you have reused data. The video should demonstrate your hack concept, the benefits or value the concept could achieve and where possible introduce your team. The most common method is to use a screencast, with a voice-over narration.
 
-* Note: Judges will stop watching videos after 3 minutes **(Mandatory).**
+    * Note: Judges will stop watching videos after 3 minutes
 
-* **Demo URL **( Optional) If judges are able to see and play with it that is useful, but this is a minor component of the judging. 
+* **Demo URL (Optional)** If judges are able to see and play with it that is useful, but this is a minor component of the judging. 
 
 #### **Timeframes to register and submit:**
 
@@ -65,6 +67,6 @@ All team members must be registered as a user with their email.  This ensures yo
 
     * Video URL 
 
-    * Demo URL** **( Optional)
+    * Demo URL (Optional)
 
 

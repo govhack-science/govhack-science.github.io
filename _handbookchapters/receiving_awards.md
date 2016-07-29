@@ -1,7 +1,7 @@
 ---
 slug: 'receiving_awards'
 title: 'Receiving Awards'
-last_updated: '2016-07-29T04:44:07.368Z'
+last_updated: '2016-07-29T06:52:20.276Z'
 categories:
   - comp
 tags:
@@ -33,7 +33,7 @@ tags:
 
 ## Awards
 
-*  Cash prizes are **up to the value **stated on the prize.   GovHack reserves the right to amend the value of cash prizes if event running costs exceed the total sponsorship collected*
+*  Cash prizes are **up to the value** stated on the prize. GovHack reserves the right to amend the value of cash prizes if event running costs exceed the total sponsorship collected
 
 * Prizes may be split between multiple teams.
 
