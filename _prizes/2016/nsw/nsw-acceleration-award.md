@@ -14,7 +14,7 @@ type: Development
 For the team who coded the  wishes to move their solutions forward, the prize is intended to help them in their journey
 
 # Prize
-Cash award $500
+Cash prize up to the value of $500
 
 # Eligibility Criteria
 Must want to develop the solution within the following 6 months and allow CoderFactory to assist in acceleration process
