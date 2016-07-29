@@ -14,7 +14,7 @@ With the release of the real-time transport network data there are opportunities
 Think outside the square for this prize category which aims to deliver a better experience for NSW Transport passengers. Perhaps you could crowd source data to improve network updates, visualise realtime data in a new way or mash up other data to provide more informed customer information.
 
 # Prize
-Cash award  $1,500
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Must use datasets from NSW Transport data hub
