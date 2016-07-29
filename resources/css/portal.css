@@ -1003,7 +1003,7 @@ h1[id], h2[id], h3[id], h4[id]/*, a[name]*/ {
   margin-left: -34px;
 }
 .dataset-jurisdiction {
-  margin-left: -17px;
+ /* margin-left: -17px; */
 }
 .dataset-org {
   margin-top: 30px;
