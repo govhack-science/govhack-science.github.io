@@ -10,6 +10,8 @@ categories:
   - toolkit
 tags:
   - creating
+  - cloud
+  - hosting
 ---
 ## About IBM Bluemix
 

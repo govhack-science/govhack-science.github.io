@@ -6,6 +6,7 @@ categories:
   - toolkit
 tags:
   - preparing
+  - planning
 ---
 
 Whilst you're not allowed to actually work on your project until the weekend of GovHack itself, that doesn't mean you can't be preparing and learning new skills and tools beforehand.

@@ -6,6 +6,7 @@ categories:
   - toolkit
 tags:
   - competing
+  - dev
 ---
 
 Unstructured data covers much of the data you will come across - from data buried in PDFs and web sites, to mining data from social networks, but it all requires analysis to extract meaning. There are many tools for getting at the data - see the previous section on [scraping data](#Scraping_data_from_PDFs_and_the_web) for a range of tools - but the Sunlight Foundation's [Text Analysis in Transparency](http://overview.ap.org/blog/2013/05/video-text-analysis-in-transparency/) talk is a great introduction to that world of text analysis and natural language processing.

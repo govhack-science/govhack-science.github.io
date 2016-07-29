@@ -6,6 +6,8 @@ categories:
   - toolkit
 tags:
   - preparing
+  - planning
+  - team
 ---
 
 There are three simple requirements for your GovHack project:
