@@ -1,7 +1,6 @@
 ---
 ask_me_about: higher education data
 contact:
-  linkedin: http://au.linkedin.com/in/
   twitter: EDUGovHack2016
 gid: zhengfeng-li
 jurisdiction: act
