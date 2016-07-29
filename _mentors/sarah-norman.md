@@ -3,7 +3,7 @@ ask_me_about: projects, customer focus, Transport, innovation process and strate
 contact:
   email: sarah.l.norman@tmr.qld.gov.au
   linkedin: "https://au.linkedin.com/in/aaasarahnorman"
-  twitter: '@sarahinno'
+  twitter: '@sarahinnovate'
 gid: sarah-norman
 jurisdiction: qld
 location: brisbane
