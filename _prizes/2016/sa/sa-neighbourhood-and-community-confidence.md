@@ -11,7 +11,7 @@ type: Theme
 The best entry that promotes neighbourhood safey and increases community confidence. Everyone deserves the right to go about their daily lives safely and without the fear of crime.
 
 # Prize
-Award of $1,000 for the winning entry
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Must use South Australian data discoverable on https://data.sa.gov.au/ and at least one data set published by AGD, available at http://data.sa.gov.au/data/organization/attorney-general-s-dept
