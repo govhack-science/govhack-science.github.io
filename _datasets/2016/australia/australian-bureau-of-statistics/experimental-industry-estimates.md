@@ -1,5 +1,5 @@
 ---
-dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE_SA2
+dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE
 excerpt_separator: <!--more-->
 gid: experimental-industry-estimates
 jurisdiction: australia
@@ -53,7 +53,7 @@ Please contact the data mentors for further inquiries.
 
 **Data Explorers**
 
-* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE_SA2)
+* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_EIE)
 
 **Explanatory Notes**
 

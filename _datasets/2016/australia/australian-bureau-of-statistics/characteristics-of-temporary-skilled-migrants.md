@@ -1,5 +1,5 @@
 ---
-dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_COTSM
+dataset_url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_CTSM
 excerpt_separator: <!--more-->
 gid: characteristics-of-temporary-skilled-migrants
 jurisdiction: australia
@@ -31,7 +31,7 @@ Data items available are State/Territory, Statistical Area Level 2, Age Group, S
 
 **Data Explorers**
 
-* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_COTSM) under GovHack
+* [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_CTSM) under GovHack
 
 **Explanatory Notes**
 
@@ -49,7 +49,7 @@ Data items available are State/Territory, Statistical Area Level 2, Age Group, S
 **ReST Call pattern**
 
 ```
-govhack.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_COTSM/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
+govhack.abs.gov.au/restsdmx/sdmx.ashx/[METHOD]/ABS_CTSM/[DIMENSIONS]/ABS(?startTime=YYYY&endTime=YYYY)
 ```
 
 **Example call (ReST (XML) via CORS proxy**
