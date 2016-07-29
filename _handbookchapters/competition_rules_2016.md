@@ -1,7 +1,7 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-29T07:03:40.619Z'
+last_updated: '2016-07-29T07:03:46.797Z'
 categories:
   - comp
 tags:

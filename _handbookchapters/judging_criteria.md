@@ -6,7 +6,6 @@ categories:
   - comp
 tags:
   - submitting
-  - comp
   - prizes
   - hackerspace
 ---

@@ -6,7 +6,6 @@ categories:
   - comp
 tags:
   - preparing
-  - comp
   - rules
 ---
 

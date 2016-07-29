@@ -1,7 +1,7 @@
 ---
 slug: 'prepare_your_video'
 title: 'Prepare Your Video'
-last_updated: '2016-07-29T04:28:08.840Z'
+last_updated: '2016-07-29T15:23:50.102Z'
 categories:
   - comp
 tags:
@@ -30,13 +30,13 @@ tags:
 
 * To help with storyboarding your video grab this huge pack of [free story boarding illustrations](https://dribbble.com/shots/1083617-430-FREE-storyboard-illustrations).
 
-* For screencasting check out software like [Screenr](http://www.screenr.com/) and [ActivePresenter](http://atomisystems.com/activepresenter/free-edition/) that will allow you to record demos of your application. If you have a mac, Quicktime will do the job.
+* For screencasting check out software like [Screenr](http://www.screenr.com/), [ActivePresenter](http://atomisystems.com/activepresenter/free-edition/) or [OBS](https://obsproject.com/) that will allow you to record demos of your application. If you have a mac, Quicktime will do the job.
 
 * For mixing clips together the [YouTube Video Editor](https://www.youtube.com/editor) is super user-friendly; though [VLC](http://www.videolan.org/vlmc) or [LWKS](http://www.lwks.com/) may also be handy. iMovie on a mac or Movie Maker on Windows also work well.
 
-* Videos can be uploaded directly to our S3 storage bucket via the HackerSpace (we’ll upload them all to YouTube later). You can use YouTube, Vimeo, etc as well.
+* Videos can be uploaded via the HackerSpace. You can use YouTube, Vimeo, etc as well.
 
- Watch this video from 2013 for some hints and tips on [creating a GovHack video entry](https://youtu.be/K-GiOtHN4FY), 
+ Watch [this video from 2013](https://youtu.be/K-GiOtHN4FY) for some hints and tips on [creating a GovHack video entry](https://youtu.be/K-GiOtHN4FY), 
 
 ### **Audio**
 
