@@ -13,7 +13,7 @@ The best cutting edge concept that reuses Environmental and Natural Resources Sc
 More information and selected datasets are available from [https://data.qld.gov.au/data-event/govhack/2016](https://data.qld.gov.au/data-event/govhack/2016).
 
 # Prize
-Cash up to the value of $1,500
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 You must use at least one of the data sets provided for this challenge hosted on http://data.qld.gov.au, but you are free to use data from the official GovHack list or any other data sets as long as their licensing terms permit.
