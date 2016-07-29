@@ -3,7 +3,7 @@ ask_me_about: People can ask anything Technical, Business or Project Management 
 contact:
   email: leigh.russell@abs.gov.au
   linkedin: http://au.linkedin.com/in/
-  twitter: '@lleighrussell'
+  twitter: 
 gid: leigh-russell
 jurisdiction: act
 location: canberra

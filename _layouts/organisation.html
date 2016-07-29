@@ -11,7 +11,10 @@ layout: bootstrap
       </div>
     </div>
 
+    <br>
+
     <h2><a href="{{ page.url }}">{{ page.name }}</a></h2>
+
     {% if page.sponsor_level %}
         <h4>{{ page.sponsor_level }}</h4>
     {% endif %}
@@ -55,6 +58,24 @@ layout: bootstrap
 
     {% if content %}
       {{ content }}
+    {% endif %}
+
+    {% if page.contact.twitter %}
+        <a class="btn btn-lg btn-primary" href="https://twitter.com/{{ page.contact.twitter }}">
+            <i class="fa fa-twitter fa-3x pull-left"></i> Talk to us on Twitter<br>@{{ page.contact.twitter }}
+        </a>
+    {% endif %}
+
+    {% if page.contact.slack_team %}
+        {% if page.contact.slack_channel %}
+            <a class="btn btn-lg btn-success" href="https://{{ page.contact.slack_team }}/messages/talk-stats/details/">
+                <i class="fa fa-slack fa-3x pull-left"></i> Chat to us on Slack in<br>#{{ page.contact.slack_channel }}
+            </a>
+        {% else %}
+            <a class="btn btn-lg btn-success" href="https://{{ page.contact.slack_team }}/messages/talk-stats/details/">
+                <i class="fa fa-slack fa-3x pull-left"></i> Chat to us on the Slack<br>{{ page.contact.slack_team }}
+            </a>
+        {% endif %}
     {% endif %}
   </div>
 </section>

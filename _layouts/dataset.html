@@ -25,6 +25,17 @@ layout: bootstrap
   </div>
 </section>
 
+{% assign dataset_org = site.organisations | where: "gid", page.organisation | first %}
+
+{% if dataset_org %}
+<!-- Organisation Section -->
+<section id="mentor-organisation" class="bg-light-gray">
+    <div class="container">
+      {% include organisation_cards.bs.html organisation_ids=dataset_org.gid logo_only=true %}
+    </div>
+</section>
+{% endif %}
+
 {% assign prize_ids = "" %}
 {% for prize in site.prizes %}
   {% for dataset_id in prize.datasets %}
