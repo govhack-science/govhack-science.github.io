@@ -11,7 +11,7 @@ type: Spirit
 An award for the individual that made a valiant attempt, learnt the most, or is otherwise deserving of further encouragement.
 
 # Prize
-$200 Voucher
+Voucher up to the value of $200
 
 # Eligibility Criteria
 Participant  in GovHack WA. Awarded by State Operations Committee.
