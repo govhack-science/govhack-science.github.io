@@ -14,7 +14,7 @@ type: Best In
 Best entry for the location of Mt Gambier (Adult)
 
 # Prize
-Harvey Norman Voucher of $1000
+Harvey Norman Voucher up to $1000
 
 # Eligibility Criteria
 Awarded by the location sponsors to the best entry for the location.
