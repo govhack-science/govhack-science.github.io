@@ -14,7 +14,7 @@ type: Spirit
 A GovHacker who has shown true govhack Spirit through helping others and contributing to a positive and happy Hackathon
 
 # Prize
-Cash award  $200
+Cash prize(s) up to the value of $200
 
 # Eligibility Criteria
 Must be a participant
