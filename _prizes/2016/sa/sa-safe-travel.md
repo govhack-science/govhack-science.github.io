@@ -12,7 +12,7 @@ type: Theme
 The best entry that promotes road safety behaviour change and education, and is dedicated to the safety of all South Australian road users.
 
 # Prize
-Award of $1,000 for the winning entry
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Must use South Australian data discoverable on https://data.sa.gov.au/
