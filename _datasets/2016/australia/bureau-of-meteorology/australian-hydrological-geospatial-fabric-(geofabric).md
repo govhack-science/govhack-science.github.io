@@ -15,12 +15,14 @@ The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geogr
 By detailing the spatial dimensions of these features, models can be developed to show how water is stored, transported and used through the landscape.
 
 In Geofabric V2.1.1 there are 6 products available:
-Hydrology Cartography
-Hydrology Network
-Hydrology Catchments
-Hydrology Reporting Catchments
-Hydrology Reporting Regions
-Groundwater Hydrology
 
-*[GIS]: Geographic Information System
-*[Geofabric]: Australian Hydrological Geospatial Fabric
+* Hydrology Cartography
+* Hydrology Network
+* Hydrology Catchments
+* Hydrology Reporting Catchments
+* Hydrology Reporting Regions
+* Groundwater Hydrolog
+
+**[GIS]:** Geographic Information System
+
+**[Geofabric]:** Australian Hydrological Geospatial Fabric
