@@ -13,7 +13,7 @@ A specific task that looks to correct inconsistencies in the Thermal Imagery Con
 A Thermal Imagery data set was collected in 2013 The data displays an anomaly in that general surface temperatures increase from west to east. The goal of this challenge is to review the raw data and supporting materials, identify possible causes of the anomaly and then correct the data to a normalised dataset. 
 
 # Prize
-Award of cash to the value of $500
+Award of cash up to the value of $500
 
 # Eligibility Criteria
 Geelong Thermal Imagery Layer

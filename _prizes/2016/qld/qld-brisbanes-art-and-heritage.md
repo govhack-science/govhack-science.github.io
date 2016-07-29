@@ -15,7 +15,7 @@ More information on Brisbane's vision of a creative and vibrant city at https://
 council/governance-strategy/vision-strategy/brisbane-vision/our-vibrant-creative-city
 
 # Prize
-Cash to the value of $1,000
+Cash up to the value of $1,000
 
 # Eligibility Criteria
 Must use at least one open government dataset from http://data.brisbane.qld.gov.au.

@@ -17,7 +17,7 @@ How can the City of Melbourne;
 ·         Improve the way in which City of Melbourne collects information about business activity in the city.
 
 # Prize
-Award of cash to the value of $750
+Award of cash up to the value of $750
 
 # Eligibility Criteria
 Use  at least one  city of Melbourne dataset.

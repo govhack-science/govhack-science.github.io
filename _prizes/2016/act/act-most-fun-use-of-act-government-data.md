@@ -11,7 +11,7 @@ type: Theme
 For the project which demonstrates the most fun or entertaining use of ACT Government data.
 
 # Prize
-Cash prize to the value of $500
+Cash prize up to the value of $500
 
 # Eligibility Criteria
 Must use some ACT Government data sets from data.act.gov.au.

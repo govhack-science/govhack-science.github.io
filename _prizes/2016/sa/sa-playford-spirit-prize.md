@@ -14,7 +14,7 @@ type: Spirit
 Contributed to a positive experience for all through sharing, caring and actively participating.
 
 # Prize
-3D Virtual Reality VR Box and Google Glasses up to the value of $100
+3D Virtual Reality VR Box and Google Glasses up up to the value of $100
 
 # Eligibility Criteria
 Awarded by the crew to a participant at each location at closing of the competition weekend.

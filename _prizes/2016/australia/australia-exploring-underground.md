@@ -13,7 +13,7 @@ type: Bounty
 The most creative and exciting use of our subsurface data. We have this really cool data about what’s going on underground: Help us figure out a new fun way to explore it!
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 Dependencies – Use of Geoscience Australia subsurface data

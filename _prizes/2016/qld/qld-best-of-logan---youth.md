@@ -14,7 +14,7 @@ type: Best In
 Best youth project developed at the GovHack Logan event.
 
 # Prize
-Cash to the value of $500
+Cash up to the value of $500
 
 # Eligibility Criteria
 Must be a participant at GovHack Logan and at least one team member under 18 years.

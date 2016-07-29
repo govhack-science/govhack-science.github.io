@@ -18,7 +18,7 @@ In chasing this goal, you must:
 * consider the dropout rate between the different fields of education.
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 use Department of Education and Training university attrition rate data and any other appropriate public data sources;

@@ -13,6 +13,6 @@ type: Bounty
 The best hack with the most commercial potential.
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria

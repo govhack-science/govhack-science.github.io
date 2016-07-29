@@ -14,7 +14,7 @@ type: Best In
 Best hack of the event.
 
 # Prize
-Cash  to the value of $1,000
+Cash  up to the value of $1,000
 
 # Eligibility Criteria
 Be a participant at the Gold Coast GovHack event.

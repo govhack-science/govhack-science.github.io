@@ -15,7 +15,7 @@ We are in the age of machine learning! From IBM's awesome Watson "Machine Learni
 Think about a wicked problem that you could apply machine learning to, have a look at the data that's available, and get creative. You might uncover some new insight for policy makers and make Australia a better place, or maybe you'll just make an app for identifying Australian wildlife from a photo. Let's find out!
 
 # Prize
-Award to the value of $4,000 for 1st place and $2,000 for 2nd place
+Award up to the value of $4,000 for 1st place and $2,000 for 2nd place
 
 # Eligibility Criteria
 all Australian and New Zealand teams are eligible.  Must use at least two Official GovHack Datasets.  Open Government data must be used.

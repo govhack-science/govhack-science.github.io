@@ -14,7 +14,7 @@ type: Best In
 Best project developed at the GovHack Logan event.
 
 # Prize
-Cash to the value of $500
+Cash up to the value of $500
 
 # Eligibility Criteria
 Must be a participant at GovHack Logan event.

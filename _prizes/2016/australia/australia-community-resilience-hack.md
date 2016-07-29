@@ -25,7 +25,7 @@ The Best Community Resilience Hack will be awarded to the hack that:
 * Enhances either the social support networks in a community and/or the physical assets required to reduce vulnerability and limit the financial and emotional impact of an event.
 
 # Prize
-Award to the value of $4,000 for 1st place and $2,000 for 2nd place
+Award up to the value of $4,000 for 1st place and $2,000 for 2nd place
 
 # Eligibility Criteria
 all Australian and New Zealand teams are eligible.  Must use at least two Official GovHack Datasets.  Open Government data must be used.

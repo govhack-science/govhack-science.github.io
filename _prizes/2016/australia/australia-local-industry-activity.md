@@ -14,6 +14,6 @@ Using datasets from Employment, Education and Industry, and any other suitable d
 Hint: Consider the benefit of this information for jobseekers
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria

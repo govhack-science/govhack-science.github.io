@@ -13,7 +13,7 @@ The LGSRG is currently running a challenge for all Victorian Councils to publish
 The LGSRG has sponsored a Govhack prize for the best example utilising one or more of these data.
 
 # Prize
-Award of cash to the value of $500
+Award of cash up to the value of $500
 
 # Eligibility Criteria
 Use at least one of the LGSRG priority datasets: 1) Garbage/ rubbish collection rounds ie my rubbish bin night; 2) Playgrounds; 3) Places that I can/ cannot let my dog exercise on/off lead.

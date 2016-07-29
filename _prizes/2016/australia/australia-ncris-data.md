@@ -13,7 +13,7 @@ type: Bounty
 The most innovative use of NCRIS data collections and infrastructure.
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 NCRIS data

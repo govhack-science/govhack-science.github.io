@@ -14,7 +14,7 @@ The challenge is to find new ways to interrogate the ATO Dataset and help people
 Hint: Ask yourself questions like : What’s the social impact of financial hardship?  How do lifestyle factors impact income levels and wealth generation?  What’s the impact of education spending on incomes, What links can we identify between unemployment, income and marriage separation? How useful are the SEIFA regions as indicators of taxation impacts?
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 the ATO Dataset

@@ -14,7 +14,7 @@ type: Best In
 Best entry for the location of Onkaparinga (Youth)
 
 # Prize
-Hardware or vouchers up to the value of $500
+Hardware or vouchers up up to the value of $500
 
 # Eligibility Criteria
 Awarded by the location sponsors to the best youth entry for the location.

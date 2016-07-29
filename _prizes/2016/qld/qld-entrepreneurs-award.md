@@ -14,7 +14,7 @@ type: Development
 Hack most likely/viable to become a startup.
 
 # Prize
-Cash  to the value of $1,000
+Cash  up to the value of $1,000
 
 # Eligibility Criteria
 Be a participant at the Gold Coast GovHack event

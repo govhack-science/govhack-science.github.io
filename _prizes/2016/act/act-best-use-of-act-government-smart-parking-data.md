@@ -11,7 +11,7 @@ type: Theme
 For the project which exhibits the best use of the ACT Government Smart Parking data.
 
 # Prize
-Cash prize to the value of $500
+Cash prize up to the value of $500
 
 # Eligibility Criteria
 Must use the ACT Government Smart Parking data. Available at data.act.gov.au.

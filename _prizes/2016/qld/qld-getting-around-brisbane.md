@@ -15,7 +15,7 @@ More information on Brisbane as an accessible and connected city at https://www.
 strategy/vision-strategy/brisbane-vision/our-accessible-connected-city
 
 # Prize
-Cash to the value of $1,000
+Cash up to the value of $1,000
 
 # Eligibility Criteria
 Must use at least one open government dataset from http://data.brisbane.qld.gov.au.

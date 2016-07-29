@@ -15,7 +15,7 @@ Using datasets from Employment, Education and Industry, and any other suitable d
 Hint: Consider the benefit of this information for jobseekers.
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 Must use  at least one  dataset published by the Dept Employment, Education & Industry from data.gov.au

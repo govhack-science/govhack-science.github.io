@@ -16,7 +16,7 @@ Specifically, how can we foster communityís enthusiasm in urban biodiversity us
 For instance, can the community help us monitor biodiversity more accurately in a changing climate? Or how can they use the collected biodiversity data for their own daily decision making? Little things like what plant to be planted in their backyard or which local parks/reserves to go this weekend for the most wonderful butterfly watch?
 
 # Prize
-Award of cash to the value of $750
+Award of cash up to the value of $750
 
 # Eligibility Criteria
 Use  at least one  city of Melbourne dataset.

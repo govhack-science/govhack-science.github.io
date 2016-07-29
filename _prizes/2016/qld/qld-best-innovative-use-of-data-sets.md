@@ -11,7 +11,7 @@ type: Theme
 Best innovative use of open government data sets.
 
 # Prize
-Cash to the value of $1,000
+Cash up to the value of $1,000
 
 # Eligibility Criteria
 Must be a participants at one of the Brisbane events (Offical, Maker, Youth).

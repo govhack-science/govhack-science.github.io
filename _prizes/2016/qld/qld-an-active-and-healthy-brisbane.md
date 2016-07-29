@@ -20,7 +20,7 @@ to find, get to and participate in. Or create a game that awards points for part
 encouraging competition against friends, locals or everyone across Brisbane.
 
 # Prize
-Cash to the value of $1,000
+Cash up to the value of $1,000
 
 # Eligibility Criteria
 Must use at least one open government dataset from http://data.brisbane.qld.gov.au. Must be a participant at either the Brisbane Official Event, Brisbane Maker Node, or Brisbane Youth Node.

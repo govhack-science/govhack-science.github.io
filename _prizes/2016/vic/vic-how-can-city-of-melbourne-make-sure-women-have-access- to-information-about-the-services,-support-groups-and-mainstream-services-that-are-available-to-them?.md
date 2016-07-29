@@ -16,7 +16,7 @@ Concurrently, service directories are notoriously difficult datasets to keep up 
 There are numerous services in the City Of Melbourne and surrounding suburbs designed to assist women who are experiencing or at risk of violence and other related issues. However, while many women could benefit from accessing these services, they don’t identify with being a victim of domestic violence or other negatively perceived labels and hence many find accessing these services at best frustrating and at worst, traumatising. In addition there are many mainstream services and activities that are open to the public that women have identified they would like to use and would find helpful. However, consultations with women and professionals from community organisations have identified that the ability for women to access information about these services and activities is patchy.
 
 # Prize
-Award of cash to the value of $750
+Award of cash up to the value of $750
 
 # Eligibility Criteria
 Use  at least one  city of Melbourne dataset.

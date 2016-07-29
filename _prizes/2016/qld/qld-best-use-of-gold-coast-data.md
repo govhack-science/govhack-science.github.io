@@ -14,7 +14,7 @@ type: Theme
 Best use of the City of Gold Coast's open data.
 
 # Prize
-Cash  to the value of $1,000
+Cash  up to the value of $1,000
 
 # Eligibility Criteria
 Entry must reuse at least one City of Gold Coast dataset available at https://data.gov.au/organization/city-of-gold-coast

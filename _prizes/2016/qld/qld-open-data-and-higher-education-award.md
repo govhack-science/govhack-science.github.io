@@ -13,7 +13,7 @@ The best use of open data to enhance higher education.
 If we say open data & higher education - what are your ideas?
 
 # Prize
-Cash  to the value of $1,000
+Cash  up to the value of $1,000
 
 # Eligibility Criteria
 Entry must use at least one Qld open government data set from http://data.qld.gov.au. Bonus points for using open research data.

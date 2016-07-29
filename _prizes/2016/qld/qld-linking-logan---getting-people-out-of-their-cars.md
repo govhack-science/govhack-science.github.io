@@ -14,7 +14,7 @@ Best hack that helps Logan residents to get around.  Your hack could help identi
 Ideas: Transit information combined with ABS data and Go-Card transaction records could be used to determine how long a journey would take using public transport, and encourage public transport use by showing the number of people who already use it to make that journey.  Bicycle network, traffic, and public transport data could be used to compare modal travel times.
 
 # Prize
-Cash to the value of $1,000
+Cash up to the value of $1,000
 
 # Eligibility Criteria
 Must make use of at least one open dataset from Logan’s Open Data Portal:  http://data.logancity.opendata.arcgis.com/

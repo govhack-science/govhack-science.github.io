@@ -15,7 +15,7 @@ This could be the impact on the existing community and/or business. It could inf
 Examples that could be used, but are not limited to, include: Light rail Gold Coast, Light rail Canberra, Light rail Sydney; Proposed second airport Sydney, Proposed Freeway bypass
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 Combine Australian Business Register (ABR) data with other publicly available datasets

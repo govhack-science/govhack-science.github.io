@@ -20,7 +20,7 @@ Data – City of Ballarat data is hosted on www.data.gov.au, with state governme
 Judging for this challenge will be on the concept of your hack. This challenge is not just limited to applications but could include visualisations, or any tool you may think of – we will leave that one to you. The team who is judged to have the best concept will receive $1000.
 
 # Prize
-Award of cash to the value of $1,000
+Award of cash up to the value of $1,000
 
 # Eligibility Criteria
 Data – City of Ballarat data is hosted on www.data.gov.au, with state government information at www.data.vic.gov.au. The ABS also publish information at www.abs.gov.au.

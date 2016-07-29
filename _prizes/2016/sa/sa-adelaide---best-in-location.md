@@ -13,7 +13,7 @@ type: Best In
 Best entry for the location of Adelaide
 
 # Prize
-Cash or voucher to the value of $1,500
+Cash or voucher up to the value of $1,500
 
 # Eligibility Criteria
 Awarded by the location sponsors to the best entry for the location.

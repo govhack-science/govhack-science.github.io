@@ -19,7 +19,7 @@ So here is your challenge. Make us *"that thing"* we need. The dankest of the da
 *"But what makes it cool?"* you ask?
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 Entries MUST be cross-team and collaborative.

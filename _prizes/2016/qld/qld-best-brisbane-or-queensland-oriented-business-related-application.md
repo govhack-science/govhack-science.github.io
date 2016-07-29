@@ -15,7 +15,7 @@ type: Theme
 Governments everywhere provide services and information for and about businesses. This category is about exploring new and interesting ways to support businesses in and around Brisbane/Queensland. Awarded to the best entrant from either the Brisbane Official Event, Brisbane Maker Node, or Brisbane Youth Node.
 
 # Prize
-Cash  to the value of $500
+Cash  up to the value of $500
 
 # Eligibility Criteria
 Be a participants at one of the Brisbane events (Offical, Maker, Youth).

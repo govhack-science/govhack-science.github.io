@@ -13,7 +13,7 @@ type: Bounty
 The most innovative hack of location data.
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
 Dependencies – Use of PSMA’s datasets: GNAF, Administrative Boundaries and/or Geoscape

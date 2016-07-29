@@ -13,6 +13,6 @@ type: Bounty
 Surprise us! Most interesting representation/visualisation to highlight stories/insights from the data! Mash-up with other data to show the Personal Property Securities Register's (PPSR) role/value in the economy!
 
 # Prize
-Award to the value of $1,000
+Award up to the value of $1,000
 
 # Eligibility Criteria
