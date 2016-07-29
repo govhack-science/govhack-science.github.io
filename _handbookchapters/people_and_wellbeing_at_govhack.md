@@ -1,11 +1,14 @@
 ---
 slug: 'people_and_wellbeing_at_govhack'
 title: 'People and Wellbeing at GovHack'
-last_updated: '2016-07-24T13:24:26.960Z'
+last_updated: '2016-07-29T04:30:02.388Z'
 categories:
   - comp
 tags:
   - competing
+  - rules
+  - event
+  - venue
 ---
 
 ## **People**

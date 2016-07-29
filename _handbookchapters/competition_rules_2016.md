@@ -1,11 +1,12 @@
 ---
 slug: 'competition_rules_2016'
 title: 'Competition Rules 2016'
-last_updated: '2016-07-26T09:03:20.219Z'
+last_updated: '2016-07-29T04:25:50.727Z'
 categories:
   - comp
 tags:
   - preparing
+  - rules
 ---
 
 ## What can I submit as a hack?

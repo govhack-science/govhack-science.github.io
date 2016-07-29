@@ -1,11 +1,13 @@
 ---
 slug: 'prepare_your_video'
 title: 'Prepare Your Video'
-last_updated: '2016-07-28T11:37:24.716Z'
+last_updated: '2016-07-29T04:28:08.840Z'
 categories:
   - comp
 tags:
   - creating
+  - video
+  - hackerspace
 ---
 
 ## Prepare your video
