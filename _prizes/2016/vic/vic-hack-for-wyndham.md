@@ -14,7 +14,7 @@ The Best entry  that uses open data  to create something useful for the people o
 Entries may also support other communties in Victoria or Australia.
 
 # Prize
-$500 Gift Voucher
+Gift voucher up to the value of $500
 
 # Eligibility Criteria
 Must use at least one dataset from the          
