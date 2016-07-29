@@ -12,7 +12,7 @@ type: Theme
 The entry which promotes a healthy and sustainable marine and coastal environment in Western Australia.
 
 # Prize
-Award of $500
+Cash prize(s) up to the value of $500
 
 # Eligibility Criteria
 Use of relevant dataset available through the Western Australian Government's data portal (data.wa.gov.au)
