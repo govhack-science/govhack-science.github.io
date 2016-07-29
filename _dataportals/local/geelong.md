@@ -1,5 +1,5 @@
 ---
-name: City of Geeolong
+name: City of Geelong
 gid: geelong
 website_url: https://data.gov.au/organization/city-of-greater-geelong
 logo_url: /resources/csiro-logo.png
