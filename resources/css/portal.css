@@ -1101,7 +1101,6 @@ img.gh-sponsor-logo {
 .gh-tiles .tile p + p {
     margin-top: .25em;
 }
-
 .gh-tiles a.tile {
     text-decoration: none;
     transition: transform .2s ease;
@@ -1127,6 +1126,18 @@ img.gh-sponsor-logo {
 }
 .gh-tiles .tile .tile-caption {
     margin: 0 15px;
+}
+.gh-tiles .tile.tile--hackerspace {
+    background-image: url('/resources/images/tiles/hackerspace@2x.png');
+}
+.gh-tiles .tile.tile--prizes {
+    background-image: url('/resources/images/tiles/prize@2x.png');
+}
+.gh-tiles .tile.tile--handbook {
+    background-image: url('/resources/images/tiles/handbook@2x.png');
+}
+.gh-tiles .tile.tile--datasets {
+    background-image: url('/resources/images/tiles/data2@2x.png');
 }
 
 hr {

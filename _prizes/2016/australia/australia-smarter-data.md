@@ -1,0 +1,20 @@
+---
+category: australia
+gid: australia-smarter-data
+jurisdiction: australia
+name: Smarter Data
+organisations:
+  - australian-taxation-office
+organisation_title: ATO
+title: Smarter Data
+type: Bounty
+---
+
+The challenge is to find new ways to interrogate the ATO Dataset and help people with little or no statistical background better understand the effect of ATO data on other things. In particular you should look at ways to identify weak signals caused by tax data in other data sets where the impacts are first seen somewhere other than in the Tax data BUT are caused or heavily influenced by, the existence of that data.
+Hint: Ask yourself questions like : What’s the social impact of financial hardship?  How do lifestyle factors impact income levels and wealth generation?  What’s the impact of education spending on incomes, What links can we identify between unemployment, income and marriage separation? How useful are the SEIFA regions as indicators of taxation impacts?
+
+# Prize
+Award to the value of $1,000
+
+# Eligibility Criteria
+the ATO Dataset
