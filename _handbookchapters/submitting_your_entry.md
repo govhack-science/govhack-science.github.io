@@ -1,11 +1,12 @@
 ---
 slug: 'submitting_your_entry'
 title: 'Submitting your entry'
-last_updated: '2016-07-27T12:21:06.657Z'
+last_updated: '2016-07-29T04:29:07.378Z'
 categories:
   - comp
 tags:
   - submitting
+  - hackerspace
 ---
 
 ## Submitting your entry

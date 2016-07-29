@@ -1,11 +1,13 @@
 ---
 slug: 'what_can_i_submit_as_a_hack'
 title: 'What can I submit as a Hack'
-last_updated: '2016-07-27T12:20:47.774Z'
+last_updated: '2016-07-29T04:29:28.016Z'
 categories:
   - comp
 tags:
   - creating
+  - ideas
+  - hack
 ---
 
 ## What can I submit as a hack?

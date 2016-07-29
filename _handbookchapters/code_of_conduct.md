@@ -1,11 +1,12 @@
 ---
 slug: 'code_of_conduct'
 title: 'Code of Conduct'
-last_updated: '2016-07-24T16:21:07.162Z'
+last_updated: '2016-07-29T04:25:44.279Z'
 categories:
   - comp
 tags:
   - preparing
+  - rules
 ---
 
 By participating in GovHack, as a competitor, you agree to the following:
