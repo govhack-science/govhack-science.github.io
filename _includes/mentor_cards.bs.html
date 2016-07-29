@@ -76,6 +76,7 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if mentor.contact.email %}
                     <li>
                         <a href="mailto:{{ mentor.contact.email }}">
                             <span class="fa-stack fa-lg">
@@ -84,6 +85,7 @@
                             </span>
                         </a>
                     </li>
+                    {% endif %}
                   </ul>
                   
                 {% endif %}
