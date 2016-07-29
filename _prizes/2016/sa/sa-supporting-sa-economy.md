@@ -11,7 +11,7 @@ type: Theme
 The best entry that supports new and growth industries. The winning entry has the most potential to create jobs, investment, international business, students to study in SA or visitors to SA.
 
 # Prize
-Award of $1,000 for the winning entry
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Must use South Australian data discoverable on https://data.sa.gov.au/
