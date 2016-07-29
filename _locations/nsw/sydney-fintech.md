@@ -35,17 +35,17 @@ contact:
   facebook: Tyro-FinTech-Hub-1746330092268665
   email: sydney-theme@govhack.org
 catering: BYO Lunch, there will also be an organised lunch run where you can put $15-20 towards and have it delivered to you.
-dataportals:
-  - APRA
-  - RBA
-  - APCA
-  - Austrac
-  - Treasury
-  - ATO
-  - ABS
-  - ASIC
-  - Centrelink
-  - Medicare
+#dataportals:
+#  - APRA
+#  - RBA
+#  - APCA
+#  - Austrac
+#  - Treasury
+#  - ATO
+#  - ABS
+#  - ASIC
+#  - Centrelink
+#  - Medicare
 is_capital_city: true
 display_weight: 50
 ---
