@@ -19,13 +19,13 @@ venue:
 times:
   friday:
     open: 05:30 PM
-    close: 11:59 PM
+    close: 10:00 PM
   saturday:
-    open: 12:00 AM
-    close: 11:59 PM
+    open: 08:30 AM
+    close: 10:00 PM
   sunday:
-    open: 12:00 AM
-    close: 05:00 PM
+    open: 08:30 AM
+    close: 08:00 PM
 images:
   - https://www.govhack.org/wp-content/uploads/2016/07/stonechalk.png
   - https://s3-ap-southeast-2.amazonaws.com/2016eventregistration/Sydney-nsw/HA%23hackaus.png
