@@ -18,7 +18,7 @@ venue:
   public_transport: Circular Quay railway station is 2 mins walk away
 times:
   friday:
-    open: 05:30 PM
+    open: 05:00 PM
     close: 10:00 PM
   saturday:
     open: 08:30 AM
