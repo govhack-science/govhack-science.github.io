@@ -30,8 +30,11 @@ layout: bootstrap
       {% endcapture %}
       <h4>Locations: {{ locations }} </h4>
     {% endif %}
-    
+
+    <div class="alert alert-info">We apologise but prize info is temporarily unavailable. They will be back soon - stay in touch with your hosts for announcements.</div>
+    {% comment %}
     {{ page.content }}
+    {% endcomment %}
 
     <a class="btn btn-lg btn-primary" href="handbook/comp/receiving_awards.html" style="text-transform: none;">
         <i class="fa fa-info fa-5x pull-left"></i> All cash prizes are <u>up to the value</u> stated on the prize.<br>GovHack reserves the right to amend the value of<br> cash prizes if event running costs exceed the total<br> sponsorship collected. Click here for more information.
