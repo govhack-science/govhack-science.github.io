@@ -14,7 +14,7 @@ Smart Cities enable individuals and communities to improve their lives and creat
 Understanding human behaviour and the environment in your city  may help you ideate in this space.   What can we do smarter in our city?  Energy usage , Climate controlled buildings , Public Transit, walking and bicycling, Emissions, Waste management,  Private Vehicle usage, Demographic data, Event information,- Government services
 
 # Prize
-Cash award  $1,500
+Cash prize(s) up to the value of $1000
 
 # Eligibility Criteria
 Datasets from NSW Open Data portal and local council datasets
