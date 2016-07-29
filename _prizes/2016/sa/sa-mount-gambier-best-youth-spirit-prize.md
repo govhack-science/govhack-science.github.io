@@ -14,7 +14,7 @@ type: Spirit
 Contributed to a positive experience for all through sharing, caring and actively participating.
 
 # Prize
-Harvey Norman Voucher $200
+Harvey Norman Voucher up to $200
 
 # Eligibility Criteria
 Awarded by the crew to a youth participant at each location at closing of the competition weekend.
