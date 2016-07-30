@@ -1,12 +1,12 @@
 ---
 category: australia
-gid: australia-student-droput-rates
+gid: australia-student-dropout-rates
 jurisdiction: australia
-name: Student Droput Rates
+name: Student Dropout Rates
 organisations:
   - department-of-education-and-training
 organisation_title: Department of Education
-title: Student Droput Rates
+title: Student Dropout Rates
 type: Bounty
 ---
 

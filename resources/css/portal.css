@@ -998,6 +998,9 @@ h1[id], h2[id], h3[id], h4[id]/*, a[name]*/ {
   margin-top: -110px;
   pointer-events: none;
 }
+h1[id] a, h2[id] a, h3[id] a, h4[id] a {
+  pointer-events: all;
+}
 
 .dataset-category {
   margin-left: -34px;
