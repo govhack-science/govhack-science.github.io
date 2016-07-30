@@ -29,6 +29,8 @@ For metadata regarding the Census data items displayed in this dataset, see the 
 
 Data items available are State/Territory, Statistical Area Level 2, Age Group, Sex, Country of Birth, Industry, Occupation, Income and Highest Educational Attainment.
 
+--> [DOWNLOAD THE RAW DATA FILE HERE](http://portal.govhack.org/datasets/2016/australia/australian-bureau-of-statistics/CoTSM.zip) <--
+
 **Data Explorers**
 
 * [Datacube explorer and API Query Building tools](http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_CTSM) under GovHack
