@@ -7,4 +7,4 @@ jurisdiction: vic
 type: local-portal
 ---
 
-The data portal for all City of Geelong data.
+The data portal for all Wyndham City Council data.
