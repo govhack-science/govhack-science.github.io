@@ -6,7 +6,7 @@ name: Paddock to Plate Hack
 organisations:
   - ncris-research-data-and-infrastructure-group
   - department-of-infrastructure-and-regional-development
-organisation_title: NCRIS (TERN) & Department of Infrastructure & Regional Development
+organisation_title: NCRIS & Department of Infrastructure & Regional Development
 title: Paddock to Plate Hack
 type: Major
 ---
