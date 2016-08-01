@@ -48,6 +48,9 @@ collections:
   handbookchapters:
     output: true
 
+  projects:
+    output: true
+
 defaults:
   - scope:
       path: "_themes"
@@ -120,3 +123,9 @@ defaults:
     values:
       layout: handbook_chapter
       permalink: /handbook/:categories/:title.html
+
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project

@@ -1,0 +1,21 @@
+---
+layout: bootstrap
+title: Projects
+---
+
+<!-- Project Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>Projects</h1>
+              <!--<p class="text-primary">Prizes that everyone across Australia and New Zealand can compete for!</p>-->
+          </div>
+        </div>
+        <div class="row">
+            {% for project in site.projects %}
+                <a href="{{ project.url }}">{{ project.project_title }}</a><br>
+            {% endfor %}
+        </div>
+    </div>
+</section>
