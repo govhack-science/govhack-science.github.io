@@ -45,6 +45,7 @@ prizes:
 - vic-the-urban-forest
 - vic-vic-map-features-of-interest
 - 'vic-how-can-city-of-melbourne-work-with-the-community-to-   develop-a-better-understanding-of-the-city’s-biodiversity?'
+- vic-melbourne-ecology
 project_title: Legends of Tomorrow
 project_url: http://www.shapethefuture.info
 repo:

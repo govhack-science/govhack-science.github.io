@@ -72,6 +72,7 @@ prizes:
 - vic-the-regional-challenge
 - vic-vic-map-features-of-interest
 - 'vic-how-can-city-of-melbourne-work-with-the-community-to-   develop-a-better-understanding-of-the-city’s-biodiversity?'
+- vic-melbourne-ecology
 project_title: CRITRS
 project_url: http://mens.ly/files/critrs-debug-demo.apk
 repo:
