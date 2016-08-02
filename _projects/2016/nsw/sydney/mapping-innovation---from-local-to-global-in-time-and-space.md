@@ -40,6 +40,7 @@ repo:
   url: https://github.com/tomvalorsa/govhack2016
 team_name: Gov, Sweat and Tears
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/GovHack_360p.mp4
   type: vimeo
   url: https://vimeo.com/176907534
 ---

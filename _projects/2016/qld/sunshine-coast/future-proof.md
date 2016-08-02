@@ -23,6 +23,7 @@ datasets_used:
   url: https://data.gov.au/dataset/jobs-services-australia-vacancy-data
 event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2191
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/future-proof-logo-inverted.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

@@ -11,6 +11,7 @@ datasets_used:
   url: https://www.openstreetmap.org/
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/831
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%2010.56.46%20am.png
 jurisdiction: act
 prizes:
 - australia-creative-humanities-hack

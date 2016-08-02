@@ -5,6 +5,7 @@ datasets_used:
   url: http://portal.govhack.org/sponsors/abc.html
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2366
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/transparent_opinion%20matters%20logo.png
 jurisdiction: nsw
 prizes:
 - australia-abc-news-content

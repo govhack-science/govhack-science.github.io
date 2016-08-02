@@ -14,6 +14,7 @@ datasets_used:
   url: http://catalogue.beta.data.wa.gov.au/dataset/adopt-a-soldier
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2981
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hack_to_the_future_600x267.png
 jurisdiction: wa
 prizes:
 - australia-that-thing-we-all-need

@@ -11,6 +11,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/printable-3d-model-of-a-muttaburrasaurus-skull
 event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3041
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ammonitebot.jpg
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack

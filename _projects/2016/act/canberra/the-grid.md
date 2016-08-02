@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.gov.au/dataset/8b65c3a4-7010-4a79-8eaa-5621b750347f
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2246
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%207.53.39%20pm.png
 jurisdiction: act
 prizes:
 - australia-future-australia-hack

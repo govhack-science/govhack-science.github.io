@@ -20,6 +20,7 @@ datasets_used:
   url: https://www.ausgrid.com.au/streetlight#/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1776
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/datacake_1.jpg
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

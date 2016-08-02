@@ -14,6 +14,7 @@ datasets_used:
   url: https://www.google.com.au/maps
 event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3016
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/innovation_where.png
 jurisdiction: qld
 prizes:
 - australia-ip-rights

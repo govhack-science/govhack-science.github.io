@@ -53,6 +53,7 @@ datasets_used:
   url: https://data.gov.au/dataset/psma-administrative-boundaries
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2741
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/competition%20ico.png
 jurisdiction: vic
 prizes:
 - australia-abc-news-content

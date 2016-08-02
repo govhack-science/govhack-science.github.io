@@ -44,6 +44,7 @@ repo:
   url: https://github.com/HanweiShao/Grafitti
 team_name: Splash
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Unleashed%202016%20-%20Splash%20-%20YouTube.MP4
   type: youtube
   url: https://www.youtube.com/watch?v=2a1DRaiu4Vc&feature=youtu.be
 ---

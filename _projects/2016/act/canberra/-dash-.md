@@ -14,6 +14,7 @@ datasets_used:
   url: http://www.nemweb.com.au/mms.GRAPHS/data/
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2401
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture_3.png
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

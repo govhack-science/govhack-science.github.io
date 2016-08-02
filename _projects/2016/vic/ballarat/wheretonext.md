@@ -29,6 +29,7 @@ datasets_used:
   url: https://data.gov.au/dataset/ballarat-footpaths
 event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1521
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ware2next.png
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

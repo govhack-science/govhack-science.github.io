@@ -5,6 +5,7 @@ datasets_used:
   url: https://data.gov.au/dataset/taxation-statistics-individual-sample-files
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3021
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/brain-gears.jpg
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

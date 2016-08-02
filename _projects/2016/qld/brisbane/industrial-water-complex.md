@@ -35,6 +35,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/emissions-from-industrial-facilities-in-queensland-2000
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1471
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%2012.04.39%20pm.png
 jurisdiction: qld
 prizes:
 - qld-best-innovative-use-of-data-sets

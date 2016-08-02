@@ -29,6 +29,7 @@ datasets_used:
   url: https://data.qld.gov.au
 event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1896
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/noun_88856_cc.png
 jurisdiction: qld
 prizes:
 - australia-data-intelligence-hack

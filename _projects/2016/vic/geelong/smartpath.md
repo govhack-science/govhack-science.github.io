@@ -29,6 +29,7 @@ datasets_used:
   url: http://sydney.edu.au/medicine/public-health/prevention-research/news/reports/Walking%20to%20work%202001-2011.pdf
 event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1906
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/smartpath_banner.png
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

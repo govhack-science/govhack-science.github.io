@@ -17,6 +17,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/queensland-resilience-index
 event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2721
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dingo%20pack%20icon.png
 jurisdiction: qld
 prizes:
 - australia-entrepreneurial-hack

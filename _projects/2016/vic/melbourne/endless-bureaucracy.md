@@ -14,6 +14,7 @@ datasets_used:
   url: https://www.censusdata.abs.gov.au/datapacks/
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2781
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/endless-bureaucracy-logo.png
 jurisdiction: vic
 prizes:
 - australia-that-thing-we-all-need

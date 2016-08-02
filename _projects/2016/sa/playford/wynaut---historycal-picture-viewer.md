@@ -8,6 +8,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/australia/national-portrait-gallery/portraits-and-people.html
 event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/891
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture_1.png
 jurisdiction: sa
 prizes:
 - australia-abc-news-content

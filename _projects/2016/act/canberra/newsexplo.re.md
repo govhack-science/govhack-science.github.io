@@ -11,6 +11,7 @@ datasets_used:
   url: http://www.alchemyapi.com/
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2446
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_300dpi.png
 jurisdiction: act
 prizes:
 - australia-abc-news-content

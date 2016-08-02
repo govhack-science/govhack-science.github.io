@@ -37,6 +37,7 @@ repo:
   url: http://www.muhammadfurqan.com/australlite/
 team_name: Hackaroos
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Australlite_360p.mp4
   type: unknown
   url: https://animoto.com/play/7JOaZk7O6Y6nPXX4qabKMA#
 ---

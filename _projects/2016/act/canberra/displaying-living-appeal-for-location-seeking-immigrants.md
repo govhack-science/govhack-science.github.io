@@ -11,6 +11,7 @@ datasets_used:
   url: https://data.gov.au/dataset/federal-electoral-boundaries
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1821
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%204.13.58%20pm.png
 jurisdiction: act
 prizes:
 - australia-data-intelligence-hack

@@ -17,6 +17,7 @@ datasets_used:
   url: https://github.com/Macca2805/WAPOL/
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1266
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/images.jpg
 jurisdiction: wa
 prizes:
 - australia-commerically-viable-hack

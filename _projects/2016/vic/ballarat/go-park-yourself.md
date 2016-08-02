@@ -23,6 +23,7 @@ datasets_used:
   url: https://data.gov.au/dataset/ballarattrees
 event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1231
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/parking.png
 jurisdiction: vic
 prizes:
 - australia-community-resilience-hack
@@ -33,7 +34,7 @@ prizes:
 - vic-best-use-of-ballarat-data
 - vic-smart-parking-in-ballarat
 project_title: Go Park Yourself
-project_url: http://2016.hackerspace.govhack.org/107.170.233.8%3A8888/
+project_url: https://2016.hackerspace.govhack.org/107.170.233.8%3A8888/
 repo:
   name: goparkyourself
   type: bitbucket

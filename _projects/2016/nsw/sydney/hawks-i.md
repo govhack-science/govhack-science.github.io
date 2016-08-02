@@ -29,6 +29,7 @@ datasets_used:
   url: http://geofabric.bom.gov.au/simplefeatures/ows?service=WMS&request=GetCapabilities
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1946
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/city%20hawk_0.jpg
 jurisdiction: nsw
 prizes:
 - australia-abc-news-content

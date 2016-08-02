@@ -11,6 +11,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/traffic-intersection-count
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1881
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/jamart.jpg
 jurisdiction: sa
 prizes:
 - australia-data-intelligence-hack

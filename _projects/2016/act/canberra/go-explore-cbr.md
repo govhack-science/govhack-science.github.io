@@ -26,6 +26,7 @@ datasets_used:
   url: https://www.data.act.gov.au/Infrastructure-and-Utilities/Fitness-Sites/h4qc-3txc
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/866
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_20.png
 jurisdiction: act
 prizes:
 - australia-commerically-viable-hack

@@ -8,6 +8,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/australia/australian-business-register/abn-lookup-webservices.html
 event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2706
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/civics-1million-identity-fraud-protection.jpg
 jurisdiction: nsw
 prizes:
 - australia-that-thing-we-all-need

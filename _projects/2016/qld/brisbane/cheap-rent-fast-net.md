@@ -17,6 +17,7 @@ datasets_used:
   url: https://data.gov.au/dataset/mybroadband-centroid-points
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2896
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo.jpg
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

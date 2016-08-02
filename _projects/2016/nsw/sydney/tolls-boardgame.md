@@ -5,6 +5,7 @@ datasets_used:
   url: https://api.transport.nsw.gov.au:8443/v1/ttds/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3111
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/finale.png
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

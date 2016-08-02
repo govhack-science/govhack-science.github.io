@@ -11,6 +11,7 @@ datasets_used:
   url: http://www.vanguard.business.gov.au/ourservices/Pages/Federated-Authentication-Service-(FAS).aspx
 event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2391
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/troll_bridge.jpg
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

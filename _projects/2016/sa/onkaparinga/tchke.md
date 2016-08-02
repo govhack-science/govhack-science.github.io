@@ -8,6 +8,7 @@ datasets_used:
   url: http://lga.sa.gov.au
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2756
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/img_0820.png
 jurisdiction: sa
 prizes:
 - australia-location-data

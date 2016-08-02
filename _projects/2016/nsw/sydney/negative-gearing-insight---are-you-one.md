@@ -8,6 +8,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202011?OpenDocument
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1526
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/legion_0.jpg
 jurisdiction: nsw
 prizes:
 - australia-creative-humanities-hack

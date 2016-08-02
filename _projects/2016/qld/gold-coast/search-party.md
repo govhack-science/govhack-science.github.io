@@ -38,6 +38,7 @@ datasets_used:
   url: http://services.ga.gov.au/site_7/rest/services/Topographic_Base_Map_WM/MapServer/353
 event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2616
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/search%20party.png
 jurisdiction: qld
 prizes:
 - australia-abc-news-content

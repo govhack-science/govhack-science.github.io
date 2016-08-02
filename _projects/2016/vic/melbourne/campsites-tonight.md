@@ -8,6 +8,7 @@ datasets_used:
   url: https://www.data.vic.gov.au/data/dataset/parks-victoria-camp-grounds-and-huts
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2776
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/adventure-shibe.jpg
 jurisdiction: vic
 prizes:
 - australia-that-thing-we-all-need

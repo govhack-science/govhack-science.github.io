@@ -62,6 +62,7 @@ datasets_used:
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/6202.0
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2641
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/australianmap.png
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need
@@ -87,6 +88,7 @@ repo:
   url: https://www.dropbox.com/sh/z2u4g4kaw8itbfh/AADYdCsUm9oW4_A01OKmf6QCa?dl=0
 team_name: Diamonds
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/diamond_v4.mov
   type: youtube
   url: https://youtu.be/GqRGzqoBBsk
 ---

@@ -53,6 +53,7 @@ datasets_used:
   url: ftp://ftp.bom.gov.au/anon/gen/fwo/IDV10450.xml
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2171
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/18991-nrvyk1.jpg
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

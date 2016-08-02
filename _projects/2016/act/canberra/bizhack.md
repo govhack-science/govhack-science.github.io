@@ -35,6 +35,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/6524.0.55.0022012-13?OpenDocument
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1111
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_1.jpg
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

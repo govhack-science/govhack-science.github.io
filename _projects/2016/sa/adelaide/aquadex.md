@@ -50,6 +50,7 @@ repo:
   url: https://github.com/Unleashed2016/aquadex
 team_name: Bob's gang
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/AquaDex%20v19%20Final%20HD.mp4
   type: youtube
   url: https://youtu.be/9x5itE49uMw
 ---

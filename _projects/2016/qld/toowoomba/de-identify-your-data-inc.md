@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.qld.gov.au/static-content/data-event/govhack/2016/challenge-wally
 event: toowoomba
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1431
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dydinclogo.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

@@ -14,6 +14,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.003July%202011?OpenDocument
 event: rockhampton-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1621
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/grey-areas-logo-hr-300dpi-rgb.jpg
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack

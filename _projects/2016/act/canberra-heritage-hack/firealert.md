@@ -14,6 +14,7 @@ datasets_used:
   url: https://data.emergency.vic.gov.au/Show?pageId=getIncidentRSS
 event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/746
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/mainlogo.png
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

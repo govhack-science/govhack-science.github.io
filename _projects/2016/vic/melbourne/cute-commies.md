@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.gov.au/dataset/portraits-and-people
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2811
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/1878069-p1.jpg
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

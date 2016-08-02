@@ -8,6 +8,7 @@ datasets_used:
   url: https://content-api-govhack.abc-prod.net.au/v1/6946348
 event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/806
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/newspulselogo_0.png
 jurisdiction: vic
 prizes:
 - australia-abc-news-content

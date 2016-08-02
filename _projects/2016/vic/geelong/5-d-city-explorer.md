@@ -14,6 +14,7 @@ datasets_used:
   url: https://data.gov.au/dataset/power-and-electricity-usage-city-of-greater-geelong
 event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1516
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/004_0.jpg
 jurisdiction: vic
 prizes:
 - australia-future-australia-hack
@@ -30,6 +31,7 @@ repo:
   url: http://5dcityexplorer.blogspot.com.au/
 team_name: IDeEA Lab
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/IDEEA_SUBMISSION.mp4
   type: youtube
   url: https://youtu.be/TNKQua8NasY
 ---

@@ -16,6 +16,7 @@ repo:
   url: https://github.com/afrobeard/deaddog
 team_name: Team Dead Dog
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Export-Demo.mov
   type: youtube
   url: https://www.youtube.com/watch?v=WZ-vGxfUwOk&feature=youtu.be
 ---

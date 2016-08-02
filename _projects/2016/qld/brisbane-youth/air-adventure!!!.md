@@ -19,6 +19,7 @@ repo:
   url: https://github.com/LOVE-2-CODE/Air-Adventure
 team_name: Futuristic Blanket
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/govhack.mov
   type: youtube
   url: https://youtu.be/qJHPFWrwvys
 ---

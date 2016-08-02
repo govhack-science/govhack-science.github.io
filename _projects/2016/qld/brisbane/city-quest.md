@@ -20,6 +20,7 @@ datasets_used:
   url: https://www.data.brisbane.qld.gov.au/data/dataset/b046e9e6-99fe-4727-a03f-76ed568ff2e7/resource/cd10cc32-20d7-49a8-8f54-0ab3a2a72dfb/download/historic-cemeteries-29jun15.csv
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/971
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/artboard%2014.png
 jurisdiction: qld
 prizes:
 - qld-best-innovative-use-of-data-sets

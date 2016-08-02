@@ -105,6 +105,7 @@ repo:
   url: http://yourlocaldashboard.decodeconsulting.com.au/downloads/AUDashboard-Data.zip
 team_name: Baby Got Hack!
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Baby%20Got%20Hack%20-%20AU%20Dahsboard.mov
   type: youtube
   url: https://youtu.be/ekEByHW20Tg
 ---

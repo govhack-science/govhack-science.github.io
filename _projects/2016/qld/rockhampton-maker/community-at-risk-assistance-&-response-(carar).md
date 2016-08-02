@@ -14,6 +14,7 @@ datasets_used:
   url: https://data.gov.au/dataset/geocoded-national-address-file-g-naf
 event: rockhampton-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2411
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture_5.png
 jurisdiction: qld
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

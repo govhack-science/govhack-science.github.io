@@ -11,6 +11,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/emissions-and-waste-transfers-from-industrial-facilities-in-queensland-2015
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1596
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dsc07337.jpg
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need
@@ -29,7 +30,7 @@ prizes:
 - qld-supporting-the-best-of-brisbane
 - qld-supporting-the-best-of-brisbane
 project_title: Mother Nature
-project_url: http://2016.hackerspace.govhack.org/physical%20IoT%20project%20explained%20here%3A%20https%3A//mothernature432.wordpress.com/
+project_url: https://2016.hackerspace.govhack.org/physical%20IoT%20project%20explained%20here%3A%20https%3A//mothernature432.wordpress.com/
 repo:
   name: Mother Nature
   type: github

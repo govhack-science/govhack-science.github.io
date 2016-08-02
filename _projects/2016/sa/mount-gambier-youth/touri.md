@@ -20,6 +20,7 @@ datasets_used:
   url: https://data.sa.gov.au/data/dataset/park-land-parks
 event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/926
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/touri.jpg
 jurisdiction: sa
 prizes:
 - australia-that-thing-we-all-need

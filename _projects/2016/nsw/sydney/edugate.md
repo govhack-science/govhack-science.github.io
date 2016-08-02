@@ -45,6 +45,7 @@ repo:
   url: https://drive.google.com/folderview?id=0B7W6Z6_9ht-GVzR3bXJxZVBLb3M&usp=sharing
 team_name: The Pentagon 5
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/GOV-HACK-VIDEO-SML.mov
   type: vimeo
   url: https://vimeo.com/176904675
 ---

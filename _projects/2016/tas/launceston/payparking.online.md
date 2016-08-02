@@ -5,6 +5,7 @@ datasets_used:
   url: https://data.gov.au/dataset/f83e4804-06b1-4ea0-bfea-db5562efa861
 event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1336
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/payparking.online.png
 jurisdiction: tas
 prizes:
 - australia-commerically-viable-hack

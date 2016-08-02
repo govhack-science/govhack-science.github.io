@@ -25,6 +25,7 @@ repo:
   url: https://bitbucket.org/govhack_/herefishyfishyfishy
 team_name: Underscore
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Final.mp4
   type: youtube
   url: https://youtu.be/y2e6x_gko94
 ---

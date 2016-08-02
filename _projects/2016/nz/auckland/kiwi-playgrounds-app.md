@@ -20,6 +20,7 @@ repo:
   url: https://github.com/doughnutnz/tumbleweedgovhack
 team_name: Tumbleweed
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/GH2016%20Tumbleweed.mpeg
   type: unknown
   url: http://prodsol-online.com/eguide/docs/GH2016%20Tumbleweed.mpeg
 ---

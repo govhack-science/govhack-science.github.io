@@ -29,6 +29,7 @@ datasets_used:
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/4364.0.55.001
 event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1301
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo2.png
 jurisdiction: sa
 prizes:
 - australia-community-resilience-hack

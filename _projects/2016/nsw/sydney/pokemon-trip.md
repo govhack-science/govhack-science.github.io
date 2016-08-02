@@ -5,6 +5,7 @@ datasets_used:
   url: https://opendata.transport.nsw.gov.au/direct/full_greater_sydney_gtfs_static.zip
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3006
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%206.56.45%20pm.png
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

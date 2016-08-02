@@ -11,6 +11,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/marine-islands-queensland
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1981
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_5.png
 jurisdiction: qld
 prizes:
 - australia-innovative-ideas-hack

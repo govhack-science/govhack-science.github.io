@@ -8,6 +8,7 @@ datasets_used:
   url: https://developers.google.com/places/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2241
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/img_3656_4.jpg
 jurisdiction: nsw
 prizes:
 - nsw-most-fun-and-creative-use-of-data

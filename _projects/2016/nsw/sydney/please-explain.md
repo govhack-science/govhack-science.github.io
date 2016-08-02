@@ -11,6 +11,7 @@ datasets_used:
   url: http://www.abs.gov.au/websitedbs/censushome.nsf/4a256353001af3ed4b2562bb00121564/datapacksdetails?opendocument&navpos=250
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2326
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/australian.jpg
 jurisdiction: nsw
 prizes:
 - australia-data-intelligence-hack

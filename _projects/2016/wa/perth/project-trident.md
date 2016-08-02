@@ -5,6 +5,7 @@ datasets_used:
   url: http://api.fish.wa.gov.au/webapi/Introduction
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2681
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/trident_1024.png
 jurisdiction: wa
 prizes:
 - australia-innovative-ideas-hack

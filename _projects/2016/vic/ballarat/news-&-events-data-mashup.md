@@ -20,6 +20,7 @@ datasets_used:
   url: https://data.gov.au/dataset/abc-local-stations
 event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2256
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_0.jpg
 jurisdiction: vic
 prizes:
 - australia-abc-news-content

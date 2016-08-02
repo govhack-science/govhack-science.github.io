@@ -78,6 +78,7 @@ repo:
   url: https://github.com/rfern/remark
 team_name: REMARK
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/BreatheEasy.mp4
   type: youtube
   url: https://youtu.be/oJ8S8FV0yag
 ---

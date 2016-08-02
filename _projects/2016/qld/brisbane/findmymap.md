@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/topographic-base-map-web-service
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1996
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/topodude.png
 jurisdiction: qld
 prizes:
 - qld-create-a-cutting-edge-concept---the-science-sandpit!

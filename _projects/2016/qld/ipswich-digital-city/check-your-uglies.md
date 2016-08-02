@@ -20,6 +20,7 @@ datasets_used:
   url: https://canceraustralia.gov.au/affected-cancer/cancer-statistics
 event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1161
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screenshot%202016-07-31%2015.23.22.png
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack
@@ -41,6 +42,7 @@ repo:
   url: https://trello.com/b/MkNf8uSk/check-your-uglies
 team_name: Check your Uglies
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/CYU%20final%20movie%20v1.mp4
   type: google-drive
   url: https://drive.google.com/file/d/0B6yTPaN6e1nJYmVNMU8wQzZLRDQ/view?usp=sharing
 ---

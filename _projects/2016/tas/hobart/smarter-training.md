@@ -29,6 +29,7 @@ datasets_used:
   url: https://ws.sandbox.training.gov.au/Deewr.Tga.Webservices/TrainingComponentService.svc?wsdl
 event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2586
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/headerlogo3.png
 jurisdiction: tas
 prizes:
 - australia-commerically-viable-hack

@@ -20,6 +20,7 @@ datasets_used:
   url: https://www.data.brisbane.qld.gov.au/data/dataset/brisbane-city-council-events
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1221
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13901364_1068149919936638_8887127178317524102_n.jpg
 jurisdiction: qld
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

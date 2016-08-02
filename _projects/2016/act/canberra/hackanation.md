@@ -5,6 +5,7 @@ datasets_used:
   url: http://2016.hackerspace.govhack.org
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2316
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo-new.png
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

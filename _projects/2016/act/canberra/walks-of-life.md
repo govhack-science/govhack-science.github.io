@@ -26,6 +26,7 @@ datasets_used:
   url: https://data.gov.au/dataset/national-drugs-strategy-household-survey
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1666
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_d.jpg
 jurisdiction: act
 prizes:
 - australia-aihw-visualisation

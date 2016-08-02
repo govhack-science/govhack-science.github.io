@@ -30,6 +30,7 @@ repo:
   url: https://github.com/alexg-hacks/will-i-burn
 team_name: Red Hot
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Team%EF%80%A2%20Red%20Hot%20-%20Will%20I%20Burn%EF%80%A5.mov
   type: youtube
   url: https://www.youtube.com/watch?v=qwEP27blgDI
 ---

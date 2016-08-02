@@ -14,6 +14,7 @@ datasets_used:
   url: https://data.brisbane.qld.gov.au/data/dataset/public-drinking-fountain-taps
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2271
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/time%20walks.png
 jurisdiction: qld
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

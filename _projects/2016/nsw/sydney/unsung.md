@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.gov.au/dataset/public-internet-locations-vic
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2216
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/elephant_1.png
 jurisdiction: nsw
 prizes:
 - australia-entrepreneurial-hack

@@ -5,6 +5,7 @@ datasets_used:
   url: https://www.census.abs.gov.au/eCensusWeb/welcome.jsp?opendocument&navpos=800#top2
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2796
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/2263_8.png
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

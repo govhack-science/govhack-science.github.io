@@ -29,6 +29,7 @@ datasets_used:
   url: ''
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2651
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/slides.002.png
 jurisdiction: wa
 prizes:
 - wa-western-australian-community-prize

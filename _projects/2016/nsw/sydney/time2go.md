@@ -5,6 +5,7 @@ datasets_used:
   url: https://opendata.transport.nsw.gov.au/site/en_us/home.html
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1921
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%203.46.07%20pm.png
 jurisdiction: nsw
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

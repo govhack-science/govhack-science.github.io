@@ -37,6 +37,7 @@ repo:
   url: https://drive.google.com/open?id=0B8VuhrvA3CuZMDFlZ2JFTm0xZkE
 team_name: AUSM
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/AUSM%20SmartCare%20Unleashed%202016.mp4
   type: youtube
   url: https://www.youtube.com/watch?v=3dgBtvhDulA&feature=youtu.be
 ---

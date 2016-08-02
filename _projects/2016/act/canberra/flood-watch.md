@@ -14,6 +14,7 @@ datasets_used:
   url: https://github.com/iag-edge-labs/flood-data
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1091
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/layout-2016-07-31-104000%20%282%29.png
 jurisdiction: act
 prizes:
 - australia-data-intelligence-hack

@@ -17,6 +17,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/adelaide-city-council-key-historical-dates
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2141
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/adelographyiconjpg.jpg
 jurisdiction: sa
 prizes:
 - australia-creative-humanities-hack
@@ -38,6 +39,7 @@ repo:
   url: https://github.com/Unleashed2016/adelography
 team_name: Bob's gang
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/adelographynew.mp4
   type: youtube
   url: https://youtu.be/YCRINvG1jVQ
 ---

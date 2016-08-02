@@ -14,6 +14,7 @@ datasets_used:
   url: http://cricos.education.gov.au/
 event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1936
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/educationhub.jpg
 jurisdiction: nsw
 prizes:
 - australia-that-thing-we-all-need
@@ -29,7 +30,7 @@ prizes:
 - nsw-smart-cities-&-collaborative-economy
 - nsw-travelling-with-us
 project_title: Education Hub
-project_url: http://2016.hackerspace.govhack.org/Dashboard%20%3A%20http%3A//13.73.192.97%3A8080%20and%20api%3A%20http%3A//13.73.192.97%3A5000/api/courses/372
+project_url: https://2016.hackerspace.govhack.org/Dashboard%20%3A%20http%3A//13.73.192.97%3A8080%20and%20api%3A%20http%3A//13.73.192.97%3A5000/api/courses/372
 repo:
   name: pinnacle-hack
   type: github

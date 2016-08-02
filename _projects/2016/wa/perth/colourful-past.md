@@ -32,6 +32,7 @@ datasets_used:
   url: https://www.flickr.com/photos/powerhouse_museum/
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2521
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image.jpg
 jurisdiction: wa
 prizes:
 - australia-creative-humanities-hack

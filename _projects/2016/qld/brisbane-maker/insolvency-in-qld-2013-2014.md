@@ -20,6 +20,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012010-14?OpenDocument
 event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3106
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/finished.jpg
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need

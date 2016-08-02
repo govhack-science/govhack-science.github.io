@@ -14,6 +14,7 @@ datasets_used:
   url: http://www.trumba.com/calendars/type.rss?filterview=classses
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1701
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logoforproject.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

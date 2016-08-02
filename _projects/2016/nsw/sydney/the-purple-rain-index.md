@@ -8,6 +8,7 @@ datasets_used:
   url: https://www.google.com.au/maps/streetview/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2016
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/purple-rain-logo.png
 jurisdiction: nsw
 prizes:
 - australia-entrepreneurial-hack

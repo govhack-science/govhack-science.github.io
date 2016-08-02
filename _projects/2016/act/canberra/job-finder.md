@@ -5,6 +5,7 @@ datasets_used:
   url: https://data.gov.au/dataset/jobs-services-australia-vacancy-data/resource/cd69ad9b-428b-46b2-9edc-368fdd4daea6
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2371
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13871699_1124566064282224_750219914_n_0.jpg
 jurisdiction: act
 project_title: Job Finder
 project_url: http://58.178.34.164/index.html

@@ -5,6 +5,7 @@ datasets_used:
   url: https://data.gov.au/dataset/abn-bulk-extract
 event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2116
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/poweringaustralia.png
 jurisdiction: tas
 prizes:
 - australia-creative-humanities-hack

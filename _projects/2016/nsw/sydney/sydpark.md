@@ -14,6 +14,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/act/park-cbr/smartparking-real-time-api.html
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2156
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/pasted%20image%20at%202016_07_31%2003_14%20pm_0.png
 jurisdiction: nsw
 prizes:
 - australia-creative-humanities-hack

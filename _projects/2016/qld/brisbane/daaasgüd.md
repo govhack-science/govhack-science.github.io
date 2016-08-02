@@ -17,6 +17,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3218.02013-14?OpenDocument
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1836
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/binary2.jpg
 jurisdiction: qld
 prizes:
 - australia-hiding-wally

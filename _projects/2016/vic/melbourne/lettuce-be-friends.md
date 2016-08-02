@@ -11,6 +11,7 @@ datasets_used:
   url: https://www.data.vic.gov.au/data/dataset/planning-scheme-zones-vicmap-planning
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2206
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/community%20garden_0.jpg
 jurisdiction: vic
 prizes:
 - australia-community-resilience-hack

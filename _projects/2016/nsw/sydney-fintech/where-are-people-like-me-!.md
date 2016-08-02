@@ -5,6 +5,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/australia/australian-taxation-office/taxation-statistics-aggregated-individual-sample-files.html
 event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2291
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fp.jpg
 jurisdiction: nsw
 prizes:
 - australia-that-thing-we-all-need

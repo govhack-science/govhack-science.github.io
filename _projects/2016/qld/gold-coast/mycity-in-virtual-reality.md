@@ -92,6 +92,7 @@ repo:
   url: https://drive.google.com/open?id=0B-fbh5h3yBJwUVlVREN5cGJ0SmM
 team_name: Team Gold Coast
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/my%20city.mp4
   type: youtube
   url: https://youtu.be/c7Cw-lHqR7s
 ---

@@ -44,6 +44,7 @@ repo:
   url: https://github.com/Unleashed2016/helpme
 team_name: Bob's gang
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Project%202%20Help%20Me%20v021%20The%20Final%20High%20Res%20.mp4
   type: youtube
   url: https://youtu.be/mVGbQMy1LFA
 ---

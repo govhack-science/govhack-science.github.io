@@ -5,6 +5,7 @@ datasets_used:
   url: http://acmssearch.sl.nsw.gov.au/s/search.html?collection=slnsw
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1226
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/teamzeroone_0.png
 jurisdiction: nsw
 prizes:
 - australia-creative-humanities-hack

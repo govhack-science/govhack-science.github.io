@@ -70,6 +70,7 @@ repo:
   url: https://github.com/billymwlei/govhack2016
 team_name: InnovationX
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/InnovationX-Govhack-2016-Submission.mp4
   type: youtube
   url: https://youtu.be/pMLDPN4qevg
 ---

@@ -11,6 +11,7 @@ datasets_used:
   url: https://ptv.vic.gov.au/about-ptv/ptv-data-and-reports/digital-products/ptv-timetable-api/
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2416
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ic_launcher_0.png
 jurisdiction: vic
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

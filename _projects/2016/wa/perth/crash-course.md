@@ -8,6 +8,7 @@ datasets_used:
   url: http://catalogue.beta.data.wa.gov.au/dataset/network-operations-traffic-data-mrwa
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1291
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/4758613588.png
 jurisdiction: wa
 prizes:
 - australia-community-resilience-hack

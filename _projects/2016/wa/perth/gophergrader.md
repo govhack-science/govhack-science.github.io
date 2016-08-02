@@ -43,6 +43,7 @@ repo:
   url: https://github.com/perthgophers/govhack
 team_name: Perth Gophers
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/Presentation1.mp4
   type: youtube
   url: https://youtu.be/7qwuo8lTNAg
 ---

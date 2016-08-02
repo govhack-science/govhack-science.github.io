@@ -1,6 +1,7 @@
 ---
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/786
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_1.jpg
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

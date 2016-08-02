@@ -20,6 +20,7 @@ datasets_used:
   url: https://psma.sharefile.com/d-s5ca4c5ddf114ac8b
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2036
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screenshot_from_2016-07-30_16-33-39.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack
@@ -36,7 +37,7 @@ prizes:
 - qld-supporting-the-best-of-brisbane
 - qld-supporting-the-best-of-brisbane
 project_title: Qschools
-project_url: http://2016.hackerspace.govhack.org/qschools.online
+project_url: https://2016.hackerspace.govhack.org/qschools.online
 repo:
   name: Main GitHub repo containing all code/assets
   type: github

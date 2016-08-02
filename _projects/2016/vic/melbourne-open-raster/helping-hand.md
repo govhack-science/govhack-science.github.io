@@ -8,6 +8,7 @@ datasets_used:
   url: https://data.gov.au/dataset/smart-grid-smart-city-customer-trial-data
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2561
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/favicon.png
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

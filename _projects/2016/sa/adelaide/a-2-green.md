@@ -11,6 +11,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/upark-car-parks-available-spaces
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1186
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/bt_logo_set_full%20logo.png
 jurisdiction: sa
 prizes:
 - australia-that-thing-we-all-need

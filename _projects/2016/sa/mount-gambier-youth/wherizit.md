@@ -17,6 +17,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/0811fefc-637d-4542-a5d3-1a69ce5a5c21
 event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1031
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13884525_277133925989604_2100050170_n.jpg
 jurisdiction: sa
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

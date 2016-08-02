@@ -11,6 +11,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/ses-building-locations
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1371
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/happycarl.png
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack

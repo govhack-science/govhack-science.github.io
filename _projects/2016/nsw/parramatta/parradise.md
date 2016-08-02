@@ -29,6 +29,7 @@ repo:
   url: https://github.com/sutantyo/GovHack2016
 team_name: KanyeSwift2020
 video:
+  alt_url: https://govhack-storage.s3-ap-southeast-2.amazonaws.com/2016/COMBINED_720P.mov
   type: youtube
   url: https://www.youtube.com/watch?v=4T5KZFUw7Y8
 ---

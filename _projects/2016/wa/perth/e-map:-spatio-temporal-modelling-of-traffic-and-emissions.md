@@ -11,6 +11,7 @@ datasets_used:
   url: https://ladsweb.nascom.nasa.gov/data/detail.html?orderID=501057284&email=songyz%40lreis.ac.cn
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2201
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/results.jpg
 jurisdiction: wa
 prizes:
 - australia-data-intelligence-hack

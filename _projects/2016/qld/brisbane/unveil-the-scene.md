@@ -26,6 +26,7 @@ datasets_used:
   url: https://www.data.brisbane.qld.gov.au/data/dataset/regional-business-centres
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1816
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/unveilthescenelogo.jpg
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

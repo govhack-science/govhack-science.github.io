@@ -17,6 +17,7 @@ datasets_used:
   url: http://search.abc.net.au/s/search.html?query=community%20garden&collection=abcall_meta&form=simple
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2516
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo-01.jpg
 jurisdiction: sa
 prizes:
 - australia-abc-news-content

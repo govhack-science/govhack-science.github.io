@@ -11,6 +11,7 @@ datasets_used:
   url: https://www.data.vic.gov.au/data/dataset/crime-by-location-data-table
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2856
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/pasted%20image%20at%202016_07_31%2012_56%20pm.png
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack
