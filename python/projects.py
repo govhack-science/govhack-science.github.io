@@ -11,6 +11,7 @@ import frontmatter
 import yaml
 import io
 import validators
+import re
 
 # Config
 csvfile = "python/data/projects/projects.csv"
@@ -80,21 +81,34 @@ with codecs.open(csvfile, "rb", encoding="utf-8") as f:
 data = tablib.Dataset()
 data.csv = csv
 
+# Group by project name first (multiple rows for each Project Image URL)
+projects_by_name = {}
+projects = []
 for row in data.dict:
+    if row["Project Title"] not in projects_by_name:
+        projects_by_name[row["Project Title"]] = []
+    projects_by_name[row["Project Title"]].append(row)
+
+# The last entry for each project seems to be the one that has the
+# Project Image URL actually used on the project, so discard the others.
+for project_name, rows in projects_by_name.iteritems():
+    projects.append(rows[-1])
+
+for row in projects:
     # Skip unfinished projects
     if row["Project Status"] != "Submitted":
         continue
     
     # Log and skip incomplete projects
-    if row["Video URL"] == "":
+    if row["Video URL"] == "" and row["Video Upload"] == "":
         # print "WARNING: Project '%s' is incomplete! No video provided." % (row["Project Title"].strip())
         continue
     if row["Source URL"] == "":
         # print "WARNING: Project '%s' is incomplete! No repo provided." % (row["Project Title"].strip())
         continue
-    if row["Homepage/Demo URL"] == "":
+    # if row["Homepage/Demo URL"] == "":
         # print "WARNING: Project '%s' is incomplete! No homepage/demo provided." % (row["Project Title"].strip())
-        continue
+        # continue
     # continue
 
     # Assign our project a globally unique id
@@ -136,6 +150,18 @@ for row in data.dict:
     if event_name.lower() not in event_names:
         raise ValueError("Event name '%s' is not valid." % (event_name))
     project["event"] = event_frontmatter[event_name.lower()]["gid"]
+
+    # Set the project's image url
+    # "image_url": row["Project Image URL"].strip(),
+    if row["Project Image URL"] != "":
+        image_url = row["Project Image URL"].strip().lower()
+        r_image = re.compile(r".*\.(jpg|jpeg|png|gif)$")
+        if r_image.match(image_url) != None:
+            project["image_url"] = image_url
+
+    # Set the alternate video URL (GovHack S3 hosted videos)
+    if row["Video Upload"] != "":
+        project["video"]["alt_url"] = row["Video Upload"]
 
     # Determine the video hosting service used
     if "youtube.com" in row["Video URL"] or "youtu.be" in row["Video URL"]:
@@ -188,11 +214,6 @@ for row in data.dict:
 
             if "International Prize: " in prize:
                 prize = prize.replace("International Prize: ", "")
-
-            if prize == "Melbourne's Ecology":
-                # http://2016.hackerspace.govhack.org/prizes/vic-melbournes-ecology
-                # @TODO Skip for now, needs to be added.
-                continue
 
             if prize.lower() not in prize_names:
                 raise ValueError("Prize name '%s' is not valid." % (prize))
