@@ -44,7 +44,7 @@ prizes:
 - vic-local-government-spatial-data-bounty
 - vic-the-urban-forest
 - vic-vic-map-features-of-interest
-- 'vic-how-can-city-of-melbourne-work-with-the-community-to-   develop-a-better-understanding-of-the-city’s-biodiversity?'
+- 'vic-how-can-city-of-melbourne-work-with-the-community-to-develop-a-better-understanding-of-the-citys-biodiversity?'
 - vic-melbourne-ecology
 project_title: Legends of Tomorrow
 project_url: http://www.shapethefuture.info

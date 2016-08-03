@@ -2,12 +2,12 @@
 category: local
 events:
 - melbourne
-gid: 'vic-how-can-city-of-melbourne-make-sure-women-have-access-   to-information-about-the-services,-support-groups-and-mainstream-services-that-are-available-to-them?'
+gid: 'vic-how-can-city-of-melbourne-make-sure-women-have-access-to-information-about-the-services,-support-groups-and-mainstream-services-that-are-available-to-them?'
 jurisdiction: vic
-name: "How can City of Melbourne make sure women have access \Lto information about the services, support groups and mainstream services that are available to them?"
+name: "How can City of Melbourne make sure women have access to information about the services, support groups and mainstream services that are available to them?"
 organisation: city-of-melbourne
 organisation_title: City of Melbourne
-title: "How can City of Melbourne make sure women have access \Lto information about the services, support groups and mainstream services that are available to them?"
+title: "How can City of Melbourne make sure women have access to information about the services, support groups and mainstream services that are available to them?"
 type: Theme
 ---
 

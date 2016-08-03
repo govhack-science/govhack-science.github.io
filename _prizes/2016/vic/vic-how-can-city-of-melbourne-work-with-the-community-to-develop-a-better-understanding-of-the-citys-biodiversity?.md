@@ -2,12 +2,12 @@
 category: local
 events:
 - melbourne
-gid: 'vic-how-can-city-of-melbourne-work-with-the-community-to-   develop-a-better-understanding-of-the-city’s-biodiversity?'
+gid: 'vic-how-can-city-of-melbourne-work-with-the-community-to-develop-a-better-understanding-of-the-citys-biodiversity?'
 jurisdiction: vic
-name: "How can City of Melbourne work with the community to \Ldevelop a better understanding of the city’s biodiversity?"
+name: "How can City of Melbourne work with the community to develop a better understanding of the city’s biodiversity?"
 organisation: city-of-melbourne
 organisation_title: City of Melbourne
-title: "How can City of Melbourne work with the community to \Ldevelop a better understanding of the city’s biodiversity?"
+title: "How can City of Melbourne work with the community to develop a better understanding of the city’s biodiversity?"
 type: Theme
 ---
 
