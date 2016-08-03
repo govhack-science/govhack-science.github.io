@@ -48,7 +48,7 @@ repo:
 team_name: Violet Pipe Dreams
 video:
   type: youtube
-  url: https://www.youtube.com/watch?v=nrv-mHpASao
+  url: https://www.youtube.com/watch?v=Df4p6syw43c&feature=youtu.be
 ---
 
 The projest is going to combine Water Corporation data on waste water processing and storage, and add in rainfall, climate and geo-located useage patterns to maximise the efficiency and reuse of prcious ecologial resources to promote sustainability.
