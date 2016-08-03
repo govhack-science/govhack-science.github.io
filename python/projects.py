@@ -12,6 +12,41 @@ import yaml
 import io
 import validators
 import re
+import string
+
+# https://gist.github.com/seanh/93666
+def format_filename(s):
+    """Take a string and return a valid filename constructed from the string.
+    Uses a whitelist approach: any characters not present in valid_chars are
+    removed. Also spaces are replaced with underscores.
+    
+    Note: this method may produce invalid filenames such as ``, `.` or `..`
+    When I use this method I prepend a date string like '2009_01_15_19_46_32_'
+    and append a file extension like '.txt', so I avoid the potential of using
+    an invalid filename.
+    """
+
+    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    filename = ''.join(c for c in s if c in valid_chars)
+    filename = filename.replace(' ', '_') # I don't like spaces in filenames.
+    return filename
+
+# https://gist.github.com/seanh/93666
+def format_safe(s):
+    """Take a string and return a valid filename constructed from the string.
+    Uses a whitelist approach: any characters not present in valid_chars are
+    removed. Also spaces are replaced with underscores.
+    
+    Note: this method may produce invalid filenames such as ``, `.` or `..`
+    When I use this method I prepend a date string like '2009_01_15_19_46_32_'
+    and append a file extension like '.txt', so I avoid the potential of using
+    an invalid filename.
+    """
+
+    valid_chars = "-_.,'&!/:()? %s%s" % (string.ascii_letters, string.digits)
+    filename = ''.join(c for c in s if c in valid_chars)
+    # filename = filename.replace(' ', '_') # I don't like spaces in filenames.
+    return filename
 
 # Config
 csvfile = "python/data/projects/projects.csv"
@@ -46,10 +81,11 @@ prize_frontmatter = {}
 for root, dirnames, filenames in os.walk(prizesdir):
     for filename in fnmatch.filter(filenames, "*.md"):
         post = frontmatter.load(os.path.join(root, filename))
-        prize_names.append(post.metadata["name"].lower())
+        prize_name = format_safe(post.metadata["name"].lower())
+        prize_names.append(prize_name)
         post.metadata["path"] = os.path.join(root, filename)
         post.metadata["content"] = post.content
-        prize_frontmatter[post.metadata["name"].lower()] = post.metadata
+        prize_frontmatter[prize_name] = post.metadata
 
 # For fixing inconsistencies in event names between Portal and Hackerspace
 event_name_lookup = {
@@ -203,8 +239,13 @@ for row in projects:
         if project["jurisdiction"] == "nz":
             continue
 
+        row["Prizes"] = format_safe(row["Prizes"])
+
+        # Ugh.
         if "Data Intelligence Hack (Data journalism, spatial modelling, analytics)" in row["Prizes"]:
             row["Prizes"] = row["Prizes"].replace(" (Data journalism, spatial modelling, analytics)", "")
+        if "How can City of Melbourne make sure women have access to information about the services, support groups and mainstream services that are available to them?" in row["Prizes"]:
+            row["Prizes"] = row["Prizes"].replace("services, support", "services support")
 
         project["prizes"] = []
         prizes = row["Prizes"].split(", ")
@@ -215,9 +256,11 @@ for row in projects:
             if "International Prize: " in prize:
                 prize = prize.replace("International Prize: ", "")
 
-            if prize.lower() not in prize_names:
-                raise ValueError("Prize name '%s' is not valid." % (prize))
-            project["prizes"].append(prize_frontmatter[prize.lower()]["gid"])
+            prize_name = format_safe(prize).lower()
+
+            if prize_name not in prize_names:
+                raise ValueError("Prize name '%s' is not valid." % (prize_name))
+            project["prizes"].append(prize_frontmatter[prize_name]["gid"])
 
             # Give prizes a list of their associated projects too
             if "projects" not in prize_frontmatter[prize.lower()]:
