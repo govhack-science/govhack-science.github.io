@@ -11,7 +11,7 @@ datasets_used:
   url: ftp://ftp.bom.gov.au/anon/gen//fwo/IDS10034.xml
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1731
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/untitled-2.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Untitled-2.jpg
 jurisdiction: sa
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

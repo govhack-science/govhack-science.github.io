@@ -5,7 +5,7 @@ datasets_used:
   url: https://www.data.act.gov.au/Transport/Cyclist-Crashes/n2kg-qkwj
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1006
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/crashwarning.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CrashWarning.png
 jurisdiction: act
 prizes:
 - australia-commerically-viable-hack

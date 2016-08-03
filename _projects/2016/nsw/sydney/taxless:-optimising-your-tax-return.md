@@ -5,7 +5,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/australia/australian-taxation-office/taxation-statistics-individual-sample-files.html
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2101
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/govhacklogo.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHackLogo.png
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

@@ -20,7 +20,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/queensland-fire-and-rescue-current-bushfire-incidents
 event: toowoomba
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1146
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/agol_fire_app_flame.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AGOL_Fire_app_flame.jpg
 jurisdiction: qld
 prizes:
 - australia-data-intelligence-hack

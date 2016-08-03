@@ -8,7 +8,7 @@ datasets_used:
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012010-14?OpenDocument
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1436
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/transforma-logo.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Transforma-Logo.png
 jurisdiction: nsw
 prizes:
 - australia-that-thing-we-all-need

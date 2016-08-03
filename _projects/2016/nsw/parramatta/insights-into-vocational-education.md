@@ -5,7 +5,7 @@ datasets_used:
   url: https://www.ncver.edu.au/data/collection/government-funded-students-and-courses
 event: parramatta
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2801
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-30%20at%202.42.00%20pm_0.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-30%20at%202.42.00%20pm_0.png
 jurisdiction: nsw
 prizes:
 - australia-training-data

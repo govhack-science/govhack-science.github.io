@@ -11,7 +11,7 @@ datasets_used:
   url: http://www.abs.gov.au/websitedbs/censushome.nsf/home/datapacks?opendocument&navpos=250
 event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2761
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/bringing%20data%20to%20the%20table.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Bringing%20Data%20to%20the%20Table.jpg
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack

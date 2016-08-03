@@ -14,7 +14,7 @@ datasets_used:
   url: http://dap.nci.org.au/thredds/remoteCatalogService?command=subset&catalog=http%3A//dapds00.nci.org.au/thredds/catalogs/rr9/emast_tern-climate-emast-anuclimate-0_01deg-v1m0_aus-mon-land-prec-e_01-1970_2012.xml&dataset=eMAST_ANUClimate_mon_prec_v1m0_1970_2012_agg
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2546
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/schrodingersshark.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SchrodingersShark.jpg
 jurisdiction: wa
 prizes:
 - australia-commerically-viable-hack

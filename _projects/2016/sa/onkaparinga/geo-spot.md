@@ -122,7 +122,7 @@ datasets_used:
   url: https://data.gov.au/organization/wyndham-city-council
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1191
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/geo%20spot%20logo_0.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Geo%20Spot%20Logo_0.png
 jurisdiction: sa
 prizes:
 - australia-commerically-viable-hack

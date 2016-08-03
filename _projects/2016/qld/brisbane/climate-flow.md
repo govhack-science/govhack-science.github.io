@@ -5,7 +5,7 @@ datasets_used:
   url: http://www.bom.gov.au/climate/data/stations/
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2111
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture.JPG
 jurisdiction: qld
 prizes:
 - australia-data-intelligence-hack

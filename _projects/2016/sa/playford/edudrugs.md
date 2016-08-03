@@ -26,7 +26,7 @@ datasets_used:
   url: http://www.sixwise.com/newsletters/05/04/05/illegal-drugs-identification-chart-what-they-look-like--amp-how-to-recognize-their-effects.htm
 event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2381
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/img_5531_0.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_5531_0.jpg
 jurisdiction: sa
 prizes:
 - australia-commerically-viable-hack

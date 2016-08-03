@@ -8,7 +8,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/3d-model
 event: port-adelaide-enfield
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2876
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dog%20meme.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Dog%20meme.jpg
 jurisdiction: sa
 prizes:
 - australia-creative-humanities-hack

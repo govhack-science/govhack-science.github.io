@@ -20,7 +20,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/australia/ncris-research-data-and-infrastructure-group/atlas-of-living-australia.html
 event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2836
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture_0.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_0.PNG
 jurisdiction: sa
 prizes:
 - australia-abc-news-content

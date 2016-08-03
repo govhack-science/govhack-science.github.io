@@ -14,7 +14,7 @@ datasets_used:
   url: http://data.gov.au
 event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2176
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/storyplaceicon_0.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/StoryPlaceIcon_0.png
 jurisdiction: act
 prizes:
 - australia-abc-news-content

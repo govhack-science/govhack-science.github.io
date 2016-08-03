@@ -62,7 +62,7 @@ datasets_used:
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/6202.0
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2641
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/australianmap.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AustralianMap.png
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need

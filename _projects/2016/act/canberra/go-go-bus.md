@@ -11,7 +11,7 @@ datasets_used:
   url: https://www.data.act.gov.au/Environment/ACT-Wildlife-Atlas-Records/e9ux-7djy
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3011
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/action_pokebus.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Action_PokeBus.jpg
 jurisdiction: act
 prizes:
 - australia-commerically-viable-hack

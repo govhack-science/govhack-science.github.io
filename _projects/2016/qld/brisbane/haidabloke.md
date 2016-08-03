@@ -5,7 +5,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/brisbane-hospital-registers-of-deaths-1933-to-1963
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1316
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/wallysworld.8.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/WallysWorld.8.jpg
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need

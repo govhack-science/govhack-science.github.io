@@ -5,7 +5,7 @@ datasets_used:
   url: http://stat.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_EIE/FTE+ITO+IVA.01.102021057.A/ABS?startTime=2005&endTime=2014&format=compact_v2
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3081
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%204.27.50%20pm.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%204.27.50%20PM.png
 jurisdiction: act
 prizes:
 - australia-that-thing-we-all-need

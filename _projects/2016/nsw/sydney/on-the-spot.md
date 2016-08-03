@@ -11,7 +11,7 @@ datasets_used:
   url: http://reg.bom.gov.au/reguser/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1011
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%2012.58.05%20pm.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2012.58.05%20PM.png
 jurisdiction: nsw
 prizes:
 - australia-abc-news-content

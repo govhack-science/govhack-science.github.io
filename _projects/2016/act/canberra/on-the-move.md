@@ -11,7 +11,7 @@ datasets_used:
   url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_CTSM
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2131
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_0.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo_0.png
 jurisdiction: act
 prizes:
 - australia-creative-humanities-hack

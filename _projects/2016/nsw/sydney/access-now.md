@@ -17,7 +17,7 @@ datasets_used:
   url: http://wiki.openstreetmap.org/wiki/Planet.osm
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1691
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%2011.56.51%20am.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2011.56.51%20AM.png
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

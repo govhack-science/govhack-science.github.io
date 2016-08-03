@@ -29,7 +29,7 @@ datasets_used:
   url: http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=123&p_display_type=dailyDataFile&p_startYear=&p_c=&p_stn_num=86338
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2726
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/zagqqkd.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/zagQQKd.jpg
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

@@ -14,7 +14,7 @@ datasets_used:
   url: https://www.data.vic.gov.au/data/dataset/parks-victoria-pv-parkres-wilsons-promontory
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1746
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-30%20at%2010.28.38%20am.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-30%20at%2010.28.38%20AM.png
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

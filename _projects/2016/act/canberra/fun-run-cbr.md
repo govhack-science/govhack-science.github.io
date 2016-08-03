@@ -17,7 +17,7 @@ datasets_used:
   url: https://www.data.act.gov.au/Infrastructure-and-Utilities/Drinking-Fountains/8eg4-uskm
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1391
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hackerspace-horizontal-logo.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hackerspace-horizontal-logo.png
 jurisdiction: act
 prizes:
 - australia-location-data

@@ -8,7 +8,7 @@ datasets_used:
   url: http://esa.act.gov.au/feeds/firedangerrating.xml
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1041
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/squigglepigsquarelarge.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SquigglePigSquareLarge.png
 jurisdiction: act
 prizes:
 - australia-commerically-viable-hack

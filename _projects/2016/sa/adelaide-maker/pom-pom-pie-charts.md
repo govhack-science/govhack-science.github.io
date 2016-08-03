@@ -8,7 +8,7 @@ datasets_used:
   url: http://data.gov.au/dataset/d52f563f-2d8b-4c97-8d8b-1b731168f3a5
 event: adelaide-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1641
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/pom_pom_pie_chart.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Pom_Pom_Pie_Chart.png
 jurisdiction: sa
 prizes:
 - australia-that-thing-we-all-need

@@ -17,7 +17,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/adelaide-city-council-key-historical-dates
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2141
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/adelographyiconjpg.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AdelOGRAPHYiconjpg.jpg
 jurisdiction: sa
 prizes:
 - australia-creative-humanities-hack

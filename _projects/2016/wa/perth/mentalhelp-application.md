@@ -20,7 +20,7 @@ datasets_used:
   url: https://www.mapbox.com/studio/styles/mapguy83/cir948d05000bgilztrc1hhdy
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1281
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/mentalhelp.presentation_0.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/MentalHelp.Presentation_0.jpg
 jurisdiction: wa
 prizes:
 - australia-innovative-ideas-hack

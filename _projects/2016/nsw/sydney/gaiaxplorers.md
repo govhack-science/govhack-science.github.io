@@ -5,7 +5,7 @@ datasets_used:
   url: http://biocache.ala.org.au/
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2041
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%203.41.29%20pm.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.41.29%20PM.png
 jurisdiction: nsw
 prizes:
 - australia-commerically-viable-hack

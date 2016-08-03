@@ -14,7 +14,7 @@ datasets_used:
   url: http://data.nsw.gov.au/data/dataset/nsw-university-locations
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1726
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/last%20supper%20%281%20of%201%29.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Last%20Supper%20%281%20of%201%29.jpg
 jurisdiction: nsw
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

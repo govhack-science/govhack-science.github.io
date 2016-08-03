@@ -17,7 +17,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/queensland-parks-and-wildlife-service-access
 event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2021
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image1.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image1.PNG
 jurisdiction: qld
 prizes:
 - qld-advance-queensland!

@@ -14,7 +14,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/printable-3d-model-of-an-ammonite
 event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3031
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/img_20160730_163838.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_20160730_163838.jpg
 jurisdiction: qld
 prizes:
 - australia-creative-humanities-hack

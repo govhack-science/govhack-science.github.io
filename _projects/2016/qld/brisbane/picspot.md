@@ -5,7 +5,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/the-queensland-heritage-register
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1276
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screenshot%20%286%29.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screenshot%20%286%29.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

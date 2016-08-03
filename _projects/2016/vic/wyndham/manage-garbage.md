@@ -26,7 +26,7 @@ datasets_used:
   url: https://data.melbourne.vic.gov.au/Environment/Melbourne-Garbage-Collection-Zones/dmpt-2xdw
 event: wyndham
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2161
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%203.44.16%20pm.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.44.16%20PM.png
 jurisdiction: vic
 prizes:
 - australia-data-intelligence-hack

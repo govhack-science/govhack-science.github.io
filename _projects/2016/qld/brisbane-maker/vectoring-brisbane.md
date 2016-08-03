@@ -14,7 +14,7 @@ datasets_used:
   url: http://www.dnrm.qld.gov.au/mapping-data
 event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1676
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/img_0354c.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_0354c.jpg
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

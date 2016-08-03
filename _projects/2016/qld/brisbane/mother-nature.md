@@ -11,7 +11,7 @@ datasets_used:
   url: https://data.qld.gov.au/dataset/emissions-and-waste-transfers-from-industrial-facilities-in-queensland-2015
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1596
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dsc07337.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/DSC07337.JPG
 jurisdiction: qld
 prizes:
 - australia-that-thing-we-all-need

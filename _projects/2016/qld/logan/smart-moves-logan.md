@@ -23,7 +23,7 @@ datasets_used:
   url: http://www.logan.qld.gov.au/__data/assets/pdf_file/0009/8847/Logan-City-Map.pdf
 event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1781
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/smartmoves.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SmartMoves.jpg
 jurisdiction: qld
 prizes:
 - australia-entrepreneurial-hack

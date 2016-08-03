@@ -20,7 +20,7 @@ datasets_used:
   url: https://data.gov.au/dataset/personal-insolvency-postcode
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1891
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/capture.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture.PNG
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

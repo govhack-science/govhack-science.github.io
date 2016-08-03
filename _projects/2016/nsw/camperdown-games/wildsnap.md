@@ -5,7 +5,7 @@ datasets_used:
   url: http://www.ala.org.au/
 event: camperdown-games
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1866
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo2.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo2.png
 jurisdiction: nsw
 prizes:
 - australia-creative-humanities-hack

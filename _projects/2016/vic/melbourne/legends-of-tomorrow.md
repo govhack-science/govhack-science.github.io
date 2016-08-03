@@ -29,7 +29,7 @@ datasets_used:
   url: https://www.ipcc.ch/publications_and_data/publications_ipcc_fourth_assessment_report_synthesis_report.htm
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2861
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/projectimage2.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ProjectImage2.jpg
 jurisdiction: vic
 prizes:
 - australia-creative-humanities-hack

@@ -5,7 +5,7 @@ datasets_used:
   url: https://www.brisbane.qld.gov.au/about-council/council-information-rates/news-publications/rss-feeds
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1181
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/crlvyeauyaett9t.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CRLvYeaUYAEtT9T.png
 jurisdiction: qld
 prizes:
 - australia-commerically-viable-hack

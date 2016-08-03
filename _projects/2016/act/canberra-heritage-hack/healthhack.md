@@ -5,7 +5,7 @@ datasets_used:
   url: http://www.health.gov.au/internet/main/publishing.nsf/Content/cda-pubs-annlrpt-nndssar.htm
 event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2146
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/diphtheria_vaccination_poster.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Diphtheria_vaccination_poster.jpg
 jurisdiction: act
 prizes:
 - australia-aihw-visualisation

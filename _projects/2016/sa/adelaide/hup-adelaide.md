@@ -20,7 +20,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/list-of-child-and-family-health-service-centre-locations
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/936
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hup%20adelaide%20logo.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hup%20Adelaide%20Logo.jpg
 jurisdiction: sa
 prizes:
 - australia-community-resilience-hack

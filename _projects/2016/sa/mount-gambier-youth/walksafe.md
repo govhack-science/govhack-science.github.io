@@ -5,7 +5,7 @@ datasets_used:
   url: http://data.sa.gov.au/data/dataset/crime-mapper-historical-data
 event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/916
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logomakr.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/LogoMakr.png
 jurisdiction: sa
 prizes:
 - australia-data-intelligence-hack

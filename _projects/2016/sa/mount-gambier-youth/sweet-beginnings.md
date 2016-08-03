@@ -8,7 +8,7 @@ datasets_used:
   url: http://trove.nla.gov.au/result?q=captain%20samuel%20sweet
 event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1151
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/sweet%20beginnings%20logo%20%231.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Sweet%20Beginnings%20Logo%20%231.jpg
 jurisdiction: sa
 prizes:
 - australia-creative-humanities-hack

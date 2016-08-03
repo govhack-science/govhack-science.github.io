@@ -23,7 +23,7 @@ datasets_used:
   url: https://data.sunshinecoast.qld.gov.au/dataset/Aquatic-Centres-arcgis_rest_services_Society_Socie/23vb-3ngq
 event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1456
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tgol_logo_jb.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/TGOL_logo_JB.png
 jurisdiction: qld
 prizes:
 - australia-fresh-data-hack-(api’s-and-data-services)

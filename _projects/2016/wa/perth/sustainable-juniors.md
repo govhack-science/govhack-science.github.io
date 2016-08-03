@@ -1,7 +1,7 @@
 ---
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1241
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/sustainable%20juniors.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Sustainable%20Juniors.JPG
 jurisdiction: wa
 prizes:
 - wa-western-australian-sustainability-prize

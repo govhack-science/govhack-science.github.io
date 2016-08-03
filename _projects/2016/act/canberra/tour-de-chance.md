@@ -8,7 +8,7 @@ datasets_used:
   url: https://www.data.act.gov.au/Education/ACT-Public-Art-List/j746-krni
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1046
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tourdechance_poster.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/TourDeChance_POSTER.png
 jurisdiction: act
 prizes:
 - australia-commerically-viable-hack

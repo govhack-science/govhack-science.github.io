@@ -5,7 +5,7 @@ datasets_used:
   url: https://data.gov.au/dataset/wyndham-city-hard-rubbish-bookings
 event: wyndham
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2211
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screen%20shot%202016-07-31%20at%203.57.10%20pm.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.57.10%20PM.png
 jurisdiction: vic
 prizes:
 - vic-waste-management

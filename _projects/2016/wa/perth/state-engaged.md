@@ -8,7 +8,7 @@ datasets_used:
   url: http://portal.govhack.org/datasets/2016/wa/department-of-local-government-and-communities/wa-local-government-mycouncil-data.html
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1256
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hack%20newbie.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hack%20Newbie.JPG
 jurisdiction: wa
 prizes:
 - australia-community-resilience-hack

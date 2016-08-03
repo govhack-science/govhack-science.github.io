@@ -23,7 +23,7 @@ datasets_used:
   url: https://data.melbourne.vic.gov.au/Transport-Movement/Pedestrian-Counts/b2ak-trbp
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2611
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/sweet%20spot.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/sweet%20spot.PNG
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

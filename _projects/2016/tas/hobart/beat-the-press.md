@@ -23,7 +23,7 @@ datasets_used:
   url: http://www.scienceimage.csiro.au/
 event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/781
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/splashfourbyuathreewithaborder%20copy.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SplashFourbyuathreewithaborder%20copy.png
 jurisdiction: tas
 prizes:
 - australia-abc-news-content

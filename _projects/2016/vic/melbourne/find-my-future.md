@@ -14,7 +14,7 @@ datasets_used:
   url: http://stat.abs.gov.au/itt/r.jsp?RegionSummary&region=209&dataset=ABS_REGIONAL_ASGS&geoconcept=REGION&measure=MEASURE&datasetASGS=ABS_REGIONAL_ASGS&datasetLGA=ABS_NRP9_LGA&regionLGA=REGION&regionASGS=REGION
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/976
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fmf-logo.png
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FMF-Logo.png
 jurisdiction: vic
 prizes:
 - australia-commerically-viable-hack

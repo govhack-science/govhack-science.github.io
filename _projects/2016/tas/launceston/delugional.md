@@ -14,7 +14,7 @@ datasets_used:
   url: http://www.bom.gov.au/fwo/IDT60251/IDT60251.091227.tbl.shtml
 event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2426
-image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ckqerkjuoaapdtk_1.jpg
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CkQeRkjUoAApDTk_1.jpg
 jurisdiction: tas
 prizes:
 - australia-commerically-viable-hack
