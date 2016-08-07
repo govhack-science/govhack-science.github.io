@@ -190,9 +190,9 @@ for row in projects:
     # Set the project's image url
     # "image_url": row["Project Image URL"].strip(),
     if row["Project Image URL"] != "":
-        image_url = row["Project Image URL"].strip().lower()
+        image_url = row["Project Image URL"].strip()
         r_image = re.compile(r".*\.(jpg|jpeg|png|gif)$")
-        if r_image.match(image_url) != None:
+        if r_image.match(image_url.lower()) != None:
             project["image_url"] = image_url
 
     # Set the alternate video URL (GovHack S3 hosted videos)
