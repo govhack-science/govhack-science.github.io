@@ -3,9 +3,32 @@ category: australia
 gid: australia-iag-flood-risk
 jurisdiction: australia
 name: IAG Flood Risk
-organisations:
-  - iag
 organisation_title: IAG
+organisations:
+- iag
+projects:
+- greenu
+- safetymeasur.es
+- aaya
+- flood-watch
+- safenet
+- dingopack
+- dont-crash
+- where-2-go
+- delugional
+- smart-asset-management
+- mycity-in-virtual-reality
+- evacumate
+- perfect-catch
+- disaster-watch
+- hawks-i
+- hazard-communication
+- community-at-risk-assistance-&-response-(carar)
+- developr
+- flash-me!
+- the-purple-rain-index
+- highway-to-the-dangerzone
+- proximity
 title: IAG Flood Risk
 type: Bounty
 ---

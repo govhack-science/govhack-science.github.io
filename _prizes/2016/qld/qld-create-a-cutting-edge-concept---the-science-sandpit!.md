@@ -4,6 +4,26 @@ gid: qld-create-a-cutting-edge-concept---the-science-sandpit!
 jurisdiction: qld
 name: Create a Cutting Edge Concept - The Science Sandpit!
 organisation_title: The Queensland Government on behalf of Science Division, Department of Science, Information Technology and Innovation
+projects:
+- findmymap
+- breathe-easy
+- vectoring-brisbane
+- john-conner
+- industrial-water-complex
+- air-adventure!!!
+- explore-the-great-barrier-reef
+- where-2-go
+- mycity-in-virtual-reality
+- mother-nature
+- snap-ranger
+- bringing-data-to-the-table
+- worldckans
+- scan,-process,-share,-recreate
+- insync
+- climate-flow
+- threat.end
+- disport
+- walked
 title: Create a Cutting Edge Concept - The Science Sandpit!
 type: Theme
 ---

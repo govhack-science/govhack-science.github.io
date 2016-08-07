@@ -3,9 +3,22 @@ category: australia
 gid: australia-ip-rights
 jurisdiction: australia
 name: IP Rights
-organisations:
-  - ip-australia
 organisation_title: IP Australia
+organisations:
+- ip-australia
+projects:
+- ipgodmode
+- paranormal-distribution
+- a-century-of-intellectual-property
+- innovation-where
+- mycity-in-virtual-reality
+- mapping-innovation---from-local-to-global-in-time-and-space
+- hubgap
+- patented
+- flash-me!
+- innovationx
+- news-&-events-data-mashup
+- deconstructed-coffee-and-design---melbourne-hipster-index
 title: IP Rights
 type: Bounty
 ---

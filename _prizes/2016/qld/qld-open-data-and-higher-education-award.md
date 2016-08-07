@@ -4,6 +4,25 @@ gid: qld-open-data-and-higher-education-award
 jurisdiction: qld
 name: Open Data and Higher Education Award
 organisation_title: Queensland University of Technology (QUT)
+projects:
+- vectoring-brisbane
+- safenet
+- australia-go!
+- picspot
+- edstat
+- mycity-in-virtual-reality
+- mother-nature
+- evacumate
+- search-party
+- worldckans
+- insync
+- qschools
+- innovationx
+- climate-flow
+- threat.end
+- unveil-the-scene
+- future-proof
+- disport
 title: Open Data and Higher Education Award
 type: Theme
 ---

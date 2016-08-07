@@ -3,9 +3,19 @@ category: australia
 gid: australia-securing-personal-property
 jurisdiction: australia
 name: Securing Personal Property
-organisations:
-  - australian-financial-security-authority
 organisation_title: AFSA
+organisations:
+- australian-financial-security-authority
+projects:
+- crikey!:-helping-your-community
+- vectoring-brisbane
+- walksafe
+- mycity-in-virtual-reality
+- perfect-catch
+- flash-me!
+- parradise
+- go-park-yourself
+- future-proof
 title: Securing Personal Property
 type: Bounty
 ---

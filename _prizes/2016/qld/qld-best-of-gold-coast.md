@@ -7,6 +7,13 @@ jurisdiction: qld
 name: Best of Gold Coast
 organisation: city-of-gold-coast
 organisation_title: City of Gold Coast
+projects:
+- your-local-opinion
+- where-2-go
+- mycity-in-virtual-reality
+- snap-ranger
+- search-party
+- disport
 title: Best of Gold Coast
 type: Best In
 ---

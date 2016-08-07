@@ -4,6 +4,25 @@ gid: sa-helping-those-who-need-it
 jurisdiction: sa
 name: Helping those who need it
 organisation_title: Attorney-General’s Department
+projects:
+- greenu
+- smartcare-innovations-hub
+- walksafe
+- bad-snakes
+- smart-travel
+- edudrugs
+- smart-asset-management
+- data-for-social-change-update
+- disaster-watch
+- hup-adelaide
+- safety-tracker
+- a-2-green
+- huffless-n-puffless
+- r-u-open
+- our-story-~-your-story
+- codename:orbit
+- help-me
+- activesa
 title: Helping those who need it
 type: Theme
 ---

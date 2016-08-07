@@ -4,6 +4,17 @@ gid: vic-local-government-spatial-data-bounty
 jurisdiction: vic
 name: Local Government Spatial Data Bounty
 organisation_title: Victorian Local Government Spatial Reference Group
+projects:
+- manage-garbage
+- endless-bureaucracy
+- ballaratgo
+- welcome,-my-new-neighbour!
+- mytree
+- going-out-today
+- wheretonext
+- pet-tential
+- legends-of-tomorrow
+- local-hero
 title: Local Government Spatial Data Bounty
 type: Best In
 ---

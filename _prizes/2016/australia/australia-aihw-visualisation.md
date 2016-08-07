@@ -3,9 +3,23 @@ category: australia
 gid: australia-aihw-visualisation
 jurisdiction: australia
 name: AIHW Visualisation
-organisations:
-  - australian-institute-of-health-and-welfare
 organisation_title: AIHW
+organisations:
+- australian-institute-of-health-and-welfare
+projects:
+- stem,-australia
+- exploring-indigenous-over-representation-in-youth-detention
+- walks-of-life
+- smart-asset-management
+- mycity-in-virtual-reality
+- data-for-social-change-update
+- au-dashboard
+- worldckans
+- what-are-you-afraid-of
+- flash-me!
+- healthhack
+- our-story-~-your-story
+- -dash-
 title: AIHW Visualisation
 type: Bounty
 ---

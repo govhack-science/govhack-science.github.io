@@ -4,6 +4,26 @@ gid: sa-neighbourhood-and-community-confidence
 jurisdiction: sa
 name: Neighbourhood and Community Confidence
 organisation_title: Attorney-General's Department
+projects:
+- greenu
+- adelography---the-story-of-adelaide
+- smartcare-innovations-hub
+- cross-roads
+- geo-spot
+- walksafe
+- bad-snakes
+- child-tracker
+- smart-travel
+- smart-asset-management
+- data-for-social-change-update
+- the-driving-angel
+- what-are-you-afraid-of
+- r-u-open
+- our-story-~-your-story
+- codename:orbit
+- help-me
+- splash
+- aquadex
 title: Neighbourhood and Community Confidence
 type: Theme
 ---

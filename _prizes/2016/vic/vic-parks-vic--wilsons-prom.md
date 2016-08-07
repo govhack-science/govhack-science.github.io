@@ -4,6 +4,13 @@ gid: vic-parks-vic--wilsons-prom
 jurisdiction: vic
 name: Parks Vic -Wilson's prom
 organisation_title: Victorian Government - Parks Victoria
+projects:
+- campsites-tonight
+- wilsons-prom-go
+- parks-finder
+- going-out-today
+- wilderness-buddy
+- find-my-toilet
 title: Parks Vic -Wilson's prom
 type: Theme
 ---

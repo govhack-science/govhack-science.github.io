@@ -5,8 +5,83 @@ jurisdiction: australia
 name: Future Australia Hack
 organisation_title: Department of Education & Department of Employment
 organisations:
-  - department-of-education-and-training
-  - department-of-employment
+- department-of-education-and-training
+- department-of-employment
+projects:
+- bizhack
+- stem,-australia
+- boj---jobquilibrium
+- breathe-easy
+- aaya
+- smartcare-innovations-hub
+- cross-roads
+- australia-go!
+- wecare
+- australlite
+- geo-spot
+- walksafe
+- paranormal-distribution
+- diis-project---jobs-and-growth
+- dont-crash
+- a-century-of-intellectual-property
+- go-explore-cbr
+- child-tracker
+- 5-d-city-explorer
+- coffee-is-life
+- blockchain-digital-id
+- adelaide-smart-city-2020
+- datacake
+- check-your-uglies
+- on-the-spot
+- jerbsngrowth
+- mycity-in-virtual-reality
+- mapping-innovation---from-local-to-global-in-time-and-space
+- perfect-catch
+- endless-bureaucracy
+- displaying-living-appeal-for-location-seeking-immigrants
+- the-grid
+- the-driving-angel
+- welcome,-my-new-neighbour!
+- au-dashboard
+- mytree
+- mirai
+- migrant-settlement-and-job-australia-data-visualiser
+- safety-tracker
+- search-party
+- insync
+- mind-the-gapp
+- careermoveau
+- touri
+- $treetcred
+- unsung
+- smarter-training
+- patented
+- find-my-future
+- flash-me!
+- open-invoicing
+- grey-areas
+- access-now
+- innovationx
+- pet-tential
+- factr
+- beat-the-press
+- edugate
+- crashwarning
+- helping-hand
+- highway-to-the-dangerzone
+- legends-of-tomorrow
+- informed-personas
+- education-hub
+- unveil-the-scene
+- codename:orbit
+- zr0data
+- mysa
+- future-proof
+- disport
+- project-name-*
+- aquadex
+- find-my-toilet
+- proximity
 title: Future Australia Hack
 type: Major
 ---

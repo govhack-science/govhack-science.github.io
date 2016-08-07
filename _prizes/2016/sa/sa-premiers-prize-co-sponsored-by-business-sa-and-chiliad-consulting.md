@@ -4,6 +4,35 @@ gid: sa-premiers-prize-co-sponsored-by-business-sa-and-chiliad-consulting
 jurisdiction: sa
 name: Premier's Prize co-sponsored by Business SA and Chiliad Consulting
 organisation_title: Department of the Premier and Cabinet, Business SA and Chiliad Consulting
+projects:
+- tchke
+- traffic-jam
+- greenu
+- finding-forgotten-fauna
+- smartcare-innovations-hub
+- smart-travel
+- qrester
+- adelaide-smart-city-2020
+- edudrugs
+- smart-asset-management
+- fivemind
+- data-for-social-change-update
+- hup-adelaide
+- the-driving-angel
+- safety-tracker
+- touri
+- developr
+- pulse
+- wherizit
+- r-u-open
+- what-lives-here
+- codename:orbit
+- help-me
+- activesa
+- mysa
+- splash
+- aquadex
+- first-names
 title: Premier's Prize co-sponsored by Business SA and Chiliad Consulting
 type: Development
 ---

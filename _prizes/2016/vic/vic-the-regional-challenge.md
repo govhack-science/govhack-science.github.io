@@ -4,6 +4,17 @@ gid: vic-the-regional-challenge
 jurisdiction: vic
 name: The Regional Challenge
 organisation_title: City of Greater Geelong (Digital Geelong)
+projects:
+- manage-garbage
+- 5-d-city-explorer
+- psychedelicprosthetic
+- endless-bureaucracy
+- pet-tential
+- highway-to-the-dangerzone
+- critrs
+- local-hero
+- dank---royal-commission-into-family-violence
+- find-my-toilet
 title: The Regional Challenge
 type: Theme
 ---

@@ -7,6 +7,15 @@ jurisdiction: sa
 name: Mount Gambier - Best in location
 organisation: city-of-mount-gambier
 organisation_title: City of Mount Gambier
+projects:
+- finding-forgotten-fauna
+- walksafe
+- touri
+- huffless-n-puffless
+- wherizit
+- sweet-beginnings
+- our-story-~-your-story
+- activesa
 title: Mount Gambier - Best in location
 type: Best In
 ---

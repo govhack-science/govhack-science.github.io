@@ -4,6 +4,14 @@ gid: wa-the-keep-western-australia-moving-prize
 jurisdiction: wa
 name: The Keep Western Australia Moving Prize
 organisation_title: Main Road WA
+projects:
+- e-map:-spatio-temporal-modelling-of-traffic-and-emissions
+- the-transac-initiative
+- rest-stop-finder
+- au-dashboard
+- wa-traffic-analysis
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- gophergrader
 title: The Keep Western Australia Moving Prize
 type: Theme
 ---

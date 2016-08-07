@@ -9,6 +9,16 @@ jurisdiction: qld
 name: An Active and Healthy Brisbane
 organisation: brisbane-city-council
 organisation_title: Brisbane City Council
+projects:
+- crikey!:-helping-your-community
+- breathe-easy
+- australia-go!
+- picspot
+- spokesocial
+- city-quest
+- time-walks
+- whats-up-brisbane
+- walked
 title: An Active and Healthy Brisbane
 type: Theme
 ---

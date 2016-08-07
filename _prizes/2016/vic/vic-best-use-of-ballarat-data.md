@@ -7,6 +7,13 @@ jurisdiction: vic
 name: Best Use of Ballarat Data
 organisation: city-of-ballarat
 organisation_title: City of Ballarat
+projects:
+- párko
+- ballaratgo
+- wheretonext
+- factr
+- go-park-yourself
+- local-hero
 title: Best Use of Ballarat Data
 type: Theme
 ---

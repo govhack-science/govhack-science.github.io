@@ -4,6 +4,17 @@ gid: qld-evacuation---help-us-get-away!
 jurisdiction: qld
 name: Evacuation - help us get away!
 organisation_title: Queensland Government on behalf of the Office of the Inspector-General Emergency Management
+projects:
+- crikey!:-helping-your-community
+- safenet
+- australlite
+- weather-balls
+- dingopack
+- where-2-go
+- mycity-in-virtual-reality
+- evacumate
+- community-at-risk-assistance-&-response-(carar)
+- smart-moves-logan
 title: Evacuation - help us get away!
 type: Theme
 ---

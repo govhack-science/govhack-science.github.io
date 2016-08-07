@@ -3,10 +3,102 @@ category: australia
 gid: australia-community-resilience-hack
 jurisdiction: international
 name: Community Resilience Hack
-organisations:
-  - iag
-  - bureau-of-meteorology
 organisation_title: IAG & Bureau of Meteorology
+organisations:
+- iag
+- bureau-of-meteorology
+projects:
+- pathfinder
+- sydpark
+- crikey!:-helping-your-community
+- breathe-easy
+- vectoring-brisbane
+- greenu
+- safetymeasur.es
+- aaya
+- exploring-indigenous-over-representation-in-youth-detention
+- school-disaster-resilience
+- walks-of-life
+- flood-watch
+- safenet
+- wecare
+- schrodingers-shark
+- australlite
+- geo-spot
+- walksafe
+- will-i-burn
+- your-local-opinion
+- dingopack
+- bad-snakes
+- sizzlerig
+- firealert
+- adelaide-smart-city-2020
+- edudrugs
+- where-2-go
+- datacake
+- check-your-uglies
+- delugional
+- on-the-spot
+- smart-asset-management
+- mycity-in-virtual-reality
+- touch
+- the-transac-initiative
+- state-engaged
+- fivemind
+- perfect-catch
+- endless-bureaucracy
+- hup-adelaide
+- piccohunt
+- the-driving-angel
+- little-steps
+- welcome,-my-new-neighbour!
+- bringing-data-to-the-table
+- au-dashboard
+- community-companion
+- ihero
+- maphack
+- search-party
+- hawks-i
+- mind-the-gapp
+- careermoveau
+- hazard-communication
+- community-at-risk-assistance-&-response-(carar)
+- crash-course
+- unsung
+- patented
+- what-are-you-afraid-of
+- flash-me!
+- pulse
+- huffless-n-puffless
+- sydney-cbd-crime-analytics
+- smartroads
+- access-now
+- wherizit
+- wheretonext
+- factr
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- birth-choices
+- the-purple-rain-index
+- r-u-open
+- lettuce-be-friends
+- go-park-yourself
+- highway-to-the-dangerzone
+- what-lives-here
+- digihealth-plus
+- legends-of-tomorrow
+- accident-tracker
+- codename:orbit
+- help-me
+- zr0data
+- activesa
+- street-shark
+- immi-great
+- gophergrader
+- splash
+- dank---royal-commission-into-family-violence
+- aquadex
+- first-names
+- proximity
 title: Community Resilience Hack
 type: International
 ---

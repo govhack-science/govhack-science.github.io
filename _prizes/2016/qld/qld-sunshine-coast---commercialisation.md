@@ -6,6 +6,10 @@ gid: qld-sunshine-coast---commercialisation
 jurisdiction: qld
 name: Sunshine Coast - Commercialisation
 organisation_title: Sunshine Coast Council & Noosa Council
+projects:
+- weather-balls
+- community-companion
+- future-proof
 title: Sunshine Coast - Commercialisation
 type: Theme
 ---

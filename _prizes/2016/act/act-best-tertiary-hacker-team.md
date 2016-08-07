@@ -4,6 +4,14 @@ gid: act-best-tertiary-hacker-team
 jurisdiction: act
 name: Best Tertiary Hacker Team
 organisation_title: ACT Government
+projects:
+- hackanation
+- boj---jobquilibrium
+- flood-watch
+- agricultura
+- displaying-living-appeal-for-location-seeking-immigrants
+- healthhack
+- put-a-bird-on-it
 title: Best Tertiary Hacker Team
 type: Best In
 ---

@@ -4,6 +4,23 @@ gid: nsw-smart-cities-&-collaborative-economy
 jurisdiction: nsw
 name: Smart Cities & Collaborative Economy
 organisation_title: Department of Finance, Services and Innovation
+projects:
+- sydpark
+- aaya
+- school-disaster-resilience
+- tagger
+- datacake
+- where-are-people-like-me-!
+- mapping-innovation---from-local-to-global-in-time-and-space
+- perfect-catch
+- hawks-i
+- unsung
+- flash-me!
+- parradise
+- sydney-cbd-crime-analytics
+- access-now
+- lets-renew-the-renewable-energy!
+- education-hub
 title: Smart Cities & Collaborative Economy
 type: Theme
 ---

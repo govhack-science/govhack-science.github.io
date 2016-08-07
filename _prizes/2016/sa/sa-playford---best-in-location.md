@@ -7,6 +7,13 @@ jurisdiction: sa
 name: Playford - Best in location
 organisation: city-of-playford
 organisation_title: City of Playford
+projects:
+- wynaut---historycal-picture-viewer
+- unleashed-possibilities
+- qrester
+- w_i_n_e
+- edudrugs
+- tribes
 title: Playford - Best in location
 type: Best In
 ---

@@ -4,6 +4,9 @@ gid: vic-faces-of-family-violence
 jurisdiction: vic
 name: Faces of Family Violence
 organisation_title: Victorian Government - Dept Premier and Cabinet
+projects:
+- wecare
+- dank---royal-commission-into-family-violence
 title: Faces of Family Violence
 type: Theme
 ---

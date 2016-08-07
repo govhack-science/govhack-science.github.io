@@ -4,6 +4,12 @@ gid: tas-most-commercial-potential
 jurisdiction: tas
 name: Most Commercial Potential
 organisation_title: Tasmanian State Government
+projects:
+- binthere
+- smarter-training
+- beat-the-press
+- tasmap.org
+- payparking.online
 title: Most Commercial Potential
 type: Development
 ---

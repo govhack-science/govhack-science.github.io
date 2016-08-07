@@ -4,6 +4,14 @@ gid: nsw-travelling-with-us
 jurisdiction: nsw
 name: Travelling with Us
 organisation_title: Transport NSW
+projects:
+- pokemon-trip
+- datacake
+- on-the-spot
+- flash-me!
+- access-now
+- transforma
+- education-hub
 title: Travelling with Us
 type: Theme
 ---

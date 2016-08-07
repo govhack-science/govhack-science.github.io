@@ -6,6 +6,9 @@ gid: qld-sunshine-coast---sustainability
 jurisdiction: qld
 name: Sunshine Coast - Sustainability
 organisation_title: Sunshine Coast Council & Noosa Council
+projects:
+- weather-balls
+- future-proof
 title: Sunshine Coast - Sustainability
 type: Theme
 ---

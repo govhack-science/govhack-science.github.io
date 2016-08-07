@@ -4,6 +4,35 @@ gid: sa-premiers-prize-co-sponsored-by-microsoft
 jurisdiction: sa
 name: Premier's Prize co-sponsored by Microsoft
 organisation_title: Department of the Premier and Cabinet and Microsoft
+projects:
+- tchke
+- traffic-jam
+- greenu
+- finding-forgotten-fauna
+- smartcare-innovations-hub
+- geo-spot
+- smart-travel
+- qrester
+- adelaide-smart-city-2020
+- edudrugs
+- smart-asset-management
+- fivemind
+- hup-adelaide
+- the-driving-angel
+- safety-tracker
+- touri
+- developr
+- pulse
+- wherizit
+- r-u-open
+- what-lives-here
+- codename:orbit
+- help-me
+- activesa
+- mysa
+- splash
+- aquadex
+- first-names
 title: Premier's Prize co-sponsored by Microsoft
 type: Development
 ---

@@ -4,6 +4,19 @@ gid: sa-youth-state-champion
 jurisdiction: sa
 name: Youth State Champion
 organisation_title: Department of Education and Child Development and Motor Accident Commission
+projects:
+- tchke
+- geo-spot
+- walksafe
+- bad-snakes
+- child-tracker
+- qrester
+- attack-of-the-pink-fluffy-unicorns.
+- safety-tracker
+- fish-r-us
+- touri
+- activesa
+- rush-adventure
 title: Youth State Champion
 type: Development
 ---

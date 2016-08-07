@@ -7,6 +7,13 @@ jurisdiction: qld
 name: Best Use of Gold Coast Data
 organisation: city-of-gold-coast
 organisation_title: City of Gold Coast
+projects:
+- your-local-opinion
+- where-2-go
+- mycity-in-virtual-reality
+- snap-ranger
+- search-party
+- disport
 title: Best Use of Gold Coast Data
 type: Theme
 ---

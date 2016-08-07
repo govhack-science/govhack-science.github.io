@@ -7,6 +7,16 @@ jurisdiction: vic
 name: How can City of Melbourne data be used to help businesses make better decisions?
 organisation: city-of-melbourne
 organisation_title: City of Melbourne
+projects:
+- sweetspot
+- sweetspot
+- paranormal-distribution
+- welcome,-my-new-neighbour!
+- futurenow
+- transport-alert
+- patented
+- patented
+- find-my-toilet
 title: How can City of Melbourne data be used to help businesses make better decisions?
 type: Theme
 ---

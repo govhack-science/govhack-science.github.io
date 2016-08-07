@@ -4,6 +4,17 @@ gid: nsw-vibrant-sydney-night-time-economy
 jurisdiction: nsw
 name: Vibrant Sydney Night-time Economy
 organisation_title: Committee of Sydney
+projects:
+- sydpark
+- tagger
+- datacake
+- on-the-spot
+- where-are-people-like-me-!
+- mapping-innovation---from-local-to-global-in-time-and-space
+- do-you-know-australia
+- flash-me!
+- sydney-cbd-crime-analytics
+- access-now
 title: Vibrant Sydney Night-time Economy
 type: Theme
 ---

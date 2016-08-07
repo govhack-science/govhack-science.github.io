@@ -5,6 +5,16 @@ jurisdiction: qld
 name: Brisbane's Art and Heritage
 organisation: brisbane-city-council
 organisation_title: Brisbane City Council
+projects:
+- vectoring-brisbane
+- mycity-in-virtual-reality
+- bringing-data-to-the-table
+- city-quest
+- scan,-process,-share,-recreate
+- insolvency-in-qld-2013-2014
+- time-walks
+- whats-up-brisbane
+- life-explorer
 title: Brisbane's Art and Heritage
 type: Theme
 ---

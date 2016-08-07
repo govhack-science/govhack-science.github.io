@@ -7,6 +7,9 @@ jurisdiction: sa
 name: Playford - Best Youth Team in location
 organisation: city-of-playford
 organisation_title: City of Playford
+projects:
+- qrester
+- tribes
 title: Playford - Best Youth Team in location
 type: Best In
 ---

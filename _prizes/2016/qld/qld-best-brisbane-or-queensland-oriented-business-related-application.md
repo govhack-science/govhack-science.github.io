@@ -8,6 +8,24 @@ gid: qld-best-brisbane-or-queensland-oriented-business-related-application
 jurisdiction: qld
 name: Best Brisbane/Queensland-Oriented Business Related Application
 organisation_title: The University of Queensland - Business School
+projects:
+- breathe-easy
+- australia-go!
+- startup-helper
+- australlite
+- privé
+- jerbsngrowth
+- haidabloke
+- pedestimate
+- worldckans
+- innovationx
+- time-walks
+- whats-up-brisbane
+- fresh-plans
+- next-bus
+- unveil-the-scene
+- walked
+- cheap-rent-fast-net
 title: Best Brisbane/Queensland-Oriented Business Related Application
 type: Theme
 ---

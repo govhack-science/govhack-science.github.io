@@ -7,6 +7,10 @@ jurisdiction: vic
 name: Smart Parking in Ballarat
 organisation: city-of-ballarat
 organisation_title: City of Ballarat
+projects:
+- párko
+- go-park-yourself
+- local-hero
 title: Smart Parking in Ballarat
 type: Theme
 ---

@@ -4,6 +4,16 @@ gid: vic-geelong-open-data---creative-challenge
 jurisdiction: vic
 name: Geelong Open Data - Creative Challenge
 organisation_title: City of Greater Geelong (CoGG)
+projects:
+- smartpath
+- manage-garbage
+- 5-d-city-explorer
+- news-&-events-data-mashup
+- pet-tential
+- factr
+- go-park-yourself
+- highway-to-the-dangerzone
+- critrs
 title: Geelong Open Data - Creative Challenge
 type: Theme
 ---

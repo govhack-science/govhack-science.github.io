@@ -4,6 +4,8 @@ gid: vic-victorian-war-heritage-inventory
 jurisdiction: vic
 name: Victorian War Heritage Inventory
 organisation_title: Victorian Government - Veterans
+projects:
+- wheretonext
 title: Victorian War Heritage Inventory
 type: Theme
 ---

@@ -3,9 +3,24 @@ category: australia
 gid: australia-student-dropout-rates
 jurisdiction: australia
 name: Student Dropout Rates
-organisations:
-  - department-of-education-and-training
 organisation_title: Department of Education
+organisations:
+- department-of-education-and-training
+projects:
+- staying-the-course
+- bizhack
+- vectoring-brisbane
+- taxless:-optimising-your-tax-return
+- stickin-around
+- edstat
+- mycity-in-virtual-reality
+- endless-bureaucracy
+- au-dashboard
+- mission:-attrition
+- smarter-training
+- flash-me!
+- pom-pom-pie-charts
+- education-hub
 title: Student Dropout Rates
 type: Bounty
 ---

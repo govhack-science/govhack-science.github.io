@@ -7,6 +7,12 @@ jurisdiction: qld
 name: Entrepreneurs Award
 organisation: city-of-gold-coast
 organisation_title: City of Gold Coast
+projects:
+- your-local-opinion
+- where-2-go
+- mycity-in-virtual-reality
+- snap-ranger
+- disport
 title: Entrepreneurs Award
 type: Development
 ---

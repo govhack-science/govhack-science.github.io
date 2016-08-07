@@ -5,6 +5,19 @@ jurisdiction: wa
 name: Western Australian Entrepeneurial Prize
 organisation: landgate
 organisation_title: SPUR, Powered by Landgate
+projects:
+- project-trident
+- budgethack
+- schrodingers-shark
+- violet-pipe-dreams
+- mapping-sepsis
+- the-transac-initiative
+- au-dashboard
+- ihero
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- street-shark
+- anaconda-dont
+- smart-sepsis-wa
 title: Western Australian Entrepeneurial Prize
 type: Theme
 ---

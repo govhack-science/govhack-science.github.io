@@ -9,6 +9,27 @@ jurisdiction: qld
 name: Best Visualisation of Data
 organisation: brisbane-city-council
 organisation_title: Brisbane City Council
+projects:
+- breathe-easy
+- vectoring-brisbane
+- australia-go!
+- industrial-water-complex
+- explore-the-great-barrier-reef
+- edstat
+- mother-nature
+- evacumate
+- bringing-data-to-the-table
+- worldckans
+- scan,-process,-share,-recreate
+- qschools
+- insolvency-in-qld-2013-2014
+- innovationx
+- whats-up-brisbane
+- climate-flow
+- unveil-the-scene
+- life-explorer
+- walked
+- project-name-*
 title: Best Visualisation of Data
 type: Best In
 ---

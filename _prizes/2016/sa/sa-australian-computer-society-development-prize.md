@@ -7,6 +7,10 @@ jurisdiction: sa
 name: Australian Computer Society Development Prize
 organisation: australian-computer-society
 organisation_title: Australian Computer Society
+projects:
+- smart-asset-management
+- the-driving-angel
+- splash
 title: Australian Computer Society Development Prize
 type: Development
 ---

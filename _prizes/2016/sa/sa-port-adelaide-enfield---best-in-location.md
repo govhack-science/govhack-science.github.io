@@ -7,6 +7,8 @@ jurisdiction: sa
 name: Port Adelaide Enfield - Best in location
 organisation: city-of-port-adelaide-enfield
 organisation_title: City of Port Adelaide Enfield
+projects:
+- rush-adventure
 title: Port Adelaide Enfield - Best in location
 type: Best In
 ---

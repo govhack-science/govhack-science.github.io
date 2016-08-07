@@ -7,6 +7,15 @@ jurisdiction: sa
 name: Jemsoft Technology Development Prize
 organisation: jemsoft
 organisation_title: Jemsoft
+projects:
+- smart-asset-management
+- fivemind
+- the-driving-angel
+- developr
+- pulse
+- r-u-open
+- mysa
+- aquadex
 title: Jemsoft Technology Development Prize
 type: Development
 ---

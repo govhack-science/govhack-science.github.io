@@ -5,6 +5,24 @@ jurisdiction: wa
 name: Sustainable Coastlines Prize
 organisation: nacc
 organisation_title: Northern Agricultural Catchments Council
+projects:
+- campsites-tonight
+- breathe-easy
+- schrodingers-shark
+- walksafe
+- violet-pipe-dreams
+- violet-pipe-dreams
+- parks-finder
+- smart-asset-management
+- mycity-in-virtual-reality
+- perfect-catch
+- piccohunt
+- au-dashboard
+- fish-r-us
+- home-sweet-home
+- flash-me!
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- aquadex
 title: Sustainable Coastlines Prize
 type: Theme
 ---

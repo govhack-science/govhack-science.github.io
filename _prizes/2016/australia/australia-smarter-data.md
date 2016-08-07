@@ -3,9 +3,58 @@ category: australia
 gid: australia-smarter-data
 jurisdiction: australia
 name: Smarter Data
-organisations:
-  - australian-taxation-office
 organisation_title: ATO
+organisations:
+- australian-taxation-office
+projects:
+- stem,-australia
+- parkingmon-go
+- negative-gearing-insight---are-you-one
+- changing-gears
+- taxless:-optimising-your-tax-return
+- home
+- cross-roads
+- geo-spot
+- walksafe
+- a-century-of-intellectual-property
+- smart-travel
+- blockchain-digital-id
+- agricultura
+- adelaide-smart-city-2020
+- check-your-uglies
+- on-the-spot
+- jerbsngrowth
+- smart-asset-management
+- mycity-in-virtual-reality
+- where-are-people-like-me-!
+- mapping-innovation---from-local-to-global-in-time-and-space
+- perfect-catch
+- endless-bureaucracy
+- piccohunt
+- the-driving-angel
+- welcome,-my-new-neighbour!
+- mirai
+- haidabloke
+- parkachu
+- worldckans
+- careermoveau
+- developr
+- smarter-training
+- flash-me!
+- open-invoicing
+- access-now
+- insolvency-in-qld-2013-2014
+- r-u-open
+- crashwarning
+- farrago-parking
+- tasmap.org
+- education-hub
+- local-hero
+- mysa
+- -dash-
+- future-proof
+- disport
+- immi-great
 title: Smarter Data
 type: Bounty
 ---

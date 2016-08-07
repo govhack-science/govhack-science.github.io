@@ -4,6 +4,10 @@ gid: wa-shark-solutions-prize
 jurisdiction: wa
 name: Shark Solutions Prize
 organisation_title: Department of Fisheries
+projects:
+- project-trident
+- schrodingers-shark
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
 title: Shark Solutions Prize
 type: Theme
 ---

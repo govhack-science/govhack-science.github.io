@@ -4,6 +4,21 @@ gid: vic-vic-map-features-of-interest
 jurisdiction: vic
 name: Vic Map Features of Interest
 organisation_title: Victorian Government - Dept. Land, Environment, Water and Planning
+projects:
+- location-location-location
+- wilsons-prom-go
+- parks-finder
+- psychedelicprosthetic
+- ballaratgo
+- going-out-today
+- wheretonext
+- pet-tential
+- highway-to-the-dangerzone
+- legends-of-tomorrow
+- critrs
+- informed-personas
+- local-hero
+- find-my-toilet
 title: Vic Map Features of Interest
 type: Theme
 ---

@@ -4,6 +4,12 @@ gid: tas-most-disruptive-innovation
 jurisdiction: tas
 name: Most Disruptive Innovation
 organisation_title: ACS
+projects:
+- binthere
+- mission:-attrition
+- smarter-training
+- beat-the-press
+- payparking.online
 title: Most Disruptive Innovation
 type: Theme
 ---

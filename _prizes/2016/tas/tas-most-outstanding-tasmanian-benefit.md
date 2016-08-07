@@ -4,6 +4,14 @@ gid: tas-most-outstanding-tasmanian-benefit
 jurisdiction: tas
 name: Most Outstanding Tasmanian Benefit
 organisation_title: Tasmanian State Government
+projects:
+- binthere
+- delugional
+- air-bubble
+- mission:-attrition
+- smarter-training
+- beat-the-press
+- tasmap.org
 title: Most Outstanding Tasmanian Benefit
 type: Theme
 ---

@@ -5,6 +5,20 @@ jurisdiction: vic
 name: MAV Technology Bounty
 organisation: mav-technology
 organisation_title: MAV Technology
+projects:
+- smartpath
+- manage-garbage
+- 5-d-city-explorer
+- psychedelicprosthetic
+- ballaratgo
+- futurenow
+- transport-alert
+- patented
+- wheretonext
+- pet-tential
+- critrs
+- informed-personas
+- zr0data
 title: MAV Technology Bounty
 type: Best In
 ---

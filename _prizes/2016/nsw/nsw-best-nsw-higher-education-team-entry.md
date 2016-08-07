@@ -7,6 +7,14 @@ jurisdiction: nsw
 name: Best NSW Higher Education Team Entry
 organisation: netapp
 organisation_title: NetApp
+projects:
+- tagger
+- opinion-matters
+- tolls-boardgame
+- hazard-communication
+- edugate
+- learngo
+- time2go
 title: Best NSW Higher Education Team Entry
 type: Best In
 ---

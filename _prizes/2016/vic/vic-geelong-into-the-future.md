@@ -4,6 +4,9 @@ gid: vic-geelong-into-the-future
 jurisdiction: vic
 name: Geelong Into the Future
 organisation_title: City of Greater Geelong (CoGG) - Planning, strategy and urban growth
+projects:
+- 5-d-city-explorer
+- highway-to-the-dangerzone
 title: Geelong Into the Future
 type: Theme
 ---

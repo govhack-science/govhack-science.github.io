@@ -4,6 +4,30 @@ gid: sa-smart-lifestyles
 jurisdiction: sa
 name: Smart Lifestyles
 organisation_title: Adelaide City Council and Department of State Development
+projects:
+- greenu
+- smartcare-innovations-hub
+- cross-roads
+- geo-spot
+- walksafe
+- bad-snakes
+- smart-travel
+- qrester
+- adelaide-smart-city-2020
+- smart-asset-management
+- touch
+- the-driving-angel
+- safety-tracker
+- touri
+- a-2-green
+- developr
+- huffless-n-puffless
+- r-u-open
+- digihealth-plus
+- help-me
+- activesa
+- splash
+- aquadex
 title: Smart Lifestyles
 type: Theme
 ---

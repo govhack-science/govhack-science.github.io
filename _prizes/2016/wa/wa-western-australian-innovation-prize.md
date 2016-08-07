@@ -4,6 +4,16 @@ gid: wa-western-australian-innovation-prize
 jurisdiction: wa
 name: Western Australian Innovation Prize
 organisation_title: Insurance Commission of Western Australia
+projects:
+- project-trident
+- violet-pipe-dreams
+- mapping-sepsis
+- the-transac-initiative
+- au-dashboard
+- ihero
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- street-shark
+- smart-sepsis-wa
 title: Western Australian Innovation Prize
 type: Theme
 ---

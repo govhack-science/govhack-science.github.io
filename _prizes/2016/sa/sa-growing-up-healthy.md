@@ -4,6 +4,23 @@ gid: sa-growing-up-healthy
 jurisdiction: sa
 name: Growing up Healthy
 organisation_title: Department of Education and Child Development
+projects:
+- greenu
+- smartcare-innovations-hub
+- cross-roads
+- walksafe
+- bad-snakes
+- child-tracker
+- qrester
+- edudrugs
+- smart-asset-management
+- safety-tracker
+- what-are-you-afraid-of
+- huffless-n-puffless
+- our-story-~-your-story
+- help-me
+- activesa
+- rush-adventure
 title: Growing up Healthy
 type: Theme
 ---

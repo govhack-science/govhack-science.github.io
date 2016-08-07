@@ -4,6 +4,11 @@ gid: vic-the-urban-forest
 jurisdiction: vic
 name: The Urban Forest
 organisation_title: City of Greater Geelong (CoGG) - Parks and Gardens
+projects:
+- smartpath
+- coffee-is-life
+- mytree
+- legends-of-tomorrow
 title: The Urban Forest
 type: Theme
 ---

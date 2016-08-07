@@ -7,6 +7,9 @@ jurisdiction: qld
 name: Best of Logan - Youth
 organisation: logan-city-council
 organisation_title: Logan City Council
+projects:
+- dont-crash
+- accident-tracker
 title: Best of Logan - Youth
 type: Best In
 ---

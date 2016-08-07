@@ -8,6 +8,10 @@ jurisdiction: vic
 name: Melbourne's Ecology
 organisation: city-of-melbourne
 organisation_title: City of Melbourne
+projects:
+- legends-of-tomorrow
+- critrs
+- find-my-toilet
 title: Melbourne's Ecology
 type: Theme
 ---

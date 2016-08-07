@@ -7,6 +7,12 @@ jurisdiction: nsw
 name: City of Parramatta Civic Hack
 organisation: parramatta-city-council
 organisation_title: City of Parramatta Council
+projects:
+- insights-into-vocational-education
+- foster-innovation-to-drive-safer-communities
+- parradise
+- lets-renew-the-renewable-energy!
+- streamlined-service-requests
 title: City of Parramatta Civic Hack
 type: Theme
 ---

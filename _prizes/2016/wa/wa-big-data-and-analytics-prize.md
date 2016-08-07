@@ -4,6 +4,20 @@ gid: wa-big-data-and-analytics-prize
 jurisdiction: wa
 name: Big Data and Analytics Prize
 organisation_title: Office of Science, Department of Premier and Cabinet, Pawsey Supercomputing Centre
+projects:
+- schrodingers-shark
+- violet-pipe-dreams
+- mapping-sepsis
+- e-map:-spatio-temporal-modelling-of-traffic-and-emissions
+- the-transac-initiative
+- ihero
+- wa-traffic-analysis
+- careermoveau
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- immi-great
+- gophergrader
+- smart-sepsis-wa
+- colourful-past
 title: Big Data and Analytics Prize
 type: Best In
 ---

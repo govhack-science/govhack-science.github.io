@@ -4,6 +4,16 @@ gid: wa-geospatial-prize
 jurisdiction: wa
 name: Most Innovative Use Of Location-based Information Prize
 organisation_title: SPUR, Powered by Landgate
+projects:
+- violet-pipe-dreams
+- mapping-sepsis
+- e-map:-spatio-temporal-modelling-of-traffic-and-emissions
+- wa-traffic-analysis
+- crash-course
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- anaconda-dont
+- gophergrader
+- smart-sepsis-wa
 title: Most Innovative Use Of Location-based Information Prize
 type: Theme
 ---

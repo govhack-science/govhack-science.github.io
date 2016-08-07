@@ -4,6 +4,24 @@ gid: wa-western-australian-solution-prize
 jurisdiction: wa
 name: Western Australian Solution Prize
 organisation_title: SPUR, powered by Landgate
+projects:
+- project-trident
+- budgethack
+- schrodingers-shark
+- violet-pipe-dreams
+- mapping-sepsis
+- mentalhelp-application
+- e-map:-spatio-temporal-modelling-of-traffic-and-emissions
+- the-transac-initiative
+- state-engaged
+- au-dashboard
+- ihero
+- careermoveau
+- crash-course
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- street-shark
+- anaconda-dont
+- smart-sepsis-wa
 title: Western Australian Solution Prize
 type: Theme
 ---

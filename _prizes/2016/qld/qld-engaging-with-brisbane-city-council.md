@@ -9,6 +9,23 @@ jurisdiction: qld
 name: Engaging with Brisbane City Council
 organisation: brisbane-city-council
 organisation_title: Brisbane City Council
+projects:
+- crikey!:-helping-your-community
+- breathe-easy
+- vectoring-brisbane
+- australia-go!
+- quickbus
+- spokesocial
+- evacumate
+- bringing-data-to-the-table
+- city-quest
+- worldckans
+- innovationx
+- time-walks
+- whats-up-brisbane
+- fresh-plans
+- next-bus
+- unveil-the-scene
 title: Engaging with Brisbane City Council
 type: Theme
 ---

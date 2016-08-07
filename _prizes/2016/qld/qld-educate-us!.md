@@ -4,6 +4,31 @@ gid: qld-educate-us!
 jurisdiction: qld
 name: Educate us!
 organisation_title: Queensland Government on behalf of the Department of Education and Training
+projects:
+- breathe-easy
+- vectoring-brisbane
+- safenet
+- air-adventure!!!
+- australlite
+- the-outdoor-experience
+- picspot
+- explore-the-great-barrier-reef
+- check-your-uglies
+- mycity-in-virtual-reality
+- mother-nature
+- snap-ranger
+- bringing-data-to-the-table
+- city-quest
+- worldckans
+- scan,-process,-share,-recreate
+- qschools
+- time-walks
+- climate-flow
+- threat.end
+- unveil-the-scene
+- future-proof
+- walked
+- project-name-*
 title: Educate us!
 type: Theme
 ---

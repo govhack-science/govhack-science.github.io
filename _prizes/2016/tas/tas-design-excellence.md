@@ -5,6 +5,13 @@ jurisdiction: tas
 name: Design Excellence
 organisation: tasict
 organisation_title: TasICT
+projects:
+- stem,-australia
+- binthere
+- mission:-attrition
+- beat-the-press
+- tasmap.org
+- powering-australia
 title: Design Excellence
 type: Theme
 ---

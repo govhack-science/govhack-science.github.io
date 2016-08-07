@@ -4,6 +4,23 @@ gid: wa-western-australian-community-prize
 jurisdiction: wa
 name: Western Australian Community Prize
 organisation_title: Department of Local Government and Communities
+projects:
+- project-trident
+- wa-public-housing
+- budgethack
+- schrodingers-shark
+- violet-pipe-dreams
+- mentalhelp-application
+- state-engaged
+- au-dashboard
+- ihero
+- careermoveau
+- crash-course
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- street-shark
+- immi-great
+- gophergrader
+- colourful-past
 title: Western Australian Community Prize
 type: Theme
 ---

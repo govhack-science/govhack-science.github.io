@@ -6,6 +6,12 @@ gid: sa-mount-gambier---best-youth-team-in-location
 jurisdiction: sa
 name: Mount Gambier - Best Youth Team in location
 organisation_title: Friends of the Library
+projects:
+- walksafe
+- disaster-watch
+- touri
+- huffless-n-puffless
+- activesa
 title: Mount Gambier - Best Youth Team in location
 type: Best In
 ---

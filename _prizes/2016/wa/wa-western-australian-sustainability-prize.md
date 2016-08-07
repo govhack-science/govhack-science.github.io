@@ -4,6 +4,14 @@ gid: wa-western-australian-sustainability-prize
 jurisdiction: wa
 name: Western Australian Sustainability Prize
 organisation_title: Water Corporation of WA
+projects:
+- project-trident
+- violet-pipe-dreams
+- sustainable-juniors
+- e-map:-spatio-temporal-modelling-of-traffic-and-emissions
+- au-dashboard
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- anaconda-dont
 title: Western Australian Sustainability Prize
 type: Theme
 ---

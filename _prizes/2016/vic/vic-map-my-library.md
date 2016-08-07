@@ -4,6 +4,10 @@ gid: vic-map-my-library
 jurisdiction: vic
 name: Map my Library
 organisation_title: Geelong Regional Libraries Corporation (GRLC)
+projects:
+- helping-hand
+- critrs
+- find-my-toilet
 title: Map my Library
 type: Theme
 ---

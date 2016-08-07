@@ -4,6 +4,16 @@ gid: act-best-youth-hacker-team
 jurisdiction: act
 name: Best Youth Hacker Team
 organisation_title: ACT Government
+projects:
+- parkingmon-go
+- tour-de-chance
+- go-explore-cbr
+- censusme
+- parkachu
+- mind-the-gapp
+- smartroads
+- crashwarning
+- averageaussie
 title: Best Youth Hacker Team
 type: Best In
 ---

@@ -4,6 +4,16 @@ gid: wa-western-australian-citizenship-price
 jurisdiction: wa
 name: Western Australian Citizenship Price
 organisation_title: UnitingCare West
+projects:
+- project-trident
+- violet-pipe-dreams
+- mentalhelp-application
+- state-engaged
+- au-dashboard
+- ihero
+- careermoveau
+- street-shark
+- immi-great
 title: Western Australian Citizenship Price
 type: Theme
 ---

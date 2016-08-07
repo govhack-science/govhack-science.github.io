@@ -7,6 +7,12 @@ jurisdiction: sa
 name: Onkaparinga - Best in location
 organisation: city-of-onkaparinga
 organisation_title: City of Onkaparinga
+projects:
+- tchke
+- geo-spot
+- attack-of-the-pink-fluffy-unicorns.
+- aboriginal-employment-art
+- fish-r-us
 title: Onkaparinga - Best in location
 type: Best In
 ---

@@ -3,9 +3,36 @@ category: australia
 gid: australia-abc-news-content
 jurisdiction: australia
 name: ABC News Content
-organisations:
-  - abc
 organisation_title: ABC
+organisations:
+- abc
+projects:
+- greenu
+- newspulse
+- exploring-indigenous-over-representation-in-youth-detention
+- krowdkwiz
+- story-place
+- australlite
+- wynaut---historycal-picture-viewer
+- newsexplo.re
+- w_i_n_e
+- on-the-spot
+- opinion-matters
+- mycity-in-virtual-reality
+- search-party
+- hawks-i
+- mind-the-gapp
+- walkaboutaus!
+- flash-me!
+- news-&-events-data-mashup
+- factr
+- beat-the-press
+- truthbot
+- farrago-parking
+- threat.end
+- critrs
+- mysa
+- portrait-landscape
 title: ABC News Content
 type: Bounty
 ---

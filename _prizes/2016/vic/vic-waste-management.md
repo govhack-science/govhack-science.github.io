@@ -4,6 +4,10 @@ gid: vic-waste-management
 jurisdiction: vic
 name: Waste Management
 organisation_title: 'Victorian Government: Sustainability Victoria'
+projects:
+- manage-garbage
+- endless-bureaucracy
+- hard-waste-management-analysis
 title: Waste Management
 type: Theme
 ---

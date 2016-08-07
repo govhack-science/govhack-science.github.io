@@ -7,6 +7,12 @@ jurisdiction: qld
 name: Best of Logan
 organisation: logan-city-council
 organisation_title: Logan City Council
+projects:
+- getthere
+- the-outdoor-experience
+- insync
+- smart-moves-logan
+- accident-tracker
 title: Best of Logan
 type: Best In
 ---

@@ -4,6 +4,14 @@ gid: sa-best-maker
 jurisdiction: sa
 name: Best Maker
 organisation_title: Department of State Development and Adelaide City Council
+projects:
+- greenu
+- bad-snakes
+- the-driving-angel
+- touri
+- sweet-beginnings
+- pom-pom-pie-charts
+- what-lives-here
 title: Best Maker
 type: Theme
 ---

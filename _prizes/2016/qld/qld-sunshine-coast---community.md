@@ -6,6 +6,13 @@ gid: qld-sunshine-coast---community
 jurisdiction: qld
 name: Sunshine Coast - Community
 organisation_title: Sunshine Coast Council & Noosa Council
+projects:
+- safenet
+- weather-balls
+- retirement-with-children
+- community-companion
+- the-good-old-life
+- future-proof
 title: Sunshine Coast - Community
 type: Theme
 ---

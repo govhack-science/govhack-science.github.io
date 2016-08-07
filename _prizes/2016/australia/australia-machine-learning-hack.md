@@ -3,9 +3,64 @@ category: australia
 gid: australia-machine-learning-hack
 jurisdiction: international
 name: Machine Learning Hack
-organisations:
-  - google
 organisation_title: Google
+organisations:
+- google
+projects:
+- boj---jobquilibrium
+- ipgodmode
+- negative-gearing-insight---are-you-one
+- on-the-move
+- taxless:-optimising-your-tax-return
+- home
+- geo-spot
+- newsexplo.re
+- will-i-burn
+- privé
+- a-century-of-intellectual-property
+- parks-finder
+- qrester
+- sizzlerig
+- where-2-go
+- jerbsngrowth
+- opinion-matters
+- smart-asset-management
+- mycity-in-virtual-reality
+- the-transac-initiative
+- fivemind
+- perfect-catch
+- the-driving-angel
+- welcome,-my-new-neighbour!
+- ihero
+- maphack
+- haidabloke
+- cbr-heritage-data-team
+- worldckans
+- hawks-i
+- home-sweet-home
+- futurenow
+- touri
+- walkaboutaus!
+- developr
+- patented
+- flash-me!
+- pulse
+- qschools
+- insolvency-in-qld-2013-2014
+- factr
+- beat-the-press
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- truthbot
+- education-hub
+- unveil-the-scene
+- help-me
+- mysa
+- anaconda-dont
+- portrait-landscape
+- colourful-past
+- project-name-*
+- aquadex
+- find-my-toilet
 title: Machine Learning Hack
 type: International
 ---

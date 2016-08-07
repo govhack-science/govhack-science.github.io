@@ -3,9 +3,20 @@ category: australia
 gid: australia-exploring-underground
 jurisdiction: australia
 name: Exploring Underground
-organisations:
-  - geoscience-australia
 organisation_title: Geoscience Australia
+organisations:
+- geoscience-australia
+projects:
+- vectoring-brisbane
+- smart-asset-management
+- mycity-in-virtual-reality
+- 3d-printed-geophysical-data
+- the-driving-angel
+- touri
+- flash-me!
+- healthhack
+- anaconda-dont
+- aquadex
 title: Exploring Underground
 type: Bounty
 ---

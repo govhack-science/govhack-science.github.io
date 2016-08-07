@@ -5,6 +5,23 @@ jurisdiction: qld
 name: Getting around Brisbane
 organisation: brisbane-city-council
 organisation_title: Brisbane City Council
+projects:
+- breathe-easy
+- vectoring-brisbane
+- getthere
+- australia-go!
+- your-local-opinion
+- quickbus
+- picspot
+- where-2-go
+- spokesocial
+- mycity-in-virtual-reality
+- evacumate
+- city-quest
+- insync
+- time-walks
+- next-bus
+- accident-tracker
 title: Getting around Brisbane
 type: Theme
 ---

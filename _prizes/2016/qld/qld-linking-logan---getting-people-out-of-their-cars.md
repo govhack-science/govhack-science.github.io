@@ -5,6 +5,19 @@ jurisdiction: qld
 name: Linking Logan - Getting people out of their cars
 organisation: logan-city-council
 organisation_title: Logan City Council
+projects:
+- breathe-easy
+- vectoring-brisbane
+- getthere
+- the-outdoor-experience
+- your-local-opinion
+- where-2-go
+- mycity-in-virtual-reality
+- insync
+- time-walks
+- next-bus
+- accident-tracker
+- walked
 title: Linking Logan - Getting people out of their cars
 type: Theme
 ---

@@ -4,6 +4,16 @@ gid: vic-parks-vic--experience
 jurisdiction: vic
 name: Parks Vic -Experience
 organisation_title: Victorian Government - Parks Victoria
+projects:
+- campsites-tonight
+- wilsons-prom-go
+- parks-finder
+- psychedelicprosthetic
+- going-out-today
+- critrs
+- local-hero
+- wilderness-buddy
+- find-my-toilet
 title: Parks Vic -Experience
 type: Theme
 ---

@@ -6,6 +6,12 @@ gid: vic-hack-for-wyndham
 jurisdiction: vic
 name: Hack for Wyndham
 organisation_title: City of Wyndham
+projects:
+- wecare
+- manage-garbage
+- mytree
+- hard-waste-management-analysis
+- informed-personas
 title: Hack for Wyndham
 type: Best In
 ---

@@ -4,6 +4,15 @@ gid: nsw-lifting-the-barriers
 jurisdiction: nsw
 name: Lifting the Barriers
 organisation_title: Council of the City of Sydney
+projects:
+- sydpark
+- datacake
+- perfect-catch
+- hawks-i
+- unsung
+- flash-me!
+- access-now
+- education-hub
 title: Lifting the Barriers
 type: Theme
 ---

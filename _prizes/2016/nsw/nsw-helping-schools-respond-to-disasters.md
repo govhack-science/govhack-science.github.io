@@ -4,6 +4,14 @@ gid: nsw-helping-schools-respond-to-disasters
 jurisdiction: nsw
 name: Helping Schools Respond to Disasters
 organisation_title: Centre for Education Statistics and Evaluation, NSW Department of Education
+projects:
+- aaya
+- school-disaster-resilience
+- perfect-catch
+- hawks-i
+- hazard-communication
+- unsung
+- flash-me!
 title: Helping Schools Respond to Disasters
 type: Theme
 ---

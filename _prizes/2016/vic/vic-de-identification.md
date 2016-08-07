@@ -4,6 +4,9 @@ gid: vic-de-identification
 jurisdiction: vic
 name: De Identification
 organisation_title: Victorian Government - Dept Justice and Regulation and the Commissioner for Privacy and Data Protection
+projects:
+- informed-personas
+- zr0data
 title: De Identification
 type: Theme
 ---

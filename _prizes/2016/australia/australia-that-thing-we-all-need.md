@@ -3,9 +3,57 @@ category: australia
 gid: australia-that-thing-we-all-need
 jurisdiction: australia
 name: That thing we all need
-organisations:
-  - australian-bureau-of-statistics
 organisation_title: Australian Bureau of Statistics
+organisations:
+- australian-bureau-of-statistics
+projects:
+- campsites-tonight
+- bizhack
+- hackanation
+- location-location-location
+- aaya
+- home
+- australia-go!
+- mapping-sepsis
+- smart-travel
+- w_i_n_e
+- blockchain-digital-id
+- agricultura
+- firealert
+- where-2-go
+- mycity-in-virtual-reality
+- touch
+- mother-nature
+- where-are-people-like-me-!
+- data-for-social-change-update
+- endless-bureaucracy
+- ballaratgo
+- the-driving-angel
+- au-dashboard
+- ihero
+- haidabloke
+- worldckans
+- scan,-process,-share,-recreate
+- touri
+- a-2-green
+- patented
+- flash-me!
+- insolvency-in-qld-2013-2014
+- point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
+- truthbot
+- pom-pom-pie-charts
+- transforma
+- digihealth-plus
+- averageaussie
+- informed-personas
+- education-hub
+- zr0data
+- -dash-
+- disport
+- immi-great
+- smart-sepsis-wa
+- find-my-toilet
+- proximity
 title: That thing we all need
 type: Bounty
 ---

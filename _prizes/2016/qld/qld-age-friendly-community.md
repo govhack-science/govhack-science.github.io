@@ -4,6 +4,24 @@ gid: qld-age-friendly-community
 jurisdiction: qld
 name: Age-friendly Community
 organisation_title: Queensland Government on behalf of the Department of Communities, Child Safety and Disability Services
+projects:
+- location-info
+- crikey!:-helping-your-community
+- getthere
+- your-local-opinion
+- dingopack
+- where-2-go
+- check-your-uglies
+- mycity-in-virtual-reality
+- retirement-with-children
+- community-companion
+- search-party
+- the-good-old-life
+- grey-areas
+- time-walks
+- whats-up-brisbane
+- unveil-the-scene
+- disport
 title: Age-friendly Community
 type: Theme
 ---

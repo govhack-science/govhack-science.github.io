@@ -3,9 +3,19 @@ category: australia
 gid: australia-hiding-wally
 jurisdiction: australia
 name: Hiding Wally
-organisations:
-  - queensland-government-2
 organisation_title: Queensland Government
+organisations:
+- queensland-government-2
+projects:
+- privé
+- blockchain-digital-id
+- de-identify-your-data-inc
+- mycity-in-virtual-reality
+- perfect-catch
+- haidabloke
+- flash-me!
+- zr0data
+- daaasgüd
 title: Hiding Wally
 type: Bounty
 ---

@@ -3,10 +3,25 @@ category: australia
 gid: australia-paddock-to-plate-hack
 jurisdiction: australia
 name: Paddock to Plate Hack
-organisations:
-  - ncris-research-data-and-infrastructure-group
-  - department-of-infrastructure-and-regional-development
 organisation_title: NCRIS & Department of Infrastructure & Regional Development
+organisations:
+- ncris-research-data-and-infrastructure-group
+- department-of-infrastructure-and-regional-development
+projects:
+- stem,-australia
+- john-conner
+- greenu
+- violet-pipe-dreams
+- w_i_n_e
+- sizzlerig
+- agricultura
+- jerbsngrowth
+- mycity-in-virtual-reality
+- fivemind
+- careermoveau
+- flash-me!
+- climate-flow
+- lettuce-be-friends
 title: Paddock to Plate Hack
 type: Major
 ---
