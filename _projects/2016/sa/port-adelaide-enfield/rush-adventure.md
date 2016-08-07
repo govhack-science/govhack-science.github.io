@@ -11,7 +11,7 @@ event: port-adelaide-enfield
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2876
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Dog%20meme.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - sa-growing-up-healthy
 - sa-vibrant-adelaide

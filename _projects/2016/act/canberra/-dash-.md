@@ -17,7 +17,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2401
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_3.PNG
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-aihw-visualisation
 - australia-innovative-ideas-hack

@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1886
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ctrl-alt-defeat_4.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - australia-future-australia-hack
 - australia-innovative-ideas-hack

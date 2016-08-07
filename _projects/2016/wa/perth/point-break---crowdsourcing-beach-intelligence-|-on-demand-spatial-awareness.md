@@ -17,7 +17,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2711
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/icon_light%402x.png
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

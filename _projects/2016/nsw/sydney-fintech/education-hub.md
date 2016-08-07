@@ -17,7 +17,7 @@ event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1936
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/educationHub.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-future-australia-hack
 - australia-innovative-ideas-hack

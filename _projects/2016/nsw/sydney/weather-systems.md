@@ -10,7 +10,7 @@ datasets_used:
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1331
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-weather-forecast
 project_title: Weather Systems
 project_url: ''

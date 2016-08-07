@@ -13,7 +13,7 @@ datasets_used:
 event: camperdown-games
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2236
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2576
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tumblr_ob5qocyyU01vbmldso1_1280.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-innovative-ideas-hack
 project_title: Election Stitchup

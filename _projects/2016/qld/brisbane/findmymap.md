@@ -11,7 +11,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1996
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Topodude.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - qld-create-a-cutting-edge-concept---the-science-sandpit!
 project_title: FindMyMap
 project_url: https://dl.dropboxusercontent.com/u/14576727/site/website%20code/index.html

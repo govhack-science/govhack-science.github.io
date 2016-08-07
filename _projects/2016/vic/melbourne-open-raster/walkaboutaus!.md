@@ -19,7 +19,7 @@ datasets_used:
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2806
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

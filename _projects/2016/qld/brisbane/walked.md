@@ -14,7 +14,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2221
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/walked.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack
 - australia-location-data

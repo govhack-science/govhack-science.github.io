@@ -17,7 +17,7 @@ event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1516
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/004_0.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-future-australia-hack
 - australia-innovative-ideas-hack
 - vic-geelong-into-the-future

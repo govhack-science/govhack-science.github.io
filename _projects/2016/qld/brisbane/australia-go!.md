@@ -65,7 +65,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2641
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AustralianMap.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-future-australia-hack
 - australia-location-data

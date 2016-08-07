@@ -19,7 +19,7 @@ datasets_used:
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2946
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-iag-flood-risk
 - australia-innovative-ideas-hack

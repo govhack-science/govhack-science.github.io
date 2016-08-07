@@ -8,7 +8,7 @@ event: geraldton
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2956
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/gov_hack.png
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-location-data
 - australia-transport-data
 - wa-the-keep-western-australia-moving-prize

@@ -11,7 +11,7 @@ event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2561
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/favicon.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

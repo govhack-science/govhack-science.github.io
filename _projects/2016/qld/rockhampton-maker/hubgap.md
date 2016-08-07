@@ -19,7 +19,7 @@ datasets_used:
 event: rockhampton-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3116
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-ip-rights
 - qld-advance-queensland!
 - qld-best-innovative-use-of-data-sets

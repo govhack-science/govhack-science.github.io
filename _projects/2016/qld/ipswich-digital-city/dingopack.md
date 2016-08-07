@@ -20,7 +20,7 @@ event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2721
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dingo%20pack%20icon.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - australia-iag-flood-risk
 - australia-inspired-by-research-hack

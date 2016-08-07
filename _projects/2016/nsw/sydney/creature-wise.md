@@ -11,7 +11,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2241
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_3656_4.JPG
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - nsw-most-fun-and-creative-use-of-data
 project_title: Creature Wise
 project_url: https://twitter.com/CreatureWise

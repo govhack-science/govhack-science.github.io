@@ -8,7 +8,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1336
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/PayParking.online.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-innovative-ideas-hack

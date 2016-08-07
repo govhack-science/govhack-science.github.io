@@ -23,7 +23,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/971
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Artboard%2014.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - qld-best-innovative-use-of-data-sets
 - qld-brisbanes-art-and-heritage
 - qld-educate-us!

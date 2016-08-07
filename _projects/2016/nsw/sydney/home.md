@@ -14,7 +14,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1901
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_2.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

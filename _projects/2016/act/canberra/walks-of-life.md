@@ -29,7 +29,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1666
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo_d.jpg
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-aihw-visualisation
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack

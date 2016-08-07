@@ -13,7 +13,7 @@ datasets_used:
 event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/801
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-creative-humanities-hack
 - australia-no-boundaries-data-hack

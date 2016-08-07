@@ -11,7 +11,7 @@ event: wyndham
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1806
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/informedpersonas_4.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

@@ -8,7 +8,7 @@ event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3021
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/brain-gears.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack
 - australia-location-data

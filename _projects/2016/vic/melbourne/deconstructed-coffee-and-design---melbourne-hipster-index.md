@@ -4,7 +4,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2791
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Mista%20Hipsta.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-inspired-by-research-hack

@@ -23,7 +23,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2571
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dangerzone.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-future-australia-hack
 - australia-iag-flood-risk

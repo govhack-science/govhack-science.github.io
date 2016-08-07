@@ -7,7 +7,7 @@ datasets_used:
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1636
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-innovative-ideas-hack
 - nsw-acceleration-award-govhack-nsw

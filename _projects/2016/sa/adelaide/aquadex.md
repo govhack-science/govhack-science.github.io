@@ -22,7 +22,7 @@ datasets_used:
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1766
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-exploring-underground

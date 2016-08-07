@@ -14,7 +14,7 @@ event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2761
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Bringing%20Data%20to%20the%20Table.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-community-resilience-hack
 - australia-location-data

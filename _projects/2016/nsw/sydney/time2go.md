@@ -8,7 +8,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1921
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.46.07%20PM.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-transport-data
 - nsw-best-nsw-higher-education-team-entry

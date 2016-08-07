@@ -11,7 +11,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2646
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/mission-attrition-icon.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-storytelling-hack
 - australia-student-dropout-rates

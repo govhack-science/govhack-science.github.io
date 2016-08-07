@@ -7,7 +7,7 @@ datasets_used:
 event: wyndham
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2266
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

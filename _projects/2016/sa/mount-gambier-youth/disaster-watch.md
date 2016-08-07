@@ -35,7 +35,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1136
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/disasterproof%20250x250_0.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-iag-flood-risk
 - australia-innovative-ideas-hack
 - australia-inspired-by-research-hack

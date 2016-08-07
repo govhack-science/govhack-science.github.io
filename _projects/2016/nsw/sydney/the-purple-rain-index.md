@@ -11,7 +11,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2016
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Purple-Rain-Logo.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-iag-flood-risk

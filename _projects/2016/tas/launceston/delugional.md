@@ -17,7 +17,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2426
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CkQeRkjUoAApDTk_1.jpg
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-iag-flood-risk

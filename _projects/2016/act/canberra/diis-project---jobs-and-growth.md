@@ -20,7 +20,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/951
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GPS%20-%20turn%20right%20for%20jobs.jpg
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-future-australia-hack

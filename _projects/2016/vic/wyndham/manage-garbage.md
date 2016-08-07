@@ -29,7 +29,7 @@ event: wyndham
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2161
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.44.16%20PM.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-innovative-ideas-hack
 - australia-inspired-by-research-hack

@@ -20,7 +20,7 @@ event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1846
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_2.PNG
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-transport-data
 - qld-age-friendly-community

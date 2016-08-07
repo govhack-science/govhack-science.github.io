@@ -28,7 +28,7 @@ datasets_used:
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1261
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-paddock-to-plate-hack
 - wa-sustainable-coastlines-prize
 - wa-big-data-and-analytics-prize

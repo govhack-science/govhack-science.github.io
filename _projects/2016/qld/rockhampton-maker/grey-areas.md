@@ -17,7 +17,7 @@ event: rockhampton-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1621
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Grey-areas-logo-HR-300dpi-RGB.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-future-australia-hack
 - australia-location-data

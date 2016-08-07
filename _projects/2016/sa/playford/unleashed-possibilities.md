@@ -10,7 +10,7 @@ datasets_used:
 event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3131
 jurisdiction: sa
-prizes:
+prizes-entered:
 - sa-adelaide-smart-city-state-champion
 - sa-protecting-our-environment
 - sa-supporting-sa-economy

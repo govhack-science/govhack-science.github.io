@@ -23,7 +23,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/images_2.jpg
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-student-dropout-rates
 - act-best-data-wrangling
 project_title: Stickin Around

@@ -16,7 +16,7 @@ datasets_used:
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2496
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack

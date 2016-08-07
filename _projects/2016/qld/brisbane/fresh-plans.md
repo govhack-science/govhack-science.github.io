@@ -32,7 +32,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2031
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fresh_plans_logo_1_720.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

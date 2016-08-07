@@ -19,7 +19,7 @@ datasets_used:
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2296
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

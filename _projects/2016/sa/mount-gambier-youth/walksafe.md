@@ -8,7 +8,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/LogoMakr.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-future-australia-hack

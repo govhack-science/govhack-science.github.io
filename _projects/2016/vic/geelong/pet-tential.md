@@ -17,7 +17,7 @@ event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1496
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/paws.svg_.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

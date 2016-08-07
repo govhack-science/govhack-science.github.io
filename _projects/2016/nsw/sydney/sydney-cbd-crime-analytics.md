@@ -14,7 +14,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2351
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHack2016_orange_is_the_new_hack_team_logo.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-community-resilience-hack

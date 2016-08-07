@@ -14,7 +14,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1296
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/keep_calm_and_hack.jpg
 jurisdiction: wa
-prizes:
+prizes-entered:
 - wa-western-australian-community-prize
 - wa-western-australian-entrepeneurial-prize
 - wa-western-australian-solution-prize

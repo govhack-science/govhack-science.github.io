@@ -10,7 +10,7 @@ datasets_used:
 event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2026
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-future-australia-hack
 - australia-iag-flood-risk

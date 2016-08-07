@@ -26,7 +26,7 @@ event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/781
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SplashFourbyuathreewithaborder%20copy.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

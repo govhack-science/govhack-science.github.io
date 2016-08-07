@@ -17,7 +17,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2981
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hack_to_the_Future_600x267.png
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

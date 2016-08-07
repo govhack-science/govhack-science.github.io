@@ -23,7 +23,7 @@ event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2836
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_0.PNG
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-that-thing-we-all-need
 - australia-data-intelligence-hack

@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2786
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/gov.hack_.mole_.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack
 - australia-community-resilience-hack

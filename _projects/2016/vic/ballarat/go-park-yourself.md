@@ -26,7 +26,7 @@ event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1231
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/parking.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - australia-securing-personal-property
 - australia-transport-data

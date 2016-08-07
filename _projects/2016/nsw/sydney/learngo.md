@@ -25,7 +25,7 @@ datasets_used:
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1911
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-location-data

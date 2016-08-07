@@ -10,7 +10,7 @@ datasets_used:
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2006
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-location-data
 - australia-transport-data
 - qld-advance-queensland!

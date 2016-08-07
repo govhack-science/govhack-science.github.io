@@ -11,7 +11,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1256
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hack%20Newbie.JPG
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - australia-location-data
 - australia-new-infrastructure

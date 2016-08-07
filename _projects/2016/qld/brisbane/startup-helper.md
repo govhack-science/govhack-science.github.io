@@ -11,7 +11,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2871
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hackaroos_0.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack
 - australia-local-industry-activity

@@ -14,7 +14,7 @@ event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2391
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/troll_bridge.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

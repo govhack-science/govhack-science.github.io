@@ -7,7 +7,7 @@ datasets_used:
 event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3121
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-innovative-ideas-hack
 - qld-age-friendly-community

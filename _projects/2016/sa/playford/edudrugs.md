@@ -29,7 +29,7 @@ event: playford
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2381
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_5531_0.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack

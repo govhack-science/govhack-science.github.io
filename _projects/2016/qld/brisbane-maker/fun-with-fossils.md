@@ -14,7 +14,7 @@ event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3041
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ammonitebot.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 project_title: Fun with Fossils
 project_url: https://www.youtube.com/watch?v=eYf1Wt8gwTk

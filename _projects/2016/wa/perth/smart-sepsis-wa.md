@@ -10,7 +10,7 @@ datasets_used:
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3126
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-storytelling-hack

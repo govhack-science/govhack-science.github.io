@@ -11,7 +11,7 @@ event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2756
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_0820.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-location-data
 - australia-transport-data
 - sa-connecting-across-sa

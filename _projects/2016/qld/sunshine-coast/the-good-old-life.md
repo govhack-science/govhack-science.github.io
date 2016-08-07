@@ -26,7 +26,7 @@ event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1456
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/TGOL_logo_JB.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-location-data
 - qld-age-friendly-community

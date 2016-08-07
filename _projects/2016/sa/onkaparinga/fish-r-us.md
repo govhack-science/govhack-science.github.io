@@ -16,7 +16,7 @@ datasets_used:
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2986
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - australia-location-data
 - wa-sustainable-coastlines-prize

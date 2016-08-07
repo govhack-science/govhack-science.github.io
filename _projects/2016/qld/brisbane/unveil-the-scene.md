@@ -29,7 +29,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1816
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/unveilthesceneLogo.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

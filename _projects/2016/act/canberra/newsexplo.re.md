@@ -14,7 +14,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2446
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_300dpi.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

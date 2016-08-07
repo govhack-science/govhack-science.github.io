@@ -7,7 +7,7 @@ datasets_used:
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2926
 jurisdiction: sa
-prizes:
+prizes-entered:
 - sa-onkaparinga---best-in-location
 - sa-onkaparinga---best-youth-team-in-location
 project_title: Aboriginal Employment Art

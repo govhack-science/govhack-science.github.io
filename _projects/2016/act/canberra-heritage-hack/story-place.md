@@ -17,7 +17,7 @@ event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2176
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/StoryPlaceIcon_0.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

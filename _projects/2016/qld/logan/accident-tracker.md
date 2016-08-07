@@ -7,7 +7,7 @@ datasets_used:
 event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1976
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack
 - australia-community-resilience-hack

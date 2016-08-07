@@ -8,7 +8,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2366
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/transparent_Opinion%20Matters%20Logo.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

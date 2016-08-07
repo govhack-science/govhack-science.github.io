@@ -19,7 +19,7 @@ datasets_used:
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/956
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-creative-humanities-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

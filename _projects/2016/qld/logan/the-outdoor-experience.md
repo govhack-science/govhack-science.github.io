@@ -20,7 +20,7 @@ event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2021
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image1.PNG
 jurisdiction: qld
-prizes:
+prizes-entered:
 - qld-advance-queensland!
 - qld-educate-us!
 - qld-linking-logan---getting-people-out-of-their-cars

@@ -14,7 +14,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1881
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/jamart.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack

@@ -7,7 +7,7 @@ datasets_used:
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2826
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - act-best-youth-hacker-team
 project_title: CensusMe

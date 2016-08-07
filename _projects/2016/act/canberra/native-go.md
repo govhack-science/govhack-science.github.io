@@ -13,7 +13,7 @@ datasets_used:
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1711
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack

@@ -7,7 +7,7 @@ datasets_used:
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3166
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

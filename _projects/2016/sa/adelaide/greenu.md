@@ -20,7 +20,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2516
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo-01.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-creative-humanities-hack
 - australia-iag-flood-risk

@@ -26,7 +26,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/821
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_flat.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-future-australia-hack

@@ -20,7 +20,7 @@ event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2881
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/team-image-01.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-entrepreneurial-hack

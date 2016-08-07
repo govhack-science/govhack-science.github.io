@@ -11,7 +11,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1436
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Transforma-Logo.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-entrepreneurial-hack
 - australia-location-data

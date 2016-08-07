@@ -11,7 +11,7 @@ event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2306
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Snap%20Ranger%20Logo.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - australia-inspired-by-research-hack
 - qld-advance-queensland!

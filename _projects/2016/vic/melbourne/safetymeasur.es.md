@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2856
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Pasted%20image%20at%202016_07_31%2012_56%20PM.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

@@ -10,7 +10,7 @@ datasets_used:
 event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2281
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 project_title: Ch-ch-ch-changes App
 project_url: https://auschanges.herokuapp.com/

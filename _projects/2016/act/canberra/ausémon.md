@@ -11,7 +11,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1001
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ausemon_entry.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

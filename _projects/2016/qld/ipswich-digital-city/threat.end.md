@@ -14,7 +14,7 @@ event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1106
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/icon.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-inspired-by-research-hack

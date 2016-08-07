@@ -32,7 +32,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1301
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo2.PNG
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - sa-connecting-across-sa
 - sa-growing-up-healthy

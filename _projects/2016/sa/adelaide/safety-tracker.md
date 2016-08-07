@@ -13,7 +13,7 @@ datasets_used:
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/966
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-future-australia-hack
 - australia-innovative-ideas-hack

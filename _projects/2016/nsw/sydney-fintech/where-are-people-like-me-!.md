@@ -8,7 +8,7 @@ event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2291
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fp.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-data-intelligence-hack
 - australia-location-data

@@ -14,7 +14,7 @@ event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1796
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FullyRegisteredLogo1_1.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-inspired-by-research-hack

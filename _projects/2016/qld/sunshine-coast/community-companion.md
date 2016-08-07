@@ -14,7 +14,7 @@ event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2441
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/team.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - australia-location-data
 - qld-age-friendly-community

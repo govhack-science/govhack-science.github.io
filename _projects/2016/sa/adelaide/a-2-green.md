@@ -14,7 +14,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1186
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/BT_Logo_Set_Full%20Logo.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

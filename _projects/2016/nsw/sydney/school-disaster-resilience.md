@@ -22,7 +22,7 @@ datasets_used:
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2076
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack

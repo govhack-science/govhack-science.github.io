@@ -7,7 +7,7 @@ datasets_used:
 event: brisbane-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1756
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - qld-create-a-cutting-edge-concept---the-science-sandpit!
 - qld-educate-us!

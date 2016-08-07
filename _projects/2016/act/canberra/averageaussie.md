@@ -8,7 +8,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2796
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/2263_8.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - act-best-in-act
 - act-best-youth-hacker-team

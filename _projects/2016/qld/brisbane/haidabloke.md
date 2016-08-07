@@ -8,7 +8,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1316
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/WallysWorld.8.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack

@@ -23,7 +23,7 @@ event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2256
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_0.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-creative-humanities-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

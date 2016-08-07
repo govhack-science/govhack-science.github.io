@@ -16,7 +16,7 @@ datasets_used:
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2186
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-aihw-visualisation
 - australia-creative-humanities-hack

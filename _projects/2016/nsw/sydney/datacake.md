@@ -23,7 +23,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1776
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/datacake_1.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

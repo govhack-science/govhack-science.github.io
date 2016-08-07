@@ -11,7 +11,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2816
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/BinLogo-01_0.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-location-data
 - tas-best-data-visualisation
 - tas-best-use-of-tasmanian-local-council-open-data

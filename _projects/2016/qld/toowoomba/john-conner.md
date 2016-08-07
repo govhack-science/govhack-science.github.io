@@ -14,7 +14,7 @@ event: toowoomba
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1101
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/14733310007_edb84e2b13_b.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-inspired-by-research-hack
 - australia-paddock-to-plate-hack

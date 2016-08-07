@@ -7,7 +7,7 @@ datasets_used:
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2196
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-aihw-visualisation
 - australia-creative-humanities-hack

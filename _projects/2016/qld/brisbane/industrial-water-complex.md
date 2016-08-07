@@ -38,7 +38,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1471
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2012.04.39%20PM.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - qld-best-innovative-use-of-data-sets
 - qld-create-a-cutting-edge-concept---the-science-sandpit!
 - qld-best-visualisation-of-data

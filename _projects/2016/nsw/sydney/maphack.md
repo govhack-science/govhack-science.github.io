@@ -8,7 +8,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1226
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/teamzeroone_0.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-community-resilience-hack

@@ -26,7 +26,7 @@ event: sunshine-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2191
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Future-Proof-Logo-inverted.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

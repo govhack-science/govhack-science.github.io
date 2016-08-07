@@ -11,7 +11,7 @@ event: parramatta
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Innosafe.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - australia-inspired-by-research-hack
 - nsw-city-of-parramatta-civic-hack

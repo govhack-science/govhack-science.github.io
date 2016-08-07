@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2206
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Community%20Garden_0.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - australia-paddock-to-plate-hack
 project_title: Lettuce be friends

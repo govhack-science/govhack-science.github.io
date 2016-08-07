@@ -17,7 +17,7 @@ event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3031
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_20160730_163838.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 project_title: Fossil Replication
 project_url: https://www.youtube.com/watch?v=2yDLOlVlR_s

@@ -25,7 +25,7 @@ datasets_used:
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2376
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

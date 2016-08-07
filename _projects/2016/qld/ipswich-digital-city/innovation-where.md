@@ -17,7 +17,7 @@ event: ipswich-digital-city
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3016
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/innovation_where.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-ip-rights
 project_title: Innovation Where?
 project_url: http://innowhere.betacommunity.org/

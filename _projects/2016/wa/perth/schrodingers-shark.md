@@ -17,7 +17,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2546
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SchrodingersShark.jpg
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

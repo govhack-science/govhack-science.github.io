@@ -3,7 +3,7 @@ category: ''
 event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2226
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack

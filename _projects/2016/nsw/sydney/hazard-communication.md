@@ -17,7 +17,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1726
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Last%20Supper%20%281%20of%201%29.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-iag-flood-risk
 - australia-innovative-ideas-hack

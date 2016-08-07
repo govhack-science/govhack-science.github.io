@@ -11,7 +11,7 @@ event: toowoomba
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1431
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/DYDincLogo.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-hiding-wally

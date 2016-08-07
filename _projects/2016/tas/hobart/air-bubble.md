@@ -8,7 +8,7 @@ event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2551
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/bm_0.jpg
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack
 - tas-best-data-visualisation

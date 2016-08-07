@@ -3,7 +3,7 @@ category: ''
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1081
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

@@ -23,7 +23,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1281
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/MentalHelp.Presentation_0.jpg
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - australia-location-data
 - australia-no-boundaries-data-hack

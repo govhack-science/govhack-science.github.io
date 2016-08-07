@@ -8,7 +8,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1276
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screenshot%20%286%29.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-innovative-ideas-hack

@@ -8,7 +8,7 @@ event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2971
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tactile_map_printed.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-innovative-ideas-hack
 - australia-transport-data
 - vic-journey-plannning

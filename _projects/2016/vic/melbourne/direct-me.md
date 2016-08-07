@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1791
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/1024px-Congestion_on_Eastern_Freeway%2C_Melbourne.JPG
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-location-data
 - australia-transport-data
 - vic-journey-plannning

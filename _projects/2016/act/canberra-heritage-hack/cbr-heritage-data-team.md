@@ -13,7 +13,7 @@ datasets_used:
 event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1926
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-machine-learning-hack
 - australia-storytelling-hack

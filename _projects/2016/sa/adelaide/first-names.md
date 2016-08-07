@@ -7,7 +7,7 @@ datasets_used:
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1141
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - sa-adelaide---best-in-location
 - sa-adelaide-smart-city-state-champion

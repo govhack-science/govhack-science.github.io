@@ -17,7 +17,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1196
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%204.52.07%20PM.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-aihw-visualisation
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

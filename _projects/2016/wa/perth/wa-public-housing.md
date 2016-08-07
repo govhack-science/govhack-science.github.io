@@ -32,7 +32,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2651
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Slides.002.png
 jurisdiction: wa
-prizes:
+prizes-entered:
 - wa-western-australian-community-prize
 project_title: WA Public Housing
 project_url: https://public.tableau.com/profile/onno.benschop#!/vizhome/WAPublicHousing-2016/WAPublicHousing

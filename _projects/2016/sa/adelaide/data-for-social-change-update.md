@@ -3,7 +3,7 @@ category: ''
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2011
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-aihw-visualisation
 - australia-creative-humanities-hack

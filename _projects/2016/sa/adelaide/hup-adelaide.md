@@ -23,7 +23,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/936
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hup%20Adelaide%20Logo.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - sa-adelaide---best-in-location
 - sa-helping-those-who-need-it

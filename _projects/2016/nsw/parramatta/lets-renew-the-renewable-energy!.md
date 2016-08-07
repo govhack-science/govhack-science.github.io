@@ -10,7 +10,7 @@ datasets_used:
 event: parramatta
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3001
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - nsw-smart-cities-&-collaborative-economy
 - nsw-city-of-parramatta-civic-hack
 project_title: Lets renew the renewable energy!

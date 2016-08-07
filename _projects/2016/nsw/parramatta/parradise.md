@@ -16,7 +16,7 @@ datasets_used:
 event: parramatta
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2686
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-location-data
 - australia-securing-personal-property

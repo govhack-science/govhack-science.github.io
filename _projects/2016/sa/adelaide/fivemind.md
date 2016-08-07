@@ -20,7 +20,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1086
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fivemind_0.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

@@ -11,7 +11,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2776
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/adventure-shibe.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

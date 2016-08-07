@@ -23,7 +23,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/926
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Touri.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

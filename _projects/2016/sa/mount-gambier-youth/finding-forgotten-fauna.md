@@ -23,7 +23,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1216
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FFF%20Logo%20option%205%20-%20AUST-%20preferred_0.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack
 - australia-location-data

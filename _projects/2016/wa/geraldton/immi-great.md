@@ -11,7 +11,7 @@ event: geraldton
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2491
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Australia-immigration-890x395_c.jpg
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-data-intelligence-hack
 - australia-inspired-by-research-hack

@@ -22,7 +22,7 @@ datasets_used:
 event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1586
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack
 - australia-location-data

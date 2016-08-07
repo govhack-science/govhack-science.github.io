@@ -11,7 +11,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/921
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hippo_creative.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)

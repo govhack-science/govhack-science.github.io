@@ -251,7 +251,7 @@ for row in projects:
         if "How can City of Melbourne make sure women have access to information about the services, support groups and mainstream services that are available to them?" in row["Prizes"]:
             row["Prizes"] = row["Prizes"].replace("services, support", "services support")
 
-        project["prizes"] = []
+        project["prizes-entered"] = []
         prizes = row["Prizes"].split(", ")
         for prize in prizes:
             if prize in prize_name_lookup:
@@ -264,7 +264,7 @@ for row in projects:
 
             if prize_name not in prize_names:
                 raise ValueError("Prize name '%s' is not valid." % (prize_name))
-            project["prizes"].append(prize_frontmatter[prize_name]["gid"])
+            project["prizes-entered"].append(prize_frontmatter[prize_name]["gid"])
 
             # Give prizes a list of their associated projects too
             if "projects" not in prize_frontmatter[prize.lower()]:

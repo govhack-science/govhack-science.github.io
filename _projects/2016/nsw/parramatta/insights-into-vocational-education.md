@@ -8,7 +8,7 @@ event: parramatta
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2801
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-30%20at%202.42.00%20pm_0.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-training-data
 - nsw-city-of-parramatta-civic-hack
 project_title: Insights into Vocational Education

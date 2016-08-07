@@ -14,7 +14,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2326
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/australian.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-storytelling-hack
 - australia-location-data

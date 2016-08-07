@@ -3,7 +3,7 @@ category: ''
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2656
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-storytelling-hack
 - sa-storytelling-with-a-difference
 - sa-youth-state-champion

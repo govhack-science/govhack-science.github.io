@@ -8,7 +8,7 @@ event: canberra-heritage-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2146
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Diphtheria_vaccination_poster.jpg
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-aihw-visualisation
 - australia-exploring-underground
 - australia-storytelling-hack

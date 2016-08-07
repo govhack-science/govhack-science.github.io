@@ -8,7 +8,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2316
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo-new.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-fresh-data-hack-(api’s-and-data-services)
 - act-best-data-wrangling

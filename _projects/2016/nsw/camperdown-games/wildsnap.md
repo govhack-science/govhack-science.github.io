@@ -8,7 +8,7 @@ event: camperdown-games
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1866
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo2.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-innovative-ideas-hack
 - australia-storytelling-hack

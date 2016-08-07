@@ -20,7 +20,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1691
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2011.56.51%20AM.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

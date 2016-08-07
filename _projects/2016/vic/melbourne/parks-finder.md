@@ -14,7 +14,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2416
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ic_launcher_0.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-machine-learning-hack
 - australia-location-data

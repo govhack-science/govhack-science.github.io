@@ -8,7 +8,7 @@ event: ballarat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2181
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/parko.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-innovative-ideas-hack
 - vic-best-use-of-ballarat-data

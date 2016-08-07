@@ -28,7 +28,7 @@ datasets_used:
 event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1251
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-community-resilience-hack
 - australia-location-data

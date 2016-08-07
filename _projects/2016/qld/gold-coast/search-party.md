@@ -41,7 +41,7 @@ event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2616
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Search%20Party.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack

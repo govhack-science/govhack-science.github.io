@@ -29,7 +29,7 @@ event: canberra
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1876
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHack%20logo.png
 jurisdiction: act
-prizes:
+prizes-entered:
 - australia-future-australia-hack
 - australia-location-data
 - act-best-in-act

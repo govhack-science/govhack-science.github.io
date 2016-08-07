@@ -11,7 +11,7 @@ event: geelong
 hackerspace_url: https://2016.hackerspace.govhack.org/node/806
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/NewsPulseLogo_0.png
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

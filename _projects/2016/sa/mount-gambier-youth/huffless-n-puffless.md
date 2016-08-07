@@ -11,7 +11,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1956
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Athma.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-community-resilience-hack
 - sa-growing-up-healthy
 - sa-helping-those-who-need-it

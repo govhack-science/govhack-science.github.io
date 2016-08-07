@@ -26,7 +26,7 @@ event: logan
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1781
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SmartMoves.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - qld-advance-queensland!
 - qld-evacuation---help-us-get-away!

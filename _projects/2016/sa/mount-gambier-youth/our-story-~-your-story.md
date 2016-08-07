@@ -11,7 +11,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2476
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/our%20story%20your%20story.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-aihw-visualisation
 - australia-creative-humanities-hack
 - australia-storytelling-hack

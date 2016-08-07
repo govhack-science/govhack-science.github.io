@@ -10,7 +10,7 @@ datasets_used:
 event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1541
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

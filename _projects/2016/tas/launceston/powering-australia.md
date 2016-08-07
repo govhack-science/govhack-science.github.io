@@ -8,7 +8,7 @@ event: launceston
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2116
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/PoweringAustralia.png
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-inspired-by-research-hack
 - tas-design-excellence

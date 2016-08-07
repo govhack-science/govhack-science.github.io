@@ -11,7 +11,7 @@ event: brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2121
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/locinfo.png
 jurisdiction: qld
-prizes:
+prizes-entered:
 - qld-advance-queensland!
 - qld-age-friendly-community
 project_title: Location Info

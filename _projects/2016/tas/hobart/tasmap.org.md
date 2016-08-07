@@ -13,7 +13,7 @@ datasets_used:
 event: hobart
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1856
 jurisdiction: tas
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-data-intelligence-hack
 - australia-entrepreneurial-hack

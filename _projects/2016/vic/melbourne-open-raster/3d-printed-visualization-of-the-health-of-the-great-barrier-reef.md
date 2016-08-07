@@ -11,7 +11,7 @@ event: melbourne-open-raster
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2931
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/reef_closeup.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 project_title: 3D Printed Visualization of the health of the great barrier reef
 project_url: ''

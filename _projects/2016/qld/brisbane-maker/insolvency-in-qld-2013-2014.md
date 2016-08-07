@@ -23,7 +23,7 @@ event: brisbane-maker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3106
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/finished.jpg
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

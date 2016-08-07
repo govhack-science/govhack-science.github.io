@@ -20,7 +20,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2141
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AdelOGRAPHYiconjpg.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
 - australia-storytelling-hack

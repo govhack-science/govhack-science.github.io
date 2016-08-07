@@ -10,7 +10,7 @@ datasets_used:
 event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1616
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-abc-news-content
 - australia-creative-humanities-hack
 - australia-machine-learning-hack

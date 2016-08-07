@@ -11,7 +11,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1151
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Sweet%20Beginnings%20Logo%20%231.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-storytelling-hack
 - sa-best-maker

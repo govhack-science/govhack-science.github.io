@@ -20,7 +20,7 @@ event: mount-gambier-youth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1031
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13884525_277133925989604_2100050170_n.jpg
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-innovative-ideas-hack
 - australia-community-resilience-hack

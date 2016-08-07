@@ -11,7 +11,7 @@ event: melbourne
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2811
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/1878069-p1.jpg
 jurisdiction: vic
-prizes:
+prizes-entered:
 - australia-creative-humanities-hack
 - australia-storytelling-hack
 project_title: Cute Commies

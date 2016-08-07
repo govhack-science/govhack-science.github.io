@@ -17,7 +17,7 @@ event: perth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2531
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/19560778_xxl.jpg
 jurisdiction: wa
-prizes:
+prizes-entered:
 - australia-data-intelligence-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - wa-big-data-and-analytics-prize

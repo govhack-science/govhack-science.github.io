@@ -7,7 +7,7 @@ datasets_used:
 event: fnq
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2276
 jurisdiction: qld
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-fresh-data-hack-(api’s-and-data-services)
 - australia-community-resilience-hack

@@ -22,7 +22,7 @@ datasets_used:
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2086
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-aihw-visualisation
 - australia-community-resilience-hack
 - australia-no-boundaries-data-hack

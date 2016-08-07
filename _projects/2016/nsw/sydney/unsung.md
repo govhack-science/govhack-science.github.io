@@ -11,7 +11,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2216
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/elephant_1.png
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-entrepreneurial-hack
 - australia-future-australia-hack
 - australia-innovative-ideas-hack

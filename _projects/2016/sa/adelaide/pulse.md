@@ -11,7 +11,7 @@ event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2396
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_21.png
 jurisdiction: sa
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack

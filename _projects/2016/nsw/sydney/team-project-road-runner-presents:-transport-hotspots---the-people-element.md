@@ -11,7 +11,7 @@ event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1721
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/zipping-along_0.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
 - australia-storytelling-hack

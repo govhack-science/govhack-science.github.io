@@ -11,7 +11,7 @@ event: sydney-fintech
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2706
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Civics-1Million-Identity-Fraud-Protection.jpg
 jurisdiction: nsw
-prizes:
+prizes-entered:
 - australia-that-thing-we-all-need
 - australia-commerically-viable-hack
 - australia-entrepreneurial-hack
