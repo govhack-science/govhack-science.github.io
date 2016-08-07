@@ -2,7 +2,7 @@
 category: state
 gid: wa-western-australian-citizenship-price
 jurisdiction: wa
-name: Western Australian Citizenship Price
+name: Western Australian Citizenship Prize
 organisation_title: UnitingCare West
 projects:
 - project-trident
@@ -14,7 +14,7 @@ projects:
 - careermoveau
 - street-shark
 - immi-great
-title: Western Australian Citizenship Price
+title: Western Australian Citizenship Prize
 type: Theme
 ---
 
