@@ -87,6 +87,9 @@ for root, dirnames, filenames in os.walk(prizesdir):
         post.metadata["content"] = post.content
         prize_frontmatter[prize_name] = post.metadata
 
+        if "projects" in prize_frontmatter[prize_name]:
+            del prize_frontmatter[prize_name]["projects"] # Overwrite and update each time
+
 # For fixing inconsistencies in event names between Portal and Hackerspace
 event_name_lookup = {
     "Canberra Heritage Hack": "heritage hack",
@@ -166,7 +169,8 @@ for row in projects:
         "hackerspace_url": row["Project URL"].strip(),
         "video": {
             "url": row["Video URL"].strip()
-        }
+        },
+        "category": ""
     }
 
     # Set the project's jurisdiction
@@ -303,8 +307,6 @@ for prize_name, fm in prize_frontmatter.iteritems():
         content = fm["content"]
         del fm["path"]
         del fm["content"]
-        # print fm
-        continue
 
         with io.open(path, "w", encoding="utf-8") as f:
             f.write(u'---\n')
