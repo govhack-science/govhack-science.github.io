@@ -11,6 +11,7 @@ datasets_used:
   url: http://www.bocsar.nsw.gov.au/Pages/bocsar_crime_stats/bocsar_detailedspreadsheets.aspx
 event: sydney
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2351
+image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHack2016_orange_is_the_new_hack_team_logo.jpg
 jurisdiction: nsw
 prizes:
 - australia-creative-humanities-hack
@@ -29,7 +30,7 @@ repo:
 team_name: Orange is the New Hack
 video:
   type: youtube
-  url: https://youtu.be/CDsfE0OsHKs
+  url: https://www.youtube.com/watch?v=rR7UXVghhy0
 ---
 
 We like trolling through mounds of data to see the secrets behind. We are data nerds and "Orange is the New Hack" is our team.
