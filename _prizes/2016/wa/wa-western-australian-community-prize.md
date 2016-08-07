@@ -4,6 +4,11 @@ gid: wa-western-australian-community-prize
 jurisdiction: wa
 name: Western Australian Community Prize
 organisation_title: Department of Local Government and Communities
+winners:
+ colourful-past:
+  - place: 1st
+ careermoveau:
+  - place: 2nd
 projects:
 - project-trident
 - wa-public-housing

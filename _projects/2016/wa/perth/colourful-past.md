@@ -36,6 +36,8 @@ gid: colourful-past
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2521
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image.jpg
 jurisdiction: wa
+prizes-won:
+- wa-western-australian-community-prize
 prizes-entered:
 - australia-creative-humanities-hack
 - australia-data-intelligence-hack
