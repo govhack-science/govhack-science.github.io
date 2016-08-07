@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Zero Waste SA
   name: Household Hazardous Waste

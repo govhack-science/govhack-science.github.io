@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: National Portrait Gallery
   name: Portraits and people

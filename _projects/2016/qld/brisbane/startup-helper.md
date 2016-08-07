@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: Australian Data of Statistics

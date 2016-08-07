@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: European Space Agency
   name: Sentinel-2 Satellite MultiSpectral Instrument Data

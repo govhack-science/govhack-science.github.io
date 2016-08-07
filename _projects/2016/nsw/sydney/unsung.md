@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Social Services
   name: National Public Toilet  Map

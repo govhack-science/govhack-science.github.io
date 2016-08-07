@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NCRIS Research Data and Infrastructure Group
   name: Atlas of Living Australia

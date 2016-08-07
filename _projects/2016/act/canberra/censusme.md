@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ABS
   name: 2011 Census QuickStats

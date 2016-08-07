@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NCVER
   name: 'Completion and attrition rates for apprentices and trainees 2014: state and territory data tables'

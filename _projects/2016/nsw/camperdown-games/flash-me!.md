@@ -1,4 +1,5 @@
 ---
+category: ''
 event: camperdown-games
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2501
 jurisdiction: nsw

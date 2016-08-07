@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Tourism, Major Events, Small Business and the Commonwealth Games
   name: Gold Coast 2018 Commonwealth Games Competition Venues

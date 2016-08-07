@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Adelaide City Council
   name: Monuments

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Queensland Fire and Emergency Services
   name: Queensland Fire and Rescue current bushfire incidents

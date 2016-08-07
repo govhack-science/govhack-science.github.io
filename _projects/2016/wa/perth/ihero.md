@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: State Library of Queensland
   name: SLQ - World War 1 soldier portraits

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Environment Protection Authority (EPA) - South Australia
   name: Aquatic Ecosystem Condition Reports

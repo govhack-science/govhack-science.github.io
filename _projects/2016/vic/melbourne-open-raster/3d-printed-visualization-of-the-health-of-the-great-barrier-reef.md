@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ARC Centre for Excellence - Coral Reef Studies
   name: 2016 aerial survey

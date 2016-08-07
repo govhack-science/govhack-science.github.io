@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Adelaide City Council
   name: On Street Parking Zones

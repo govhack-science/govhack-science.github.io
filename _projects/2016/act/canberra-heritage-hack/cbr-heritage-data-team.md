@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NATIONAL LIBRARY OF AUSTRALIA
   name: TROVE NEWSPAPER ARTICLES

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: WA Housing Authority
   name: Land Prices by Suburb and LGA 2015

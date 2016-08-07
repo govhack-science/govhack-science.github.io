@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Electoral Commission
   name: WA Senate Election 2014 Senators Elected

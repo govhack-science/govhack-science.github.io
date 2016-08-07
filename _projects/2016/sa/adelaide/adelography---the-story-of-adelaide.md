@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ABS
   name: Census of the Commonwealth of Australia

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: CSIRO
   name: Sentinel HotSpot Data

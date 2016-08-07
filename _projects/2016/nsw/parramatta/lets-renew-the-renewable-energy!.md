@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: www.cleanenergyregulator.gov.au
   name: Small Scale Solar device installment by postcode

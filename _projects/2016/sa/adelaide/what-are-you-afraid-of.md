@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: ERP by SA2 (ASGS 2011)

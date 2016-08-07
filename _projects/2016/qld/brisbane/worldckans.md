@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Various (which ever governments and agencies have a CKAN data portal)
   name: Using data from ~151 global CKANS

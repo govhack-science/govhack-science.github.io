@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Data SA
   name: 19th Century Photographs by Captain Samuel Sweet

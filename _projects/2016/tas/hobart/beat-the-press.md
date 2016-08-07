@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Broadcasting Corporation
   name: ABC Local Online Photo Stories 2009-2014

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Park CBR
   name: SmartParking Heat Map

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Finance, Services and Innovation
   name: NSW Points of Interest

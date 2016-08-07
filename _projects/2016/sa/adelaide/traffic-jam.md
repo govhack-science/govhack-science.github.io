@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Planning, Transport and Infrastructure
   name: South Australian intersections traffic signal locations and information.

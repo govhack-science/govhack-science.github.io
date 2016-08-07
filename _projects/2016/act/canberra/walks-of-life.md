@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Institute of Health and Welfare
   name: General Record of Incidence of Mortality (GRIM) books

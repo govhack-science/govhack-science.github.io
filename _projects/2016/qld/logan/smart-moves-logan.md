@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Queensland Government
   name: State and Non-School Details

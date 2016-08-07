@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Local Government and Communities
   name: WA Local Government MyCouncil Data

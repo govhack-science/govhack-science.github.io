@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Data.SA (South Australian Government Data Directory)
   name: Events

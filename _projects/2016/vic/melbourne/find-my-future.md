@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Employment
   name: Employment Regions 2015-2020

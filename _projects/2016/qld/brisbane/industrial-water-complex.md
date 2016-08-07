@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Science, Information Technology and Innovation
   name: Emissions and waste transfers from industrial facilities in Queensland - 2015

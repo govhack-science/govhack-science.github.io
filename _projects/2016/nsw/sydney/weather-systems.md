@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Bureau of Meteorology
   name: Historical rainfall and temperature forecast and observations hourly data - Weather forecasting verification data (2015-05 to 2016-04)

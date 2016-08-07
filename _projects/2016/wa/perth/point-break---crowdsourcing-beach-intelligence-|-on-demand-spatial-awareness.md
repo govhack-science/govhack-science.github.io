@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Fisheries
   name: Western Australia’s GovHack Shark Hazard api

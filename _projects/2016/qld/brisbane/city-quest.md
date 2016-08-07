@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Brisbane City Council
   name: Public art collection

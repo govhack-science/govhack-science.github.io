@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: National Research Infrastructure for Australia, Australian Government
   name: Atlas of Living Australia (ALA) Spacial Data - species sightings

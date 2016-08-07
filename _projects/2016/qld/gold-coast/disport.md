@@ -1,4 +1,5 @@
 ---
+category: ''
 event: gold-coast
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2226
 jurisdiction: qld

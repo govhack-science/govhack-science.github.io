@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: Regional Statistics by ASGS, 2010-2014

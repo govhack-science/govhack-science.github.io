@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Health and Human Services
   name: 'Rental Report - Quarterly: Quarterly Median Rents by LGA'

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Napier City Council
   name: Napier City Council Building Footprints

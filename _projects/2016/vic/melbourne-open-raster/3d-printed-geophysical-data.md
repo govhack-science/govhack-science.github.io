@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Geoscience Australia
   name: Gravity Anomaly Map of the Australian Region, 3rd edition, 2008

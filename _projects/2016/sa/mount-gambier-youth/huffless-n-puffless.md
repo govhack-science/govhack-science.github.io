@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ''
   name: South Australian subset of National Pollutant Inventory Data

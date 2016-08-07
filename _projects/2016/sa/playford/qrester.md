@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: City of Playford
   name: Historic Places in Playford (LGA)

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Water corporation
   name: Water corporation aerial UAV images

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: SA government data directory
   name: council ward maps

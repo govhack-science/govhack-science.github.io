@@ -1,4 +1,5 @@
 ---
+category: ''
 event: onkaparinga
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2656
 jurisdiction: sa

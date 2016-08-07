@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Treasury
   name: 2016-17 Western Australia Budget Economic and Fiscal Outlook Table and Chart Data

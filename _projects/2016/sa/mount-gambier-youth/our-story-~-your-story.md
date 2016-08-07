@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ''
   name: 'Social Health Atlas of Australia: Local Government Area'

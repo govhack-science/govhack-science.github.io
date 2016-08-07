@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ABS
   name: Postal Areas ASGS Non ABS Structures Ed 2011 Digital Boundaries in ESRI Shapefile Format

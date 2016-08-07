@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NSW Department of Education
   name: NSW Government Schools by Bushfire Category

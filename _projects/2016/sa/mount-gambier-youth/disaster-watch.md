@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NSW State Emergency Service
   name: Historical Flood Extents NSW 2012

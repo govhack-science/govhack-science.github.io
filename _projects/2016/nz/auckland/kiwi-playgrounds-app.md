@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Auckland Council
   name: Auckland Council Park Extent

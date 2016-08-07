@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Science, Information Technology and Innovation, Queensland Government
   name: Brisbane Hospital registers of deaths 1933 to 1963

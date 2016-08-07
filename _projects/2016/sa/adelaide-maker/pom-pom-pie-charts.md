@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: 4235.0 - Qualifications and Work, Australia, 2015

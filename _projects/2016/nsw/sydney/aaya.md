@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Education
   name: NSW Early Childhood Education and Care program locations

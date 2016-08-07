@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Economic Development, Jobs, Transport and Resources
   name: Great Trails Victoria Datasets

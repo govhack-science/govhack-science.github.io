@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: City of Greater Geelong
   name: RSS feed of Events - City of Greater Geelong

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Beureau of Statistics
   name: Census 2016

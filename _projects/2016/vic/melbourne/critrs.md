@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NCRIS (National Collaborative Research Infrastructure Strategy)
   name: Atlas of Living Australia

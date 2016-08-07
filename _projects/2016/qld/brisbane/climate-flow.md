@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Bureau of Meteorology
   name: Weather Station Directory

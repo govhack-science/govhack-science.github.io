@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: ''
   name: Bushfires and Prescribed Burns History

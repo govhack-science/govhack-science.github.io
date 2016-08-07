@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Brisbane Infrastructure
   name: Bicycle racks in Brisbane City

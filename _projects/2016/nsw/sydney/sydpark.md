@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: City of Sydney
   name: Access Features and Barriers in Sydney City

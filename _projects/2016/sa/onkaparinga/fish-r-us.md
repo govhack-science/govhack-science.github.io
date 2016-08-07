@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Sustainability and Environment
   name: Recreational Fishing Spots

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: SA Tourism Commission
   name: Australian Tourism Data Warehouse API

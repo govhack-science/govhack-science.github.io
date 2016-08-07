@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: https://data.qld.gov.au
   name: Business Discount Directory for Senior and Carer Cardholders

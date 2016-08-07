@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: Local Government Areas ASGS Non ABS Structures Ed 2011 Digital Boundaries in ESRI Shapefile Format

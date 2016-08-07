@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: Selected Living Cost Indexes, Australia, Mar 2016

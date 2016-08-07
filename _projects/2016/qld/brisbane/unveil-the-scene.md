@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department of Industry, Innovation and Science
   name: SA3 Region Innovation Data 2009-15

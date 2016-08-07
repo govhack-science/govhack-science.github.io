@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Australian Bureau of Statistics
   name: 'Australian Statistical Geography Standard (ASGS): Correspondences, July 2011'

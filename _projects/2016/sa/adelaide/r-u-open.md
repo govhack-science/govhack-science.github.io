@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Adelaide City Council
   name: Outdoor dining permits - Adelaide City Council data provided via data.sa

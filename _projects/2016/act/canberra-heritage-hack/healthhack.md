@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: The Department of Health
   name: 'National notifiable diseases: Australia''s notifiable diseases status: Annual report of the National Notifiable Diseases Surveillance System. 1994 Australia''s notifiable diseases status PDF 662KB'

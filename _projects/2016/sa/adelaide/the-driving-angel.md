@@ -1,4 +1,5 @@
 ---
+category: ''
 event: adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1081
 jurisdiction: sa

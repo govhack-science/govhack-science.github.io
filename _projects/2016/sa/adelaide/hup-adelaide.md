@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Department for Communities and Social Inclusion
   name: Communities and Social Inclusion Service Centres and Office Locations

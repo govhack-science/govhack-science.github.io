@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: State Library of South Australia
   name: Significant South Australian Photographs

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: City of Ballarat
   name: Various by City of Ballarat

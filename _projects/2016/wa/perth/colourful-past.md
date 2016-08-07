@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: State Library of Western Australia
   name: Digital Photographic Collection

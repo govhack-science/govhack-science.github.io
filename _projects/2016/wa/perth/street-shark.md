@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: NSW Bureau of Crime Statistics and Research
   name: Coordinate level data for non-domestic assaults and robberies occurring in Sydney LGA in outdoor and public places

@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: Treasury, Queensland Government
   name: Employed persons by industry, Queensland, 1985–86 to 2015–16

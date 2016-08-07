@@ -1,4 +1,5 @@
 ---
+category: ''
 datasets_used:
 - agency: data.act.gov.au
   name: Graffiti Sites
