@@ -29,6 +29,7 @@ datasets_used:
   name: 'Walking to work in Sydney: analysis of journey-to-work Census data from 2001 to 2011'
   url: http://sydney.edu.au/medicine/public-health/prevention-research/news/reports/Walking%20to%20work%202001-2011.pdf
 event: geelong
+gid: smartpath
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1906
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/smartpath_banner.png
 jurisdiction: vic

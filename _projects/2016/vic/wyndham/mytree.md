@@ -5,6 +5,7 @@ datasets_used:
   name: Wyndham City Council Trees
   url: https://data.gov.au/dataset/wyndham-city-council-trees
 event: wyndham
+gid: mytree
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2321
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tree_free.png
 jurisdiction: vic

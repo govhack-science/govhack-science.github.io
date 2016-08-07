@@ -8,6 +8,7 @@ datasets_used:
   name: Local Government Areas of Australia
   url: https://data.gov.au/dataset/1d139f3a-fc76-4717-863c-3689413ee9c0
 event: melbourne-open-raster
+gid: ch-ch-ch-changes-app
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2281
 jurisdiction: vic
 prizes-entered:

@@ -32,6 +32,7 @@ datasets_used:
   name: South Australian Country Fire Service Current Incidents RSS Feed
   url: https://data.sa.gov.au/data/dataset/south-australian-country-fire-service-current-incidents-rss-feed
 event: mount-gambier-youth
+gid: disaster-watch
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1136
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/disasterproof%20250x250_0.png
 jurisdiction: sa

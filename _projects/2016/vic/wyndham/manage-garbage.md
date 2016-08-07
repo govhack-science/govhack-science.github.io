@@ -26,6 +26,7 @@ datasets_used:
   name: Melbourne Garbage Collection Zones
   url: https://data.melbourne.vic.gov.au/Environment/Melbourne-Garbage-Collection-Zones/dmpt-2xdw
 event: wyndham
+gid: manage-garbage
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2161
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.44.16%20PM.png
 jurisdiction: vic

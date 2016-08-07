@@ -17,6 +17,7 @@ datasets_used:
   name: MyBroadband Centroid Points
   url: https://data.gov.au/dataset/mybroadband-centroid-points
 event: brisbane
+gid: cheap-rent-fast-net
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2896
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo.jpg
 jurisdiction: qld

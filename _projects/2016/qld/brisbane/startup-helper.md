@@ -8,6 +8,7 @@ datasets_used:
   name: Employment growth and unemployment
   url: https://data.qld.gov.au/dataset/employment-growth-unemployment-qld/resource/6c5c82fe-5622-4844-baff-9aa30ae2250c
 event: brisbane
+gid: startup-helper
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2871
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hackaroos_0.jpg
 jurisdiction: qld

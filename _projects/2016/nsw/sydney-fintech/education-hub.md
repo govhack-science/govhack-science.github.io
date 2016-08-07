@@ -14,6 +14,7 @@ datasets_used:
   name: Cricos Data
   url: http://cricos.education.gov.au/
 event: sydney-fintech
+gid: education-hub
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1936
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/educationHub.jpg
 jurisdiction: nsw

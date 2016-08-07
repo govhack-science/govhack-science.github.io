@@ -11,6 +11,7 @@ datasets_used:
   name: 3201.0 - Population by Age and Sex, Australian States and Territories, Jun 2010
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/ProductsbyCatalogue/B52C3903D894336DCA2568A9001393C1?OpenDocument
 event: sunshine-coast
+gid: community-companion
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2441
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/team.jpg
 jurisdiction: qld

@@ -8,6 +8,7 @@ datasets_used:
   name: ABS Datapacks
   url: http://portal.govhack.org/datasets/2016/qld/queensland-government/australian-bureau-of-statistics-datapacks.html
 event: geraldton
+gid: immi-great
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2491
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Australia-immigration-890x395_c.jpg
 jurisdiction: wa

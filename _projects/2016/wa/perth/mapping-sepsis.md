@@ -20,6 +20,7 @@ datasets_used:
   name: Australian Postcode Location Data
   url: http://corra.com.au/australian-postcode-location-data
 event: perth
+gid: mapping-sepsis
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3161
 jurisdiction: wa
 prizes-entered:

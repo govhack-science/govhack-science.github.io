@@ -11,6 +11,7 @@ datasets_used:
   name: State Heritage Places
   url: http://data.sa.gov.au/data/dataset/heritage-places
 event: playford
+gid: qrester
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2311
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/QR.png
 jurisdiction: sa

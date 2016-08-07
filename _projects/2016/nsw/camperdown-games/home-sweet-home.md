@@ -5,6 +5,7 @@ datasets_used:
   name: Advanced Ecological Knowledge Observation System data (Australian plant and animal data)
   url: https://portal.aodn.org.au/search
 event: camperdown-games
+gid: home-sweet-home
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2831
 jurisdiction: nsw
 prizes-entered:

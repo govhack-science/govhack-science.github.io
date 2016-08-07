@@ -29,6 +29,7 @@ datasets_used:
   name: Vocational education training packages
   url: https://ws.sandbox.training.gov.au/Deewr.Tga.Webservices/TrainingComponentService.svc?wsdl
 event: hobart
+gid: smarter-training
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2586
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/headerlogo3.png
 jurisdiction: tas

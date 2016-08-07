@@ -8,6 +8,7 @@ datasets_used:
   name: Adelaide Metrocard validations
   url: http://data.sa.gov.au/data/dataset/adelaide-metrocard-validations
 event: adelaide
+gid: pulse
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2396
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_21.png
 jurisdiction: sa

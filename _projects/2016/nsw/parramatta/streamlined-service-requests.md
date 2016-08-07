@@ -5,6 +5,7 @@ datasets_used:
   name: Service Requests Data
   url: ''
 event: parramatta
+gid: streamlined-service-requests
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3101
 jurisdiction: nsw
 prizes-entered:

@@ -5,6 +5,7 @@ datasets_used:
   name: ABC Gateway API
   url: http://portal.govhack.org/sponsors/abc.html
 event: sydney
+gid: opinion-matters
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2366
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/transparent_Opinion%20Matters%20Logo.png
 jurisdiction: nsw

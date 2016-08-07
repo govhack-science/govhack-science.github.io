@@ -17,6 +17,7 @@ datasets_used:
   name: 2015-286 KPMG Police Data
   url: ''
 event: perth
+gid: the-transac-initiative
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1306
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo.png
 jurisdiction: wa

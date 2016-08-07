@@ -20,6 +20,7 @@ datasets_used:
   name: Property Boundaries
   url: http://data.sa.gov.au/data/dataset/property-boundaries
 event: adelaide
+gid: smart-asset-management
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1986
 jurisdiction: sa
 prizes-entered:

@@ -17,6 +17,7 @@ datasets_used:
   name: Atlas of Living Australia
   url: http://portal.govhack.org/datasets/2016/australia/ncris-research-data-and-infrastructure-group/atlas-of-living-australia.html
 event: melbourne-open-raster
+gid: walkaboutaus!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2806
 jurisdiction: vic
 prizes-entered:

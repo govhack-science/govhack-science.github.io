@@ -14,6 +14,7 @@ datasets_used:
   name: 'SA DATASET: South Australian Community Services Directory'
   url: https://data.sa.gov.au/data/dataset/south-australian-community-services-...
 event: adelaide
+gid: digihealth-plus
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1686
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_17.png
 jurisdiction: sa

@@ -29,6 +29,7 @@ datasets_used:
   name: Households and risk of homelessness post retirement
   url: ''
 event: perth
+gid: wa-public-housing
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2651
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Slides.002.png
 jurisdiction: wa

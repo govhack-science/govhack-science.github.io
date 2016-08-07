@@ -1,6 +1,7 @@
 ---
 category: ''
 event: brisbane-maker
+gid: scan,-process,-share,-recreate
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1271
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_0835.JPG
 jurisdiction: qld

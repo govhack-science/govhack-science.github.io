@@ -11,6 +11,7 @@ datasets_used:
   name: Federal Electoral Boundaries
   url: https://data.gov.au/dataset/federal-electoral-boundaries
 event: canberra
+gid: displaying-living-appeal-for-location-seeking-immigrants
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1821
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%204.13.58%20pm.png
 jurisdiction: act

@@ -11,6 +11,7 @@ datasets_used:
   name: Open Street Map
   url: https://www.openstreetmap.org/
 event: canberra
+gid: question-time
 hackerspace_url: https://2016.hackerspace.govhack.org/node/831
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2010.56.46%20AM.png
 jurisdiction: act

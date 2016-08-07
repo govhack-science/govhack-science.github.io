@@ -5,6 +5,7 @@ datasets_used:
   name: Taxation statistics - Aggregated individual tax return sample files
   url: http://portal.govhack.org/datasets/2016/australia/australian-taxation-office/taxation-statistics-aggregated-individual-sample-files.html
 event: sydney-fintech
+gid: where-are-people-like-me-!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2291
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fp.jpg
 jurisdiction: nsw

@@ -1,6 +1,7 @@
 ---
 category: ''
 event: gold-coast
+gid: disport
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2226
 jurisdiction: qld
 prizes-entered:

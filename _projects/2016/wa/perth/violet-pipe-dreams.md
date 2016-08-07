@@ -26,6 +26,7 @@ datasets_used:
   name: Public Access Ways (LGATE-080)
   url: https://services.slip.wa.gov.au/public/rest/services/Landgate_Public_Services/Cadastre_Public_Services/MapServer/4
 event: perth
+gid: violet-pipe-dreams
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1261
 jurisdiction: wa
 prizes-entered:

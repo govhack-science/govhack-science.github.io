@@ -14,6 +14,7 @@ datasets_used:
   name: ''
   url: ''
 event: perth
+gid: careermoveau
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2631
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/careermovelogo.png
 jurisdiction: wa

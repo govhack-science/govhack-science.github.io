@@ -5,6 +5,7 @@ datasets_used:
   name: Wyndham City Hard Rubbish Bookings
   url: https://data.gov.au/dataset/wyndham-city-hard-rubbish-bookings
 event: wyndham
+gid: hard-waste-management-analysis
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2211
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.57.10%20PM.png
 jurisdiction: vic

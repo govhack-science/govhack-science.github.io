@@ -5,6 +5,7 @@ datasets_used:
   name: 'Government-funded students and courses 2015: Australia'
   url: https://www.ncver.edu.au/data/collection/government-funded-students-and-courses
 event: parramatta
+gid: insights-into-vocational-education
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2801
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-30%20at%202.42.00%20pm_0.png
 jurisdiction: nsw

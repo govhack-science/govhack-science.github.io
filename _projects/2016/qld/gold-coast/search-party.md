@@ -38,6 +38,7 @@ datasets_used:
   name: TOPO250K Recreational Areas
   url: http://services.ga.gov.au/site_7/rest/services/Topographic_Base_Map_WM/MapServer/353
 event: gold-coast
+gid: search-party
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2616
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Search%20Party.png
 jurisdiction: qld

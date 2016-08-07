@@ -8,6 +8,7 @@ datasets_used:
   name: Google Places
   url: https://developers.google.com/places/
 event: sydney
+gid: creature-wise
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2241
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_3656_4.JPG
 jurisdiction: nsw

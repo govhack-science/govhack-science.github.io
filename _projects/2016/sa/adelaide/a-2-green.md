@@ -11,6 +11,7 @@ datasets_used:
   name: UPark Car Parks - Available Spaces
   url: http://data.sa.gov.au/data/dataset/upark-car-parks-available-spaces
 event: adelaide
+gid: a-2-green
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1186
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/BT_Logo_Set_Full%20Logo.png
 jurisdiction: sa

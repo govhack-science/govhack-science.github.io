@@ -14,6 +14,7 @@ datasets_used:
   name: Printable 3d model of an Ammonite
   url: https://data.qld.gov.au/dataset/printable-3d-model-of-an-ammonite
 event: brisbane-maker
+gid: fossil-replication
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3031
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_20160730_163838.jpg
 jurisdiction: qld

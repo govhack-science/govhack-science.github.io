@@ -14,6 +14,7 @@ datasets_used:
   name: Funded Base Stations
   url: https://data.gov.au/dataset/mobile-black-spot-programme-funded-base-stations/resource/797a7c1b-cf1e-452d-8a92-194c2ed5708a
 event: brisbane
+gid: australlite
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2891
 jurisdiction: qld
 prizes-entered:

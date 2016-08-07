@@ -23,6 +23,7 @@ datasets_used:
   name: Aquatic Centres
   url: https://data.sunshinecoast.qld.gov.au/dataset/Aquatic-Centres-arcgis_rest_services_Society_Socie/23vb-3ngq
 event: sunshine-coast
+gid: the-good-old-life
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1456
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/TGOL_logo_JB.png
 jurisdiction: qld

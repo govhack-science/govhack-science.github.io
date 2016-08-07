@@ -5,6 +5,7 @@ datasets_used:
   name: 'Crime Mapper: Historical data'
   url: http://data.sa.gov.au/data/dataset/crime-mapper-historical-data
 event: mount-gambier-youth
+gid: walksafe
 hackerspace_url: https://2016.hackerspace.govhack.org/node/916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/LogoMakr.png
 jurisdiction: sa

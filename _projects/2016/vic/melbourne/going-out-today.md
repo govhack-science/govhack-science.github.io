@@ -53,6 +53,7 @@ datasets_used:
   name: IDV10450
   url: ftp://ftp.bom.gov.au/anon/gen/fwo/IDV10450.xml
 event: melbourne
+gid: going-out-today
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2171
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/18991-NRVYK1.jpg
 jurisdiction: vic

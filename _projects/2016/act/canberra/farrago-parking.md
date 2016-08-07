@@ -17,6 +17,7 @@ datasets_used:
   name: ARDD Fatalities June 2016
   url: http://data.gov.au/dataset/5b530fb8-526e-4fbf-b0f6-aa24e84e4277/resource/fd646fdc-7788-4bea-a736-e4aeb0dd09a8/download/FatalitiesJune2016.csv
 event: canberra
+gid: farrago-parking
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1421
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tumblr_mg218jTaFu1rh9jq7o2_500.jpg
 jurisdiction: act

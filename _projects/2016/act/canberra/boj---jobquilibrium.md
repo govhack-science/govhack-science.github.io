@@ -23,6 +23,7 @@ datasets_used:
   name: SA3 Region Innovation Data 2009-15
   url: https://data.gov.au/dataset/sa3-region-innovation-data
 event: canberra
+gid: boj---jobquilibrium
 hackerspace_url: https://2016.hackerspace.govhack.org/node/821
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_flat.png
 jurisdiction: act

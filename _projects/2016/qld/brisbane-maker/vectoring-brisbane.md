@@ -14,6 +14,7 @@ datasets_used:
   name: Local Boundaries - QLD
   url: http://www.dnrm.qld.gov.au/mapping-data
 event: brisbane-maker
+gid: vectoring-brisbane
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1676
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/IMG_0354c.jpg
 jurisdiction: qld

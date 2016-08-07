@@ -11,6 +11,7 @@ datasets_used:
   name: Australian Bureau of Statistics DataPacks
   url: http://www.abs.gov.au/websitedbs/censushome.nsf/home/datapacks?opendocument&navpos=250
 event: brisbane-maker
+gid: bringing-data-to-the-table
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2761
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Bringing%20Data%20to%20the%20Table.jpg
 jurisdiction: qld

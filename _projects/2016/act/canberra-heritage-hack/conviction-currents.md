@@ -9,6 +9,7 @@ datasets_used:
     de France Ministre et Secretaire d Etat aiant le Departe
   url: http://nla.gov.au/nla.obj-231714733/view
 event: canberra-heritage-hack
+gid: conviction-currents
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2151
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/firstfleet.jpg
 jurisdiction: act

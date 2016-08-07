@@ -8,6 +8,7 @@ datasets_used:
   name: OpenStreetMap
   url: https://www.openstreetmap.org/#map=15/-39.5100/176.8955
 event: hamilton
+gid: 3d-napier
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1716
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/projectImage.png
 jurisdiction: nz

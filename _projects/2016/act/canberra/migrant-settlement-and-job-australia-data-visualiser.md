@@ -8,6 +8,7 @@ datasets_used:
   name: Jobs Services Australia Vacancy Data 2009-2015
   url: https://data.gov.au/dataset/jobs-services-australia-vacancy-data/resource/cd69ad9b-428b-46b2-9edc-368fdd4daea6
 event: canberra
+gid: migrant-settlement-and-job-australia-data-visualiser
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2886
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/application.PNG
 jurisdiction: act

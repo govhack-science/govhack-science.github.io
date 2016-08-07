@@ -5,6 +5,7 @@ datasets_used:
   name: Base Line Air Network of EPA Tasmania (BLANkET)
   url: https://data.gov.au/dataset/base-line-air-network-of-epa-tasmania-blanket
 event: hobart
+gid: air-bubble
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2551
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/bm_0.jpg
 jurisdiction: tas

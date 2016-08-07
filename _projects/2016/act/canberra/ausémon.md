@@ -8,6 +8,7 @@ datasets_used:
   name: Canberra Centenary Trail
   url: https://www.data.act.gov.au/Environment/Canberra-Centenary-Trail/86di-ncd5
 event: canberra
+gid: ausémon
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1001
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ausemon_entry.png
 jurisdiction: act

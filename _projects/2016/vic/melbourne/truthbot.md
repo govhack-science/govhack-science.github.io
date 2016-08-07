@@ -8,6 +8,7 @@ datasets_used:
   name: Data.gov.au
   url: http://www.data.gov.au
 event: melbourne
+gid: truthbot
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2506
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/robot_0.png
 jurisdiction: vic

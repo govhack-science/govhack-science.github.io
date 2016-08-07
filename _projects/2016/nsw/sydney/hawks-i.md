@@ -29,6 +29,7 @@ datasets_used:
   name: BoM WMS Service
   url: http://geofabric.bom.gov.au/simplefeatures/ows?service=WMS&request=GetCapabilities
 event: sydney
+gid: hawks-i
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1946
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/city%20hawk_0.jpg
 jurisdiction: nsw

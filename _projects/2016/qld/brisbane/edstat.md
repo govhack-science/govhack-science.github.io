@@ -8,6 +8,7 @@ datasets_used:
   name: Higher Education – Enrolments
   url: https://data.gov.au/dataset/higher-education-enrolments
 event: brisbane
+gid: edstat
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2061
 jurisdiction: qld
 prizes-entered:

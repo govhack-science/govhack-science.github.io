@@ -23,6 +23,7 @@ datasets_used:
   name: Ballarat Trees
   url: https://data.gov.au/dataset/ballarattrees
 event: ballarat
+gid: go-park-yourself
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1231
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/parking.png
 jurisdiction: vic

@@ -1,6 +1,7 @@
 ---
 category: ''
 event: adelaide
+gid: child-tracker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/986
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/DataClan.gif
 jurisdiction: sa

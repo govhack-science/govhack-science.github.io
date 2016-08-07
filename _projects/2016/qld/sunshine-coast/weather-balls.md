@@ -5,6 +5,7 @@ datasets_used:
   name: Bureau of Meteorology
   url: http://www.bom.gov.au/catalogue/data-feeds.shtml
 event: sunshine-coast
+gid: weather-balls
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1326
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/1_2.jpg
 jurisdiction: qld

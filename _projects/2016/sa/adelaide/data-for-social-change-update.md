@@ -1,6 +1,7 @@
 ---
 category: ''
 event: adelaide
+gid: data-for-social-change-update
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2011
 jurisdiction: sa
 prizes-entered:

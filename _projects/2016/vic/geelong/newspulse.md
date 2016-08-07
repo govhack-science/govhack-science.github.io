@@ -8,6 +8,7 @@ datasets_used:
   name: ABC Gateway API
   url: https://content-api-govhack.abc-prod.net.au/v1/6946348
 event: geelong
+gid: newspulse
 hackerspace_url: https://2016.hackerspace.govhack.org/node/806
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/NewsPulseLogo_0.png
 jurisdiction: vic

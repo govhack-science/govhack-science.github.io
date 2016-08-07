@@ -8,6 +8,7 @@ datasets_used:
   name: ABN Lookup Webservices
   url: http://portal.govhack.org/datasets/2016/australia/australian-business-register/abn-lookup-webservices.html
 event: sydney-fintech
+gid: blockchain-digital-id
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2706
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Civics-1Million-Identity-Fraud-Protection.jpg
 jurisdiction: nsw

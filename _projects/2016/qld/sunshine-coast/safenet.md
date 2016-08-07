@@ -20,6 +20,7 @@ datasets_used:
   name: Coastal Data System – Near real time storm tide data
   url: https://data.qld.gov.au/dataset/coastal-data-system-near-real-time-storm-tide-data
 event: sunshine-coast
+gid: safenet
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2081
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dangerzonelogo_big_1.png
 jurisdiction: qld

@@ -17,6 +17,7 @@ datasets_used:
   name: Google Maps Directions API
   url: https://developers.google.com/maps/documentation/directions/
 event: melbourne
+gid: location-location-location
 hackerspace_url: https://2016.hackerspace.govhack.org/node/956
 jurisdiction: vic
 prizes-entered:

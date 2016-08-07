@@ -5,6 +5,7 @@ datasets_used:
   name: 131940 Traffic and travel information GeoJSON API
   url: https://data.qld.gov.au/dataset/131940-traffic-and-travel-information-geojson-api
 event: logan
+gid: accident-tracker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1976
 jurisdiction: qld
 prizes-entered:

@@ -14,6 +14,7 @@ datasets_used:
   name: Rainfall and water levels
   url: http://www.bom.gov.au/fwo/IDT60251/IDT60251.091227.tbl.shtml
 event: launceston
+gid: delugional
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2426
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CkQeRkjUoAApDTk_1.jpg
 jurisdiction: tas

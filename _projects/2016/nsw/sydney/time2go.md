@@ -5,6 +5,7 @@ datasets_used:
   name: GTFS-R data
   url: https://opendata.transport.nsw.gov.au/site/en_us/home.html
 event: sydney
+gid: time2go
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1921
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%203.46.07%20PM.png
 jurisdiction: nsw

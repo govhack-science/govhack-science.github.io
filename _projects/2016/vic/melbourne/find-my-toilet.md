@@ -14,6 +14,7 @@ datasets_used:
   name: Find My Toilet User Amenity Location Requests Generated Dataset
   url: https://www.google.com/fusiontables/DataSource?docid=1_-8Cb2VZU_-MoJ_HydDzJ09sWeav7yuMIuBVfpC4
 event: melbourne
+gid: find-my-toilet
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2541
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Home%20page%20screen%20shot.png
 jurisdiction: vic

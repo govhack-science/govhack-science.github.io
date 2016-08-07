@@ -35,6 +35,7 @@ datasets_used:
   name: Emissions and waste transfers from industrial facilities in Queensland - 2000
   url: https://data.qld.gov.au/dataset/emissions-from-industrial-facilities-in-queensland-2000
 event: brisbane
+gid: industrial-water-complex
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1471
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2012.04.39%20PM.png
 jurisdiction: qld

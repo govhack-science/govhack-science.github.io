@@ -5,6 +5,7 @@ datasets_used:
   name: Intellectual Property Government Open Data 2016
   url: https://data.gov.au/dataset/intellectual-property-government-open-data-2016
 event: melbourne
+gid: ipgodmode
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2536
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/89f1f5d6-7bb7-4d05-b50e-215a76157b89.png
 jurisdiction: vic

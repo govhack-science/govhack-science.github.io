@@ -14,6 +14,7 @@ datasets_used:
   name: Postal Areas ASGS Non ABS Structures Ed 2011 Digital Boundaries
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.003July%202011?OpenDocument
 event: rockhampton-maker
+gid: grey-areas
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1621
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Grey-areas-logo-HR-300dpi-RGB.jpg
 jurisdiction: qld

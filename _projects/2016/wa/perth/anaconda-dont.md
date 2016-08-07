@@ -5,6 +5,7 @@ datasets_used:
   name: Water corporation aerial UAV images
   url: ''
 event: perth
+gid: anaconda-dont
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3166
 jurisdiction: wa
 prizes-entered:

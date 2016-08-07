@@ -11,6 +11,7 @@ datasets_used:
   name: SILO Patched Point Datasets for Queensland
   url: https://data.qld.gov.au/dataset/silo-patched-point-datasets-for-queensland
 event: toowoomba
+gid: john-conner
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1101
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/14733310007_edb84e2b13_b.jpg
 jurisdiction: qld

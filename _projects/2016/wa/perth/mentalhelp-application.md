@@ -20,6 +20,7 @@ datasets_used:
   name: Open Streetmap MentalHelp
   url: https://www.mapbox.com/studio/styles/mapguy83/cir948d05000bgilztrc1hhdy
 event: perth
+gid: mentalhelp-application
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1281
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/MentalHelp.Presentation_0.jpg
 jurisdiction: wa

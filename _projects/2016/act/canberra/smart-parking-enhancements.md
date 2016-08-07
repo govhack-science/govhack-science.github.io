@@ -5,6 +5,7 @@ datasets_used:
   name: Park CBR
   url: http://portal.govhack.org/sponsors/act-chief-minister-treasury-and-economic-development-directorate.html
 event: canberra
+gid: smart-parking-enhancements
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1386
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/619681c5-ffc4-43fe-b5d5-05aae8a2f3a5.jpeg
 jurisdiction: act

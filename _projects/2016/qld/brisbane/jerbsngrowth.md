@@ -14,6 +14,7 @@ datasets_used:
   name: SA3 Region Innovation Data 2009-15
   url: https://data.gov.au/dataset/sa3-region-innovation-data
 event: brisbane
+gid: jerbsngrowth
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2736
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13884457_10157172226385048_698517090_n.jpg
 jurisdiction: qld

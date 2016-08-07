@@ -14,6 +14,7 @@ datasets_used:
   name: Census Of Land Use And Employment (CLUE) Small Areas
   url: https://data.melbourne.vic.gov.au/Economy/Census-Of-Land-Use-And-Employment-CLUE-Small-Areas/gei8-3w86
 event: brisbane
+gid: pedestimate
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3056
 jurisdiction: qld
 prizes-entered:

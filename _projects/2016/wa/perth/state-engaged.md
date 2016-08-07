@@ -8,6 +8,7 @@ datasets_used:
   name: WA Local Government MyCouncil Data
   url: http://portal.govhack.org/datasets/2016/wa/department-of-local-government-and-communities/wa-local-government-mycouncil-data.html
 event: perth
+gid: state-engaged
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1256
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hack%20Newbie.JPG
 jurisdiction: wa

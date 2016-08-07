@@ -14,6 +14,7 @@ datasets_used:
   name: Google Maps
   url: https://www.google.com.au/maps
 event: ipswich-digital-city
+gid: innovation-where
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3016
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/innovation_where.png
 jurisdiction: qld

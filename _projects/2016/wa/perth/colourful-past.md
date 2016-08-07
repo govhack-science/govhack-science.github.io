@@ -32,6 +32,7 @@ datasets_used:
   name: Powerhouse Museum Flickr Commons
   url: https://www.flickr.com/photos/powerhouse_museum/
 event: perth
+gid: colourful-past
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2521
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image.jpg
 jurisdiction: wa

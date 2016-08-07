@@ -11,6 +11,7 @@ datasets_used:
   name: 2014 Town and Community Profile
   url: https://www.data.vic.gov.au/data/dataset/2014-town-and-community-profile-for-dandenong-catchment
 event: melbourne
+gid: little-steps
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2786
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/gov.hack_.mole_.png
 jurisdiction: vic

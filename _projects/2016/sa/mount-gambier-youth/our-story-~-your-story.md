@@ -8,6 +8,7 @@ datasets_used:
   name: National Drugs Strategy Household Surveys 2010
   url: http://data.gov.au/dataset/aa3cb47f-b3b4-492a-8f98-c6013beb814e/resource/5c536ecc-316a-4206-9984-bd1b3b8982b9/download/ndshs2010.csv
 event: mount-gambier-youth
+gid: our-story-~-your-story
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2476
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/our%20story%20your%20story.png
 jurisdiction: sa

@@ -20,6 +20,7 @@ datasets_used:
   name: Police Service Area Crime Statistics (Victoria)
   url: https://data.gov.au/dataset/police-service-area-crime-statistics-victoria
 event: adelaide
+gid: what-are-you-afraid-of
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2086
 jurisdiction: sa
 prizes-entered:

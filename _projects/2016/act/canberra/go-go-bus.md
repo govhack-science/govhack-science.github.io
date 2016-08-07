@@ -11,6 +11,7 @@ datasets_used:
   name: ACT Wildlife Atlas Records
   url: https://www.data.act.gov.au/Environment/ACT-Wildlife-Atlas-Records/e9ux-7djy
 event: canberra
+gid: go-go-bus
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3011
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Action_PokeBus.jpg
 jurisdiction: act

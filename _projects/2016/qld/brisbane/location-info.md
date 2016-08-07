@@ -8,6 +8,7 @@ datasets_used:
   name: General transit feed specification (GTFS)—South East Queensland
   url: https://data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-seq
 event: brisbane
+gid: location-info
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2121
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/locinfo.png
 jurisdiction: qld

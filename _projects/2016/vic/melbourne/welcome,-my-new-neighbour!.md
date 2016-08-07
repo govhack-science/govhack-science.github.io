@@ -5,6 +5,7 @@ datasets_used:
   name: Open Data from the City of Melbourne
   url: https://data.melbourne.vic.gov.au
 event: melbourne
+gid: welcome,-my-new-neighbour!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2636
 jurisdiction: vic
 prizes-entered:

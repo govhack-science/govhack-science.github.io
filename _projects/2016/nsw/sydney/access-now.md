@@ -17,6 +17,7 @@ datasets_used:
   name: Open Street Maps
   url: http://wiki.openstreetmap.org/wiki/Planet.osm
 event: sydney
+gid: access-now
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1691
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%2011.56.51%20AM.png
 jurisdiction: nsw

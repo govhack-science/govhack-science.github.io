@@ -8,6 +8,7 @@ datasets_used:
   name: Parks Victoria Camp Grounds and Huts (GovHack 2016)
   url: https://www.data.vic.gov.au/data/dataset/parks-victoria-camp-grounds-and-huts
 event: melbourne
+gid: campsites-tonight
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2776
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/adventure-shibe.jpg
 jurisdiction: vic

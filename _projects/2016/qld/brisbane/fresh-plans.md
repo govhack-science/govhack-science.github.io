@@ -29,6 +29,7 @@ datasets_used:
   name: Administrative-Boundaries
   url: https://www.psma.com.au/products/administrative-boundaries
 event: brisbane
+gid: fresh-plans
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2031
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fresh_plans_logo_1_720.jpg
 jurisdiction: qld

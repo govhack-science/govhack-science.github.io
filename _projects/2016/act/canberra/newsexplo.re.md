@@ -11,6 +11,7 @@ datasets_used:
   name: IBM Watson AlchemyLanguage
   url: http://www.alchemyapi.com/
 event: canberra
+gid: newsexplo.re
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2446
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_300dpi.png
 jurisdiction: act

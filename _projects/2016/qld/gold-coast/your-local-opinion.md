@@ -17,6 +17,7 @@ datasets_used:
   name: Sunshine Coast Bus stops (WITH shelter)
   url: https://data.sunshinecoast.qld.gov.au/Transportation/Bus-Stops-With-Shelter-Sunshine-Coast/ryxk-xmsx
 event: gold-coast
+gid: your-local-opinion
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2881
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/team-image-01.png
 jurisdiction: qld

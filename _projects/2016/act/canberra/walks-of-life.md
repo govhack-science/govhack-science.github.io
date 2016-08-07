@@ -26,6 +26,7 @@ datasets_used:
   name: National Drugs Strategy Household Survey
   url: https://data.gov.au/dataset/national-drugs-strategy-household-survey
 event: canberra
+gid: walks-of-life
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1666
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo_d.jpg
 jurisdiction: act

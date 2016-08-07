@@ -1,6 +1,7 @@
 ---
 category: ''
 event: perth
+gid: sustainable-juniors
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1241
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Sustainable%20Juniors.JPG
 jurisdiction: wa

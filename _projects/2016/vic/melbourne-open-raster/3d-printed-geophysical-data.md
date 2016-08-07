@@ -8,6 +8,7 @@ datasets_used:
   name: Australian radiogenic granite and sedimentary basin geothermal hot rock potential map
   url: http://www.ga.gov.au/metadata-gateway/metadata/record/65306/
 event: melbourne-open-raster
+gid: 3d-printed-geophysical-data
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2951
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/geothermal_photo.jpg
 jurisdiction: vic

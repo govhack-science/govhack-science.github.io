@@ -29,6 +29,7 @@ datasets_used:
   name: 'IPCC Fourth Assessment Report: Climate Change 2007'
   url: https://www.ipcc.ch/publications_and_data/publications_ipcc_fourth_assessment_report_synthesis_report.htm
 event: melbourne
+gid: legends-of-tomorrow
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2861
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ProjectImage2.jpg
 jurisdiction: vic

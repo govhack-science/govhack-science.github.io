@@ -35,6 +35,7 @@ datasets_used:
   name: 6524.0.55.002 - Estimates of Personal Income for Small Areas, 2012-13 Quality Declaration
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/6524.0.55.0022012-13?OpenDocument
 event: canberra
+gid: bizhack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1111
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo_1.jpg
 jurisdiction: act

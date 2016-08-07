@@ -14,6 +14,7 @@ datasets_used:
   name: Full Greater Sydney GTFS Static
   url: https://opendata.transport.nsw.gov.au/app/dashboard.html
 event: parramatta
+gid: parradise
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2686
 jurisdiction: nsw
 prizes-entered:

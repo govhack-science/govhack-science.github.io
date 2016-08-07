@@ -14,6 +14,7 @@ datasets_used:
   name: 3101.0 - Australian Demographic Statistics, Dec 2015
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0
 event: launceston
+gid: stem,-australia
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1196
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%204.52.07%20PM.png
 jurisdiction: tas

@@ -14,6 +14,7 @@ datasets_used:
   name: Preview Suburbs and Localities
   url: https://data.sa.gov.au/data/dataset/suburb-boundaries/resource/8b48d75f-2c01-4b21-9173-4f2a1451f183
 event: onkaparinga
+gid: fish-r-us
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2986
 jurisdiction: sa
 prizes-entered:

@@ -8,6 +8,7 @@ datasets_used:
   name: TransLink real time data
   url: https://data.qld.gov.au/dataset/translink-real-time-data
 event: brisbane
+gid: quickbus
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1546
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/quickbus2.png
 jurisdiction: qld

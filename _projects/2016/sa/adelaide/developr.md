@@ -68,6 +68,7 @@ datasets_used:
   name: Crime Mapper - South Australia
   url: https://data.sa.gov.au/data/dataset/crime-mapper-2007-2011-south-australia
 event: adelaide
+gid: developr
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1951
 jurisdiction: sa
 prizes-entered:

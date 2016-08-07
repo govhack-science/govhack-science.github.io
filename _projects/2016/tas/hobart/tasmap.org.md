@@ -11,6 +11,7 @@ datasets_used:
   name: City of Launceston Published Data
   url: http://mapping.launceston.tas.gov.au/arcgis/rest/services/
 event: hobart
+gid: tasmap.org
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1856
 jurisdiction: tas
 prizes-entered:

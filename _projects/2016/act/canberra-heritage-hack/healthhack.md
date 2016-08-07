@@ -5,6 +5,7 @@ datasets_used:
   name: 'National notifiable diseases: Australia''s notifiable diseases status: Annual report of the National Notifiable Diseases Surveillance System. 1994 Australia''s notifiable diseases status PDF 662KB'
   url: http://www.health.gov.au/internet/main/publishing.nsf/Content/cda-pubs-annlrpt-nndssar.htm
 event: canberra-heritage-hack
+gid: healthhack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2146
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Diphtheria_vaccination_poster.jpg
 jurisdiction: act

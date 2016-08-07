@@ -20,6 +20,7 @@ datasets_used:
   name: Tiger Quoll records
   url: http://biocache.ala.org.au/occurrences/search?q=lsid%3Aurn%3Alsid%3Abiodiversity.org.au%3Aafd.taxon%3A33d1cf65-5c15-4864-8ce1-88bc483f713e#tab_mapView
 event: mount-gambier-youth
+gid: finding-forgotten-fauna
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1216
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FFF%20Logo%20option%205%20-%20AUST-%20preferred_0.jpg
 jurisdiction: sa

@@ -20,6 +20,7 @@ datasets_used:
   name: NRP, Industry, LGA, 2010-2014
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1379.0.55.0012010-14?OpenDocument
 event: brisbane-maker
+gid: insolvency-in-qld-2013-2014
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3106
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/finished.jpg
 jurisdiction: qld

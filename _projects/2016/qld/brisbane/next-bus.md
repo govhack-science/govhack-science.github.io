@@ -8,6 +8,7 @@ datasets_used:
   name: South East QLD GTFS Real-Time Feed
   url: https://gtfsrt.api.translink.com.au/Feed/SEQ
 event: brisbane
+gid: next-bus
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2006
 jurisdiction: qld
 prizes-entered:

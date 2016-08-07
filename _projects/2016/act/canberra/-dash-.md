@@ -14,6 +14,7 @@ datasets_used:
   name: National Electricity Market Price and Demand data (30 minute intervals)
   url: http://www.nemweb.com.au/mms.GRAPHS/data/
 event: canberra
+gid: -dash-
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2401
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_3.PNG
 jurisdiction: act

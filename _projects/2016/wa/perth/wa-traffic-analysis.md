@@ -14,6 +14,7 @@ datasets_used:
   name: Daily rainfall
   url: http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=2015&p_c=-16352875&p_stn_num=009021
 event: perth
+gid: wa-traffic-analysis
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2531
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/19560778_xxl.jpg
 jurisdiction: wa

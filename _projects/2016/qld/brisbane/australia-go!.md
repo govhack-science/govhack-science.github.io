@@ -62,6 +62,7 @@ datasets_used:
   name: Labour Force, Australia, Jun 2016
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/6202.0
 event: brisbane
+gid: australia-go!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2641
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AustralianMap.png
 jurisdiction: qld

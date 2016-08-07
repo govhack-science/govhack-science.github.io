@@ -8,6 +8,7 @@ datasets_used:
   name: Google Maps Traffic Layer
   url: https://developers.google.com/maps/documentation/javascript/trafficlayer
 event: melbourne-open-raster
+gid: transport-alert
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1071
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Icon_0.png
 jurisdiction: vic

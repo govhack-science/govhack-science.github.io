@@ -8,6 +8,7 @@ datasets_used:
   name: ABC Gateway API
   url: http://portal.govhack.org/datasets/2016/australia/australian-broadcasting-corporation/abc-gateway-api.html
 event: melbourne
+gid: portrait-landscape
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1616
 jurisdiction: vic
 prizes-entered:

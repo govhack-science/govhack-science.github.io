@@ -11,6 +11,7 @@ datasets_used:
   name: Trove
   url: http://trove.nla.gov.au/
 event: brisbane
+gid: walked
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2221
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/walked.png
 jurisdiction: qld

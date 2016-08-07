@@ -8,6 +8,7 @@ datasets_used:
   name: Crime data Set
   url: http://data.nsw.gov.au/data/dataset/crime-data-by-offence/resource/ff1d38f3-7b43-4555-a4b4-112b0c385d6b
 event: parramatta
+gid: foster-innovation-to-drive-safer-communities
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Innosafe.png
 jurisdiction: nsw

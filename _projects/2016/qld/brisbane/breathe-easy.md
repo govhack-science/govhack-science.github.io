@@ -38,6 +38,7 @@ datasets_used:
   name: npi-2015-qld-transfers
   url: http://ehp.qld.gov.au/data-sets/npi/npi-2015-qld-transfers.csv
 event: brisbane
+gid: breathe-easy
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1036
 jurisdiction: qld
 prizes-entered:

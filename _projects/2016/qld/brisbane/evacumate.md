@@ -17,6 +17,7 @@ datasets_used:
   name: IAG Flood Risk Data
   url: https://github.com/iag-edge-labs/flood-data
 event: brisbane
+gid: evacumate
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2946
 jurisdiction: qld
 prizes-entered:

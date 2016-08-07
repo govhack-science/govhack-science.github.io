@@ -11,6 +11,7 @@ datasets_used:
   name: South Australian Bushfire Safer Settlements
   url: https://data.sa.gov.au/data/dataset/38361477-6054-4bb4-abde-39f2b3982254
 event: adelaide
+gid: will-i-burn
 hackerspace_url: https://2016.hackerspace.govhack.org/node/946
 jurisdiction: sa
 prizes-entered:

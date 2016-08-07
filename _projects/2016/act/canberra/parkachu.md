@@ -8,6 +8,7 @@ datasets_used:
   name: SmartParking Realtime API
   url: https://api.smartparking.com/
 event: canberra
+gid: parkachu
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1551
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Icon-512%402x.png
 jurisdiction: act

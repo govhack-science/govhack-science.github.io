@@ -11,6 +11,7 @@ datasets_used:
   name: Characteristics of Temporary SKiled Migrants
   url: http://govhack.abs.gov.au/Index.aspx?DataSetCode=ABS_CTSM
 event: canberra
+gid: on-the-move
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2131
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo_0.png
 jurisdiction: act

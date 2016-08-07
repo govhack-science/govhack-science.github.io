@@ -11,6 +11,7 @@ datasets_used:
   name: ABC Gateway API
   url: https://content-api-govhack.abc-prod.net.au/v1/6946348
 event: ipswich-digital-city
+gid: threat.end
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1106
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/icon.png
 jurisdiction: qld

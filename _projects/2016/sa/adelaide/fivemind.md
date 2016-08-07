@@ -17,6 +17,7 @@ datasets_used:
   name: Geoscience Australia, 3 second SRTM Digital Elevation Model (DEM) v01
   url: https://data.gov.au/dataset/12e0731d-96dd-49cc-aa21-ebfd65a3f67a
 event: adelaide
+gid: fivemind
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1086
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/fivemind_0.png
 jurisdiction: sa

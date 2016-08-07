@@ -11,6 +11,7 @@ datasets_used:
   name: Port Macquarie Airport, Weather Observations
   url: http://www.bom.gov.au/fwo/IDN60801/IDN60801.94786.json
 event: camperdown-games
+gid: perfect-catch
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2236
 jurisdiction: nsw
 prizes-entered:

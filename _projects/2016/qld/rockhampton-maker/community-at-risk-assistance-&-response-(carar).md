@@ -14,6 +14,7 @@ datasets_used:
   name: PSMA Geocoded National Address File (G-NAF)
   url: https://data.gov.au/dataset/geocoded-national-address-file-g-naf
 event: rockhampton-maker
+gid: community-at-risk-assistance-&-response-(carar)
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2411
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_5.PNG
 jurisdiction: qld

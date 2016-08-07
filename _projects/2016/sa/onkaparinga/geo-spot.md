@@ -122,6 +122,7 @@ datasets_used:
   name: Wyndham City Council Datasets
   url: https://data.gov.au/organization/wyndham-city-council
 event: onkaparinga
+gid: geo-spot
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1191
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Geo%20Spot%20Logo_0.png
 jurisdiction: sa

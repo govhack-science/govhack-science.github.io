@@ -14,6 +14,7 @@ datasets_used:
   name: Water, Power and Electricity Usage - City of Greater Geelong
   url: https://data.gov.au/dataset/power-and-electricity-usage-city-of-greater-geelong
 event: geelong
+gid: 5-d-city-explorer
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1516
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/004_0.jpg
 jurisdiction: vic

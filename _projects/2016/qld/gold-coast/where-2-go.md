@@ -65,6 +65,7 @@ datasets_used:
   name: Artificial Reef
   url: http://data.goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0
 event: gold-coast
+gid: where-2-go
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1556
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ic_launcher.png
 jurisdiction: qld

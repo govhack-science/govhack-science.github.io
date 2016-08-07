@@ -11,6 +11,7 @@ datasets_used:
   name: Crime Statistics Agency Data Tables - Crime by location
   url: https://www.data.vic.gov.au/data/dataset/crime-statistics-agency-data-tables-crime-by-location
 event: melbourne
+gid: direct-me
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1791
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/1024px-Congestion_on_Eastern_Freeway%2C_Melbourne.JPG
 jurisdiction: vic

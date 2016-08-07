@@ -41,6 +41,7 @@ datasets_used:
   name: Ballarat Litter Bins
   url: http://data.gov.au/dataset/ballarat-litter-bins
 event: ballarat
+gid: local-hero
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2996
 jurisdiction: vic
 prizes-entered:

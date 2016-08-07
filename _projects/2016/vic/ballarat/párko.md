@@ -5,6 +5,7 @@ datasets_used:
   name: Ballarat CBD Car Parking Occupancy
   url: http://data.gov.au/dataset/0fa308f2-20d2-4480-8c20-46cbc132be04/resource/6f2a571f-3a06-4047-be24-c40531b133d4/download/Ballarat-CBD-Parking-Occupancy.csv
 event: ballarat
+gid: párko
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2181
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/parko.png
 jurisdiction: vic

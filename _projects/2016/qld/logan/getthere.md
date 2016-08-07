@@ -17,6 +17,7 @@ datasets_used:
   name: Fire Stations - Urban
   url: https://data.qld.gov.au/dataset/queensland-urban-fire-stations/resource/a4663955-168b-4b12-8990-4b3f40323ac0
 event: logan
+gid: getthere
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1846
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_2.PNG
 jurisdiction: qld

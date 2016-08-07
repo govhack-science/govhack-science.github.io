@@ -20,6 +20,7 @@ datasets_used:
   name: Atlas of Living Australia
   url: http://portal.govhack.org/datasets/2016/australia/ncris-research-data-and-infrastructure-group/atlas-of-living-australia.html
 event: playford
+gid: w_i_n_e
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2836
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture_0.PNG
 jurisdiction: sa

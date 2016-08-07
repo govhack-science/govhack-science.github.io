@@ -11,6 +11,7 @@ datasets_used:
   name: Road Corridor | Open Data | Socrata
   url: https://data.melbourne.vic.gov.au/Property-Planning/Road-Corridor/9mdh-8yau
 event: melbourne
+gid: coffee-is-life
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1886
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ctrl-alt-defeat_4.jpg
 jurisdiction: vic

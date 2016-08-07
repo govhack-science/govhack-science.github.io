@@ -11,6 +11,7 @@ datasets_used:
   name: Digital Boundaries for GIS
   url: http://www.abs.gov.au/websitedbs/D3310114.nsf/home/ABS+Geography+Publications#DigitalGIS
 event: perth
+gid: budgethack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1296
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/keep_calm_and_hack.jpg
 jurisdiction: wa

@@ -23,6 +23,7 @@ datasets_used:
   name: Jobs Services Australia Vacancy Data
   url: https://data.gov.au/dataset/jobs-services-australia-vacancy-data
 event: sunshine-coast
+gid: future-proof
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2191
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Future-Proof-Logo-inverted.png
 jurisdiction: qld

@@ -11,6 +11,7 @@ datasets_used:
   name: Federal Election 2010 Senators Elected
   url: http://results.aec.gov.au/15508/Website/SenateSenatorsElected-15508-NAT.htm
 event: melbourne
+gid: election-stitchup
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2576
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tumblr_ob5qocyyU01vbmldso1_1280.jpg
 jurisdiction: vic

@@ -17,6 +17,7 @@ datasets_used:
   name: DSITI—Queensland Government Investment Portal (QGIP)
   url: https://data.qld.gov.au/dataset/dsiti-queensland-government-investment-portal-qgip
 event: rockhampton-maker
+gid: hubgap
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3116
 jurisdiction: qld
 prizes-entered:

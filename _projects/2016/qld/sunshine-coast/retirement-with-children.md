@@ -5,6 +5,7 @@ datasets_used:
   name: Carer and senior cardholders by information and special offers flag by location 2014
   url: https://data.qld.gov.au/dataset/cardholders-department-of-communities-child-safety-and-disability-services/resource/ad83357d-53de-41c5-a3ab-b604460c6c1d
 event: sunshine-coast
+gid: retirement-with-children
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3121
 jurisdiction: qld
 prizes-entered:

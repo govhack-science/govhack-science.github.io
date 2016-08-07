@@ -5,6 +5,7 @@ datasets_used:
   name: Weather Station Directory
   url: http://www.bom.gov.au/climate/data/stations/
 event: brisbane
+gid: climate-flow
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2111
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Capture.JPG
 jurisdiction: qld

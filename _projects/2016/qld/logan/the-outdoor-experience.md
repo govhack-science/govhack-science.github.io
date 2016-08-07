@@ -17,6 +17,7 @@ datasets_used:
   name: Queensland Parks and Wildlife Service access
   url: https://data.qld.gov.au/dataset/queensland-parks-and-wildlife-service-access
 event: logan
+gid: the-outdoor-experience
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2021
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/image1.PNG
 jurisdiction: qld

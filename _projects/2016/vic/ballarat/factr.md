@@ -41,6 +41,7 @@ datasets_used:
   name: Ballarat BBQ's
   url: http://data.gov.au/dataset/f2ab58d7-18b7-44dc-9121-9cd0ae829d22/resource/f01abfb8-ae42-44cc-a82c-d966649aa7d8/download/BallaratBBQs.csv
 event: ballarat
+gid: factr
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2056
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/bhacktest.png
 jurisdiction: vic

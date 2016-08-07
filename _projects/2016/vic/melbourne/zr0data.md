@@ -11,6 +11,7 @@ datasets_used:
   name: GovHack2016
   url: https://data.gov.au/dataset/govhack2016
 event: melbourne
+gid: zr0data
 hackerspace_url: https://2016.hackerspace.govhack.org/node/851
 jurisdiction: vic
 prizes-entered:

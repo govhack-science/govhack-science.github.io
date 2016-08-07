@@ -159,6 +159,7 @@ for row in projects:
     # print row["Project Title"].strip()
 
     project = {
+        "gid": gid,
         "project_title": row["Project Title"].strip(),
         "team_name": row["Team Name"].strip(),
         "repo": {

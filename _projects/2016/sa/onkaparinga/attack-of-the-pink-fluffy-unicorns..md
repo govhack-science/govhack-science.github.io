@@ -1,6 +1,7 @@
 ---
 category: ''
 event: onkaparinga
+gid: attack-of-the-pink-fluffy-unicorns.
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2656
 jurisdiction: sa
 prizes-entered:

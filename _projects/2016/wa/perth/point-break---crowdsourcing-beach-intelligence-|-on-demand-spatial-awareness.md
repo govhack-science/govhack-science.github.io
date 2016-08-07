@@ -14,6 +14,7 @@ datasets_used:
   name: Landgate WA Locate mosaic
   url: https://imagery.slip.wa.gov.au/wmts/1.0.0/WMTSCapabilities.xml
 event: perth
+gid: point-break---crowdsourcing-beach-intelligence-|-on-demand-spatial-awareness
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2711
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/icon_light%402x.png
 jurisdiction: wa

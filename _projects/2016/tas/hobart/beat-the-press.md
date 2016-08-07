@@ -23,6 +23,7 @@ datasets_used:
   name: CSIRO Science Images
   url: http://www.scienceimage.csiro.au/
 event: hobart
+gid: beat-the-press
 hackerspace_url: https://2016.hackerspace.govhack.org/node/781
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/SplashFourbyuathreewithaborder%20copy.png
 jurisdiction: tas

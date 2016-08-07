@@ -8,6 +8,7 @@ datasets_used:
   name: Bus Stops
   url: https://www.data.act.gov.au/Transport/Bus-Stops/22rs-ycdh
 event: canberra
+gid: smartroads
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2581
 jurisdiction: act
 prizes-entered:

@@ -11,6 +11,7 @@ datasets_used:
   name: Views of ABC News Digital Content (May 2016)
   url: https://data.gov.au/dataset/abc-news-may-2016
 event: hobart
+gid: krowdkwiz
 hackerspace_url: https://2016.hackerspace.govhack.org/node/801
 jurisdiction: tas
 prizes-entered:

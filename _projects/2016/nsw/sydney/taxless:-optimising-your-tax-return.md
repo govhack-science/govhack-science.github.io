@@ -5,6 +5,7 @@ datasets_used:
   name: Taxation statistics - Individual tax return sample files
   url: http://portal.govhack.org/datasets/2016/australia/australian-taxation-office/taxation-statistics-individual-sample-files.html
 event: sydney
+gid: taxless:-optimising-your-tax-return
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2101
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHackLogo.png
 jurisdiction: nsw

@@ -74,6 +74,7 @@ datasets_used:
   name: sample data provided
   url: https://www.mycommunitydirectory.com.au/
 event: perth
+gid: au-dashboard
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1201
 jurisdiction: wa
 prizes-entered:

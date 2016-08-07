@@ -5,6 +5,7 @@ datasets_used:
   name: Using data from ~151 global CKANS
   url: http://ckan.org/instances
 event: brisbane
+gid: worldckans
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2196
 jurisdiction: qld
 prizes-entered:

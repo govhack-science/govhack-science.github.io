@@ -8,6 +8,7 @@ datasets_used:
   name: The National Regional Profile 2010-14
   url: http://portal.govhack.org/datasets/2016/australia/australian-bureau-of-statistics/national-regional-profile.html
 event: playford
+gid: tribes
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1051
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Icon.jpg
 jurisdiction: sa

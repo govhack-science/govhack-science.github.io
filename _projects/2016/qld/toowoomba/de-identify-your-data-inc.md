@@ -8,6 +8,7 @@ datasets_used:
   name: Datasets contained within QLD Government Challenge Website
   url: https://data.qld.gov.au/static-content/data-event/govhack/2016/challenge-wally
 event: toowoomba
+gid: de-identify-your-data-inc
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1431
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/DYDincLogo.png
 jurisdiction: qld

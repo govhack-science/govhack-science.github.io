@@ -35,6 +35,7 @@ datasets_used:
   name: NCS Fauna
   url: https://services.arcgis.com/3vStCH7NDoBOZ5zn/arcgis/rest/services/NCS_Fauna/FeatureServer/0
 event: gold-coast
+gid: mycity-in-virtual-reality
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3061
 jurisdiction: qld
 prizes-entered:

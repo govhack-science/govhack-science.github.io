@@ -11,6 +11,7 @@ datasets_used:
   name: Crime by location data table
   url: https://www.data.vic.gov.au/data/dataset/crime-by-location-data-table
 event: melbourne
+gid: safetymeasur.es
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2856
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Pasted%20image%20at%202016_07_31%2012_56%20PM.png
 jurisdiction: vic

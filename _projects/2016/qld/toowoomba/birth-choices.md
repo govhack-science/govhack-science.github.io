@@ -14,6 +14,7 @@ datasets_used:
   name: Birthplace
   url: http://www.havingababy.org.au/birthplace-search-a-results
 event: toowoomba
+gid: birth-choices
 hackerspace_url: https://2016.hackerspace.govhack.org/node/931
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/birthchoices.png
 jurisdiction: qld

@@ -8,6 +8,7 @@ datasets_used:
   name: innovation data by SA3
   url: https://data.gov.au/dataset/sa3-region-innovation-data/resource/40c2164b-a960-4658-8c8a-f0725d2ed6f1
 event: parramatta
+gid: lets-renew-the-renewable-energy!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3001
 jurisdiction: nsw
 prizes-entered:

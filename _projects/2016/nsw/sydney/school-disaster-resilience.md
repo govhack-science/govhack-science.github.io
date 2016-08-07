@@ -20,6 +20,7 @@ datasets_used:
   name: Current Incidents Feed (GeoRSS)
   url: http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml
 event: sydney
+gid: school-disaster-resilience
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2076
 jurisdiction: nsw
 prizes-entered:

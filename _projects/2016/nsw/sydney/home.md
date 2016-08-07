@@ -11,6 +11,7 @@ datasets_used:
   name: Crime statistics
   url: http://www.bocsar.nsw.gov.au/Pages/bocsar_crime_stats/bocsar_crime_stats.aspx
 event: sydney
+gid: home
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1901
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo_2.png
 jurisdiction: nsw

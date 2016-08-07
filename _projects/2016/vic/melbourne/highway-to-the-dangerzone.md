@@ -20,6 +20,7 @@ datasets_used:
   name: 2011 Employment Census Data
   url: https://www.censusdata.abs.gov.au/webapi/jsf/login.xhtml
 event: melbourne
+gid: highway-to-the-dangerzone
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2571
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/dangerzone.jpg
 jurisdiction: vic

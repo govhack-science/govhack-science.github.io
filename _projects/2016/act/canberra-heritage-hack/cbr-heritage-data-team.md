@@ -11,6 +11,7 @@ datasets_used:
   name: Bureau of Meterology
   url: ''
 event: canberra-heritage-hack
+gid: cbr-heritage-data-team
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1926
 jurisdiction: act
 prizes-entered:

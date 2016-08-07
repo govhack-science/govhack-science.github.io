@@ -5,6 +5,7 @@ datasets_used:
   name: Brisbane Hospital registers of deaths 1933 to 1963
   url: https://data.qld.gov.au/dataset/brisbane-hospital-registers-of-deaths-1933-to-1963
 event: brisbane
+gid: haidabloke
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1316
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/WallysWorld.8.jpg
 jurisdiction: qld

@@ -11,6 +11,7 @@ datasets_used:
   name: Google maps API
   url: https://www.google.com.au/work/mapsearth/products/mapsapi.html
 event: canberra
+gid: native-go
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1711
 jurisdiction: act
 prizes-entered:

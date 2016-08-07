@@ -1,6 +1,7 @@
 ---
 category: ''
 event: melbourne
+gid: deconstructed-coffee-and-design---melbourne-hipster-index
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2791
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Mista%20Hipsta.png
 jurisdiction: vic

@@ -5,6 +5,7 @@ datasets_used:
   name: Brisbane Hospital registers of deaths 1933 to 1963
   url: https://data.qld.gov.au/dataset/brisbane-hospital-registers-of-deaths-1933-to-1963/resource/aa0c1fd9-297a-44e1-b032-adc563d3b646
 event: brisbane
+gid: privé
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2001
 jurisdiction: qld
 prizes-entered:

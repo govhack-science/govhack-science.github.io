@@ -20,6 +20,7 @@ datasets_used:
   name: Cancer Statistics
   url: https://canceraustralia.gov.au/affected-cancer/cancer-statistics
 event: ipswich-digital-city
+gid: check-your-uglies
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1161
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screenshot%202016-07-31%2015.23.22.png
 jurisdiction: qld

@@ -8,6 +8,7 @@ datasets_used:
   name: Current Drivers Licenses by Age & Sex (2016)
   url: http://data.sa.gov.au/data/dataset/97e14cb2-bc71-4105-aaaf-3fca2696f73e/resource/4cdabee4-cca6-4226-aa7b-636a85434184/download/current-drivers-licences-by-age-and-sex-2016.csv
 event: adelaide
+gid: cross-roads
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1121
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/CrossRoadsLogo_1.gif
 jurisdiction: sa

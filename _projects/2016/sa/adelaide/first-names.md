@@ -5,6 +5,7 @@ datasets_used:
   name: Place Names
   url: https://data.sa.gov.au/data/dataset/gazetteer
 event: adelaide
+gid: first-names
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1141
 jurisdiction: sa
 prizes-entered:

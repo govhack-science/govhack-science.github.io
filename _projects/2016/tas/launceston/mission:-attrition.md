@@ -8,6 +8,7 @@ datasets_used:
   name: Baby Names in Tasmania 2010 to 2015
   url: https://data.gov.au/dataset/top-baby-names-in-tasmania-2010-to-2014
 event: launceston
+gid: mission:-attrition
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2646
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/mission-attrition-icon.png
 jurisdiction: tas

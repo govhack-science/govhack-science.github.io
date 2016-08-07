@@ -8,6 +8,7 @@ datasets_used:
   name: Australian Bureau of Statistics DataPacks
   url: https://www.censusdata.abs.gov.au/datapacks/DataPacks?release=2011
 event: brisbane
+gid: project-name-*
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1541
 jurisdiction: qld
 prizes-entered:

@@ -8,6 +8,7 @@ datasets_used:
   name: ACT Public Art List
   url: https://www.data.act.gov.au/Education/ACT-Public-Art-List/j746-krni
 event: canberra
+gid: tour-de-chance
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1046
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/TourDeChance_POSTER.png
 jurisdiction: act

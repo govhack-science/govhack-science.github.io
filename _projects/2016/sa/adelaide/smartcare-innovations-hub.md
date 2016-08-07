@@ -14,6 +14,7 @@ datasets_used:
   name: Australian Vocational Education and Training (VET) statistics
   url: https://data.sa.gov.au/data/dataset/aus-vocational-education-and-training-vet-statistics
 event: adelaide
+gid: smartcare-innovations-hub
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1286
 jurisdiction: sa
 prizes-entered:

@@ -8,6 +8,7 @@ datasets_used:
   name: Network Operations Traffic Data MRWA
   url: http://catalogue.beta.data.wa.gov.au/dataset/network-operations-traffic-data-mrwa
 event: perth
+gid: crash-course
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1291
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/4758613588.png
 jurisdiction: wa

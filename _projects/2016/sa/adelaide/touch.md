@@ -1,6 +1,7 @@
 ---
 category: ''
 event: adelaide
+gid: touch
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2431
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/6f1a23d9-be54-40cb-b172-00246e94a070.png
 jurisdiction: sa

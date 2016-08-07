@@ -11,6 +11,7 @@ datasets_used:
   name: BOM - Adelaide Forecast
   url: ftp://ftp.bom.gov.au/anon/gen//fwo/IDS10034.xml
 event: adelaide
+gid: eventsa
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1731
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Untitled-2.jpg
 jurisdiction: sa

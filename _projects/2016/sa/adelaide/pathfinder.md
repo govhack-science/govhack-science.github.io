@@ -5,6 +5,7 @@ datasets_used:
   name: TAFE SA Qualifications – Semester 2 2016
   url: http://data.sa.gov.au/data/dataset/tafe-sa-qualifications-semester-2-2016
 event: adelaide
+gid: pathfinder
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1056
 jurisdiction: sa
 prizes-entered:

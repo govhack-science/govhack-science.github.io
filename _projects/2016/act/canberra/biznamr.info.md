@@ -8,6 +8,7 @@ datasets_used:
   name: ABN Lookup web services
   url: https://data.gov.au/dataset/abn-lookup-web-services
 event: canberra
+gid: biznamr.info
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1706
 jurisdiction: act
 prizes-entered:

@@ -11,6 +11,7 @@ datasets_used:
   name: Printable 3D model of a Muttaburrasaurus skull
   url: https://data.qld.gov.au/dataset/printable-3d-model-of-a-muttaburrasaurus-skull
 event: brisbane-maker
+gid: fun-with-fossils
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3041
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/ammonitebot.jpg
 jurisdiction: qld

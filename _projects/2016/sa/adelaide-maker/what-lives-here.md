@@ -8,6 +8,7 @@ datasets_used:
   name: Recent Air Quality
   url: http://data.sa.gov.au/data/dataset/recent-air-quality
 event: adelaide-maker
+gid: what-lives-here
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1096
 jurisdiction: sa
 prizes-entered:

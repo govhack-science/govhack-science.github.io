@@ -23,6 +23,7 @@ datasets_used:
   name: Interactive Crash Statistics
   url: http://roadsafety.transport.nsw.gov.au/statistics/interactivecrashstats/nsw.html?tabnsw=1
 event: sydney
+gid: learngo
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1911
 jurisdiction: nsw
 prizes-entered:

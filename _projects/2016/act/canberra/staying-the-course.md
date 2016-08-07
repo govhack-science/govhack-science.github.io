@@ -5,6 +5,7 @@ datasets_used:
   name: Higher Education Attrition Rates 2005-2013
   url: http://portal.govhack.org/datasets/2016/australia/department-of-education-and-training/higher-education-attrition-rates-2005-2013.html
 event: canberra
+gid: staying-the-course
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1376
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%202.25.04%20pm.png
 jurisdiction: act

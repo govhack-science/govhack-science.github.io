@@ -17,6 +17,7 @@ datasets_used:
   name: Adelaide Key Historical Event, 1836 - 2005
   url: http://data.sa.gov.au/data/dataset/adelaide-city-council-key-historical-dates
 event: adelaide
+gid: adelography---the-story-of-adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2141
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/AdelOGRAPHYiconjpg.jpg
 jurisdiction: sa

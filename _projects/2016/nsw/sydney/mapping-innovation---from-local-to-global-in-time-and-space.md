@@ -14,6 +14,7 @@ datasets_used:
   name: 'Universities Australia: University Profiles'
   url: https://www.universitiesaustralia.edu.au/australias-universities/university-profiles#.V52AfaLbR26
 event: sydney
+gid: mapping-innovation---from-local-to-global-in-time-and-space
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1761
 jurisdiction: nsw
 prizes-entered:

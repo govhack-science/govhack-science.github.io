@@ -14,6 +14,7 @@ datasets_used:
   name: Events RSS feed
   url: https://data.sa.gov.au/data/dataset/events
 event: adelaide
+gid: r-u-open
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1751
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/RU%20Open.png
 jurisdiction: sa

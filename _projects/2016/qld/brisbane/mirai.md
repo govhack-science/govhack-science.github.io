@@ -38,6 +38,7 @@ datasets_used:
   name: SA4 - Area Profile, May 2016
   url: http://lmip.gov.au/PortalFile.axd?FieldID=1453543
 event: brisbane
+gid: mirai
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1116
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13843397_10207964798212460_1174125046_o_1.jpg
 jurisdiction: qld

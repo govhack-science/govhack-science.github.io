@@ -14,6 +14,7 @@ datasets_used:
   name: 3238.0 - Estimates and Projections, Aboriginal and Torres Strait Islander Australians, 2001 to 2026
   url: http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3238.02001%20to%202026?OpenDocument
 event: canberra
+gid: exploring-indigenous-over-representation-in-youth-detention
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2186
 jurisdiction: act
 prizes-entered:

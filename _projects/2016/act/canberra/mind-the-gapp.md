@@ -8,6 +8,7 @@ datasets_used:
   name: Youth Justice Detention Data
   url: https://data.gov.au/dataset/youth-justice-detention-data
 event: canberra
+gid: mind-the-gapp
 hackerspace_url: https://2016.hackerspace.govhack.org/node/881
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Screen%20Shot%202016-07-31%20at%205.21.26%20pm.png
 jurisdiction: act

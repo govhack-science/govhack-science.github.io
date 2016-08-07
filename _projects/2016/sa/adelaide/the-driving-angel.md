@@ -1,6 +1,7 @@
 ---
 category: ''
 event: adelaide
+gid: the-driving-angel
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1081
 jurisdiction: sa
 prizes-entered:

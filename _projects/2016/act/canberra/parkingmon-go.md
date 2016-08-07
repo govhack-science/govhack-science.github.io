@@ -5,6 +5,7 @@ datasets_used:
   name: Smart Parking
   url: https://api.smartparking.com/
 event: canberra
+gid: parkingmon-go
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1171
 jurisdiction: act
 prizes-entered:

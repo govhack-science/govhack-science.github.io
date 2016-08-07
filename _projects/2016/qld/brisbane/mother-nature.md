@@ -11,6 +11,7 @@ datasets_used:
   name: Emissions and Waste Transfers from Industrial Facilities in Queensland in 2015
   url: https://data.qld.gov.au/dataset/emissions-and-waste-transfers-from-industrial-facilities-in-queensland-2015
 event: brisbane
+gid: mother-nature
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1596
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/DSC07337.JPG
 jurisdiction: qld

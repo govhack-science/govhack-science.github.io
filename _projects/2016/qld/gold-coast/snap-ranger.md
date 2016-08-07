@@ -8,6 +8,7 @@ datasets_used:
   name: Conservation status of Queensland Wildlife – Species – Data
   url: https://data.qld.gov.au/dataset/conservation-status-of-queensland-wildlife/resource/1c8b4859-31a4-42e7-8e63-b7cf125d4321
 event: gold-coast
+gid: snap-ranger
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2306
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Snap%20Ranger%20Logo.png
 jurisdiction: qld

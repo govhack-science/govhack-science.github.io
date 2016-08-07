@@ -14,6 +14,7 @@ datasets_used:
   name: Classes and workshops
   url: http://www.trumba.com/calendars/type.rss?filterview=classses
 event: brisbane
+gid: life-explorer
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1701
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logoforproject.png
 jurisdiction: qld

@@ -8,6 +8,7 @@ datasets_used:
   name: HCC Waste bins 2015
   url: http://data-1.hobartcc.opendata.arcgis.com/datasets/9f59ef23d594497faf422d4721d95839_0
 event: launceston
+gid: binthere
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2816
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/BinLogo-01_0.png
 jurisdiction: tas

@@ -5,6 +5,7 @@ datasets_used:
   name: ALA
   url: http://www.ala.org.au/
 event: fnq
+gid: piccohunt
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2276
 jurisdiction: qld
 prizes-entered:

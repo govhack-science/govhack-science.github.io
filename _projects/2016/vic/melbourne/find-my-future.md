@@ -14,6 +14,7 @@ datasets_used:
   name: Demographic statistics per SA4 (statistical area level 4)
   url: http://stat.abs.gov.au/itt/r.jsp?RegionSummary&region=209&dataset=ABS_REGIONAL_ASGS&geoconcept=REGION&measure=MEASURE&datasetASGS=ABS_REGIONAL_ASGS&datasetLGA=ABS_NRP9_LGA&regionLGA=REGION&regionASGS=REGION
 event: melbourne
+gid: find-my-future
 hackerspace_url: https://2016.hackerspace.govhack.org/node/976
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FMF-Logo.png
 jurisdiction: vic

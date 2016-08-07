@@ -29,6 +29,7 @@ datasets_used:
   name: '4364.0.55.001 - National Health Survey: First Results, 2014-15'
   url: http://www.abs.gov.au/ausstats/abs@.nsf/mf/4364.0.55.001
 event: mount-gambier-youth
+gid: activesa
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1301
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo2.PNG
 jurisdiction: sa

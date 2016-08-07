@@ -8,6 +8,7 @@ datasets_used:
   name: weatherAUS
   url: http://togaware.com/the-weatheraus-dataset/
 event: sydney
+gid: weather-systems
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1331
 jurisdiction: nsw
 prizes-entered:

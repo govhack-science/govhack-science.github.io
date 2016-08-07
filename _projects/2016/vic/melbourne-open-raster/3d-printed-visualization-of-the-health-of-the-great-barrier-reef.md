@@ -8,6 +8,7 @@ datasets_used:
   name: SRTM-derived 1 Second Digital Elevation Models Version 1.0
   url: http://www.ga.gov.au/elvis/
 event: melbourne-open-raster
+gid: 3d-printed-visualization-of-the-health-of-the-great-barrier-reef
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2931
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/reef_closeup.jpg
 jurisdiction: vic

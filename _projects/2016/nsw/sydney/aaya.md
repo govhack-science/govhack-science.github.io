@@ -17,6 +17,7 @@ datasets_used:
   name: Public Transport Facilities and Operators
   url: https://opendata.transport.nsw.gov.au/app/api-catalog.html
 event: sydney
+gid: aaya
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2296
 jurisdiction: nsw
 prizes-entered:

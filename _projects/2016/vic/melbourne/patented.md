@@ -5,6 +5,7 @@ datasets_used:
   name: Intellectual Property Government Open Data 2016
   url: https://data.gov.au/dataset/intellectual-property-government-open-data-2016
 event: melbourne
+gid: patented
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2921
 jurisdiction: vic
 prizes-entered:

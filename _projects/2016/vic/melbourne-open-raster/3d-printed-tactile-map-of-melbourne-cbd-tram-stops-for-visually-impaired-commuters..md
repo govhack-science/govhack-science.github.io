@@ -5,6 +5,7 @@ datasets_used:
   name: Public Transport Victoria's Tram network
   url: ''
 event: melbourne-open-raster
+gid: 3d-printed-tactile-map-of-melbourne-cbd-tram-stops-for-visually-impaired-commuters.
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2971
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/tactile_map_printed.jpg
 jurisdiction: vic

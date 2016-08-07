@@ -5,6 +5,7 @@ datasets_used:
   name: Species lookup with GUID
   url: http://www.ala.org.au/
 event: camperdown-games
+gid: wildsnap
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1866
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Logo2.png
 jurisdiction: nsw

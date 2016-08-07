@@ -11,6 +11,7 @@ datasets_used:
   name: ACT Wildlife Atlas dataset
   url: https://www.data.act.gov.au/Environment/ACT-Wildlife-Atlas-Records/e9ux-7djy
 event: canberra
+gid: put-a-bird-on-it
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1406
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/final%20logo.png
 jurisdiction: act

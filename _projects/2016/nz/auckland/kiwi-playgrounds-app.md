@@ -11,6 +11,7 @@ datasets_used:
   name: Weather Company Data
   url: https://new-console.ng.bluemix.net/catalog/services/weather-company-data-for-ibm-bluemix/
 event: auckland
+gid: kiwi-playgrounds-app
 hackerspace_url: https://2016.hackerspace.govhack.org/node/911
 jurisdiction: nz
 project_title: Kiwi Playgrounds App

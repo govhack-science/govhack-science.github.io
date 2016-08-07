@@ -20,6 +20,7 @@ datasets_used:
   name: Brisbane City Council events
   url: https://www.data.brisbane.qld.gov.au/data/dataset/brisbane-city-council-events
 event: brisbane
+gid: spokesocial
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1221
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/13901364_1068149919936638_8887127178317524102_n.jpg
 jurisdiction: qld

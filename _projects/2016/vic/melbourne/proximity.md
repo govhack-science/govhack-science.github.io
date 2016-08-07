@@ -14,6 +14,7 @@ datasets_used:
   name: Offences Data
   url: http://www.crimestatistics.vic.gov.au/crime-statistics/latest-crime-data/download-data
 event: melbourne
+gid: proximity
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1026
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/logo1024.png
 jurisdiction: vic

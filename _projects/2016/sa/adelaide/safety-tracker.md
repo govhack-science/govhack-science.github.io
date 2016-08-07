@@ -11,6 +11,7 @@ datasets_used:
   name: Emergency Services
   url: https://data.sa.gov.au/data/dataset/emergency-services
 event: adelaide
+gid: safety-tracker
 hackerspace_url: https://2016.hackerspace.govhack.org/node/966
 jurisdiction: sa
 prizes-entered:

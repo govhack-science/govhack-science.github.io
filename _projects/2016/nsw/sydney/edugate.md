@@ -20,6 +20,7 @@ datasets_used:
   name: Business Indicators
   url: http://stat.abs.gov.au/Index.aspx?DatasetCode=QBIS
 event: sydney
+gid: edugate
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2091
 jurisdiction: nsw
 prizes-entered:

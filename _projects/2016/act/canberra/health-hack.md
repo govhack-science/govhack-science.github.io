@@ -20,6 +20,7 @@ datasets_used:
   name: SmartParking Stays
   url: https://www.data.act.gov.au/Transport/SmartParking-Stays/mya7-jn3e
 event: canberra
+gid: health-hack
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1586
 jurisdiction: act
 prizes-entered:

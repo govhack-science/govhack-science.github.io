@@ -5,6 +5,7 @@ datasets_used:
   name: Aboriginal Employees
   url: http://data.sa.gov.au/data/dataset/sasp-target-53-aboriginal-employees/resource/5038d5b3-73d5-472e-adf5-860e86905435
 event: onkaparinga
+gid: aboriginal-employment-art
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2926
 jurisdiction: sa
 prizes-entered:

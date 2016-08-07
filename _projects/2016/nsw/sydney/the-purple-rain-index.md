@@ -8,6 +8,7 @@ datasets_used:
   name: Google Maps StreetView
   url: https://www.google.com.au/maps/streetview/
 event: sydney
+gid: the-purple-rain-index
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2016
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Purple-Rain-Logo.png
 jurisdiction: nsw

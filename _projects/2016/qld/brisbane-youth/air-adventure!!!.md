@@ -5,6 +5,7 @@ datasets_used:
   name: Air Quality Monitoring - 2015
   url: https://data.qld.gov.au/dataset/air-quality-monitoring-2015
 event: brisbane-youth
+gid: air-adventure!!!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1756
 jurisdiction: qld
 prizes-entered:

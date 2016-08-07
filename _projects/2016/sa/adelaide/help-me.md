@@ -20,6 +20,7 @@ datasets_used:
   name: 'South Australian Monitoring and Surveillance System: Target, Trends at a glance & Indicator reports'
   url: https://data.sa.gov.au/data/dataset/south-australian-monitoring-and-surveillance-system-target-trends-at-a-glance-indicator-reports
 event: adelaide
+gid: help-me
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1741
 jurisdiction: sa
 prizes-entered:

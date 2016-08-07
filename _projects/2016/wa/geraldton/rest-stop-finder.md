@@ -5,6 +5,7 @@ datasets_used:
   name: Road Stopping Place (MRWA-513)
   url: https://www.dropbox.com/sh/4pstck01ofqbx8g/AABHpsYMM5lQLiGRBvRxHlHVa?dl=0
 event: geraldton
+gid: rest-stop-finder
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2956
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/gov_hack.png
 jurisdiction: wa

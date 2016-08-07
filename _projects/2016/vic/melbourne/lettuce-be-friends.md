@@ -11,6 +11,7 @@ datasets_used:
   name: Planning scheme zones - Vicmap Planning
   url: https://www.data.vic.gov.au/data/dataset/planning-scheme-zones-vicmap-planning
 event: melbourne
+gid: lettuce-be-friends
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2206
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Community%20Garden_0.jpg
 jurisdiction: vic

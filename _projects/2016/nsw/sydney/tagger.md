@@ -5,6 +5,7 @@ datasets_used:
   name: NSW Points of Interest
   url: http://data.nsw.gov.au/data/dataset/lpi-web-services-nsw-points-of-interest
 event: sydney
+gid: tagger
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1636
 jurisdiction: nsw
 prizes-entered:

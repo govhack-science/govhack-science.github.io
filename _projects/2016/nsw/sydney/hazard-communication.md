@@ -14,6 +14,7 @@ datasets_used:
   name: NSW University Locations
   url: http://data.nsw.gov.au/data/dataset/nsw-university-locations
 event: sydney
+gid: hazard-communication
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1726
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Last%20Supper%20%281%20of%201%29.jpg
 jurisdiction: nsw

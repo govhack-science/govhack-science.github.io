@@ -20,6 +20,7 @@ datasets_used:
   name: Shipwrecks
   url: https://data.sa.gov.au/data/dataset/shipwrecks
 event: adelaide
+gid: aquadex
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1766
 jurisdiction: sa
 prizes-entered:

@@ -20,6 +20,7 @@ datasets_used:
   name: List of Child and Family Health Service Centre Locations
   url: http://data.sa.gov.au/data/dataset/list-of-child-and-family-health-service-centre-locations
 event: adelaide
+gid: hup-adelaide
 hackerspace_url: https://2016.hackerspace.govhack.org/node/936
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Hup%20Adelaide%20Logo.jpg
 jurisdiction: sa

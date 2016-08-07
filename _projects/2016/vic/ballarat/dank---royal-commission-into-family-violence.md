@@ -11,6 +11,7 @@ datasets_used:
   name: Domestic Violence Resource Center Victoria
   url: http://www.dvrcv.org.au/statewide
 event: ballarat
+gid: dank---royal-commission-into-family-violence
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1796
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/FullyRegisteredLogo1_1.jpg
 jurisdiction: vic

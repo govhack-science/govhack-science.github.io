@@ -8,6 +8,7 @@ datasets_used:
   name: 'South Australian Monitoring and Surveillance System: Target, Trends at a glance & Indicator reports'
   url: http://data.sa.gov.au/data/dataset/south-australian-monitoring-and-surveillance-system-target-trends-at-a-glance-indicator-reports
 event: mount-gambier-youth
+gid: huffless-n-puffless
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1956
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/Athma.jpg
 jurisdiction: sa

@@ -8,6 +8,7 @@ datasets_used:
   name: Queensland stations measuring rainfall
   url: http://www.bom.gov.au/climate/data/lists_by_element/alphaQLD_136.txt
 event: logan
+gid: dont-crash
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2026
 jurisdiction: qld
 prizes-entered:

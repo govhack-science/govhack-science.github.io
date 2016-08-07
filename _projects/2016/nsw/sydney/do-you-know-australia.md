@@ -26,6 +26,7 @@ datasets_used:
   name: iag flood data
   url: https://github.com/iag-edge-labs/flood-data
 event: sydney
+gid: do-you-know-australia
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2966
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHacklogo_0.gif
 jurisdiction: nsw

@@ -8,6 +8,7 @@ datasets_used:
   name: SA2 - Australian Statistical Geography Standard  by age/sex.csv
   url: http://www.planning.wa.gov.au/publications/6194.asp
 event: perth
+gid: smart-sepsis-wa
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3126
 jurisdiction: wa
 prizes-entered:

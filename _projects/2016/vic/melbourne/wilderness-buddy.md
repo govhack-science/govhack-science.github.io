@@ -23,6 +23,7 @@ datasets_used:
   name: News Corp CAPI
   url: http://portal.govhack.org/datasets/2016/australia/newscorp/news-corp-content-api-(capi)-sa.html
 event: melbourne
+gid: wilderness-buddy
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2376
 jurisdiction: vic
 prizes-entered:

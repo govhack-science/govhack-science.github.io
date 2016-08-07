@@ -20,6 +20,7 @@ datasets_used:
   name: Selected Higher Education Statistics – 2013 Student Data - Appendix 4 - Attrition, success and retention
   url: https://docs.education.gov.au/node/35983
 event: canberra
+gid: stickin-around
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1916
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/images_2.jpg
 jurisdiction: act

@@ -44,6 +44,7 @@ datasets_used:
   name: Angellist Brisbane Startups
   url: https://angel.co/
 event: brisbane
+gid: innovationx
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2436
 jurisdiction: qld
 prizes-entered:

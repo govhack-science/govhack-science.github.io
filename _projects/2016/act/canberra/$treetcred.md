@@ -26,6 +26,7 @@ datasets_used:
   name: ACTION Bus Service GTFS Feed (ACT)
   url: https://data.gov.au/dataset/action-bus-service-gtfs-feed-act
 event: canberra
+gid: $treetcred
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1876
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/GovHack%20logo.png
 jurisdiction: act

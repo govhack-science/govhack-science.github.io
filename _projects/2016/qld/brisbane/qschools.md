@@ -20,6 +20,7 @@ datasets_used:
   name: G-NAF Dataset
   url: https://psma.sharefile.com/d-s5ca4c5ddf114ac8b
 event: brisbane
+gid: qschools
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2036
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/screenshot_from_2016-07-30_16-33-39.png
 jurisdiction: qld

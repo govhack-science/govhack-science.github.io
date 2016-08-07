@@ -8,6 +8,7 @@ datasets_used:
   name: Multiple data sets from Adelaide City Council
   url: http://data.sa.gov.au/data/dataset?organization=adelaide-city-council
 event: adelaide
+gid: smart-travel
 hackerspace_url: https://2016.hackerspace.govhack.org/node/921
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/hippo_creative.png
 jurisdiction: sa

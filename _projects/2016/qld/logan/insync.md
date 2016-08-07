@@ -29,6 +29,7 @@ datasets_used:
   name: Sport and Recreation Get Out, Get Active funding 2015
   url: https://data.qld.gov.au
 event: logan
+gid: insync
 hackerspace_url: https://2016.hackerspace.govhack.org/node/1896
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/noun_88856_cc.png
 jurisdiction: qld

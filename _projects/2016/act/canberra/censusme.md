@@ -5,6 +5,7 @@ datasets_used:
   name: 2011 Census QuickStats
   url: http://www.censusdata.abs.gov.au/census_services/getproduct/census/2011/quickstat/0?opendocument&navpos=220
 event: canberra
+gid: censusme
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2826
 jurisdiction: act
 prizes-entered:

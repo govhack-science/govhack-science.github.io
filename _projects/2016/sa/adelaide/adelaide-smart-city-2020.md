@@ -14,6 +14,7 @@ datasets_used:
   name: Roadworks, Incidents & Planned Events in South Australia
   url: http://traffic.sa.gov.au/
 event: adelaide
+gid: adelaide-smart-city-2020
 hackerspace_url: https://2016.hackerspace.govhack.org/node/961
 jurisdiction: sa
 prizes-entered:

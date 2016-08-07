@@ -8,6 +8,7 @@ datasets_used:
   name: Torrens River Water Quality - Upstream and Downstream from Lake
   url: http://data.sa.gov.au/data/dataset/2f40aae2-e434-4d85-a8c5-78211e0a44aa
 event: playford
+gid: unleashed-possibilities
 hackerspace_url: https://2016.hackerspace.govhack.org/node/3131
 jurisdiction: sa
 prizes-entered:

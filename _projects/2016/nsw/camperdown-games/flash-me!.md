@@ -1,6 +1,7 @@
 ---
 category: ''
 event: camperdown-games
+gid: flash-me!
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2501
 jurisdiction: nsw
 prizes-entered:

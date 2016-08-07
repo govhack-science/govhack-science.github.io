@@ -14,6 +14,7 @@ datasets_used:
   name: All searchable datasets
   url: http://data.gov.au
 event: canberra-heritage-hack
+gid: story-place
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2176
 image_url: https://2016.hackerspace.govhack.org/sites/default/files/field/image/StoryPlaceIcon_0.png
 jurisdiction: act

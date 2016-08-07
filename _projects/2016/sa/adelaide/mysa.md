@@ -14,6 +14,7 @@ datasets_used:
   name: Park Land Parks
   url: https://data.sa.gov.au/data/dataset/park-land-parks
 event: adelaide
+gid: mysa
 hackerspace_url: https://2016.hackerspace.govhack.org/node/2496
 jurisdiction: sa
 prizes-entered:
