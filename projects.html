@@ -7,14 +7,20 @@ title: Projects
 <section>
     <div class="container">
         <div class="row header-row">
-          <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center">
               <h1>Projects</h1>
-              <!--<p class="text-primary">Prizes that everyone across Australia and New Zealand can compete for!</p>-->
-          </div>
+            </div>
         </div>
         <div class="row">
             {% for project in site.projects %}
-                <a href="{{ project.url }}">{{ project.project_title }}</a><br>
+            {% assign image_url = project.image_url | default: 'https://assets.govhack.org/img/logo/govhack-original-transp.png' %}
+            <a href="{{ project.url }}" class="project-card" style="background-image: url('{{ image_url }}')">
+              <article class="project-card-caption">
+                <strong>{{ project.project_title | truncatewords: 10 }}</strong><br>
+                {{ project.team_name | truncatewords: 10 }}<br>
+                {% assign location = site.locations | where: "gid", project.event | first %}{{ location.name }}, {{ location.jurisdiction }}
+              </article>
+            </a>
             {% endfor %}
         </div>
     </div>
