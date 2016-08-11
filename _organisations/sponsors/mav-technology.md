@@ -9,7 +9,5 @@ jurisdiction: vic
 sponsor_level: Silver Sponsor
 sponsor_level_id: silver
 sponsor_level_desc: Silver Sponsors
-events:
-  - melbourne
 is_sponsor: true
 ---
