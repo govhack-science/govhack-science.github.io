@@ -7,6 +7,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+body.ghss-fixed::before {
+  z-index: 1000;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-family:  'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
@@ -1183,3 +1187,21 @@ a.project-card {
     color: white;
     padding: 20px;
 }
+
+.project-thumbnail {
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.project-divider {
+    height: 5px;
+    background: #ca1553;
+}
+
+.project-desc span {
+  display: block;
+}
+
+

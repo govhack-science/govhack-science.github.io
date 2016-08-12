@@ -103,16 +103,20 @@
                 
                 {% if page.name == "index.html" %}
                   <a class="navbar-brand" href="//portal.govhack.org">GovHack Competition Portal</a>
+                {% elsif type == "project" %}
+                <ol class="navbar-brand breadcrumb">
+                    <li><a href="//portal.govhack.org/projects.html">Projects</a></li>
+                    <li class="active"><a href="#" class="page-scroll">{{ page.project_title | truncate: 20 }}</a></li>
+                  </ol>
                 {% elsif page.title %}
                   <ol class="navbar-brand breadcrumb">
                     <li><a href="//portal.govhack.org">Home</a></li>
-                    <li class="active"><a href="#" class="page-scroll">{{ page.title | truncate: 50 }}</a></li>
+                    <li class="active"><a href="#" class="page-scroll">{{ page.title | truncate: 20 }}</a></li>
                   </ol>
                 {% elsif page.name %}
                   <ol class="navbar-brand breadcrumb">
                     <li><a href="//portal.govhack.org">Home</a></li>
-                    <!--<li><a href="/#themes">{{ page.collection }}</a></li>-->
-                    <li class="active"><a href="#" class="page-scroll">{{ page.name }}</a></li>
+                    <li class="active"><a href="#" class="page-scroll">{{ page.name | truncate: 20 }}</a></li>
                   </ol>
                 {% endif %}
             </div>
