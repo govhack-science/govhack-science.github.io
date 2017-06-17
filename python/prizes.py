@@ -9,6 +9,7 @@ import frontmatter
 import yaml
 import io
 
+
 class PrizeSpreadsheets(object):
     """
     """
@@ -30,7 +31,7 @@ class PrizeSpreadsheets(object):
                     "sheet": PrizeSpreadsheet(os.path.join(self.dir_path, new_filename))
                 })
         return sheets
-    
+
     def get_region(self, file):
         regions = ["AUSTRALIA", "ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA", "NZ"]
 
@@ -41,30 +42,31 @@ class PrizeSpreadsheets(object):
 
         if region not in regions:
             raise ValueError("Region '%s' is not valid." % (region))
-        
+
         if region == "NATIONAL":
             return "AUSTRALIA"
 
         return region
 
+
 class PrizeSpreadsheet(object):
     """
     """
-    
+
     def __init__(self, file_path):
         self.file_path = file_path
         self.read_file()
-    
+
     def read_file(self):
         from openpyxl import load_workbook
         # print "file_path: %s" % (self.file_path)
         self.wb = load_workbook(self.file_path)
-    
+
     def get_prize_sheet(self, index=0):
         # print self.wb.get_sheet_names()
         self.ws = self.wb.get_sheet_by_name(self.wb.get_sheet_names()[index])
         return self.ws
-    
+
     def get_headers(self):
         headers = []
         for row in self.ws.iter_rows("A1:Z1"):
@@ -89,7 +91,7 @@ class PrizeSpreadsheet(object):
         headers = self.get_headers()
         print headers
         # print
-        
+
         for row in ws.iter_rows(row_offset=1):
             # print row
 
@@ -137,7 +139,7 @@ for root, dirnames, filenames in os.walk(eventsdir):
         event_md_files[event_name] = os.path.join(root, filename)
 
 # Ingest available prize sheets for UPSERTing
-gids = [] # GIDs used so far for sanity checking
+gids = []  # GIDs used so far for sanity checking
 validation_errors = []
 
 sheets = PrizeSpreadsheets(datadir).get_spreadsheets()
@@ -167,16 +169,18 @@ for file in sheets:
             continue
         else:
             row["prizename"] = row["prizename"].replace(u'\u2013', "-").encode("utf-8")
-        
-        gid = file["region"].lower() + "-" + row["prizename"].lower().strip().replace("/", " or ").replace(" ", "-").replace("'", "")
-        if gid in gids: # Hacky
+
+        gid = file["region"].lower() + "-" + row["prizename"].lower().strip().replace("/", " or ").replace(" ",
+                                                                                                           "-").replace(
+            "'", "")
+        if gid in gids:  # Hacky
             gid = gid + "-2"
 
         if gid in gids:
             raise ValueError("GID '%s' is already in use." % (gid))
         else:
             gids.append(gid)
-        
+
         print row["prizename"]
         print gid
         print
@@ -208,7 +212,8 @@ for file in sheets:
 
                 if row["eventspecificlocation"] is None:
                     # @TODO
-                    errmsg = "%s: Prize '%s' is an Event prize, but no event locations provided." % (file["region"].lower(), row["prizename"])
+                    errmsg = "%s: Prize '%s' is an Event prize, but no event locations provided." % (
+                    file["region"].lower(), row["prizename"])
                     # raise ValueError(errmsg)
                     validation_errors.append(errmsg)
                     print errmsg
@@ -239,14 +244,15 @@ for file in sheets:
                     if event_gid_original == "all-brisbane-events":
                         prize["events"].append("brisbane-youth")
                         prize["events"].append("brisbane-maker")
-                    
+
                     if post.metadata["gid"] != event_gid:
-                        print "WARNING: Event .md file does not match event gid. %s, %s" % (event_gid, post.metadata["gid"])
+                        print "WARNING: Event .md file does not match event gid. %s, %s" % (
+                        event_gid, post.metadata["gid"])
             else:
                 prize["category"] = "state"
         else:
             prize["category"] = "australia"
-            
+
         # Attach sponsoring organisations
         prize["organisation_title"] = row["sponsoredby"].strip().replace(" Prize", "")
         organisation_gid = row["sponsoredby"].lower().replace(" ", "-").replace(",", "").strip()
@@ -268,13 +274,14 @@ for file in sheets:
 
         # Convert prize $$$ value to an integer
         estimatedprizevalue = ""
-        if type(row["estimateprizevalue$"]) is unicode and row["estimateprizevalue$"].strip().replace("$", "").isdigit():
+        if type(row["estimateprizevalue$"]) is unicode and row["estimateprizevalue$"].strip().replace("$",
+                                                                                                      "").isdigit():
             estimatedprizevalue = int(row["estimateprizevalue$"].strip().replace("$", ""))
         elif type(row["estimateprizevalue$"]) is float or type(row["estimateprizevalue$"]) is long:
             estimatedprizevalue = int(row["estimateprizevalue$"])
         elif row["estimateprizevalue$"] is not None:
             estimatedprizevalue = row["estimateprizevalue$"].strip()
-        
+
         # Fixing up minor stuff
         if row["prizecategorydescription"] is None:
             row["prizecategorydescription"] = unicode("")
@@ -282,7 +289,7 @@ for file in sheets:
             row["prizereward"] = unicode("")
         if row["eligibilitycriteria"] is None:
             row["eligibilitycriteria"] = unicode("")
-        
+
         # print prize
         # print row
         print
@@ -295,7 +302,9 @@ for file in sheets:
 
         with io.open(prize_md_file, "w", encoding="utf-8") as f:
             f.write(u'---\n')
-            f.write(unicode(yaml.safe_dump(prize, width=200, default_flow_style=False, encoding="utf-8", allow_unicode=True), "utf-8"))
+            f.write(unicode(
+                yaml.safe_dump(prize, width=200, default_flow_style=False, encoding="utf-8", allow_unicode=True),
+                "utf-8"))
             f.write(u'---\n')
             f.write(u'\n')
             f.write(unicode(row["prizecategorydescription"].replace("|", "\n").rstrip()))
@@ -305,7 +314,7 @@ for file in sheets:
             f.write(u'\n\n')
             f.write(u'# Eligibility Criteria\n')
             f.write(unicode(row["eligibilitycriteria"].replace("|", "\n").rstrip()))
-    
+
     # print "\n"
     print "############################################################"
     # print "\n\n"
@@ -313,33 +322,33 @@ for file in sheets:
 if len(validation_errors) > 0:
     for i in validation_errors:
         print i
-# ---
-# name: Prize 1
-# id: prize_1
-# photo_url: https://static.pexels.com/photos/3084/person-woman-park-music-large.jpg
-# jurisdiction: australia
-# type: Prize
-# organisations:
-#   - organisation_1
-# themes:
-#   - theme_1
-#   - theme_3
-# datasets:
-#   - dataset_1
-#   - dataset_3
-# dataportals:
-#   - dataportal_1
-# ---
+        # ---
+        # name: Prize 1
+        # id: prize_1
+        # photo_url: https://static.pexels.com/photos/3084/person-woman-park-music-large.jpg
+        # jurisdiction: australia
+        # type: Prize
+        # organisations:
+        #   - organisation_1
+        # themes:
+        #   - theme_1
+        #   - theme_3
+        # datasets:
+        #   - dataset_1
+        #   - dataset_3
+        # dataportals:
+        #   - dataportal_1
+        # ---
 
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
+        # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare risus, at dignissim sapien. Sed eget est mi. Ut lacinia ornare tellus commodo sagittis. Integer euismod eleifend velit, eget dictum leo sagittis at.
 
-# # Prize Details
-# Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
+        # # Prize Details
+        # Phasellus rutrum euismod turpis elementum ornare. Donec ut risus id ante gravida molestie. Integer cursus tempus porta. Sed vitae nunc quis nibh dapibus aliquet vel sed dolor. Donec id risus ut ipsum fermentum cursus quis sed massa. Nulla sit amet blandit orci, dapibus condimentum augue. Fusce suscipit purus et ultricies fermentum.
 
-# # Requirements
-# Mauris at est urna. Aenean ut elit venenatis augue dictum viverra:
+        # # Requirements
+        # Mauris at est urna. Aenean ut elit venenatis augue dictum viverra:
 
-# - **Nulla facilisi.** Donec vel justo odio. Vivamus consequat hendrerit arcu vel vestibulum. Proin malesuada mauris vitae nulla iaculis fringilla. 
-# - **Proin tempor tempus ipsum id bibendum.** Duis vehicula nisi vel bibendum lacinia.
-# - **Suspendisse libero dui**, hendrerit vitae eleifend sed, cursus ut tellus. Vivamus tristique, lectus in ullamcorper interdum, orci nisi vestibulum nisi, ac luctus est mi quis justo.
-# - **Phasellus tempor laoreet felis a porta.** Aenean in sodales odio. Curabitur interdum bibendum orci, vitae hendrerit eros tempus at.
+        # - **Nulla facilisi.** Donec vel justo odio. Vivamus consequat hendrerit arcu vel vestibulum. Proin malesuada mauris vitae nulla iaculis fringilla.
+        # - **Proin tempor tempus ipsum id bibendum.** Duis vehicula nisi vel bibendum lacinia.
+        # - **Suspendisse libero dui**, hendrerit vitae eleifend sed, cursus ut tellus. Vivamus tristique, lectus in ullamcorper interdum, orci nisi vestibulum nisi, ac luctus est mi quis justo.
+        # - **Phasellus tempor laoreet felis a porta.** Aenean in sodales odio. Curabitur interdum bibendum orci, vitae hendrerit eros tempus at.

@@ -651,8 +651,8 @@ aside.clients img {
 }
 
 .navbar-custom {
-    background-image: url('/resources/govhack-background-home.jpg');
-    background-position: 50% 35%;
+    background-image: url('/resources/hex_banner.jpg');
+    background-size: cover;
     z-index: 2000; /* Need to beat the leaflet map's z-index of 1000  */
 }
 
