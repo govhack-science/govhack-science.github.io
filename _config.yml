@@ -1,3 +1,11 @@
+source:       ./pages
+plugins_dir:  ../_plugins
+layouts_dir:  ./_layouts
+includes_dir: ./_includes
+data_dir:     ./_data
+
+destination:  ./_site
+
 cfg:
   current_event: gh17
   events:
@@ -35,10 +43,6 @@ collections:
     enabled: false
     output: true
 
-  fields:
-    enabled: false
-    output: true
-
   mentors:
     enabled: false
     output: true
@@ -69,13 +73,6 @@ collections:
 
 defaults:
   - scope:
-      path: "_themes"
-      type: themes
-    values:
-      layout: theme
-      permalink: /themes/:title.html
-
-  - scope:
       path: "_datasets"
       type: datasets
     values:
@@ -86,12 +83,6 @@ defaults:
       type: dataportals
     values:
       layout: dataportal
-
-  - scope:
-      path: "_fields"
-      type: fields
-    values:
-      layout: field
 
   - scope:
       path: "_mentors"

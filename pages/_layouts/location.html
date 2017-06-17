@@ -1,0 +1,527 @@
+---
+layout: bootstrap
+type: location
+---
+
+{% comment %}
+========================
+Location-map is the bootstrap js file that loads leaflet etc
+Slick is the carousel plugin for location page images
+========================
+{% endcomment %}
+
+<script src="/resources/js/location-map.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+<link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+<script>
+    $(function () {
+        $('.location-images').slick({infinite: true, slidesToShow: 2, slidesToScroll: 1, variableWidth: true});       // Slick Carousel
+    });
+</script>
+
+{% comment %}
+========================
+Attempt to locate the signup link and if it exists, bind the rego_link
+variable to this URL. Here I attempt to cater for all the strange ways
+that our authors (or indeed myself) might indicate a signup link.
+========================
+{% endcomment %}
+{% if page.rego_link %}
+{% assign rego_link = page.rego_link %}
+{% elsif page.signup %}
+{% assign rego_link = page.signup %}
+{% elsif page.signup_link %}
+{% assign rego_link = page.signup_link %}
+{% elsif page.registration %}
+{% assign rego_link = page.registration %}
+{% elsif page.eventbrite %}
+{% assign rego_link = page.eventbrite %}
+{% endif %}
+
+<!-- Main Content -->
+<section id="intro">
+    <div class="container">
+        <div class="header-row">
+            <div class="media">
+                <!-- <div class="media-left">
+                    <img src="{{ }}" style="max-width: 200px; max-height: 200px;">
+                </div> -->
+                <div class="media-body">
+                    {% for jurisdiction in site.jurisdictions %}
+                    {% if jurisdiction.gid == page.jurisdiction %}
+                    {% assign jurisdiction = jurisdiction %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if page.type contains 'Official' or page.type contains 'official' %}
+                    {% assign page_type_class = 'icon-event-type-official' %}
+                    {% elsif page.type contains 'Node' or page.type contains 'node' %}
+                    {% assign page_type_class = 'icon-event-type-node' %}
+                    {% endif %}
+
+
+                    {% comment %}
+                    =======================================
+                    `prefix` is the event type that is prefixed to the location title
+                    `name` should be purely the name of the location
+                    > E.g. "Unleashed Adelaide" or "GovHack Hunter Valley"
+                    page_type_class determines the colour of the icon box
+                    =======================================
+                    {% endcomment %}
+                    <h2><a href="{{ page.url }}">{{ page.prefix }} {{ page.name }}</a></h2>
+                    {% unless page.cancelled == true %}
+                    <h3 data-toc-skip class="icon-event-type {{ page_type_class }}">{{ page.type }} (<a
+                            href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a>) {% unless page.theme == nil %}
+                        <span class="location-theme">{{ page.theme }}</span> {% endunless %}</h3>
+                    {% endunless %}
+
+                    {% comment %}
+                    =======================================
+                    If a location page looks like it hasn't been populated yet, show
+                    a little friendly tag. Or if it's disabled, also show a message.
+                    =======================================
+                    {% endcomment %}
+                    {% if page.venue == nil %}
+                    <div class="location-wip">This location hasn't been finalised yet – please check again shortly!
+                    </div>
+                    {% endif %}
+                    {% if page.cancelled == true %}
+                    <div class="location-cancelled">This event is not proceeding this year. Please check out other
+                        events in the region.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% unless page.cancelled == true %}
+
+        {% comment %}
+        =======================================
+        Show registration link if necessary
+        =======================================
+        {% endcomment %}
+        {% unless rego_link == nil or page.cancelled == true %}
+        <div>
+            <a class="location-rego-link" href="{{ rego_link }}">Register for {{ page.prefix }} {{ page.name }}</a>
+            {% if page.eventbrite %}
+            <!-- &nbsp;<em class="text-muted">on EventBrite</em> -->
+            {% endif %}
+        </div>
+        {% endunless %}
+
+        {% comment %}
+        =======================================
+        Venue photos will appear at the top. This will captivate!
+        Location contains the lat/long needed to drive the leaflet map.
+        It will also attempt to pull the venue name and address as well.
+        =======================================
+        {% endcomment %}
+        {% unless page.location == nil %}
+        <hr>
+        <h3>Location</h3>
+        <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 20vh;"></div>
+        <script type="text/javascript">
+            location_map([[{{page.location.lat}}, {{page.location.lon}}]]);
+        </script>
+        {% endunless %}
+        <div class="location-byline">
+            {% unless page.venue.name == nil and page.location.name == nil %}
+            <div class="location-name"><strong>{{ page.venue.name | default: page.location.name }}</strong></div>
+            {% endunless %}
+            {% unless page.venue.address == nil and page.location.address == nil %}
+            <div class="location-address">{{ page.venue.address | default: page.location.address }}</div>
+            {% endunless %}
+        </div>
+        {% unless page.images == nil %}
+        <hr>
+        <div class="location-images">
+            {% for image_url in page.images %}
+            <div class="location-image-tile"><img class="img-responsive" src="{{ image_url }}" alt="{{ page.name }}">
+            </div>
+            {% endfor %}
+        </div>
+        {% endunless %}
+
+
+        {% comment %}
+        =======================================
+        The Follow section reads from `contact` in frontmatter and
+        can accept:
+        + Twitter (with or without leading '@')
+        + Facebook
+        + Website (as `website_url`)
+        + Instagram
+        Additionally it searches for a standalone `website` field in
+        frontmatter and treats that as an object
+        =======================================
+        {% endcomment %}
+
+        {% unless page.contact == nil %}
+        <hr>
+        <h3>Follow</h3>
+        <ul class="list-inline social-buttons">
+            {% if page.contact.twitter %}
+            <li>
+                <a href="https://twitter.com/{{ page.contact.twitter }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                    @{{ page.contact.twitter }}
+                </a>
+            </li>
+            {% endif %}
+            {% if page.contact.facebook %}
+            <li>
+                <a href="https://facebook.com/{{ page.contact.facebook }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                    fb.me/{{ page.contact.facebook }}
+                </a>
+            </li>
+            {% endif %}
+            {% if page.contact.instagram %}
+            <li>
+                <a href="https://instagram.com/{{ page.contact.instagram }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                    @{{ page.contact.instagram }}
+                </a>
+            </li>
+            {% endif %}
+            {% if page.contact.youtube %}
+            <li>
+                <a href="https://youtube.com/{{ page.contact.youtube }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                    @{{ page.contact.youtube }}
+                </a>
+            </li>
+            {% endif %}
+            {% if page.website or page.contact.website_url %}
+            <li>
+                <a href="{{ page.website.url | default: page.contact.website_url }}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                  </span>
+                    {{ page.website.name | default: 'Event Website' }}
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+        {% endunless %}
+
+        {% comment %}
+        =======================================
+        Render page's markdown content here. Markdown accepted.
+        =======================================
+        {% endcomment %}
+
+        {% unless page.content == "" %}
+        <hr>
+        {{ page.content | markdownify }}
+        {% else %}
+        <div class="empty-state"></div>
+        {% endunless %}
+
+
+        {% comment %}
+        =======================================
+        Venue contains information for:
+        + Host name and possibly host email
+        + Name of venue
+        + Street address
+        + Accessibility
+        + Under 18 supervision
+        + Capacity
+        + Parking and Public Transport
+        =======================================
+        {% endcomment %}
+
+        {% unless page.venue == nil %}
+        {% capture host_value %}{{ page.venue.host }}
+        {% if page.contact.email %} -
+        <small><a href="mailto:{{ page.contact.email }}">email</a></small>
+        {% endif %}
+        {% if page.contact.phone %} -
+        <small><a href="tel:{{ page.contact.phone }}">phone</a></small>
+        {% endif %}
+        {% endcapture %}
+
+        <hr/>
+        <div class="row location-venue-details">
+            <h3>Venue Details</h3>
+            <div class="col-md-6 col-xs-12">
+                {% include list_item_snippet.html item_name="Event Host" item_value=host_value %}
+                {% include list_item_snippet.html item_name="Event Team" item_value=page.venue.team %}
+                {% include list_item_snippet.html item_name="Address" item_value=page.venue.address as_markdown=true %}
+                {% include list_item_snippet.html item_name="Phone" item_value=page.contact.phone %}
+                <h4 class="text-muted">Open/Close times</h4>
+                <dl>
+                    <dt>Friday 29th July</dt>
+                    <dd>{{ page.times.friday.open }} &ndash; {{ page.times.friday.close }}</dd>
+                    <dt>Saturday 30th July</dt>
+                    <dd>{{ page.times.saturday.open }} &ndash; {{ page.times.saturday.close }}</dd>
+                    <dt>Sunday 31st July</dt>
+                    <dd>{{ page.times.sunday.open }} &ndash; {{ page.times.sunday.close }}</dd>
+                </dl>
+                {% include list_item_snippet.html item_name="Catering" item_value=page.catering as_markdown=true %}
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <!-- <h4 data-skip-toc>
+                    {{ page.venue.name }} <br> 
+                    <small class="text-muted">{{ page.venue.address }}</small>
+                </h4> -->
+                {% include list_item_snippet.html item_name="Building accessibility" item_value=page.venue.accessibility
+                as_markdown=true %}
+                {% include list_item_snippet.html item_name="Childcare" item_value=page.venue.childcare as_markdown=true
+                %}
+                {% include list_item_snippet.html item_name="Under 18 participants" item_value=page.venue.under_18
+                as_markdown=true %}
+                {% include list_item_snippet.html item_name="Public transport" item_value=page.venue.public_transport
+                as_markdown=true %}
+                {% include list_item_snippet.html item_name="Last call for public transport"
+                item_value=page.venue.public_transport_last as_markdown=true %}
+                {% include list_item_snippet.html item_name="Parking" item_value=page.venue.parking as_markdown=true %}
+            </div>
+        </div>
+        {% endunless %}
+
+        {% endunless %}
+
+        {% if site.collections.prizes.enabled == true %}
+
+            {% assign prize_ids = "" %}
+            {% for prize in site.prizes %}
+                {% if prize.jurisdiction == page.jurisdiction and prize.category == "local" and prize.events contains page.gid %}
+                    {% assign prize_ids = prize_ids | append: prize.gid %}
+                    {% assign prize_ids = prize_ids | append: "," %}
+                {% endif %}
+            {% endfor %}
+
+
+            {% unless prize_ids == "" %}
+            <!-- Local Prizes Section -->
+            <section id="local-state-prizes" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Local Prizes</h2>
+                            <p class="text-primary">Prizes that only participants at {{ page.name }} can compete for!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign prize_ids_list = prize_ids | lstrip | split: "," %}
+                        {% include prize_cards.bs.html prize_ids=prize_ids_list %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+
+            {% assign prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.jurisdiction | map:"gid" %}
+            {% assign prize_ids_len = prize_ids | size %}
+            {% if prize_ids_len > 0 %}
+            <!-- State Prizes Section -->
+            <section id="portfolio" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>State Prizes</h2>
+                            <p class="text-primary">Prizes that all participants in {{ jurisdiction.name }} can compete
+                                for!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% include prize_cards.bs.html prize_ids=prize_ids %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+        {% endif %}
+
+        {% if site.collections.datasets.enabled == false %}
+            {% assign local_org_ids = "" %}
+            {% assign state_org_ids = "" %}
+            {% for dataset in site.datasets %}
+                {% if dataset.jurisdiction == page.jurisdiction %}
+                    {% if dataset.events contains page.gid %}
+                        {% assign local_org_ids = local_org_ids | append: dataset.organisation %}
+                        {% assign local_org_ids = local_org_ids | append: "," %}
+                    {% else %}
+                        {% assign state_org_ids = state_org_ids | append: dataset.organisation %}
+                        {% assign state_org_ids = state_org_ids | append: "," %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
+
+            {% unless local_org_ids == "" %}
+            <!-- Local Datasets Section -->
+            <section id="local-state-datasets" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Official Local Datasets</h2>
+                            <p class="text-primary">Datasets from your local governments and sponsors. Check out the <a
+                                    href="/datasets.html">official datasets list</a> for much more!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign local_org_ids_list = local_org_ids | lstrip | split: "," | uniq %}
+                        {% include dataset_cards_by_organisation.bs.html organisation_ids=local_org_ids_list
+                        org_heading_lvl="h3" %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+
+            {% unless state_org_ids == "" %}
+            <!-- State Datasets Section -->
+            <section id="local-state-datasets" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Official State Datasets</h2>
+                            <p class="text-primary">Datasets from all over {{ jurisdiction.name }}. Check out the <a
+                                    href="/datasets.html">official datasets list</a> for much more!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign state_org_ids_list = state_org_ids | lstrip | split: "," | uniq %}
+                        {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids_list
+                        org_heading_lvl="h3" %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+
+        {% endif %}
+
+        {% if site.collections.dataportals.enabled == true %}
+            {% comment %}
+            =======================================
+            Render data portals.
+            =======================================
+            {% endcomment %}
+
+            {% assign local_dp_ids = page.dataportals | join: "," %}
+            {% assign state_dp_ids = site.dataportals | where: "jurisdiction", page.jurisdiction | map: "gid" | join: "," %}
+
+            {% unless local_dp_ids == "" %}
+            <!-- Local Data Portals Section -->
+            <section id="local-state-data-portals" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Local Data Portals</h2>
+                            <p class="text-primary">Major government data portals run by your local governments and
+                                sponsors. Check out the <a href="/datasets.html">official datasets list</a> for much more!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign local_dp_ids_list = local_dp_ids | lstrip | split: "," | uniq %}
+                        {% include dataportal_cards.bs.html dataportal_ids=local_dp_ids_list cards=true %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+
+            {% unless state_dp_ids == "" %}
+            <!-- State Data Portals Section -->
+            <section id="local-state-data-portals" class="bg-light-gray">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>State Data Portals</h2>
+                            <p class="text-primary">Major government data portals from all over {{ jurisdiction.name }}.
+                                Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign state_dp_ids_list = state_dp_ids | lstrip | split: "," | uniq %}
+                        {% include dataportal_cards.bs.html dataportal_ids=state_dp_ids_list cards=true %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+        {% endif %}
+
+        {% if site.collections.mentors.enabled == true %}
+            {% comment %}
+            =======================================
+            Render mentors.
+            =======================================
+            {% endcomment %}
+
+            {% assign mentor_ids = "" %}
+            {% for mentor in site.mentors %}
+            {% if mentor.jurisdiction == page.jurisdiction and mentor.location == page.gid %}
+            {% assign mentor_ids = mentor_ids | append: mentor.gid %}
+            {% assign mentor_ids = mentor_ids | append: "," %}
+            {% endif %}
+            {% endfor %}
+
+            {% unless mentor_ids == "" %}
+            <!-- Local Mentors Section -->
+            <section id="local-mentors">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Local Mentors</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+                        {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+
+            {% assign mentor_ids = "" %}
+            {% for mentor in site.mentors %}
+            {% if mentor.jurisdiction == page.jurisdiction and mentor.location != page.gid %}
+            {% assign mentor_ids = mentor_ids | append: mentor.gid %}
+            {% assign mentor_ids = mentor_ids | append: "," %}
+            {% endif %}
+            {% endfor %}
+
+            {% unless mentor_ids == "" %}
+            <!-- State Mentors Section -->
+            <section id="local-state-mentors">
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="col-lg-12 text-center">
+                            <h2>State Mentors</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% assign mentor_ids_list = mentor_ids | lstrip | split: "," %}
+                        {% include mentor_cards.bs.html mentor_ids=mentor_ids_list %}
+                    </div>
+                </div>
+            </section>
+            {% endunless %}
+        {% endif %}
+
+    </div>
+</section>
+
+{% if site.collections.sponsors.enabled == true %}
+    {% include sponsor_block.bs.html sponsor_level="local" jurisdiction_gid=page.jurisdiction jurisdiction_name="Local" location_gid=page.gid %}
+    {% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=page.jurisdiction jurisdiction_name="State" %}
+{% endif %}
