@@ -2,17 +2,17 @@ This is the source for the govhack-science website highlighing sciency datasets 
 
 Content served by [Jekyll](http://jekyllrb.com/docs/), with layout and nice bits stolen shamelessly from [Rasmus Andersson](https://github.com/rsms/rsms.github.com)
 
-
+# New in 2017 ✨
+- [Google Sheets API](#google-sheets-api)
+- [Regions & Locations Loader](#regions--locations-loader)
 
 # Planning
 [GovHack Data Model](https://www.lucidchart.com/documents/view/d36186be-0c77-4e89-a735-6022a716566a)
-
 
 # Documentation
 - [Jekyll](https://jekyllrb.com/docs/github-pages/)
 - [Liquid Templating Engine](https://shopify.github.io/liquid/)
 - [Liquid For Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
-
 
 # Requirements
 - Ruby
