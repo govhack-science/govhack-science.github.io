@@ -7,8 +7,8 @@ type: Theme Node
 theme: TBA
 eventbrite: 
 location: 
-  lat: 0.0
-  lat: 0.0
+  lat: -37.9119
+  lon: 144.6534
 venue: 
   name: 
   address: TBA

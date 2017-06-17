@@ -59,7 +59,7 @@ def main():
                     latlong = location[8].split(',')
                     f.write('location: \n')
                     f.write('  lat: ' + latlong[0] + '\n')
-                    f.write('  lat: ' + latlong[1] + '\n')
+                    f.write('  lon: ' + latlong[1] + '\n')
 
                     f.write('venue: \n')
                     f.write('  name: ' + location[9] + '\n')
