@@ -1,3 +1,2 @@
 Options +FollowSymlinks
 RewriteEngine on
-rewriterule ^locations/nz/queenstown.html(.*)$ http://govhack.org.nz/2016-events-and-info/queenstown$1 [r=301,nc]

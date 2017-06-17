@@ -1,7 +1,7 @@
 cfg:
-  prizes_active: true
-  current_event: gh16
+  current_event: gh17
   events:
+    - gh17
     - gh16
     - gh15
     - gh14
@@ -16,39 +16,55 @@ exclude:
   - startbootstrap-clean-blog-1.0.4-original
   - startbootstrap-grayscale-1.0.6
   - venv
+  - datasets
 
 collections:
+  sponsors:
+    enabled: false
+    output: true
+
   themes:
+    enabled: false
     output: true
 
   datasets:
+    enabled: false
     output: true
 
   dataportals:
+    enabled: false
     output: true
 
   fields:
+    enabled: false
     output: true
 
   mentors:
+    enabled: false
     output: true
 
   organisations:
+    enabled: false
     output: true
 
   prizes:
+    enabled: false
     output: true
 
   jurisdictions:
+    enabled: false
     output: true
 
   locations:
+    enabled: true
     output: true
 
   handbookchapters:
+    enabled: false
     output: true
 
   projects:
+    enabled: false
     output: true
 
 defaults:

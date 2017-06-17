@@ -13,14 +13,14 @@ title: Prizes
           </div>
         </div>-->
         <div class="row">
-            {% if site.cfg.prizes_active == false %}
+            {% if site.collections.prizes.enabled == false %}
                 <p>Prizes aren't released until GovHack begins at <strong>7pm, Friday the 29th July 2016</strong>, at your local event.</p>
             {% endif %}
         </div>
     </div>
 </section>
 
-{% if site.cfg.prizes_active == true %}
+{% if site.collections.prizes.enabled == true %}
 <!-- International Prizes Section -->
 <section>
     <div class="container">
