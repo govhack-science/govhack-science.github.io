@@ -7,6 +7,7 @@ data_dir:     ./_data
 destination:  ./_site
 
 cfg:
+  has_hackerspace: false
   current_event: gh17
   events:
     - gh17

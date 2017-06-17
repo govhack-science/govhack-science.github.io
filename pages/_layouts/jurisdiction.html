@@ -109,125 +109,137 @@ layout: bootstrap
 </section>
 {% endif %}
 
-{% assign state_prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
-{% assign state_prize_ids_len = state_prize_ids | size %}
-{% if state_prize_ids_len > 0 %}
-<!-- State Prizes Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2>State Prizes</h2>
-              <p class="text-primary">Prizes that all participants in {{ page.name }} can compete for!</p>
-          </div>
+{% if site.collections.prizes.enabled == true %}
+    {% assign state_prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign state_prize_ids_len = state_prize_ids | size %}
+    {% if state_prize_ids_len > 0 %}
+    <!-- State Prizes Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2>State Prizes</h2>
+                  <p class="text-primary">Prizes that all participants in {{ page.name }} can compete for!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include prize_cards.bs.html prize_ids=state_prize_ids %}
+            </div>
         </div>
-        <div class="row">
-          {% include prize_cards.bs.html prize_ids=state_prize_ids %}
-        </div>
-    </div>
-</section>
-{% endif %}
+    </section>
+    {% endif %}
 
-{% assign local_prize_ids = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid | map: "gid" %}
-{% assign local_prize_ids_len = local_prize_ids | size %}
-{% if local_prize_ids_len > 0 %}
-<!-- Local Prizes Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2>Local Prizes</h2>
-              <p class="text-primary">Prizes that only participants at specific events can compete for!</p>
-          </div>
-        </div>
-        <div class="row">
-          {% for event in site.locations %}
-            {% if event.jurisdiction == page.gid %}
-                {% assign event_prizes = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid %}
-                {% assign event_prize_ids_len = event_prizes | size %}
+    {% assign local_prize_ids = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign local_prize_ids_len = local_prize_ids | size %}
+    {% if local_prize_ids_len > 0 %}
+    <!-- Local Prizes Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2>Local Prizes</h2>
+                  <p class="text-primary">Prizes that only participants at specific events can compete for!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% for event in site.locations %}
+                {% if event.jurisdiction == page.gid %}
+                    {% assign event_prizes = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid %}
+                    {% assign event_prize_ids_len = event_prizes | size %}
 
-                {% if event_prize_ids_len > 0 %}
-                    {% assign event_prize_ids = "" %}
-                    {% for prize in event_prizes %}
-                        {% if prize.events contains event.gid %}
-                            {% assign event_prize_ids = event_prize_ids | append: prize.gid %}
-                            {% assign event_prize_ids = event_prize_ids | append: "," %}
-                        {% endif %}
-                    {% endfor %}
+                    {% if event_prize_ids_len > 0 %}
+                        {% assign event_prize_ids = "" %}
+                        {% for prize in event_prizes %}
+                            {% if prize.events contains event.gid %}
+                                {% assign event_prize_ids = event_prize_ids | append: prize.gid %}
+                                {% assign event_prize_ids = event_prize_ids | append: "," %}
+                            {% endif %}
+                        {% endfor %}
 
-                    {% unless event_prize_ids == "" %}
-                        <div class="row dataset-org">
-                            <h3><a href="{{ event.url }}">{{ event.name }}</a></h3>
-                            {% assign event_prize_ids_list = event_prize_ids | lstrip | split: "," %}
-                            {% include prize_cards.bs.html prize_ids=event_prize_ids_list %}
-                        </div>
-                    {% endunless %}
+                        {% unless event_prize_ids == "" %}
+                            <div class="row dataset-org">
+                                <h3><a href="{{ event.url }}">{{ event.name }}</a></h3>
+                                {% assign event_prize_ids_list = event_prize_ids | lstrip | split: "," %}
+                                {% include prize_cards.bs.html prize_ids=event_prize_ids_list %}
+                            </div>
+                        {% endunless %}
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-          {% endfor %}
+              {% endfor %}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    {% endif %}
 {% endif %}
+
+{% if site.collections.dataportals.enabled == true %}
 
 {% assign state_dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
-{% assign local_dataportal_ids = site.dataportals | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
-{% capture dp_ids %}{{ state_dataportal_ids }},{{ local_dataportal_ids }}{% endcapture %}
-{% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
+    {% assign local_dataportal_ids = site.dataportals | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
+    {% capture dp_ids %}{{ state_dataportal_ids }},{{ local_dataportal_ids }}{% endcapture %}
+    {% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
 
-{% assign dataportal_ids_len = dp_ids_list | size %}
-{% if dataportal_ids_len > 0 %}
-<!-- Data Portals Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="dataportals">State Data Portals</h2>
-              <p class="text-primary">Major government data portals from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
-          </div>
+    {% assign dataportal_ids_len = dp_ids_list | size %}
+    {% if dataportal_ids_len > 0 %}
+    <!-- Data Portals Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="dataportals">State Data Portals</h2>
+                  <p class="text-primary">Major government data portals from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
+            </div>
         </div>
-        <div class="row">
-          {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
-        </div>
-    </div>
-</section>
+    </section>
+    {% endif %}
+
 {% endif %}
 
-{% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
-{% assign state_org_ids_len = state_org_ids | size %}
-{% if state_org_ids_len > 0 %}
-<!-- Datasets Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="datasets">Official State Datasets</h2>
-              <p class="text-primary">Datasets from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
-          </div>
+{% if site.collections.datasets.enabled == true %}
+
+    {% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
+    {% assign state_org_ids_len = state_org_ids | size %}
+    {% if state_org_ids_len > 0 %}
+    <!-- Datasets Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="datasets">Official State Datasets</h2>
+                  <p class="text-primary">Datasets from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
+            </div>
         </div>
-        <div class="row">
-          {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
-        </div>
-    </div>
-</section>
+    </section>
+    {% endif %}
 {% endif %}
 
-{% assign mentor_ids = site.mentors | where: "jurisdiction", page.gid | map: "gid" %}
-{% assign mentor_ids_len = mentor_ids | size %}
-{% if mentor_ids_len > 0 %}
-<!-- Mentors Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading" id="mentors">State Mentors</h2>
-          </div>
+{% if site.collections.mentors.enabled == true %}
+
+    {% assign mentor_ids = site.mentors | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign mentor_ids_len = mentor_ids | size %}
+    {% if mentor_ids_len > 0 %}
+    <!-- Mentors Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="mentors">State Mentors</h2>
+              </div>
+            </div>
+            <div class="row">
+              {% include mentor_cards.bs.html mentor_ids=mentor_ids %}
+            </div>
         </div>
-        <div class="row">
-          {% include mentor_cards.bs.html mentor_ids=mentor_ids %}
-        </div>
-    </div>
-</section>
+    </section>
+    {% endif %}
 {% endif %}
 
 

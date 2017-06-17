@@ -36,6 +36,7 @@ no_major_sponsors: true
         <div class="row">
             <div class="col-md-6">
                     <div class="row">
+                        {% if site.collections.prizes.enabled == true %}
                         <div class="col-md-6">
                             <a href="/prizes.html" class="tile blue tile--prizes">
                                 <div class="tile-caption">
@@ -44,18 +45,20 @@ no_major_sponsors: true
                                 </div>
                             </a>                            
                         </div>
-                        <div class="col-md-6">
-                            <a href="/handbook" class="tile pink tile--handbook">
-                                <div class="tile-caption">
-                                    <h3>Handbook</h3>
-                                    <p>Information for competitors and developers</p>
-                                </div>
-                            </a>
-                        </div>
+                        {% endif %}
+                        <!--<div class="col-md-6">-->
+                            <!--<a href="/handbook" class="tile pink tile&#45;&#45;handbook">-->
+                                <!--<div class="tile-caption">-->
+                                    <!--<h3>Handbook</h3>-->
+                                    <!--<p>Information for competitors and developers</p>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
                     </div>
             </div>
             <div class="col-md-6">
                     <div class="row">
+                        {% if site.cfg.has_hackerspace == true %}
                         <div class="col-md-6">
                             <a href="https://2016.hackerspace.govhack.org" class="tile blue tile--hackerspace">
                                 <div class="tile-caption">
@@ -64,6 +67,8 @@ no_major_sponsors: true
                                 </div>
                             </a>
                         </div>
+                        {% endif %}
+                        {% if site.collections.datasets.enabled == true %}
                         <div class="col-md-6">
                             <a href="/datasets.html" class="tile pink tile--datasets">
                                 <div class="tile-caption">
@@ -72,6 +77,7 @@ no_major_sponsors: true
                                 </div>
                             </a>
                         </div>
+                        {% endif %}
                     </div>
             </div>
   
@@ -83,33 +89,11 @@ no_major_sponsors: true
 <!-- Main Content -->
 <section id="intro">
   <div class="container">
-      <!--<div class="row header-row">
-          <div class="col-lg-12 text-center">
-              <h1 id="jabberwocky">GovHack | <i>Project Jabberwocky</i></h1>
-          </div>
-      </div>-->
       <div>
         <p>
             <h2 data-toc-text="Welcome">Welcome to GovHack 2017!</h2>
-            <br>
-            The portal is an experiment for 2016's competition to make it easier to explore and participate in GovHack. In your feedback you've told us that it should be easier to find data relevant to each prize, to your local event, and to broad themes (such as science and local government).
-        </p>
-        <p>
-            Through the portal you'll be able to explore the <a href="/datasets.html">official competition datasets</a>, find an exhaustive list of <a href="/dataportals.html">government data portals</a>, and see all of the data <a href="/sponsors.html">each sponsor is providing</a>. As we get closer to the competition you'll be able to find out about the wonderful <a href="/mentors.html">mentors</a> who'll be available to help you out, and when the competition opens you'll be able to see all of the national and local <a href="/prizes.html">prizes</a>.
-        </p>
-        <p>
-            You'll also be able explore your <a href="/locations.html">local GovHack</a> to find datasets, data portals, prizes, and mentors for your local area.<br>
-            <br>
-            We'll be continually updating with new content as the competition draws closer, so watch this space! 
         </p>
       </div>
-      <!--<div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/132280958?title=0&byline=0&portrait=0" class="embed-responsive-item" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>-->
   </div>
 </section>
 

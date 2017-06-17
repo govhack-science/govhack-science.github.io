@@ -31,11 +31,11 @@ times:
     open: TBA
     close: TBA
 contact: 
-  phone: 
+  phone: TBA
 is_capital_city: FALSE
-display_weight: TBA
+display_weight: 30
 dataportals: 
-  - 30
+  - wyndham
 ---
 
-wyndham
+Welcome to "Hack for Wyndham", a hackathon to use open data and build some thing useful for the people of Wyndham and Victoria.

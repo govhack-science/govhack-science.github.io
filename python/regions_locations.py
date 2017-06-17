@@ -90,19 +90,19 @@ def main():
                     f.write('    close: ' + sunday[1] + '\n')
 
                     f.write('contact: \n')
-                    f.write('  phone: ' + location[20] + '\n')
+                    f.write('  phone: ' + location[21] + '\n')
 
                     f.write('is_capital_city: ' + location[2] + '\n')
-                    f.write('display_weight: ' + location[21] + '\n')
+                    f.write('display_weight: ' + location[22] + '\n')
 
-                    dataportals = location[22].split(',')
+                    dataportals = location[23].split(',')
                     f.write('dataportals: \n')
                     for x in dataportals:
                         f.write('  - ' + x + '\n')
                     
                     f.write('---\n\n')
                     
-                    f.write(location[23])
+                    f.write(location[24])
                     f.close()
 
 
