@@ -1,5 +1,6 @@
 from __future__ import print_function
 from oauth2client import tools
+import os
 
 import common
 import govhack_config
@@ -22,20 +23,86 @@ def main():
     if not values:
         print('No data found.')
     else:
-        print('ID, Title, Name')
+        print('Generating region files...')
         for row in values:
-            # Print columns A and E, which correspond to indices 0 and 4.
+
+            filename = os.path.join('..', govhack_config.FILES_ROOT, '_jurisdictions', row[0] + ".md")
+
             print('%s, %s, %s' % (row[0], row[1], row[2]))
+            f = open(filename, 'w')
+            f.write('---\n')
+            f.write('gid: ' + row[0] + '\n')
+            f.write('name: ' + row[1] + '\n')
+            f.write('title: ' + row[2] + '\n')
+            f.write('photo_url: \n')
+            f.write('---\n')
+            f.close()
 
-            print('Locations in this region:')
+            print('Generating location files for %s ', row[2])
 
-            print('GID	Name	Prefix	Jurisdiction	Type	Theme	Eventbrite	Location	Venue	Name	'
-                  'Address	Host	Accessibility	Under 18	Capacity	Parking	Public Transport	'
-                  'Catering	Times	Contact	Phone	Is capital city	Display weight	Dataportals	Description')
             for location in location_values:
-                if location[3] == row[0]:
-                    for xx in location:
-                        print(xx + '\t')
+
+                if location[0] == row[0]:
+                    filename = os.path.join('..', govhack_config.FILES_ROOT, '_locations', location[0], location[1] + ".md")
+                    f = open(filename, 'w')
+
+                    f.write('---\n')
+                    f.write('jurisdiction: ' + location[0] + '\n')
+                    f.write('gid: ' + location[1] + '\n')
+                    f.write('name: ' + location[4] + '\n')
+                    f.write('prefix: ' + location[3] + '\n')
+                    f.write('type: ' + location[5] + '\n')
+                    f.write('theme: ' + location[6] + '\n')
+                    f.write('eventbrite: ' + location[7] + '\n')
+
+                    latlong = location[8].split(',')
+                    f.write('location: \n')
+                    f.write('\tlat: ' + latlong[0] + '\n')
+                    f.write('\tlat: ' + latlong[1] + '\n')
+
+                    f.write('venue: \n')
+                    f.write('\tname: ' + location[9] + '\n')
+                    f.write('\taddress: ' + location[10] + '\n')
+                    f.write('\thost: ' + location[11] + '\n')
+                    f.write('\taccessibility: ' + location[12] + '\n')
+                    f.write('\tunder_18: ' + location[13] + '\n')
+                    f.write('\tcapacity: ' + location[14] + '\n')
+                    f.write('\tparking: ' + location[15] + '\n')
+                    f.write('\tpublic_transport: ' + location[16] + '\n')
+                    f.write('\tpublic_transport_last: ' + location[17] + '\n')
+                    f.write('catering: ' + location[18] + '\n')
+
+                    times = location[19].split('-')
+                    friday = times[0].split(',')
+                    saturday = times[1].split(',')
+                    sunday = times[2].split(',')
+
+                    f.write('times: \n')
+                    f.write('\tfriday: \n')
+                    f.write('\t\topen: ' + friday[0] + '\n')
+                    f.write('\t\tclose: ' + friday[1] + '\n')
+                    f.write('\tsaturday: \n')
+                    f.write('\t\topen: ' + saturday[0] + '\n')
+                    f.write('\t\tclose: ' + saturday[1] + '\n')
+                    f.write('\tsunday: \n')
+                    f.write('\t\topen: ' + sunday[0] + '\n')
+                    f.write('\t\tclose: ' + sunday[1] + '\n')
+
+                    f.write('contact: \n')
+                    f.write('\tphone: ' + location[20] + '\n')
+
+                    f.write('is_capital_city: ' + location[2] + '\n')
+                    f.write('display_weight: ' + location[21] + '\n')
+
+                    dataportals = location[22].split(',')
+                    f.write('dataportals: \n')
+                    for x in dataportals:
+                        f.write('\t- ' + x + '\n')
+                    
+                    f.write('---\n\n')
+                    
+                    f.write(location[23])
+                    f.close()
 
 
 if __name__ == '__main__':

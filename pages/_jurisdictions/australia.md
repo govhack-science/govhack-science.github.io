@@ -1,6 +1,6 @@
 ---
-title: Australia
-name: Australia
 gid: australia
-photo_url: /resources/csiro-logo.png
+name: Australia
+title: Australia
+photo_url: 
 ---
