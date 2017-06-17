@@ -55,6 +55,32 @@ virtualenv --system-site-packages venv
 pip install -r python/requirements.txt
 ```
 
+## Google Sheets API
+**In 2017, data for the portal is fetch directly from Google Sheets**
+
+You'll need to copy of the Google Sheets Client Secret before running the import scripts. If you're reading this, you most likely have access to the GOT Google Drive - the file is in `GovHack Drive 💾/Portal Data/google_sheets_client_secret.json`.
+
+Download this file to your computer, and place it in the `python` directory of this project.
+
+**ATTENTION:** do not commit this file 👍 
+
+_The first time you run one of the scripts, you will be asked to grant access to the Portal App to use your account to access to Google Sheets. Grant access or you won't be able to run any of the scripts._
+
+### Google Sheets API Config
+
+In `python/govhack_config.py` there are a few Spreadsheet IDS grabbed from Google Drive. The sheets only need to bo accessible by anyone with a GovHack Google account, no need for them to be public - even if the data in those sheets will then be made public by this site... 🔒 
+
+
+## Regions & Locations Loader
+This scripts uses a Google Sheets to create `.md` files for all regions and locations. **Any local edit to files in `pages/_jurisdictions` and `pages/_locations/*` will be lost!**
+
+To run:
+```
+. venv/bin/activate
+cd python 
+python regions_locations.py
+```
+
 ## Mentors Ingest
 This script takes a `.csv` file exported from FormStack and generates a set of new .md files.
 
