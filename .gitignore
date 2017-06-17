@@ -22,3 +22,5 @@ nohup.out
 
 *.iml
 .idea
+
+google_sheets_client_secret.json
