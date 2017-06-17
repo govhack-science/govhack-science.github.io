@@ -26,7 +26,8 @@ def main():
         print('Generating region files...')
         for row in values:
 
-            filename = os.path.join('..', govhack_config.FILES_ROOT, '_jurisdictions', row[0] + ".md")
+            filename = os.path.join('..', govhack_config.FILES_ROOT, '_jurisdictions',
+                                    row[2].replace(' ', '_').lower() + ".md")
 
             print('%s, %s, %s' % (row[0], row[1], row[2]))
             f = open(filename, 'w')
@@ -57,19 +58,19 @@ def main():
 
                     latlong = location[8].split(',')
                     f.write('location: \n')
-                    f.write('\tlat: ' + latlong[0] + '\n')
-                    f.write('\tlat: ' + latlong[1] + '\n')
+                    f.write('  lat: ' + latlong[0] + '\n')
+                    f.write('  lat: ' + latlong[1] + '\n')
 
                     f.write('venue: \n')
-                    f.write('\tname: ' + location[9] + '\n')
-                    f.write('\taddress: ' + location[10] + '\n')
-                    f.write('\thost: ' + location[11] + '\n')
-                    f.write('\taccessibility: ' + location[12] + '\n')
-                    f.write('\tunder_18: ' + location[13] + '\n')
-                    f.write('\tcapacity: ' + location[14] + '\n')
-                    f.write('\tparking: ' + location[15] + '\n')
-                    f.write('\tpublic_transport: ' + location[16] + '\n')
-                    f.write('\tpublic_transport_last: ' + location[17] + '\n')
+                    f.write('  name: ' + location[9] + '\n')
+                    f.write('  address: ' + location[10] + '\n')
+                    f.write('  host: ' + location[11] + '\n')
+                    f.write('  accessibility: ' + location[12] + '\n')
+                    f.write('  under_18: ' + location[13] + '\n')
+                    f.write('  capacity: ' + location[14] + '\n')
+                    f.write('  parking: ' + location[15] + '\n')
+                    f.write('  public_transport: ' + location[16] + '\n')
+                    f.write('  public_transport_last: ' + location[17] + '\n')
                     f.write('catering: ' + location[18] + '\n')
 
                     times = location[19].split('-')
@@ -78,18 +79,18 @@ def main():
                     sunday = times[2].split(',')
 
                     f.write('times: \n')
-                    f.write('\tfriday: \n')
-                    f.write('\t\topen: ' + friday[0] + '\n')
-                    f.write('\t\tclose: ' + friday[1] + '\n')
-                    f.write('\tsaturday: \n')
-                    f.write('\t\topen: ' + saturday[0] + '\n')
-                    f.write('\t\tclose: ' + saturday[1] + '\n')
-                    f.write('\tsunday: \n')
-                    f.write('\t\topen: ' + sunday[0] + '\n')
-                    f.write('\t\tclose: ' + sunday[1] + '\n')
+                    f.write('  friday: \n')
+                    f.write('    open: ' + friday[0] + '\n')
+                    f.write('    close: ' + friday[1] + '\n')
+                    f.write('  saturday: \n')
+                    f.write('    open: ' + saturday[0] + '\n')
+                    f.write('    close: ' + saturday[1] + '\n')
+                    f.write('  sunday: \n')
+                    f.write('    open: ' + sunday[0] + '\n')
+                    f.write('    close: ' + sunday[1] + '\n')
 
                     f.write('contact: \n')
-                    f.write('\tphone: ' + location[20] + '\n')
+                    f.write('  phone: ' + location[20] + '\n')
 
                     f.write('is_capital_city: ' + location[2] + '\n')
                     f.write('display_weight: ' + location[21] + '\n')
@@ -97,7 +98,7 @@ def main():
                     dataportals = location[22].split(',')
                     f.write('dataportals: \n')
                     for x in dataportals:
-                        f.write('\t- ' + x + '\n')
+                        f.write('  - ' + x + '\n')
                     
                     f.write('---\n\n')
                     

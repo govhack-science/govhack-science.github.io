@@ -1,0 +1,88 @@
+footer.site-footer {
+    padding-top: 50px !important;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer.site-footer .textwidget {
+    font-size: .78rem;
+}
+
+footer.site-footer p {
+    margin-bottom: 15px;
+}
+
+footer.site-footer .site-info {
+    padding-bottom: 40px;
+    color: #B7B5B6;
+}
+
+footer.site-footer .footer-widget-area {
+    text-align: left;
+}
+
+@media screen and (min-width: 1020px) {
+    footer.site-footer .footer-widget-area {
+        padding-top: 0;
+    }
+}
+
+footer.site-footer .footer-widget-area, footer.site-footer .footer-widget-area button, footer.site-footer .footer-widget-area input, footer.site-footer .footer-widget-area select, footer.site-footer .footer-widget-area textarea {
+    color: #242424;
+}
+
+footer.site-footer .footer-widget-area h1, footer.site-footer .footer-widget-area h2, footer.site-footer .footer-widget-area h3, footer.site-footer .footer-widget-area h4, footer.site-footer .footer-widget-area h5, footer.site-footer .footer-widget-area h6 {
+    color: #333;
+}
+
+footer.site-footer .footer-widget-area .widgettitle, footer.site-footer .footer-widget-area .widget-title {
+    line-height: 1em;
+}
+
+footer.site-footer .footer-widget-area .widget_nav_menu li {
+    padding: 0;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    footer.site-footer .footer-widget-area .widget_nav_menu li {
+        display: block;
+    }
+}
+
+footer.site-footer .footer-widget-area .widget_nav_menu li a {
+    display: block;
+    padding: .6em 1em;
+    margin-left: -.3em;
+    transition: all .25s ease;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    footer.site-footer .footer-widget-area .widget_nav_menu li a {
+        padding: .3em .4em;
+    }
+}
+
+footer.site-footer .footer-widget-area .widget_nav_menu li a:hover, footer.site-footer .footer-widget-area .widget_nav_menu li a:focus, footer.site-footer .footer-widget-area .widget_nav_menu li a:active {
+    color: white;
+    background: #848283;
+}
+
+footer.site-footer .footer-navigation .menu-item {
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    footer.site-footer .footer-navigation {
+        padding: 6px 0 0;
+    }
+
+    footer.site-footer .footer-navigation .menu-item:not(:last-child)::after {
+        content: "-";
+        display: inline-block;
+        margin-left: 1.6em;
+        opacity: .6;
+    }
+}
