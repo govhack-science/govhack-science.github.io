@@ -1,8 +1,8 @@
 source:       ./pages
-plugins_dir:  ../_plugins
-layouts_dir:  ./_layouts
-includes_dir: ./_includes
-data_dir:     ./_data
+#plugins_dir:  ./pages/_plugins
+#layouts_dir:  ./pages/_layouts
+#includes_dir: ./pages/_includes
+#data_dir:     ./pages/_data
 
 destination:  ./_site
 
