@@ -2,18 +2,6 @@
 layout: bootstrap
 title: Data Portals
 ---
-<!-- Main Content -->
-<!--<section id="portfolio">
-    <div class="container">
-        <div class="row">
-          <h3 class="section-subheading text-muted">Browse datasets for your state...</h3>
-          
-          {% include jurisdictions_bar.bs.html section="datasets" %}
-        </div>
-    </div>
-</section>-->
-
-
 {% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | map: "gid" %}
 {% unless dataportal_ids == "" %}
 <!-- Government Data Portals Section -->
