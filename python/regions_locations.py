@@ -26,8 +26,7 @@ def main():
         print('Generating region files...')
         for row in values:
 
-            filename = os.path.join('..', govhack_config.FILES_ROOT, '_jurisdictions',
-                                    row[2].replace(' ', '_').lower() + ".md")
+            filename = os.path.join('_jurisdictions', row[2].replace(' ', '_').lower() + ".md")
 
             print('%s, %s, %s' % (row[0], row[1], row[2]))
             f = open(filename, 'w')
@@ -44,7 +43,7 @@ def main():
             for location in location_values:
 
                 if location[0] == row[0]:
-                    filename = os.path.join('..', govhack_config.FILES_ROOT, '_locations', location[0], location[1] + ".md")
+                    filename = os.path.join('_locations', location[0], location[1] + ".md")
                     f = open(filename, 'w')
 
                     f.write('---\n')
@@ -99,9 +98,9 @@ def main():
                     f.write('dataportals: \n')
                     for x in dataportals:
                         f.write('  - ' + x + '\n')
-                    
+
                     f.write('---\n\n')
-                    
+
                     f.write(location[24])
                     f.close()
 

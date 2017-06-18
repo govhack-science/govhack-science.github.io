@@ -1,11 +1,3 @@
-source:       ./pages
-#plugins_dir:  ./pages/_plugins
-#layouts_dir:  ./pages/_layouts
-#includes_dir: ./pages/_includes
-#data_dir:     ./pages/_data
-
-destination:  ./_site
-
 cfg:
   has_hackerspace: false
   current_event: gh17
