@@ -1,0 +1,87 @@
+---
+layout: bootstrap
+title: Data Portals
+---
+{% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Government Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Government Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% comment %}
+            ==============================================================
+            Hack to make data.gov.au appear first in the list.
+            ==============================================================
+            {% endcomment %}
+            {% assign dataportal_ids_str = dataportal_ids | join: "," %}
+            {% assign dataportal_ids_str = dataportal_ids_str | replace_first: "actmapi,dataactgovau,datagovau,", "datagovau,dataactgovau,actmapi," %}
+
+            {% assign dataportal_ids = dataportal_ids_str | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = site.dataportals | where: "type", "agency-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Agency Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Agency Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = site.dataportals | where: "type", "domain-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Domain-specific Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Domain-specific Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+
+{% assign dataportal_ids = site.dataportals | where: "type", "local-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Local Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 class="section-heading">Local Data Portals</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+            
+            <p class="text-muted">
+                Is your local government not listed? Check out <a href="https://opencouncildata.org/">Open Council Data</a> - an unofficial index of local government data portals in Australia.
+            </p>
+        </div>
+    </div>
+</section>
+{% endunless %}

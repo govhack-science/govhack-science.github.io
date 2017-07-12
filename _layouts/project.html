@@ -1,0 +1,34 @@
+---
+layout: bootstrap
+type: project
+---
+{% assign location = site.locations | where: "gid", page.event | first %}
+{% assign image_url = page.image_url | default: 'https://assets.govhack.org/img/logo/govhack-original-transp.png' %}
+
+
+<!-- Main Content -->
+<section id="intro">
+    <div class="container">
+        <header class="project-header text-center">
+            <img src="{{ image_url }}" class="project-thumbnail">
+            <h2>{{ page.project_title }}</h2>
+            <div class="project-desc">
+                <span>
+                    by {{ page.team_name }}, at 
+                    {{ location.name }}, {{ location.jurisdiction | upcase }}
+                </span>
+                <span>
+                    <a href="{{ page.hackerspace_url }}">Hackerspace</a> &diam; 
+                    <a href="{{ page.project_url }}">Project site</a> &diam; 
+                    <a href="{{ page.repo.url }}">Repo</a> &diam; 
+                    <a href="{{ page.video.url }}">Video</a> 
+                </span>
+            </div>
+        </header>
+
+        <hr class="project-divider">
+
+        {{ page.content }}
+
+    </div>
+</section>

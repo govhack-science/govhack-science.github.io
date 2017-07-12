@@ -1,0 +1,29 @@
+---
+layout: bootstrap
+title: Sponsors
+no_major_sponsors: true
+---
+<!-- Main Content -->
+<!--<section id="portfolio">
+    <div class="container">
+        <div class="row">
+          <h3 class="section-subheading text-muted">Browse datasets for your state...</h3>
+          
+          {% include jurisdictions_bar.bs.html section="datasets" %}
+        </div>
+    </div>
+</section>-->
+
+{% include sponsor_block.bs.html sponsor_level="national" jurisdiction_gid="australia" jurisdiction_name="National" %}
+
+{% for jurisdiction in site.jurisdictions %}
+    {% unless jurisdiction.gid == "australia" or jurisdiction.gid == "nz" %}
+        {% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=jurisdiction.gid jurisdiction_name=jurisdiction.name %}
+
+        {% for location in site.locations %}
+            {% if location.jurisdiction == jurisdiction.gid %}
+                {% include sponsor_block.bs.html sponsor_level="local" jurisdiction_gid=jurisdiction.gid jurisdiction_name=location.name location_gid=location.gid heading_level="h3" %}
+            {% endif %}
+        {% endfor %}
+    {% endunless %}
+{% endfor %}

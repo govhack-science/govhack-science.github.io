@@ -1,0 +1,376 @@
+/** Handbook CSS **/
+
+/* 
+Dark Grey #848283 
+Light Grey #BEBFBF
+Pink #CA1553
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+/* Color and font customisation */
+.label-primary {
+    background-color: #CA1553;
+}
+body {
+    font-family:  'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Black', sans-serif;
+    font-weight: 300;
+}
+
+
+/* Structural and layout */
+body {
+    height: 100vh;
+    position: relative;
+}
+.viewport {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.side-nav {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    width: 300px;
+    min-width: 200px;
+    max-width: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    padding: 15px;
+    box-shadow: inset -3px 8px 15px #fcfcfc;
+    overflow: hidden;
+}
+.side-nav-inner {
+    position: absolute;
+    /* top: 80px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    padding: 15px;
+    overflow: auto;
+}
+.main {
+    position: absolute;
+    border-right: 1px solid #BEBFBF;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 300px;
+    min-height: 100%;
+    padding: 15px 30px;
+    overflow: auto;
+}
+.header {
+    min-height: 80px;
+    padding: 5px 0 25px;
+    overflow: hidden;
+}
+.mobile-header {
+    display: none;
+}
+.footer-sticky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 42px;
+    padding: 5px 15px;
+    border-top: 1px solid #BEBFBF;
+    z-index: 99;
+    color: #BEBFBF;
+    font-size: 10px;
+    background: white;
+}
+
+@media screen and (max-width: 769px){
+    .side-nav {
+        width: 240px;
+    }
+    .main {
+        left: 240px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .viewport {
+        top: 45px;
+    }
+    .mobile-header {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 45px;
+        padding: 8px 20px 0;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: left; */
+        background: url('/resources/govhack-background-home.jpg');
+    }
+    a.mobile-menu-toggle {
+        color: white;
+        font-size: 24px;
+    }
+    .side-nav {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all .2s ease;
+    }
+    .main {
+        left: 0;
+        opacity: 1;
+        transform: translateX(0);
+        transition: all .2s ease;
+    }
+    .viewport.shifted .side-nav {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .viewport.shifted .main {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+
+/* Navigation and sidebar */
+.handbook-logo {
+    display: block;
+    height: 80px;
+    max-width: 280px;
+    background: url('/resources/handbook-logo.png') center center/contain no-repeat scroll transparent;
+    opacity: .85;
+}
+.handbook-logo:hover {
+    opacity: .85;
+    background: url('/resources/handbook-logo-return.png') center center/contain no-repeat scroll transparent;
+}
+.handbook-logo::before {
+    content: '2016';
+    display: block;
+    color: #848283;
+}
+.handbook-logo::after {
+    content: 'Empower. Enable. Connect.';
+    display: block;
+    color: #848283;
+}
+.nav-menu-section {
+    border-bottom: 2px solid whitesmoke;
+}
+.nav-menu-header-link,
+.nav>li>a.nav-menu-header-link {
+    float: right !important;
+    font-size: .8em;
+    padding: 2px;
+}
+.nav-pills>li.active>a.nav-menu-header-link {
+    color: #4C9AD2;
+    background: transparent;
+}
+.nav-menu-header-link:hover,
+.nav>li>a.nav-menu-header-link:hover,
+.nav-pills>li.active>a.nav-menu-header-link:focus, 
+.nav-pills>li.active>a.nav-menu-header-link:hover {
+    color: #23527C;
+    background: transparent;
+}
+
+.resizer-handle {
+    display: block;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background: rgba(240,240,240,.6);
+    cursor: ew-resize;
+}
+
+.side-nav .nav-pills a small {
+    display: none;
+}
+.side-nav .nav-pills li.active a small,
+.side-nav .nav-pills li a:hover small {
+    display: inline;
+}
+
+.side-nav-event-label {
+    margin-top: -24px;
+    margin-bottom: 8px;
+    text-align: left;
+    text-transform: capitalize;
+    padding-right: 40px;
+    position: relative;
+    font-size: 14px;
+    min-height: 36px;
+}
+a.side-nav-event-link {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #dedede;
+    border-radius: 3px;
+    font-size: 22px;
+}
+a.side-nav-event-link:hover,
+a.side-nav-event-link:active,
+a.side-nav-event-link:focus {
+    text-decoration: none;
+}
+a.side-nav-event-link .glyphicon {
+    top: 0;
+    left: -1px;
+}
+
+.custom-event #custom-location-selected-no {
+    display: block;
+}
+.custom-event #custom-location-selected-yes {
+    display: none;
+}
+.custom-event.custom-event-selected #custom-location-selected-no {
+    display: none;
+}
+.custom-event.custom-event-selected #custom-location-selected-yes {
+    display: block;
+}
+
+/* Dash pages */
+.hb-dashboard-heading {
+    padding-right: 60px;
+    position: relative;
+}
+.hb-dashboard-heading::after {
+    display: block;
+    content: '2016';
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    color: #ccc;
+    font-size: 2.2em;
+    transform: rotate(-12deg);
+    opacity: .25;
+    z-index: -1;
+}
+.filter-state .glyphicon {
+    display: none;
+}
+.filter-state.filter-active .glyphicon {
+    display: inline;
+}
+.hb-search {
+    margin-bottom: 20px;
+}
+.hb-article-preview.search-hidden {
+    display: none;
+}
+
+.featured-tile-image {
+    margin: 0 0 20px;
+}
+
+/* Mobile dash layout */
+@media screen and (max-width: 768px){
+    .hb-dashboard-heading {
+        padding-right: 0;
+    }
+    .mobile-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .handbook-logo,
+    .side-nav-event-label {
+        margin: 0 auto;
+    }
+    .resizer-handle {
+        display: none !important;
+    }
+    .side-nav-event-label {
+        font-size: .8em;
+    }
+    .h1, h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* Chapter */
+.hb-chapter-title-inline {
+    display: inline-block;
+    height: 1.2em;
+    vertical-align: -.2em;
+}
+
+.hb-chapter-body,
+.hb-chapter-tags {
+    margin-bottom: 20px;
+}
+
+.heading-toggle a {
+    color: #BEBFBF;
+    transition: color .2s ease;
+}
+.heading-toggle.open a,
+.heading-toggle a:hover,
+.heading-toggle a:active,
+.heading-toggle a:focus {
+    color: #848283;
+    text-decoration: none;
+}
+.heading-toggle::after {
+    display: inline-block;
+    padding: 0 8px;
+    content: '\25E2';
+    color: #BEBFBF;
+    font-size: 16px;
+    transform: rotate(45deg);
+    transform-origin: 60% 50%;
+    transition: transform .2s ease;
+}
+.heading-toggle.open::after {
+    transform: rotate(225deg);
+}
+
+.hb-chapter-footer {
+    
+}
+
+.fb-comments {
+    min-height: 200px;
+}
+
+
+/* Prefs */
+.current-event-name {
+    font-size: 1.6em;
+    color: #848283;
+}
+
+/* Theme */
+.nav-pills>li.active>a.alt, 
+.nav-pills>li.active>a.alt:focus, 
+.nav-pills>li.active>a.alt:hover {
+    background-color: #CA1553;
+}

@@ -1,0 +1,71 @@
+{
+    "national": {
+        "defaultColumns": 3,
+        "classes": [{
+            "slug": "lead-agency", 
+            "columns": 1.5
+        }, {
+            "slug": "lead-sponsor",
+            "columns": 1.5
+        }, {
+            "slug": "red-carpet-awards",
+            "columns": 1.5
+        }, {
+            "slug": "international-prize", 
+            "columns": 3
+        }, {
+            "slug": "platinum", 
+            "columns": 3
+        }, {
+            "slug": "gold", 
+            "columns": 3
+        }, {
+            "slug": "silver", 
+            "columns": 3
+        }, {
+            "slug": "govt-agency-supporter", 
+            "columns": 3
+        }, {
+            "slug": "supporter", 
+            "columns": 3
+        }, {
+            "slug": "foundation", 
+            "columns": 3
+        }]    
+    },
+    "state": {
+        "defaultColumns": 3,
+        "classes": [{
+            "slug": "gold-state-gov-wa", 
+            "columns": 1,
+            "classNames": "unbound"
+        }, {
+            "slug": "platinum-state-qld", 
+            "columns": 1.5
+        }, {
+            "slug": "naming-rights", 
+            "columns": 1.5
+        }, {
+            "slug": "nz-national",
+            "columns": 3
+        }, {
+            "slug": "premier", 
+            "columns": 3
+        }, {
+            "slug": "platinum", 
+            "columns": 3
+        }, {
+            "slug": "gold", 
+            "columns": 3
+        }, {
+            "slug": "silver", 
+            "columns": 3
+        }, {
+            "slug": "bronze", 
+            "columns": 3
+        }, {
+            "slug": "in-kind", 
+            "columns": 4
+        }]    
+    }
+}

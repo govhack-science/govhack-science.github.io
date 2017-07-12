@@ -1,0 +1,131 @@
+cfg:
+  has_hackerspace: false
+  current_event: gh17
+  events:
+    - gh17
+    - gh16
+    - gh15
+    - gh14
+    - gh13
+
+exclude:
+  - 2015
+  - docs
+  - python
+  - startbootstrap-agency-1.0.6
+  - startbootstrap-clean-blog-1.0.4
+  - startbootstrap-clean-blog-1.0.4-original
+  - startbootstrap-grayscale-1.0.6
+  - venv
+  - datasets
+
+collections:
+  sponsors:
+    enabled: false
+    output: true
+
+  themes:
+    enabled: false
+    output: true
+
+  datasets:
+    enabled: false
+    output: true
+
+  dataportals:
+    enabled: false
+    output: true
+
+  mentors:
+    enabled: false
+    output: true
+
+  organisations:
+    enabled: false
+    output: true
+
+  prizes:
+    enabled: false
+    output: true
+
+  jurisdictions:
+    enabled: false
+    output: true
+
+  locations:
+    enabled: true
+    output: true
+
+  handbookchapters:
+    enabled: false
+    output: true
+
+  projects:
+    enabled: false
+    output: true
+
+defaults:
+  - scope:
+      path: "_datasets"
+      type: datasets
+    values:
+      layout: dataset
+
+  - scope:
+      path: "_dataportals"
+      type: dataportals
+    values:
+      layout: dataportal
+
+  - scope:
+      path: "_mentors"
+      type: mentors
+    values:
+      layout: mentor
+      permalink: /mentors/:title.html
+
+  - scope:
+      path: "_organisations/sponsors"
+      type: organisations
+    values:
+      layout: organisation
+      permalink: /sponsors/:title.html
+
+  - scope:
+      path: "_organisations/supporters"
+      type: organisations
+    values:
+      layout: organisation
+      permalink: /supporters/:title.html
+
+  - scope:
+      path: "_prizes"
+      type: prizes
+    values:
+      layout: prize
+
+  - scope:
+      path: "_jurisdictions"
+      type: jurisdictions
+    values:
+      layout: jurisdiction
+      permalink: /regions/:title.html
+
+  - scope:
+      path: "_locations"
+      type: locations
+    values:
+      layout: location
+
+  - scope:
+      path: "_handbookchapters"
+      type: handbookchapters
+    values:
+      layout: handbook_chapter
+      permalink: /handbook/:categories/:title.html
+
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project

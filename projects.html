@@ -1,0 +1,36 @@
+---
+layout: bootstrap
+title: Projects
+---
+
+<!-- Project Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+            <div class="col-lg-12 text-center">
+              <h1>Projects</h1>
+            </div>
+        </div>
+        <div class="row">
+            {% for project in site.projects %}
+            {% assign image_url = project.image_url | default: 'https://assets.govhack.org/img/logo/govhack-original-transp.png' %}
+            {% assign count = count | plus: 1 %}
+            {% assign chunk = count | divided_by: 20 | ceil %}
+            <a href="{{ project.url }}" class="project-card" data-chunk="{{ chunk }}" data-image="{{ image_url }}">
+              <article class="project-card-caption">
+                <strong>{{ project.project_title | truncatewords: 6 }}</strong><br>
+                {{ project.team_name | truncate: 30 }}<br>
+                {% assign location = site.locations | where: "gid", project.event | first %}{{ location.name }}, {{ location.jurisdiction | upcase }}
+              </article>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script>
+$(window).on('load', function(){
+    $('.project-card').each(function(){
+        $(this).css('backgroundImage', "url('"+$(this).data('image')+"')");
+    });
+});
+</script>

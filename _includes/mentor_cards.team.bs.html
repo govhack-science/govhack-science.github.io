@@ -1,0 +1,63 @@
+{% if include.mentors %}
+  {% assign mentor_ids = include.mentors | map: "gid" %}
+{% else %}
+  {% assign mentor_ids = include.mentor_ids %}
+{% endif %}
+
+{% for mentor in site.mentors %}
+  {% if mentor_ids == nil or mentor_ids contains mentor.gid %}
+  <div class="col-sm-6">
+    <div class="team-member">
+        <a href="{{ mentor.url }}">
+            {% if mentor.photo_url %}
+                <img src="{{ mentor.photo_url | default: secret_squirrel }}" style="max-width: 105px; max-height: 105px;">
+            {% else %}
+                <i class="fa fa-user fa-5x"></i>
+            {% endif %}
+        </a>
+        <h4><a href="{{ mentor.url }}">{{ mentor.name }}</a></h4>
+        <p class="text-muted">{{ mentor.position_title }}</p>
+        <ul class="list-inline social-buttons">
+          <li>
+              <a href="https://twitter.com/{{ mentor.contact.twitter }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% if mentor.contact.facebook %}
+          <li>
+              <a href="{{ mentor.contact.facebook }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if mentor.contact.linkedin %}
+          <li>
+              <a href="{{ mentor.contact.linkedin }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if mentor.contact.email %}
+          <li>
+              <a href="mailto:{{ mentor.contact.email }}">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}

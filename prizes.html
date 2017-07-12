@@ -1,0 +1,179 @@
+---
+layout: bootstrap
+title: Prizes
+---
+<!-- Main Content -->
+
+<!-- Prizes Sectionf -->
+<section id="portfolio">
+    <div class="container">
+        <!--<div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 data-toc-skip>Prizes</h1>
+          </div>
+        </div>-->
+        <div class="row">
+            {% if site.collections.prizes.enabled == false %}
+                <p>Prizes aren't released until GovHack begins at <strong>7pm, Friday the 29th July 2016</strong>, at your local event.</p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% if site.collections.prizes.enabled == true %}
+<!-- International Prizes Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>International Prizes</h1>
+              <p class="text-primary">Prizes that everyone across Australia and New Zealand can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign international_prizes = site.prizes | where: "jurisdiction", "international" %}
+            {% include prize_cards.bs.html prizes=international_prizes %}
+        </div>
+    </div>
+</section>
+
+<!-- Major Category Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>Major Category Prizes</h1>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign major_cat_prizes = site.prizes | where: "jurisdiction", "australia" | where: "type", "Major" %}
+            {% include prize_cards.bs.html prizes=major_cat_prizes %}
+        </div>
+    </div>
+</section>
+
+<!-- Bounty Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>Bounty Prizes</h1>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign bounty_prizes = site.prizes | where: "jurisdiction", "australia" | where: "type", "Bounty" %}
+            {% include prize_cards.bs.html prizes=bounty_prizes %}
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>Team Prizes</h1>
+              <p class="text-primary">Prizes that everyone in Australia can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign team_prizes = site.prizes | where: "jurisdiction", "australia" | where: "type", "Team" %}
+            {% include prize_cards.bs.html prizes=team_prizes %}
+        </div>
+    </div>
+</section>
+
+<!-- State Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 data-toc-skip>Regional Prizes</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% for jurisdiction in site.jurisdictions %}
+                {% unless jurisdiction.gid == "international" or jurisdiction.gid == "australia" or jurisdiction.gid == "nz" or jurisdiction.gid == "nt" %}
+                    {% comment %}
+                    <a href="{{ jurisdiction.url }}#prizes">{{ jurisdiction.name }}</a>
+                    <br>
+                    {% endcomment %}
+
+                    <div class="row dataset-org">
+                        <h1 class="dataset-category"><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h1>
+                        {% if jurisdiction.gid == "act" %}
+                            <p class="text-primary">Prizes that all participants in the {{ jurisdiction.name }} can compete for!</p>
+                        {% else %}
+                            <p class="text-primary">Prizes that all participants in {{ jurisdiction.name }} can compete for!</p>
+                        {% endif %}
+
+                        {% assign events = site.locations | where: "jurisdiction", jurisdiction.gid %}
+                        {% assign jurisdiction_prizes = site.prizes | where: "jurisdiction", jurisdiction.gid %}
+                        {% assign jurisdiction_prize_ids = jurisdiction_prizes | where: "category", "state" | map: "gid" %}
+
+                        <div class="row dataset-org">
+                            {% include prize_cards.bs.html prize_ids=jurisdiction_prize_ids %}
+                        </div>
+                        
+                        {% for event in events %}
+                            {% assign local_prize_ids = "" %}
+                            {% assign jurisdiction_prize_ids = "" %}
+
+                            {% for prize in jurisdiction_prizes %}
+                                {% if prize.events contains event.gid %}
+                                    {% assign local_prize_ids = local_prize_ids | append: prize.gid %}
+                                    {% assign local_prize_ids = local_prize_ids | append: "," %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if local_prize_ids != "" %}
+                                <div class="row dataset-org">
+                                    <h2><a href="{{ event.url }}">{{ event.name }}</a></h2>
+                                    <p class="text-primary">Prizes that only participants at {{ event.name }} can compete for!</p>
+
+                                    {% assign local_prize_ids_list = local_prize_ids | lstrip | split: "," %}
+                                    {% include prize_cards.bs.html prize_ids=local_prize_ids_list %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endunless %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- New Zealand Major Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>New Zealand Major Prizes</h1>
+              <p class="text-primary">Prizes that everyone in New Zealand can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign nz_prizes = site.prizes | where: "jurisdiction", "nz" | where: "type", "Major" %}
+            {% include prize_cards.bs.html prizes=nz_prizes %}
+        </div>
+    </div>
+</section>
+
+<!-- New Zealand Bounty Section -->
+<section>
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>New Zealand Bounty Prizes</h1>
+              <p class="text-primary">Prizes that everyone in New Zealand can compete for!</p>
+          </div>
+        </div>
+        <div class="row">
+            {% assign nz_prizes = site.prizes | where: "jurisdiction", "nz" | where: "type", "Bounty" %}
+            {% include prize_cards.bs.html prizes=nz_prizes %}
+        </div>
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,273 @@
+---
+layout: bootstrap
+---
+
+<script src="/resources/js/location-map.js"></script>
+
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    <!--<div class="row header-row">
+        <div class="col-lg-12 text-center">
+            <h1>{{ page.name }}</h1>
+        </div>
+    </div>-->
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+            <!--<img src="{{ page.photo_url }}" style="max-width: 200px; max-height: 200px;">-->
+        </div>
+        <div class="media-body">
+          <h2 class="media-heading" data-toc-skip><a href="{{ page.url }}">{{ page.name }}</a></h2>
+          
+          <div id="gh-location-map" class="location-map" style="width: 100%; min-height: 25vh;"></div>
+          <script type="text/javascript">
+          var locations = [];
+          {% assign location_ids = "" %}
+          {% for location in site.locations %}
+            {% if location.jurisdiction == page.gid %}
+              locations.push([{{ location.location.lat }}, {{ location.location.lon }}]);
+            {% endif %}
+          {% endfor %}
+          
+          location_map(locations);
+          </script>
+          
+          {{ page.content }}
+        </div>
+      </div>
+      
+      <ul class="list-inline social-buttons">
+          {% if page.contact.twitter %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if page.contact.facebook %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+          {% if page.website_url %}
+          <li>
+              <a href="#">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% assign location_ids = site.locations | where: "jurisdiction", page.gid | map: "gid" %}
+{% assign location_ids_len = location_ids | size %}
+{% if location_ids_len > 0 %}
+<!-- Locations Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Locations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include location_cards.bs.html location_ids=location_ids %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign theme_ids = site.themes | where: "jurisdiction", page.gid | map: "id" %}
+{% assign theme_ids_len = theme_ids | size %}
+{% if theme_ids_len > 0 %}
+<!-- Themes Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="themes">State Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include theme_cards.bs.html theme_ids=theme_ids %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if site.collections.prizes.enabled == true %}
+    {% assign state_prize_ids = site.prizes | where: "category", "state" | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign state_prize_ids_len = state_prize_ids | size %}
+    {% if state_prize_ids_len > 0 %}
+    <!-- State Prizes Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2>State Prizes</h2>
+                  <p class="text-primary">Prizes that all participants in {{ page.name }} can compete for!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include prize_cards.bs.html prize_ids=state_prize_ids %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% assign local_prize_ids = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign local_prize_ids_len = local_prize_ids | size %}
+    {% if local_prize_ids_len > 0 %}
+    <!-- Local Prizes Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2>Local Prizes</h2>
+                  <p class="text-primary">Prizes that only participants at specific events can compete for!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% for event in site.locations %}
+                {% if event.jurisdiction == page.gid %}
+                    {% assign event_prizes = site.prizes | where: "category", "local" | where: "jurisdiction", page.gid %}
+                    {% assign event_prize_ids_len = event_prizes | size %}
+
+                    {% if event_prize_ids_len > 0 %}
+                        {% assign event_prize_ids = "" %}
+                        {% for prize in event_prizes %}
+                            {% if prize.events contains event.gid %}
+                                {% assign event_prize_ids = event_prize_ids | append: prize.gid %}
+                                {% assign event_prize_ids = event_prize_ids | append: "," %}
+                            {% endif %}
+                        {% endfor %}
+
+                        {% unless event_prize_ids == "" %}
+                            <div class="row dataset-org">
+                                <h3><a href="{{ event.url }}">{{ event.name }}</a></h3>
+                                {% assign event_prize_ids_list = event_prize_ids | lstrip | split: "," %}
+                                {% include prize_cards.bs.html prize_ids=event_prize_ids_list %}
+                            </div>
+                        {% endunless %}
+                    {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endif %}
+
+{% if site.collections.dataportals.enabled == true %}
+
+{% assign state_dataportal_ids = site.dataportals | where: "type", "major-portal" | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
+    {% assign local_dataportal_ids = site.dataportals | where: "jurisdiction", page.gid | map: "gid" | join: "," %}
+    {% capture dp_ids %}{{ state_dataportal_ids }},{{ local_dataportal_ids }}{% endcapture %}
+    {% assign dp_ids_list = dp_ids | lstrip | split: "," | uniq %}
+
+    {% assign dataportal_ids_len = dp_ids_list | size %}
+    {% if dataportal_ids_len > 0 %}
+    <!-- Data Portals Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="dataportals">State Data Portals</h2>
+                  <p class="text-primary">Major government data portals from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include dataportal_cards.bs.html dataportal_ids=dp_ids_list cards=true %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+{% endif %}
+
+{% if site.collections.datasets.enabled == true %}
+
+    {% assign state_org_ids = site.datasets | where: "jurisdiction", page.gid | map: "organisation" %}
+    {% assign state_org_ids_len = state_org_ids | size %}
+    {% if state_org_ids_len > 0 %}
+    <!-- Datasets Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="datasets">Official State Datasets</h2>
+                  <p class="text-primary">Datasets from all over {{ page.name }}. Check out the <a href="/datasets.html">official datasets list</a> for much more!</p>
+              </div>
+            </div>
+            <div class="row">
+              {% include dataset_cards_by_organisation.bs.html organisation_ids=state_org_ids org_heading_lvl="h3" %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endif %}
+
+{% if site.collections.mentors.enabled == true %}
+
+    {% assign mentor_ids = site.mentors | where: "jurisdiction", page.gid | map: "gid" %}
+    {% assign mentor_ids_len = mentor_ids | size %}
+    {% if mentor_ids_len > 0 %}
+    <!-- Mentors Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row header-row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading" id="mentors">State Mentors</h2>
+              </div>
+            </div>
+            <div class="row">
+              {% include mentor_cards.bs.html mentor_ids=mentor_ids %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endif %}
+
+
+{% comment %}
+{% assign organisation_ids = "" %}
+{% for organisation in site.organisations %}
+  {% if organisation.jurisdiction == page.gid %}
+    {% assign organisation_ids = organisation_ids | append: organisation.gid %}
+    {% assign organisation_ids = organisation_ids | append: "," %}
+  {% endif %}
+{% endfor %}
+
+{% unless organisation_ids == "" %}
+<!-- Organisations Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading" id="organisations">State Organisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign organisation_ids_list = organisation_ids | lstrip | split: "," %}
+          {% include organisation_cards.bs.html organisation_ids=organisation_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+{% endcomment %}
+
+{% include sponsor_block.bs.html sponsor_level="state" jurisdiction_gid=page.gid jurisdiction_name="State" %}

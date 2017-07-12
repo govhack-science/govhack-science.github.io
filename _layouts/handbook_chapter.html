@@ -1,0 +1,40 @@
+---
+layout: handbook_template_bs
+---
+
+<header class="header">
+    <h1 class="hb-chapter-title">
+        {% if page.categories contains 'comp' %}
+        <img src="/resources/images/handbook/comp-chapter-icon.png" alt="Participant Handbook" class="hb-chapter-title-inline">
+        {% elsif page.categories contains 'toolkit' %}
+        <img src="/resources/images/handbook/toolkit-chapter-icon.png" alt="Hacker Toolkit" class="hb-chapter-title-inline">
+        {% endif %}
+        {{ page.title }}
+    </h1>
+</header>
+
+<div class="hb-chapter-tags">
+    <span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;
+    {% for tag in page.tags %}
+    <span class="label label-primary">{{ tag }}</span>
+    {% endfor %}
+</div>
+
+<article id="content-{{ page.slug }}" class="hb-chapter-body">
+    {{ page.content }}
+</article>
+
+<hr>
+<div class="fb-comments" data-width="600px" data-numposts="5"></div>
+
+<hr>
+<footer class="hb-chapter-footer">
+    Last updated: {{ page.last_updated }}
+</footer>
+
+<script>
+$(function(){
+    var $parent = $('#content-{{ page.slug }}');
+    HB.collapsePageContent($parent);
+});
+</script>

@@ -1,0 +1,30 @@
+---
+layout: bootstrap
+title: Mentors
+#sections: 
+#  cta: 
+#    label: Register as a mentor
+#    href: https://govhack.formstack.com/forms/mentors
+#    target: _blank
+---
+
+<!-- Mentors Rollup -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 data-toc-skip>Mentors</h1>
+          </div>
+        </div>
+        <div class="row">
+          
+          {% if site.mentors.size == 0 %}
+            <p>We'll be making information about our awesome crew of mentors available soon.
+            Watch this space!</p>
+          {% else %}
+            {% assign mentors_by_jurisdn = site.mentors | group_by:"jurisdiction" %}
+            {% include mentor_card_by_jurisdiction.bs.html mentors_by_jurisdn=mentors_by_jurisdn %}
+          {% endif %}
+        </div>
+    </div>
+</section>

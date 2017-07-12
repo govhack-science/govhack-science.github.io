@@ -1,0 +1,16 @@
+{% if include.prizes %}
+  {% assign prize_ids = include.prizes | map: "gid" %}
+{% else %}
+  {% assign prize_ids = include.prize_ids %}
+{% endif %}
+
+{% for prize in site.prizes %}
+  {% if prize_ids == nil or prize_ids contains prize.gid %}
+  <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ prize.url }}">{{ prize.name }}</a>{% if include.show_org_name != false %} <span class="text-muted">({{ prize.organisation_title }})</span>{% endif %}{% if include.show_prize_type == true %} <span class="text-muted">({{ prize.type }} Prize)</span>{% endif %}</h4>
+        {{ prize.excerpt }}
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}

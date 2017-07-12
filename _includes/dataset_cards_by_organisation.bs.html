@@ -1,0 +1,26 @@
+{% if include.organisations %}
+  {% assign organisation_ids = include.organisations | map: "gid" | uniq %}
+{% else %}
+  {% assign organisation_ids = include.organisation_ids | uniq %}
+{% endif %}
+
+{% assign org_heading_lvl = "h4" %}
+{% if include.org_heading_lvl %}
+  {% assign org_heading_lvl = include.org_heading_lvl %}
+{% endif %}
+
+{% for organisation_id in organisation_ids %}
+  {% assign organisation = site.organisations | where: "gid", organisation_id | first %}
+
+  {% if organisation %}
+    {% assign datasets = site.datasets | where: "organisation", organisation.gid %}
+    {% assign dataset_len = datasets | size %}
+
+    {% if dataset_len > 0 %}
+      <div class="dataset-org">
+        <{{ org_heading_lvl }}><a href="{{ organisation.url }}">{{ organisation.name }}</a></{{ org_heading_lvl }}>
+        {% include dataset_cards.bs.html datasets=datasets dataset_org_heading_lvl=include.dataset_org_heading_lvl %}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,123 @@
+---
+layout: bootstrap
+---
+<!-- Main Content -->
+<section id="intro">
+  <div class="container">
+    {% if page.photo_url %}
+      <img src="{{ page.photo_url }}" class="img-responsive">
+    {% endif %}
+
+    <h2>{{ page.name }}</h2>
+    <h3>{{ page.organisation_title }}</h3>
+    
+    {% for jurisdiction in site.jurisdictions %}
+      {% if jurisdiction.gid == page.jurisdiction %}
+        {% assign jurisdiction = jurisdiction %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    <h4><a href="{{ jurisdiction.url }}">{{ jurisdiction.name }}</a></h4>
+    
+    <h4>Type: {{ page.type}} </h4>
+    
+    {% if page.locations %}
+      {% capture locations %}
+        {% for location in page.locations %}
+          {{ location }} 
+        {% endfor %}
+      {% endcapture %}
+      <h4>Locations: {{ locations }} </h4>
+    {% endif %}
+
+    {% comment %}
+    <div class="alert alert-info">We apologise but prize info is temporarily unavailable. They will be back soon - stay in touch with your hosts for announcements.</div>
+    {% endcomment %}
+    {{ page.content }}
+
+    <a class="btn btn-lg btn-primary" href="/handbook/comp/receiving_awards.html" style="text-transform: none;">
+        <i class="fa fa-info fa-5x pull-left"></i> All cash prizes are <u>up to the value</u> stated on the prize.<br>GovHack reserves the right to amend the value of<br> cash prizes if event running costs exceed the total<br> sponsorship collected. Click here for more information.
+    </a>
+  </div>
+</section>
+
+{% if page.organisations %}
+<!-- Organisations Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1>Prize Sponsors</h1>
+          </div>
+        </div>
+        <div class="row">
+          {% for organisation_gid in page.organisations %}
+            {% assign organisation = site.organisations | where: "gid", organisation_gid | first %}
+
+            {% if organisation %}
+              <div class="col-xs-12 col-md-6">
+                {% if organisation.logo_url %}
+                <a href="{{ organisation.url }}"><img src="{{ organisation.logo_url }}" style="max-width: 90%;"></a>
+                {% else %}
+                <p>{{ organisation.title }}</p>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% comment %}
+{% if page.datasets %}
+<!-- Datasets Section -->
+<section id="poxtfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Datasets</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataset_cards.bs.html dataset_ids=page.datasets %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.themes %}
+<!-- Themes Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Themes</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include theme_cards.bs.html theme_ids=page.themes %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.dataportals %}
+<!-- Data Portals Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% include dataportal_cards.bs.html dataportal_ids=page.dataportals %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% include sponsors_national.html %}
+{% endcomment %}

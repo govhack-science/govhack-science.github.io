@@ -1,0 +1,96 @@
+{% if include.mentors %}
+  {% assign mentor_ids = include.mentors | map: "gid" %}
+{% else %}
+  {% assign mentor_ids = include.mentor_ids %}
+{% endif %}
+
+{% if mentor_ids == nil %}
+    {% assign mentor_ids = site.mentors | map: "gid" %}
+{% endif %}
+
+{% assign secret_squirrel = 'https://s3-ap-southeast-2.amazonaws.com/2016govhackmentors/secret-squirrel.jpg' %}
+
+{% for mentor_id in mentor_ids %}
+    {% assign mentor = site.mentors | where: "gid", mentor_id | first %}
+    {% if mentor %}
+        {% assign mentor_org = site.organisations | where: "gid", mentor.organisation | first %}
+        <div class="media mentor">
+            <div class="media-left text-center">
+                <a href="{{ mentor.url }}">
+                    {% if mentor.photo_url %}
+                        <img src="{{ mentor.photo_url | default: secret_squirrel }}" style="max-width: 105px; max-height: 105px;">
+                    {% else %}
+                        <i class="fa fa-user fa-5x"></i>
+                    {% endif %}
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading" data-toc-skip>
+                    <a href="{{ mentor.url }}">{{ mentor.name }}</a><br/> 
+                </h3>
+                <div class="media-subheading"><small class="text-muted">
+                    {{ mentor.position_title }} &ndash; {{ mentor_org.name | default: mentor.organisation }}
+                </small></div>
+
+                {% comment %}
+                ==============================================================
+                The display_excerpt shows the ask_me_about, useful if the card
+                is part of a list.
+                ==============================================================
+                {% endcomment %}
+                
+                {% if include.display_excerpt %}
+                
+                  <p>Ask me about: {{ mentor.ask_me_about }}</p>
+                  
+                {% else %}
+                
+                  <ul class="list-inline social-buttons">
+                    {% if mentor.contact.twitter %}
+                    <li>
+                        <a href="https://twitter.com/{{ mentor.contact.twitter }}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if mentor.contact.facebook %}
+                    <li>
+                        <a href="{{ mentor.contact.facebook }}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if mentor.contact.linkedin %}
+                    <li>
+                        <a href="{{ mentor.contact.linkedin }}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if mentor.contact.email %}
+                    <li>
+                        <a href="mailto:{{ mentor.contact.email }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                  
+                {% endif %}
+
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

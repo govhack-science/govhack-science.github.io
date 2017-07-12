@@ -1,0 +1,199 @@
+---
+layout: bootstrap
+title: Datasets
+#sections: 
+#  cta: 
+#    label: Feature your dataset
+#    href: https://govhack.formstack.com/forms/datasets
+#    target: _blank
+---
+
+<!-- Datasets Rollup -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h1 data-toc-skip>Datasets</h1>
+          </div>
+        </div>
+        <div class="row">
+            {% if site.datasets.size == 0 %}
+                <p>
+                    <strong>We'll be making the official competition dataset list available soon. Watch this space!</strong>
+                </p>
+            {% endif %}
+
+            <p>
+                These are the official datasets which will be used in the competition. To be listed as an official dataset a dataset must be submitted by a government agency for use during GovHack - either across the whole compeititon, or for specific prizes.
+            </p>
+
+            <p>
+                All entries must use official data in some form. Some prize categories require you to use specific data from a publishing organisation. Other prize categories require a mix of data sourced from different government jurisdictions.
+            </p>
+
+            {% if site.datasets.size > 0 %}
+                <p>
+                    The competition details won’t be launched until GovHack opens on 29th July, but you can start checking out and playing with the data early so you can make the most of the GovHack weekend. Please do check out the competition rules as well and remember, it’s about showing what you can do during the GovHack weekend.
+                </p>
+
+                <p>
+                    PLEASE NOTE: This list will be updated over the weeks leading up to GovHack and will only be finalised a few days before GovHack, so please keep checking back here for up to date information.
+                </p>
+                
+                <hr>
+
+                <h2 class="dataset-category">Federal Government Agency Datasets</h2>
+
+                {% assign organisations = site.organisations | where: "jurisdiction", "australia" %}
+                {% include dataset_cards_by_organisation.bs.html organisations=organisations org_heading_lvl="h3" %}
+
+                <hr>
+
+                <h2 class="dataset-category">State & Local Government Agency Datasets</h2>
+
+                {% for jurisdiction in site.jurisdictions %}
+                    {% unless jurisdiction.gid == "australia" %}
+                        {% assign organisations = site.organisations | where: "jurisdiction", jurisdiction.gid %}
+
+                        {% capture jurisdiction_datasets %}{% include dataset_cards_by_organisation.bs.html organisations=organisations dataset_org_heading_lvl="h5" %}{% endcapture %}
+                        {% assign jurisdiction_datasets = jurisdiction_datasets | strip %}
+
+                        {% if jurisdiction_datasets != "" %}
+                            <div class="media">
+                                <h3 class="dataset-jurisdiction">{{ jurisdiction.name }}</h3>
+                                {{ jurisdiction_datasets }}
+                                <br>
+                                <br>
+                            </div>
+                        {% endif %}
+                    {% endunless %}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% assign dataportal_ids = "" %}
+{% for dataportal in site.dataportals %}
+    {% if dataportal.type == "major-portal" %}
+        {% if dataportal.gid != "datagovau" %}
+            {% assign dataportal_ids = dataportal_ids | append: dataportal.gid %}
+            {% assign dataportal_ids = dataportal_ids | append: "," %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+<br>
+
+{% comment %}
+{% unless dataportal_ids == "" %}
+<!-- Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+            <p>
+                While GovHack higlights a small number of official competition datasets, the full treasure trove of government data is available from a range of government, agency, and subject-area specific data portals. Visit our <a href="dataportals.html">Data Portals</a> page for the full list.
+            </p>
+            {% comment %}
+            ==============================================================
+            Hack to make data.gov.au appear first in the list.
+            ==============================================================
+            {% endcomment %}
+
+            {% assign dataportal_ids = "datagovau," | append: dataportal_ids %}
+            {% assign dataportal_ids_list = dataportal_ids | lstrip | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids_list %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+{% endcomment %}
+
+{% assign dataportal_ids = site.dataportals | where: "type", "major-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Government Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Major Government Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+            <p>
+                While GovHack higlights a small number of official competition datasets, the full treasure trove of government data is available from a range of government, agency, and subject-area specific data portals.
+            </p>
+
+            {% comment %}
+            ==============================================================
+            Hack to make data.gov.au appear first in the list.
+            ==============================================================
+            {% endcomment %}
+            {% assign dataportal_ids_str = dataportal_ids | join: "," %}
+            {% assign dataportal_ids_str = dataportal_ids_str | replace_first: "actmapi,dataactgovau,datagovau,", "datagovau,dataactgovau,actmapi," %}
+
+            {% assign dataportal_ids = dataportal_ids_str | split: "," %}
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataportal_ids = site.dataportals | where: "type", "agency-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Agency Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Agency Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataportal_ids = site.dataportals | where: "type", "local-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Local Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Local Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+            
+            <p class="text-muted">
+                Is your local government not listed? Check out <a href="https://opencouncildata.org/">Open Council Data</a> - an unofficial index of local government data portals in Australia.
+            </p>
+        </div>
+    </div>
+</section>
+{% endunless %}
+
+{% assign dataportal_ids = site.dataportals | where: "type", "domain-portal" | map: "gid" %}
+{% unless dataportal_ids == "" %}
+<!-- Domain-specific Data Portals Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row header-row">
+          <div class="col-lg-12 text-center">
+              <h2>Domain-specific Data Portals</h2>
+          </div>
+        </div>
+        <div class="row">
+            {% include dataportal_cards.bs.html dataportal_ids=dataportal_ids %}
+        </div>
+    </div>
+</section>
+{% endunless %}

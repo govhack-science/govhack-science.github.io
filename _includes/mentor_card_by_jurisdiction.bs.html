@@ -1,0 +1,13 @@
+<!--
+mentors: Excepts a two dimensional array of mentors grouped by organisation.
+e.g. site.mentors | group_by:"organisation"
+-->
+
+{% for group in include.mentors_by_jurisdn %}
+  <!-- Display the Jurisdiction header -->
+  {% assign jurisdn = site.jurisdictions | where: "gid", group.name | first %}
+  
+  <h2><a href="/regions/{{ jurisdn.title }}.html">{{ jurisdn.name }}</a></h2>
+  {% include mentor_cards.bs.html mentors=group.items display_excerpt=true %}
+  <hr>
+{% endfor %}

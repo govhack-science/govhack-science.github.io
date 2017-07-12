@@ -1,0 +1,33 @@
+{% if include.dataportals %}
+  {% assign dataportal_ids = include.dataportals | map: "id" %}
+{% else %}
+  {% assign dataportal_ids = include.dataportal_ids %}
+{% endif %}
+
+{% if dataportal_ids == nil %}
+  {% assign dataportal_ids = site.dataportals %}
+{% endif %}
+
+{% for dataportal_id in dataportal_ids %}
+  {% assign dataportal = site.dataportals | where: "gid", dataportal_id | first %}
+  
+  {% if include.cards == true and dataportal.type == "major-portal" %}
+    {% assign classes = "media bg-primary card" %}
+  {% else %}
+    {% assign classes = "media" %}
+  {% endif %}
+
+  <div class="{{ classes }}">
+      <div class="media-left">
+        {% if dataportal.photo_url %}
+          <a href="{{ dataportal.url }}"><img src="{{ dataportal.photo_url }}" style="max-width: 105px; max-height: 105px;"></a>
+        {% else %}
+          <!--<a href="#"><img src="holder.js/105x105"></a>-->
+        {% endif %}
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="{{ dataportal.website_url }}">{{ dataportal.name }}</a></h4>
+        {{ dataportal.excerpt }}
+      </div>
+  </div>
+{% endfor %}

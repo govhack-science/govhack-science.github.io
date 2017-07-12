@@ -1,0 +1,271 @@
+---
+layout: handbook_template_bs
+chrono_sections:
+  - category_verb: preparing
+    heading: Preparing before the event
+  - category_verb: competing
+    heading: Competing for glory
+  - category_verb: creating
+    heading: Creating your hack
+  - category_verb: submitting
+    heading: Submitting your project
+target_audiences:
+  - category_name: comp
+    title: For all competitors
+  - category_name: toolkit
+    title: For hackers
+---
+
+<div class="tab-content">
+
+    {% comment %}
+    ==================================================
+    Is this the first visit? If so, display a form and
+    capture some preferences from them e.g.
+    + First hackathon?
+    + Which venue?
+    + Menu display fashion (chrono or functional?)
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane active" id="home">
+    
+        <a class="hidden-xs" href="https://github.com/govhackaustralia/govhackaustralia.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        
+        <header class="header">
+            <h1 class="hb-dashboard-heading">GovHack Participant Handbook and Hacker Toolkit</h1>
+        </header>
+
+        <blockquote>
+            <p>Welcome to our 2016 Handbook. We hope you enjoy your hack!</p>
+            <footer>From the GovHack Global Operations Team, State Managers and Local Event Teams</footer>
+        </blockquote>
+
+        <hr>
+        
+        <h3>Featured content</h3>
+        <div class="row">
+            <div class="col-md-6"> 
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="360" height="220" src="https://www.youtube.com/embed/rG6Tm-BV-SA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <h4>Launch Video 2016</h4>
+                        <p>In case you missed it</p>
+                    </div>
+                </div>
+                {% include_relative _includes/featured_tile.html chapter_slug='competition_rules_2016' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='event_roadmap' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='what_data_do_i_use' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='judging_criteria' %}
+            </div>
+            <div class="col-md-6">
+                {% include_relative _includes/featured_tile.html chapter_slug='ibm_bluemix' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='microsoft_azure_free_passes' %}
+                {% include_relative _includes/featured_tile.html chapter_slug='aws_credits' %}
+            </div>
+        </div>
+        
+        <div style="display: none;">
+        {% include_relative _includes/firstrun.html %}
+        {% include_relative _includes/preferences.html %}
+        </div>
+    </section>
+    
+    {% comment %}
+    ==================================================
+    Event info section!
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="event">
+        <div id="custom-location-selected" class="custom-event">
+            <div id="custom-location-selected-no">
+                <header class="header">
+                    <h1 class="">Select your event</h1>
+                </header>
+                <div id="current-event" class="panel panel-default">
+                    <a href="prefs.html" class="btn btn-primary pull-right">Set your event</a>
+                    <div class="alert alert-info">You can select your current GovHack event location. Otherwise, here's a list of all our venues.</div>
+                </div>
+                <hr>
+                <div class="row">
+                    {% for loc in site.locations %}
+                    {% unless loc.jurisdiction == 'nz' %}
+                    <div class="col-md-3 col-sm-4">
+                        <h4><a href="{{ loc.url }}">{{ loc.prefix }} {{ loc.name }}: {{ loc.type }}</a></h4>
+                    </div>
+                    {% endunless %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="custom-location-selected-yes">
+                <header class="header">
+                    <h1 class="">Your local event</h1>
+                </header>
+            </div>
+        </div>
+        
+    </section>
+
+    {% comment %}
+    ==================================================
+    Print out all the sections that correspond to the 
+    chronological menu
+    Do a lookahead first, check that there are indeed
+    articles for that chapter otherwise don't bother
+    ==================================================
+    {% endcomment %}
+    {% for section in page.chrono_sections %}
+    <section role="tabpanel" class="tab-pane" id="{{ section.category_verb }}">
+        <header class="header">
+            <h1>{{ section.heading }}</h1>
+        </header>
+        <form class="hb-search">
+            <input type="search" class="form-control input-lg" placeholder="Filter by title or tags...">
+        </form>
+        <div><!-- ex .container-fluid -->
+            <div class="row">
+            {% for aud in page.target_audiences %}
+                {% assign counter = 0 %}
+                {% for article in site.handbookchapters %}
+                    {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
+                        {% assign counter = counter | plus:1 %}
+                    {% endif %}
+                {% endfor %}
+                {% unless counter == 0 %}        
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading filter-state">
+                        <span class="glyphicon glyphicon-filter pull-right"></span>
+                        <h3 class="panel-title">{{ aud.title }}</h3>
+                      </div>
+                      <!-- <div class="panel-body"></div> -->
+                      <ul class="list-group">
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains aud.category_name and article.tags contains section.category_verb %}
+                        <li class="list-group-item hb-article-preview" data-tags="{{ article.tags | join: ',' }}" data-title="{{ article.title }}">
+                          <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                          {{ article.content | markdownify | strip_html | truncatewords: 22 }}
+                        </li>
+                        {% endif %}
+                        {% endfor %} 
+                      </ul>
+                    </div>
+                </div>
+                {% endunless %}
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+    {% comment %}
+    ==================================================
+    A list of all handbook + toolkit pages
+    ==================================================
+    {% endcomment %}
+    <section role="tabpanel" class="tab-pane" id="all">
+        <header class="header">
+            <h1>Participant Handbook Chapters and Toolkit Guides</h1>
+        </header>
+        <form class="hb-search">
+            <input type="search" class="form-control input-lg" placeholder="Filter by title or tags...">
+        </form>
+        <div><!-- ex .container-fluid -->
+            <div class="row">
+            {% for aud in page.target_audiences %}
+                {% assign counter = 0 %}
+                {% for article in site.handbookchapters %} 
+                    {% if article.categories contains aud.category_name %}
+                        {% assign counter = counter | plus:1 %}
+                    {% endif %}
+                {% endfor %} 
+                {% unless counter == 0 %}
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading filter-state">
+                        <h3 class="panel-title">{{ aud.title }}</h3>
+                      </div>
+                      <!-- <div class="panel-body"></div> -->
+                      <ul class="list-group">
+                        {% for article in site.handbookchapters %}
+                        {% if article.categories contains aud.category_name %}
+                        <li class="list-group-item hb-article-preview" data-tags="{{ article.tags | join: ',' }}" data-title="{{ article.title }}">
+                          <h4><a href="/handbook/{{ aud.category_name }}/{{ article.slug }}.html" >{{ article.title }}</a></h4>
+                          {{ article.content | strip_html | truncatewords: 22 }}
+                        </li>
+                        {% endif %}
+                        {% endfor %} 
+                        </ul>
+                    </div>
+                </div>
+                {% endunless %}
+            {% endfor %}
+            </div>
+        </div>
+        
+
+    </section>
+
+</div>
+
+<script>
+$(function(){
+
+    // Hash frag detection
+    if (window.location.hash && window.location.hash.length > 1){
+        var trimFront = window.location.hash.indexOf('#/') === 0 ? 2 : 1;
+        var elem = $("[aria-controls='"+window.location.hash.substring(trimFront)+"']");
+        if (elem.length){
+            elem.tab('show');
+        }
+    }
+
+    // Over-bind sidebar menu to JS, for this index page
+    $('#hb-nav a[data-target]').on('click', function(e){
+        e.preventDefault();
+        $(this).tab('show');
+
+        if ($(this).attr('aria-controls')){
+            window.location.hash = $(this).attr('aria-controls');
+        }
+        else {
+            window.location.hash = '';
+            $('#hb-nav li').removeClass('active');
+        }
+
+        return false;
+    });
+    
+    // Search bar 
+    $('.hb-search').submit(function(){
+        return false;
+    });
+    $('.hb-search input').keyup(function(){
+        var $tabPane = $(this).closest('.tab-pane');
+        if ($tabPane.hasClass('active')){
+            var searchTerm = $.trim($(this).val()).toLowerCase();
+            $tabPane.find('.filter-state').parent().toggleClass('panel-primary', !!searchTerm);
+            $tabPane.find('.filter-state').toggleClass('filter-active', !!searchTerm);
+            var $articles = $tabPane.find('.hb-article-preview');
+            if (searchTerm){
+                $articles.each(function(){
+                    var tags = $(this).data('tags').split(',');
+                    var title = $(this).data('title');
+                    var matchedTag = tags.find(function(tag){
+                        return !!~tag.toLowerCase().indexOf(searchTerm);
+                    }) || false;
+                    var matchedTitle = !!~title.toLowerCase().indexOf(searchTerm);
+                    $(this).toggleClass('search-hidden', !(matchedTag || matchedTitle));
+                });
+            }
+            else {
+                $articles.each(function(){
+                    $(this).removeClass('search-hidden');
+                });
+            }
+        }
+    });
+    
+});
+</script>
